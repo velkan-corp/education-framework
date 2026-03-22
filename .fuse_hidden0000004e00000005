@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Framework</title>
+<style>
+:root {
+  --bg: #0f0f14;
+  --surface: #1a1a24;
+  --surface2: #23233a;
+  --border: #2a2a40;
+  --text: #e0e0e8;
+  --text-muted: #8888a0;
+  --accent: #6c8cff;
+  --accent2: #ff8c6c;
+  --accent3: #6cffa0;
+  --accent4: #ffd76c;
+  --warn: #ff6c6c;
+  --intro: #4a4a6a;
+  --ext: #6a4a4a;
+  --verbal: #4a6a4a;
+  --spatial: #6a6a4a;
+  --hisens: #5a4a6a;
+  --losens: #4a5a6a;
+  --depth: #4a6a6a;
+  --breadth: #6a4a5a;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* LAYOUT */
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0; position: sticky; top: 0; z-index: 100; }
+.topbar-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+.logo { padding: 12px 20px; font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); white-space: nowrap; border-right: 1px solid var(--border); }
+.tabs { display: flex; overflow-x: auto; flex: 1; }
+.tab { padding: 14px 16px; font-size: 13px; cursor: pointer; color: var(--text-muted); border-bottom: 2px solid transparent; white-space: nowrap; transition: all .15s; }
+.tab:hover { color: var(--text); background: rgba(108,140,255,.05); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.main-layout { display: flex; flex: 1; max-width: 1400px; margin: 0 auto; width: 100%; }
+.sidebar { width: 240px; min-width: 240px; background: var(--surface); border-right: 1px solid var(--border); padding: 20px 16px; position: sticky; top: 52px; height: calc(100vh - 52px); overflow-y: auto; }
+.content { flex: 1; padding: 32px 40px; max-width: 900px; overflow-y: auto; }
+
+/* SIDEBAR */
+.sidebar-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 12px; }
+.profile-group { margin-bottom: 20px; }
+.profile-label { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+.radio-group { display: flex; gap: 2px; margin-bottom: 10px; }
+.radio-btn { flex: 1; padding: 5px 4px; font-size: 11px; text-align: center; cursor: pointer; border-radius: 4px; background: var(--surface2); color: var(--text-muted); transition: all .15s; border: 1px solid transparent; }
+.radio-btn:hover { color: var(--text); }
+.radio-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.nav-links { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 16px; }
+.nav-link { display: block; padding: 5px 8px; font-size: 12px; color: var(--text-muted); cursor: pointer; border-radius: 4px; margin-bottom: 2px; }
+.nav-link:hover { background: var(--surface2); color: var(--text); }
+
+/* CONTENT */
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+h2 { font-size: 20px; font-weight: 600; margin: 36px 0 12px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; color: var(--text); }
+.subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+p { margin-bottom: 12px; font-size: 14px; }
+.priority-box { background: linear-gradient(135deg, rgba(108,140,255,.1), rgba(108,255,160,.05)); border: 1px solid var(--accent); border-radius: 8px; padding: 20px; margin: 16px 0 24px; }
+.priority-box h3 { margin-top: 0; color: var(--accent); }
+.priority-item { padding: 6px 0; font-size: 14px; }
+.priority-num { display: inline-block; width: 22px; height: 22px; background: var(--accent); color: #fff; border-radius: 50%; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; margin-right: 8px; }
+
+/* TABLES */
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13px; }
+th { background: var(--surface2); padding: 10px 12px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: var(--text-muted); border-bottom: 2px solid var(--border); }
+td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: rgba(108,140,255,.03); }
+td:first-child { font-weight: 600; color: var(--accent2); white-space: nowrap; width: 160px; }
+
+/* TEMPERAMENT ADJUSTMENTS */
+.t-adjust { display: none; margin: 8px 0; padding: 10px 14px; border-radius: 6px; font-size: 13px; border-left: 3px solid; }
+.t-adjust.visible { display: block; }
+.t-adjust.t-introvert { background: rgba(74,74,106,.2); border-color: #8888cc; }
+.t-adjust.t-extrovert { background: rgba(106,74,74,.2); border-color: #cc8888; }
+.t-adjust.t-verbal { background: rgba(74,106,74,.2); border-color: #88cc88; }
+.t-adjust.t-spatial { background: rgba(106,106,74,.2); border-color: #cccc88; }
+.t-adjust.t-high-sens { background: rgba(90,74,106,.2); border-color: #aa88cc; }
+.t-adjust.t-low-sens { background: rgba(74,90,106,.2); border-color: #88aacc; }
+.t-adjust.t-depth { background: rgba(74,106,106,.2); border-color: #88cccc; }
+.t-adjust.t-breadth { background: rgba(106,74,90,.2); border-color: #cc88aa; }
+.t-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; opacity: .7; margin-bottom: 4px; }
+
+/* CARDS */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+.card-title { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+.tag { display: inline-block; padding: 2px 8px; font-size: 11px; border-radius: 12px; margin: 2px; }
+.tag-game { background: rgba(108,140,255,.15); color: var(--accent); }
+.tag-book { background: rgba(255,140,108,.15); color: var(--accent2); }
+.tag-music { background: rgba(108,255,160,.15); color: var(--accent3); }
+.tag-activity { background: rgba(255,215,108,.15); color: var(--accent4); }
+
+/* SECTION CONTENT */
+.section { display: none; }
+.section.active { display: block; }
+.age-content { display: none; }
+.age-content.active { display: block; }
+.warn-box { background: rgba(255,108,108,.08); border: 1px solid rgba(255,108,108,.3); border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+.warn-box h3 { color: var(--warn); margin-top: 0; }
+.note-box { background: rgba(108,140,255,.08); border: 1px solid rgba(108,140,255,.2); border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+.music-track { display: flex; gap: 16px; margin: 8px 0; }
+.music-track > div { flex: 1; padding: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+.music-track h4 { font-size: 13px; color: var(--accent3); margin-bottom: 6px; }
+
+/* FLOATING PROFILE PANEL */
+.profile-fab { display: none; position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #fff; border: none; cursor: pointer; z-index: 300; box-shadow: 0 4px 16px rgba(0,0,0,.4); font-size: 20px; line-height: 48px; text-align: center; transition: transform .15s; }
+.profile-fab:hover { transform: scale(1.1); }
+.profile-fab:active { transform: scale(0.95); }
+.profile-float { display: none; position: fixed; bottom: 78px; right: 20px; width: 260px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; z-index: 300; box-shadow: 0 8px 32px rgba(0,0,0,.5); }
+.profile-float.open { display: block; }
+.profile-float .profile-label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.profile-float .radio-group { display: flex; gap: 2px; margin-bottom: 10px; }
+.profile-float .radio-btn { flex: 1; padding: 7px 4px; font-size: 12px; text-align: center; cursor: pointer; border-radius: 4px; background: var(--surface2); color: var(--text-muted); transition: all .15s; border: 1px solid transparent; }
+.profile-float .radio-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.profile-float-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 12px; }
+/* FLOATING SECTIONS NAV */
+.float-nav-link { display: block; padding: 8px 12px; font-size: 13px; color: var(--text-muted); cursor: pointer; border-radius: 4px; margin-bottom: 2px; }
+.float-nav-link:hover { background: var(--surface2); color: var(--text); }
+
+/* TABLE SCROLL WRAPPER - applied via JS on mobile */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px -4px 20px; padding: 0 4px; }
+.table-scroll table { min-width: 500px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .content { padding: 20px 16px; max-width: 100%; }
+  .card-grid { grid-template-columns: 1fr; }
+  .music-track { flex-direction: column; }
+  .logo { padding: 12px 14px; font-size: 12px; }
+  .tab { padding: 12px 10px; font-size: 12px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 17px; }
+  td:first-child { white-space: normal; width: auto; }
+  .priority-box { padding: 14px; }
+  .topbar-inner { flex-wrap: nowrap; }
+  .tabs { flex: 1; min-width: 0; }
+  .tabs::-webkit-scrollbar { height: 0; }
+}
+@media (max-width: 500px) {
+  .logo { display: none; }
+  .tab { padding: 12px 8px; font-size: 11px; }
+}
+@media print {
+  .topbar, .sidebar, .profile-fab, .profile-float { display: none !important; }
+  .content { max-width: 100%; padding: 20px; }
+  .t-adjust { display: block !important; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Education Framework</div>
+      <div class="tabs" id="tabs"></div>
+      <div id="search-wrap" style="position:relative;margin-left:auto;padding:0 8px;display:flex;align-items:center">
+        <svg id="search-icon" onclick="document.getElementById('search-input').focus();document.getElementById('search-input').style.width='160px'" style="cursor:pointer;flex-shrink:0;margin-right:6px" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Search… (⌘K)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:4px;font-size:12px;width:160px;outline:none" autocomplete="off">
+        <div id="search-results" style="display:none;position:absolute;top:100%;right:8px;width:360px;max-height:70vh;overflow-y:auto;background:var(--surface);border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:200;margin-top:4px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="main-layout">
+    <div class="sidebar">
+      <div class="sidebar-title">Child Profile</div>
+      <div class="profile-group">
+        <div class="profile-label">Energy <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:14px;font-size:9px;cursor:pointer;margin-left:3px;vertical-align:middle">i</span><div style="display:none;font-size:10px;color:var(--text-muted);padding:4px 0 2px;line-height:1.4">Introvert: recharges alone. Extrovert: recharges with people.</div></div>
+        <div class="radio-group" data-dim="energy">
+          <div class="radio-btn" data-val="introvert">Introvert</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="extrovert">Extrovert</div>
+        </div>
+        <div class="profile-label">Processing <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:14px;font-size:9px;cursor:pointer;margin-left:3px;vertical-align:middle">i</span><div style="display:none;font-size:10px;color:var(--text-muted);padding:4px 0 2px;line-height:1.4">Verbal: thinks in words/arguments. Spatial: thinks in images/building.</div></div>
+        <div class="radio-group" data-dim="processing">
+          <div class="radio-btn" data-val="verbal">Verbal</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="spatial">Spatial</div>
+        </div>
+        <div class="profile-label">Sensitivity <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:14px;font-size:9px;cursor:pointer;margin-left:3px;vertical-align:middle">i</span><div style="display:none;font-size:10px;color:var(--text-muted);padding:4px 0 2px;line-height:1.4">High: overwhelmed by stimuli, needs gentle exposure. Low: needs more intensity.</div></div>
+        <div class="radio-group" data-dim="sensitivity">
+          <div class="radio-btn" data-val="high-sens">High</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="low-sens">Low</div>
+        </div>
+        <div class="profile-label">Novelty <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:14px;font-size:9px;cursor:pointer;margin-left:3px;vertical-align:middle">i</span><div style="display:none;font-size:10px;color:var(--text-muted);padding:4px 0 2px;line-height:1.4">Depth: obsesses on one thing for months. Breadth: cycles through interests.</div></div>
+        <div class="radio-group" data-dim="novelty">
+          <div class="radio-btn" data-val="depth">Depth</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="breadth">Breadth</div>
+        </div>
+      </div>
+      <div class="nav-links" id="nav-links"></div>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+
+<!-- FLOATING FABS -->
+<button class="profile-fab" id="fab-sections" onclick="toggleFloatSections()" style="bottom:78px;right:20px;font-size:18px" title="Sections">☰</button>
+<button class="profile-fab" id="fab-profile" onclick="toggleFloatProfile()" title="Child Profile">⚙</button>
+
+<!-- FLOATING PROFILE PANEL -->
+<div class="profile-float" id="float-profile">
+  <div class="profile-float-title">Child Profile <span style="font-size:10px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted)">— adjusts advice across all tabs</span></div>
+  <div class="profile-label">Energy <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:15px;font-size:10px;cursor:pointer;margin-left:4px;vertical-align:middle">i</span><div style="display:none;font-size:11px;color:var(--text-muted);padding:6px 0 4px;line-height:1.5">How they recharge. <strong>Introverts</strong> need solitary time to recover; social activity drains them. <strong>Extroverts</strong> draw energy from people; isolation drains them. Affects peer strategy, activity scheduling, and learning format.</div></div>
+  <div class="radio-group" data-dim="energy">
+    <div class="radio-btn" data-val="introvert">Introvert</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="extrovert">Extrovert</div>
+  </div>
+  <div class="profile-label">Processing <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:15px;font-size:10px;cursor:pointer;margin-left:4px;vertical-align:middle">i</span><div style="display:none;font-size:11px;color:var(--text-muted);padding:6px 0 4px;line-height:1.5">How they learn best. <strong>Verbal-abstract</strong> children devour books, argue, think in words. <strong>Spatial-kinesthetic</strong> children build, draw, move, think in images and physical manipulation. Affects content format and niche domain selection.</div></div>
+  <div class="radio-group" data-dim="processing">
+    <div class="radio-btn" data-val="verbal">Verbal</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="spatial">Spatial</div>
+  </div>
+  <div class="profile-label">Sensitivity <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:15px;font-size:10px;cursor:pointer;margin-left:4px;vertical-align:middle">i</span><div style="display:none;font-size:11px;color:var(--text-muted);padding:6px 0 4px;line-height:1.5">How intensely they experience stimuli. <strong>High-sensitivity</strong> children are overwhelmed by noise, crowds, transitions, and criticism. <strong>Low-sensitivity</strong> children need more intensity to feel challenged. Directly affects hardship tolerance approach and failure debrief tone.</div></div>
+  <div class="radio-group" data-dim="sensitivity">
+    <div class="radio-btn" data-val="high-sens">High</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="low-sens">Low</div>
+  </div>
+  <div class="profile-label">Novelty <span class="info-icon" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'" style="display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--surface2);color:var(--text-muted);text-align:center;line-height:15px;font-size:10px;cursor:pointer;margin-left:4px;vertical-align:middle">i</span><div style="display:none;font-size:11px;color:var(--text-muted);padding:6px 0 4px;line-height:1.5">How they explore interests. <strong>Depth-seeking</strong> children obsess over one thing for months. <strong>Breadth-seeking</strong> children cycle through interests weekly. Affects when to push specialization and how to structure the niche mastery commitment.</div></div>
+  <div class="radio-group" data-dim="novelty">
+    <div class="radio-btn" data-val="depth">Depth</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="breadth">Breadth</div>
+  </div>
+</div>
+
+<!-- FLOATING SECTIONS PANEL -->
+<div class="profile-float" id="float-sections" style="bottom:136px;max-height:50vh;overflow-y:auto"></div>
+
+<script>
+// ===========================
+// FRAMEWORK DATA
+// ===========================
+const TABS = [
+  { id: 'philosophy', label: 'Philosophy' },
+  { id: 'age-0-1', label: '0–1' },
+  { id: 'age-1-3', label: '1–3' },
+  { id: 'age-4-7', label: '4–7' },
+  { id: 'age-8-10', label: '8–10' },
+  { id: 'age-11-13', label: '11–13' },
+  { id: 'age-14-16', label: '14–16' },
+  { id: 'age-17-18', label: '17–18' },
+  { id: 'meta', label: 'Meta' }
+];
+
+const SECTIONS = {
+// ===========================
+// PHILOSOPHY
+// ===========================
+philosophy: `
+<h1>Philosophy</h1>
+<p class="subtitle">Depth, CRAFT, and the architecture of this framework.</p>
+
+<h2 id="s-core">Core Principle: Depth Over Breadth</h2>
+<p>The central bet of this framework: studying fewer things deeply produces better thinkers than studying many things superficially. A child who has truly understood one complex system — disassembled it, questioned its assumptions, traced its creation — can transfer that analytical capacity to anything. A child who has been "exposed to" fifty topics has acquired impressions, not understanding.</p>
+<p>This is counter to most educational philosophy, which optimizes for coverage. Coverage produces the ability to recognize topics. Depth produces the ability to reason about them. These are not the same thing.</p>
+
+<h2 id="s-craft">The CRAFT Method</h2>
+<p>CRAFT is the analytical lens applied to every anchor work, adapted by developmental stage.</p>
+<table>
+<tr><th>Letter</th><th>Lens</th><th>Core Question</th></tr>
+<tr><td>C — Creation</td><td>Who made this? Under what constraints? What were they trying to do?</td><td>Every work is a human product with context.</td></tr>
+<tr><td>R — Reasoning</td><td>What arguments does the work make? What assumptions does it rest on?</td><td>Every work embeds a worldview.</td></tr>
+<tr><td>A — Architecture</td><td>How is it structured? Why these choices and not others?</td><td>Structure is a decision, not an accident.</td></tr>
+<tr><td>F — Function</td><td>What does this work do to the reader/viewer? What effect was intended?</td><td>Works act on audiences; understand how.</td></tr>
+<tr><td>T — Trace</td><td>What influenced this? What did it influence? Where does it sit in the network?</td><td>Nothing exists in isolation.</td></tr>
+</table>
+
+<h3>CRAFT by Age</h3>
+<p><strong>Ages 0–3:</strong> Pre-CRAFT. The seed is pointing at things and narrating: "Look — someone drew all of these people. Every single one." This builds the C instinct: things are made by people.</p>
+<p><strong>Ages 4–7:</strong> Simplified CRAFT. Focus on F (Function) and C (Creation). "What is this story trying to show you?" "Who made this and why?" Don't name the method — just ask the questions naturally.</p>
+<p><strong>Ages 8–10:</strong> Name CRAFT explicitly. Walk through all five lenses with anchor works. Start with the easiest (F — "how did that scene make you feel and why?") and build to the hardest (T — "what influenced this creator?").</p>
+<p><strong>Ages 11+:</strong> Full CRAFT as an autonomous analytical habit. The goal is that they apply it unprompted.</p>
+
+<h2 id="s-targets">The Ten Targets</h2>
+<p>These define <em>who the child becomes</em>, not what they know. Knowledge is the vehicle; character is the destination.</p>
+<table>
+<tr><th>#</th><th>Target</th><th>What It Is</th></tr>
+<tr><td>1</td><td>Self-Efficacy</td><td>"I can figure this out." The belief, grounded in evidence, that effort produces results.</td></tr>
+<tr><td>2</td><td>Self-Compassion</td><td>The ability to fail without self-destruction. Analytical response to failure, not emotional collapse.</td></tr>
+<tr><td>3</td><td>Agency</td><td>"I choose, and I own the consequences." Not entitlement — ownership.</td></tr>
+<tr><td>4</td><td>Grit</td><td>Sustained effort through plateaus. The ability to keep going when progress is invisible.</td></tr>
+<tr><td>5</td><td>First-Principles Reasoning</td><td>Going down to axioms and rebuilding. Not "what does everyone believe?" but "what is actually true and why?"</td></tr>
+<tr><td>6</td><td>Obsessive Focus</td><td>The capacity for deep, sustained attention on one thing. The precondition for mastery of anything.</td></tr>
+<tr><td>7</td><td>Ambiguity Tolerance</td><td>Comfort with not knowing. The ability to hold uncertainty without rushing to false resolution.</td></tr>
+<tr><td>8</td><td>Genuine Curiosity</td><td>Intrinsic drive to understand. Not performance curiosity for adults — actual wonder.</td></tr>
+<tr><td>9</td><td>Verbal Intelligence</td><td>Precision with language. The ability to articulate complex thoughts, argue, persuade, and understand nuance.</td></tr>
+<tr><td>10</td><td>Physical Hardship Tolerance</td><td>Comfort with physical discomfort. Cold, heat, exertion, hunger. The body is not fragile.</td></tr>
+</table>
+
+<h2 id="s-models-overview">Mental Models — Overview</h2>
+<p>Mental models are cognitive frameworks — simplified representations of how something works — that allow reasoning about reality without processing everything from scratch. The goal is Munger's latticework: models from multiple disciplines (physics, biology, psychology, economics, history, information theory, game theory, complexity science) that reinforce each other and reveal cross-domain patterns.</p>
+<p>The developmental constraint is real. Abstract models require abstract reasoning, which requires prefrontal development not complete until mid-20s. Early models are concrete and experiential; abstract and probabilistic models come later.</p>
+<p>See each age tab for the specific models installed at that stage.</p>
+
+<h2 id="s-language">Language Strategy — OPOL in Madrid</h2>
+<p><strong>Configuration:</strong> Father speaks English exclusively. Mother, interna, school, social world: Spanish. School has some English instruction.</p>
+<p><strong>Principle:</strong> English is the minority language and must be the language of fun, emotional intimacy, and intellectual adventure — not instruction or correction. The content curriculum being English-dominant is a major asset: Avatar, Calvin & Hobbes, Roald Dahl, Harry Potter will all be consumed in English first.</p>
+<p><strong>When they reply in Spanish (age 4–5 onset):</strong> Don't correct. Continue in English. Forced production backfires; continued exposure works. The research is unambiguous.</p>
+<p><strong>Spanish content track:</strong> Mafalda (ages 7+), Borges (ages 16+), Spanish-language films and music. The interna should have a reading list for daytime Spanish input. See each age tab for specifics.</p>
+
+<h2 id="s-music-phil">Music — Dual-Track Philosophy</h2>
+<p>Musical instrument mastery is elevated to a first-class concern in this framework, not a supplementary activity. The goal: a child who can both read a classical score with precision AND improvise over jazz changes with expression. These are distinct but complementary cognitive skills — classical develops discipline, reading, structure, and interpretive depth; jazz develops ear, improvisation, real-time composition, and comfort with ambiguity.</p>
+<p><strong>Both tracks from the beginning.</strong> Most music education splits these artificially. Classical students can't improvise; jazz students can't sight-read. This framework trains both simultaneously.</p>
+`,
+
+// ===========================
+// AGE 0-1
+// ===========================
+'age-0-1': `
+<h1>Age 0–1: Neural Foundations</h1>
+<p class="subtitle">The prefrontal cortex is offline. You are wiring the substrate on which everything else will be built.</p>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Responsive caregiving.</strong> Respond promptly to distress. This does not spoil infants — the research is unambiguous. Reliability teaches "my actions produce results."</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Language saturation.</strong> Talk constantly. Narrate everything. Read aloud daily. English from you; Spanish from everyone else.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Sensory richness.</strong> High-contrast visuals, varied textures, music, outdoor exposure. The brain is building perceptual capacity.</div>
+</div>
+
+<h2 id="s-dev">Developmental Reality</h2>
+<p>You are not instilling virtues at this age. What you are doing is wiring the neural substrate. Secure attachment predicts more downstream outcomes than any activity or product.</p>
+<p><strong>The three real levers:</strong> (1) Responsive caregiving → secure attachment → emotional regulation → all virtue development. (2) Language saturation → vocabulary → reading → academic outcomes. (3) Sensory richness → neural connectivity → perceptual and cognitive capacity.</p>
+
+<h2 id="s-activity">Activity Map</h2>
+<table>
+<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
+<tr><td>Self-Efficacy seed</td><td>Respond consistently to signals. Reliability teaches "my actions produce results."</td><td>Lovevery Play Gym for graduated reach/grasp challenges.</td></tr>
+<tr><td>Self-Compassion seed</td><td>Soothe distress with warmth and physical contact. Teaches: emotional states are survivable.</td><td>Ergobaby 360 Carrier — hands-free contact.</td></tr>
+<tr><td>Agency seed</td><td>Let them reach, bat, grab, explore without constant redirection.</td><td>Replace hanging objects regularly — novelty maintains engagement.</td></tr>
+<tr><td>Curiosity seed</td><td>High-contrast visual input; varied sensory stimulation.</td><td>Montessori mobile sequence: Munari → Octahedron → Gobbi → Dancers.</td></tr>
+<tr><td>Focus seed</td><td>Don't interrupt sustained attention. If they're staring at something for 3 minutes, that IS the work.</td><td>Avoid overstimulating toy rotation. Fewer toys, more time with each.</td></tr>
+<tr><td>Physical seed</td><td>Tummy time, floor freedom, outdoor exposure to weather variation.</td><td>Baby Bjorn Bouncer. Outdoor blanket time daily regardless of weather.</td></tr>
+</table>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>May need more intense stimulation to engage. Bolder contrasts, more physical play, varied textures. Don't mistake calm for contentment — they may simply need more input.</div>
+
+<h2 id="s-models">Mental Models at This Stage</h2>
+<p>Pre-linguistic and experiential. Built through action and consequence, not words.</p>
+<table>
+<tr><th>Model</th><th>How It's Built</th></tr>
+<tr><td>Cause & Effect</td><td>Dominoes, stacking towers, water pouring — any toy with direct physical consequence.</td></tr>
+<tr><td>Object Permanence</td><td>Peek-a-boo, hiding objects under blankets, find the hidden toy.</td></tr>
+<tr><td>Categorization</td><td>Shape sorters, color grouping. "Find all the round ones."</td></tr>
+</table>
+
+<h2 id="s-content">Content</h2>
+<p><strong>Anchor:</strong> Richard Scarry's "Busy, Busy World" and "What Do People Do All Day?" — systems, categorization, scale. Every page is a dense information environment.</p>
+<p><strong>Read aloud:</strong> Anything with rhythm and repetition. The content matters less than the vocal patterns, prosody, and the ritual of reading together.</p>
+
+<h2 id="s-music">Music</h2>
+<p>Ambient exposure: play diverse genres throughout the day. Classical, jazz, bossa nova, flamenco — variety of rhythm, timbre, harmony. Sing to them. Rhythm shakers from 6 months. The brain is building the auditory architecture that all later music learning will use.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<p>None. No screens at this age.</p>
+
+<h2 id="s-language">Language</h2>
+<p>OPOL active: you speak English exclusively. All books you read are English. The interna reads Spanish books during the day. Singing in both languages. No correction — just immersion.</p>
+
+<h2 id="s-network">Network</h2>
+<p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
+
+<h2>Cultural Exposure</h2>
+<p>Travel is not yet educational — it's environmental. But the habits start now: children who travel early normalize novelty. Short trips within Spain: coast, mountains, other cities. The point is sensory range, not cultural education.</p>
+
+<h2 id="s-cadence">Weekly Cadence</h2>
+<div class="card-grid">
+<div class="card"><div class="card-title">Parent Layer (Evenings + Weekends)</div>
+<p>Evening: bath → reading aloud (English) → bedtime routine. Same sequence every night — predictability IS the lesson.</p>
+<p>Weekend: outdoor time together (parks, walks), sensory play, floor time with full attention. No phones during floor time.</p>
+</div>
+<div class="card"><div class="card-title">Interna Layer (Weekdays)</div>
+<p>Morning outdoor time regardless of weather. Tummy time / floor play. Spanish reading. Nap architecture (consistent times, dark room, white noise). Afternoon sensory variety. Simple: "Let them explore. Don't rescue too quickly. Go outside every day. Read these books."</p>
+</div>
+</div>
+
+<h2>Writing & Expression</h2>
+<p>Pre-writing begins with grasping. Fat crayons, chunky markers on large paper. The motor patterns that will become handwriting start here — the pincer grip, the controlled movement, the cause-and-effect of "I move my hand, a mark appears." No letters, no instruction. Just access to marking tools and surfaces.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
+
+<h2>Social Intelligence</h2>
+<p>Attachment is the foundation. Secure attachment (responsive, consistent caregiving) produces children who later navigate social complexity with confidence. This is not a "parenting style" — it's the empirically validated prerequisite for all subsequent social development. Respond to bids for attention. Be predictable. Be present.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Lovevery Play Gym</td><td>Graduated motor challenges. Best-designed play gym available.</td></tr>
+<tr><td>Montessori Mobile Set</td><td>Munari → Octahedron → Gobbi → Dancers. Visual development sequence.</td></tr>
+<tr><td>Richard Scarry — Busy World</td><td>Dense visual information. Systems and categorization from the start.</td></tr>
+<tr><td>Ergobaby 360 Carrier</td><td>Hands-free contact. Secure attachment infrastructure.</td></tr>
+<tr><td>Board books — 20+ in rotation</td><td>English from you, Spanish from interna. Quantity of exposure matters.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Lovevery Play Gym</td><td>Toy</td><td>★★★★★</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories.</td></tr>
+<tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>★★★★★</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months.</td></tr>
+<tr><td>Montessori Munari Mobile</td><td>Toy</td><td>★★★★★</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise.</td></tr>
+<tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>★★★★★</td><td>Dense visual systems. Every page is an information environment.</td></tr>
+<tr><td>Richard Scarry — What Do People Do All Day</td><td>Book</td><td>★★★★★</td><td>How a town works as a system. Categorization, roles, interdependence.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>High-Contrast Cards (Wee Gallery)</td><td>Toy</td><td>★★★★</td><td>Birth–3 months. Black/white art cards. Visual development before color vision matures.</td></tr>
+<tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>★★★★</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins.</td></tr>
+<tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>★★★★</td><td>8–12 weeks. Gradient of a single color. Depth perception development.</td></tr>
+<tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>★★★★</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion.</td></tr>
+<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>★★★★</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce).</td></tr>
+<tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>★★★★</td><td>The canonical bedtime book. Repetition, pattern, ritual.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
+<tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>★★★★★</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal.</td></tr>
+<tr><td>Brio Wooden Trains</td><td>Toy</td><td>★★★★</td><td>Classic wooden train system. Wooden track pieces invite open-ended play. Spatial reasoning from the start.</td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere.</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years.</td></tr>
+<tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>★★★</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action.</td></tr>
+<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>★★★</td><td>Comfort object. Texture variety. Secure attachment support.</td></tr>
+<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>★★★</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor.</td></tr>
+</table>
+`,
+
+// ===========================
+// AGE 1-3
+// ===========================
+'age-1-3': `
+<h1>Age 1–3: Language Explosion & Motor Mastery</h1>
+<p class="subtitle">Language is arriving. Motor control is developing rapidly. The world becomes manipulable.</p>
+
+<div class="note-box">
+<h3>Sub-Phases Within This Range</h3>
+<p><strong>12–18 months:</strong> Walking arrives. First words. Primary job: safe exploration of physical space. Minimal structured activity — environment IS the curriculum. Balance bike introduction at 18 months.</p>
+<p><strong>18–24 months:</strong> Language explosion (50 → 300+ words). Parallel play with peers. Practical life activities begin (pouring, dressing attempts, "helping" with cooking). Tantrums arrive — emotional regulation is pre-cognitive at this stage; stay calm and present.</p>
+<p><strong>24–36 months:</strong> Sentences form. Imagination ignites. "Why?" begins. Real choices become possible. This is the transition to structured learning — shape sorters, categorization games, first puzzle books. Where's Wally becomes genuinely engaging. Reading sessions can extend to 15–20 minutes.</p>
+</div>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Language density.</strong> Talk, read, narrate constantly in English. This is the critical window for bilingual vocabulary building.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Autonomy scaffolding.</strong> Let them do things badly. Dressing, pouring, choosing. Resist the urge to help.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Outdoor physical challenge.</strong> Climbing, running, falling, getting up. Build the physical confidence substrate.</div>
+<div class="priority-item"><span class="priority-num">4</span><strong>Reading ritual.</strong> Minimum 3 books at bedtime. English from you. Make it the best part of the day.</div>
+</div>
+
+<h2 id="s-activity">Activity Map</h2>
+<table>
+<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
+<tr><td>Self-Efficacy</td><td>Let them struggle. Pouring water, putting on shoes, stacking blocks. Don't complete their tasks. Narrate: "You're figuring it out."</td><td>Montessori practical life: child-sized pitcher, easy-on shoes, step stool.</td></tr>
+<tr><td>Self-Compassion</td><td>When they fall or fail, stay calm. "You fell. That happens. Want to try again?" Not "oh no, are you okay?!" — which teaches that falling is alarming.</td><td>Model your own minor failures. "Oops, I dropped it. Let me try again."</td></tr>
+<tr><td>Agency</td><td>Offer real choices within bounds: "Red shirt or blue shirt?" "Apple or banana?" Never fake choices.</td><td>Moonjar (age 3): start with coins. Tiny real decisions.</td></tr>
+<tr><td>Grit seed</td><td>Don't intervene for at least 90 seconds when they're struggling with a task. Narrate the process, not the outcome.</td><td>Grimm's Rainbow, nesting cups, shape sorters — toys with clear but non-trivial goals.</td></tr>
+<tr><td>First-Principles seed</td><td>"Why?" is arriving. Answer seriously. "Why is the sky blue?" deserves a real answer, even simplified.</td><td>DK My First series. Eric Carle books (cause-and-effect narrative).</td></tr>
+<tr><td>Focus</td><td>Protect attention. If they're absorbed in sand play for 20 minutes, don't interrupt for a "better" activity. That IS the best activity.</td><td>Reduce toy clutter. 5–8 toys available, rotated weekly. Fewer options = deeper engagement.</td></tr>
+<tr><td>Curiosity</td><td>Follow their attention. If they're fascinated by ants, stop and watch ants for 30 minutes. Your schedule is less important than their wonder.</td><td>Magnifying glass. Bug catching kit. Nature walks with no destination.</td></tr>
+<tr><td>Verbal Intelligence</td><td>Use adult vocabulary, then define: "That's an excavator — it digs." Don't dumb down language. They absorb more than they produce.</td><td>Richard Scarry (labels everything). Where's Wally (visual search → verbal description).</td></tr>
+<tr><td>Physical</td><td>Outdoor daily regardless of weather. Climbing, jumping, running on uneven surfaces. Barefoot when safe.</td><td>Balance bike (from 18 months). Playground with challenge — not the safe toddler section.</td></tr>
+</table>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Respect the need for solitary play. Don't force sharing or group play at this age — parallel play is normal and healthy until ~3. Quiet reading time is not isolation; it's recharging.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Maximize social exposure. Playdates, park groups, music classes with other children. They learn through social interaction more than solitary exploration. The interna's social schedule matters more.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Emphasize construction toys, physical manipulation, large motor activities. Duplo, sand play, water play, climbing. Books with dense visual information (Scarry, Wally) over text-heavy narratives.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Lean into conversation, storytelling, word games. More books, more narration, more "why" conversations. They may talk early and voluminously — feed it.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Transitions are hard. Give warnings: "In 5 minutes we'll leave the park." Avoid overstimulating environments (loud, crowded). Smaller playgroups. Permission to leave when overwhelmed, without drama.</div>
+
+<h2 id="s-models">Mental Models</h2>
+<table>
+<tr><th>Model</th><th>How It's Built</th></tr>
+<tr><td>Cause & Effect</td><td>Dominoes, stacking/knocking down, water play. "What happens if...?"</td></tr>
+<tr><td>Iteration</td><td>"That didn't work. What else could we try?" Don't rescue immediately.</td></tr>
+<tr><td>Categorization</td><td>Sorting by color, shape, size. "Find all the big ones."</td></tr>
+<tr><td>Scale / Size</td><td>Grimm's Rainbow, nesting cups, Duplo. Things have relative properties.</td></tr>
+<tr><td>Object Permanence (advanced)</td><td>Hide objects in sequences. Memory games. Things exist when hidden.</td></tr>
+</table>
+
+<h2 id="s-content">Content</h2>
+<p><strong>Primary anchors:</strong> Richard Scarry (systems, vocabulary, categorization), Where's Wally (visual search, sustained attention, pattern recognition).</p>
+<p><strong>Supplementary:</strong> Eric Carle, Julia Donaldson (Gruffalo series), Dr. Seuss (phonemic awareness in English), Sandra Boynton (rhythm and humor).</p>
+
+<h2 id="s-music">Music</h2>
+<p><strong>Active instruments:</strong> Xylophone, small drum, egg shakers, tambourine. Let them make noise with intention — rhythm emerges from chaos.</p>
+<p><strong>Exposure:</strong> Continue diverse genre rotation. Add: children's music with real musical quality — Raffi, Ella Jenkins. Avoid the algorithmically-generated nursery rhyme content on YouTube (it's designed for engagement, not musicality).</p>
+<p><strong>Classes:</strong> Consider Suzuki Early Childhood Education or a local music-and-movement class. The point is not instruction — it's rhythmic social experience.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<p>None. No screens before 3.</p>
+
+<h2 id="s-language">Language</h2>
+<p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>
+<p><strong>Interna:</strong> Should be reading Spanish picture books daily. Provide a list: Maisy (Lucy Cousins), Peppa Pig books in Spanish, Spanish nursery rhymes.</p>
+
+<h2 id="s-network">Network</h2>
+<p>Start building the family network deliberately. In Madrid: international school parent communities (even before enrollment), English-speaking playgroups, your own social circle's children. The 3–4 families you befriend now will likely be your children's first peer group for years.</p>
+
+<h2 id="s-religion">Spirituality</h2>
+<p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?"</p>
+
+<h2>Cultural Exposure</h2>
+<p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
+
+<h2 id="s-cadence">Weekly Cadence</h2>
+<div class="card-grid">
+<div class="card"><div class="card-title">Parent Evenings (2 hours)</div>
+<p>Arrive → 20 min active play (their choice) → dinner together (conversation, not screens) → bath → 3+ books in English → bedtime routine. Same sequence. Predictability is still the infrastructure.</p>
+</div>
+<div class="card"><div class="card-title">Weekends (Full days)</div>
+<p>Morning: outdoor adventure (park, nature walk, playground with challenge). Afternoon: one structured activity (museum, music class, cooking together) + free play. Evening: family reading time, extended bedtime ritual. One weekend day can be more unstructured — follow their lead entirely.</p>
+</div>
+<div class="card"><div class="card-title">Interna Weekdays</div>
+<p>Morning outdoor time (1.5+ hours). Practical life activities (helping with food prep, cleaning, dressing). Spanish reading (2–3 books). Nap. Afternoon: one outing or activity + free play. Key instruction: "Don't rush them. Don't rescue them. Let them struggle. Go outside."</p>
+</div>
+</div>
+
+<h2>Writing & Expression</h2>
+<p>Scribbling is pre-writing. Provide thick crayons, finger paints, chalk on pavement. Narrate their drawings: "Tell me about your picture." This builds the connection between marks and meaning. Dictation begins here too: they tell you a story, you write it down, they see their words become text. This is the seed of authorship.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Emotion vocabulary is the primary tool. "You look angry. Are you angry?" "That was scary." "You're so excited!" Name their emotions before they can — this gives them handles for experiences that would otherwise be overwhelming. Simple regulation techniques: deep breaths together (blow out the birthday candles), counting to five, hugging a specific comfort object. Post-tantrum, once calm: "What happened? You were angry because..." This builds the narrative-self connection.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Shape sorters, nesting cups, simple puzzles (4-12 pieces). Brio World wooden train layouts — the track-building IS spatial reasoning (which piece connects? does the loop close? what happens if I add a bridge?). Block towers with intentional collapse ("how tall before it falls?"). These are not toys — they are the physical instantiation of spatial logic.</p>
+
+<h2>Social Intelligence</h2>
+<p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Grimm's Rainbow + Nesting Cups</td><td>Open-ended, beautiful, teaches scale and spatial reasoning. Lasts years.</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Sustained visual attention. Search strategies. Revisitable for years.</td></tr>
+<tr><td>Balance Bike (Strider or Woom 1)</td><td>Balance before pedaling. Physical confidence and outdoor motivation.</td></tr>
+<tr><td>Duplo Large Set</td><td>Construction, spatial reasoning, iteration. Avoid themed sets — open-ended only.</td></tr>
+<tr><td>50+ Board Books (English & Spanish)</td><td>Quantity of language exposure is the variable that matters most.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Yoto Player</td><td>Equipment</td><td>★★★★★</td><td>Screen-free audio device. Full-size with make-your-own card capability. Primary audio device for ages 1–7. Durable, intuitive, English and Spanish content.</td></tr>
+<tr><td>Duplo Large Creative Box</td><td>Toy</td><td>★★★★★</td><td>Open-ended construction. Spatial reasoning, iteration, fine motor. Avoid themed sets.</td></tr>
+<tr><td>Richard Scarry — Cars and Trucks and Things That Go</td><td>Book</td><td>★★★★★</td><td>Systems, vocabulary density, Goldbug hidden-object search. The perfect 2-year-old book.</td></tr>
+<tr><td>Grimm's Rainbow (12-piece)</td><td>Toy</td><td>★★★★★</td><td>Gold standard for open-ended wooden play. Teaches scale, nesting, balance, spatial reasoning, creativity. Lasts through age 12+.</td></tr>
+<tr><td>Magna-Tiles (100-piece set minimum)</td><td>Toy</td><td>★★★★★</td><td>Magnetic construction tiles. Superior to Magformers in stability and structural possibilities. Open-ended 3D building.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★</td><td>Portable version for travel. Same functionality as Player, compact and durable. Portability essential for family trips.</td></tr>
+<tr><td>Strider 12 Sport Balance Bike</td><td>Equipment</td><td>★★★★</td><td>No pedals — balance first. Transforms outdoor time. From 18 months.</td></tr>
+<tr><td>Brio World Wooden Train System (Starter Set)</td><td>Toy</td><td>★★★★</td><td>Wooden track railway system. Open-ended construction, spatial reasoning, creativity. Grows with them through age 7+. Compatible with other track systems.</td></tr>
+<tr><td>Grimm's Nesting/Stacking Cups</td><td>Toy</td><td>★★★★</td><td>Scale, categorization, water play. Deceptively simple, endlessly re-engageable.</td></tr>
+<tr><td>Hape Shape Sorting Box</td><td>Toy</td><td>★★★★</td><td>Categorization, spatial reasoning, problem-solving. Frustration tolerance at its most basic.</td></tr>
+<tr><td>Eric Carle — Very Hungry Caterpillar + Brown Bear</td><td>Book</td><td>★★★★</td><td>Cause-effect (eating → growth), categorization, rhythm, colors.</td></tr>
+<tr><td>Dr. Seuss — Cat in the Hat, Green Eggs</td><td>Book</td><td>★★★★</td><td>Phonemic awareness in English. Rhyme, rhythm, memorizable patterns.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★</td><td>Visual search, sustained attention, pattern recognition. Re-engageable for years.</td></tr>
+<tr><td>Magna-Tiles 32-piece Starter</td><td>Toy</td><td>★★★</td><td>Magnetic construction. Bridge between Duplo and KAPLA. 3D spatial reasoning.</td></tr>
+<tr><td>Melissa & Doug Latches Board</td><td>Toy</td><td>★★★</td><td>Fine motor, cause-effect, problem-solving. Real latches with satisfying mechanism.</td></tr>
+<tr><td>Gruffalo — Julia Donaldson</td><td>Book</td><td>★★★</td><td>Rhythm, repetition, narrative structure. Strategy (the mouse outsmarts everyone).</td></tr>
+<tr><td>Sandra Boynton board books</td><td>Book</td><td>★★★</td><td>Humor, rhythm, animals. Moo Baa La La La, Pajama Time. Engagement through silliness.</td></tr>
+<tr><td>Plan Toys Sorting Bus</td><td>Toy</td><td>★★★</td><td>Shape sorting + wheels. Combines spatial reasoning with motor play.</td></tr>
+<tr><td>Aquaplay Water Table</td><td>Toy</td><td>★★★</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking.</td></tr>
+<tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>★★★</td><td>Interna reading list. Simple, repetitive, engaging in Spanish.</td></tr>
+<tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>★★★</td><td>Curiosity tool. Transforms any walk into an investigation.</td></tr>
+</table>
+`,
+
+// ===========================
+// AGE 4-7
+// ===========================
+'age-4-7': `
+<h1>Age 4–7: First Real Virtue Work</h1>
+<p class="subtitle">Abstract reasoning is emerging. Peer comparison begins. The first window where deliberate virtue cultivation produces real results.</p>
+
+<div class="note-box">
+<h3>Sub-Phases Within This Range</h3>
+<p><strong>4–5 years:</strong> School begins. Peer comparison starts ("am I good at this?"). Executive function actively being built through play. Instrument instruction can start. Martial arts can start. Reading readiness varies widely — don't push. Focus: protect play, start the niche search, begin the Socratic dinner ritual.</p>
+<p><strong>6–7 years:</strong> Reading fluency arrives (for most). Abstract reasoning emerging. Beast Academy becomes accessible. Chess becomes real. Longer hikes feasible. This is when the framework's deliberate virtue work starts producing visible results. Focus: deepen the niche commitment, extend reading sessions, introduce first real responsibilities.</p>
+</div>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Bedtime reading in English.</strong> Extended sessions — 30–45 minutes. Chapter books begin. This is language, bonding, content, and imagination in one activity.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Niche mastery activity launch.</strong> Identify the domain showing genuine pull (not compliance). Instrument, chess, martial art, or whatever produces flow. Resource it aggressively: best teacher available.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Dinner table Socratic ritual.</strong> Pick a character from whatever they're consuming. "What does [character] want? Why? Is that reasonable?" 10 minutes, every few days.</div>
+<div class="priority-item"><span class="priority-num">4</span><strong>Weekend physical challenge.</strong> Hiking 3–5 km, martial arts, swimming, cycling. Build physical confidence and hardship tolerance together.</div>
+</div>
+
+<h2 id="s-activity">Activity Map</h2>
+<table>
+<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
+<tr><td>Self-Efficacy</td><td>Graduated challenge in one real domain. Success → harder version. Praise process: "you kept trying" not "you're so smart."</td><td>Chess (Goula set + Murray & Cowan book) · LEGO Classic 10698 · Cooking with real ingredients</td></tr>
+<tr><td>Self-Compassion</td><td>Debrief failures analytically: "What went wrong? What would you try next?" Curiosity about failure, not comfort.</td><td>After the Fall (Santat) · The Most Magnificent Thing (Spires)</td></tr>
+<tr><td>Agency</td><td>Natural consequences operate without rescue. No jacket → cold. Post-mortem together, analytically.</td><td>Moonjar Save Spend Share Bank — €5–10/week to manage independently.</td></tr>
+<tr><td>Grit</td><td>One long-form commitment, 3–4 years minimum. The plateau is normal and survivable.</td><td>Primary instrument + teacher. OR martial art. One commitment, not five activities.</td></tr>
+<tr><td>First-Principles</td><td>Socratic at dinner. "Why do you think that?" "What if the opposite were true?" Start with story characters, generalize.</td><td>Beast Academy (math, age 6+) · Big Questions from Little People (Harris)</td></tr>
+<tr><td>Obsessive Focus</td><td>Protect and feed whatever they hyperfocus on. The obsession IS the curriculum.</td><td>If dinosaurs: Safari TOOB sets + DK Eyewitness. Any interest: Nat Geo Kids subscription. Museum memberships.</td></tr>
+<tr><td>Ambiguity Tolerance</td><td>Open-ended creative play with no right answer. Read books without moralizing the ending.</td><td>KAPLA Blocks 200-piece · Flotsam (Wiesner) · Journey Trilogy (Becker)</td></tr>
+<tr><td>Curiosity</td><td>Museums as regular practice. Your own visible wonder is the primary mechanism. Go with questions, leave with new ones.</td><td>Museum memberships (Natural History, Science, Art). Field trips: bakery, post office, fire station.</td></tr>
+<tr><td>Verbal Intelligence</td><td>Storytelling games at dinner. Explain-it-back after any film. Debate character decisions.</td><td>Rory's Story Cubes · Dixit · Roald Dahl complete works (read aloud)</td></tr>
+<tr><td>Physical Hardship</td><td>Cold-weather outdoor play. Long hikes. Martial arts with real contact.</td><td>Jiu-Jitsu (Gracie Bullyproof) or Muay Thai kids. Woom 3 bike. Deuter Junior 18L backpack — they carry their own water.</td></tr>
+</table>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>The niche mastery activity can be solitary (instrument practice, chess puzzles, drawing) rather than group-based. Reduce extracurricular scheduling — one activity per day maximum. Protect solo reading/building time as sacred, not as "doing nothing."</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team martial arts, group music classes, collaborative building projects. The dinner Socratic ritual may work better as a family debate format. Playdates are learning environments — use them.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>KAPLA and LEGO become primary curriculum vehicles. Beast Academy works well (visual/spatial math). Build physical models of story concepts. The content curriculum enters through making: build the Fire Nation, draw the Avatar world map.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Roald Dahl and Calvin & Hobbes will hit hard. Extend dinner conversations. Introduce simple debate: "Convince me that [character] was right." Writing stories begins — provide journals, not prompts.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Martial arts selection matters — avoid aggressive dojos. Jiu-Jitsu (ground-based, technical) over Muay Thai (striking). Hiking difficulty should ramp slowly. Cold exposure is VOLUNTARY — model it enthusiastically but never force. "I'm going to splash cold water on my face — want to try?"</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>Push harder on physical challenges. Longer hikes, colder conditions, more demanding martial arts. They need more intensity to reach the productive discomfort zone.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Don't fight the breadth before age 7. Let them sample widely: 6 months of chess, then 6 months of drawing, then instruments. The long-term commitment can wait. Track what produces the deepest engagement — that's the signal for specialization.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>This child is your dream student. Feed the obsession mercilessly. If it's dinosaurs for 18 months straight, go to paleontology museums, buy university textbooks with pictures, watch documentaries. Don't redirect — deepen.</div>
+
+<h2 id="s-models">Mental Models</h2>
+<table>
+<tr><th>Model</th><th>How to Introduce</th></tr>
+<tr><td>Inversion</td><td>"What if the villain was right?" "What if nobody followed any rules?" Calvin & Hobbes: Calvin constantly inverts social norms.</td></tr>
+<tr><td>Incentives</td><td>"Why does that character want that?" After every story. Not rhetorical — reason it out together.</td></tr>
+<tr><td>Systems / Interdependence</td><td>Field trips: "What happens if the baker doesn't bake? Then what?" Avatar: the four nations as an interdependent system.</td></tr>
+<tr><td>Circularity / Feedback</td><td>Plant growth cycles, weather, "if you water it every day, it grows, and then what?"</td></tr>
+<tr><td>Simple Probability</td><td>Dice games. "Which number will come up most?" Don't over-explain — plant the concept.</td></tr>
+</table>
+
+<h2 id="s-content">Content & Universes</h2>
+<p><strong>Primary anchors:</strong> Avatar: The Last Airbender (own on Blu-ray, don't rely on streaming). Calvin & Hobbes Complete Collection (Fantagraphics 3-vol hardcover — Sunday strip compositions require the large format).</p>
+<p><strong>Supplementary:</strong> Studio Ghibli — Totoro → Kiki → Spirited Away in that order. Roald Dahl complete works (read aloud — morality is deliberately provocative; use it for discussion).</p>
+<p><strong>Spanish track:</strong> Introduce Mafalda (age 7+) — the Argentine Calvin & Hobbes. Social commentary through a child's voice, culturally proximate, Spanish-language.</p>
+
+<h2 id="s-music">Music</h2>
+<p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
+<div class="music-track">
+<div>
+<h4>Classical / Reading Track</h4>
+<p>Instrument selection: <strong>Piano</strong> is the best first instrument (visual layout of theory, both hands independent, harmonic). Alternative: violin (Suzuki method) or ukulele.</p>
+<p>Staff notation from day one. Scales, simple pieces, sight-reading exercises. Weekly lesson with a teacher who demands precision.</p>
+<p>Daily practice: 15–20 minutes, same time each day, non-negotiable.</p>
+</div>
+<div>
+<h4>Jazz / Ear / Improv Track</h4>
+<p>Parallel from the start: ear training — play a note, they sing it back. Play a 3-note phrase, they repeat it.</p>
+<p>Call-and-response games. "I play this, you play something back." No wrong answers — build comfort with musical spontaneity.</p>
+<p>Clap rhythms, sing melodies by ear, make up songs together.</p>
+</div>
+</div>
+<p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Café Central.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
+<p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
+<p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
+
+<h2 id="s-build">Building & Entrepreneurship</h2>
+<p><strong>Build:</strong> Physical construction — KAPLA, LEGO without instructions, woodworking with real tools at 6–7 (supervised, real saw and hammer, not plastic). The pride of making something real and functional.</p>
+<p><strong>Monetize:</strong> Moonjar system — save, spend, share. Weekly allowance of €5–10, real decisions with real consequences. "You spent it all on candy. That means no money for the toy next week. That's what happened." No bailouts.</p>
+
+<h2 id="s-religion">Spirituality & Religion</h2>
+<p>Bible stories and Greek myths as narrative — the same way they consume Avatar. Noah's Ark, David and Goliath, Odysseus, Theseus and the Minotaur. These are humanity's oldest stories; treat them as rich narrative, not doctrine.</p>
+<p>Questions about death, God, existence: engage seriously. "Some people believe X. Other people believe Y. What do you think?" Model intellectual humility about the biggest questions.</p>
+
+<h2 id="s-network">Network</h2>
+<p><strong>First institutional affiliations.</strong> The martial arts dojo, the music school, the chess club — these are network decisions as much as skill decisions. Choose institutions where the other families value something seriously.</p>
+<p><strong>Peer selection:</strong> One or two children who are observably ahead of them in some domain. Not to create competition — to normalize high performance as something peers do.</p>
+<p><strong>Madrid-specific:</strong> Chess clubs (Club de Ajedrez Madrid), British Council youth programs, music conservatory preparation programs, international school extracurriculars.</p>
+
+<h2 id="s-cadence">Weekly Cadence</h2>
+<div class="card-grid">
+<div class="card"><div class="card-title">Parent Evenings (2 hours)</div>
+<p>Arrive → 15 min free play / connection → dinner (Socratic conversation 2–3x/week) → instrument practice (15–20 min, parent present) → reading aloud 30–45 min → bed.</p>
+</div>
+<div class="card"><div class="card-title">Weekends</div>
+<p>Saturday: Morning physical activity (hike, martial arts, cycling) → afternoon museum/cultural outing OR deep play at home → evening: family film night (Avatar episode, Ghibli, chosen content).</p>
+<p>Sunday: One structured activity (chess, music, sport) + extended unstructured time. Follow their lead for at least 2 hours — genuinely, not performatively.</p>
+</div>
+<div class="card"><div class="card-title">Interna Weekdays</div>
+<p>School. After school: outdoor play (1+ hour), snack, Spanish reading, practical life activity (cooking, cleaning with them), free play. Instrument practice if not done in evening. Key: protect unstructured outdoor time.</p>
+</div>
+</div>
+
+<h2>Writing & Expression</h2>
+<p>Daily journal, even if it's a drawing with one sentence. The habit matters more than the quality. Letters to grandparents (in English and Spanish) — writing with a real recipient teaches that writing is communication, not assignment. Story dictation for ambitious narratives: they tell, you transcribe, they illustrate. By 6-7, they write their own short stories.</p>
+<p>The Yoto Player becomes a writing tool too: after listening to a story, "What happened? Tell me in three sentences." This bridges listening comprehension to written expression.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
+
+<h2>Emotional Intelligence</h2>
+<p><strong>Critical window.</strong> Name-it-to-tame-it: naming an emotion literally reduces amygdala activation (Lieberman et al., 2007). Teach zones of regulation — color-coded energy levels (blue = low/sad, green = calm/ready, yellow = anxious/excited, red = angry/explosive). Practice recognizing physiological signals: "My stomach feels tight when I'm nervous. My face gets hot when I'm angry."</p>
+<p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
+
+<h2>Ethics & Moral Reasoning</h2>
+<p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning.</p>
+
+<h2>Coding & Computational Thinking</h2>
+<p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
+
+<h2>Social Intelligence</h2>
+<p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
+
+<h2>Body & Mind</h2>
+<p>"Exercise makes you smarter" — stated plainly, because it's true. Running or active play before focused work (reading, music practice) measurably improves attention. Morning outdoor time before school sets the neurochemical stage for the day. This isn't health advice; it's cognitive optimization.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Nature journal: draw and describe one thing observed outdoors each week. Ecosystem questions: "What does the ant eat? What eats the ant? What would happen if there were no ants?" Seasonal observation across a full year — tracking the same tree or garden patch through all four seasons teaches systems thinking before you name it.</p>
+
+<h2>History</h2>
+<p>History as story at this age. "Who built this castle? When? Why?" Historical picture books and timeline awareness — "a long, long time ago, before cars, before electricity." Usborne history encyclopedias for browsing. The goal is temporal awareness: things were different before, and specific people made specific choices that changed things.</p>
+
+<h2>Teaching & Explanation</h2>
+<p>Not formal yet, but the instinct begins: "Can you show your little brother how to do that?" When they explain something, resist correcting — let them practice the act of explanation. By 6-7: "You learned how this works. Now explain it to me like I don't know anything." This is proto-Feynman technique.</p>
+
+<h2>Cultural Travel</h2>
+<p>Europe by car and train — deliberate. Paris, Rome, London, Berlin, Amsterdam. One international trip per year minimum. Before the trip: "Where are we going? Show me on the map. What language do they speak? What do they eat?" After: "What was different from Madrid? What was the same?" These debrief questions build comparative cultural thinking.</p>
+<p>First non-European destination by age 7 if possible — Morocco, Turkey, or similar. The cognitive shock of a genuinely different culture is worth more than ten European trips. Madrid itself is a cultural education: use it. Retiro, the Rastro, neighborhood diversity, the rhythm of a European capital.</p>
+
+<h2>Service & Empathy</h2>
+<p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is ethics made physical.</p>
+
+<h2 id="s-intensives">Summer Intensives</h2>
+<p>Summer is for deep dives that don't fit the regular schedule. 2–3 week immersions in a domain they're already drawn to. These are not resumes — they're flow.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Nature Immersion Week</div><p>A week at a mountain campo or nature retreat. Daily hikes, outdoor cooking, bug observation, stream exploration. No tech except maybe camera for nature photography. The goal: genuine comfort with wild places.</p></div>
+<div class="card"><div class="card-title">Intensive Swim Camp</div><p>2 weeks focused on water competence. Beyond school swimming — real distance, open water, survival skills. Builds physical confidence and hardship tolerance together.</p></div>
+<div class="card"><div class="card-title">Art & Building Camp</div><p>A week of serious construction or art instruction. Woodworking intensive, pottery wheel, large-scale LEGO architecture, mural painting. Something they produce that they're proud of.</p></div>
+</div>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Avatar TLA Blu-ray + Calvin & Hobbes hardcover set</td><td>Primary anchor universes. Own them — don't depend on streaming.</td></tr>
+<tr><td>Instrument + teacher</td><td>Piano, violin, or ukulele. Best teacher you can afford. This is a 10-year commitment.</td></tr>
+<tr><td>Jiu-Jitsu or martial arts enrollment</td><td>Physical hardship, discipline, ego management. Real contact, real technique.</td></tr>
+<tr><td>Beast Academy subscription (age 6+)</td><td>Math that's genuinely difficult. Builds first-principles reasoning through problem-solving.</td></tr>
+<tr><td>KAPLA Blocks 200-piece</td><td>Open-ended construction with a high ceiling. Still useful at age 12.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>★★★★★</td><td>Primary anchor universe. Own it physically — don't rely on streaming.</td></tr>
+<tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>★★★★★</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format.</td></tr>
+<tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>★★★★★</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td></tr>
+<tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>★★★★★</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6.</td></tr>
+<tr><td>Roald Dahl Complete Works</td><td>Book</td><td>★★★★★</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>★★★★</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression.</td></tr>
+<tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>★★★★</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12.</td></tr>
+<tr><td>Kala KA-15S Ukulele</td><td>Equipment</td><td>★★★★</td><td>Correctly sized for small hands. Durable, stays in tune. Good starter instrument.</td></tr>
+<tr><td>Goula Magnetic Chess Set</td><td>Toy</td><td>★★★★</td><td>Correctly sized, portable, magnetic. Start with kings and pawns only.</td></tr>
+<tr><td>Chess for Children — Murray & Cowan</td><td>Book</td><td>★★★★</td><td>Best introductory chess book for this age.</td></tr>
+<tr><td>Woom 3 or Prevelo Alpha Two Bike</td><td>Equipment</td><td>★★★★</td><td>Proper geometry for confident riding. Size up as needed.</td></tr>
+<tr><td>Mafalda — Quino (Spanish)</td><td>Book</td><td>★★★★</td><td>Age 7+. Argentine Calvin & Hobbes. Social commentary through child's voice. Spanish-language anchor.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
+<tr><td>Museum Memberships (Natural History, Science, Art)</td><td>Service</td><td>★★★</td><td>Annual membership pays for itself in 2 visits. Come with questions, leave with new ones.</td></tr>
+<tr><td>DK Eyewitness Series</td><td>Book</td><td>★★★</td><td>Visual density, depth, re-engageable reference. Match to their current obsession.</td></tr>
+<tr><td>LEGO Classic Large Creative Box 10698</td><td>Toy</td><td>★★★</td><td>Open-ended construction. Avoid sets with one correct outcome.</td></tr>
+<tr><td>Thames & Kosmos Kids First Science Lab</td><td>Toy</td><td>★★★</td><td>Real experiments at child scale. Better than baking soda kits.</td></tr>
+<tr><td>Rory's Story Cubes (all sets)</td><td>Game</td><td>★★★</td><td>Roll dice, tell a story. Mix Original + Actions + Voyages. Verbal intelligence through play.</td></tr>
+<tr><td>Dixit</td><td>Game</td><td>★★★</td><td>Surreal imagery card game for story-making. Ambiguity tolerance through play.</td></tr>
+<tr><td>Moonjar Save Spend Share Bank</td><td>Toy</td><td>★★★</td><td>Three-compartment bank. Real money, real decisions, real consequences.</td></tr>
+<tr><td>After the Fall — Dan Santat</td><td>Book</td><td>★★★</td><td>Humpty Dumpty sequel. Fear of trying again after failure — the arc IS the lesson.</td></tr>
+<tr><td>The Most Magnificent Thing — Ashley Spires</td><td>Book</td><td>★★★</td><td>Failure, frustration, stepping back, returning with perspective.</td></tr>
+<tr><td>Ology Series (Dragonology, Wizardology, Egyptology)</td><td>Book</td><td>★★★</td><td>Fictional reference books modeling how knowledge is organized. Treat as real.</td></tr>
+<tr><td>Journey Trilogy — Aaron Becker</td><td>Book</td><td>★★★</td><td>Wordless adventure. Open-ended visual storytelling. No resolution offered.</td></tr>
+<tr><td>Nat Geo Kids Magazine (subscription)</td><td>Service</td><td>★★★</td><td>Curiosity-driven nonfiction. Monthly arrival maintains engagement.</td></tr>
+<tr><td>Deuter Junior 18L Backpack</td><td>Equipment</td><td>★★★</td><td>They carry their own water and snacks. Physical ownership of responsibility.</td></tr>
+<tr><td>Muay Thai Kids Class</td><td>Service</td><td>★★★</td><td>Real contact, real technique, real pads. Alternative to Jiu-Jitsu.</td></tr>
+<tr><td>Brio World Wooden Train System</td><td>Toy</td><td>★★★</td><td>Wooden track railway. Open-ended construction, spatial reasoning, persistence. Escalate from basic to advanced track sets. Lasts through age 10+.</td></tr>
+<tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>★★★</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty.</td></tr>
+</table>
+`,
+
+// ===========================
+// AGE 8-10
+// ===========================
+'age-8-10': `
+<h1>Age 8–10: Structural Thinking</h1>
+<p class="subtitle">Abstract reasoning begins in earnest. Models can be named and discussed explicitly. The niche mastery commitment should now be deep.</p>
+
+<div class="note-box">
+<h3>Sub-Phases</h3>
+<p><strong>8–9:</strong> Reading fluency is established. Can sustain chapter books (Harry Potter). Chess and strategy games become genuinely engaging. First real code (Scratch). The niche mastery activity should now be 3+ years in — the plateau arrives and tests commitment. First competition experiences.</p>
+<p><strong>9–10:</strong> Abstract reasoning unlocks model naming. Can discuss "opportunity cost" and "feedback loops" explicitly. Python transition from Scratch. First build projects that work. Pre-adolescent identity begins. Independence in daily routine management increases significantly.</p>
+</div>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Niche mastery — deep investment.</strong> By now the domain should be clear. Resource it: better teacher, competitions, exposure to people who are excellent at it.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Reading together → reading alongside.</strong> Transition from reading aloud to shared reading. Same book, discussed at dinner. Start Harry Potter, then Star Wars extended universe.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Mental model naming.</strong> Start using the terms: "That's opportunity cost." "That's a feedback loop." Name the thinking tools explicitly.</div>
+<div class="priority-item"><span class="priority-num">4</span><strong>First build project.</strong> Scratch → Python. Or physical: woodworking, electronics. Something that WORKS and does a thing.</div>
+</div>
+
+<h2 id="s-activity">Activity Map</h2>
+<table>
+<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
+<tr><td>Self-Efficacy</td><td>External validation entering: competitions, grading exams, performances. Frame as feedback, not identity.</td><td>Chess tournaments · ABRSM or equivalent music exams · Martial arts belt progression</td></tr>
+<tr><td>Self-Compassion</td><td>Competition losses are the curriculum. Debrief analytically: "What did your opponent do better? What will you change?"</td><td>Blank notebook — "Write about something that went wrong and what you actually learned." Not a commercial journal.</td></tr>
+<tr><td>Agency</td><td>Expand decision space. They choose their own extracurricular schedule within constraints. They manage their own practice time.</td><td>Weekly planning conversation: "What's your plan for practice this week?"</td></tr>
+<tr><td>Grit</td><td>The plateau arrives. They've been doing the instrument/sport for 3+ years. It's no longer fun-by-default. This is where grit is actually built.</td><td>Stories of mastery: biographies of people they admire who struggled. Not motivational — factual.</td></tr>
+<tr><td>First-Principles</td><td>Science experiments with prediction → test → explain. "What do you think will happen? Why? ... Were you right? Why not?"</td><td>AoPS Intro courses (math) · Thames & Kosmos experiment kits · Scratch programming</td></tr>
+<tr><td>Obsessive Focus</td><td>The niche should be producing flow states regularly. If it isn't, the wrong niche was chosen — reassess.</td><td>Whatever they're obsessed with: go deeper. University-level introductory content if they're ready.</td></tr>
+<tr><td>Ambiguity Tolerance</td><td>History: "Who wrote this? Why did their version survive? What were the other versions?"</td><td>Horrible Histories · "Why?" discussions about historical narratives</td></tr>
+<tr><td>Curiosity</td><td>Shift from parent-led museum visits to child-led investigations. "What do you want to find out?" before entering.</td><td>Brilliant.org (age 10+) · Science olympiad / math competition prep</td></tr>
+<tr><td>Verbal Intelligence</td><td>Debate practice. "Argue the other side." Writing: short essays on topics they care about. Not school essays — real arguments.</td><td>Debate club if available · Family "argue the opposite" game at dinner</td></tr>
+<tr><td>Physical Hardship</td><td>Multi-day hikes or camping. Cold water swimming (voluntary, modeled). Martial arts intensity increases.</td><td>Backpacking gear (child-sized). Multi-day family camping trips. Martial arts competition if ready.</td></tr>
+</table>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Competitions may be draining even when successful. Protect recovery time after tournaments/performances. Solo mastery activities (coding, chess puzzles, instrument practice) should be the majority of their skill-building time.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team-based competitions (debate, robotics, team chess). Study groups and practice partners. The social dimension of mastery becomes a motivator — use it.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Minecraft and Kerbal Space Program become primary learning vehicles. Coding through visual/game creation (Scratch → Pygame). Physical building projects: electronics kits, woodworking, model-making.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Debate and essay writing are natural fits. Harry Potter discussion goes deep — ethical dilemmas, character motivation analysis. History becomes fascinating through narrative — feed it.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Competition exposure should be gradual. Start with low-stakes events. Cold exposure remains voluntary — never coerced, never publicly compared to siblings. The analytical failure debrief must be genuinely curious, not interrogative.</div>
+
+<h2 id="s-models">Mental Models</h2>
+<p>Introduce the first three foundational models. These are tools they'll use constantly.</p>
+<table>
+<tr><th>Model</th><th>How to Introduce</th></tr>
+<tr><td>Second-Order Thinking</td><td>"Then what?" The habit of asking what happens AFTER the first consequence. Chess: every move cascades. "We cut all the trees. Then what? And then what?"</td></tr>
+<tr><td>Maps vs. Territory</td><td>"The word 'dog' doesn't bite." Maps are representations, not reality. History books are maps, not reality. Scientific models are tools, not truth. This is foundational to all other thinking.</td></tr>
+<tr><td>Inversion</td><td>"Instead of making the project better, what would make it worse? Now don't do those things." Applied to problem-solving: start by avoiding failure, then build toward success.</td></tr>
+</table>
+
+<h2 id="s-content">Content & Universes</h2>
+<p><strong>Primary anchors:</strong> Star Wars (original trilogy first, then prequels — the political decay arc is the curriculum). Harry Potter (read together, discuss ethical dilemmas extensively).</p>
+<p><strong>Supplementary:</strong> Minecraft as a systems sandbox. Calvin & Hobbes continues. Studio Ghibli deeper cuts (Princess Mononoke — moral ambiguity, no villain).</p>
+<p><strong>Spanish track:</strong> Mafalda continues. Begin age-appropriate Latin American literature. Historical content about Spain and Latin America.</p>
+
+<h2 id="s-music">Music</h2>
+<div class="music-track">
+<div>
+<h4>Classical Track</h4>
+<p>Progressing through graded repertoire. Sight-reading developing. Theory understanding: keys, scales, intervals, basic harmony.</p>
+<p>ABRSM or equivalent exams — external milestones. Target: Grade 3–4 by age 10.</p>
+<p>First ensemble: school orchestra, recital participation, chamber group if available.</p>
+<p>Practice: 30–45 min daily.</p>
+</div>
+<div>
+<h4>Jazz / Improv Track</h4>
+<p>Introduction to jazz vocabulary: blues scale, 12-bar blues structure, basic chord progressions (I-IV-V).</p>
+<p>Transcription begins: listen to a simple melody, play it back by ear.</p>
+<p>Improvisation exercises: play over a backing track, any notes at first, then constrained to a scale.</p>
+<p>Exposure: listen to Miles Davis (Kind of Blue), Bill Evans, Chet Baker — accessible entry points.</p>
+</div>
+</div>
+<p><strong>The dual-track payoff:</strong> By 10, they should be able to both read a piece from notation AND make up a melody on the spot. Most musicians their age can do one or the other. This combination is rare and compounds.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<p><strong>Permitted & recommended:</strong></p>
+<table>
+<tr><th>Game</th><th>What It Teaches</th></tr>
+<tr><td>Minecraft Survival</td><td>Resource management, planning, feedback loops, emergent creativity.</td></tr>
+<tr><td>Kerbal Space Program</td><td>Orbital mechanics, physics, iteration. This is aerospace engineering as play.</td></tr>
+<tr><td>Civilization VI</td><td>History, strategy, opportunity cost, long-term planning vs. short-term gain.</td></tr>
+<tr><td>Portal 1 & 2</td><td>Spatial reasoning, physics puzzles, dark humor, narrative sophistication.</td></tr>
+<tr><td>Chess (Lichess)</td><td>Strategy, pattern recognition, ego management. Online play against real opponents.</td></tr>
+</table>
+<p><strong>Protocol:</strong> Budgeted time (e.g., 45 min weekdays, 90 min weekends). Discussed analytically — "What's your strategy in Civ?" "What did you learn from that Kerbal failure?" Games are a tool, not a pacifier.</p>
+
+<h2 id="s-build">Building & Entrepreneurship</h2>
+<p><strong>Build:</strong> Scratch → Python transition. Make something that works: a calculator, a simple game, a quiz app. Physical projects: electronics (Arduino starter kit at 10), woodworking (birdhouse, shelf). The deliverable matters — something they can point to and say "I made that."</p>
+<p><strong>Monetize:</strong> First real exchange of value for money. Lemonade stand, selling something they made (art, baked goods), a small service (dog walking, car washing for neighbors). Lesson: money comes from solving someone else's problem.</p>
+<p><strong>Meta-learning begins:</strong> Introduce spaced repetition (Anki or physical flashcards) for anything they're memorizing. Teach the testing effect: "Quiz yourself instead of re-reading." Touch typing (target: 40+ WPM by age 10).</p>
+
+<h2 id="s-canon">Canon Knowledge — By End of This Phase</h2>
+<table>
+<tr><th>Domain</th><th>They Should Know</th></tr>
+<tr><td>Math</td><td>Mental arithmetic: multiply 2-digit numbers, percentages, basic fractions. Estimation as reflex.</td></tr>
+<tr><td>Geography</td><td>Every continent, major countries on a map. All European capitals. Major rivers, mountain ranges, oceans.</td></tr>
+<tr><td>History</td><td>Basic timeline: ancient civilizations → Greece → Rome → medieval → Renaissance → modern. Rough dates, correct sequence, basic causality.</td></tr>
+<tr><td>Science</td><td>How plants grow. Water cycle. Basic astronomy (planets, sun, moon, seasons). Evolution concept (variation + selection).</td></tr>
+<tr><td>Practical</td><td>Cook 2 simple meals. Swim competently. Ride a bike on roads. Touch-type at 40+ WPM. Read a map.</td></tr>
+</table>
+
+<h2 id="s-religion">Spirituality & Religion</h2>
+<p>Basic architecture of the five major world religions: what Christians, Muslims, Jews, Buddhists, and Hindus actually believe, and why. Not comparative religion as academic exercise — genuine curiosity about how billions of people make meaning.</p>
+<p><strong>In Madrid:</strong> Visit a mosque (Islamic Centre of Madrid), a synagogue (Synagogue of Madrid), a Buddhist temple. They already know Catholic churches from the environment. Make it a world tour of meaning-making.</p>
+
+<h2 id="s-network">Network</h2>
+<p><strong>Mentors become possible.</strong> The chess coach who was a titled player. The music teacher who performs professionally. The martial arts instructor with competition experience. Not enrichment instructors — practitioners. The child should see adult mastery up close.</p>
+<p><strong>Selective peer groups:</strong> Math competitions, chess tournaments, martial arts competitions, music festivals. These self-select for children who take something seriously.</p>
+<p><strong>Madrid:</strong> Real Sociedad Matemática Española youth competitions. Spanish Chess Federation youth program. Conservatory preparation programs. Science fairs.</p>
+
+<h2 id="s-cadence">Weekly Cadence</h2>
+<div class="card-grid">
+<div class="card"><div class="card-title">Parent Evenings</div>
+<p>Homework check (brief). Instrument practice (30 min, parent present for part). Dinner conversation (mental model naming 2–3x/week). Reading — now shared: same book, discuss at dinner. Coding/building time 2x/week (30 min, parent alongside).</p>
+</div>
+<div class="card"><div class="card-title">Weekends</div>
+<p>Saturday: Niche mastery activity (competition, lesson, or deep practice). Physical activity (hike, swim, martial arts). Gaming time (budgeted).</p>
+<p>Sunday: Build project time. Cultural outing (museum, concert, or exploration). Extended unstructured time. Family game night.</p>
+</div>
+</div>
+
+<h2>Writing & Expression</h2>
+<p>Weekly writing practice: one short essay or story. Start with a nature journal — observe, describe, reflect. Book reports evolve into book arguments: "I think X because..." rather than "This book is about..." Apply CRAFT to their own writing: "Who is your audience? What are you trying to do to them? How is your piece structured?"</p>
+<p>The standard: if they can't write it clearly, they don't understand it yet. Writing is not a school subject — it's the mechanism by which thinking becomes precise.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Data visualization literacy: read and create simple charts (bar, line, pie). "What story does this graph tell? What does it hide?" Photography as observation tool — composition, framing, what you choose to include/exclude. Mind mapping for projects. Sketch-noting: taking notes as a mix of words and drawings. For the spatial-processing child, this is often the unlock that makes academic material accessible.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Explain the amygdala hijack simply: "Your brain's alarm system goes off before your thinking brain catches up. That's why you say things in anger you don't mean." Journaling as regulation — writing about emotions reduces their intensity (Pennebaker's research). Breathing techniques as a learnable, practicable skill: box breathing (4-4-4-4) before tests, performances, difficult conversations. Identify personal triggers: "What situations reliably make you angry/anxious? Knowing the pattern is half the battle."</p>
+
+<h2>Ethics & Moral Reasoning</h2>
+<p>Consequences thinking: "Who gets hurt? Who benefits? Are they the same people?" Introduction to empathy as a reasoning tool, not just a feeling — "What would this feel like from their perspective?" Rules vs. principles: "Why does this rule exist? If the rule didn't exist, would the action still be wrong?" This is the seed of deontological vs. consequentialist thinking, unnamed.</p>
+
+<h2>Coding & Computational Thinking</h2>
+<p>Scratch (MIT). One project per month — a game, an animation, a quiz. The goal is thinking in algorithms, not learning syntax. Also: spreadsheet basics. Formulas, sorting, simple data analysis. A child who understands =SUM() and =IF() has grasped the essence of computation: input → rule → output. These are more transferable than any specific programming language.</p>
+
+<h2>Social Intelligence</h2>
+<p>Group dynamics awareness: "Who was the leader in that game? How did they become the leader? Did anyone else want to lead?" Active listening practice — repeat back what someone said before responding. Reading subtext: "She said she's fine. Do you think she's actually fine? What clues did you notice?" This is social pattern recognition, the same skill as reading a system.</p>
+
+<h2>Body & Mind</h2>
+<p>"Your brain and body are one system." Introduce the connection explicitly. Breathing exercises before tests. Physical warm-up before study sessions — even 10 minutes of movement measurably improves subsequent focus. Sleep is introduced as a cognitive tool: "You don't just rest when you sleep — your brain practices what you learned today."</p>
+
+<h2>History</h2>
+<p>History as story, but now with causal reasoning. Usborne encyclopedias give way to narrative histories. "Why did Rome fall?" — not one answer but many, interacting. Visits to historical sites (Madrid is dense with them) with discussion, not just observation. Timeline of Spain: Romans → Visigoths → Moors → Reconquista → Golden Age → decline. Not patriotism — case study in how civilizations rise, peak, and fall.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Formal ecology concepts: food webs, habitats, adaptation, natural selection as a mechanism. Climate basics — what is happening, why, what the evidence is. "Every system you study in this framework — economics, politics, culture — exists within the biosphere. The biosphere is the system that contains all other systems."</p>
+
+<h2>Teaching & Explanation</h2>
+<p>"Explain what you learned to a younger sibling or friend. If they don't understand, the problem is your explanation, not their intelligence." This is the core Feynman insight: teaching reveals the gaps in your understanding. One explanation per week of something they learned — at dinner, casually.</p>
+
+<h2>Cultural Travel</h2>
+<p>Travel with purpose, not tourism. Historical site visits tied to what they're learning (Rome after studying Rome, Athens after Greek mythology, Morocco after studying the Moors in Spain). One trip annually to a non-Western context: East Asia, the Americas, North Africa. The goal: calibrate their sense of "normal." A child who has eaten dinner with a family in Fez and a family in Tokyo has a fundamentally different model of human possibility than one who has only seen Madrid and beach resorts.</p>
+<p>Domestic deep-dives: Andalucía (Alhambra, Córdoba mosque — the Moorish legacy they're studying), Basque Country, Catalonia. Spain's internal diversity is a curriculum in itself.</p>
+
+<h2>Service & Volunteering</h2>
+<p>Local, supervised, sustained. Not a one-off charity drive — a recurring commitment. Food bank, animal shelter, elderly visits, park cleanup. The same place, repeatedly, so they see the system, not just the moment. "Why are these people here? What would fix this? Is our help actually helping?" These questions are more valuable than the service itself. Service without reflection is sentimentality; service with reflection is applied ethics.</p>
+<h2 id="s-intensives">Summer Intensives</h2>
+<p>Summer is for deep dives in their niche domain plus exploration. 1–2 week immersions that produce real skill development.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Coding Bootcamp (1 week)</div><p>Scratch to Python transition, or game modding, or web development intro. Real projects that work. Not a summer school — a focused deep dive.</p></div>
+<div class="card"><div class="card-title">Music Intensive/Masterclass</div><p>2 weeks with an advanced teacher or summer program. If they're showing real aptitude, this is where serious progress happens. Concert preparation.</p></div>
+<div class="card"><div class="card-title">History Deep-Dive</div><p>2-week immersion around a domain they're fascinated by. Visit museums, read age-appropriate sources, watch documentaries. Example: ancient Rome — visit ruins if possible, read adaptations of Caesar's Commentaries, see films.</p></div>
+<div class="card"><div class="card-title">Wilderness Camp</div><p>Multi-day backpacking or expedition camp. Learn navigation, camping skills, wilderness first aid. Build self-reliance and physical hardship tolerance.</p></div>
+</div>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Harry Potter complete set (English)</td><td>Primary anchor. Read together, discuss ethical dilemmas extensively.</td></tr>
+<tr><td>Star Wars Original Trilogy (physical media)</td><td>Primary anchor. Political decay, second-order consequences.</td></tr>
+<tr><td>Scratch → Python transition</td><td>First real code. Make something that WORKS.</td></tr>
+<tr><td>Brilliant.org subscription (age 10+)</td><td>Interactive science and math. Real difficulty, beautiful presentation.</td></tr>
+<tr><td>Blank notebook + quality pen</td><td>Replaces commercial journals. "Write about what went wrong and what you learned."</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td>Harry Potter complete series (English)</td><td>Book</td><td>Primary anchor. Ethical complexity increases with each book. Read together.</td></tr>
+<tr><td>Star Wars Original Trilogy 4K</td><td>Film</td><td>Primary anchor. Watch prequels second — the political decay arc is the curriculum.</td></tr>
+<tr><td>AoPS Introduction series (math)</td><td>Book</td><td>Intro to Algebra, Counting & Probability. Genuinely hard. Replaces Beast Academy.</td></tr>
+<tr><td>Kerbal Space Program</td><td>Game</td><td>Orbital mechanics as play. Physics education disguised as a game. Real aerospace engineering.</td></tr>
+<tr><td>Civilization VI</td><td>Game</td><td>History, strategy, opportunity cost, long-term vs. short-term tradeoffs.</td></tr>
+<tr><td>Portal 1 & 2</td><td>Game</td><td>Spatial reasoning, physics puzzles, dark humor, narrative sophistication.</td></tr>
+<tr><td>Brilliant.org</td><td>Service</td><td>Interactive courses in math, science, CS. Well-designed difficulty progression.</td></tr>
+<tr><td>Arduino Starter Kit</td><td>Equipment</td><td>Electronics + code. Physical computing — LED circuits, sensors, motors. Build things that work.</td></tr>
+<tr><td>Horrible Histories (complete series)</td><td>Book/Film</td><td>History as engaging narrative. Survivorship bias discussions built in.</td></tr>
+<tr><td>Lichess.org (free)</td><td>Service</td><td>Chess against real opponents. Clean interface, no ads, open source. Puzzles and analysis.</td></tr>
+<tr><td>Minecraft (Java Edition)</td><td>Game</td><td>Survival mode: resource management, planning, feedback loops, redstone = logic circuits.</td></tr>
+<tr><td>Anki (spaced repetition)</td><td>App</td><td>Free. For any memorization: geography, vocabulary, historical dates. Introduce the concept of spaced repetition.</td></tr>
+<tr><td>Princess Mononoke</td><td>Film</td><td>Moral ambiguity — no villain. Interdependence of industry and nature. CRAFT analysis candidate.</td></tr>
+<tr><td>Calvin & Hobbes (continues)</td><td>Book</td><td>Re-read at this age — they'll catch philosophy and social commentary they missed at 5.</td></tr>
+<tr><td>Telescope (Celestron FirstScope or similar)</td><td>Equipment</td><td>Night sky observation. Scale of universe made visceral. Weekend activity.</td></tr>
+<tr><td>Backpacking gear (child-sized pack, sleeping bag)</td><td>Equipment</td><td>Multi-day family camping. Physical hardship + self-reliance + nature immersion.</td></tr>
+<tr><td>Typing Club or Keybr.com</td><td>App</td><td>Touch typing practice. Target: 40+ WPM by age 10. Daily 10 min sessions.</td></tr>
+</table>
+`,
+
+// ===========================
+// AGE 11-13
+// ===========================
+'age-11-13': `
+<h1>Age 11–13: Probabilistic Thinking & Identity</h1>
+<p class="subtitle">Abstract reasoning fully available. Peer influence becomes dominant. Identity formation accelerates. The most critical period for intellectual independence.</p>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Protect the niche mastery through the identity crisis.</strong> Peers may mock depth. The commitment wavers. Stay the course — but listen for genuine signal vs. social pressure.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Epistemic independence.</strong> Teach them to evaluate sources, question authority (including yours), and hold uncertainty. This is the antidote to peer conformity.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Ship something real.</strong> A website, a game mod, a product sold, a performance, a competition result. External proof that their skills produce real-world outcomes.</div>
+<div class="priority-item"><span class="priority-num">4</span><strong>Conversations, not lectures.</strong> The relationship shifts. They need a thinking partner, not a teacher. Ask more, tell less.</div>
+</div>
+
+<h2 id="s-activity">Activity Map</h2>
+<table>
+<tr><th>Target</th><th>Core Approach</th></tr>
+<tr><td>Self-Efficacy</td><td>Real-world results: competition outcomes, published work, earned money. External validation that doesn't depend on parents.</td></tr>
+<tr><td>Self-Compassion</td><td>The social comparison engine is now running full blast. Counter with: "Compare yourself to who you were last year, not to someone else today."</td></tr>
+<tr><td>Agency</td><td>Expand autonomy significantly. They manage their own schedule, practice, homework. You consult, you don't direct.</td></tr>
+<tr><td>Grit</td><td>Year 5+ of the mastery commitment. The second plateau. This is where most people quit. Stories of professionals who survived this stage.</td></tr>
+<tr><td>First-Principles</td><td>"Who said that? Why should I believe them? What evidence would change my mind?" Apply to school content, news, social media claims.</td></tr>
+<tr><td>Obsessive Focus</td><td>The niche should be producing visible results now. If it is: double down. If not: honest conversation about whether this is the right domain.</td></tr>
+<tr><td>Ambiguity Tolerance</td><td>History as survivorship bias machine. "Who wrote this textbook? What got left out? What were the losers' versions?"</td></tr>
+<tr><td>Curiosity</td><td>Self-directed research projects. "You have a question — find the answer. Don't ask me, don't ask Google first. Think about it, then research."</td></tr>
+<tr><td>Verbal Intelligence</td><td>Formal debate. Essay writing with real arguments. The ability to argue a position they disagree with.</td></tr>
+<tr><td>Physical Hardship</td><td>Multi-day expeditions. Cold water swimming (voluntary). Martial arts competition. Physical challenge should now be self-motivated.</td></tr>
+</table>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>The peer pressure phase is especially painful for introverts. The niche mastery community becomes their social haven — other people who care about the same thing. Protect this. Don't push social expansion at the expense of depth relationships.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Peer influence risk is highest. The social group IS the environment. Institutional selection (debate team, robotics, music ensemble) is the highest-leverage decision — it determines the peer group.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>If they haven't specialized yet, this is the last comfortable window. By 13, breadth without depth starts to feel superficial to them. Help them identify the 2–3 things they're best at and begin narrowing. Not forced — facilitated.</div>
+
+<h2 id="s-models">Mental Models</h2>
+<p>Build on the foundational three from 8-10. Add five new models, then expand the epistemic toolkit.</p>
+<table>
+<tr><th>Model</th><th>How to Introduce</th></tr>
+<tr><td>Opportunity Cost</td><td>"You chose soccer, so we couldn't do the museum. Was that the right trade?" Every choice has a cost — the thing you give up. Apply to time, money, attention.</td></tr>
+<tr><td>Feedback Loops</td><td>Minecraft fire spreading (positive loop). Thermostat (negative). Predator-prey populations. Systems thinking begins here.</td></tr>
+<tr><td>Survivorship Bias</td><td>"Why do we think startups are glamorous?" The Abraham Wald airplane armor story — essential. Who's missing from the story?</td></tr>
+<tr><td>Incentives (Munger's Law)</td><td>"Show me the incentive, I'll show you the outcome." What are people actually trying to optimize for? (Not what they say, what they do.)</td></tr>
+<tr><td>Compounding</td><td>Investing. Reading 30 min/day vs. not over 10 years. Practice accumulation. Small consistent gains over time dominate.</td></tr>
+<tr><td>Probabilistic Thinking</td><td>Poker, sports statistics. "What's the probability? Not 'will it happen' — what's your actual estimate?"</td></tr>
+<tr><td>Confirmation Bias</td><td>"What would you have to see to change your mind about this?" Apply to everything.</td></tr>
+<tr><td>Regression to the Mean</td><td>Sports streaks. Test outliers. "Was the great season skill or luck?"</td></tr>
+<tr><td>Circle of Competence</td><td>"What do you actually understand vs. pretending to understand? Not shameful to not know — shameful to pretend."</td></tr>
+<tr><td>Goodhart's Law</td><td>"When a measure becomes a target, it ceases to be a good measure." Apply to school grades immediately.</td></tr>
+<tr><td>Selection Effects</td><td>"The school doesn't make students smart — it selects smart students. What's the difference?"</td></tr>
+<tr><td>Game Theory basics</td><td>Prisoner's Dilemma (play it). Nash equilibrium concept. "What happens when everyone acts in self-interest?"</td></tr>
+<tr><td>Hanlon's Razor</td><td>"Before assuming malice, could they just be wrong? Misinformed? Having a bad day?"</td></tr>
+</table>
+
+<h2 id="s-content">Content & Universes</h2>
+<p><strong>Primary anchors:</strong> Lord of the Rings (the survivorship bias of history, the corruption of power, the weight of responsibility). Fullmetal Alchemist: Brotherhood (equivalent exchange as model with limits, institutional corruption, the cost of knowledge).</p>
+<p><strong>Supplementary:</strong> Warhammer (probability, systems depth, narrative worldbuilding). The Hobbit (before LOTR if not done earlier). Classic science fiction: Asimov Foundation series (psychohistory as a model for thinking about civilizations).</p>
+<p><strong>Spanish track:</strong> Mafalda continues. García Lorca poetry. Age-appropriate Latin American short stories.</p>
+
+<h2 id="s-music">Music</h2>
+<div class="music-track">
+<div>
+<h4>Classical Track</h4>
+<p>Serious progression: ABRSM Grade 5–6 or equivalent. More challenging repertoire — musical expression, not just technical accuracy.</p>
+<p>Ensemble playing: school orchestra/band. Chamber music if available.</p>
+<p>Music theory: understand harmony, counterpoint basics. Composition attempts.</p>
+<p>Practice tracking: Use <strong>Tonara</strong> app for recording practice sessions and progress tracking. Provides analytics on improvement over time.</p>
+<p>Practice: 45–60 min daily.</p>
+</div>
+<div>
+<h4>Jazz / Improv Track</h4>
+<p>Improvisation over standards. Learn Real Book tunes. Understand ii-V-I progressions, modes.</p>
+<p>Jazz combo or jam sessions — playing with others who improvise.</p>
+<p>Backing tracks: Use <strong>iReal Pro</strong> for jazz backing tracks. Chord charts, playback in any key, tempo control. Essential tool for jazz musicians.</p>
+<p>Transcription: listen to solos they admire, write them out, learn them, then depart from them.</p>
+<p>Exposure: Coltrane, Monk, Herbie Hancock, Pat Metheny. Deeper listening.</p>
+</div>
+</div>
+<p><strong>Composition:</strong> Write their own pieces. This is where the two tracks converge — they have the theory (classical) and the ear (jazz) to create original music.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<table>
+<tr><th>Game</th><th>What It Teaches</th></tr>
+<tr><td>Factorio</td><td>The best systems-thinking game ever made. Logistics, optimization, compounding, bottleneck analysis.</td></tr>
+<tr><td>Into the Breach</td><td>Constrained tactical thinking. Every move matters. Perfect information game.</td></tr>
+<tr><td>Rimworld / Dwarf Fortress</td><td>Emergent narrative from systems. Probability, resource management, difficult decisions.</td></tr>
+<tr><td>Competitive game (if aptitude)</td><td>StarCraft II or a fighting game with real skill ceiling. The discipline of laddering = deliberate practice.</td></tr>
+</table>
+<p><strong>Protocol:</strong> More autonomy in time management, but total budget still exists. Discussion shifts: "What are you optimizing for in Factorio?" becomes a real systems conversation.</p>
+
+<h2 id="s-coding">Coding & Languages</h2>
+<p><strong>Python introduction:</strong> Start with "Automate the Boring Stuff with Python" by Al Sweigart (free online, excellent resource). Move from Scratch-style visual thinking to actual code. Script real tasks: file renaming, data processing, automation.</p>
+
+<h2 id="s-build">Building & Entrepreneurship</h2>
+<p><strong>Build:</strong> Ship something real. A website with actual visitors. A game mod used by others. A physical product sold at a school fair. A YouTube channel (curated, not vanity). The criterion: someone outside your family uses or values it.</p>
+<p><strong>Monetize:</strong> First real earnings. Tutoring younger children. Selling something they made. A service business. Lesson: "Value is created by solving someone else's problem, and money is how they signal gratitude."</p>
+<p><strong>Meta-learning:</strong> Feynman technique ("explain it to a 5-year-old"). Interleaving (mix practice types). Start a simple personal knowledge system — notebook or digital. The habit of writing down what you learn in your own words.</p>
+
+<h2 id="s-canon">Canon Knowledge — By End of This Phase</h2>
+<table>
+<tr><th>Domain</th><th>They Should Know</th></tr>
+<tr><td>Math</td><td>Algebra fluent. Probability and statistics basics. Compound interest calculation. Fermi estimation.</td></tr>
+<tr><td>Science</td><td>Evolution mechanism (variation, selection, inheritance). Basic chemistry. Cell biology. Scientific method as operational procedure, not poster.</td></tr>
+<tr><td>History</td><td>Causality: why Rome fell (the debate). Why the Industrial Revolution happened in Britain. Colonialism and Spain's role. 20th century arc.</td></tr>
+<tr><td>Geography</td><td>Every country on a map (roughly). Geopolitical fault lines. Where resources are concentrated. Population trends.</td></tr>
+<tr><td>Financial</td><td>Assets vs. liabilities. What a stock is. What inflation does. Rule of 72. Basic budgeting.</td></tr>
+<tr><td>Practical</td><td>Cook 5 meals without recipe. Swim in open water. Navigate with map/compass. Touch-type 60+ WPM. Basic first aid.</td></tr>
+</table>
+
+<h2 id="s-religion">Spirituality & Religion</h2>
+<p><strong>Philosophy of religion.</strong> Pascal's Wager (and its flaws). The problem of evil. Faith vs. evidence — are they incompatible? Theodicy. This maps onto the epistemic mental models: confirmation bias in belief, survivorship bias in religious history.</p>
+<p>"What would you have to see to believe? What would you have to see to stop believing?" — applied to any metaphysical claim.</p>
+
+<h2>Writing & Expression</h2>
+<p>Structured argumentation: thesis → evidence → counterargument → rebuttal. Every essay has a claim and something at stake. Blog or newsletter — even if the audience is just family. The real audience is their own thinking: "If you can't write it clearly, you don't understand it yet." Introduce revision as a practice: first drafts are thinking; final drafts are communication.</p>
+<p>Orwell's six rules from "Politics and the English Language" are introduced now: never use a long word where a short one will do. Never use the passive where you can use the active. If it is possible to cut a word out, cut it out.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Infographic creation — take data and make it visual. Design thinking basics: empathize → define → ideate → prototype → test. This is a mental model disguised as a design process. Diagramming systems: draw the feedback loop, draw the incentive structure, draw the org chart. For the child who thinks spatially, diagramming is their writing.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Full emotional literacy. They can distinguish shame from guilt (shame: "I am bad"; guilt: "I did bad" — very different implications). Anxiety from excitement (same physiological signature, different interpretation). Emotions as data, not commands: "You feel angry. That's information. What is the anger telling you? Now — what do you want to do about it, given that information?"</p>
+<p>Regulate before important moments: exams, difficult conversations, performances. This is a practicable skill, not a personality trait. Box breathing, progressive muscle relaxation, cognitive reappraisal ("what's another way to interpret this situation?").</p>
+
+<h2>Ethics & Moral Reasoning</h2>
+<p>Formal ethics introduction. Three frameworks, named:</p>
+<p><strong>Utilitarianism:</strong> "Greatest good for greatest number." Where does it fail? (It can justify sacrificing one person for many. Is that acceptable?)</p>
+<p><strong>Deontology:</strong> "Some things are wrong regardless of outcome." Where does it fail? (Rigid rules can produce absurd results in edge cases.)</p>
+<p><strong>Virtue ethics:</strong> "What would a good person do?" Where does it fail? (Who defines "good"? Circular reasoning risk.)</p>
+<p>The is-ought problem (Hume): "Just because something IS doesn't mean it SHOULD be." Apply to everything — social norms, laws, traditions. This is the single most important philosophical distinction for clear ethical thinking.</p>
+
+<h2>Coding & Computational Thinking</h2>
+<p>Python. Real scripts that do real things: rename files in bulk, scrape a webpage, automate a repetitive task, analyze a dataset. The leap from Scratch to Python is the leap from visual metaphor to textual precision. GitHub account — version control is a mental model (state, history, branching, merging). Introduction to terminal/command line. The computer is a tool they command, not a screen they consume.</p>
+
+<h2>Social Intelligence</h2>
+<p>Social calibration — the hardest skill of adolescence. Reading a room: who has status, what's the mood, when to speak, when to listen. Navigating disagreement without losing the relationship: "I disagree, and here's why — but I respect your position." Peer pressure analysis: "What's the actual cost of saying no here? Is that cost real or imagined?" This is applied game theory — they just don't know it yet.</p>
+
+<h2>Body & Mind</h2>
+<p>Exercise as cognitive tool, not just health maintenance. "30 minutes of cardio before studying measurably improves retention" — this is empirically established (Hillman et al., Ratey's research). Sleep's role in memory consolidation: "You don't just rest when you sleep — your brain replays and consolidates everything you learned." By this age, they should understand sleep architecture and manage their own bedtime. Sleep before 11pm on school nights is non-negotiable.</p>
+
+<h2>History</h2>
+<p>History as causal chains. Why do empires fall? Why do revolutions happen? What conditions produce golden ages? Sapiens (Harari) as gateway text — broad sweep, provocative claims, good for developing critical reading ("Where does Harari's argument weaken?"). Spain-specific: the Reconquista, the Golden Age, the Civil War — not patriotism but case studies in how ideology, economics, and power interact.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Systems ecology — connect to mental models. Feedback loops in nature: predator-prey cycles, carbon cycles, tipping points. Human impact as a systems problem, not a morality tale. "Every resource has a replenishment rate. What happens when extraction exceeds replenishment?" This is the framework's core mental model (stocks and flows, Meadows) applied to the biosphere.</p>
+
+<h2>Teaching & Explanation</h2>
+<p>Peer tutoring. Teach one topic per month to someone who doesn't know it — a classmate, a younger student, a parent. The Feynman technique, now named and deliberate: explain it simply, identify where your explanation breaks down, go back to the source, explain again. This is the meta-learning skill that accelerates all other learning.</p>
+
+<h2>Cultural Travel</h2>
+<p>Language immersion trips: 2 weeks in an English-speaking country (UK, US, Ireland) to stress-test their English in the wild. This is more valuable than years of classroom practice.</p>
+<p>First solo-adjacent travel: school exchange program, supervised group trip without parents. The independence matters as much as the destination. Cultural comparison becomes analytical: "Why is public transport better in Tokyo? Why do Americans eat differently? What does Spain do better than anywhere?" These are systems-thinking questions applied to civilizations.</p>
+
+<h2>Service & Volunteering</h2>
+<p>Sustained commitment to one cause — at least 6 months. They should see the system well enough to have opinions about what works and what doesn't. "The food bank helps people today. What would help them not need a food bank?" This is systems thinking applied to social problems.</p>
+<p>Peer-organized service: they plan and execute a project with friends. Leadership, logistics, impact measurement. This is entrepreneurship applied to social good — the skills transfer directly.</p>
+
+<h2 id="s-intensives">Summer Intensives</h2>
+<p>This is the age where 2-week residential programs become transformative. They're away from parents, with peers who share their intensity. This is a network accelerant and an identity-forming experience.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Language Immersion Abroad (2 weeks)</div><p>Intensive Spanish-language program outside Spain (Castilian or another language in a different country). Homestay or residential. Builds fluency and cultural confidence.</p></div>
+<div class="card"><div class="card-title">Entrepreneurship Camp</div><p>Design thinking, product development, pitch practice. Build a business idea from scratch. Some camps result in products that actually sell.</p></div>
+<div class="card"><div class="card-title">Competitive Math/Science Camp</div><p>Math competition prep or science olympiad intensive. 2 weeks with peers of equal or greater ability. Raises the ceiling on what they think is possible.</p></div>
+<div class="card"><div class="card-title">Music Festival/Workshop</div><p>Residential music camp in their instrument. Masterclasses, ensemble playing, performances, peer musicians. Accelerates skill and changes their sense of possibility.</p></div>
+</div>
+
+<h2 id="s-device">Technology & Attention</h2>
+<p>This is THE critical age for device management. Peers have phones. Social media pressure arrives.</p>
+<p><strong>Phone:</strong> Dumb phone or locked-down smartphone (no social media apps, no browser). The criterion: communication tool, not entertainment device. Full smartphone with trust-based monitoring at 14 earliest.</p>
+<p><strong>Social media:</strong> No accounts before 14. This is non-negotiable. The research on adolescent social media use and mental health is unambiguous. When they argue "everyone has it" — "I know. And I've read the research."</p>
+<p><strong>Computer:</strong> Shared space, not bedroom. Budgeted game time. Coding and building projects have separate, uncapped time — creation is not consumption.</p>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Lord of the Rings (book + extended films)</td><td>Primary anchor. Survivorship bias of history, corruption of power, weight of responsibility.</td></tr>
+<tr><td>Fullmetal Alchemist: Brotherhood</td><td>Primary anchor. Equivalent exchange, institutional corruption, cost of knowledge. 64 episodes.</td></tr>
+<tr><td>Factorio</td><td>The best systems-thinking game ever made. Logistics, optimization, compounding.</td></tr>
+<tr><td>Poor Charlie's Almanack — Munger</td><td>Mental models compendium. Read together and discuss. Not a book report — a live conversation.</td></tr>
+<tr><td>Personal knowledge management setup</td><td>Notebook or digital (Obsidian, Notion). Start writing down what they learn in their own words.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Art of Problem Solving (AoPS) Textbooks</td><td>Book</td><td>Prealgebra, Intro to Algebra, Intro to Counting & Probability. Competition-level math. The continuation from Beast Academy. Genuinely optimal for mathematically-inclined students.</td></tr>
+<tr><td>Automate the Boring Stuff with Python — Al Sweigart</td><td>Book/Online</td><td>Free online, excellent introduction to Python. Real-world automation tasks. Better than toy programming.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>Lord of the Rings (complete + Appendices)</td><td>Book</td><td>Primary anchor. The gold standard of worldbuilding and moral weight in fiction.</td></tr>
+<tr><td>Fullmetal Alchemist: Brotherhood (Blu-ray)</td><td>Film</td><td>Primary anchor. Best anime series for this age. Philosophical depth, real consequences.</td></tr>
+<tr><td>Factorio</td><td>Game</td><td>Systems, logistics, optimization, bottleneck analysis. Absorbs dozens of hours productively.</td></tr>
+<tr><td>Poor Charlie's Almanack</td><td>Book</td><td>Munger's mental models compendium. Foundation text for the lattice approach.</td></tr>
+<tr><td>Asimov — Foundation series</td><td>Book</td><td>Psychohistory as a model for thinking about civilizations. Science fiction as philosophy.</td></tr>
+<tr><td>Warhammer 40K (tabletop or lore)</td><td>Game</td><td>Deep systems with probability built in. Narrative worldbuilding. Community of serious players.</td></tr>
+<tr><td>Into the Breach</td><td>Game</td><td>Perfect-information tactical game. Every move matters. Clean design, deep strategy.</td></tr>
+<tr><td>Rimworld</td><td>Game</td><td>Colony simulation. Emergent narrative from systems. Probability, resource management, difficult moral decisions.</td></tr>
+<tr><td>ABRSM Grade 5–6 exam preparation</td><td>Service</td><td>External music milestone. Theory + performance assessment. Provides objective feedback.</td></tr>
+<tr><td>Real Book (jazz standards)</td><td>Book</td><td>The jazz musician's bible. Learn tunes, improvise over changes, play with others.</td></tr>
+<tr><td>Thinking, Fast and Slow — Daniel Kahneman</td><td>Book</td><td>Cognitive biases, heuristics, System 1 vs. System 2. Why we think the way we do and where we go wrong. Essential psychological foundation.</td></tr>
+<tr><td>García Lorca — Selected Poetry</td><td>Book</td><td>Spanish-language poetry. Duende, death, Andalusia. Cultural depth in the native language.</td></tr>
+<tr><td>Summer intensive programs (domain-specific)</td><td>Service</td><td>2-week residential program in their niche. Network accelerant. Peer exposure to serious peers.</td></tr>
+<tr><td>FIRST LEGO League → FTC robotics</td><td>Service</td><td>Team-based engineering competition. Build + code + present. Peer network selection mechanism.</td></tr>
+</table>
+`,
+
+// ===========================
+// AGE 14-16
+// ===========================
+'age-14-16': `
+<h1>Age 14–16: The Munger Lattice Begins</h1>
+<p class="subtitle">First-principles reasoning has been practiced long enough to produce real models. Time to name the framework explicitly and build original thinking.</p>
+
+<div class="priority-box">
+<h3>Priorities — Your 20 Hours/Week</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Intellectual partnership.</strong> You are now a thinking partner, not a teacher. Discuss ideas as equals. Disagree openly. Model changing your mind.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Real-world project with real users.</strong> An app, a newsletter, a small business, open-source contribution, a performance career. Something that produces value for strangers.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Primary source reading.</strong> Philosophy, religion, economics — from the originals, not summaries. Seneca, not a blog post about Stoicism.</div>
+<div class="priority-item"><span class="priority-num">4</span><strong>Autonomy expansion.</strong> They manage their own time, money, social life, and mistakes. You advise when asked. You intervene only for safety.</div>
+</div>
+
+<h2 id="s-models">Mental Models — The Core Eight</h2>
+<p>Eight foundational models that form the basis of integrated thinking. These are the ones they should deploy automatically in conversation and analysis.</p>
+<table>
+<tr><th>Model</th><th>Source</th><th>Application</th></tr>
+<tr><td>Bayesian Updating</td><td>Statistics</td><td>"Before the evidence, what did you believe? After, what do you believe? Did your update match the evidence strength?"</td></tr>
+<tr><td>Via Negativa</td><td>Taleb</td><td>Add value by removing what's wrong. "All I want to know is where I'll die, so I'll never go there." (Munger)</td></tr>
+<tr><td>Principal-Agent Problem</td><td>Economics</td><td>"Who is the agent? What are their actual incentives? Are those the same as the principal's?" Politics, medicine, business.</td></tr>
+<tr><td>Comparative Advantage</td><td>Ricardo</td><td>"You don't have to be the best at X — you have to be the best at X+Y."</td></tr>
+<tr><td>Emergence</td><td>Complexity</td><td>"You can know every ant perfectly and still not predict the colony." Markets, language, cities.</td></tr>
+<tr><td>Asymmetric Risk</td><td>Decision theory</td><td>"What's the worst case? Is it recoverable? Never risk ruin for marginal gain."</td></tr>
+<tr><td>Antifragility</td><td>Taleb</td><td>Systems that benefit from disorder. Distinct from resilience. Their development is antifragile if designed right.</td></tr>
+<tr><td>Mechanism Design</td><td>Game theory</td><td>"How do you design rules so self-interested people produce good outcomes?" Auctions, voting, markets.</td></tr>
+</table>
+
+<h2>Writing & Expression</h2>
+<p>Publishable-quality essays. College-level argumentation: nuanced thesis, evidence from primary sources, genuine engagement with counterarguments (not straw men). Their blog or newsletter should have real readers — even 20 is enough. Writing for an audience transforms the quality of thinking because the consequences of unclear writing become visible.</p>
+<p>Orwell's "Politics and the English Language" is now a style guide, not just a reading assignment. The six rules are internalized. Writing IS thinking at this stage — the essay is not a product of thought but the process of thought itself.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Data visualization that argues a point: create charts that tell a story, not just display numbers. UI/UX basics if they're building apps — the user's experience is a design problem. Photography as composition study: framing, light, negative space. For presentations: visual communication is a professional skill. A clear diagram can replace a thousand words of explanation.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Emotional intelligence as a leadership skill. Reading others' emotions accurately (not projecting your own). Managing emotional state under pressure: exams, performances, social conflict, romantic relationships. The ability to pause between stimulus and response is, by this age, the single most predictive skill for life outcomes (Mischel's marshmallow test, reinterpreted: it's not willpower, it's strategy).</p>
+
+<h2>Ethics & Moral Reasoning</h2>
+<p>Applied ethics in real contexts. "Your app collects user data. What are your obligations?" Technology ethics, business ethics, medical ethics — not abstract philosophy but the ethics of domains they're actually entering. "The business model is profitable. Is it ethical? Can something be legal and wrong? Can something be illegal and right?" Trolley problems are no longer hypothetical — they encounter real tradeoffs.</p>
+
+<h2>Coding & Computational Thinking</h2>
+<p>Choose a stack and build something real. Web app, mobile app, game, data analysis project — the specific technology matters less than the act of shipping. Open-source contribution: interact with maintainers, read other people's code, submit pull requests. This is network building disguised as coding. Understand version control, testing, deployment. A project that only runs on your machine isn't finished.</p>
+
+<h2>Social Intelligence</h2>
+<p>Leadership vs. dominance — one builds capacity, the other extracts it. Collaboration as a learnable skill: clearly defined roles, explicit communication, conflict resolution protocols. Networking as genuine relationship-building, not transaction: "What can I learn from this person?" before "What can this person do for me?" How to ask good questions in conversation — this is the highest-leverage social skill and the rarest.</p>
+
+<h2>Body & Cognition</h2>
+<p>Full mind-body integration. Breathing techniques for performance anxiety (box breathing before exams, auditions, speeches). Exercise programming for cognitive performance, not just physical fitness: "I run before I write because my brain works better after cardio." Understand caffeine, sleep debt, and recovery as a system. They should be designing their own physical-cognitive routine by now.</p>
+
+<h2>History</h2>
+<p>Thucydides (selected passages from the Peloponnesian War) — the first great work of political realism. "The strong do what they can, the weak suffer what they must." Ibn Khaldun's Muqaddimah (selections) — cycles of civilization, the most sophisticated pre-modern model of historical change. History as applied social science: what repeats, what doesn't, and why.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Climate science as applied physics, chemistry, and economics. The carbon cycle, greenhouse effect, feedback loops, tipping points — understood quantitatively, not just morally. Dune's ecology as a sophisticated model of planetary systems. Environmental ethics: "What do we owe future generations? How do you weigh present needs against future costs?" This is where ecology meets the ethics progression.</p>
+
+<h2>Teaching & Explanation</h2>
+<p>Mentor younger students. Run a study group. Create an explainer — video, blog post, tutorial — for something they know well. Teaching is now a tool for their own learning AND a form of value creation. A well-made tutorial has real users, just like their code projects.</p>
+
+<h2>Cultural Travel</h2>
+<p>Purposeful international exposure. Exchange programs (semester or summer). International competitions (science olympiad, Model UN, music festivals). Their reference class of "what's possible" must expand beyond Madrid and beyond Spain. A teenager who has spent a summer in Seoul, or worked at a startup in Berlin, or attended a research program at MIT, has a fundamentally different ambition architecture.</p>
+<p>Travel should now include intellectual tourism: visit a university you might attend, meet professionals in your field of interest, attend a conference. Not vacation — reconnaissance.</p>
+
+<h2>Service & Volunteering</h2>
+<p>Leadership role in a service organization — not just participating but organizing. The shift from "I help" to "I design systems that help." International service if possible: seeing poverty, healthcare, or education systems in developing contexts rewires the empathy circuitry from abstract to visceral.</p>
+<p>Critical lens: "Is this service actually effective? Am I here to help or to feel good about helping? What would effective altruism say about this use of my time?" Connect to ethics progression — good intentions are necessary but insufficient.</p>
+<h2 id="s-intensives">Summer Intensives</h2>
+<p>This is the age where 2-week residential programs become transformative. They're away from parents, with peers who share their intensity. This is a network accelerant and an identity-forming experience.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Language Immersion Abroad (2 weeks)</div><p>Intensive Spanish-language program outside Spain (Castilian or another language in a different country). Homestay or residential. Builds fluency and cultural confidence.</p></div>
+<div class="card"><div class="card-title">Entrepreneurship Camp</div><p>Design thinking, product development, pitch practice. Build a business idea from scratch. Some camps result in products that actually sell.</p></div>
+<div class="card"><div class="card-title">Competitive Math/Science Camp</div><p>Math competition prep or science olympiad intensive. 2 weeks with peers of equal or greater ability. Raises the ceiling on what they think is possible.</p></div>
+<div class="card"><div class="card-title">Music Festival/Workshop</div><p>Residential music camp in their instrument. Masterclasses, ensemble playing, performances, peer musicians. Accelerates skill and changes their sense of possibility.</p></div>
+</div>
+
+<h2 id="s-device">Technology & Attention</h2>
+<p>This is THE critical age for device management. Peers have phones. Social media pressure arrives.</p>
+<p><strong>Phone:</strong> Dumb phone or locked-down smartphone (no social media apps, no browser). The criterion: communication tool, not entertainment device. Full smartphone with trust-based monitoring at 14 earliest.</p>
+<p><strong>Social media:</strong> No accounts before 14. This is non-negotiable. The research on adolescent social media use and mental health is unambiguous. When they argue "everyone has it" — "I know. And I've read the research."</p>
+<p><strong>Computer:</strong> Shared space, not bedroom. Budgeted game time. Coding and building projects have separate, uncapped time — creation is not consumption.</p>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Lord of the Rings (book + extended films)</td><td>Primary anchor. Survivorship bias of history, corruption of power, weight of responsibility.</td></tr>
+<tr><td>Fullmetal Alchemist: Brotherhood</td><td>Primary anchor. Equivalent exchange, institutional corruption, cost of knowledge. 64 episodes.</td></tr>
+<tr><td>Factorio</td><td>The best systems-thinking game ever made. Logistics, optimization, compounding.</td></tr>
+<tr><td>Poor Charlie's Almanack — Munger</td><td>Mental models compendium. Read together and discuss. Not a book report — a live conversation.</td></tr>
+<tr><td>Personal knowledge management setup</td><td>Notebook or digital (Obsidian, Notion). Start writing down what they learn in their own words.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Art of Problem Solving (AoPS) Textbooks</td><td>Book</td><td>Prealgebra, Intro to Algebra, Intro to Counting & Probability. Competition-level math. The continuation from Beast Academy. Genuinely optimal for mathematically-inclined students.</td></tr>
+<tr><td>Automate the Boring Stuff with Python — Al Sweigart</td><td>Book/Online</td><td>Free online, excellent introduction to Python. Real-world automation tasks. Better than toy programming.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>Lord of the Rings (complete + Appendices)</td><td>Book</td><td>Primary anchor. The gold standard of worldbuilding and moral weight in fiction.</td></tr>
+<tr><td>Fullmetal Alchemist: Brotherhood (Blu-ray)</td><td>Film</td><td>Primary anchor. Best anime series for this age. Philosophical depth, real consequences.</td></tr>
+<tr><td>Factorio</td><td>Game</td><td>Systems, logistics, optimization, bottleneck analysis. Absorbs dozens of hours productively.</td></tr>
+<tr><td>Poor Charlie's Almanack</td><td>Book</td><td>Munger's mental models compendium. Foundation text for the lattice approach.</td></tr>
+<tr><td>Asimov — Foundation series</td><td>Book</td><td>Psychohistory as a model for thinking about civilizations. Science fiction as philosophy.</td></tr>
+<tr><td>Warhammer 40K (tabletop or lore)</td><td>Game</td><td>Deep systems with probability built in. Narrative worldbuilding. Community of serious players.</td></tr>
+<tr><td>Into the Breach</td><td>Game</td><td>Perfect-information tactical game. Every move matters. Clean design, deep strategy.</td></tr>
+<tr><td>Rimworld</td><td>Game</td><td>Colony simulation. Emergent narrative from systems. Probability, resource management, difficult moral decisions.</td></tr>
+<tr><td>ABRSM Grade 5–6 exam preparation</td><td>Service</td><td>External music milestone. Theory + performance assessment. Provides objective feedback.</td></tr>
+<tr><td>Real Book (jazz standards)</td><td>Book</td><td>The jazz musician's bible. Learn tunes, improvise over changes, play with others.</td></tr>
+<tr><td>Thinking, Fast and Slow — Daniel Kahneman</td><td>Book</td><td>Cognitive biases, heuristics, System 1 vs. System 2. Why we think the way we do and where we go wrong. Essential psychological foundation.</td></tr>
+<tr><td>García Lorca — Selected Poetry</td><td>Book</td><td>Spanish-language poetry. Duende, death, Andalusia. Cultural depth in the native language.</td></tr>
+<tr><td>Summer intensive programs (domain-specific)</td><td>Service</td><td>2-week residential program in their niche. Network accelerant. Peer exposure to serious peers.</td></tr>
+<tr><td>FIRST LEGO League → FTC robotics</td><td>Service</td><td>Team-based engineering competition. Build + code + present. Peer network selection mechanism.</td></tr>
+</table>
+`,
+
+'age-17-18': `
+<h1>Age 17–18: Synthesis & Launch</h1>
+<p class="subtitle">Models are tools to be combined, stress-tested, and extended. The goal: original frameworks, intellectual independence, and readiness to leave.</p>
+
+<div class="priority-box">
+<h3>Priorities — Your Remaining Time</h3>
+<div class="priority-item"><span class="priority-num">1</span><strong>Release control.</strong> They make their own decisions — including bad ones. Your role: available, honest, non-directive unless asked.</div>
+<div class="priority-item"><span class="priority-num">2</span><strong>Synthesis conversations.</strong> "What's your model for X?" "Where does your model fail?" The meta-skill: using models as models, not as beliefs.</div>
+<div class="priority-item"><span class="priority-num">3</span><strong>Launch preparation.</strong> University applications, gap year planning, career exploration — they drive, you advise.</div>
+</div>
+
+<h2 id="s-models">Mental Models — Synthesis & Meta-Models</h2>
+<table>
+<tr><th>Model</th><th>Engagement</th></tr>
+<tr><td>Falsifiability (Popper)</td><td>"What would disprove this? If nothing could, it's not a theory — it's a belief."</td></tr>
+<tr><td>Paradigm Shifts (Kuhn)</td><td>"Scientists before Copernicus weren't stupid — they had a coherent model. What made it shift?"</td></tr>
+<tr><td>Gödel's Incompleteness</td><td>Every sufficiently powerful system contains truths it cannot prove within itself. A limit on reason itself.</td></tr>
+<tr><td>Model Failure Analysis</td><td>"In what conditions does this model give the wrong answer? What does it assume?"</td></tr>
+<tr><td>Original Model Building</td><td>"You've seen this pattern before. What's the simplest model that explains it? Where would it fail?"</td></tr>
+<tr><td>Evolutionary Psychology</td><td>Reciprocal altruism, costly signaling, status hierarchies, coalitional instincts. The hardware that culture runs on.</td></tr>
+<tr><td>Status vs. Wealth Games</td><td>Status is zero-sum; wealth is positive-sum. Know which game you're playing. (Naval)</td></tr>
+</table>
+<p><strong>The meta-skill:</strong> By 18, the goal is not that they know the models — it's that they've internalized the habit of asking "what model am I using, is it the right one, and where does it fail?" That habit, applied consistently, is more valuable than any specific model.</p>
+
+<p><strong>Critical assessment:</strong> By now they should be able to deploy 8-10 core mental models automatically in conversation, analysis, and decision-making. If they can't, the earlier introduction was too abstract. If this is the case, revisit the applied exercises from ages 8-14 rather than pushing toward synthesis.</p>
+
+<h2 id="s-content">Content & Universes</h2>
+<p><strong>Primary sources exclusively.</strong> No more summaries or secondary sources as primary material. Read the originals:</p>
+<p>Plato (Apology, Republic selections). Seneca (Letters). Dostoevsky (The Brothers Karamazov — the Grand Inquisitor chapter). Nietzsche (Beyond Good and Evil, selected). Darwin (On the Origin of Species — at least the abstract). Adam Smith (Wealth of Nations, selected chapters). Orwell ("Politics and the English Language" — the argument that sloppy language produces sloppy thinking).</p>
+<p><strong>Spanish:</strong> Borges complete Ficciones. Cortázar: Rayuela. Octavio Paz: El laberinto de la soledad. Cervantes: Don Quijote (selections — the original novel about the gap between models and reality).</p>
+<p><strong>Film/Art:</strong> Tarkovsky (Stalker, Solaris). Kubrick full canon. Kurosawa (Seven Samurai, Rashomon). These are primary sources in cinema.</p>
+
+<h2 id="s-music">Music</h2>
+<p><strong>If pursuing music seriously:</strong> Conservatory preparation. Audition repertoire. Pre-professional level in both performance and theory.</p>
+<p><strong>If not:</strong> Lifelong amateur competence — can play at a gathering, sit in with a band, sight-read a hymn, improvise over changes, discuss music with the analytical rigor they apply to literature. Music production skills: can record, mix, and publish their own work.</p>
+
+<h2 id="s-games">Play & Digital Media</h2>
+<p>At their full discretion. If gaming is their niche, it's now a potential career vector (game design, esports, content creation, game programming). If it's recreation, the framework trusts their judgment by now — they've been trained to budget attention.</p>
+
+<h2 id="s-build">Building & Entrepreneurship</h2>
+<p><strong>Portfolio of shipped projects.</strong> Multiple things they've built that exist in the world. This portfolio matters more than grades for most career paths.</p>
+<p><strong>Business understanding:</strong> Can evaluate a business model. Understands equity, debt, revenue, margin, cash flow. Can read an annual report. Understands the principal-agent problem in employment (selling time vs. owning equity).</p>
+
+<h2 id="s-canon">Canon Knowledge — The Complete Picture</h2>
+<table>
+<tr><th>Domain</th><th>Deployable Knowledge</th></tr>
+<tr><td>Science</td><td>Scientific method as personal practice. Thermodynamics, evolution, DNA, atomic structure, cosmological scale — not as facts but as reasoning tools.</td></tr>
+<tr><td>Philosophy</td><td>Can trace the arc from Plato → Aristotle → Stoics → Enlightenment → Nietzsche → existentialism. Allegory of the Cave, Hume's is-ought, Popper's falsifiability, Kuhn's paradigm shifts, Gödel's limits.</td></tr>
+<tr><td>History</td><td>Civilizational arcs. Why things happen, not just what happened. Spain's specific role in global history. The 20th century's lessons.</td></tr>
+<tr><td>Literature</td><td>Can quote: Ozymandias, "If," Litany Against Fear, opening of Quijote, Borges at will. Can CRAFT-analyze any work unprompted.</td></tr>
+<tr><td>Financial</td><td>Full financial literacy. Investment basics. Business model evaluation. Personal financial planning.</td></tr>
+<tr><td>Rhetoric</td><td>Steel-man reflexively. Spot fallacies. Give a compelling 5-min talk on anything they know. Write a clean 500-word argument in 30 min.</td></tr>
+<tr><td>Meta-learning</td><td>Own their learning system. Spaced repetition, Feynman technique, PKM system, testing effect — all automatic.</td></tr>
+<tr><td>Practical</td><td>Cook, swim, navigate, type, first aid, CPR, basic car/home maintenance, budget management. Not helpless before physical reality.</td></tr>
+</table>
+
+<h2 id="s-religion">Spirituality & Religion</h2>
+<h2>Cultural Travel</h2>
+<p>Travel with genuine purpose. Gap year component if appropriate — not backpacking as consumption but immersion as education. Work or volunteer abroad. Live in another language for an extended period. By 18, they should have experienced at least 3 genuinely different cultures (not just "visited" — experienced: eaten in homes, navigated alone, made local friends).</p>
+<p>The goal: a young adult for whom "the world" is not an abstraction but a lived map of specific places, people, and systems they've engaged with directly.</p>
+
+<h2>Service & Volunteering</h2>
+<p>Systemic engagement. Volunteer work should now connect to their emerging professional identity — medical volunteering for the aspiring doctor, legal aid for the aspiring lawyer, teaching for anyone. International service with real responsibility, not photo-op voluntourism.</p>
+<p>The synthesis: by 18, they should understand that service is not charity but participation in the systems that sustain civilization. They should have a cause they care about, a track record of action, and a critical eye for what actually works.</p>
+<p>Nietzsche: "God is dead" and its consequences — what happens when meaning-making systems fail? Dostoevsky: The Grand Inquisitor — faith, freedom, authority, the burden of choice. Existentialism: if there's no given meaning, you must create it. What do you create?</p>
+<p>By now they should understand every major religious tradition as an intellectual system — its axioms, its strengths, its failure modes — and have a personal position (even if that position is uncertainty) arrived at through genuine reasoning.</p>
+
+<h2 id="s-network">Network</h2>
+<p><strong>Professional network seeds.</strong> At least one relationship with someone in a field they might pursue — not a career advisor, but someone who does the work. Internships, research assistantships, apprenticeships.</p>
+<p><strong>International:</strong> Their peer network should include people outside Spain. Exchange, competitions, online intellectual communities, university pre-programs.</p>
+
+<h2>Writing & Expression</h2>
+<p>Independent writing voice. Portfolio of published or shared work — essays, blog posts, project documentation, application essays. Can draft a 2,000-word argument in a single sitting without structural collapse. Writing IS thinking — they should no longer distinguish between "figuring out what I think" and "writing." These are the same activity.</p>
+
+<h2>Visual & Spatial Thinking</h2>
+<p>Visual communication as professional competence. Can create a clear diagram, chart, or presentation that communicates complex ideas to an audience unfamiliar with the domain. Data literacy: can read and critique any visualization. Design sense: their projects, presentations, and documents look professional — not because aesthetics matter intrinsically, but because visual clarity reflects clarity of thought.</p>
+
+<h2>Emotional Intelligence</h2>
+<p>Mastery. They regulate automatically in most situations. They recognize when they can't and have strategies. They read emotional dynamics in groups and respond appropriately. The gap between "feeling an emotion" and "acting on it" is wide enough to drive a truck through. This is not suppression — it's the ability to choose a response rather than be hijacked by a reaction.</p>
+
+<h2>Ethics & Moral Reasoning</h2>
+<p>Their own ethical framework — arrived at through reasoning, not inherited. Not relativism ("everything is equally valid") but a defensible position: "I believe X because Y, and my framework fails in conditions Z." They can articulate where utilitarianism, deontology, and virtue ethics each provide the best answers and where each breaks down. They've encountered real ethical dilemmas in their projects and relationships and navigated them imperfectly but consciously.</p>
+
+<h2>Coding & Computational Thinking</h2>
+<p>If this is their niche: pre-professional. Strong in at least one language, comfortable in a second. Systems design thinking. Contributing meaningfully to real projects. If it's not their niche: functional literacy. Can automate a task, read code, evaluate whether a technical claim is plausible, and understand what software does and doesn't do well. Either way, they understand that code is a lever — it trades human time for machine time.</p>
+
+<h2>Social Intelligence</h2>
+<p>Professional social skills. Interview presence — can they hold a conversation with a 40-year-old professional in their field without shrinking? Negotiation (connects to BATNA model). The ability to connect with people across age, status, and culture. They understand that their network is not a collection of contacts but a web of genuine relationships maintained through mutual value.</p>
+
+<h2>Body & Cognition</h2>
+<p>Autonomous management of the body-mind system. They have their own exercise routine designed partly for cognitive benefit. They manage sleep, nutrition, and recovery as a system, not as parental rules. They understand that physical state directly determines cognitive capacity and make daily choices accordingly.</p>
+
+<h2>History</h2>
+<p>Primary source history. Gibbon selections (Rome's fall as a lens for civilizational fragility). The 20th century as one continuous arc: WWI → Versailles → WWII → Cold War → decolonization → globalization → present fractures. Spain's specific role in this arc. They can answer "why did this happen?" for any major historical event with a multi-causal model, not a single explanation.</p>
+
+<h2>Nature & Ecology</h2>
+<p>Ecological literacy is now integrated into their systems thinking. They understand that every economic model, every political system, every technology operates within biophysical constraints. Climate change is not a "topic" — it's the context in which their generation will make every major decision. They should have a position on it arrived at through evidence, not tribal affiliation.</p>
+
+<h2>Teaching & Explanation</h2>
+<p>"Can you teach this to a room? To a camera? To a skeptic?" Teaching as a professional skill. By 18, they should be able to take any domain they know well and make it accessible to someone who doesn't. This is the ultimate test of understanding and the foundation of leadership, communication, and influence.</p>
+
+<h2 id="s-intensives">Summer Intensives</h2>
+<p>Summer is preparation and execution. Real consequences. Real people.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Full Internship</div><p>8–12 weeks in a field they're seriously considering. Not generic "internship experience" — real contribution to a real organization. Determines if this is actually what they want.</p></div>
+<div class="card"><div class="card-title">University Pre-Program</div><p>Summer at university doing real research or study. Advanced classes, lab work, seminar participation. Tests whether university life is what they think it is.</p></div>
+<div class="card"><div class="card-title">Independent Research Project</div><p>Original research or creative work with external outcome. Written thesis, curated exhibition, scientific paper, published work. Portfolio-building.</p></div>
+<div class="card"><div class="card-title">Travel with Purpose</div><p>Not tourism. Work abroad, service mission, language/cultural immersion, apprenticeship. Something that changes their understanding of the world.</p></div>
+</div>
+
+<h2 id="s-cognition">Cognitive Models & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-resources">Resources</h2>
+<h3>Start Here — 5 Essentials</h3>
+<table>
+<tr><th>Resource</th><th>Why</th></tr>
+<tr><td>Plato — Apology, Republic (selections)</td><td>Primary source. The foundation of Western philosophy. Read the original.</td></tr>
+<tr><td>Dostoevsky — The Brothers Karamazov</td><td>The Grand Inquisitor chapter. Faith, freedom, authority, the burden of choice.</td></tr>
+<tr><td>Darwin — On the Origin of Species (abstract)</td><td>Primary source in science. The argument that changed everything.</td></tr>
+<tr><td>Orwell — "Politics and the English Language"</td><td>The argument that sloppy language produces sloppy thinking. Essential essay.</td></tr>
+<tr><td>Cervantes — Don Quijote (selections)</td><td>The original novel about the gap between models and reality. In Spanish.</td></tr>
+</table>
+<h3>Full Resource List</h3>
+<table>
+<tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td>Plato — Apology, Republic selections</td><td>Book</td><td>★★★★★</td><td>Allegory of the Cave. Socratic method in its original form.</td></tr>
+<tr><td>Marcus Aurelius — Meditations</td><td>Book</td><td>★★★★★</td><td>Stoicism as daily practice. What is within your control. Emperor's private journal.</td></tr>
+<tr><td>Dostoevsky — Brothers Karamazov</td><td>Book</td><td>★★★★★</td><td>Grand Inquisitor chapter. The greatest piece of writing on faith, freedom, authority.</td></tr>
+<tr><td>Darwin — Origin of Species</td><td>Book</td><td>★★★★★</td><td>At least the abstract and key chapters. The argument, not the textbook summary.</td></tr>
+<tr><td>Cervantes — Don Quijote</td><td>Book</td><td>★★★★★</td><td>The original novel. Models vs. reality. Read in Spanish — it's the crown jewel of the language.</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
+<tr><td>Seneca — Letters from a Stoic</td><td>Book</td><td>★★★★</td><td>Practical philosophy. Time management, death, friendship, adversity. 2,000 years of scrutiny.</td></tr>
+<tr><td>Nietzsche — Beyond Good and Evil (selected)</td><td>Book</td><td>★★★★</td><td>"God is dead" and its consequences. Master/slave morality. Uncomfortable but essential.</td></tr>
+<tr><td>Adam Smith — Wealth of Nations (selections)</td><td>Book</td><td>★★★★</td><td>Invisible hand, division of labor, self-interest. Read the original, not the summary.</td></tr>
+<tr><td>Orwell — Politics and the English Language</td><td>Essay</td><td>★★★★</td><td>Short essay. The argument that sloppy language produces sloppy thinking.</td></tr>
+<tr><td>Borges — Ficciones (complete)</td><td>Book</td><td>★★★★</td><td>Complete collection in Spanish. By now they should know Borges deeply, not just selected stories.</td></tr>
+<tr><td>Tarkovsky — Stalker, Solaris</td><td>Film</td><td>★★★★</td><td>Cinema as philosophy. Slow, demanding, unforgettable. Primary sources in film.</td></tr>
+<tr><td>Kurosawa — Seven Samurai, Rashomon</td><td>Film</td><td>★★★★</td><td>Japanese cinema canon. Multiple perspectives (Rashomon). Honor and sacrifice (Seven Samurai).</td></tr>
+<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
+<tr><td>The Sequences — Eliezer Yudkowsky</td><td>Online Essays</td><td>★★★★</td><td>Comprehensive free resource on rationality, cognitive biases, and decision theory. LessWrong archive. Most thorough treatment of thinking clearly available. Builds on Kahneman's work with philosophical depth.</td></tr>
+<tr><td>Bhagavad Gita (selected passages)</td><td>Book</td><td>★★★</td><td>Duty, action, detachment from outcomes. Hindu primary source.</td></tr>
+<tr><td>Tao Te Ching — Lao Tzu</td><td>Book</td><td>★★★</td><td>Short, dense, bottomless. "The Tao that can be told is not the eternal Tao."</td></tr>
+<tr><td>Book of Job</td><td>Book</td><td>★★★</td><td>The problem of suffering in its oldest form. No easy answer offered.</td></tr>
+<tr><td>Universal Declaration of Human Rights</td><td>Document</td><td>★★★</td><td>Know it in broad strokes. Understand its context, its aspirations, its limits.</td></tr>
+</table>
+`,
+
+// ===========================
+// META
+// ===========================
+meta: `
+<h1>Meta: Framework Risks & Operating Principles</h1>
+<p class="subtitle">Every framework has failure modes. This section addresses what can go wrong and how to prevent it.</p>
+
+<h2 id="s-coercion">Risk 1: The Framework Becomes Coercive</h2>
+<div class="warn-box">
+<h3>The Central Danger</h3>
+<p>This framework is extraordinarily intentional. Every book chosen, every toy justified, every dinner conversation structured. There is a line between "curated environment" and "controlling parent," and the child's experience of which side you're on depends entirely on execution tone.</p>
+<p><strong>The test:</strong> Can they say "no" to any element without consequence to the relationship? If they refuse the cold shower, skip instrument practice, or want to read a "bad" book — do you accept it gracefully or does tension appear?</p>
+<p><strong>The antidote:</strong> Hold the framework loosely. It's a map, not territory. The child in front of you outranks the plan about them. When the framework conflicts with the child's expressed needs, the child wins.</p>
+</div>
+<p><strong>Signs it's becoming coercive:</strong> They practice the instrument when you're watching but not when you're away. They perform curiosity for your approval. They hide interests they think you'd disapprove of. They excel at the framework activities but seem anxious or performative.</p>
+<p><strong>Signs it's working:</strong> They pursue framework activities autonomously. They push back on specific elements while engaging with others. They bring their own questions and interests that surprise you. They fail openly without shame.</p>
+
+<h2 id="s-rejection">Risk 2: The Child Rejects the Framework</h2>
+<p>At some point — likely age 12–14 — one or both children may reject significant parts of this program. They may want to play Fortnite for six hours, read nothing, and think chess is stupid. This is normal identity differentiation, not failure.</p>
+<p><strong>The protocol:</strong></p>
+<p>1. <strong>Distinguish signal from noise.</strong> "I hate violin because my friends think it's lame" is social pressure (noise). "I hate violin because I genuinely don't enjoy it anymore after 8 years" is signal. Respond differently.</p>
+<p>2. <strong>Protect the non-negotiables, release the rest.</strong> Physical health, basic responsibility, respect — non-negotiable. Specific content choices, activity preferences, aesthetic tastes — negotiable. The Ten Targets are directional, not prescriptive.</p>
+<p>3. <strong>Stay in relationship.</strong> The worst outcome isn't that they quit chess. It's that they stop talking to you. If you must choose between maintaining the framework and maintaining the relationship, choose the relationship every time.</p>
+<p>4. <strong>Trust the foundation.</strong> If you've done the work for the first 10–12 years, the substrate is built. They may reject the surface expression while retaining the deep patterns. The 14-year-old who "quits reading" often returns to books at 19 with a hunger that self-directed reading satisfies differently than parental curation.</p>
+
+<h2 id="s-archetype">Risk 3: Building for the Wrong Child</h2>
+<p>This framework has an implicit "ideal student" — high-attention, systems-oriented, intellectually voracious, enjoys density and depth. What if your child is a dreamer, a socializer, a kinesthetic learner who couldn't care less about dense illustration pages?</p>
+<p><strong>The temperament system exists for this reason.</strong> Use it honestly. The sliders in the sidebar aren't labels — they're calibration tools. Adjust the framework to the child you have, not the child the framework imagines.</p>
+<p>A spatial-kinesthetic breadth-seeking extrovert is not a worse student — they need a different path to the same targets. Self-efficacy, grit, curiosity, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
+
+<h2 id="s-coparent">Co-Parenting Alignment</h2>
+<p>The framework assumes a single architect. In reality, both parents must be aligned on the core principles or the child receives contradictory signals.</p>
+<p><strong>Must align on:</strong> Screen/device rules (the most common parenting conflict). Rescue behavior (do you let them fail or protect them?). Consequences (do natural consequences operate?). The niche mastery commitment (do both parents support the time investment?).</p>
+<p><strong>Can differ on:</strong> Specific content preferences. Activity choices. Stylistic approach to Socratic conversation. Which parent leads which domain.</p>
+<p><strong>The conversation to have:</strong> Share this framework. Identify the 5–6 principles you both agree on. Negotiate the rest. Revisit quarterly — not as a performance review, but as a calibration conversation. "How do you think it's going? What should we adjust?"</p>
+
+<h2 id="s-unstructured">Protecting Unstructured Time</h2>
+<p>This framework is dense. Every hour can be justified. That's the danger.</p>
+<p>Unstructured time — genuine aimlessness, boredom, staring at ants, lying in grass — is where genuine curiosity is born. It cannot be scheduled or justified. It must be protected by deliberately NOT filling the schedule.</p>
+<p><strong>Rule:</strong> At least 30% of non-school waking time should be truly unstructured. No parent agenda, no educational justification, no "wouldn't you like to..." suggestions. Boredom is the prerequisite for self-directed curiosity.</p>
+
+<h2>Sleep, Nutrition & Recovery</h2>
+<p>Sleep is the single highest-leverage intervention in this entire framework. A child who sleeps poorly cannot learn, regulate emotions, sustain focus, or tolerate frustration. Protect sleep above any activity — including framework activities.</p>
+<h3>Sleep Requirements (Non-Negotiable)</h3>
+<table>
+<tr><th>Age</th><th>Hours</th><th>Notes</th></tr>
+<tr><td>0–1</td><td>14–17</td><td>Including naps. Consistent schedule more important than exact hours.</td></tr>
+<tr><td>1–3</td><td>11–14</td><td>One nap transitioning to none. Bedtime ritual is sacred.</td></tr>
+<tr><td>4–7</td><td>10–13</td><td>No screens 1 hour before bed. Dark room. Cool temperature.</td></tr>
+<tr><td>8–13</td><td>9–11</td><td>By 11, they should understand sleep architecture. Bedtime is self-managed but non-negotiable.</td></tr>
+<tr><td>14–18</td><td>8–10</td><td>Sleep before 11pm on school nights. They will resist. The evidence is unambiguous: sleep-deprived teenagers perform like impaired adults.</td></tr>
+</table>
+<h3>Nutrition</h3>
+<p>Not a diet program. Three principles: minimize processed sugar (the dose makes the poison), no caffeine before 16 (it disrupts the developing sleep system), whole foods emphasis as the default rather than the exception. The goal is a child who understands that food is fuel and that fuel quality affects performance — not a child with an anxious relationship with food.</p>
+<h3>Recovery</h3>
+<p>Rest days from intensive practice. Deload weeks from heavy cognitive or physical schedules. The brain consolidates learning during rest, not during practice — the practice provides the signal, rest provides the integration. A child who practices piano 7 days a week will plateau faster than one who practices 5 and rests 2. This applies to every domain in the framework. Build recovery into the schedule explicitly, or it won't happen.</p>
+
+<h2 id="s-fun">Pop Culture & Fun</h2>
+<p>Life needs play, absurdity, and shared cultural vocabulary. The framework is austere by design — this section counterbalances.</p>
+<p><strong>Principle:</strong> Pop culture as social currency and recovery, not curriculum. They need enough shared cultural knowledge to participate in peer conversations without being aliens. They need downtime that isn't productive.</p>
+<p><strong>One fun night per week:</strong> Family watches something purely entertaining, chosen by the kids. No CRAFT analysis, no debrief. Just enjoyment. This also gives you data on what they're drawn to unconstrained.</p>
+<p><strong>Selection still matters:</strong> Pixar is rest AND quality storytelling. TikTok scroll is neither rest nor quality. The hierarchy: great entertainment > good entertainment > passive consumption > algorithmic feed.</p>
+
+<h2 id="s-interna">The Interna Brief</h2>
+<p>The interna runs the daytime program. She doesn't need the philosophy — she needs clear, concrete, updated instructions.</p>
+<p><strong>One-page document, in Spanish, updated quarterly:</strong></p>
+<p>• Daily outdoor time minimum (1.5 hours, regardless of weather).<br>
+• Let them struggle — wait 90 seconds before helping with any task they're attempting.<br>
+• Spanish reading list (3 books/day for toddlers, 1 chapter/day for older).<br>
+• Meal/nap schedule (consistent times).<br>
+• Screen rules (none before 3; specific budget after).<br>
+• "When in doubt: go outside, let them try, read a book."</p>
+
+<h2 id="s-quarterly">Quarterly Review Protocol</h2>
+<p>The framework is a living document. Without a feedback loop, it becomes a plan you wrote once and slowly forget.</p>
+<p><strong>Every 3 months, 30 minutes, both parents:</strong></p>
+<p><strong>1. The Ten Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling?</p>
+<p><strong>2. Temperament check:</strong> Have the dimensions shifted? A 4-year-old introvert may be a 10-year-old ambivert. Update the profile.</p>
+<p><strong>3. What worked this quarter?</strong> Specific activities, books, conversations that produced visible growth.</p>
+<p><strong>4. What didn't work?</strong> What are they resisting? Is the resistance signal or noise? (See Risk 2.)</p>
+<p><strong>5. What surprised you?</strong> Interests, skills, or connections you didn't plan for. These are often more important than the planned ones.</p>
+<p><strong>6. Interna alignment:</strong> Update the one-page brief. Is the interna executing what you intend?</p>
+<p><strong>7. Time audit:</strong> Are the recommended activities actually fitting? If not, what gets cut? (Never cut sleep, outdoor time, or unstructured time.)</p>
+<p><strong>Log the answers.</strong> Review the log annually. Patterns over 4 quarters reveal more than any single observation.</p>
+<p><strong>The child's experience of this review should be invisible.</strong> This is a parent-facing calibration tool, not a report card.</p>
+
+<h2 id="s-measure">How to Know It's Working</h2>
+<p>Not tests. Observable behaviors:</p>
+<table>
+<tr><th>Age</th><th>Signs It's Working</th><th>Signs It's Not</th></tr>
+<tr><td>0–3</td><td>Securely attached (seeks comfort, explores freely, protests separation briefly then recovers). Babbling/talking on curve. Physically confident — climbs, runs, falls without excessive fear.</td><td>Clingy or avoidant. Excessive caution with new environments. Speech delay without other explanation.</td></tr>
+<tr><td>4–7</td><td>Asks "why" relentlessly. Sustains focus on chosen activities 20+ min. Handles small failures without meltdown. Initiates play without adult direction.</td><td>Waits for permission to play. Melts down at minor frustration. Shows curiosity only when rewarded. Performs for adults rather than exploring for self.</td></tr>
+<tr><td>8–10</td><td>Has a domain they're visibly passionate about. Can explain their reasoning. Reads voluntarily. Handles losing at games/competitions analytically.</td><td>Goes through motions without engagement. Avoids challenge. Can't articulate why they believe something. Practice feels like punishment.</td></tr>
+<tr><td>11–13</td><td>Argues with you — substantively. Questions authority (including yours). Has shipped something. Manages their own time (imperfectly but independently).</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong.</td></tr>
+<tr><td>14–18</td><td>Thinks independently. Has a genuine niche. Makes decisions you wouldn't make but can defend. Reads primary sources voluntarily. Has relationships beyond the family.</td><td>Still performing for parental approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity.</td></tr>
+</table>
+`
+};
+
+// ===========================
+// APP LOGIC
+// ===========================
+let currentTab = 'philosophy';
+let profile = { energy: 'balanced', processing: 'balanced', sensitivity: 'balanced', novelty: 'balanced' };
+
+function init() {
+  renderTabs();
+  renderContent();
+  setupProfileToggles();
+  setupNavLinks();
+  wrapTablesForMobile();
+}
+
+function toggleFloatProfile() {
+  const panel = document.getElementById('float-profile');
+  const wasOpen = panel.classList.contains('open');
+  document.getElementById('float-sections').classList.remove('open');
+  panel.classList.toggle('open', !wasOpen);
+}
+
+function toggleFloatSections() {
+  const panel = document.getElementById('float-sections');
+  const wasOpen = panel.classList.contains('open');
+  document.getElementById('float-profile').classList.remove('open');
+  panel.classList.toggle('open', !wasOpen);
+}
+
+function updateFloatSections() {
+  const panel = document.getElementById('float-sections');
+  const headings = document.querySelectorAll('#content h2[id]');
+  panel.innerHTML = '<div class="profile-float-title">Sections</div>' +
+    Array.from(headings).map(h =>
+      `<div class="float-nav-link" data-target="${h.id}">${h.textContent}</div>`
+    ).join('');
+  panel.querySelectorAll('.float-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const target = document.getElementById(link.dataset.target);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      panel.classList.remove('open');
+    });
+  });
+}
+
+function wrapTablesForMobile() {
+  document.querySelectorAll('#content table').forEach(table => {
+    if (!table.parentElement.classList.contains('table-scroll')) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  });
+}
+
+function renderTabs() {
+  const tabsEl = document.getElementById('tabs');
+  tabsEl.innerHTML = TABS.map(t =>
+    `<div class="tab ${t.id === currentTab ? 'active' : ''}" data-tab="${t.id}">${t.label}</div>`
+  ).join('');
+  tabsEl.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      currentTab = tab.dataset.tab;
+      renderTabs();
+      renderContent();
+      setupNavLinks();
+      document.getElementById('content').scrollTop = 0;
+      window.scrollTo(0, 52);
+    });
+  });
+}
+
+function renderContent() {
+  const el = document.getElementById('content');
+  el.innerHTML = SECTIONS[currentTab] || '<p>Section not found.</p>';
+  applyProfile();
+  wrapTablesForMobile();
+  updateFloatSections();
+}
+
+function setupProfileToggles() {
+  // Use event delegation on the document for all radio buttons — works for sidebar, floating panel, any future instance
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.radio-btn');
+    if (!btn) return;
+    const group = btn.closest('.radio-group');
+    if (!group) return;
+    e.stopPropagation(); // prevent close-outside handler from firing
+    const dim = group.dataset.dim;
+    const val = btn.dataset.val;
+    // Update state
+    profile[dim] = val;
+    // Sync ALL radio groups with same dimension
+    document.querySelectorAll(`.radio-group[data-dim="${dim}"] .radio-btn`).forEach(b => {
+      b.classList.toggle('active', b.dataset.val === val);
+    });
+    applyProfile();
+    updateFabIndicator();
+  });
+}
+
+function applyProfile() {
+  const classMap = {
+    energy: { introvert: 't-introvert', extrovert: 't-extrovert' },
+    processing: { verbal: 't-verbal', spatial: 't-spatial' },
+    sensitivity: { 'high-sens': 't-high-sens', 'low-sens': 't-low-sens' },
+    novelty: { depth: 't-depth', breadth: 't-breadth' }
+  };
+
+  // Hide all adjustments first
+  document.querySelectorAll('.t-adjust').forEach(el => el.classList.remove('visible'));
+
+  // Show relevant ones
+  let activeCount = 0;
+  for (const [dim, val] of Object.entries(profile)) {
+    if (val !== 'balanced' && classMap[dim] && classMap[dim][val]) {
+      document.querySelectorAll(`.${classMap[dim][val]}`).forEach(el => el.classList.add('visible'));
+      activeCount++;
+    }
+  }
+  return activeCount;
+}
+
+function updateFabIndicator() {
+  const fab = document.getElementById('fab-profile');
+  const active = Object.values(profile).filter(v => v !== 'balanced').length;
+  if (active > 0) {
+    fab.style.background = 'var(--accent2)';
+    fab.textContent = active;
+    fab.title = active + ' filter(s) active';
+  } else {
+    fab.style.background = 'var(--accent)';
+    fab.textContent = '⚙';
+    fab.title = 'Child Profile';
+  }
+}
+
+function setupNavLinks() {
+  const navEl = document.getElementById('nav-links');
+  const content = document.getElementById('content');
+  const headings = content.querySelectorAll('h2[id]');
+  navEl.innerHTML = '<div class="sidebar-title" style="margin-top:0">Sections</div>' +
+    Array.from(headings).map(h =>
+      `<div class="nav-link" data-target="${h.id}">${h.textContent}</div>`
+    ).join('');
+  navEl.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const target = document.getElementById(link.dataset.target);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+}
+
+// ===========================
+// SEARCH
+// ===========================
+function initSearch() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  let debounce = null;
+
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => runSearch(input.value.trim()), 200);
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { input.value = ''; results.style.display = 'none'; clearHighlights(); }
+  });
+
+  // Close results and floating panels when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#search-wrap')) { results.style.display = 'none'; }
+    if (!e.target.closest('#float-profile') && !e.target.closest('#fab-profile')) {
+      document.getElementById('float-profile').classList.remove('open');
+    }
+    if (!e.target.closest('#float-sections') && !e.target.closest('#fab-sections')) {
+      document.getElementById('float-sections').classList.remove('open');
+    }
+  });
+
+  // Ctrl/Cmd+K to focus search
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); input.focus(); input.select(); }
+  });
+}
+
+function runSearch(query) {
+  const results = document.getElementById('search-results');
+  clearHighlights();
+
+  if (query.length < 2) { results.style.display = 'none'; return; }
+
+  const matches = [];
+  const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+
+  for (const tab of TABS) {
+    const html = SECTIONS[tab.id];
+    if (!html) continue;
+    // Strip HTML tags for text search
+    const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    let m;
+    const seen = new Set();
+    re.lastIndex = 0;
+    while ((m = re.exec(text)) !== null && matches.length < 50) {
+      // Extract ~80 chars of context around the match
+      const start = Math.max(0, m.index - 40);
+      const end = Math.min(text.length, m.index + m[0].length + 40);
+      let snippet = text.substring(start, end).trim();
+      // Deduplicate similar snippets per tab
+      const key = tab.id + ':' + snippet.substring(0, 30);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      // Highlight the match in snippet
+      snippet = snippet.replace(re, '<span style="background:var(--accent);color:#fff;padding:0 2px;border-radius:2px">$&</span>');
+      matches.push({ tabId: tab.id, tabLabel: tab.label, snippet, index: m.index });
+    }
+  }
+
+  if (matches.length === 0) {
+    results.innerHTML = '<div style="padding:16px;color:var(--text-muted);font-size:13px">No results for "' + query.replace(/</g,'&lt;') + '"</div>';
+    results.style.display = 'block';
+    return;
+  }
+
+  results.innerHTML = matches.map(m =>
+    `<div class="sr-item" data-tab="${m.tabId}" data-query="${query.replace(/"/g,'&quot;')}" style="padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;font-size:13px;line-height:1.5" onmouseenter="this.style.background='var(--surface2)'" onmouseleave="this.style.background='transparent'">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:3px">${m.tabLabel}</div>
+      <div style="color:var(--text-muted)">…${m.snippet}…</div>
+    </div>`
+  ).join('');
+
+  results.style.display = 'block';
+
+  // Click a result → navigate to that tab and highlight matches
+  results.querySelectorAll('.sr-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const tabId = item.dataset.tab;
+      const q = item.dataset.query;
+      currentTab = tabId;
+      renderTabs();
+      renderContent();
+      setupNavLinks();
+      results.style.display = 'none';
+      // Highlight matches in the rendered content
+      setTimeout(() => highlightInContent(q), 50);
+    });
+  });
+}
+
+function highlightInContent(query) {
+  if (!query) return;
+  const content = document.getElementById('content');
+  const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, null, false);
+  const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+  const textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+  let firstMark = null;
+  textNodes.forEach(node => {
+    const val = node.nodeValue;
+    if (!re.test(val)) return;
+    re.lastIndex = 0;
+    const frag = document.createDocumentFragment();
+    let last = 0;
+    let m;
+    while ((m = re.exec(val)) !== null) {
+      if (m.index > last) frag.appendChild(document.createTextNode(val.substring(last, m.index)));
+      const mark = document.createElement('mark');
+      mark.style.cssText = 'background:var(--accent);color:#fff;padding:0 2px;border-radius:2px';
+      mark.setAttribute('data-search-highlight', '1');
+      mark.textContent = m[0];
+      if (!firstMark) firstMark = mark;
+      frag.appendChild(mark);
+      last = re.lastIndex;
+    }
+    if (last < val.length) frag.appendChild(document.createTextNode(val.substring(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+
+  if (firstMark) firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function clearHighlights() {
+  document.querySelectorAll('mark[data-search-highlight]').forEach(mark => {
+    const parent = mark.parentNode;
+    parent.replaceChild(document.createTextNode(mark.textContent), mark);
+    parent.normalize();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); });
+</script>
+</body>
+</html>
