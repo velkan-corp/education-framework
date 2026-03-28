@@ -107,7 +107,8 @@ function updateFloatSections() {
     ).join('');
   panel.querySelectorAll('.float-nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      const target = document.getElementById(link.dataset.target);
+      const active = document.querySelector('.phase-content.active');
+      const target = active && active.querySelector('#' + CSS.escape(link.dataset.target));
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       panel.classList.remove('open');
     });
@@ -218,7 +219,8 @@ function setupNavLinks() {
     ).join('');
   navEl.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      const target = document.getElementById(link.dataset.target);
+      const active = document.querySelector('.phase-content.active');
+      const target = active && active.querySelector('#' + CSS.escape(link.dataset.target));
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
