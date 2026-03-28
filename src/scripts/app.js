@@ -492,8 +492,64 @@ function applyResourceFilter(table, filterDiv) {
   });
 }
 
+// ===========================
+// SECTION TIER FILTERS
+// ===========================
+function initSectionFilters() {
+  document.querySelectorAll('.program-elements').forEach(container => {
+    const sections = Array.from(container.querySelectorAll('h2[data-tier]'));
+    if (!sections.length) return;
+
+    // Add tier badges to headings
+    sections.forEach(h2 => {
+      const tier = h2.dataset.tier;
+      const badge = document.createElement('span');
+      badge.className = `tier-badge ${tier}`;
+      badge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+      h2.appendChild(badge);
+    });
+
+    // Insert filter pills at top of container
+    const filterDiv = document.createElement('div');
+    filterDiv.className = 'section-filters';
+    filterDiv.innerHTML = '<span class="filter-label">Show</span>';
+    ['all', 'foundational', 'core', 'recommended'].forEach(val => {
+      const pill = document.createElement('button');
+      pill.className = 'filter-pill' + (val === 'all' ? ' active' : '');
+      pill.setAttribute('data-val', val);
+      pill.textContent = val === 'all' ? 'All' : val.charAt(0).toUpperCase() + val.slice(1);
+      filterDiv.appendChild(pill);
+    });
+    container.insertBefore(filterDiv, container.firstChild);
+
+    // Wire clicks
+    filterDiv.addEventListener('click', (e) => {
+      const pill = e.target.closest('.filter-pill');
+      if (!pill) return;
+      filterDiv.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      applySectionFilter(container, pill.dataset.val);
+    });
+  });
+}
+
+function applySectionFilter(container, tierVal) {
+  const allH2s = Array.from(container.querySelectorAll('h2[data-tier]'));
+  allH2s.forEach(h2 => {
+    const tier = h2.dataset.tier;
+    const show = tierVal === 'all' || tier === tierVal;
+    // Show/hide the h2 and everything until the next h2
+    let el = h2;
+    while (el) {
+      el.style.display = show ? '' : 'none';
+      el = el.nextElementSibling;
+      if (el && el.tagName === 'H2') break;
+    }
+  });
+}
+
 // Make functions available globally for onclick handlers
 window.toggleFloatProfile = toggleFloatProfile;
 window.toggleFloatSections = toggleFloatSections;
 
-document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); initResourceFilters(); });
+document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); initResourceFilters(); initSectionFilters(); });
