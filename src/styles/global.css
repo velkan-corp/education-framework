@@ -563,10 +563,19 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   .topbar-inner { flex-wrap: nowrap; }
   .tabs { flex: 1; min-width: 0; }
   .tabs::-webkit-scrollbar { height: 0; }
+  /* Show FABs for sections nav + child profile on mobile */
+  .profile-fab { display: block; }
+  .profile-float { max-height: 70vh; overflow-y: auto; }
+  /* Tables: reduce min-width to prevent horizontal scroll */
+  .table-scroll table { min-width: auto; }
+  /* Search: move icon inside input area, hide standalone icon */
+  #search-icon { display: none; }
+  #search-input { width: 120px !important; }
 }
 @media (max-width: 500px) {
   .logo { display: none; }
   .tab { padding: var(--sp-3) var(--sp-2); font-size: 11px; }
+  #search-input { width: 90px !important; font-size: 11px !important; }
 }
 @media print {
   .topbar, .sidebar, .profile-fab, .profile-float { display: none !important; }
