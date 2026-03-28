@@ -524,6 +524,30 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: var(--sp-3) -4px var(--sp-4); padding: 0 4px; }
 .table-scroll table { min-width: 500px; }
 
+/* RESOURCE TABLE FILTERS */
+.resource-filters {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center;
+  margin: var(--sp-3) 0 var(--sp-2); padding: var(--sp-2) 0;
+}
+.filter-group {
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
+}
+.filter-label {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--text-muted); margin-right: 4px; font-weight: 600;
+}
+.filter-pill {
+  font-family: var(--font-body); font-size: 11px; font-weight: 500;
+  padding: 3px 10px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent; color: var(--text-muted);
+  transition: all 0.15s ease-out; line-height: 1.4;
+}
+.filter-pill:hover { border-color: var(--accent); color: var(--accent); }
+.filter-pill.active {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+}
+.resource-row { transition: opacity 0.15s ease-out; }
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .sidebar { display: none; }

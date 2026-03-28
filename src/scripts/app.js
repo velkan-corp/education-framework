@@ -361,8 +361,139 @@ function clearHighlights() {
   });
 }
 
+// ===========================
+// RESOURCE TABLE FILTERS
+// ===========================
+function initResourceFilters() {
+  // Find all resource tables: tables that contain tier header rows (FOUNDATIONAL/CORE/RECOMMENDED)
+  document.querySelectorAll('.phase-content table').forEach(table => {
+    const tierRows = Array.from(table.querySelectorAll('tr')).filter(tr => {
+      const cell = tr.querySelector('td[colspan]');
+      return cell && /FOUNDATIONAL|CORE|RECOMMENDED/.test(cell.textContent);
+    });
+    if (tierRows.length === 0) return;
+
+    // Tag each resource row with data-tier and data-type
+    let currentTier = '';
+    Array.from(table.querySelectorAll('tr')).forEach(tr => {
+      // Skip header row
+      if (tr.querySelector('th')) return;
+      // Check if this is a tier header
+      const tierCell = tr.querySelector('td[colspan]');
+      if (tierCell && /FOUNDATIONAL|CORE|RECOMMENDED/.test(tierCell.textContent)) {
+        if (/FOUNDATIONAL/.test(tierCell.textContent)) currentTier = 'foundational';
+        else if (/CORE/.test(tierCell.textContent)) currentTier = 'core';
+        else currentTier = 'recommended';
+        tr.setAttribute('data-tier-header', currentTier);
+        return;
+      }
+      // Regular resource row
+      if (!currentTier) return;
+      tr.setAttribute('data-tier', currentTier);
+      tr.classList.add('resource-row');
+      // Detect type from second cell
+      const cells = tr.querySelectorAll('td');
+      if (cells.length >= 2) {
+        const typeText = cells[1].textContent.trim().toLowerCase();
+        if (/book|online/.test(typeText)) tr.setAttribute('data-type', 'book');
+        else if (/film/.test(typeText)) tr.setAttribute('data-type', 'film');
+        else if (/game/.test(typeText)) tr.setAttribute('data-type', 'game');
+        else if (/equipment/.test(typeText)) tr.setAttribute('data-type', 'equipment');
+        else if (/service/.test(typeText)) tr.setAttribute('data-type', 'service');
+        else if (/app/.test(typeText)) tr.setAttribute('data-type', 'app');
+        else if (/toy/.test(typeText)) tr.setAttribute('data-type', 'toy');
+        else if (/essay|document/.test(typeText)) tr.setAttribute('data-type', 'book');
+        else tr.setAttribute('data-type', 'other');
+      }
+    });
+
+    // Collect available types for this table
+    const types = new Set();
+    table.querySelectorAll('.resource-row').forEach(r => {
+      const t = r.getAttribute('data-type');
+      if (t && t !== 'other') types.add(t);
+    });
+
+    // Build filter pills
+    const filterDiv = document.createElement('div');
+    filterDiv.className = 'resource-filters';
+
+    // Tier pills
+    const tierGroup = document.createElement('div');
+    tierGroup.className = 'filter-group';
+    tierGroup.innerHTML = '<span class="filter-label">Tier</span>';
+    ['all', 'foundational', 'core', 'recommended'].forEach(val => {
+      const pill = document.createElement('button');
+      pill.className = 'filter-pill' + (val === 'all' ? ' active' : '');
+      pill.setAttribute('data-filter', 'tier');
+      pill.setAttribute('data-val', val);
+      pill.textContent = val === 'all' ? 'All' : val.charAt(0).toUpperCase() + val.slice(1);
+      tierGroup.appendChild(pill);
+    });
+    filterDiv.appendChild(tierGroup);
+
+    // Type pills (only if more than 1 type exists)
+    if (types.size > 1) {
+      const typeGroup = document.createElement('div');
+      typeGroup.className = 'filter-group';
+      typeGroup.innerHTML = '<span class="filter-label">Type</span>';
+      const typeBtn = document.createElement('button');
+      typeBtn.className = 'filter-pill active';
+      typeBtn.setAttribute('data-filter', 'type');
+      typeBtn.setAttribute('data-val', 'all');
+      typeBtn.textContent = 'All';
+      typeGroup.appendChild(typeBtn);
+      const typeLabels = { book: 'Books', film: 'Film', game: 'Games', equipment: 'Equipment', service: 'Services', app: 'Apps', toy: 'Toys' };
+      Array.from(types).sort().forEach(t => {
+        const pill = document.createElement('button');
+        pill.className = 'filter-pill';
+        pill.setAttribute('data-filter', 'type');
+        pill.setAttribute('data-val', t);
+        pill.textContent = typeLabels[t] || t;
+        typeGroup.appendChild(pill);
+      });
+      filterDiv.appendChild(typeGroup);
+    }
+
+    // Insert filter pills before the table (or before its scroll wrapper)
+    const wrapper = table.closest('.table-scroll') || table;
+    wrapper.parentNode.insertBefore(filterDiv, wrapper);
+
+    // Wire up filter clicks
+    filterDiv.addEventListener('click', (e) => {
+      const pill = e.target.closest('.filter-pill');
+      if (!pill) return;
+      const filterType = pill.getAttribute('data-filter');
+      // Deactivate siblings, activate clicked
+      filterDiv.querySelectorAll(`.filter-pill[data-filter="${filterType}"]`).forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      applyResourceFilter(table, filterDiv);
+    });
+  });
+}
+
+function applyResourceFilter(table, filterDiv) {
+  const tierVal = filterDiv.querySelector('.filter-pill[data-filter="tier"].active')?.getAttribute('data-val') || 'all';
+  const typeVal = filterDiv.querySelector('.filter-pill[data-filter="type"].active')?.getAttribute('data-val') || 'all';
+
+  // Show/hide tier headers
+  table.querySelectorAll('tr[data-tier-header]').forEach(tr => {
+    const tier = tr.getAttribute('data-tier-header');
+    tr.style.display = (tierVal === 'all' || tier === tierVal) ? '' : 'none';
+  });
+
+  // Show/hide resource rows
+  table.querySelectorAll('.resource-row').forEach(tr => {
+    const tier = tr.getAttribute('data-tier');
+    const type = tr.getAttribute('data-type');
+    const tierMatch = tierVal === 'all' || tier === tierVal;
+    const typeMatch = typeVal === 'all' || type === typeVal;
+    tr.style.display = (tierMatch && typeMatch) ? '' : 'none';
+  });
+}
+
 // Make functions available globally for onclick handlers
 window.toggleFloatProfile = toggleFloatProfile;
 window.toggleFloatSections = toggleFloatSections;
 
-document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); });
+document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); initResourceFilters(); });
