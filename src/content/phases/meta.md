@@ -30,11 +30,17 @@ order: 8
 <p>A spatial-kinesthetic breadth-seeking extrovert is not a worse student — they need a different path to the same ten targets. Resilient self-efficacy, deep curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
 <p><strong>Build for the best.</strong> Expectations are high by design. A child who is expected to reason from first principles, sustain deep relationships, and engage seriously with the world is more likely to do so than one whose ceiling was preemptively lowered. If a particular child can't reach a particular benchmark, that's discovered through observation and adjusted in the moment — not by lowering aspirations for all possible children in advance. High expectations are non-negotiable; rigid timelines are not.</p>
 
-<h2 id="s-coparent"><span class="material-symbols-rounded">family_restroom</span>Co-Parenting Alignment</h2>
-<p>The framework assumes a single architect. In reality, both parents must be aligned on the core principles or the child receives contradictory signals.</p>
-<p><strong>Must align on:</strong> Screen/device rules (the most common parenting conflict). Rescue behavior (do you let them fail or protect them?). Consequences (do natural consequences operate?). The niche mastery commitment (do both parents support the time investment?).</p>
-<p><strong>Can differ on:</strong> Specific content preferences. Activity choices. Stylistic approach to Socratic conversation. Which parent leads which domain.</p>
-<p><strong>The conversation to have:</strong> Share this framework. Identify the 5–6 principles you both agree on. Negotiate the rest. Revisit quarterly — not as a performance review, but as a calibration conversation. "How do you think it's going? What should we adjust?"</p>
+<h2 id="s-coparent"><span class="material-symbols-rounded">family_restroom</span>Co-Parenting: Asymmetric Roles</h2>
+<p>The framework is co-owned, not "father's plan that mother executes." Each parent leads distinct domains based on who controls what.</p>
+<table>
+<tr><th>Role</th><th>Leads</th></tr>
+<tr><td><strong>Mother</strong></td><td>School interface, social calendar, Spanish-language world, extended family, interna management, daily routine, institution selection execution. Controls the dominant environment — more execution hours, primary social architecture.</td></tr>
+<tr><td><strong>Father</strong></td><td>English-language development, intellectual framework, niche mastery strategy, content curation, financial education, weekend depth experiences. Minority language provider — higher intensity per hour, not volume.</td></tr>
+<tr><td><strong>Shared</strong></td><td>Non-negotiables (sleep, screens, expectations), values, love, quarterly review. Contradictory signals on FOUNDATIONAL tier undermine everything.</td></tr>
+<tr><td><strong>Interna</strong></td><td>Weekday execution: outdoor time, struggle tolerance (wait 90 seconds), Spanish reading, no screens, meal/nap consistency. More waking hours with the child than either parent on weekdays. Quarterly brief in Spanish.</td></tr>
+</table>
+<p><strong>Must align on:</strong> Screen/device rules, rescue behavior (do you let them fail?), consequences, niche mastery commitment, institution selection decisions.</p>
+<p><strong>Can differ on:</strong> Content preferences, activity choices, conversation style, which parent leads which domain.</p>
 
 <h2 id="s-unstructured"><span class="material-symbols-rounded">mood</span>Protecting Unstructured Time</h2>
 <p>This framework is dense. Every hour can be justified. That's the danger.</p>
@@ -97,3 +103,36 @@ order: 8
 <tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Empathy is performed, not felt.</td></tr>
 <tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only.</td></tr>
 </table>
+
+<h2 id="s-operational"><span class="material-symbols-rounded">build</span>Operational Principles</h2>
+<h3>DIM Method</h3>
+<p><strong>Absorb</strong> (experience fully without analysis) → <strong>Interrogate</strong> (ask why, go deeper) → <strong>Make</strong> (create something in response). For anchor works and deep experiences, not everything. Fun night, sports, casual reading are Absorb-only.</p>
+<h3>Multi-Medium, Original Language</h3>
+<p>Content across books, comics, film, anime, games, TV series. Always in original language with subtitles — no dubbing. Anchor works get full DIM treatment. Broader content diet is Absorb-mode: consume freely, don't over-analyze. Volume is good.</p>
+<h3>Language Architecture</h3>
+<p>L1 + L2 bilingual from birth (OPOL — One Parent One Language). Neither language subordinate. L3 through immersion exposure starting age 6-8: private tutor, summer in-country, not classroom. In Madrid: English (father) + Spanish (mother/school) + French or other L3.</p>
+<h3>Private Instruction Default</h3>
+<p>For the niche mastery domain: always the best available private instructor. 1:1 with a practitioner who performs at a high level, not just teaches. Not group classes — those are for social/ensemble skills. No budget limit on the primary instructor.</p>
+<h3>The Onion Layers</h3>
+<p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
+
+<h2 id="s-joy-kindness-luck"><span class="material-symbols-rounded">favorite</span>Joy, Kindness & Luck — How To</h2>
+<h3>Imbuing Joy</h3>
+<p><strong>Model it.</strong> If the parent visibly finds joy in their own struggle-learn-grow process, the child absorbs it.</p>
+<p><strong>Name it when it happens.</strong> "You just spent 2 hours on that problem and you're smiling. That's the feeling."</p>
+<p><strong>Protect flow states ruthlessly.</strong> When they're in flow, everything else waits.</p>
+<p><strong>Debrief failures as gifts.</strong> Not "it's okay" but "what did that teach you that winning wouldn't have?"</p>
+<p><strong>Archetype alignment.</strong> The temperament system isn't a constraint — it's an identity to empower. Joy = alignment between who you are and what you do.</p>
+<h3>Imbuing Kindness</h3>
+<p><strong>Model it relentlessly.</strong> How you treat the waiter. How you speak about absent people. The child watches everything.</p>
+<p><strong>Frame kindness as strength.</strong> A child who can win a fight but helps their opponent up is learning kindness from power. Martial art + kindness = capable AND kind.</p>
+<p><strong>Service as regular habit.</strong> Same place, repeatedly. "Why are these people here? What would actually help?"</p>
+<p><strong>Name it.</strong> "You noticed she was sad and went to sit with her. That's kind, and it's strong."</p>
+<p><strong>Natural social consequences.</strong> "You said that and she stopped playing with you. What happened?"</p>
+<h3>Maximizing Luck</h3>
+<p><strong>Luck = preparation × exposure × kindness.</strong></p>
+<p><strong>Preparation:</strong> When opportunity appears, be ready. The framework builds this.</p>
+<p><strong>Exposure:</strong> Be in more rooms. Every institution, program, competition is an exposure event.</p>
+<p><strong>Kindness creates return luck.</strong> People help people who helped them. Reliable kindness accumulates social capital that converts into opportunity years later.</p>
+<p><strong>Taleb's barbell:</strong> Very conservative in most things. Asymmetric bets in a few. Never risk ruin for marginal gain.</p>
+<p><strong>Teach them to recognize it.</strong> "That happened because you were prepared AND in the right room AND someone remembered you were kind."</p>

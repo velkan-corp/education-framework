@@ -55,6 +55,7 @@ order: 1
 <h2 id="s-language"><span class="material-symbols-rounded">public</span>Language</h2>
 <p>OPOL active: you speak English exclusively. All books you read are English. The interna reads Spanish books during the day. Singing in both languages. No correction — just immersion.</p>
 <p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
+<p><strong>⚡ Window alert:</strong> Native accent acquisition narrows after age 7-10. The OPOL foundation built now compounds every year. This is not a nice-to-have — it's a closing window.</p>
 
 <h2 id="s-network"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
 <p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
@@ -79,6 +80,7 @@ order: 1
 
 <h2 id="s-emotional"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
 <p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
+<p><strong>Kindness modeling begins here.</strong> The parent's emotional tone IS the child's first experience of kindness. Responding to distress with warmth, not irritation. Narrating gently, not correcting harshly. The child's first model of "how people treat each other" is you.</p>
 
 <h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Attachment is the foundation. Secure attachment (responsive, consistent caregiving) produces children who later navigate social complexity with confidence. This is not a "parenting style" — it's the empirically validated prerequisite for all subsequent social development. Respond to bids for attention. Be predictable. Be present.</p>

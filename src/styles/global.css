@@ -526,16 +526,23 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 
 /* PHILOSOPHY PRINCIPLES */
 .principle { margin: var(--sp-4) 0; }
-.principle h3 { display: flex; align-items: center; gap: var(--sp-2); flex-wrap: wrap; }
-.principle .info-toggle { font-size: 11px; padding: 2px 8px; border-radius: 10px; }
-.principle .info-tip {
-  font-size: 13px; line-height: 1.6;
-  padding: var(--sp-3); background: var(--surface);
-  border: 1px solid var(--border); border-radius: var(--sp-2);
+.principle h3 { margin-bottom: var(--sp-1); }
+.evidence {
   margin-top: var(--sp-2);
 }
-.principle .info-tip p { margin-bottom: var(--sp-2); }
-.principle .info-tip p:last-child { margin-bottom: 0; }
+.evidence summary {
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; padding: var(--sp-1) 0;
+  list-style: none; display: flex; align-items: center; gap: 4px;
+}
+.evidence summary::-webkit-details-marker { display: none; }
+.evidence summary::before { content: '▸'; font-size: 10px; transition: transform 0.15s ease-out; }
+.evidence[open] summary::before { transform: rotate(90deg); }
+.evidence p {
+  font-size: 13px; line-height: 1.6; color: var(--text-muted);
+  padding: var(--sp-2) var(--sp-3); background: var(--surface);
+  border-left: 2px solid var(--accent-border); margin: var(--sp-1) 0;
+}
 
 /* RESOURCE TABLE FILTERS */
 .resource-filters {

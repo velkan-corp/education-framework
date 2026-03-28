@@ -73,11 +73,13 @@ order: 3
 
 <h2 id="s-music"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
+<p><strong>⚡ Window alert:</strong> Music ear training is optimal before age 7. The neural circuits for pitch discrimination and tonal memory are shaped during this sensitive period. Starting at 4-5 is ideal; starting at 8 is workable but harder; starting at 12 requires significantly more effort for less return.</p>
 <div class="music-track">
 <div>
 <h4>Classical / Reading Track</h4>
 <p>Instrument selection: <strong>Piano</strong> is the best first instrument (visual layout of theory, both hands independent, harmonic). Alternative: violin (Suzuki method) or ukulele.</p>
 <p>Staff notation from day one. Scales, simple pieces, sight-reading exercises. Weekly lesson with a teacher who demands precision.</p>
+<p><strong>Private instruction is the default.</strong> 1:1 with the best teacher available — not group conservatory class. A performing practitioner who demonstrates, not just explains. No budget limit on the primary instructor. Group lessons are supplementary for ensemble/social skills.</p>
 <p>Daily practice: 15–20 minutes, same time each day, non-negotiable.</p>
 </div>
 <div>
@@ -115,6 +117,11 @@ order: 3
 <p><strong>Peer selection:</strong> One or two children who are observably ahead of them in some domain. Not to create competition — to normalize high performance as something peers do.</p>
 <p><strong>Madrid-specific:</strong> Chess clubs (Club de Ajedrez Madrid), British Council youth programs, music conservatory preparation programs, international school extracurriculars.</p>
 
+<h2 id="s-institutions"><span class="material-symbols-rounded">school</span>Institution Decisions — This Phase</h2>
+<p><strong>⚡ Primary school (age 4-5).</strong> Determines peer group for 6+ years. This compounds. Look for: academic rigor without crushing play, bilingual or English-medium, families who take something seriously. In Madrid: British Council, International College Spain, Hastings, King's College.</p>
+<p><strong>⚡ Niche mastery teacher (age 4-5).</strong> The TEACHER matters more than the activity. Best available private instructor, 1:1. A practitioner who performs at a high level, not just teaches. This is the single highest-leverage resource investment at this age. No budget limit.</p>
+<p><strong>⚡ Team sport club (age 6-8).</strong> Social calibration window. Coach who develops character, not just talent. Madrid: football junior leagues, basketball, rugby. The club culture becomes the child's social default.</p>
+
 <h2 id="s-cadence"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
 <div class="card-grid">
 <div class="card"><div class="card-title">Parent Evenings (2 hours)</div>
@@ -144,6 +151,7 @@ order: 3
 </div>
 </div>
 <p><strong>L3 exposure window opens.</strong> Age 6-8 is optimal for introducing a third language through immersion (summer program, au pair, media). Not classroom instruction — exposure first. See Philosophy tab for multilingual architecture. French is highest-utility from Madrid; the specific choice follows the child's interest and available immersion.</p>
+<p><strong>⚡ Window alert:</strong> Native accent acquisition narrows after age 7-10 (Hartshorne et al., 2018). The bilingual foundation built in these years determines accent quality for life. L3 exposure window opens at age 6-8 — summer immersion, au pair, or media exposure in the target language.</p>
 
 <h2 id="s-visual"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
 <p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
@@ -152,6 +160,7 @@ order: 3
 <p><strong>Critical window.</strong> Name-it-to-tame-it: naming an emotion literally reduces amygdala activation (Lieberman et al., 2007). Teach zones of regulation — color-coded energy levels (blue = low/sad, green = calm/ready, yellow = anxious/excited, red = angry/explosive). Practice recognizing physiological signals: "My stomach feels tight when I'm nervous. My face gets hot when I'm angry."</p>
 <p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
 <p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
+<p><strong>Joy as signal.</strong> Watch what produces genuine flow — sustained engagement, loss of time sense, intrinsic motivation. These activities are the signal for niche mastery direction. If an activity never produces flow after consistent exposure, question whether it's the right fit. Protect flow states ruthlessly: when they're absorbed, don't interrupt for meals, transitions, or "better" activities.</p>
 
 <h2 id="s-ethics"><span class="material-symbols-rounded">self_improvement</span>Ethics & Moral Reasoning</h2>
 <p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning.</p>
@@ -159,12 +168,23 @@ order: 3
 <h2 id="s-coding"><span class="material-symbols-rounded">terminal</span>Coding & Computational Thinking</h2>
 <p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
 
+<h2 id="s-digital"><span class="material-symbols-rounded">videocam</span>Digital Creation — Seed</h2>
+<p>Not screen time — creation time. A child who uses a tablet to watch is a consumer. A child who uses it to create is a producer.</p>
+<p><strong>Photography.</strong> Give them a camera (old phone, kid camera). "Take a picture of something beautiful. Now something funny. Now something that makes you curious." Composition begins here.</p>
+<p><strong>Stop-motion animation.</strong> LEGO figures + a phone + Stop Motion Studio app. They're directing films by age 6.</p>
+
 <h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
 <p><strong>First negotiations.</strong> "I want X" evolves to "I want X because Y." Structure requests: what do you want, why, and what can you offer in return? Turn-taking in disagreements. "What does the other person want? Can you both get something?" Every conflict is a negotiation — frame it that way from the start.</p>
 
+<h2 id="s-negotiation"><span class="material-symbols-rounded">handshake</span>Sales & Negotiation — First Steps</h2>
+<p><strong>Structured requests.</strong> "I want X" evolves to "I want X because Y, and I can offer Z." Every request is a negotiation. Frame it that way from age 4.</p>
+<p><strong>Show-and-tell as selling.</strong> Weekly show-and-tell at home isn't just public speaking — it's the first sales pitch. "Convince us this object is interesting." They learn to read the audience and adjust.</p>
+<p><strong>Trading and bartering.</strong> Toy swaps with friends, negotiating dessert choices, deciding who gets to pick the movie. Every micro-negotiation builds the muscle. Don't resolve their conflicts for them — coach from the side.</p>
+
 <h2 id="s-body"><span class="material-symbols-rounded">fitness_center</span>Body & Mind</h2>
 <p>"Exercise makes you smarter" — stated plainly, because it's true. Running or active play before focused work (reading, music practice) measurably improves attention. Morning outdoor time before school sets the neurochemical stage for the day. This isn't health advice; it's cognitive optimization.</p>
+<p><strong>Sleep is THE intervention.</strong> 10-13 hours. No screens 1 hour before bed. Dark room, cool temperature. A well-rested child who does nothing else from this framework outperforms a sleep-deprived child who does everything. This is not a suggestion — it's the single most evidence-backed claim in the entire framework (Walker, 2017).</p>
 
 <h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Nature journal: draw and describe one thing observed outdoors each week. Ecosystem questions: "What does the ant eat? What eats the ant? What would happen if there were no ants?" Seasonal observation across a full year — tracking the same tree or garden patch through all four seasons teaches systems thinking before you name it.</p>

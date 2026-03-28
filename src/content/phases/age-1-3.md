@@ -69,6 +69,7 @@ order: 2
 <p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>
 <p><strong>Interna:</strong> Should be reading Spanish picture books daily. Provide a list: Maisy (Lucy Cousins), Peppa Pig books in Spanish, Spanish nursery rhymes.</p>
 <p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
+<p><strong>⚡ Window alert:</strong> This is the critical window for bilingual vocabulary building. English input from father competes with Spanish from every other source. Quantity of English exposure now determines bilingual depth for life.</p>
 
 <h2 id="s-network"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
 <p>Start building the family network deliberately. In Madrid: international school parent communities (even before enrollment), English-speaking playgroups, your own social circle's children. The 3–4 families you befriend now will likely be your children's first peer group for years.</p>
@@ -76,6 +77,7 @@ order: 2
 
 <h2 id="s-religion"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Ethics, Spirituality & Moral Reasoning</h2>
 <p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?" This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
+<p><strong>Joy signal.</strong> Watch what produces genuine delight — not compliance, not performance for adults. The activities that make them lose track of time are the signal. Protect those.</p>
 
 <h2 id="s-travel"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
 <p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
@@ -105,6 +107,7 @@ order: 2
 
 <h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
+<p><strong>Kindness seeds.</strong> Model turn-taking, sharing, and gentleness. Narrate kind acts: "You gave her the toy. That was kind." Frame kindness as something they DID (agency), not something they ARE (identity).</p>
 
 <h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
