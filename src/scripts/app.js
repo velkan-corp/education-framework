@@ -35,18 +35,22 @@ function init() {
     }
   });
 
-  // Handle anchor links — search active phase first (ids like #s-resources repeat across phases)
+  // Handle anchor links — find target by iterating elements (not querySelector by id, which fails with duplicate ids)
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href^="#"]');
     if (!link) return;
     e.preventDefault();
     const targetId = link.getAttribute('href').slice(1);
-    const escaped = CSS.escape(targetId);
+
+    // Helper: find element with matching id attribute within a container
+    function findById(container, id) {
+      return Array.from(container.querySelectorAll('[id]')).find(el => el.id === id);
+    }
 
     // 1. Try the active phase first
     const activePhase = document.querySelector('.phase-content.active');
     if (activePhase) {
-      const el = activePhase.querySelector('#' + escaped);
+      const el = findById(activePhase, targetId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         return;
@@ -56,14 +60,15 @@ function init() {
     // 2. Search all phases — switch tab if found elsewhere
     const allPhases = document.querySelectorAll('.phase-content');
     for (const phase of allPhases) {
-      const el = phase.querySelector('#' + escaped);
+      const el = findById(phase, targetId);
       if (el) {
         currentTab = phase.dataset.phase;
         renderTabs();
         showTab(currentTab);
         setupNavLinks();
         setTimeout(() => {
-          const found = document.querySelector('.phase-content.active #' + escaped);
+          const active = document.querySelector('.phase-content.active');
+          const found = findById(active, targetId);
           if (found) found.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 50);
         return;
@@ -100,16 +105,15 @@ function updateFloatSections() {
   const panel = document.getElementById('float-sections');
   const activeContent = document.querySelector('.phase-content.active');
   if (!activeContent) return;
-  const headings = activeContent.querySelectorAll('h2[id]');
+  const headings = Array.from(activeContent.querySelectorAll('h2[id]'));
   panel.innerHTML = '<div class="profile-float-title">Sections</div>' +
-    Array.from(headings).map(h =>
-      `<div class="float-nav-link" data-target="${h.id}">${getHeadingText(h)}</div>`
+    headings.map(h =>
+      `<div class="float-nav-link">${getHeadingText(h)}</div>`
     ).join('');
-  panel.querySelectorAll('.float-nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const active = document.querySelector('.phase-content.active');
-      const target = active && active.querySelector('#' + CSS.escape(link.dataset.target));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const links = panel.querySelectorAll('.float-nav-link');
+  headings.forEach((h, i) => {
+    links[i].addEventListener('click', () => {
+      h.scrollIntoView({ behavior: 'smooth', block: 'start' });
       panel.classList.remove('open');
     });
   });
@@ -212,16 +216,15 @@ function setupNavLinks() {
   const navEl = document.getElementById('nav-links');
   const activeContent = document.querySelector('.phase-content.active');
   if (!activeContent) return;
-  const headings = activeContent.querySelectorAll('h2[id]');
+  const headings = Array.from(activeContent.querySelectorAll('h2[id]'));
   navEl.innerHTML = '<div class="sidebar-title" style="margin-top:0">Sections</div>' +
-    Array.from(headings).map(h =>
-      `<div class="nav-link" data-target="${h.id}">${getHeadingText(h)}</div>`
+    headings.map(h =>
+      `<div class="nav-link">${getHeadingText(h)}</div>`
     ).join('');
-  navEl.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const active = document.querySelector('.phase-content.active');
-      const target = active && active.querySelector('#' + CSS.escape(link.dataset.target));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const links = navEl.querySelectorAll('.nav-link');
+  headings.forEach((h, i) => {
+    links[i].addEventListener('click', () => {
+      h.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 }
