@@ -493,6 +493,117 @@ function applyResourceFilter(table, filterDiv) {
 }
 
 // ===========================
+// DOMAIN TIMELINE VIEW
+// ===========================
+let currentView = 'age';
+
+function initDomainView() {
+  // Collect all unique section IDs and their labels across age phases
+  const domainMap = new Map(); // id → { label, phases: [{ phaseId, label, tier, content }] }
+  const agePhases = ['age-0-1', 'age-1-3', 'age-4-7', 'age-8-10', 'age-11-13', 'age-14-16', 'age-17-18'];
+
+  agePhases.forEach(phaseId => {
+    const phaseEl = document.querySelector(`.phase-content[data-phase="${phaseId}"]`);
+    if (!phaseEl) return;
+    const phaseLabel = phaseEl.dataset.label;
+    const programZone = phaseEl.querySelector('.program-elements');
+    if (!programZone) return;
+
+    programZone.querySelectorAll('h2[data-tier]').forEach(h2 => {
+      const sectionId = h2.id;
+      if (!sectionId) return;
+
+      // Get the heading text (strip icon and badge)
+      let label = '';
+      h2.childNodes.forEach(n => {
+        if (n.nodeType === 3) label += n.textContent;
+        else if (n.nodeType === 1 && !n.classList.contains('material-symbols-rounded') && !n.classList.contains('tier-badge')) label += n.textContent;
+      });
+      label = label.trim();
+
+      // Collect content between this h2 and next h2
+      const contentEls = [];
+      let el = h2.nextElementSibling;
+      while (el && el.tagName !== 'H2') {
+        contentEls.push(el.outerHTML);
+        el = el.nextElementSibling;
+      }
+
+      if (!domainMap.has(sectionId)) {
+        domainMap.set(sectionId, { label, phases: [] });
+      }
+      domainMap.get(sectionId).phases.push({
+        phaseId,
+        phaseLabel: phaseLabel,
+        tier: h2.dataset.tier,
+        content: contentEls.join('')
+      });
+    });
+  });
+
+  // Populate the select dropdown
+  const select = document.getElementById('domain-select');
+  if (!select) return;
+  // Sort domains by number of phases (most common first)
+  const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
+  sorted.forEach(([id, data]) => {
+    const opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = `${data.label} (${data.phases.length} phases)`;
+    select.appendChild(opt);
+  });
+
+  select.addEventListener('change', () => renderDomainTimeline(domainMap, select.value));
+
+  // View toggle
+  document.getElementById('view-toggle').addEventListener('click', (e) => {
+    const btn = e.target.closest('.view-btn');
+    if (!btn) return;
+    const view = btn.dataset.view;
+    if (view === currentView) return;
+    currentView = view;
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+
+    if (view === 'domain') {
+      // Hide age tabs and phase content, show domain view
+      document.getElementById('tabs').style.display = 'none';
+      document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
+      document.getElementById('domain-view').style.display = 'block';
+      if (select.value) renderDomainTimeline(domainMap, select.value);
+      else if (select.options.length > 0) { select.selectedIndex = 0; renderDomainTimeline(domainMap, select.value); }
+    } else {
+      // Restore age view
+      document.getElementById('tabs').style.display = '';
+      document.getElementById('domain-view').style.display = 'none';
+      showTab(currentTab);
+      renderTabs();
+      setupNavLinks();
+    }
+  });
+
+  // Store for later use
+  window._domainMap = domainMap;
+}
+
+function renderDomainTimeline(domainMap, sectionId) {
+  const timeline = document.getElementById('domain-timeline');
+  const data = domainMap.get(sectionId);
+  if (!data) { timeline.innerHTML = ''; return; }
+
+  timeline.innerHTML = data.phases.map(phase => `
+    <div class="timeline-phase">
+      <div class="timeline-header">
+        <span class="timeline-age">${phase.phaseLabel}</span>
+        <span class="tier-badge ${phase.tier}">${phase.tier.charAt(0).toUpperCase() + phase.tier.slice(1)}</span>
+      </div>
+      <div class="timeline-content">${phase.content}</div>
+    </div>
+  `).join('');
+
+  window.scrollTo(0, 0);
+}
+
+// ===========================
 // SECTION TIER FILTERS
 // ===========================
 function initSectionFilters() {
@@ -552,4 +663,4 @@ function applySectionFilter(container, tierVal) {
 window.toggleFloatProfile = toggleFloatProfile;
 window.toggleFloatSections = toggleFloatSections;
 
-document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); initResourceFilters(); initSectionFilters(); });
+document.addEventListener('DOMContentLoaded', () => { init(); initSearch(); initResourceFilters(); initSectionFilters(); initDomainView(); });
