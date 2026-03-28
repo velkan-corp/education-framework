@@ -124,41 +124,41 @@ order: 3
 </div>
 </div>
 
-<h2>Visual & Spatial Thinking</h2>
+<h2 id="s-visual"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
 <p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
 
-<h2>Emotional Intelligence</h2>
+<h2 id="s-emotional"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
 <p><strong>Critical window.</strong> Name-it-to-tame-it: naming an emotion literally reduces amygdala activation (Lieberman et al., 2007). Teach zones of regulation — color-coded energy levels (blue = low/sad, green = calm/ready, yellow = anxious/excited, red = angry/explosive). Practice recognizing physiological signals: "My stomach feels tight when I'm nervous. My face gets hot when I'm angry."</p>
 <p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
 <p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
 
-<h2>Ethics & Moral Reasoning</h2>
+<h2 id="s-ethics"><span class="material-symbols-rounded">self_improvement</span>Ethics & Moral Reasoning</h2>
 <p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning.</p>
 
-<h2>Coding & Computational Thinking</h2>
+<h2 id="s-coding"><span class="material-symbols-rounded">terminal</span>Coding & Computational Thinking</h2>
 <p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
 
-<h2>Social Intelligence</h2>
+<h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
 <p><strong>First negotiations.</strong> "I want X" evolves to "I want X because Y." Structure requests: what do you want, why, and what can you offer in return? Turn-taking in disagreements. "What does the other person want? Can you both get something?" Every conflict is a negotiation — frame it that way from the start.</p>
 
-<h2>Body & Mind</h2>
+<h2 id="s-body"><span class="material-symbols-rounded">fitness_center</span>Body & Mind</h2>
 <p>"Exercise makes you smarter" — stated plainly, because it's true. Running or active play before focused work (reading, music practice) measurably improves attention. Morning outdoor time before school sets the neurochemical stage for the day. This isn't health advice; it's cognitive optimization.</p>
 
-<h2>Nature & Ecology</h2>
+<h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Nature journal: draw and describe one thing observed outdoors each week. Ecosystem questions: "What does the ant eat? What eats the ant? What would happen if there were no ants?" Seasonal observation across a full year — tracking the same tree or garden patch through all four seasons teaches systems thinking before you name it.</p>
 
-<h2>History</h2>
+<h2 id="s-history"><span class="material-symbols-rounded">history_edu</span>History</h2>
 <p>History as story at this age. "Who built this castle? When? Why?" Historical picture books and timeline awareness — "a long, long time ago, before cars, before electricity." Usborne history encyclopedias for browsing. The goal is temporal awareness: things were different before, and specific people made specific choices that changed things.</p>
 
-<h2>Teaching & Explanation</h2>
+<h2 id="s-teaching"><span class="material-symbols-rounded">school</span>Teaching & Explanation</h2>
 <p>Not formal yet, but the instinct begins: "Can you show your little brother how to do that?" When they explain something, resist correcting — let them practice the act of explanation. By 6-7: "You learned how this works. Now explain it to me like I don't know anything." This is proto-Feynman technique.</p>
 
-<h2>Cultural Travel</h2>
+<h2 id="s-travel"><span class="material-symbols-rounded">travel_explore</span>Cultural Travel</h2>
 <p>Europe by car and train — deliberate. Paris, Rome, London, Berlin, Amsterdam. One international trip per year minimum. Before the trip: "Where are we going? Show me on the map. What language do they speak? What do they eat?" After: "What was different from Madrid? What was the same?" These debrief questions build comparative cultural thinking.</p>
 <p>First non-European destination by age 7 if possible — Morocco, Turkey, or similar. The cognitive shock of a genuinely different culture is worth more than ten European trips. Madrid itself is a cultural education: use it. Retiro, the Rastro, neighborhood diversity, the rhythm of a European capital.</p>
 
-<h2>Service & Empathy</h2>
+<h2 id="s-service"><span class="material-symbols-rounded">volunteer_activism</span>Service & Empathy</h2>
 <p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is ethics made physical.</p>
 
 <h2 id="s-intensives"><span class="material-symbols-rounded">explore</span>Summer Intensives</h2>

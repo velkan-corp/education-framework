@@ -56,7 +56,7 @@ order: 1
 <h2 id="s-network"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
 <p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
 
-<h2>Cultural Exposure</h2>
+<h2 id="s-travel"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
 <p>Travel is not yet educational — it's environmental. But the habits start now: children who travel early normalize novelty. Short trips within Spain: coast, mountains, other cities. The point is sensory range, not cultural education.</p>
 
 <h2 id="s-cadence"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
@@ -74,13 +74,13 @@ order: 1
 <p>Pre-writing begins with grasping. Fat crayons, chunky markers on large paper. The motor patterns that will become handwriting start here — the pincer grip, the controlled movement, the cause-and-effect of "I move my hand, a mark appears." No letters, no instruction. Just access to marking tools and surfaces.</p>
 <p>Oral expression at this stage is entirely receptive and imitative. Read aloud with expression — vary your pitch, pace, and volume. The infant is absorbing prosody (the music of speech) before they understand words. Narrate with theatrical energy when appropriate: "The BALL went BOUNCING down the HILL!" This is not baby talk — it's vocal modeling. They are learning that the voice is an instrument with range.</p>
 
-<h2>Emotional Intelligence</h2>
+<h2 id="s-emotional"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
 <p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
 
-<h2>Social Intelligence</h2>
+<h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Attachment is the foundation. Secure attachment (responsive, consistent caregiving) produces children who later navigate social complexity with confidence. This is not a "parenting style" — it's the empirically validated prerequisite for all subsequent social development. Respond to bids for attention. Be predictable. Be present.</p>
 
-<h2>Nature & Ecology</h2>
+<h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
 
 <h2 id="s-cognition"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>

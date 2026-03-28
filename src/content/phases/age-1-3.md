@@ -73,7 +73,7 @@ order: 2
 <h2 id="s-religion"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Ethics, Spirituality & Moral Reasoning</h2>
 <p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?"</p>
 
-<h2>Cultural Exposure</h2>
+<h2 id="s-travel"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
 <p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
 
 <h2 id="s-cadence"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
@@ -93,16 +93,16 @@ order: 2
 <p>Scribbling is pre-writing. Provide thick crayons, finger paints, chalk on pavement. Narrate their drawings: "Tell me about your picture." This builds the connection between marks and meaning. Dictation begins here too: they tell you a story, you write it down, they see their words become text. This is the seed of authorship.</p>
 <p><strong>Oral expression begins.</strong> "Tell me about your picture" is already in play — now extend it: "Tell Mama what we did at the park today." They narrate events to a third party, organizing experience into spoken sequence. This is oral composition. Nursery rhymes and simple poems recited together build rhythm, memory, and the pleasure of spoken language as performance. Finger plays (Itsy Bitsy Spider, Pat-a-Cake) are the first oral performances — learned text delivered with gesture and expression.</p>
 
-<h2>Emotional Intelligence</h2>
+<h2 id="s-emotional"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
 <p>Emotion vocabulary is the primary tool. "You look angry. Are you angry?" "That was scary." "You're so excited!" Name their emotions before they can — this gives them handles for experiences that would otherwise be overwhelming. Simple regulation techniques: deep breaths together (blow out the birthday candles), counting to five, hugging a specific comfort object. Post-tantrum, once calm: "What happened? You were angry because..." This builds the narrative-self connection.</p>
 
-<h2>Visual & Spatial Thinking</h2>
+<h2 id="s-visual"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
 <p>Shape sorters, nesting cups, simple puzzles (4-12 pieces). Brio World wooden train layouts — the track-building IS spatial reasoning (which piece connects? does the loop close? what happens if I add a bridge?). Block towers with intentional collapse ("how tall before it falls?"). These are not toys — they are the physical instantiation of spatial logic.</p>
 
-<h2>Social Intelligence</h2>
+<h2 id="s-social"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
 <p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
 
-<h2>Nature & Ecology</h2>
+<h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
 
 <h2 id="s-cognition"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>

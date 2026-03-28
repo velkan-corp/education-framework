@@ -40,7 +40,7 @@ order: 8
 <p>Unstructured time — genuine aimlessness, boredom, staring at ants, lying in grass — is where genuine curiosity is born. It cannot be scheduled or justified. It must be protected by deliberately NOT filling the schedule.</p>
 <p><strong>Rule:</strong> At least 30% of non-school waking time should be truly unstructured. No parent agenda, no educational justification, no "wouldn't you like to..." suggestions. Boredom is the prerequisite for self-directed curiosity.</p>
 
-<h2>Sleep, Nutrition & Recovery</h2>
+<h2 id="s-sleep"><span class="material-symbols-rounded">fitness_center</span>Sleep, Nutrition & Recovery</h2>
 <p>Sleep is the single highest-leverage intervention in this entire framework. A child who sleeps poorly cannot learn, regulate emotions, sustain focus, or tolerate frustration. Protect sleep above any activity — including framework activities.</p>
 <h3>Sleep Requirements (Non-Negotiable)</h3>
 <table>
