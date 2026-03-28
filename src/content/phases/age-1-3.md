@@ -33,6 +33,8 @@ order: 2
 <tr><td>Curiosity</td><td>Follow their attention. If they're fascinated by ants, stop and watch ants for 30 minutes. Your schedule is less important than their wonder.</td><td><a href="#s-resources">Magnifying glass</a>. Bug catching kit. Nature walks with no destination.</td></tr>
 <tr><td>Verbal Intelligence</td><td>Use adult vocabulary, then define: "That's an excavator — it digs." Don't dumb down language. They absorb more than they produce.</td><td><a href="#s-resources">Richard Scarry</a> (labels everything). Where's Wally (visual search → verbal description).</td></tr>
 <tr><td>Physical</td><td>Outdoor daily regardless of weather. Climbing, jumping, running on uneven surfaces. Barefoot when safe.</td><td>Balance bike (from 18 months). Playground with challenge — not the safe toddler section.</td></tr>
+<tr><td>Relational Intelligence seed</td><td>Parallel play is developmentally correct. Don't force sharing. Model turn-taking: "My turn... your turn." Narrate social situations: "She's sad because..."</td><td>Playdates with 2-3 consistent families. Park playgroups.</td></tr>
+<tr><td>Empathy seed</td><td>"She's crying because she wanted the ball." Build social-emotional vocabulary that precedes actual social skills. Help them notice others' feelings.</td><td>Emotion-focused picture books. Real social situations narrated in real time.</td></tr>
 </table>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Respect the need for solitary play. Don't force sharing or group play at this age — parallel play is normal and healthy until ~3. Quiet reading time is not isolation; it's recharging.</div>
@@ -42,9 +44,10 @@ order: 2
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Transitions are hard. Give warnings: "In 5 minutes we'll leave the park." Avoid overstimulating environments (loud, crowded). Smaller playgroups. Permission to leave when overwhelmed, without drama.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
+<p>Layer 0 continues — Pre-linguistic to early-linguistic. The framework uses 12 universal mental models revisited annually. At this age, models are still primarily experiential, now with emerging verbal scaffolding.</p>
 <table>
 <tr><th>Model</th><th>How It's Built</th></tr>
-<tr><td>Cause & Effect</td><td>Dominoes, stacking/knocking down, water play. "What happens if...?"</td></tr>
+<tr><td>Cause & Effect — Layer 0 (continuing pre-linguistic foundation for Model #1)</td><td>Dominoes, stacking/knocking down, water play. "What happens if...?"</td></tr>
 <tr><td>Iteration</td><td>"That didn't work. What else could we try?" Don't rescue immediately.</td></tr>
 <tr><td>Categorization</td><td>Sorting by color, shape, size. "Find all the big ones."</td></tr>
 <tr><td>Scale / Size</td><td>Grimm's Rainbow, nesting cups, Duplo. Things have relative properties.</td></tr>
@@ -66,12 +69,14 @@ order: 2
 <h2 id="s-language"><span class="material-symbols-rounded">public</span>Language</h2>
 <p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>
 <p><strong>Interna:</strong> Should be reading Spanish picture books daily. Provide a list: Maisy (Lucy Cousins), Peppa Pig books in Spanish, Spanish nursery rhymes.</p>
+<p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
 
 <h2 id="s-network"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
 <p>Start building the family network deliberately. In Madrid: international school parent communities (even before enrollment), English-speaking playgroups, your own social circle's children. The 3–4 families you befriend now will likely be your children's first peer group for years.</p>
+<p><strong>Team sport note:</strong> Team sport begins at age 4. These early years build the social substrate through playgroups and parallel play — the relational foundation that makes team dynamics possible later.</p>
 
 <h2 id="s-religion"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Ethics, Spirituality & Moral Reasoning</h2>
-<p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?"</p>
+<p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?" This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
 
 <h2 id="s-travel"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
 <p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
@@ -121,28 +126,28 @@ order: 2
 <h3>Full Resource List</h3>
 <table>
 <tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
-<tr><td>Yoto Player</td><td>Equipment</td><td>★★★★★</td><td>Screen-free audio device. Full-size with make-your-own card capability. Primary audio device for ages 1–7. Durable, intuitive, English and Spanish content.</td><td>—</td></tr>
-<tr><td>Duplo Large Creative Box</td><td>Toy</td><td>★★★★★</td><td>Open-ended construction. Spatial reasoning, iteration, fine motor. Avoid themed sets.</td><td>—</td></tr>
-<tr><td>Richard Scarry — Cars and Trucks and Things That Go</td><td>Book</td><td>★★★★★</td><td>Systems, vocabulary density, Goldbug hidden-object search. The perfect 2-year-old book.</td><td><a href="#s-activity">Verbal Intelligence</a></td></tr>
-<tr><td>Grimm's Rainbow (12-piece)</td><td>Toy</td><td>★★★★★</td><td>Gold standard for open-ended wooden play. Teaches scale, nesting, balance, spatial reasoning, creativity. Lasts through age 12+.</td><td><a href="#s-activity">Grit seed</a></td></tr>
-<tr><td>Magna-Tiles (100-piece set minimum)</td><td>Toy</td><td>★★★★★</td><td>Magnetic construction tiles. Superior to Magformers in stability and structural possibilities. Open-ended 3D building.</td><td>—</td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
-<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★</td><td>Portable version for travel. Same functionality as Player, compact and durable. Portability essential for family trips.</td><td>—</td></tr>
-<tr><td>Strider 12 Sport Balance Bike</td><td>Equipment</td><td>★★★★</td><td>No pedals — balance first. Transforms outdoor time. From 18 months.</td><td>—</td></tr>
-<tr><td>Brio World Wooden Train System (Starter Set)</td><td>Toy</td><td>★★★★</td><td>Wooden track railway system. Open-ended construction, spatial reasoning, creativity. Grows with them through age 7+. Compatible with other track systems.</td><td>—</td></tr>
-<tr><td>Grimm's Nesting/Stacking Cups</td><td>Toy</td><td>★★★★</td><td>Scale, categorization, water play. Deceptively simple, endlessly re-engageable.</td><td>—</td></tr>
-<tr><td>Hape Shape Sorting Box</td><td>Toy</td><td>★★★★</td><td>Categorization, spatial reasoning, problem-solving. Frustration tolerance at its most basic.</td><td>—</td></tr>
-<tr><td>Eric Carle — Very Hungry Caterpillar + Brown Bear</td><td>Book</td><td>★★★★</td><td>Cause-effect (eating → growth), categorization, rhythm, colors.</td><td><a href="#s-activity">First-Principles seed</a></td></tr>
-<tr><td>Dr. Seuss — Cat in the Hat, Green Eggs</td><td>Book</td><td>★★★★</td><td>Phonemic awareness in English. Rhyme, rhythm, memorizable patterns.</td><td>—</td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
-<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★</td><td>Visual search, sustained attention, pattern recognition. Re-engageable for years.</td><td>—</td></tr>
-<tr><td>Magna-Tiles 32-piece Starter</td><td>Toy</td><td>★★★</td><td>Magnetic construction. Bridge between Duplo and KAPLA. 3D spatial reasoning.</td><td>—</td></tr>
-<tr><td>Melissa & Doug Latches Board</td><td>Toy</td><td>★★★</td><td>Fine motor, cause-effect, problem-solving. Real latches with satisfying mechanism.</td><td>—</td></tr>
-<tr><td>Gruffalo — Julia Donaldson</td><td>Book</td><td>★★★</td><td>Rhythm, repetition, narrative structure. Strategy (the mouse outsmarts everyone).</td><td>—</td></tr>
-<tr><td>Sandra Boynton board books</td><td>Book</td><td>★★★</td><td>Humor, rhythm, animals. Moo Baa La La La, Pajama Time. Engagement through silliness.</td><td>—</td></tr>
-<tr><td>Plan Toys Sorting Bus</td><td>Toy</td><td>★★★</td><td>Shape sorting + wheels. Combines spatial reasoning with motor play.</td><td>—</td></tr>
-<tr><td>Aquaplay Water Table</td><td>Toy</td><td>★★★</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking.</td><td>—</td></tr>
-<tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>★★★</td><td>Interna reading list. Simple, repetitive, engaging in Spanish.</td><td>—</td></tr>
-<tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>★★★</td><td>Curiosity tool. Transforms any walk into an investigation.</td><td><a href="#s-activity">Curiosity</a></td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CANON — Integral to program</td></tr>
+<tr><td>Yoto Player</td><td>Equipment</td><td>★★★★★ Canon</td><td>Screen-free audio device. Full-size with make-your-own card capability. Primary audio device for ages 1–7. Durable, intuitive, English and Spanish content. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td>Duplo Large Creative Box</td><td>Toy</td><td>★★★★★ Canon</td><td>Open-ended construction. Spatial reasoning, iteration, fine motor. Avoid themed sets. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td>Richard Scarry — Cars and Trucks and Things That Go</td><td>Book</td><td>★★★★★ Canon</td><td>Systems, vocabulary density, Goldbug hidden-object search. The perfect 2-year-old book. Canon — integral to the program's core progression.</td><td><a href="#s-activity">Verbal Intelligence</a></td></tr>
+<tr><td>Grimm's Rainbow (12-piece)</td><td>Toy</td><td>★★★★★ Canon</td><td>Gold standard for open-ended wooden play. Teaches scale, nesting, balance, spatial reasoning, creativity. Lasts through age 12+. Canon — integral to the program's core progression.</td><td><a href="#s-activity">Grit seed</a></td></tr>
+<tr><td>Magna-Tiles (100-piece set minimum)</td><td>Toy</td><td>★★★★★ Canon</td><td>Magnetic construction tiles. Superior to Magformers in stability and structural possibilities. Open-ended 3D building. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★ Core</td><td>Portable version for travel. Same functionality as Player, compact and durable. Portability essential for family trips. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Strider 12 Sport Balance Bike</td><td>Equipment</td><td>★★★★ Core</td><td>No pedals — balance first. Transforms outdoor time. From 18 months. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Brio World Wooden Train System (Starter Set)</td><td>Toy</td><td>★★★★ Core</td><td>Wooden track railway system. Open-ended construction, spatial reasoning, creativity. Grows with them through age 7+. Compatible with other track systems. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Grimm's Nesting/Stacking Cups</td><td>Toy</td><td>★★★★ Core</td><td>Scale, categorization, water play. Deceptively simple, endlessly re-engageable. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Hape Shape Sorting Box</td><td>Toy</td><td>★★★★ Core</td><td>Categorization, spatial reasoning, problem-solving. Frustration tolerance at its most basic. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Eric Carle — Very Hungry Caterpillar + Brown Bear</td><td>Book</td><td>★★★★ Core</td><td>Cause-effect (eating → growth), categorization, rhythm, colors. Core — strongly recommended.</td><td><a href="#s-activity">First-Principles seed</a></td></tr>
+<tr><td>Dr. Seuss — Cat in the Hat, Green Eggs</td><td>Book</td><td>★★★★ Core</td><td>Phonemic awareness in English. Rhyme, rhythm, memorizable patterns. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★ Recommended</td><td>Visual search, sustained attention, pattern recognition. Re-engageable for years. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Magna-Tiles 32-piece Starter</td><td>Toy</td><td>★★★ Recommended</td><td>Magnetic construction. Bridge between Duplo and KAPLA. 3D spatial reasoning. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Melissa & Doug Latches Board</td><td>Toy</td><td>★★★ Recommended</td><td>Fine motor, cause-effect, problem-solving. Real latches with satisfying mechanism. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Gruffalo — Julia Donaldson</td><td>Book</td><td>★★★ Recommended</td><td>Rhythm, repetition, narrative structure. Strategy (the mouse outsmarts everyone). Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Sandra Boynton board books</td><td>Book</td><td>★★★ Recommended</td><td>Humor, rhythm, animals. Moo Baa La La La, Pajama Time. Engagement through silliness. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Plan Toys Sorting Bus</td><td>Toy</td><td>★★★ Recommended</td><td>Shape sorting + wheels. Combines spatial reasoning with motor play. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Aquaplay Water Table</td><td>Toy</td><td>★★★ Recommended</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>★★★ Recommended</td><td>Interna reading list. Simple, repetitive, engaging in Spanish. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>★★★ Recommended</td><td>Curiosity tool. Transforms any walk into an investigation. Recommended — good defaults, swap freely.</td><td><a href="#s-activity">Curiosity</a></td></tr>
 </table>

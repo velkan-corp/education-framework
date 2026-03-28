@@ -26,16 +26,18 @@ order: 1
 <tr><td>Curiosity seed</td><td>High-contrast visual input; varied sensory stimulation.</td><td>Montessori mobile sequence: Munari → Octahedron → Gobbi → Dancers.</td></tr>
 <tr><td>Focus seed</td><td>Don't interrupt sustained attention. If they're staring at something for 3 minutes, that IS the work.</td><td>Avoid overstimulating toy rotation. Fewer toys, more time with each.</td></tr>
 <tr><td>Physical seed</td><td>Tummy time, floor freedom, outdoor exposure to weather variation.</td><td><a href="#s-resources">Baby Bjorn Bouncer</a>. Outdoor blanket time daily regardless of weather.</td></tr>
+<tr><td>Relational Intelligence seed</td><td>Secure attachment IS the foundation. Responsive caregiving produces children who later navigate social complexity with confidence.</td><td>Parent-and-baby groups. 3-4 families with similar-age children.</td></tr>
+<tr><td>Empathy seed</td><td>Co-regulation models emotional attunement. Name their emotions: "You're frustrated." This gives handles for experiences.</td><td>Consistent narration of emotional states.</td></tr>
 </table>
 
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>
 <div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>May need more intense stimulation to engage. Bolder contrasts, more physical play, varied textures. Don't mistake calm for contentment — they may simply need more input.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models at This Stage</h2>
-<p>Pre-linguistic and experiential. Built through action and consequence, not words.</p>
+<p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>
 <table>
 <tr><th>Model</th><th>How It's Built</th></tr>
-<tr><td>Cause & Effect</td><td>Dominoes, stacking towers, water pouring — any toy with direct physical consequence.</td></tr>
+<tr><td>Cause & Effect — Layer 0 (pre-linguistic foundation for Model #1)</td><td>Dominoes, stacking towers, water pouring — any toy with direct physical consequence.</td></tr>
 <tr><td>Object Permanence</td><td>Peek-a-boo, hiding objects under blankets, find the hidden toy.</td></tr>
 <tr><td>Categorization</td><td>Shape sorters, color grouping. "Find all the round ones."</td></tr>
 </table>
@@ -52,6 +54,7 @@ order: 1
 
 <h2 id="s-language"><span class="material-symbols-rounded">public</span>Language</h2>
 <p>OPOL active: you speak English exclusively. All books you read are English. The interna reads Spanish books during the day. Singing in both languages. No correction — just immersion.</p>
+<p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
 
 <h2 id="s-network"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
 <p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
@@ -83,6 +86,9 @@ order: 1
 <h2 id="s-nature"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
 <p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
 
+<h2 id="s-religion"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Wonder & Awe</h2>
+<p>At this age, meaning-making is pre-verbal: wonder and awe. The infant staring at light through leaves, mesmerized by rain, transfixed by a candle flame — this is the first encounter with the numinous. Don't rush past these moments. Sit in them. The capacity for wonder is the substrate on which all later spiritual and philosophical development is built. This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
+
 <h2 id="s-cognition"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>
 <p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 
@@ -99,25 +105,25 @@ order: 1
 <h3>Full Resource List</h3>
 <table>
 <tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
-<tr><td>Lovevery Play Gym</td><td>Toy</td><td>★★★★★</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories.</td><td><a href="#s-activity">Self-Efficacy seed</a></td></tr>
-<tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>★★★★★</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months.</td><td><a href="#s-activity">Self-Compassion seed</a></td></tr>
-<tr><td>Montessori Munari Mobile</td><td>Toy</td><td>★★★★★</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise.</td><td>—</td></tr>
-<tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>★★★★★</td><td>Dense visual systems. Every page is an information environment.</td><td>—</td></tr>
-<tr><td>Richard Scarry — What Do People Do All Day</td><td>Book</td><td>★★★★★</td><td>How a town works as a system. Categorization, roles, interdependence.</td><td>—</td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
-<tr><td>High-Contrast Cards (Wee Gallery)</td><td>Toy</td><td>★★★★</td><td>Birth–3 months. Black/white art cards. Visual development before color vision matures.</td><td>—</td></tr>
-<tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>★★★★</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins.</td><td>—</td></tr>
-<tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>★★★★</td><td>8–12 weeks. Gradient of a single color. Depth perception development.</td><td>—</td></tr>
-<tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>★★★★</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion.</td><td>—</td></tr>
-<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>★★★★</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce).</td><td><a href="#s-activity">Physical seed</a></td></tr>
-<tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>★★★★</td><td>The canonical bedtime book. Repetition, pattern, ritual.</td><td>—</td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
-<tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>★★★★★</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal.</td><td>—</td></tr>
-<tr><td>Brio Wooden Trains</td><td>Toy</td><td>★★★★</td><td>Classic wooden train system. Wooden track pieces invite open-ended play. Spatial reasoning from the start.</td><td>—</td></tr>
-<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere.</td><td>—</td></tr>
-<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years.</td><td>—</td></tr>
-<tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>★★★</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action.</td><td>—</td></tr>
-<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>★★★</td><td>Comfort object. Texture variety. Secure attachment support.</td><td>—</td></tr>
-<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>★★★</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor.</td><td>—</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CANON — Integral to program</td></tr>
+<tr><td>Lovevery Play Gym</td><td>Toy</td><td>★★★★★ Canon</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories. Canon — integral to the program's core progression.</td><td><a href="#s-activity">Self-Efficacy seed</a></td></tr>
+<tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>★★★★★ Canon</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months. Canon — integral to the program's core progression.</td><td><a href="#s-activity">Self-Compassion seed</a></td></tr>
+<tr><td>Montessori Munari Mobile</td><td>Toy</td><td>★★★★★ Canon</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>★★★★★ Canon</td><td>Dense visual systems. Every page is an information environment. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td>Richard Scarry — What Do People Do All Day</td><td>Book</td><td>★★★★★ Canon</td><td>How a town works as a system. Categorization, roles, interdependence. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>High-Contrast Cards (Wee Gallery)</td><td>Toy</td><td>★★★★ Core</td><td>Birth–3 months. Black/white art cards. Visual development before color vision matures. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>★★★★ Core</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>★★★★ Core</td><td>8–12 weeks. Gradient of a single color. Depth perception development. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>★★★★ Core</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>★★★★ Core</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce). Core — strongly recommended.</td><td><a href="#s-activity">Physical seed</a></td></tr>
+<tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>★★★★ Core</td><td>The canonical bedtime book. Repetition, pattern, ritual. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
+<tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>★★★★★ Canon</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal. Canon — integral to the program's core progression.</td><td>—</td></tr>
+<tr><td>Brio Wooden Trains</td><td>Toy</td><td>★★★★ Core</td><td>Classic wooden train system. Wooden track pieces invite open-ended play. Spatial reasoning from the start. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>★★★★ Core</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere. Core — strongly recommended.</td><td>—</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>★★★ Recommended</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>★★★ Recommended</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>★★★ Recommended</td><td>Comfort object. Texture variety. Secure attachment support. Recommended — good defaults, swap freely.</td><td>—</td></tr>
+<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>★★★ Recommended</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor. Recommended — good defaults, swap freely.</td><td>—</td></tr>
 </table>

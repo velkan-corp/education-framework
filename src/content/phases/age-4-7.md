@@ -33,6 +33,8 @@ order: 3
 <tr><td>Curiosity</td><td>Museums as regular practice. Your own visible wonder is the primary mechanism. Go with questions, leave with new ones.</td><td><a href="#s-resources">Museum memberships (Natural History, Science, Art)</a>. Field trips: bakery, post office, fire station.</td></tr>
 <tr><td>Verbal Intelligence</td><td>Storytelling games at dinner. Explain-it-back after any film. Debate character decisions.</td><td><a href="#s-resources">Rory's Story Cubes</a> · <a href="#s-resources">Dixit</a> · <a href="#s-resources">Roald Dahl complete works</a> (read aloud)</td></tr>
 <tr><td>Physical Hardship</td><td>Cold-weather outdoor play. Long hikes. Martial arts with real contact.</td><td>Jiu-Jitsu (Gracie Bullyproof) or Muay Thai kids. Woom 3 bike. <a href="#s-resources">Deuter Junior 18L backpack</a> — they carry their own water.</td></tr>
+<tr><td>Relational Intelligence</td><td>Team sport begins. Coordinating with others toward a shared goal under rules they didn't set. Conflict resolution: "What do you want? What does she want? How can you both get some?"</td><td>Football, basketball, or similar team sport enrollment. NOT for competition — for social calibration.</td></tr>
+<tr><td>Empathy & Moral Seriousness</td><td>Helping as habit: cook, clean, carry groceries for the elderly neighbor. Donate toys — let them choose which and hand over personally. "Other beings need things, and you can provide some."</td><td>Animal shelter visits. Service as regular activity, not special event. <a href="#s-resources">After the Fall</a> (perspective-taking through story).</td></tr>
 </table>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>The niche mastery activity can be solitary (instrument practice, chess puzzles, drawing) rather than group-based. Reduce extracurricular scheduling — one activity per day maximum. Protect solo reading/building time as sacred, not as "doing nothing."</div>
@@ -45,19 +47,20 @@ order: 3
 <div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>This child is your dream student. Feed the obsession mercilessly. If it's dinosaurs for 18 months straight, go to paleontology museums, buy university textbooks with pictures, watch documentaries. Don't redirect — deepen.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
+<p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>
 <table>
-<tr><th>Model</th><th>How to Introduce</th></tr>
-<tr><td>Inversion</td><td>"What if the villain was right?" "What if nobody followed any rules?" Calvin & Hobbes: Calvin constantly inverts social norms.</td></tr>
-<tr><td>Incentives</td><td>"Why does that character want that?" After every story. Not rhetorical — reason it out together.</td></tr>
-<tr><td>Systems / Interdependence</td><td>Field trips: "What happens if the baker doesn't bake? Then what?" Avatar: the four nations as an interdependent system.</td></tr>
-<tr><td>Circularity / Feedback</td><td>Plant growth cycles, weather, "if you water it every day, it grows, and then what?"</td></tr>
-<tr><td>Simple Probability</td><td>Dice games. "Which number will come up most?" Don't over-explain — plant the concept.</td></tr>
+<tr><th>Universal Model</th><th>How to Introduce (Layer 1)</th></tr>
+<tr><td>Feedback Loops (#2)</td><td>Plant growth cycles, weather patterns. "If you water it every day, it grows, and then what?" Avatar: the four nations as an interdependent system.</td></tr>
+<tr><td>Incentives (#3)</td><td>"Why does that character want that?" After every story. Not rhetorical — reason it out together. "Why does your friend share toys?"</td></tr>
+<tr><td>Inversion (#4)</td><td>"What if the villain was right?" "What if nobody followed any rules?" Calvin & Hobbes: Calvin constantly inverts social norms.</td></tr>
+<tr><td>Cause & Effect (#1)</td><td>Continues from 0-3 at greater complexity. Field trips: "What happens if the baker doesn't bake? Then what?" Dice games for simple probability.</td></tr>
 </table>
+<p>These four models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
 
 <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
 <p><strong>Primary anchors:</strong> Avatar: The Last Airbender (own on Blu-ray, don't rely on streaming). Calvin & Hobbes Complete Collection (Fantagraphics 3-vol hardcover — Sunday strip compositions require the large format).</p>
 <p><strong>Supplementary:</strong> Studio Ghibli — Totoro → Kiki → Spirited Away in that order. Roald Dahl complete works (read aloud — morality is deliberately provocative; use it for discussion).</p>
-<p><strong>Spanish track:</strong> Introduce Mafalda (age 7+) — the Argentine Calvin & Hobbes. Social commentary through a child's voice, culturally proximate, Spanish-language.</p>
+<p><strong>Spanish-language anchor (equal weight to English anchors):</strong> Mafalda (age 7+) — social commentary through a child's voice, culturally proximate. Treat with full DIM engagement, not as supplement. This is L2 intellectual work, not translation.</p>
 
 <h2 id="s-music"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
@@ -81,6 +84,14 @@ order: 3
 <p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
 <p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
 <p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
+
+<h2 id="s-sport"><span class="material-symbols-rounded">sports_soccer</span>Team Sport — NON-NEGOTIABLE</h2>
+<p>Team sport begins at age 4. This is the primary vehicle for Targets 11-12 (Relational Intelligence, Empathy & Moral Seriousness). Not for competition — for the experience of coordinating with others toward a shared goal under rules.</p>
+<p><strong>Options:</strong> Football (most accessible in Madrid), basketball, rugby, hockey. The specific sport matters less than: (1) it's genuinely team-based, (2) there's a coach who develops character not just skill, (3) the child plays with children they didn't choose.</p>
+<p><strong>What to watch for:</strong> How do they handle a teammate's mistake? Do they encourage or blame? How do they respond to being benched? Can they follow a captain who isn't their friend? The emotional learning happens in these moments, not in the goals scored.</p>
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Smaller team sports (basketball, futsal) may be less overwhelming than 11-a-side football. One team sport session per week is sufficient — don't overload social energy. Recovery time after matches is real, not avoidance.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team sport is their natural habitat. They'll want more — let them. This is where their social energy becomes a strength. Multiple team activities are fine if the schedule allows.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Aggressive coaching styles are harmful. Find a coach who develops, not dominates. Contact sports may need gradual introduction. Watch for overwhelm after losses — they may need longer recovery than peers.</div>
 
 <h2 id="s-build"><span class="material-symbols-rounded">construction</span>Building & Entrepreneurship</h2>
 <p><strong>Build:</strong> Physical construction — KAPLA, LEGO without instructions, woodworking with real tools at 6–7 (supervised, real saw and hammer, not plastic). The pride of making something real and functional.</p>
@@ -123,6 +134,7 @@ order: 3
 <p><strong>Poetry exposure.</strong> Read Shel Silverstein and A.A. Milne aloud together. Not forced memorization — appreciation. "Listen to how that sounds. Why is it funny? What makes it stick?" Poetry is language at its most compressed and musical.</p>
 </div>
 </div>
+<p><strong>L3 exposure window opens.</strong> Age 6-8 is optimal for introducing a third language through immersion (summer program, au pair, media). Not classroom instruction — exposure first. See Philosophy tab for multilingual architecture. French is highest-utility from Madrid; the specific choice follows the child's interest and available immersion.</p>
 
 <h2 id="s-visual"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
 <p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
@@ -185,21 +197,21 @@ order: 3
 <h3>Full Resource List</h3>
 <table>
 <tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★★ Essential</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CANON — Integral to program</td></tr>
 <tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>★★★★★</td><td>Primary anchor universe. Own it physically — don't rely on streaming.</td><td>—</td></tr>
 <tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>★★★★★</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format.</td><td>—</td></tr>
 <tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>★★★★★</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td><td>—</td></tr>
 <tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>★★★★★</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6.</td><td>—</td></tr>
-<tr><td>Roald Dahl Complete Works</td><td>Book</td><td>★★★★★</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion.</td><td><a href="#s-activity">Verbal Intelligence</a></td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★★ Recommended</td></tr>
-<tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>★★★★</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression.</td><td>—</td></tr>
-<tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>★★★★</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12.</td><td><a href="#s-activity">Ambiguity Tolerance</a></td></tr>
+<tr><td>Roald Dahl Complete Works</td><td>Book</td><td>★★★★★</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion. Especially valuable for verbal-abstract profiles.</td><td><a href="#s-activity">Verbal Intelligence</a></td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>★★★★</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression. Alternative for high-sensitivity profiles who need non-aggressive physical challenge.</td><td>—</td></tr>
+<tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>★★★★</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12. Especially valuable for spatial-kinesthetic profiles.</td><td><a href="#s-activity">Ambiguity Tolerance</a></td></tr>
 <tr><td>Kala KA-15S Ukulele</td><td>Equipment</td><td>★★★★</td><td>Correctly sized for small hands. Durable, stays in tune. Good starter instrument.</td><td>—</td></tr>
 <tr><td>Goula Magnetic Chess Set</td><td>Toy</td><td>★★★★</td><td>Correctly sized, portable, magnetic. Start with kings and pawns only.</td><td>—</td></tr>
 <tr><td>Chess for Children — Murray & Cowan</td><td>Book</td><td>★★★★</td><td>Best introductory chess book for this age.</td><td>—</td></tr>
 <tr><td>Woom 3 or Prevelo Alpha Two Bike</td><td>Equipment</td><td>★★★★</td><td>Proper geometry for confident riding. Size up as needed.</td><td>—</td></tr>
 <tr><td>Mafalda — Quino (Spanish)</td><td>Book</td><td>★★★★</td><td>Age 7+. Argentine Calvin & Hobbes. Social commentary through child's voice. Spanish-language anchor.</td><td>—</td></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">★★★ Supplementary</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
 <tr><td>Museum Memberships (Natural History, Science, Art)</td><td>Service</td><td>★★★</td><td>Annual membership pays for itself in 2 visits. Come with questions, leave with new ones.</td><td><a href="#s-activity">Curiosity</a> &middot; <a href="#s-activity">Obsessive Focus</a></td></tr>
 <tr><td>DK Eyewitness Series</td><td>Book</td><td>★★★</td><td>Visual density, depth, re-engageable reference. Match to their current obsession.</td><td>—</td></tr>
 <tr><td>Osmo Starter Kit</td><td>Equipment</td><td>★★★★★</td><td>Tablet-based tangible play system. Coding, math, drawing, words. The best bridge between physical manipulation and digital thinking.</td><td>—</td></tr>
