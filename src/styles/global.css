@@ -524,6 +524,19 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: var(--sp-3) -4px var(--sp-4); padding: 0 4px; }
 .table-scroll table { min-width: 500px; }
 
+/* PHILOSOPHY PRINCIPLES */
+.principle { margin: var(--sp-4) 0; }
+.principle h3 { display: flex; align-items: center; gap: var(--sp-2); flex-wrap: wrap; }
+.principle .info-toggle { font-size: 11px; padding: 2px 8px; border-radius: 10px; }
+.principle .info-tip {
+  font-size: 13px; line-height: 1.6;
+  padding: var(--sp-3); background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--sp-2);
+  margin-top: var(--sp-2);
+}
+.principle .info-tip p { margin-bottom: var(--sp-2); }
+.principle .info-tip p:last-child { margin-bottom: 0; }
+
 /* RESOURCE TABLE FILTERS */
 .resource-filters {
   display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center;

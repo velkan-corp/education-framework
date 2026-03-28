@@ -20,14 +20,14 @@ order: 1
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
 <table>
 <tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
-<tr><td>Self-Efficacy seed</td><td>Respond consistently to signals. Reliability teaches "my actions produce results."</td><td><a href="#s-resources">Lovevery Play Gym</a> for graduated reach/grasp challenges.</td></tr>
+<tr><td>Resilient Self-Efficacy seed</td><td>Respond consistently to signals. Reliability teaches "my actions produce results." Don't intervene too quickly when they struggle — the effort itself wires persistence.</td><td><a href="#s-resources">Lovevery Play Gym</a> for graduated reach/grasp challenges.</td></tr>
 <tr><td>Self-Compassion seed</td><td>Soothe distress with warmth and physical contact. Teaches: emotional states are survivable.</td><td><a href="#s-resources">Ergobaby 360 Carrier</a> — hands-free contact.</td></tr>
 <tr><td>Agency seed</td><td>Let them reach, bat, grab, explore without constant redirection.</td><td>Replace hanging objects regularly — novelty maintains engagement.</td></tr>
-<tr><td>Curiosity seed</td><td>High-contrast visual input; varied sensory stimulation.</td><td>Montessori mobile sequence: Munari → Octahedron → Gobbi → Dancers.</td></tr>
-<tr><td>Focus seed</td><td>Don't interrupt sustained attention. If they're staring at something for 3 minutes, that IS the work.</td><td>Avoid overstimulating toy rotation. Fewer toys, more time with each.</td></tr>
-<tr><td>Physical seed</td><td>Tummy time, floor freedom, outdoor exposure to weather variation.</td><td><a href="#s-resources">Baby Bjorn Bouncer</a>. Outdoor blanket time daily regardless of weather.</td></tr>
+<tr><td>Deep Curiosity seed</td><td>High-contrast visual input; varied sensory stimulation. Don't interrupt sustained attention — if they're staring at something for 3 minutes, that IS the work.</td><td>Montessori mobile sequence: Munari → Octahedron → Gobbi → Dancers. Fewer toys, more time with each.</td></tr>
+<tr><td>Physical System Mastery seed</td><td>Tummy time, floor freedom, outdoor exposure to weather variation.</td><td><a href="#s-resources">Baby Bjorn Bouncer</a>. Outdoor blanket time daily regardless of weather.</td></tr>
 <tr><td>Relational Intelligence seed</td><td>Secure attachment IS the foundation. Responsive caregiving produces children who later navigate social complexity with confidence.</td><td>Parent-and-baby groups. 3-4 families with similar-age children.</td></tr>
-<tr><td>Empathy seed</td><td>Co-regulation models emotional attunement. Name their emotions: "You're frustrated." This gives handles for experiences.</td><td>Consistent narration of emotional states.</td></tr>
+<tr><td>Empathy & Kindness seed</td><td>Co-regulation models emotional attunement. Name their emotions: "You're frustrated." This gives handles for experiences.</td><td>Consistent narration of emotional states.</td></tr>
+<tr><td>Self-Awareness seed</td><td>Co-regulation is the curriculum. Name their emotions: "You're frustrated." This gives handles for experiences and builds the foundation of self-knowledge.</td><td>Consistent narration of emotional and physical states.</td></tr>
 </table>
 
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>
@@ -106,7 +106,7 @@ order: 1
 <table>
 <tr><th>Resource</th><th>Type</th><th>Description</th><th>Targets</th></tr>
 <tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
-<tr><td>Lovevery Play Gym</td><td>Toy</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories.</td><td><a href="#s-activity">Self-Efficacy seed</a></td></tr>
+<tr><td>Lovevery Play Gym</td><td>Toy</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories.</td><td><a href="#s-activity">Resilient Self-Efficacy seed</a></td></tr>
 <tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months.</td><td><a href="#s-activity">Self-Compassion seed</a></td></tr>
 <tr><td>Montessori Munari Mobile</td><td>Toy</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise.</td><td>—</td></tr>
 <tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>Dense visual systems. Every page is an information environment.</td><td>—</td></tr>
@@ -116,7 +116,7 @@ order: 1
 <tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins.</td><td>—</td></tr>
 <tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>8–12 weeks. Gradient of a single color. Depth perception development.</td><td>—</td></tr>
 <tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion.</td><td>—</td></tr>
-<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce).</td><td><a href="#s-activity">Physical seed</a></td></tr>
+<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce).</td><td><a href="#s-activity">Physical System Mastery seed</a></td></tr>
 <tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>The canonical bedtime book. Repetition, pattern, ritual.</td><td>—</td></tr>
 <tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
 <tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal.</td><td>—</td></tr>
