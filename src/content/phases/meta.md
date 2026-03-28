@@ -90,6 +90,7 @@ order: 8
 <p><strong>6. Interna alignment:</strong> Update the one-page brief. Is the interna executing what you intend?</p>
 <p><strong>7. Time audit:</strong> Are the recommended activities actually fitting? If not, what gets cut? Use the tier system: cut RECOMMENDED (Tier 3) first, then CORE (Tier 2) if necessary. Never cut FOUNDATIONAL (Tier 1): sleep, outdoor time, unstructured time, team sport, physical activity.</p>
 <p><strong>8. Onion layer check:</strong> Which mental models were revisited this quarter? At what depth? Are previously learned concepts being reinforced or fading?</p>
+<p><strong>9. Portfolio check:</strong> What was shipped, competed in, published, or built this quarter? How does it strengthen the narrative? What's the next escalation?</p>
 <p><strong>Log the answers.</strong> Review the log annually. Patterns over 4 quarters reveal more than any single observation.</p>
 <p><strong>The child's experience of this review should be invisible.</strong> This is a parent-facing calibration tool, not a report card.</p>
 
@@ -136,3 +137,42 @@ order: 8
 <p><strong>Kindness creates return luck.</strong> People help people who helped them. Reliable kindness accumulates social capital that converts into opportunity years later.</p>
 <p><strong>Taleb's barbell:</strong> Very conservative in most things. Asymmetric bets in a few. Never risk ruin for marginal gain.</p>
 <p><strong>Teach them to recognize it.</strong> "That happened because you were prepared AND in the right room AND someone remembered you were kind."</p>
+
+<h2 id="s-application"><span class="material-symbols-rounded">workspace_premium</span>The Application Architecture</h2>
+<p>The framework develops capability. This section converts capability into externally validated, admissions-visible excellence. Not gaming the system — making the excellence VISIBLE. A child who is genuinely excellent but can't demonstrate it loses to a child who is slightly less excellent but packages it brilliantly.</p>
+
+<h3>Competition Pipeline</h3>
+<p>Deliberate escalation: local → regional → national → international. The domain determines the path:</p>
+<table>
+<tr><th>Domain</th><th>Pipeline</th></tr>
+<tr><td>Math</td><td>AMC 8 (age 10) → AMC 10/12 → AIME → USAMO → IMO</td></tr>
+<tr><td>Science</td><td>School fairs → Science Olympiad → Intel ISEF → Regeneron STS</td></tr>
+<tr><td>Debate</td><td>School → regional → nationals → WSDC / international</td></tr>
+<tr><td>Music</td><td>ABRSM grades → national youth competitions → international festivals</td></tr>
+<tr><td>Coding</td><td>Hackathons → open-source contributions → app with real users</td></tr>
+<tr><td>Entrepreneurship</td><td>School fair → Techstars Weekend → real revenue → LaunchX</td></tr>
+</table>
+
+<h3>Ship-It Escalation</h3>
+<p><strong>Age 10:</strong> Toy project — it works, shown to family. <strong>Age 12:</strong> Project with real users (100+) or real revenue. <strong>Age 14:</strong> Project at scale — 1,000+ users, meaningful revenue, or measurable community impact. <strong>Age 16:</strong> Portfolio of 3+ shipped projects with demonstrable external validation.</p>
+
+<h3>Research & Publication Track</h3>
+<p><strong>Age 13-14:</strong> Identify university labs/researchers in the niche. Cold email professors (parent helps draft). Offer to volunteer/intern.</p>
+<p><strong>Age 14-15:</strong> Research mentorship active. Learning methodology, contributing to data collection/analysis.</p>
+<p><strong>Age 15-16:</strong> Co-author a paper or lead independent research. Present at a conference.</p>
+<p><strong>Age 16-17:</strong> Published or under review. RSI/MOSTEC/equivalent summer research program.</p>
+
+<h3>Founder Track</h3>
+<p><strong>Age 12-13:</strong> First business with real customers (not family). <strong>Age 14:</strong> Business with revenue or nonprofit with measurable impact. <strong>Age 15-16:</strong> Scaled — users, revenue, team, or community served at meaningful scale. The "I built this" story is the most compelling narrative in admissions.</p>
+
+<h3>Narrative Architecture</h3>
+<p>By 14, consciously shape the story: what's the thread connecting niche, projects, service, intellectual interests? The narrative isn't fabricated — it's discovered from the life already being lived, then sharpened. The application essay doesn't write itself — the LIFE is shaped into a coherent arc. Add to quarterly review: "What's the narrative? How do this quarter's activities strengthen it?"</p>
+
+<h3>Test Preparation</h3>
+<p>PSAT diagnostic at 14-15. SAT/ACT prep starting age 15 — private tutor, not group class. Target: 1550+ SAT or 35+ ACT. Table stakes, not differentiator — but a 1400 with an amazing spike still loses to a 1560 with the same spike.</p>
+
+<h3>Recommendation Letter Strategy</h3>
+<p>Cultivate 2-3 mentor relationships starting age 13-14: the niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. These relationships need 2+ years to produce extraordinary letters. The mentor must know the child well enough to write with SPECIFIC, COMPELLING examples — not generic praise.</p>
+
+<h3>Community Leadership at Visible Scale</h3>
+<p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Admissions wants: "this person made their community better" — demonstrated, not claimed.</p>
