@@ -58,9 +58,19 @@ order: 3
 <p>These four models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
 
 <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-<p><strong>Primary anchors:</strong> Avatar: The Last Airbender (own on Blu-ray, don't rely on streaming). Calvin & Hobbes Complete Collection (Fantagraphics 3-vol hardcover — Sunday strip compositions require the large format).</p>
-<p><strong>Supplementary:</strong> Studio Ghibli — Totoro → Kiki → Spirited Away in that order. Roald Dahl complete works (read aloud — morality is deliberately provocative; use it for discussion).</p>
-<p><strong>Spanish-language anchor (equal weight to English anchors):</strong> Mafalda (age 7+) — social commentary through a child's voice, culturally proximate. Treat with full DIM engagement, not as supplement. This is L2 intellectual work, not translation.</p>
+<p><strong>Anchor works</strong> get full DIM treatment. The broader content diet is Absorb-mode — consume freely, discuss naturally, don't over-analyze. All content in original language with subtitles.</p>
+<h3>FOUNDATIONAL Anchors</h3>
+<p><strong>Avatar: The Last Airbender</strong> (own on Blu-ray). The four nations as interdependent system. Zuko's redemption arc. Consequence and responsibility. Once the show is finished, the Avatar comics (The Promise, The Search, The Rift) extend the universe — CORE.</p>
+<p><strong>Calvin & Hobbes Complete Collection</strong> (Fantagraphics 3-vol hardcover). Philosophy disguised as a comic strip. Inversion, imagination, social commentary. Sunday strips require the large format.</p>
+<p><strong>Don Quijote adapted</strong> (Rosa Navarro Durán's <em>Don Quijote contado a los niños</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
+<h3>CORE</h3>
+<p><strong>Studio Ghibli</strong> — Totoro → Kiki → Spirited Away in that order (Japanese audio, subtitles). Interdependence with nature, ambiguity, beauty.</p>
+<p><strong>Roald Dahl complete works</strong> (read aloud) — morality deliberately provocative; use for discussion.</p>
+<p><strong>Mafalda</strong> (Quino, age 7+) — social commentary through a child's voice. Spanish-language. Worth reading but not the spine of the program.</p>
+<h3>RECOMMENDED — Broader Content Diet</h3>
+<p><strong>DC/Marvel entry points:</strong> Batman: The Animated Series (English, original audio). Spider-Man: Into the Spider-Verse. Moral complexity at accessible level. Shared cultural vocabulary with peers.</p>
+<p><strong>Mortadelo y Filemón</strong> (Ibáñez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
+<p><strong>The Iron Giant</strong> (film) — sacrifice, identity, "I am not a gun." <strong>WALL-E</strong> — systems, ecology, loneliness.</p>
 
 <h2 id="s-music"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
@@ -203,6 +213,7 @@ order: 3
 <tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td><td>—</td></tr>
 <tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6.</td><td>—</td></tr>
 <tr><td>Roald Dahl Complete Works</td><td>Book</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion. Especially valuable for verbal-abstract profiles.</td><td><a href="#s-activity">Verbal Intelligence</a></td></tr>
+<tr><td>Don Quijote contado a los niños — Rosa Navarro Durán</td><td>Book</td><td>FOUNDATIONAL Spanish-language anchor. Children's adaptation of the foundational Spanish novel. Maps ≠ Territory made human. Read in Spanish.</td><td>—</td></tr>
 <tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
 <tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression. Alternative for high-sensitivity profiles who need non-aggressive physical challenge.</td><td>—</td></tr>
 <tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12. Especially valuable for spatial-kinesthetic profiles.</td><td><a href="#s-activity">Ambiguity Tolerance</a></td></tr>
@@ -232,4 +243,8 @@ order: 3
 <tr><td>Muay Thai Kids Class</td><td>Service</td><td>Real contact, real technique, real pads. Alternative to Jiu-Jitsu.</td><td>—</td></tr>
 <tr><td>Brio World Wooden Train System</td><td>Toy</td><td>Wooden track railway. Open-ended construction, spatial reasoning, persistence. Escalate from basic to advanced track sets. Lasts through age 10+.</td><td>—</td></tr>
 <tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty.</td><td>—</td></tr>
+<tr><td>Batman: The Animated Series</td><td>Film</td><td>Moral complexity, visual storytelling, noir aesthetics. English original audio. Entry point to DC universe.</td><td>—</td></tr>
+<tr><td>Spider-Man: Into the Spider-Verse</td><td>Film</td><td>Visual innovation, identity, multiverse as metaphor. English original audio.</td><td>—</td></tr>
+<tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made.</td><td>—</td></tr>
+<tr><td>WALL-E</td><td>Film</td><td>Systems, ecology, loneliness, hope. Minimal dialogue — visual storytelling at its best.</td><td>—</td></tr>
 </table>

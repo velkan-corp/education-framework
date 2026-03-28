@@ -155,6 +155,24 @@ order: 0
 </table>
 <p>This progression ensures that encountering Dostoevsky's Grand Inquisitor at 17 is a deepening of existing engagement, not a first encounter with questions of meaning. A child who has sat with mystery at 4, explored meaning-making traditions at 9, and reasoned about faith at 12 has the substrate to receive existential philosophy as philosophy — not just literature.</p>
 
+<h2 id="s-multimedium"><span class="material-symbols-rounded">devices</span>Multi-Medium Engagement</h2>
+<p>Content should be consumed across formats — not just books. Each medium develops different cognitive modes:</p>
+<table>
+<tr><th>Medium</th><th>What It Develops</th></tr>
+<tr><td>Books</td><td>Sustained attention, internal visualization, precise language</td></tr>
+<tr><td>Comics / manga / graphic novels</td><td>Visual literacy, panel-to-panel inference, art as communication</td></tr>
+<tr><td>Film</td><td>Composition, editing as argument, performance, visual storytelling</td></tr>
+<tr><td>Animation (anime / Western)</td><td>Same as film + stylistic range, cultural breadth</td></tr>
+<tr><td>Games</td><td>Systems thinking, agency, feedback loops, iteration</td></tr>
+<tr><td>TV series</td><td>Long-form narrative, character development across time, serialized complexity</td></tr>
+</table>
+<p>A child who reads Dune, watches the Villeneuve films, AND plays a Dune strategy game has three cognitive entry points into the same system. The framework explicitly values multi-medium engagement across all age phases.</p>
+<p><strong>Original language with subtitles — always.</strong> No dubbing. Content is consumed in its original language: Japanese anime in Japanese, English films in English, Spanish content in Spanish. This develops ear training, cultural authenticity, and normalizes engaging with unfamiliar languages.</p>
+<p><strong>Anchor works vs. content diet.</strong> Anchor works get full DIM treatment. The broader content diet is Absorb-mode — consume freely, discuss naturally, don't over-analyze. Volume is good. A child deeply immersed in multiple rich universes builds more mental model fluency than one restricted to a curated few.</p>
+
+<h2 id="s-never-remove"><span class="material-symbols-rounded">inventory</span>Content Rule: Never Remove, Only Reposition</h2>
+<p>When new content displaces something, the displaced content moves down in tier — never out. If a work was good enough to be in the framework, it stays at CORE or RECOMMENDED. The framework grows; it doesn't shrink. Tier 3 (RECOMMENDED) is large by design — it's the library of good defaults the child can draw from based on temperament and interest.</p>
+
 <h2 id="s-music-phil"><span class="material-symbols-rounded">music_note</span>Music — Dual-Track Philosophy</h2>
 <p>Musical instrument mastery is elevated to a first-class concern, not a supplementary activity. The goal: a child who can both read a classical score with precision AND improvise over jazz changes with expression. Classical develops discipline, reading, structure, and interpretive depth; jazz develops ear, improvisation, real-time composition, and comfort with ambiguity.</p>
 <p><strong>Both tracks from the beginning.</strong> Most music education splits these artificially. Classical students can't improvise; jazz students can't sight-read. This framework trains both simultaneously.</p>
