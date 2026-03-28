@@ -102,7 +102,9 @@ a:hover { color: var(--text); text-decoration: underline; }
 .topbar-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
 
 .logo {
-  padding: var(--sp-3) var(--sp-4);
+  width: 240px;
+  min-width: 240px;
+  padding: var(--sp-3) var(--sp-3);
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 14px;
@@ -111,6 +113,7 @@ a:hover { color: var(--text); text-decoration: underline; }
   color: var(--accent);
   white-space: nowrap;
   border-right: 1px solid var(--border);
+  box-sizing: border-box;
 }
 
 .tabs { display: flex; overflow-x: auto; flex: 1; }
