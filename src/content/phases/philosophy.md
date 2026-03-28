@@ -120,5 +120,5 @@ order: 0
 <tr><td>7</td><td>Relational Intelligence</td><td>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships. Network as strategic asset.</td></tr>
 <tr><td>8</td><td>Empathy & Kindness</td><td>Feel others' experience AND act on it. Kindness as strength. Default behavior, not intellectual position.</td></tr>
 <tr><td>9</td><td>Physical System Mastery</td><td>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance.</td></tr>
-<tr><td>10</td><td>Ambiguity Tolerance</td><td>Hold uncertainty without rushing to false resolution. Luck, randomness, and the limits of models.</td></tr>
+<tr><td>10</td><td>Adaptability</td><td>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for. Ambiguity tolerance is the emotional foundation; adaptability is the action.</td></tr>
 </table>
