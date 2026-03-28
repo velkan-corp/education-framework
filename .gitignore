@@ -1,1 +1,5 @@
 .fuse_hidden*
+node_modules/
+dist/
+.astro/
+.DS_Store

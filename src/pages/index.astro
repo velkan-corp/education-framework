@@ -1,0 +1,153 @@
+---
+import { getCollection } from 'astro:content';
+import '../styles/global.css';
+
+const phases = (await getCollection('phases')).sort((a, b) => a.data.order - b.data.order);
+
+// Pre-render all phase content
+const renderedPhases = await Promise.all(
+  phases.map(async (phase) => {
+    const { Content } = await phase.render();
+    return { ...phase, Content };
+  })
+);
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <style is:inline>
+  .material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+    font-size: 20px;
+    vertical-align: -4px;
+    margin-right: 6px;
+    color: var(--accent);
+    user-select: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+  h2 .material-symbols-rounded { font-size: 22px; vertical-align: -5px; }
+  </style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Education Framework</div>
+      <div class="tabs" id="tabs">
+        {phases.map((phase) => (
+          <div
+            class={`tab ${phase.data.phaseId === 'philosophy' ? 'active' : ''}`}
+            data-tab={phase.data.phaseId}
+          >
+            {phase.data.label}
+          </div>
+        ))}
+      </div>
+      <div id="search-wrap" style="position:relative;margin-left:auto;padding:0 8px;display:flex;align-items:center">
+        <svg id="search-icon" style="cursor:pointer;flex-shrink:0;margin-right:6px" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Search… (⌘K)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:4px;font-size:12px;width:160px;outline:none" autocomplete="off">
+        <div id="search-results" style="display:none;position:absolute;top:100%;right:8px;width:360px;max-height:70vh;overflow-y:auto;background:var(--surface);border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:200;margin-top:4px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="main-layout">
+    <div class="sidebar">
+      <div class="sidebar-title">Child Profile</div>
+      <div class="profile-group">
+        <div class="profile-label">Energy <span class="info-toggle" data-tip="energy-tip">i</span></div>
+        <div class="info-tip" id="energy-tip">Introvert: recharges alone. Extrovert: recharges with people.</div>
+        <div class="radio-group" data-dim="energy">
+          <div class="radio-btn" data-val="introvert">Introvert</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="extrovert">Extrovert</div>
+        </div>
+        <div class="profile-label">Processing <span class="info-toggle" data-tip="processing-tip">i</span></div>
+        <div class="info-tip" id="processing-tip">Verbal: thinks in words/arguments. Spatial: thinks in images/building.</div>
+        <div class="radio-group" data-dim="processing">
+          <div class="radio-btn" data-val="verbal">Verbal</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="spatial">Spatial</div>
+        </div>
+        <div class="profile-label">Sensitivity <span class="info-toggle" data-tip="sensitivity-tip">i</span></div>
+        <div class="info-tip" id="sensitivity-tip">High: overwhelmed by stimuli, needs gentle exposure. Low: needs more intensity.</div>
+        <div class="radio-group" data-dim="sensitivity">
+          <div class="radio-btn" data-val="high-sens">High</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="low-sens">Low</div>
+        </div>
+        <div class="profile-label">Novelty <span class="info-toggle" data-tip="novelty-tip">i</span></div>
+        <div class="info-tip" id="novelty-tip">Depth: obsesses on one thing for months. Breadth: cycles through interests.</div>
+        <div class="radio-group" data-dim="novelty">
+          <div class="radio-btn" data-val="depth">Depth</div>
+          <div class="radio-btn active" data-val="balanced">Balanced</div>
+          <div class="radio-btn" data-val="breadth">Breadth</div>
+        </div>
+      </div>
+      <div class="nav-links" id="nav-links"></div>
+    </div>
+    <div class="content" id="content">
+      {renderedPhases.map((phase) => (
+        <div
+          class={`phase-content ${phase.data.phaseId === 'philosophy' ? 'active' : ''}`}
+          data-phase={phase.data.phaseId}
+          data-label={phase.data.label}
+        >
+          <phase.Content />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING FABS -->
+<button class="profile-fab" id="fab-sections" style="bottom:78px;right:20px;font-size:18px" title="Sections">&#9776;</button>
+<button class="profile-fab" id="fab-profile" title="Child Profile">&#9881;</button>
+
+<!-- FLOATING PROFILE PANEL -->
+<div class="profile-float" id="float-profile">
+  <div class="profile-float-title">Child Profile <span style="font-size:10px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted)">— adjusts advice across all tabs</span></div>
+  <div class="profile-label">Energy</div>
+  <div class="radio-group" data-dim="energy">
+    <div class="radio-btn" data-val="introvert">Introvert</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="extrovert">Extrovert</div>
+  </div>
+  <div class="profile-label">Processing</div>
+  <div class="radio-group" data-dim="processing">
+    <div class="radio-btn" data-val="verbal">Verbal</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="spatial">Spatial</div>
+  </div>
+  <div class="profile-label">Sensitivity</div>
+  <div class="radio-group" data-dim="sensitivity">
+    <div class="radio-btn" data-val="high-sens">High</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="low-sens">Low</div>
+  </div>
+  <div class="profile-label">Novelty</div>
+  <div class="radio-group" data-dim="novelty">
+    <div class="radio-btn" data-val="depth">Depth</div>
+    <div class="radio-btn active" data-val="balanced">Balanced</div>
+    <div class="radio-btn" data-val="breadth">Breadth</div>
+  </div>
+</div>
+
+<!-- FLOATING SECTIONS PANEL -->
+<div class="profile-float" id="float-sections" style="bottom:136px;max-height:50vh;overflow-y:auto"></div>
+
+<script src="../scripts/app.js"></script>
+</body>
+</html>
