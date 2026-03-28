@@ -47,7 +47,7 @@ order: 0
 </div>
 
 <h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>The Twelve Targets</h2>
-<p>These define <em>who the child becomes</em>, not what they know. Knowledge is the vehicle; character is the destination. All twelve are NON-NEGOTIABLE — they are the framework's reason for existing.</p>
+<p>These define <em>who the child becomes</em>, not what they know. Knowledge is the vehicle; character is the destination. All twelve are FOUNDATIONAL — they are the framework's reason for existing.</p>
 <table>
 <tr><th>#</th><th>Target</th><th>What It Is</th></tr>
 <tr><td>1</td><td>Self-Efficacy</td><td>"I can figure this out." The belief, grounded in evidence, that effort produces results.</td></tr>
@@ -119,18 +119,18 @@ order: 0
 <p>Every element of this framework is classified into one of three tiers. This makes "hold it loosely" concrete: hold Tier 3 loosely, hold Tier 2 with reasonable flexibility, never compromise Tier 1.</p>
 <table>
 <tr><th>Tier</th><th>Label</th><th>Meaning</th><th>Examples</th></tr>
-<tr><td>1</td><td><strong>NON-NEGOTIABLE</strong></td><td>Structural. Removing these undermines the framework's core bet.</td><td>Sleep requirements · Relationship > framework · No screens 0–3 · The twelve targets · Depth over breadth · Physical activity daily · Unstructured time floor (30%) · Team sport from age 4 · Bilingualism · Onion-layer reinforcement</td></tr>
+<tr><td>1</td><td><strong>FOUNDATIONAL</strong></td><td>Removing this undermines the framework. For principles: protect always. For resources: the program is designed around these; swap only if the child genuinely doesn't connect.</td><td>Sleep requirements · Relationship > framework · No screens 0–3 · The twelve targets · Depth over breadth · Physical activity daily · Unstructured time floor (30%) · Team sport from age 4 · Bilingualism · Onion-layer reinforcement</td></tr>
 <tr><td>2</td><td><strong>CORE</strong></td><td>Strongly recommended. The framework is weaker without them.</td><td>DIM method · Socratic dinner ritual · Niche mastery activity · Spaced repetition · Deliberate practice · Third language exposure · Specific proven frameworks · Music dual-track</td></tr>
 <tr><td>3</td><td><strong>RECOMMENDED</strong></td><td>Good defaults. Swap freely based on child temperament, interest, and context.</td><td>Specific anchor works · Specific mental model introduction sequence · Specific games · Specific instruments · Specific sports · Specific books · Third language choice</td></tr>
 </table>
-<p><strong>Resources use the same tiers.</strong> Each age phase labels every resource as CANON (integral to the program's onion progression — these are the works the framework is built around), CORE (strongly recommended, framework weaker without it), or RECOMMENDED (good default, swap freely). Temperament profiles further filter: a resource marked RECOMMENDED for the general program may be CANON for a spatial-kinesthetic or breadth-seeking child.</p>
+<p><strong>Resources use the same tiers.</strong> Each age phase labels every resource as FOUNDATIONAL (integral to the program's onion progression — the works the framework is built around; swap only if the child genuinely doesn't connect), CORE (strongly recommended, framework weaker without it), or RECOMMENDED (good default, swap freely). Temperament profiles further filter: a resource marked RECOMMENDED for the general program may be FOUNDATIONAL for a spatial-kinesthetic or breadth-seeking child.</p>
 
 <h2 id="s-language"><span class="material-symbols-rounded">public</span>Language Strategy — Multilingual Architecture</h2>
 <p>The framework is language-neutral in principle. It prescribes the structure, not the specific languages.</p>
 <h3>Structure</h3>
 <table>
 <tr><th>Language</th><th>Role</th><th>Method</th><th>Tier</th></tr>
-<tr><td>L1 + L2</td><td>Primary languages. One per parent (OPOL). Deep bilingualism is the floor.</td><td>One Parent One Language from birth. Neither language consistently subordinate — anchor works and intellectual engagement in both from the start.</td><td>NON-NEGOTIABLE</td></tr>
+<tr><td>L1 + L2</td><td>Primary languages. One per parent (OPOL). Deep bilingualism is the floor.</td><td>One Parent One Language from birth. Neither language consistently subordinate — anchor works and intellectual engagement in both from the start.</td><td>FOUNDATIONAL</td></tr>
 <tr><td>L3</td><td>Third language. Introduced through immersion exposure starting age 6–8, formalized at 10–12 if the child shows affinity.</td><td>Summer programs, au pairs, media, travel. Immersion first, grammar later.</td><td>CORE</td></tr>
 </table>
 <h3>Reference Implementation: Madrid</h3>

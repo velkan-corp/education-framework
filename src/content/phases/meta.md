@@ -4,14 +4,14 @@ label: "Meta"
 order: 8
 ---
 <h1>Meta: Framework Risks & Operating Principles</h1>
-<p class="subtitle">Every framework has failure modes. This section addresses what can go wrong and how to prevent it. See the <a href="#" onclick="document.querySelector('[data-phase=philosophy]')?.click()">Philosophy</a> tab for the three-tier system (NON-NEGOTIABLE / CORE / RECOMMENDED) that governs what to hold tightly and what to hold loosely.</p>
+<p class="subtitle">Every framework has failure modes. This section addresses what can go wrong and how to prevent it. See the <a href="#" onclick="document.querySelector('[data-phase=philosophy]')?.click()">Philosophy</a> tab for the three-tier system (FOUNDATIONAL / CORE / RECOMMENDED) that governs what to hold tightly and what to hold loosely.</p>
 
 <h2 id="s-coercion"><span class="material-symbols-rounded">visibility</span>Risk 1: The Framework Becomes Coercive</h2>
 <div class="warn-box">
 <h3>The Central Danger</h3>
 <p>This framework is extraordinarily intentional. Every book chosen, every toy justified, every dinner conversation structured. There is a line between "curated environment" and "controlling parent," and the child's experience of which side you're on depends entirely on execution tone.</p>
 <p><strong>The test:</strong> Can they say "no" to any element without consequence to the relationship? If they refuse the cold shower, skip instrument practice, or want to read a "bad" book — do you accept it gracefully or does tension appear?</p>
-<p><strong>The antidote:</strong> The three-tier system makes "hold it loosely" concrete. Tier 1 (NON-NEGOTIABLE) elements — sleep, relationship > framework, the twelve targets, physical activity, unstructured time — are structural; protect them. Tier 2 (CORE) elements — DIM method, Socratic dinner, niche mastery — adapt with reasonable flexibility. Tier 3 (RECOMMENDED) elements — specific books, games, instruments, sports — swap freely based on the child in front of you. The child outranks the plan about them. Always.</p>
+<p><strong>The antidote:</strong> The three-tier system makes "hold it loosely" concrete. Tier 1 (FOUNDATIONAL) elements — sleep, relationship > framework, the twelve targets, physical activity, unstructured time — are structural; protect them. Tier 2 (CORE) elements — DIM method, Socratic dinner, niche mastery — adapt with reasonable flexibility. Tier 3 (RECOMMENDED) elements — specific books, games, instruments, sports — swap freely based on the child in front of you. The child outranks the plan about them. Always.</p>
 </div>
 <p><strong>Signs it's becoming coercive:</strong> They practice the instrument when you're watching but not when you're away. They perform curiosity for your approval. They hide interests they think you'd disapprove of. They excel at the framework activities but seem anxious or performative.</p>
 <p><strong>Signs it's working:</strong> They pursue framework activities autonomously. They push back on specific elements while engaging with others. They bring their own questions and interests that surprise you. They fail openly without shame.</p>
@@ -20,13 +20,13 @@ order: 8
 <p>At some point — likely age 12–14 — one or both children may reject significant parts of this program. They may want to play Fortnite for six hours, read nothing, and think chess is stupid. This is normal identity differentiation, not failure.</p>
 <p><strong>The protocol:</strong></p>
 <p>1. <strong>Distinguish signal from noise.</strong> "I hate violin because my friends think it's lame" is social pressure (noise). "I hate violin because I genuinely don't enjoy it anymore after 8 years" is signal. Respond differently.</p>
-<p>2. <strong>Protect Tier 1, release Tiers 2–3.</strong> Physical health, basic responsibility, respect, the twelve targets as aspirations — non-negotiable. Specific content choices, activity preferences, aesthetic tastes — negotiable. Use the tier system: never compromise NON-NEGOTIABLE, adapt CORE, release RECOMMENDED entirely.</p>
+<p>2. <strong>Protect Tier 1, release Tiers 2–3.</strong> Physical health, basic responsibility, respect, the twelve targets as aspirations — non-negotiable. Specific content choices, activity preferences, aesthetic tastes — negotiable. Use the tier system: never compromise FOUNDATIONAL, adapt CORE, release RECOMMENDED entirely.</p>
 <p>3. <strong>Stay in relationship.</strong> The worst outcome isn't that they quit chess. It's that they stop talking to you. If you must choose between maintaining the framework and maintaining the relationship, choose the relationship every time.</p>
 <p>4. <strong>Trust the foundation.</strong> If you've done the work for the first 10–12 years, the substrate is built. They may reject the surface expression while retaining the deep patterns. The 14-year-old who "quits reading" often returns to books at 19 with a hunger that self-directed reading satisfies differently than parental curation.</p>
 
 <h2 id="s-archetype"><span class="material-symbols-rounded">visibility</span>Risk 3: Building for the Wrong Child</h2>
 <p>This framework has an implicit "ideal student" — high-attention, systems-oriented, intellectually voracious, enjoys density and depth. What if your child is a dreamer, a socializer, a kinesthetic learner who couldn't care less about dense illustration pages?</p>
-<p><strong>The temperament system exists for this reason.</strong> Use it honestly. The sliders in the sidebar aren't labels — they're calibration tools. Adjust the framework to the child you have, not the child the framework imagines. The resource tiers in each age phase include temperament notes — a resource marked RECOMMENDED generally may be CANON for a spatial-kinesthetic child.</p>
+<p><strong>The temperament system exists for this reason.</strong> Use it honestly. The sliders in the sidebar aren't labels — they're calibration tools. Adjust the framework to the child you have, not the child the framework imagines. The resource tiers in each age phase include temperament notes — a resource marked RECOMMENDED generally may be FOUNDATIONAL for a spatial-kinesthetic child.</p>
 <p>A spatial-kinesthetic breadth-seeking extrovert is not a worse student — they need a different path to the same twelve targets. Self-efficacy, grit, curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
 <p><strong>Build for the best.</strong> Expectations are high by design. A child who is expected to reason from first principles, sustain deep relationships, and engage seriously with the world is more likely to do so than one whose ceiling was preemptively lowered. If a particular child can't reach a particular benchmark, that's discovered through observation and adjusted in the moment — not by lowering aspirations for all possible children in advance. High expectations are non-negotiable; rigid timelines are not.</p>
 
@@ -43,7 +43,7 @@ order: 8
 
 <h2 id="s-sleep"><span class="material-symbols-rounded">fitness_center</span>Sleep, Nutrition & Recovery</h2>
 <p>Sleep is the single highest-leverage intervention in this entire framework. A child who sleeps poorly cannot learn, regulate emotions, sustain focus, or tolerate frustration. Protect sleep above any activity — including framework activities.</p>
-<h3>Sleep Requirements (Non-Negotiable)</h3>
+<h3>Sleep Requirements (Foundational)</h3>
 <table>
 <tr><th>Age</th><th>Hours</th><th>Notes</th></tr>
 <tr><td>0–1</td><td>14–17</td><td>Including naps. Consistent schedule more important than exact hours.</td></tr>
@@ -82,7 +82,7 @@ order: 8
 <p><strong>4. What didn't work?</strong> What are they resisting? Is the resistance signal or noise? (See Risk 2.)</p>
 <p><strong>5. What surprised you?</strong> Interests, skills, or connections you didn't plan for. These are often more important than the planned ones.</p>
 <p><strong>6. Interna alignment:</strong> Update the one-page brief. Is the interna executing what you intend?</p>
-<p><strong>7. Time audit:</strong> Are the recommended activities actually fitting? If not, what gets cut? Use the tier system: cut RECOMMENDED (Tier 3) first, then CORE (Tier 2) if necessary. Never cut NON-NEGOTIABLE (Tier 1): sleep, outdoor time, unstructured time, team sport, physical activity.</p>
+<p><strong>7. Time audit:</strong> Are the recommended activities actually fitting? If not, what gets cut? Use the tier system: cut RECOMMENDED (Tier 3) first, then CORE (Tier 2) if necessary. Never cut FOUNDATIONAL (Tier 1): sleep, outdoor time, unstructured time, team sport, physical activity.</p>
 <p><strong>8. Onion layer check:</strong> Which mental models were revisited this quarter? At what depth? Are previously learned concepts being reinforced or fading?</p>
 <p><strong>Log the answers.</strong> Review the log annually. Patterns over 4 quarters reveal more than any single observation.</p>
 <p><strong>The child's experience of this review should be invisible.</strong> This is a parent-facing calibration tool, not a report card.</p>

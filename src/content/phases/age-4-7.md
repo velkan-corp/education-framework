@@ -85,7 +85,7 @@ order: 3
 <p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
 <p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
 
-<h2 id="s-sport"><span class="material-symbols-rounded">sports_soccer</span>Team Sport — NON-NEGOTIABLE</h2>
+<h2 id="s-sport"><span class="material-symbols-rounded">sports_soccer</span>Team Sport — FOUNDATIONAL</h2>
 <p>Team sport begins at age 4. This is the primary vehicle for Targets 11-12 (Relational Intelligence, Empathy & Moral Seriousness). Not for competition — for the experience of coordinating with others toward a shared goal under rules.</p>
 <p><strong>Options:</strong> Football (most accessible in Madrid), basketball, rugby, hockey. The specific sport matters less than: (1) it's genuinely team-based, (2) there's a coach who develops character not just skill, (3) the child plays with children they didn't choose.</p>
 <p><strong>What to watch for:</strong> How do they handle a teammate's mistake? Do they encourage or blame? How do they respond to being benched? Can they follow a captain who isn't their friend? The emotional learning happens in these moments, not in the goals scored.</p>
@@ -197,7 +197,7 @@ order: 3
 <h3>Full Resource List</h3>
 <table>
 <tr><th>Resource</th><th>Type</th><th>★</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CANON — Integral to program</td></tr>
+<tr><td colspan="5" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
 <tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>★★★★★</td><td>Primary anchor universe. Own it physically — don't rely on streaming.</td><td>—</td></tr>
 <tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>★★★★★</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format.</td><td>—</td></tr>
 <tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>★★★★★</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td><td>—</td></tr>
