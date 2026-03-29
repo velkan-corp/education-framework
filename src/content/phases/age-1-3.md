@@ -58,32 +58,46 @@ order: 2
 <p><strong>Supplementary:</strong> Eric Carle, Julia Donaldson (Gruffalo series), Dr. Seuss (phonemic awareness in English), Sandra Boynton (rhythm and humor).</p>
 
 <div class="program-elements">
+<h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
+<h3>Language — Written & Oral</h3>
+<p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>
+<p><strong>Interna:</strong> Should be reading Spanish picture books daily. Provide a list: Maisy (Lucy Cousins), Peppa Pig books in Spanish, Spanish nursery rhymes.</p>
+<p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
+<p><strong>⚡ Window alert:</strong> This is the critical window for bilingual vocabulary building. English input from father competes with Spanish from every other source. Quantity of English exposure now determines bilingual depth for life.</p>
+<p>Scribbling is pre-writing. Provide thick crayons, finger paints, chalk on pavement. Narrate their drawings: "Tell me about your picture." This builds the connection between marks and meaning. Dictation begins here too: they tell you a story, you write it down, they see their words become text. This is the seed of authorship.</p>
+<p><strong>Oral expression begins.</strong> "Tell me about your picture" is already in play — now extend it: "Tell Mama what we did at the park today." They narrate events to a third party, organizing experience into spoken sequence. This is oral composition. Nursery rhymes and simple poems recited together build rhythm, memory, and the pleasure of spoken language as performance. Finger plays (Itsy Bitsy Spider, Pat-a-Cake) are the first oral performances — learned text delivered with gesture and expression.</p>
+
 <h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>Active instruments:</strong> Xylophone, small drum, egg shakers, tambourine. Let them make noise with intention — rhythm emerges from chaos.</p>
 <p><strong>Exposure:</strong> Continue diverse genre rotation. Add: children's music with real musical quality — Raffi, Ella Jenkins. Avoid the algorithmically-generated nursery rhyme content on YouTube (it's designed for engagement, not musicality).</p>
 <p><strong>Classes:</strong> Consider Suzuki Early Childhood Education or a local music-and-movement class. The point is not instruction — it's rhythmic social experience.</p>
 
-<h2 id="s-games" data-tier="core"><span class="material-symbols-rounded">casino</span>Play & Digital Media</h2>
-<p>None. No screens before 3.</p>
+<h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
+<h3>Physical System</h3>
+<p>Outdoor daily regardless of weather. Climbing, jumping, running on uneven surfaces. Barefoot when safe. Balance bike from 18 months. Playground with challenge — not the safe toddler section.</p>
+<h3>Self-Awareness & Emotional Intelligence</h3>
+<p>Emotion vocabulary is the primary tool. "You look angry. Are you angry?" "That was scary." "You're so excited!" Name their emotions before they can — this gives them handles for experiences that would otherwise be overwhelming. Simple regulation techniques: deep breaths together (blow out the birthday candles), counting to five, hugging a specific comfort object. Post-tantrum, once calm: "What happened? You were angry because..." This builds the narrative-self connection.</p>
 
-<h2 id="s-language" data-tier="foundational"><span class="material-symbols-rounded">public</span>Language</h2>
-<p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>
-<p><strong>Interna:</strong> Should be reading Spanish picture books daily. Provide a list: Maisy (Lucy Cousins), Peppa Pig books in Spanish, Spanish nursery rhymes.</p>
-<p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
-<p><strong>⚡ Window alert:</strong> This is the critical window for bilingual vocabulary building. English input from father competes with Spanish from every other source. Quantity of English exposure now determines bilingual depth for life.</p>
-
-<h2 id="s-network" data-tier="core"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
+<h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
+<p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
+<p><strong>Kindness seeds.</strong> Model turn-taking, sharing, and gentleness. Narrate kind acts: "You gave her the toy. That was kind." Frame kindness as something they DID (agency), not something they ARE (identity).</p>
 <p>Start building the family network deliberately. In Madrid: international school parent communities (even before enrollment), English-speaking playgroups, your own social circle's children. The 3–4 families you befriend now will likely be your children's first peer group for years.</p>
 <p><strong>Team sport note:</strong> Team sport begins at age 4. These early years build the social substrate through playgroups and parallel play — the relational foundation that makes team dynamics possible later.</p>
 
-<h2 id="s-religion" data-tier="recommended"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Ethics, Spirituality & Moral Reasoning</h2>
+<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
+<p>None. No screens before 3.</p>
+<p>Shape sorters, nesting cups, simple puzzles (4-12 pieces). Brio World wooden train layouts — the track-building IS spatial reasoning (which piece connects? does the loop close? what happens if I add a bridge?). Block towers with intentional collapse ("how tall before it falls?"). These are not toys — they are the physical instantiation of spatial logic.</p>
+
+<h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+<p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
+
+<h2 id="s-culture" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Culture & Inner Life</h2>
+<p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
 <p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?" This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
 <p><strong>Joy signal.</strong> Watch what produces genuine delight — not compliance, not performance for adults. The activities that make them lose track of time are the signal. Protect those.</p>
 
-<h2 id="s-travel" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
-<p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
-
-<h2 id="s-cadence" data-tier="core"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
+<h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
 <div class="card-grid">
 <div class="card"><div class="card-title">Parent Evenings (2 hours)</div>
 <p>Arrive → 20 min active play (their choice) → dinner together (conversation, not screens) → bath → 3+ books in English → bedtime routine. Same sequence. Predictability is still the infrastructure.</p>
@@ -95,26 +109,6 @@ order: 2
 <p>Morning outdoor time (1.5+ hours). Practical life activities (helping with food prep, cleaning, dressing). Spanish reading (2–3 books). Nap. Afternoon: one outing or activity + free play. Key instruction: "Don't rush them. Don't rescue them. Let them struggle. Go outside."</p>
 </div>
 </div>
-
-<h2 id="s-language-expression" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Language & Expression</h2>
-<p>Scribbling is pre-writing. Provide thick crayons, finger paints, chalk on pavement. Narrate their drawings: "Tell me about your picture." This builds the connection between marks and meaning. Dictation begins here too: they tell you a story, you write it down, they see their words become text. This is the seed of authorship.</p>
-<p><strong>Oral expression begins.</strong> "Tell me about your picture" is already in play — now extend it: "Tell Mama what we did at the park today." They narrate events to a third party, organizing experience into spoken sequence. This is oral composition. Nursery rhymes and simple poems recited together build rhythm, memory, and the pleasure of spoken language as performance. Finger plays (Itsy Bitsy Spider, Pat-a-Cake) are the first oral performances — learned text delivered with gesture and expression.</p>
-
-<h2 id="s-emotional" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
-<p>Emotion vocabulary is the primary tool. "You look angry. Are you angry?" "That was scary." "You're so excited!" Name their emotions before they can — this gives them handles for experiences that would otherwise be overwhelming. Simple regulation techniques: deep breaths together (blow out the birthday candles), counting to five, hugging a specific comfort object. Post-tantrum, once calm: "What happened? You were angry because..." This builds the narrative-self connection.</p>
-
-<h2 id="s-visual" data-tier="recommended"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
-<p>Shape sorters, nesting cups, simple puzzles (4-12 pieces). Brio World wooden train layouts — the track-building IS spatial reasoning (which piece connects? does the loop close? what happens if I add a bridge?). Block towers with intentional collapse ("how tall before it falls?"). These are not toys — they are the physical instantiation of spatial logic.</p>
-
-<h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
-<p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
-<p><strong>Kindness seeds.</strong> Model turn-taking, sharing, and gentleness. Narrate kind acts: "You gave her the toy. That was kind." Frame kindness as something they DID (agency), not something they ARE (identity).</p>
-
-<h2 id="s-nature" data-tier="recommended"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
-<p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
-
-<h2 id="s-cognition" data-tier="recommended"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>
-<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 </div>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>

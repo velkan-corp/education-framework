@@ -47,24 +47,57 @@ order: 1
 <p><strong>Read aloud:</strong> Anything with rhythm and repetition. The content matters less than the vocal patterns, prosody, and the ritual of reading together.</p>
 
 <div class="program-elements">
-<h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
-<p>Ambient exposure: play diverse genres throughout the day. Classical, jazz, bossa nova, flamenco — variety of rhythm, timbre, harmony. Sing to them. Rhythm shakers from 6 months. The brain is building the auditory architecture that all later music learning will use.</p>
+<h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 
-<h2 id="s-games" data-tier="core"><span class="material-symbols-rounded">casino</span>Play & Digital Media</h2>
-<p>None. No screens at this age.</p>
-
-<h2 id="s-language" data-tier="foundational"><span class="material-symbols-rounded">public</span>Language</h2>
+<h3>Language — Written & Oral</h3>
 <p>OPOL active: you speak English exclusively. All books you read are English. The interna reads Spanish books during the day. Singing in both languages. No correction — just immersion.</p>
 <p><strong>L3 note:</strong> L3 exposure begins at age 6-8. At this stage, focus on deep L1+L2 bilingual foundation. See Philosophy tab for multilingual architecture.</p>
 <p><strong>⚡ Window alert:</strong> Native accent acquisition narrows after age 7-10. The OPOL foundation built now compounds every year. This is not a nice-to-have — it's a closing window.</p>
+<p>Pre-writing begins with grasping. Fat crayons, chunky markers on large paper. The motor patterns that will become handwriting start here — the pincer grip, the controlled movement, the cause-and-effect of "I move my hand, a mark appears." No letters, no instruction. Just access to marking tools and surfaces.</p>
+<p>Oral expression at this stage is entirely receptive and imitative. Read aloud with expression — vary your pitch, pace, and volume. The infant is absorbing prosody (the music of speech) before they understand words. Narrate with theatrical energy when appropriate: "The BALL went BOUNCING down the HILL!" This is not baby talk — it's vocal modeling. They are learning that the voice is an instrument with range.</p>
 
-<h2 id="s-network" data-tier="core"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
+<h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
+<p>Ambient exposure: play diverse genres throughout the day. Classical, jazz, bossa nova, flamenco — variety of rhythm, timbre, harmony. Sing to them. Rhythm shakers from 6 months. The brain is building the auditory architecture that all later music learning will use.</p>
+
+<h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
+
+<h3>Physical System</h3>
+<p>Tummy time, floor freedom, outdoor exposure to weather variation. Daily outdoor blanket time regardless of weather.</p>
+
+<h3>Self-Awareness & Emotional Intelligence</h3>
+<p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
+<p><strong>Kindness modeling begins here.</strong> The parent's emotional tone IS the child's first experience of kindness. Responding to distress with warmth, not irritation. Narrating gently, not correcting harshly. The child's first model of "how people treat each other" is you.</p>
+
+<h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
+
+<h3>Social Intelligence</h3>
+<p>Attachment is the foundation. Secure attachment (responsive, consistent caregiving) produces children who later navigate social complexity with confidence. This is not a "parenting style" — it's the empirically validated prerequisite for all subsequent social development. Respond to bids for attention. Be predictable. Be present.</p>
+
+<h3>Social World & Network</h3>
 <p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
 
-<h2 id="s-travel" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Cultural Exposure</h2>
+<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
+<p>No screens. Sensory play is the building. None of the digital media or structured making tools apply yet — the infant's entire "building" curriculum is tactile exploration, grasping, and cause-and-effect discovery through physical objects.</p>
+
+<h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
+
+<h3>Nature & Ecology</h3>
+<p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
+
+<h3>Cognitive Development</h3>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-culture" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Culture & Inner Life</h2>
+
+<h3>Cultural Exposure</h3>
 <p>Travel is not yet educational — it's environmental. But the habits start now: children who travel early normalize novelty. Short trips within Spain: coast, mountains, other cities. The point is sensory range, not cultural education.</p>
 
-<h2 id="s-cadence" data-tier="core"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
+<h3>Wonder & Awe</h3>
+<p>At this age, meaning-making is pre-verbal: wonder and awe. The infant staring at light through leaves, mesmerized by rain, transfixed by a candle flame — this is the first encounter with the numinous. Don't rush past these moments. Sit in them. The capacity for wonder is the substrate on which all later spiritual and philosophical development is built. This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
+
+<h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
+
+<h3>Weekly Cadence</h3>
 <div class="card-grid">
 <div class="card"><div class="card-title">Parent Layer (Evenings + Weekends)</div>
 <p>Evening: bath → reading aloud (English) → bedtime routine. Same sequence every night — predictability IS the lesson.</p>
@@ -74,26 +107,6 @@ order: 1
 <p>Morning outdoor time regardless of weather. Tummy time / floor play. Spanish reading. Nap architecture (consistent times, dark room, white noise). Afternoon sensory variety. Simple: "Let them explore. Don't rescue too quickly. Go outside every day. Read these books."</p>
 </div>
 </div>
-
-<h2 id="s-language-expression" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Language & Expression</h2>
-<p>Pre-writing begins with grasping. Fat crayons, chunky markers on large paper. The motor patterns that will become handwriting start here — the pincer grip, the controlled movement, the cause-and-effect of "I move my hand, a mark appears." No letters, no instruction. Just access to marking tools and surfaces.</p>
-<p>Oral expression at this stage is entirely receptive and imitative. Read aloud with expression — vary your pitch, pace, and volume. The infant is absorbing prosody (the music of speech) before they understand words. Narrate with theatrical energy when appropriate: "The BALL went BOUNCING down the HILL!" This is not baby talk — it's vocal modeling. They are learning that the voice is an instrument with range.</p>
-
-<h2 id="s-emotional" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
-<p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
-<p><strong>Kindness modeling begins here.</strong> The parent's emotional tone IS the child's first experience of kindness. Responding to distress with warmth, not irritation. Narrating gently, not correcting harshly. The child's first model of "how people treat each other" is you.</p>
-
-<h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
-<p>Attachment is the foundation. Secure attachment (responsive, consistent caregiving) produces children who later navigate social complexity with confidence. This is not a "parenting style" — it's the empirically validated prerequisite for all subsequent social development. Respond to bids for attention. Be predictable. Be present.</p>
-
-<h2 id="s-nature" data-tier="recommended"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
-<p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
-
-<h2 id="s-religion" data-tier="recommended"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Wonder & Awe</h2>
-<p>At this age, meaning-making is pre-verbal: wonder and awe. The infant staring at light through leaves, mesmerized by rain, transfixed by a candle flame — this is the first encounter with the numinous. Don't rush past these moments. Sit in them. The capacity for wonder is the substrate on which all later spiritual and philosophical development is built. This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
-
-<h2 id="s-cognition" data-tier="recommended"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>
-<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 </div>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>

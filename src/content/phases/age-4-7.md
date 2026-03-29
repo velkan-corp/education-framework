@@ -61,17 +61,50 @@ order: 3
 <h3>FOUNDATIONAL Anchors</h3>
 <p><strong>Avatar: The Last Airbender</strong> (own on Blu-ray). The four nations as interdependent system. Zuko's redemption arc. Consequence and responsibility. Once the show is finished, the Avatar comics (The Promise, The Search, The Rift) extend the universe — CORE.</p>
 <p><strong>Calvin & Hobbes Complete Collection</strong> (Fantagraphics 3-vol hardcover). Philosophy disguised as a comic strip. Inversion, imagination, social commentary. Sunday strips require the large format.</p>
-<p><strong>Don Quijote adapted</strong> (Rosa Navarro Durán's <em>Don Quijote contado a los niños</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
+<p><strong>Don Quijote adapted</strong> (Rosa Navarro Duran's <em>Don Quijote contado a los ninos</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
 <h3>CORE</h3>
 <p><strong>Studio Ghibli</strong> — Totoro → Kiki → Spirited Away in that order (Japanese audio, subtitles). Interdependence with nature, ambiguity, beauty.</p>
 <p><strong>Roald Dahl complete works</strong> (read aloud) — morality deliberately provocative; use for discussion.</p>
 <p><strong>Mafalda</strong> (Quino, age 7+) — social commentary through a child's voice. Spanish-language. Worth reading but not the spine of the program.</p>
 <h3>RECOMMENDED — Broader Content Diet</h3>
 <p><strong>DC/Marvel entry points:</strong> Batman: The Animated Series (English, original audio). Spider-Man: Into the Spider-Verse. Moral complexity at accessible level. Shared cultural vocabulary with peers.</p>
-<p><strong>Mortadelo y Filemón</strong> (Ibáñez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
+<p><strong>Mortadelo y Filemon</strong> (Ibanez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
 <p><strong>The Iron Giant</strong> (film) — sacrifice, identity, "I am not a gun." <strong>WALL-E</strong> — systems, ecology, loneliness.</p>
 
 <div class="program-elements">
+
+<h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
+
+<h3>Language — Written & Oral</h3>
+<div class="music-track language-track">
+<div>
+<h4>Written Track</h4>
+<p>Daily journal, even if it's a drawing with one sentence. The habit matters more than the quality. Letters to grandparents (in English and Spanish) — writing with a real recipient teaches that writing is communication, not assignment. Story dictation for ambitious narratives: they tell, you transcribe, they illustrate. By 6-7, they write their own short stories.</p>
+<p>The Yoto Player becomes a writing tool too: after listening to a story, "What happened? Tell me in three sentences." This bridges listening comprehension to written expression.</p>
+</div>
+<div>
+<h4>Oral &amp; Performance Track</h4>
+<p><strong>Show-and-tell at home.</strong> Weekly: pick an object, stand in front of the family, explain what it is and why it matters. Insist on standing, facing the audience, and speaking loudly enough to be heard. No reading from notes — they speak from knowledge. This is the first formal public speaking exercise.</p>
+<p><strong>Storytelling.</strong> Rory's Story Cubes and dinner storytelling games. "Tell us a story about a dragon who was afraid of fire." Improvised oral narrative builds real-time composition skill that writing cannot train.</p>
+<p><strong>Poetry exposure.</strong> Read Shel Silverstein and A.A. Milne aloud together. Not forced memorization — appreciation. "Listen to how that sounds. Why is it funny? What makes it stick?" Poetry is language at its most compressed and musical.</p>
+</div>
+</div>
+<p><strong>L3 exposure window opens.</strong> Age 6-8 is optimal for introducing a third language through immersion (summer program, au pair, media). Not classroom instruction — exposure first. See Philosophy tab for multilingual architecture. French is highest-utility from Madrid; the specific choice follows the child's interest and available immersion.</p>
+<p><strong>⚡ Window alert:</strong> Native accent acquisition narrows after age 7-10 (Hartshorne et al., 2018). The bilingual foundation built in these years determines accent quality for life. L3 exposure window opens at age 6-8 — summer immersion, au pair, or media exposure in the target language.</p>
+
+<h3>Negotiation & Sales</h3>
+<p><strong>Structured requests.</strong> "I want X" evolves to "I want X because Y, and I can offer Z." Every request is a negotiation. Frame it that way from age 4.</p>
+<p><strong>Show-and-tell as selling.</strong> Weekly show-and-tell at home isn't just public speaking — it's the first sales pitch. "Convince us this object is interesting." They learn to read the audience and adjust.</p>
+<p><strong>Trading and bartering.</strong> Toy swaps with friends, negotiating dessert choices, deciding who gets to pick the movie. Every micro-negotiation builds the muscle. Don't resolve their conflicts for them — coach from the side.</p>
+
+<h3>Digital Creation</h3>
+<p>Not screen time — creation time. A child who uses a tablet to watch is a consumer. A child who uses it to create is a producer.</p>
+<p><strong>Photography.</strong> Give them a camera (old phone, kid camera). "Take a picture of something beautiful. Now something funny. Now something that makes you curious." Composition begins here.</p>
+<p><strong>Stop-motion animation.</strong> LEGO figures + a phone + Stop Motion Studio app. They're directing films by age 6.</p>
+
+<h3>Visual & Spatial</h3>
+<p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
+
 <h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
 <p><strong>⚡ Window alert:</strong> Music ear training is optimal before age 7. The neural circuits for pitch discrimination and tonal memory are shaped during this sensitive period. Starting at 4-5 is ideal; starting at 8 is workable but harder; starting at 12 requires significantly more effort for less return.</p>
@@ -90,14 +123,23 @@ order: 3
 <p>Clap rhythms, sing melodies by ear, make up songs together.</p>
 </div>
 </div>
-<p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Café Central.</p>
+<p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Cafe Central.</p>
 
-<h2 id="s-games" data-tier="recommended"><span class="material-symbols-rounded">casino</span>Play & Digital Media</h2>
-<p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
-<p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
-<p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
+<h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
 
-<h2 id="s-sport" data-tier="foundational"><span class="material-symbols-rounded">sports_soccer</span>Team Sport</h2>
+<h3>Physical System</h3>
+<p>"Exercise makes you smarter" — stated plainly, because it's true. Running or active play before focused work (reading, music practice) measurably improves attention. Morning outdoor time before school sets the neurochemical stage for the day. This isn't health advice; it's cognitive optimization.</p>
+<p><strong>Sleep is THE intervention.</strong> 10-13 hours. No screens 1 hour before bed. Dark room, cool temperature. A well-rested child who does nothing else from this framework outperforms a sleep-deprived child who does everything. This is not a suggestion — it's the single most evidence-backed claim in the entire framework (Walker, 2017).</p>
+
+<h3>Self-Awareness & Emotional Intelligence</h3>
+<p><strong>Critical window.</strong> Name-it-to-tame-it: naming an emotion literally reduces amygdala activation (Lieberman et al., 2007). Teach zones of regulation — color-coded energy levels (blue = low/sad, green = calm/ready, yellow = anxious/excited, red = angry/explosive). Practice recognizing physiological signals: "My stomach feels tight when I'm nervous. My face gets hot when I'm angry."</p>
+<p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
+<p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
+<p><strong>Joy as signal.</strong> Watch what produces genuine flow — sustained engagement, loss of time sense, intrinsic motivation. These activities are the signal for niche mastery direction. If an activity never produces flow after consistent exposure, question whether it's the right fit. Protect flow states ruthlessly: when they're absorbed, don't interrupt for meals, transitions, or "better" activities.</p>
+
+<h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
+
+<h3>Team Sport</h3>
 <p>Team sport begins at age 4. This is the primary vehicle for Targets 11-12 (Relational Intelligence, Empathy & Kindness). Not for competition — for the experience of coordinating with others toward a shared goal under rules.</p>
 <p><strong>Options:</strong> Football (most accessible in Madrid), basketball, rugby, hockey. The specific sport matters less than: (1) it's genuinely team-based, (2) there's a coach who develops character not just skill, (3) the child plays with children they didn't choose.</p>
 <p><strong>What to watch for:</strong> How do they handle a teammate's mistake? Do they encourage or blame? How do they respond to being benched? Can they follow a captain who isn't their friend? The emotional learning happens in these moments, not in the goals scored.</p>
@@ -105,25 +147,75 @@ order: 3
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team sport is their natural habitat. They'll want more — let them. This is where their social energy becomes a strength. Multiple team activities are fine if the schedule allows.</div>
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Aggressive coaching styles are harmful. Find a coach who develops, not dominates. Contact sports may need gradual introduction. Watch for overwhelm after losses — they may need longer recovery than peers.</div>
 
-<h2 id="s-build" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Entrepreneurship</h2>
-<p><strong>Build:</strong> Physical construction — KAPLA, LEGO without instructions, woodworking with real tools at 6–7 (supervised, real saw and hammer, not plastic). The pride of making something real and functional.</p>
-<p><strong>Monetize:</strong> Moonjar system — save, spend, share. Weekly allowance of €5–10, real decisions with real consequences. "You spent it all on candy. That means no money for the toy next week. That's what happened." No bailouts.</p>
+<h3>Social Intelligence</h3>
+<p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
+<p><strong>First negotiations.</strong> "I want X" evolves to "I want X because Y." Structure requests: what do you want, why, and what can you offer in return? Turn-taking in disagreements. "What does the other person want? Can you both get something?" Every conflict is a negotiation — frame it that way from the start.</p>
 
-<h2 id="s-religion" data-tier="recommended"><span class="material-symbols-rounded">self_improvement</span>Inner Life: Ethics, Spirituality & Moral Reasoning</h2>
-<p>Bible stories and Greek myths as narrative — the same way they consume Avatar. Noah's Ark, David and Goliath, Odysseus, Theseus and the Minotaur. These are humanity's oldest stories; treat them as rich narrative, not doctrine.</p>
-<p>Questions about death, God, existence: engage seriously. "Some people believe X. Other people believe Y. What do you think?" Model intellectual humility about the biggest questions.</p>
+<h3>Service & Kindness</h3>
+<p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is ethics made physical.</p>
 
-<h2 id="s-network" data-tier="core"><span class="material-symbols-rounded">people</span>Social World & Network</h2>
+<h3>Social World & Network</h3>
 <p><strong>First institutional affiliations.</strong> The martial arts dojo, the music school, the chess club — these are network decisions as much as skill decisions. Choose institutions where the other families value something seriously.</p>
 <p><strong>Peer selection:</strong> One or two children who are observably ahead of them in some domain. Not to create competition — to normalize high performance as something peers do.</p>
 <p><strong>Madrid-specific:</strong> Chess clubs (Club de Ajedrez Madrid), British Council youth programs, music conservatory preparation programs, international school extracurriculars.</p>
 
-<h2 id="s-institutions" data-tier="foundational"><span class="material-symbols-rounded">school</span>Institution Decisions — This Phase</h2>
+<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
+
+<h3>Coding</h3>
+<p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
+
+<h3>Entrepreneurship & Projects</h3>
+<p><strong>Build:</strong> Physical construction — KAPLA, LEGO without instructions, woodworking with real tools at 6–7 (supervised, real saw and hammer, not plastic). The pride of making something real and functional.</p>
+<p><strong>Monetize:</strong> Moonjar system — save, spend, share. Weekly allowance of €5–10, real decisions with real consequences. "You spent it all on candy. That means no money for the toy next week. That's what happened." No bailouts.</p>
+
+<h3>Games & Digital Play</h3>
+<p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
+<p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
+<p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
+
+<h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
+
+<h3>Ethics & Moral Reasoning</h3>
+<p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning.</p>
+
+<h3>History</h3>
+<p>History as story at this age. "Who built this castle? When? Why?" Historical picture books and timeline awareness — "a long, long time ago, before cars, before electricity." Usborne history encyclopedias for browsing. The goal is temporal awareness: things were different before, and specific people made specific choices that changed things.</p>
+
+<h3>Nature & Ecology</h3>
+<p>Nature journal: draw and describe one thing observed outdoors each week. Ecosystem questions: "What does the ant eat? What eats the ant? What would happen if there were no ants?" Seasonal observation across a full year — tracking the same tree or garden patch through all four seasons teaches systems thinking before you name it.</p>
+
+<h3>Teaching & Explanation</h3>
+<p>Not formal yet, but the instinct begins: "Can you show your little brother how to do that?" When they explain something, resist correcting — let them practice the act of explanation. By 6-7: "You learned how this works. Now explain it to me like I don't know anything." This is proto-Feynman technique.</p>
+
+<h3>Cognitive Models</h3>
+<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
+
+<h2 id="s-culture" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Culture & Inner Life</h2>
+
+<h3>Cultural Travel</h3>
+<p>Europe by car and train — deliberate. Paris, Rome, London, Berlin, Amsterdam. One international trip per year minimum. Before the trip: "Where are we going? Show me on the map. What language do they speak? What do they eat?" After: "What was different from Madrid? What was the same?" These debrief questions build comparative cultural thinking.</p>
+<p>First non-European destination by age 7 if possible — Morocco, Turkey, or similar. The cognitive shock of a genuinely different culture is worth more than ten European trips. Madrid itself is a cultural education: use it. Retiro, the Rastro, neighborhood diversity, the rhythm of a European capital.</p>
+
+<h3>Meaning-Making & Spirituality</h3>
+<p>Bible stories and Greek myths as narrative — the same way they consume Avatar. Noah's Ark, David and Goliath, Odysseus, Theseus and the Minotaur. These are humanity's oldest stories; treat them as rich narrative, not doctrine.</p>
+<p>Questions about death, God, existence: engage seriously. "Some people believe X. Other people believe Y. What do you think?" Model intellectual humility about the biggest questions.</p>
+
+<h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
+
+<h3>Institution Decisions</h3>
 <p><strong>⚡ Primary school (age 4-5).</strong> Determines peer group for 6+ years. This compounds. Look for: academic rigor without crushing play, bilingual or English-medium, families who take something seriously. In Madrid: British Council, International College Spain, Hastings, King's College.</p>
 <p><strong>⚡ Niche mastery teacher (age 4-5).</strong> The TEACHER matters more than the activity. Best available private instructor, 1:1. A practitioner who performs at a high level, not just teaches. This is the single highest-leverage resource investment at this age. No budget limit.</p>
 <p><strong>⚡ Team sport club (age 6-8).</strong> Social calibration window. Coach who develops character, not just talent. Madrid: football junior leagues, basketball, rugby. The club culture becomes the child's social default.</p>
 
-<h2 id="s-cadence" data-tier="core"><span class="material-symbols-rounded">calendar_month</span>Weekly Cadence</h2>
+<h3>Summer Intensives</h3>
+<p>Summer is for deep dives that don't fit the regular schedule. 2–3 week immersions in a domain they're already drawn to. These are not resumes — they're flow.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Nature Immersion Week</div><p>A week at a mountain campo or nature retreat. Daily hikes, outdoor cooking, bug observation, stream exploration. No tech except maybe camera for nature photography. The goal: genuine comfort with wild places.</p></div>
+<div class="card"><div class="card-title">Intensive Swim Camp</div><p>2 weeks focused on water competence. Beyond school swimming — real distance, open water, survival skills. Builds physical confidence and hardship tolerance together.</p></div>
+<div class="card"><div class="card-title">Art & Building Camp</div><p>A week of serious construction or art instruction. Woodworking intensive, pottery wheel, large-scale LEGO architecture, mural painting. Something they produce that they're proud of.</p></div>
+</div>
+
+<h3>Weekly Cadence</h3>
 <div class="card-grid">
 <div class="card"><div class="card-title">Parent Evenings (2 hours)</div>
 <p>Arrive → 15 min free play / connection → dinner (Socratic conversation 2–3x/week) → instrument practice (15–20 min, parent present) → reading aloud 30–45 min → bed.</p>
@@ -137,82 +229,6 @@ order: 3
 </div>
 </div>
 
-<h2 id="s-language-expression" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Language & Expression</h2>
-<div class="music-track language-track">
-<div>
-<h4>Written Track</h4>
-<p>Daily journal, even if it's a drawing with one sentence. The habit matters more than the quality. Letters to grandparents (in English and Spanish) — writing with a real recipient teaches that writing is communication, not assignment. Story dictation for ambitious narratives: they tell, you transcribe, they illustrate. By 6-7, they write their own short stories.</p>
-<p>The Yoto Player becomes a writing tool too: after listening to a story, "What happened? Tell me in three sentences." This bridges listening comprehension to written expression.</p>
-</div>
-<div>
-<h4>Oral &amp; Performance Track</h4>
-<p><strong>Show-and-tell at home.</strong> Weekly: pick an object, stand in front of the family, explain what it is and why it matters. Insist on standing, facing the audience, and speaking loudly enough to be heard. No reading from notes — they speak from knowledge. This is the first formal public speaking exercise.</p>
-<p><strong>Storytelling.</strong> Rory's Story Cubes and dinner storytelling games. "Tell us a story about a dragon who was afraid of fire." Improvised oral narrative builds real-time composition skill that writing cannot train.</p>
-<p><strong>Poetry exposure.</strong> Read Shel Silverstein and A.A. Milne aloud together. Not forced memorization — appreciation. "Listen to how that sounds. Why is it funny? What makes it stick?" Poetry is language at its most compressed and musical.</p>
-</div>
-</div>
-<p><strong>L3 exposure window opens.</strong> Age 6-8 is optimal for introducing a third language through immersion (summer program, au pair, media). Not classroom instruction — exposure first. See Philosophy tab for multilingual architecture. French is highest-utility from Madrid; the specific choice follows the child's interest and available immersion.</p>
-<p><strong>⚡ Window alert:</strong> Native accent acquisition narrows after age 7-10 (Hartshorne et al., 2018). The bilingual foundation built in these years determines accent quality for life. L3 exposure window opens at age 6-8 — summer immersion, au pair, or media exposure in the target language.</p>
-
-<h2 id="s-visual" data-tier="recommended"><span class="material-symbols-rounded">palette</span>Visual & Spatial Thinking</h2>
-<p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
-
-<h2 id="s-emotional" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Emotional Intelligence</h2>
-<p><strong>Critical window.</strong> Name-it-to-tame-it: naming an emotion literally reduces amygdala activation (Lieberman et al., 2007). Teach zones of regulation — color-coded energy levels (blue = low/sad, green = calm/ready, yellow = anxious/excited, red = angry/explosive). Practice recognizing physiological signals: "My stomach feels tight when I'm nervous. My face gets hot when I'm angry."</p>
-<p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
-<p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
-<p><strong>Joy as signal.</strong> Watch what produces genuine flow — sustained engagement, loss of time sense, intrinsic motivation. These activities are the signal for niche mastery direction. If an activity never produces flow after consistent exposure, question whether it's the right fit. Protect flow states ruthlessly: when they're absorbed, don't interrupt for meals, transitions, or "better" activities.</p>
-
-<h2 id="s-ethics" data-tier="recommended"><span class="material-symbols-rounded">self_improvement</span>Ethics & Moral Reasoning</h2>
-<p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning.</p>
-
-<h2 id="s-coding" data-tier="core"><span class="material-symbols-rounded">terminal</span>Coding & Computational Thinking</h2>
-<p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
-
-<h2 id="s-digital" data-tier="core"><span class="material-symbols-rounded">videocam</span>Digital Creation — Seed</h2>
-<p>Not screen time — creation time. A child who uses a tablet to watch is a consumer. A child who uses it to create is a producer.</p>
-<p><strong>Photography.</strong> Give them a camera (old phone, kid camera). "Take a picture of something beautiful. Now something funny. Now something that makes you curious." Composition begins here.</p>
-<p><strong>Stop-motion animation.</strong> LEGO figures + a phone + Stop Motion Studio app. They're directing films by age 6.</p>
-
-<h2 id="s-social" data-tier="core"><span class="material-symbols-rounded">people</span>Social Intelligence</h2>
-<p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
-<p><strong>First negotiations.</strong> "I want X" evolves to "I want X because Y." Structure requests: what do you want, why, and what can you offer in return? Turn-taking in disagreements. "What does the other person want? Can you both get something?" Every conflict is a negotiation — frame it that way from the start.</p>
-
-<h2 id="s-negotiation" data-tier="core"><span class="material-symbols-rounded">handshake</span>Sales & Negotiation — First Steps</h2>
-<p><strong>Structured requests.</strong> "I want X" evolves to "I want X because Y, and I can offer Z." Every request is a negotiation. Frame it that way from age 4.</p>
-<p><strong>Show-and-tell as selling.</strong> Weekly show-and-tell at home isn't just public speaking — it's the first sales pitch. "Convince us this object is interesting." They learn to read the audience and adjust.</p>
-<p><strong>Trading and bartering.</strong> Toy swaps with friends, negotiating dessert choices, deciding who gets to pick the movie. Every micro-negotiation builds the muscle. Don't resolve their conflicts for them — coach from the side.</p>
-
-<h2 id="s-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Body & Mind</h2>
-<p>"Exercise makes you smarter" — stated plainly, because it's true. Running or active play before focused work (reading, music practice) measurably improves attention. Morning outdoor time before school sets the neurochemical stage for the day. This isn't health advice; it's cognitive optimization.</p>
-<p><strong>Sleep is THE intervention.</strong> 10-13 hours. No screens 1 hour before bed. Dark room, cool temperature. A well-rested child who does nothing else from this framework outperforms a sleep-deprived child who does everything. This is not a suggestion — it's the single most evidence-backed claim in the entire framework (Walker, 2017).</p>
-
-<h2 id="s-nature" data-tier="recommended"><span class="material-symbols-rounded">emoji_nature</span>Nature & Ecology</h2>
-<p>Nature journal: draw and describe one thing observed outdoors each week. Ecosystem questions: "What does the ant eat? What eats the ant? What would happen if there were no ants?" Seasonal observation across a full year — tracking the same tree or garden patch through all four seasons teaches systems thinking before you name it.</p>
-
-<h2 id="s-history" data-tier="recommended"><span class="material-symbols-rounded">history_edu</span>History</h2>
-<p>History as story at this age. "Who built this castle? When? Why?" Historical picture books and timeline awareness — "a long, long time ago, before cars, before electricity." Usborne history encyclopedias for browsing. The goal is temporal awareness: things were different before, and specific people made specific choices that changed things.</p>
-
-<h2 id="s-teaching" data-tier="recommended"><span class="material-symbols-rounded">school</span>Teaching & Explanation</h2>
-<p>Not formal yet, but the instinct begins: "Can you show your little brother how to do that?" When they explain something, resist correcting — let them practice the act of explanation. By 6-7: "You learned how this works. Now explain it to me like I don't know anything." This is proto-Feynman technique.</p>
-
-<h2 id="s-travel" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Cultural Travel</h2>
-<p>Europe by car and train — deliberate. Paris, Rome, London, Berlin, Amsterdam. One international trip per year minimum. Before the trip: "Where are we going? Show me on the map. What language do they speak? What do they eat?" After: "What was different from Madrid? What was the same?" These debrief questions build comparative cultural thinking.</p>
-<p>First non-European destination by age 7 if possible — Morocco, Turkey, or similar. The cognitive shock of a genuinely different culture is worth more than ten European trips. Madrid itself is a cultural education: use it. Retiro, the Rastro, neighborhood diversity, the rhythm of a European capital.</p>
-
-<h2 id="s-service" data-tier="core"><span class="material-symbols-rounded">volunteer_activism</span>Service & Empathy</h2>
-<p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is ethics made physical.</p>
-
-<h2 id="s-intensives" data-tier="recommended"><span class="material-symbols-rounded">explore</span>Summer Intensives</h2>
-<p>Summer is for deep dives that don't fit the regular schedule. 2–3 week immersions in a domain they're already drawn to. These are not resumes — they're flow.</p>
-<div class="card-grid">
-<div class="card"><div class="card-title">Nature Immersion Week</div><p>A week at a mountain campo or nature retreat. Daily hikes, outdoor cooking, bug observation, stream exploration. No tech except maybe camera for nature photography. The goal: genuine comfort with wild places.</p></div>
-<div class="card"><div class="card-title">Intensive Swim Camp</div><p>2 weeks focused on water competence. Beyond school swimming — real distance, open water, survival skills. Builds physical confidence and hardship tolerance together.</p></div>
-<div class="card"><div class="card-title">Art & Building Camp</div><p>A week of serious construction or art instruction. Woodworking intensive, pottery wheel, large-scale LEGO architecture, mural painting. Something they produce that they're proud of.</p></div>
-</div>
-
-<h2 id="s-cognition" data-tier="recommended"><span class="material-symbols-rounded">lightbulb</span>Cognitive Models & Thinking</h2>
-<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 </div>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>
@@ -234,7 +250,7 @@ order: 3
 <tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td><td>—</td></tr>
 <tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6.</td><td>—</td></tr>
 <tr><td>Roald Dahl Complete Works</td><td>Book</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion. Especially valuable for verbal-abstract profiles.</td><td><a href="#s-activity">Communication Mastery</a></td></tr>
-<tr><td>Don Quijote contado a los niños — Rosa Navarro Durán</td><td>Book</td><td>FOUNDATIONAL Spanish-language anchor. Children's adaptation of the foundational Spanish novel. Maps ≠ Territory made human. Read in Spanish.</td><td>—</td></tr>
+<tr><td>Don Quijote contado a los ninos — Rosa Navarro Duran</td><td>Book</td><td>FOUNDATIONAL Spanish-language anchor. Children's adaptation of the foundational Spanish novel. Maps ≠ Territory made human. Read in Spanish.</td><td>—</td></tr>
 <tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
 <tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression. Alternative for high-sensitivity profiles who need non-aggressive physical challenge.</td><td>—</td></tr>
 <tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12. Especially valuable for spatial-kinesthetic profiles.</td><td><a href="#s-activity">Adaptability</a></td></tr>
