@@ -500,11 +500,16 @@ function initResourceFilters() {
       }
     });
 
-    // Collect available types for this table
+    // Collect available types and targets for this table
     const types = new Set();
+    const targets = new Set();
     table.querySelectorAll('.resource-row').forEach(r => {
       const t = r.getAttribute('data-type');
       if (t && t !== 'other') types.add(t);
+      r.querySelectorAll('.tag-target').forEach(tag => {
+        const name = tag.textContent.trim();
+        if (name) { r.setAttribute('data-targets', (r.getAttribute('data-targets') || '') + '|' + name + '|'); targets.add(name); }
+      });
     });
 
     // Build filter pills
@@ -548,40 +553,90 @@ function initResourceFilters() {
       filterDiv.appendChild(typeGroup);
     }
 
+    // Target pills (only if targets exist in this table)
+    if (targets.size > 0) {
+      const targetGroup = document.createElement('div');
+      targetGroup.className = 'filter-group';
+      targetGroup.innerHTML = '<span class="filter-label">Target</span>';
+      const allBtn = document.createElement('button');
+      allBtn.className = 'filter-pill active';
+      allBtn.setAttribute('data-filter', 'target');
+      allBtn.setAttribute('data-val', 'all');
+      allBtn.textContent = 'All';
+      targetGroup.appendChild(allBtn);
+      Array.from(targets).sort().forEach(t => {
+        const pill = document.createElement('button');
+        pill.className = 'filter-pill';
+        pill.setAttribute('data-filter', 'target');
+        pill.setAttribute('data-val', t);
+        pill.textContent = t;
+        targetGroup.appendChild(pill);
+      });
+      filterDiv.appendChild(targetGroup);
+    }
+
     // Insert filter pills before the table (or before its scroll wrapper)
     const wrapper = table.closest('.table-scroll') || table;
     wrapper.parentNode.insertBefore(filterDiv, wrapper);
 
-    // Wire up filter clicks
+    // Wire up filter clicks — multi-select within category (OR), AND between categories
     filterDiv.addEventListener('click', (e) => {
       const pill = e.target.closest('.filter-pill');
       if (!pill) return;
       const filterType = pill.getAttribute('data-filter');
-      // Deactivate siblings, activate clicked
-      filterDiv.querySelectorAll(`.filter-pill[data-filter="${filterType}"]`).forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
+      const val = pill.getAttribute('data-val');
+      const allPill = filterDiv.querySelector(`.filter-pill[data-filter="${filterType}"][data-val="all"]`);
+
+      if (val === 'all') {
+        // "All" deactivates everything else
+        filterDiv.querySelectorAll(`.filter-pill[data-filter="${filterType}"]`).forEach(p => p.classList.remove('active'));
+        allPill.classList.add('active');
+      } else {
+        // Toggle this pill
+        pill.classList.toggle('active');
+        allPill.classList.remove('active');
+        // If nothing is active, re-activate "All"
+        const anyActive = filterDiv.querySelector(`.filter-pill[data-filter="${filterType}"].active:not([data-val="all"])`);
+        if (!anyActive) allPill.classList.add('active');
+      }
       applyResourceFilter(table, filterDiv);
     });
   });
 }
 
+function getActiveFilterVals(filterDiv, filterType) {
+  const allActive = filterDiv.querySelector(`.filter-pill[data-filter="${filterType}"][data-val="all"].active`);
+  if (allActive) return null; // null means "all"
+  return Array.from(filterDiv.querySelectorAll(`.filter-pill[data-filter="${filterType}"].active`)).map(p => p.getAttribute('data-val'));
+}
+
 function applyResourceFilter(table, filterDiv) {
-  const tierVal = filterDiv.querySelector('.filter-pill[data-filter="tier"].active')?.getAttribute('data-val') || 'all';
-  const typeVal = filterDiv.querySelector('.filter-pill[data-filter="type"].active')?.getAttribute('data-val') || 'all';
+  const tiers = getActiveFilterVals(filterDiv, 'tier');
+  const types = getActiveFilterVals(filterDiv, 'type');
+  const targets = getActiveFilterVals(filterDiv, 'target');
 
-  // Show/hide tier headers
-  table.querySelectorAll('tr[data-tier-header]').forEach(tr => {
-    const tier = tr.getAttribute('data-tier-header');
-    tr.style.display = (tierVal === 'all' || tier === tierVal) ? '' : 'none';
-  });
-
-  // Show/hide resource rows
+  // Show/hide resource rows: OR within category, AND between categories
   table.querySelectorAll('.resource-row').forEach(tr => {
     const tier = tr.getAttribute('data-tier');
     const type = tr.getAttribute('data-type');
-    const tierMatch = tierVal === 'all' || tier === tierVal;
-    const typeMatch = typeVal === 'all' || type === typeVal;
-    tr.style.display = (tierMatch && typeMatch) ? '' : 'none';
+    const rowTargets = tr.getAttribute('data-targets') || '';
+    const tierMatch = !tiers || tiers.includes(tier);
+    const typeMatch = !types || types.includes(type);
+    const targetMatch = !targets || targets.some(t => rowTargets.includes('|' + t + '|'));
+    tr.style.display = (tierMatch && typeMatch && targetMatch) ? '' : 'none';
+  });
+
+  // Show/hide tier headers based on whether they have visible children
+  table.querySelectorAll('tr[data-tier-header]').forEach(tr => {
+    const tier = tr.getAttribute('data-tier-header');
+    if (tiers && !tiers.includes(tier)) { tr.style.display = 'none'; return; }
+    let hasVisible = false;
+    let sibling = tr.nextElementSibling;
+    while (sibling && !sibling.hasAttribute('data-tier-header')) {
+      if (sibling.style.display !== 'none') hasVisible = true;
+      sibling = sibling.nextElementSibling;
+    }
+    tr.style.display = hasVisible ? '' : 'none';
   });
 }
 

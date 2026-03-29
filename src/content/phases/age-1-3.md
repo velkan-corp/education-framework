@@ -123,29 +123,29 @@ order: 2
 </table>
 <h3>Full Resource List</h3>
 <table>
-<tr><th>Resource</th><th>Type</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
-<tr><td>Yoto Player</td><td>Equipment</td><td>Screen-free audio device. Full-size with make-your-own card capability. Primary audio device for ages 1–7. Durable, intuitive, English and Spanish content.</td><td>—</td></tr>
-<tr><td>Duplo Large Creative Box</td><td>Toy</td><td>Open-ended construction. Spatial reasoning, iteration, fine motor. Avoid themed sets.</td><td>—</td></tr>
-<tr><td>Richard Scarry — Cars and Trucks and Things That Go</td><td>Book</td><td>Systems, vocabulary density, Goldbug hidden-object search. The perfect 2-year-old book.</td><td><a href="#s-activity">Communication Mastery</a></td></tr>
-<tr><td>Grimm's Rainbow (12-piece)</td><td>Toy</td><td>Gold standard for open-ended wooden play. Teaches scale, nesting, balance, spatial reasoning, creativity. Lasts through age 12+.</td><td><a href="#s-activity">Resilient Self-Efficacy seed</a></td></tr>
-<tr><td>Magna-Tiles (100-piece set minimum)</td><td>Toy</td><td>Magnetic construction tiles. Superior to Magformers in stability and structural possibilities. Open-ended 3D building.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
-<tr><td>Yoto Mini</td><td>Equipment</td><td>Portable version for travel. Same functionality as Player, compact and durable. Portability essential for family trips.</td><td>—</td></tr>
-<tr><td>Strider 12 Sport Balance Bike</td><td>Equipment</td><td>No pedals — balance first. Transforms outdoor time. From 18 months.</td><td>—</td></tr>
-<tr><td>Brio World Wooden Train System (Starter Set)</td><td>Toy</td><td>Wooden track railway system. Open-ended construction, spatial reasoning, creativity. Grows with them through age 7+. Compatible with other track systems.</td><td>—</td></tr>
-<tr><td>Grimm's Nesting/Stacking Cups</td><td>Toy</td><td>Scale, categorization, water play. Deceptively simple, endlessly re-engageable.</td><td>—</td></tr>
-<tr><td>Hape Shape Sorting Box</td><td>Toy</td><td>Categorization, spatial reasoning, problem-solving. Frustration tolerance at its most basic.</td><td>—</td></tr>
-<tr><td>Eric Carle — Very Hungry Caterpillar + Brown Bear</td><td>Book</td><td>Cause-effect (eating → growth), categorization, rhythm, colors.</td><td><a href="#s-activity">First-Principles seed</a></td></tr>
-<tr><td>Dr. Seuss — Cat in the Hat, Green Eggs</td><td>Book</td><td>Phonemic awareness in English. Rhyme, rhythm, memorizable patterns.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
-<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>Visual search, sustained attention, pattern recognition. Re-engageable for years.</td><td>—</td></tr>
-<tr><td>Magna-Tiles 32-piece Starter</td><td>Toy</td><td>Magnetic construction. Bridge between Duplo and KAPLA. 3D spatial reasoning.</td><td>—</td></tr>
-<tr><td>Melissa & Doug Latches Board</td><td>Toy</td><td>Fine motor, cause-effect, problem-solving. Real latches with satisfying mechanism.</td><td>—</td></tr>
-<tr><td>Gruffalo — Julia Donaldson</td><td>Book</td><td>Rhythm, repetition, narrative structure. Strategy (the mouse outsmarts everyone).</td><td>—</td></tr>
-<tr><td>Sandra Boynton board books</td><td>Book</td><td>Humor, rhythm, animals. Moo Baa La La La, Pajama Time. Engagement through silliness.</td><td>—</td></tr>
-<tr><td>Plan Toys Sorting Bus</td><td>Toy</td><td>Shape sorting + wheels. Combines spatial reasoning with motor play.</td><td>—</td></tr>
-<tr><td>Aquaplay Water Table</td><td>Toy</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking.</td><td>—</td></tr>
-<tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>Interna reading list. Simple, repetitive, engaging in Spanish.</td><td>—</td></tr>
-<tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>Curiosity tool. Transforms any walk into an investigation.</td><td><a href="#s-activity">Deep Curiosity</a></td></tr>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
+<tr><td>Yoto Player</td><td>Equipment</td><td>Screen-free audio device. Full-size with make-your-own card capability. Primary audio device for ages 1–7. Durable, intuitive, English and Spanish content. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Duplo Large Creative Box</td><td>Toy</td><td>Open-ended construction. Spatial reasoning, iteration, fine motor. Avoid themed sets. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Richard Scarry — Cars and Trucks and Things That Go</td><td>Book</td><td>Systems, vocabulary density, Goldbug hidden-object search. The perfect 2-year-old book. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Grimm's Rainbow (12-piece)</td><td>Toy</td><td>Gold standard for open-ended wooden play. Teaches scale, nesting, balance, spatial reasoning, creativity. Lasts through age 12+. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Magna-Tiles (100-piece set minimum)</td><td>Toy</td><td>Magnetic construction tiles. Superior to Magformers in stability and structural possibilities. Open-ended 3D building. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>Portable version for travel. Same functionality as Player, compact and durable. Portability essential for family trips. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Strider 12 Sport Balance Bike</td><td>Equipment</td><td>No pedals — balance first. Transforms outdoor time. From 18 months. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Brio World Wooden Train System (Starter Set)</td><td>Toy</td><td>Wooden track railway system. Open-ended construction, spatial reasoning, creativity. Grows with them through age 7+. Compatible with other track systems. <span class="tag tag-target">First-Principles seed</span></td></tr>
+<tr><td>Grimm's Nesting/Stacking Cups</td><td>Toy</td><td>Scale, categorization, water play. Deceptively simple, endlessly re-engageable. <span class="tag tag-target">First-Principles seed</span></td></tr>
+<tr><td>Hape Shape Sorting Box</td><td>Toy</td><td>Categorization, spatial reasoning, problem-solving. Frustration tolerance at its most basic. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Eric Carle — Very Hungry Caterpillar + Brown Bear</td><td>Book</td><td>Cause-effect (eating → growth), categorization, rhythm, colors. <span class="tag tag-target">First-Principles seed</span></td></tr>
+<tr><td>Dr. Seuss — Cat in the Hat, Green Eggs</td><td>Book</td><td>Phonemic awareness in English. Rhyme, rhythm, memorizable patterns. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>Visual search, sustained attention, pattern recognition. Re-engageable for years. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Magna-Tiles 32-piece Starter</td><td>Toy</td><td>Magnetic construction. Bridge between Duplo and KAPLA. 3D spatial reasoning. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Melissa & Doug Latches Board</td><td>Toy</td><td>Fine motor, cause-effect, problem-solving. Real latches with satisfying mechanism. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Gruffalo — Julia Donaldson</td><td>Book</td><td>Rhythm, repetition, narrative structure. Strategy (the mouse outsmarts everyone). <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Sandra Boynton board books</td><td>Book</td><td>Humor, rhythm, animals. Moo Baa La La La, Pajama Time. Engagement through silliness. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Plan Toys Sorting Bus</td><td>Toy</td><td>Shape sorting + wheels. Combines spatial reasoning with motor play. <span class="tag tag-target">First-Principles seed</span></td></tr>
+<tr><td>Aquaplay Water Table</td><td>Toy</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking. <span class="tag tag-target">First-Principles seed</span></td></tr>
+<tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>Interna reading list. Simple, repetitive, engaging in Spanish. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>Curiosity tool. Transforms any walk into an investigation. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 </table>

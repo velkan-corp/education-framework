@@ -354,6 +354,7 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 .tag-book { background: var(--accent2-light); color: var(--accent2); }
 .tag-music { background: var(--accent3-light); color: var(--accent3); }
 .tag-activity { background: var(--accent4-light); color: var(--accent4); }
+.tag-target { background: rgba(180,140,255,.12); color: #b08cff; font-weight: 500; }
 
 /* SECTION CONTENT */
 .section { display: none; }

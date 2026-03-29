@@ -121,26 +121,26 @@ order: 1
 </table>
 <h3>Full Resource List</h3>
 <table>
-<tr><th>Resource</th><th>Type</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
-<tr><td>Lovevery Play Gym</td><td>Toy</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories.</td><td><a href="#s-activity">Resilient Self-Efficacy seed</a></td></tr>
-<tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months.</td><td><a href="#s-activity">Self-Compassion seed</a></td></tr>
-<tr><td>Montessori Munari Mobile</td><td>Toy</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise.</td><td>—</td></tr>
-<tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>Dense visual systems. Every page is an information environment.</td><td>—</td></tr>
-<tr><td>Richard Scarry — What Do People Do All Day</td><td>Book</td><td>How a town works as a system. Categorization, roles, interdependence.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
-<tr><td>High-Contrast Cards (Wee Gallery)</td><td>Toy</td><td>Birth–3 months. Black/white art cards. Visual development before color vision matures.</td><td>—</td></tr>
-<tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins.</td><td>—</td></tr>
-<tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>8–12 weeks. Gradient of a single color. Depth perception development.</td><td>—</td></tr>
-<tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion.</td><td>—</td></tr>
-<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce).</td><td><a href="#s-activity">Physical System Mastery seed</a></td></tr>
-<tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>The canonical bedtime book. Repetition, pattern, ritual.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
-<tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal.</td><td>—</td></tr>
-<tr><td>Brio Wooden Trains</td><td>Toy</td><td>Classic wooden train system. Wooden track pieces invite open-ended play. Spatial reasoning from the start.</td><td>—</td></tr>
-<tr><td>Yoto Mini</td><td>Equipment</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere.</td><td>—</td></tr>
-<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years.</td><td>—</td></tr>
-<tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action.</td><td>—</td></tr>
-<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>Comfort object. Texture variety. Secure attachment support.</td><td>—</td></tr>
-<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor.</td><td>—</td></tr>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
+<tr><td>Lovevery Play Gym</td><td>Toy</td><td>Graduated sensory and motor challenges. Wooden frame, interchangeable accessories. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Ergobaby 360 Carrier</td><td>Equipment</td><td>All-position carrier. Hands-free secure attachment. Use from 4 months. <span class="tag tag-target">Self-Compassion seed</span></td></tr>
+<tr><td>Montessori Munari Mobile</td><td>Toy</td><td>Birth–6 weeks. Black and white geometric shapes. First visual tracking exercise. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Richard Scarry — Busy, Busy World</td><td>Book</td><td>Dense visual systems. Every page is an information environment. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Richard Scarry — What Do People Do All Day</td><td>Book</td><td>How a town works as a system. Categorization, roles, interdependence. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>High-Contrast Cards (Wee Gallery)</td><td>Toy</td><td>Birth–3 months. Black/white art cards. Visual development before color vision matures. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Montessori Octahedron Mobile</td><td>Toy</td><td>6–8 weeks. Primary colors, 3D shapes. Color discrimination begins. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Montessori Gobbi Mobile</td><td>Toy</td><td>8–12 weeks. Gradient of a single color. Depth perception development. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Montessori Dancers Mobile</td><td>Toy</td><td>12+ weeks. Reflective, moving figures. Tracks complex motion. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Baby Bjorn Bouncer</td><td>Equipment</td><td>Self-directed bouncing. Early cause-and-effect (movement → bounce). <span class="tag tag-target">Physical System Mastery seed</span></td></tr>
+<tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Book</td><td>The canonical bedtime book. Repetition, pattern, ritual. <span class="tag tag-target">Self-Awareness seed</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
+<tr><td>Lovevery Play Kits (subscription 0-12 months)</td><td>Toy</td><td>Montessori-aligned, research-backed developmental toys delivered quarterly. The gold standard for 0-12 month play. Beautifully designed, genuinely optimal. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Brio Wooden Trains</td><td>Toy</td><td>Classic wooden train system. Wooden track pieces invite open-ended play. Spatial reasoning from the start. <span class="tag tag-target">Agency seed</span></td></tr>
+<tr><td>Yoto Mini</td><td>Equipment</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Where's Wally Complete Collection</td><td>Book</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
+<tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
+<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>Comfort object. Texture variety. Secure attachment support. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
+<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
 </table>

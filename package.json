@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "extract": "node extract-content.js"
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "^5.7.10"

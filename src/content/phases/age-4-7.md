@@ -243,45 +243,45 @@ order: 3
 </table>
 <h3>Full Resource List</h3>
 <table>
-<tr><th>Resource</th><th>Type</th><th>Description</th><th>Targets</th></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
-<tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>Primary anchor universe. Own it physically — don't rely on streaming.</td><td>—</td></tr>
-<tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format.</td><td>—</td></tr>
-<tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>Structured progression to independent swimming. Non-negotiable life skill.</td><td>—</td></tr>
-<tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6.</td><td>—</td></tr>
-<tr><td>Roald Dahl Complete Works</td><td>Book</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion. Especially valuable for verbal-abstract profiles.</td><td><a href="#s-activity">Communication Mastery</a></td></tr>
-<tr><td>Don Quijote contado a los ninos — Rosa Navarro Duran</td><td>Book</td><td>FOUNDATIONAL Spanish-language anchor. Children's adaptation of the foundational Spanish novel. Maps ≠ Territory made human. Read in Spanish.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
-<tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression. Alternative for high-sensitivity profiles who need non-aggressive physical challenge.</td><td>—</td></tr>
-<tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12. Especially valuable for spatial-kinesthetic profiles.</td><td><a href="#s-activity">Adaptability</a></td></tr>
-<tr><td>Kala KA-15S Ukulele</td><td>Equipment</td><td>Correctly sized for small hands. Durable, stays in tune. Good starter instrument.</td><td>—</td></tr>
-<tr><td>Goula Magnetic Chess Set</td><td>Toy</td><td>Correctly sized, portable, magnetic. Start with kings and pawns only.</td><td>—</td></tr>
-<tr><td>Chess for Children — Murray & Cowan</td><td>Book</td><td>Best introductory chess book for this age.</td><td>—</td></tr>
-<tr><td>Woom 3 or Prevelo Alpha Two Bike</td><td>Equipment</td><td>Proper geometry for confident riding. Size up as needed.</td><td>—</td></tr>
-<tr><td>Mafalda — Quino (Spanish)</td><td>Book</td><td>Age 7+. Argentine Calvin & Hobbes. Social commentary through child's voice. Spanish-language anchor.</td><td>—</td></tr>
-<tr><td colspan="4" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
-<tr><td>Museum Memberships (Natural History, Science, Art)</td><td>Service</td><td>Annual membership pays for itself in 2 visits. Come with questions, leave with new ones.</td><td><a href="#s-activity">Deep Curiosity</a></td></tr>
-<tr><td>DK Eyewitness Series</td><td>Book</td><td>Visual density, depth, re-engageable reference. Match to their current obsession.</td><td>—</td></tr>
-<tr><td>Osmo Starter Kit</td><td>Equipment</td><td>Tablet-based tangible play system. Coding, math, drawing, words. The best bridge between physical manipulation and digital thinking.</td><td>—</td></tr>
-<tr><td>Snap Circuits (300-piece set)</td><td>Equipment</td><td>Real electronics kit. Build actual circuits with real learning. Start with 300-piece set for ages 4-5, expand from there.</td><td>—</td></tr>
-<tr><td>Cubetto Playset</td><td>Equipment</td><td>Screenless coding robot. Tangible blocks guide movement. Premium but optimal for learning computational thinking at this age.</td><td>—</td></tr>
-<tr><td>ThinkFun Logic Games (Rush Hour, Gravity Maze, Circuit Maze)</td><td>Game</td><td>The best single-player logic puzzle series available. Escalating difficulty, real problem-solving. Develop spatial and logical reasoning.</td><td>—</td></tr>
-<tr><td>LEGO Classic Large Creative Box 10698</td><td>Toy</td><td>Open-ended construction. Real LEGO, not Duplo — age 4-7 is the right transition. Avoid sets with one correct outcome.</td><td>—</td></tr>
-<tr><td>Thames & Kosmos Kids First Science Lab</td><td>Toy</td><td>Real experiments at child scale. Better than baking soda kits.</td><td>—</td></tr>
-<tr><td>Rory's Story Cubes (all sets)</td><td>Game</td><td>Roll dice, tell a story. Mix Original + Actions + Voyages. Verbal intelligence through play.</td><td><a href="#s-activity">Communication Mastery</a></td></tr>
-<tr><td>Dixit</td><td>Game</td><td>Surreal imagery card game for story-making. Ambiguity tolerance through play.</td><td><a href="#s-activity">Communication Mastery</a></td></tr>
-<tr><td>Moonjar Save Spend Share Bank</td><td>Toy</td><td>Three-compartment bank. Real money, real decisions, real consequences.</td><td><a href="#s-activity">Agency</a></td></tr>
-<tr><td>After the Fall — Dan Santat</td><td>Book</td><td>Humpty Dumpty sequel. Fear of trying again after failure — the arc IS the lesson.</td><td><a href="#s-activity">Self-Compassion</a></td></tr>
-<tr><td>The Most Magnificent Thing — Ashley Spires</td><td>Book</td><td>Failure, frustration, stepping back, returning with perspective.</td><td><a href="#s-activity">Self-Compassion</a></td></tr>
-<tr><td>Ology Series (Dragonology, Wizardology, Egyptology)</td><td>Book</td><td>Fictional reference books modeling how knowledge is organized. Treat as real.</td><td>—</td></tr>
-<tr><td>Journey Trilogy — Aaron Becker</td><td>Book</td><td>Wordless adventure. Open-ended visual storytelling. No resolution offered.</td><td><a href="#s-activity">Adaptability</a></td></tr>
-<tr><td>Nat Geo Kids Magazine (subscription)</td><td>Service</td><td>Curiosity-driven nonfiction. Monthly arrival maintains engagement.</td><td>—</td></tr>
-<tr><td>Deuter Junior 18L Backpack</td><td>Equipment</td><td>They carry their own water and snacks. Physical ownership of responsibility.</td><td><a href="#s-activity">Physical System Mastery</a></td></tr>
-<tr><td>Muay Thai Kids Class</td><td>Service</td><td>Real contact, real technique, real pads. Alternative to Jiu-Jitsu.</td><td>—</td></tr>
-<tr><td>Brio World Wooden Train System</td><td>Toy</td><td>Wooden track railway. Open-ended construction, spatial reasoning, persistence. Escalate from basic to advanced track sets. Lasts through age 10+.</td><td>—</td></tr>
-<tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty.</td><td>—</td></tr>
-<tr><td>Batman: The Animated Series</td><td>Film</td><td>Moral complexity, visual storytelling, noir aesthetics. English original audio. Entry point to DC universe.</td><td>—</td></tr>
-<tr><td>Spider-Man: Into the Spider-Verse</td><td>Film</td><td>Visual innovation, identity, multiverse as metaphor. English original audio.</td><td>—</td></tr>
-<tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made.</td><td>—</td></tr>
-<tr><td>WALL-E</td><td>Film</td><td>Systems, ecology, loneliness, hope. Minimal dialogue — visual storytelling at its best.</td><td>—</td></tr>
+<tr><th>Resource</th><th>Type</th><th>Description</th></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
+<tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>Primary anchor universe. Own it physically — don't rely on streaming. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>Structured progression to independent swimming. Non-negotiable life skill. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Roald Dahl Complete Works</td><td>Book</td><td>Charlie, James, Fantastic Mr Fox, BFG, Matilda. Morality deliberately provocative — use for discussion. Especially valuable for verbal-abstract profiles. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Don Quijote contado a los ninos — Rosa Navarro Duran</td><td>Book</td><td>FOUNDATIONAL Spanish-language anchor. Children's adaptation of the foundational Spanish novel. Maps ≠ Territory made human. Read in Spanish. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--accent4);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">CORE — Strongly recommended</td></tr>
+<tr><td>Gracie Jiu-Jitsu Bullyproof Kids Program</td><td>Service</td><td>Self-defense, ground-based, confidence-building. Real curriculum with belt progression. Alternative for high-sensitivity profiles who need non-aggressive physical challenge. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>KAPLA Blocks 200-piece</td><td>Toy</td><td>Pure identical planks, no connectors. High difficulty ceiling — still useful at age 12. Especially valuable for spatial-kinesthetic profiles. <span class="tag tag-target">Adaptability</span></td></tr>
+<tr><td>Kala KA-15S Ukulele</td><td>Equipment</td><td>Correctly sized for small hands. Durable, stays in tune. Good starter instrument. <span class="tag tag-target">Resilient Self-Efficacy</span></td></tr>
+<tr><td>Goula Magnetic Chess Set</td><td>Toy</td><td>Correctly sized, portable, magnetic. Start with kings and pawns only. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Chess for Children — Murray & Cowan</td><td>Book</td><td>Best introductory chess book for this age. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Woom 3 or Prevelo Alpha Two Bike</td><td>Equipment</td><td>Proper geometry for confident riding. Size up as needed. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Mafalda — Quino (Spanish)</td><td>Book</td><td>Age 7+. Argentine Calvin & Hobbes. Social commentary through child's voice. Spanish-language anchor. <span class="tag tag-target">Self-Awareness</span></td></tr>
+<tr><td colspan="3" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMMENDED — Good defaults, swap freely</td></tr>
+<tr><td>Museum Memberships (Natural History, Science, Art)</td><td>Service</td><td>Annual membership pays for itself in 2 visits. Come with questions, leave with new ones. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>DK Eyewitness Series</td><td>Book</td><td>Visual density, depth, re-engageable reference. Match to their current obsession. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Osmo Starter Kit</td><td>Equipment</td><td>Tablet-based tangible play system. Coding, math, drawing, words. The best bridge between physical manipulation and digital thinking. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Snap Circuits (300-piece set)</td><td>Equipment</td><td>Real electronics kit. Build actual circuits with real learning. Start with 300-piece set for ages 4-5, expand from there. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Cubetto Playset</td><td>Equipment</td><td>Screenless coding robot. Tangible blocks guide movement. Premium but optimal for learning computational thinking at this age. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>ThinkFun Logic Games (Rush Hour, Gravity Maze, Circuit Maze)</td><td>Game</td><td>The best single-player logic puzzle series available. Escalating difficulty, real problem-solving. Develop spatial and logical reasoning. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>LEGO Classic Large Creative Box 10698</td><td>Toy</td><td>Open-ended construction. Real LEGO, not Duplo — age 4-7 is the right transition. Avoid sets with one correct outcome. <span class="tag tag-target">Resilient Self-Efficacy</span></td></tr>
+<tr><td>Thames & Kosmos Kids First Science Lab</td><td>Toy</td><td>Real experiments at child scale. Better than baking soda kits. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Rory's Story Cubes (all sets)</td><td>Game</td><td>Roll dice, tell a story. Mix Original + Actions + Voyages. Verbal intelligence through play. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Dixit</td><td>Game</td><td>Surreal imagery card game for story-making. Ambiguity tolerance through play. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Moonjar Save Spend Share Bank</td><td>Toy</td><td>Three-compartment bank. Real money, real decisions, real consequences. <span class="tag tag-target">Agency</span></td></tr>
+<tr><td>After the Fall — Dan Santat</td><td>Book</td><td>Humpty Dumpty sequel. Fear of trying again after failure — the arc IS the lesson. <span class="tag tag-target">Self-Compassion</span></td></tr>
+<tr><td>The Most Magnificent Thing — Ashley Spires</td><td>Book</td><td>Failure, frustration, stepping back, returning with perspective. <span class="tag tag-target">Self-Compassion</span></td></tr>
+<tr><td>Ology Series (Dragonology, Wizardology, Egyptology)</td><td>Book</td><td>Fictional reference books modeling how knowledge is organized. Treat as real. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Journey Trilogy — Aaron Becker</td><td>Book</td><td>Wordless adventure. Open-ended visual storytelling. No resolution offered. <span class="tag tag-target">Adaptability</span></td></tr>
+<tr><td>Nat Geo Kids Magazine (subscription)</td><td>Service</td><td>Curiosity-driven nonfiction. Monthly arrival maintains engagement. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Deuter Junior 18L Backpack</td><td>Equipment</td><td>They carry their own water and snacks. Physical ownership of responsibility. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Muay Thai Kids Class</td><td>Service</td><td>Real contact, real technique, real pads. Alternative to Jiu-Jitsu. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Brio World Wooden Train System</td><td>Toy</td><td>Wooden track railway. Open-ended construction, spatial reasoning, persistence. Escalate from basic to advanced track sets. Lasts through age 10+. <span class="tag tag-target">Adaptability</span></td></tr>
+<tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Batman: The Animated Series</td><td>Film</td><td>Moral complexity, visual storytelling, noir aesthetics. English original audio. Entry point to DC universe. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Spider-Man: Into the Spider-Verse</td><td>Film</td><td>Visual innovation, identity, multiverse as metaphor. English original audio. <span class="tag tag-target">Resilient Self-Efficacy</span></td></tr>
+<tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>WALL-E</td><td>Film</td><td>Systems, ecology, loneliness, hope. Minimal dialogue — visual storytelling at its best. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 </table>
