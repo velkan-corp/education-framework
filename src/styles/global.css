@@ -660,7 +660,7 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   /* Tables: reduce min-width to prevent horizontal scroll */
   .table-scroll table { min-width: auto; }
   /* Search: icon-only by default, expands on tap */
-  #search-icon { display: block; cursor: pointer; padding: 4px; }
+  #search-icon { display: block; cursor: pointer; padding: 10px; width: 40px; height: 40px; }
   #search-input {
     width: 0 !important; padding: 0 !important; border: none !important;
     position: absolute; right: 36px; top: 50%; transform: translateY(-50%);
