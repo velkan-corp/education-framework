@@ -124,41 +124,49 @@ const renderedPhases = await Promise.all(
   </div>
 </div>
 
-<!-- FLOATING FABS -->
-<button class="profile-fab" id="fab-sections" style="bottom:78px;right:20px;font-size:18px" title="Sections">&#9776;</button>
-<button class="profile-fab" id="fab-profile" title="Child Profile">&#9881;</button>
+<!-- SINGLE MOBILE FAB -->
+<button class="profile-fab" id="fab-menu" title="Menu">&#9776;</button>
 
-<!-- FLOATING PROFILE PANEL -->
-<div class="profile-float" id="float-profile">
-  <div class="profile-float-title">Child Profile <span style="font-size:10px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted)">— adjusts advice across all tabs</span></div>
-  <div class="profile-label">Energy</div>
-  <div class="radio-group" data-dim="energy">
-    <div class="radio-btn" data-val="introvert">Introvert</div>
-    <div class="radio-btn active" data-val="balanced">Balanced</div>
-    <div class="radio-btn" data-val="extrovert">Extrovert</div>
-  </div>
-  <div class="profile-label">Processing</div>
-  <div class="radio-group" data-dim="processing">
-    <div class="radio-btn" data-val="verbal">Verbal</div>
-    <div class="radio-btn active" data-val="balanced">Balanced</div>
-    <div class="radio-btn" data-val="spatial">Spatial</div>
-  </div>
-  <div class="profile-label">Sensitivity</div>
-  <div class="radio-group" data-dim="sensitivity">
-    <div class="radio-btn" data-val="high-sens">High</div>
-    <div class="radio-btn active" data-val="balanced">Balanced</div>
-    <div class="radio-btn" data-val="low-sens">Low</div>
-  </div>
-  <div class="profile-label">Novelty</div>
-  <div class="radio-group" data-dim="novelty">
-    <div class="radio-btn" data-val="depth">Depth</div>
-    <div class="radio-btn active" data-val="balanced">Balanced</div>
-    <div class="radio-btn" data-val="breadth">Breadth</div>
+<!-- COMBINED FLOATING PANEL: sections + profile -->
+<div class="profile-float" id="float-menu">
+  <div id="float-menu-sections"></div>
+  <div style="border-top:1px solid var(--border);margin:var(--sp-3) 0;padding-top:var(--sp-3)">
+    <div class="profile-float-title">Child Profile</div>
+    <div class="profile-label">Energy</div>
+    <div class="radio-group" data-dim="energy">
+      <div class="radio-btn" data-val="introvert">Introvert</div>
+      <div class="radio-btn active" data-val="balanced">Balanced</div>
+      <div class="radio-btn" data-val="extrovert">Extrovert</div>
+    </div>
+    <div class="profile-label">Processing</div>
+    <div class="radio-group" data-dim="processing">
+      <div class="radio-btn" data-val="verbal">Verbal</div>
+      <div class="radio-btn active" data-val="balanced">Balanced</div>
+      <div class="radio-btn" data-val="spatial">Spatial</div>
+    </div>
+    <div class="profile-label">Sensitivity</div>
+    <div class="radio-group" data-dim="sensitivity">
+      <div class="radio-btn" data-val="high-sens">High</div>
+      <div class="radio-btn active" data-val="balanced">Balanced</div>
+      <div class="radio-btn" data-val="low-sens">Low</div>
+    </div>
+    <div class="profile-label">Novelty</div>
+    <div class="radio-group" data-dim="novelty">
+      <div class="radio-btn" data-val="depth">Depth</div>
+      <div class="radio-btn active" data-val="balanced">Balanced</div>
+      <div class="radio-btn" data-val="breadth">Breadth</div>
+    </div>
   </div>
 </div>
 
-<!-- FLOATING SECTIONS PANEL -->
-<div class="profile-float" id="float-sections" style="bottom:136px;max-height:50vh;overflow-y:auto"></div>
+<!-- MOBILE SEARCH OVERLAY -->
+<div id="mobile-search-overlay" style="display:none">
+  <div id="mobile-search-bar">
+    <input id="mobile-search-input" type="text" placeholder="Search…" autocomplete="off">
+    <button id="mobile-search-close">✕</button>
+  </div>
+  <div id="mobile-search-results"></div>
+</div>
 
 <script src="../scripts/app.js"></script>
 </body>
