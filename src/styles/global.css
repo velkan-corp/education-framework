@@ -547,8 +547,10 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 /* VIEW TOGGLE */
 #view-toggle {
   display: flex; gap: 2px; align-items: center;
-  margin-left: auto; padding: 0 8px; flex-shrink: 0;
+  margin-left: auto; padding: 0 12px; flex-shrink: 0;
   position: relative; z-index: 10;
+  border-left: 1px solid var(--border);
+  align-self: stretch;
 }
 #search-input { width: 140px; }
 #search-wrap { flex-shrink: 0; }
