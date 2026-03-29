@@ -26,7 +26,6 @@ function init() {
       input.focus();
     } else {
       input.focus();
-      input.style.width = '160px';
     }
   });
 
