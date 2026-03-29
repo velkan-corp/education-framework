@@ -96,7 +96,7 @@ function getHeadingText(h) {
   let text = '';
   h.childNodes.forEach(n => {
     if (n.nodeType === 3) text += n.textContent;
-    else if (n.nodeType === 1 && !n.classList.contains('material-symbols-rounded')) text += n.textContent;
+    else if (n.nodeType === 1 && !n.classList.contains('material-symbols-rounded') && !n.classList.contains('tier-badge')) text += n.textContent;
   });
   return text.trim();
 }
