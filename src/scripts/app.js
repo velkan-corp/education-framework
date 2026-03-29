@@ -16,11 +16,18 @@ function init() {
   document.getElementById('fab-profile').addEventListener('click', toggleFloatProfile);
   document.getElementById('fab-sections').addEventListener('click', toggleFloatSections);
 
-  // Search icon focus
+  // Search icon — expand on mobile, focus on desktop
   document.getElementById('search-icon').addEventListener('click', () => {
     const input = document.getElementById('search-input');
-    input.focus();
-    input.style.width = '160px';
+    const isMobile = window.innerWidth <= 900;
+    if (isMobile) {
+      input.classList.add('expanded');
+      input.placeholder = 'Search…';
+      input.focus();
+    } else {
+      input.focus();
+      input.style.width = '160px';
+    }
   });
 
   // Info tooltip toggles
@@ -243,11 +250,17 @@ function initSearch() {
   });
 
   input.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { input.value = ''; results.style.display = 'none'; clearHighlights(); }
+    if (e.key === 'Escape') { input.value = ''; results.style.display = 'none'; clearHighlights(); input.classList.remove('expanded'); input.blur(); }
+  });
+
+  input.addEventListener('blur', () => {
+    if (window.innerWidth <= 900 && !input.value) {
+      setTimeout(() => { input.classList.remove('expanded'); }, 150);
+    }
   });
 
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('#search-wrap')) { results.style.display = 'none'; }
+    if (!e.target.closest('#search-wrap')) { results.style.display = 'none'; input.classList.remove('expanded'); }
     if (!e.target.closest('#float-profile') && !e.target.closest('#fab-profile')) {
       document.getElementById('float-profile').classList.remove('open');
     }

@@ -63,7 +63,7 @@ const renderedPhases = await Promise.all(
       </div>
       <div id="search-wrap" style="position:relative;padding:0 8px;display:flex;align-items:center">
         <svg id="search-icon" style="cursor:pointer;flex-shrink:0;margin-right:6px" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input id="search-input" type="text" placeholder="Search… (⌘K)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:4px;font-size:12px;width:160px;outline:none" autocomplete="off">
+        <input id="search-input" type="text" placeholder="Search… (⌘K)" data-mobile-placeholder="Search…" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:4px;font-size:12px;width:160px;outline:none" autocomplete="off">
         <div id="search-results" style="display:none;position:absolute;top:100%;right:8px;width:360px;max-height:70vh;overflow-y:auto;background:var(--surface);border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:200;margin-top:4px"></div>
       </div>
     </div>

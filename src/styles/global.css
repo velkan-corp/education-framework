@@ -659,9 +659,24 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   .profile-float { max-height: 70vh; overflow-y: auto; }
   /* Tables: reduce min-width to prevent horizontal scroll */
   .table-scroll table { min-width: auto; }
-  /* Search: hide standalone icon, compact input */
-  #search-icon { display: none; }
-  #search-input { width: 120px !important; }
+  /* Search: icon-only by default, expands on tap */
+  #search-icon { display: block; cursor: pointer; padding: 4px; }
+  #search-input {
+    width: 0 !important; padding: 0 !important; border: none !important;
+    position: absolute; right: 36px; top: 50%; transform: translateY(-50%);
+    transition: width 0.2s ease-out, padding 0.2s ease-out, border 0.2s ease-out;
+    opacity: 0;
+  }
+  #search-input.expanded {
+    width: calc(100vw - 60px) !important;
+    padding: 8px 12px !important;
+    border: 1px solid var(--border) !important;
+    opacity: 1;
+    z-index: 100;
+    background: var(--surface);
+  }
+  #search-input.expanded + #search-results { right: 0; width: calc(100vw - 32px); }
+  #search-input::placeholder { font-size: 13px; }
   /* View toggle: compact on mobile */
   .view-btn { font-size: 10px; padding: 3px 7px; }
   /* Domain view: full width select */
