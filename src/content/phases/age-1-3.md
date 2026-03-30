@@ -41,6 +41,9 @@ order: 2
 <div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Emphasize construction toys, physical manipulation, large motor activities. Duplo, sand play, water play, climbing. Books with dense visual information (Scarry, Wally) over text-heavy narratives.</div>
 <div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Lean into conversation, storytelling, word games. More books, more narration, more "why" conversations. They may talk early and voluminously — feed it.</div>
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Transitions are hard. Give warnings: "In 5 minutes we'll leave the park." Avoid overstimulating environments (loud, crowded). Smaller playgroups. Permission to leave when overwhelmed, without drama.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>May need more intense stimulation to engage with activities. Bigger physical challenges, louder music, messier sensory play. Don't mistake placidity for satisfaction — actively offer novel, high-intensity inputs and watch for the spark.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth</div>When they obsess over one toy, one book, one activity — let them. Reading the same book 15 times is not repetition; it's mastery. Fewer toys available, more time with each. Resist the urge to introduce novelty when they're deep in something.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth</div>Rotate toys and books more frequently. Offer variety in the daily schedule — multiple short activities rather than extended single-focus sessions. Their breadth of interest is a strength; feed it with range, not depth pressure.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
 <p>Layer 0 continues — Pre-linguistic to early-linguistic. The framework uses 12 universal mental models revisited annually. At this age, models are still primarily experiential, now with emerging verbal scaffolding.</p>
@@ -67,10 +70,18 @@ order: 2
 <p>Scribbling is pre-writing. Provide thick crayons, finger paints, chalk on pavement. Narrate their drawings: "Tell me about your picture." This builds the connection between marks and meaning. Dictation begins here too: they tell you a story, you write it down, they see their words become text. This is the seed of authorship.</p>
 <p><strong>Oral expression begins.</strong> "Tell me about your picture" is already in play — now extend it: "Tell Mama what we did at the park today." They narrate events to a third party, organizing experience into spoken sequence. This is oral composition. Nursery rhymes and simple poems recited together build rhythm, memory, and the pleasure of spoken language as performance. Finger plays (Itsy Bitsy Spider, Pat-a-Cake) are the first oral performances — learned text delivered with gesture and expression.</p>
 
+<div class="t-adjust t-verbal"><div class="t-label">Verbal</div>They may talk early and constantly — feed it without limit. Expand every utterance: "Truck!" → "Yes, a big red truck carrying logs." Introduce rhyming games, silly words, and early wordplay. Dictation is especially powerful: their words becoming text on paper is electrifying for verbal children.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Language develops through action, not conversation alone. Label objects during physical play: "You're stacking the tall tower." Use picture-heavy books (Scarry, Wally) where they can point before they can name. Drawing and scribbling are their primary expressive channel — narrate what they make.</div>
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>They may not perform language socially but process it deeply in private. Don't mistake quiet in groups for language delay. One-on-one reading and conversation will yield more output than group settings. Let them warm up — rushing verbal performance in front of others backfires.</div>
+
 <h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>Active instruments:</strong> Xylophone, small drum, egg shakers, tambourine. Let them make noise with intention — rhythm emerges from chaos.</p>
 <p><strong>Exposure:</strong> Continue diverse genre rotation. Add: children's music with real musical quality — Raffi, Ella Jenkins. Avoid the algorithmically-generated nursery rhyme content on YouTube (it's designed for engagement, not musicality).</p>
 <p><strong>Classes:</strong> Consider Suzuki Early Childhood Education or a local music-and-movement class. The point is not instruction — it's rhythmic social experience.</p>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Music classes may overwhelm — the combination of noise, other children, and unfamiliar space compounds. Try one-on-one instrument exploration at home first. When attending classes, sit near the exit and leave without guilt if they shut down.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Movement IS their music engagement. Dance, bounce, march, stomp. Xylophone and drums reward physical action with sound. Prioritize instruments they can hit, shake, or move with over passive listening.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal</div>Singing is their entry point. Nursery rhymes with actions, call-and-response songs, filling in the last word of familiar lyrics. They process music through language first — lyrics matter more than melody at this stage.</div>
 
 <h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
 <h3>Physical System</h3>
@@ -78,24 +89,37 @@ order: 2
 <h3>Self-Awareness & Emotional Intelligence</h3>
 <p>Emotion vocabulary is the primary tool. "You look angry. Are you angry?" "That was scary." "You're so excited!" Name their emotions before they can — this gives them handles for experiences that would otherwise be overwhelming. Simple regulation techniques: deep breaths together (blow out the birthday candles), counting to five, hugging a specific comfort object. Post-tantrum, once calm: "What happened? You were angry because..." This builds the narrative-self connection.</p>
 
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Tantrums hit harder and last longer. They are not being dramatic — their nervous system genuinely amplifies emotional signals. Regulation takes more time and more repetitions. Prioritize physical co-regulation (holding, rocking, deep pressure) over verbal processing during the storm. Words come after calm.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>Emotions may be underexpressed, not absent. Ask more, assume less. "You seem quiet — are you feeling something?" They may need explicit permission and modeling to identify and express internal states. Don't let their composure fool you into skipping emotional check-ins.</div>
+
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
 <p>Parallel play (playing alongside, not with) is developmentally correct at this age. Don't force sharing or cooperation — it's neurologically premature. Instead, model turn-taking: "My turn... your turn." Narrate social situations: "She's crying because she wanted the ball. She's sad." This builds the social-emotional vocabulary that precedes actual social skills.</p>
 <p><strong>Kindness seeds.</strong> Model turn-taking, sharing, and gentleness. Narrate kind acts: "You gave her the toy. That was kind." Frame kindness as something they DID (agency), not something they ARE (identity).</p>
 <p>Start building the family network deliberately. In Madrid: international school parent communities (even before enrollment), English-speaking playgroups, your own social circle's children. The 3–4 families you befriend now will likely be your children's first peer group for years.</p>
 <p><strong>Team sport note:</strong> Team sport begins at age 4. These early years build the social substrate through playgroups and parallel play — the relational foundation that makes team dynamics possible later.</p>
 
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Social situations drain faster. Limit playdates to one other child initially. Avoid birthday parties with 15 toddlers and a bouncy castle — that's sensory hell, not socialization. Build relationships through repeated, calm, familiar settings with the same few children.</div>
+
 <h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
 <p>None. No screens before 3.</p>
 <p>Shape sorters, nesting cups, simple puzzles (4-12 pieces). Brio World wooden train layouts — the track-building IS spatial reasoning (which piece connects? does the loop close? what happens if I add a bridge?). Block towers with intentional collapse ("how tall before it falls?"). These are not toys — they are the physical instantiation of spatial logic.</p>
+
+<div class="t-adjust t-verbal"><div class="t-label">Verbal</div>Narrate the building process: "What are you making? Tell me about it." They may build stories more than structures — a Duplo tower becomes a castle with characters and a narrative. That's valid building. Encourage verbal planning: "What should we build?" before starting.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>They will gravitate here naturally. Provide more complex construction challenges: Magna-Tiles for 3D, Brio track with bridges and tunnels, Grimm's Rainbow for freeform sculpture. Let them build without narrating — silence during construction is concentration, not disengagement.</div>
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 <p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 <p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
 
+<div class="t-adjust t-depth"><div class="t-label">Depth</div>When they ask "why?" about ants for the fifteenth time, go deeper each time. Get a magnifying glass. Watch an ant trail for 30 minutes. Find a book about ants. The depth child doesn't want breadth of nature — they want to understand ONE thing completely before moving on.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth</div>Cover more ground — literally. Different parks, different trails, different ecosystems if accessible. Name broadly: birds, trees, rocks, clouds, puddles, flowers. They are building a wide catalog of the natural world. Don't linger when their attention moves on; follow their scanning pace.</div>
+
 <h2 id="s-culture" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Culture & Inner Life</h2>
 <p>Weekend trips and short holidays within Spain. Museums (Prado, Reina Sofía — even briefly, at their pace). The rhythm of travel: packing, airports/trains, new beds, new foods. Normalize the unfamiliar. Europe by car or train: Portugal, France, Italy — close enough for short trips. No educational agenda. Just exposure.</p>
 <p>Not explicit yet. But the seeds: wonder at nature, questions about existence ("where was I before I was born?"), awe. Don't shut these down with rational explanations — sit with the mystery alongside them. "That's a really big question. What do you think?" This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
 <p><strong>Joy signal.</strong> Watch what produces genuine delight — not compliance, not performance for adults. The activities that make them lose track of time are the signal. Protect those.</p>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Travel disrupts routine, and routine is their regulation infrastructure. Keep trips short (2-3 nights max). Bring familiar objects — same blanket, same bedtime book. Museums and cultural sites in very short doses with an exit plan. The goal is positive association with new environments, not endurance.</div>
 
 <h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
 <div class="card-grid">
@@ -109,6 +133,10 @@ order: 2
 <p>Morning outdoor time (1.5+ hours). Practical life activities (helping with food prep, cleaning, dressing). Spanish reading (2–3 books). Nap. Afternoon: one outing or activity + free play. Key instruction: "Don't rush them. Don't rescue them. Let them struggle. Go outside."</p>
 </div>
 </div>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Build solo play into the daily structure as non-negotiable recharge time — not filler between social activities. After playgroups or outings, schedule quiet at-home time. Weekend days should alternate between social and solitary. The interna should not fill every gap with a social outing.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Maximize social time in the weekly plan. More playdates, more park time with other children, more music classes. Quiet solo play will happen naturally at nap boundaries — don't over-engineer it. Weekends should be socially rich. Brief the interna to prioritize group activities.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Build decompression buffers after every transition and every social event. Never schedule two stimulating activities back to back. The interna brief should include specific overstimulation signals and a clear protocol: when you see X, do Y. Bedtime routine may need to be longer and quieter.</div>
 </div>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>

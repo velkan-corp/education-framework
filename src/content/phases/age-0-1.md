@@ -32,6 +32,12 @@ order: 1
 
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>
 <div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>May need more intense stimulation to engage. Bolder contrasts, more physical play, varied textures. Don't mistake calm for contentment — they may simply need more input.</div>
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>After social exposure (visitors, outings), allow extended quiet one-on-one time to recover. Watch for withdrawal cues — turning away, fussing in groups — and don't push through them.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Seeks stimulation from faces and voices. More face-to-face interaction, more visitors, more outings. Solitary floor time may produce fussiness — stay nearby and narrate even when not directly engaging.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal</div>Double down on narration and read-alouds. Early babbling and vocal responsiveness signal verbal orientation — mirror their sounds, expand them into words, maintain constant conversational exchange even before comprehension.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Emphasize physical manipulation: reaching, grasping, batting at mobiles, transferring objects hand to hand. More tummy time, more textured surfaces. They learn through movement before language.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth</div>When they fixate on a single object or stimulus, protect that attention ruthlessly. Don't rotate toys on a schedule — let them exhaust interest naturally. Sustained staring IS deep processing at this age.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth</div>Rotate stimuli more frequently. If they lose interest quickly, that's not a deficit — it's a broader scanning pattern. Offer variety: different textures, sounds, and visual inputs across the day.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models at This Stage</h2>
 <p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>
@@ -56,8 +62,14 @@ order: 1
 <p>Pre-writing begins with grasping. Fat crayons, chunky markers on large paper. The motor patterns that will become handwriting start here — the pincer grip, the controlled movement, the cause-and-effect of "I move my hand, a mark appears." No letters, no instruction. Just access to marking tools and surfaces.</p>
 <p>Oral expression at this stage is entirely receptive and imitative. Read aloud with expression — vary your pitch, pace, and volume. The infant is absorbing prosody (the music of speech) before they understand words. Narrate with theatrical energy when appropriate: "The BALL went BOUNCING down the HILL!" This is not baby talk — it's vocal modeling. They are learning that the voice is an instrument with range.</p>
 
+<div class="t-adjust t-verbal"><div class="t-label">Verbal</div>Read more, narrate more, sing more. Verbal-leaning infants show early cooing and vocal turn-taking — reward every sound with a responsive sound. Quantity of spoken input is the single strongest predictor of language trajectory.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Pair language with physical action: name objects as they grasp them, narrate movement as it happens. "You're reaching for the ball" binds word to sensation. Pointing games and touch-the-picture books bridge the spatial-verbal gap.</div>
+
 <h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p>Ambient exposure: play diverse genres throughout the day. Classical, jazz, bossa nova, flamenco — variety of rhythm, timbre, harmony. Sing to them. Rhythm shakers from 6 months. The brain is building the auditory architecture that all later music learning will use.</p>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Keep volume low. Sudden percussion or brass may trigger distress. Start with solo instruments — solo piano, solo guitar, solo cello — before introducing full orchestral or rhythmically complex pieces. Watch for startle responses and adjust.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>They may not visibly react to ambient music. Move to more rhythmic, percussive genres. Hold them and sway or bounce to the beat — they need the physical sensation paired with the sound to register it fully.</div>
 
 <h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
 
@@ -68,6 +80,9 @@ order: 1
 <p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
 <p><strong>Kindness modeling begins here.</strong> The parent's emotional tone IS the child's first experience of kindness. Responding to distress with warmth, not irritation. Narrating gently, not correcting harshly. The child's first model of "how people treat each other" is you.</p>
 
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Co-regulation takes longer and requires more patience. They feel everything at higher amplitude. Your calm must be deeper and more sustained. Physical contact (skin-to-skin, gentle rocking) is often more effective than verbal soothing for highly sensitive infants.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>Emotional cues may be subtle — don't assume absence of distress. They may not cry loudly but still need co-regulation. Watch for quieter signals: stillness, gaze avoidance, subtle body tension. Proactively check in rather than waiting for obvious distress.</div>
+
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
 
 <h3>Social Intelligence</h3>
@@ -76,8 +91,13 @@ order: 1
 <h3>Social World & Network</h3>
 <p>The network IS your network at this age. Cultivate 3–4 families with children of similar age whose values align with yours. The interna's park playgroup matters — who are those children and families? Parent-and-baby groups in Madrid: look at international community meetups (British Council, InterNations) for English-speaking peer exposure.</p>
 
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Smaller gatherings — one or two families, not large groups. Watch for overstimulation in social settings: fussing, clinging, gaze aversion. Leave before meltdown, not during. Quality of social contact matters more than quantity.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Seek more frequent social exposure. They light up around other faces and voices — lean into that. Busier environments (cafes, markets, parks) are stimulating rather than overwhelming. The interna should prioritize social outings.</div>
+
 <h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
 <p>No screens. Sensory play is the building. None of the digital media or structured making tools apply yet — the infant's entire "building" curriculum is tactile exploration, grasping, and cause-and-effect discovery through physical objects.</p>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Introduce new textures one at a time. Wet, sticky, or gritty sensory play (finger paint, sand, food play) may trigger aversion. Start with dry, smooth textures and graduate slowly. Never force contact — offer and wait.</div>
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 
@@ -95,6 +115,10 @@ order: 1
 <h3>Wonder & Awe</h3>
 <p>At this age, meaning-making is pre-verbal: wonder and awe. The infant staring at light through leaves, mesmerized by rain, transfixed by a candle flame — this is the first encounter with the numinous. Don't rush past these moments. Sit in them. The capacity for wonder is the substrate on which all later spiritual and philosophical development is built. This is Layer 0 of the meaning-making progression (see Philosophy tab).</p>
 
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Highly sensitive infants experience wonder more intensely — and overwhelm more quickly. Short museum visits (20 minutes max), smaller spaces, natural environments over built ones. They will absorb more from a quiet garden than a busy market.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth</div>When they fixate on something — leaves, water, a pattern on a wall — stay with it. Don't redirect to the "next thing." These extended moments of absorption are the earliest expression of depth orientation. Time in one place beats variety of places.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth</div>More variety in outings: different parks, different neighborhoods, different sensory environments. They scan broadly and lose interest in familiar settings faster. Short trips to many places over long stays in one.</div>
+
 <h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
 
 <h3>Weekly Cadence</h3>
@@ -107,6 +131,10 @@ order: 1
 <p>Morning outdoor time regardless of weather. Tummy time / floor play. Spanish reading. Nap architecture (consistent times, dark room, white noise). Afternoon sensory variety. Simple: "Let them explore. Don't rescue too quickly. Go outside every day. Read these books."</p>
 </div>
 </div>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Bias the weekly cadence toward smaller, quieter activities. Fewer outings with more recovery time between. The interna should limit group activities to 2-3 per week max, with quiet solo play filling the gaps.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Pack the social calendar. Daily outings with other children, more park time, more visitors. An extroverted infant left alone too long becomes irritable — they need faces and voices as fuel.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Build longer transition buffers into every schedule change. Nap times, outings, bath time — all need gradual wind-down. Predictability matters even more: any deviation from routine can dysregulate for hours. Brief the interna explicitly on signals and pacing.</div>
 </div>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>

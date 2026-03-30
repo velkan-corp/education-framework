@@ -70,13 +70,14 @@ const renderedPhases = await Promise.all(
       <div class="tabs" id="tabs">
         {phases.map((phase) => (
           <div
-            class={`tab ${phase.data.phaseId === 'philosophy' ? 'active' : ''}`}
+            class={`tab ${phase.data.phaseId === 'framework' ? 'active' : ''}`}
             data-tab={phase.data.phaseId}
           >
             {phase.data.label}
           </div>
         ))}
       </div>
+      <div class="tabs" id="domain-tabs" style="display:none"></div>
       <div id="view-toggle">
         <div class="view-btn active" data-view="age">Age</div>
         <div class="view-btn" data-view="domain">Domain</div>
@@ -126,7 +127,7 @@ const renderedPhases = await Promise.all(
     <div class="content" id="content">
       {renderedPhases.map((phase) => (
         <div
-          class={`phase-content ${phase.data.phaseId === 'philosophy' ? 'active' : ''}`}
+          class={`phase-content ${phase.data.phaseId === 'framework' ? 'active' : ''}`}
           data-phase={phase.data.phaseId}
           data-label={phase.data.label}
         >
@@ -134,10 +135,6 @@ const renderedPhases = await Promise.all(
         </div>
       ))}
       <div id="domain-view" style="display:none">
-        <div id="domain-selector">
-          <label for="domain-select">Domain:</label>
-          <select id="domain-select"></select>
-        </div>
         <div id="domain-timeline"></div>
       </div>
     </div>

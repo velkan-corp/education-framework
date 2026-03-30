@@ -105,6 +105,12 @@ order: 3
 <h3>Visual & Spatial</h3>
 <p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
 
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Written expression will be the stronger channel. Lean into journaling, letter-writing, and story dictation over oral performance. Show-and-tell can start as family-only audience — one or two people, not a crowd.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Oral performance is their natural strength — storytelling games, show-and-tell, dinner debates. Channel the verbal energy into structured formats: "You have one minute to convince us." Let them narrate stop-motion films and podcast-style recordings.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>These children take to language like water. Extend journaling to full stories early. Introduce simple poetry writing by age 6, not just listening. Debate and negotiation exercises can be more complex — let them argue both sides of a position.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Communication enters through making. Stop-motion animation, photography, map-drawing, and comic strips are all communication — don't privilege text over visual narrative. Let them illustrate stories rather than write them, then caption the illustrations.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Public speaking can trigger genuine anxiety at this age. Start show-and-tell with just one parent as audience and scale up slowly. Never force oral performance in front of unfamiliar adults. Written and visual expression may be safer first channels.</div>
+
 <h2 id="s-music" data-tier="core"><span class="material-symbols-rounded">music_note</span>Music</h2>
 <p><strong>START FORMAL INSTRUCTION.</strong> This is the launch window.</p>
 <p><strong>⚡ Window alert:</strong> Music ear training is optimal before age 7. The neural circuits for pitch discrimination and tonal memory are shaped during this sensitive period. Starting at 4-5 is ideal; starting at 8 is workable but harder; starting at 12 requires significantly more effort for less return.</p>
@@ -125,6 +131,13 @@ order: 3
 </div>
 <p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Cafe Central.</p>
 
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Private 1:1 lessons are already the default and will suit them best. Avoid group recitals early — build confidence through mastery first, performance later. Practice is solitary by nature; this child won't resist it.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Add ensemble or group music classes alongside private instruction. Duets with a parent or friend, family jam sessions, call-and-response games with siblings. They need a social dimension to sustain motivation through the tedious early months.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Teacher temperament is critical — find someone patient and encouraging, not demanding. Loud instruments or aggressive correction can create lasting aversion. Start with quieter instruments (ukulele, piano at low volume) and let them build tolerance for their own mistakes gradually.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>They may find early practice boring before they're competent enough for it to be rewarding. Keep sessions short and varied. Drums or percussion can channel physical energy into rhythm. Add movement — marching, dancing — to keep engagement high during the fundamentals grind.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>One instrument, pursued seriously. They'll want to play the same piece fifty times until it's perfect — let them. Resist the temptation to broaden too early. Deep mastery of a single instrument at this age builds the neural architecture for all future music learning.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Let them try multiple instruments before committing. Six months of piano, then ukulele, then recorder is fine at ages 4-5. By age 6-7, gently narrow to one primary instrument with ear training as the constant thread. The exploration phase builds musical vocabulary even if no single instrument sticks yet.</div>
+
 <h2 id="s-mind-body" data-tier="foundational"><span class="material-symbols-rounded">fitness_center</span>Mind & Body</h2>
 
 <h3>Physical System</h3>
@@ -137,6 +150,11 @@ order: 3
 <p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
 <p><strong>Joy as signal.</strong> Watch what produces genuine flow — sustained engagement, loss of time sense, intrinsic motivation. These activities are the signal for niche mastery direction. If an activity never produces flow after consistent exposure, question whether it's the right fit. Protect flow states ruthlessly: when they're absorbed, don't interrupt for meals, transitions, or "better" activities.</p>
 
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Emotional regulation work is especially critical. They feel everything at higher amplitude — meltdowns will be bigger and recovery longer. Zones of regulation give them a vocabulary for what's happening inside. Never dismiss intensity: "I can see this is really big for you" before any problem-solving.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>Emotional awareness needs explicit teaching — they may not naturally notice internal signals. Use concrete physical anchors: "Where in your body do you feel that?" They need more help building the interoception habit because the signals are quieter, not because they don't exist.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>Flow states will be long and intense. A depth-seeking child absorbed in building or reading for two hours is not "stuck" — they're in their optimal mode. Protect these blocks aggressively. Schedule physical activity and emotional check-ins around the flow, not through it.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Flow may look different — shorter bursts across multiple activities rather than one long immersion. Don't mistake variety-seeking for lack of focus. Track which activities produce the brightest engagement across the sampling, and note the common thread (it's often a skill type, not a domain).</div>
+
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
 
 <h3>Team Sport</h3>
@@ -146,6 +164,9 @@ order: 3
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Smaller team sports (basketball, futsal) may be less overwhelming than 11-a-side football. One team sport session per week is sufficient — don't overload social energy. Recovery time after matches is real, not avoidance.</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team sport is their natural habitat. They'll want more — let them. This is where their social energy becomes a strength. Multiple team activities are fine if the schedule allows.</div>
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Aggressive coaching styles are harmful. Find a coach who develops, not dominates. Contact sports may need gradual introduction. Watch for overwhelm after losses — they may need longer recovery than peers.</div>
+<div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>They may not notice a teammate's frustration or a coach's subtle correction. Debrief after practice: "Did you see how Miguel reacted when you took the ball? What do you think he felt?" Explicitly teach social signals that high-sensitivity children pick up automatically.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Social intelligence can be taught through narrative: "What was that argument really about?" Post-game debriefs and conflict analysis will resonate. They may over-rely on verbal persuasion in conflicts — teach them to listen, not just argue.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Team sport is the ideal social vehicle for this profile — physicality is their language. They'll bond through shared physical activity more naturally than through conversation. Let the sport do the social teaching; don't over-verbalize the lessons.</div>
 
 <h3>Social Intelligence</h3>
 <p>Reading facial expressions — practice with pictures, then real situations. Conflict resolution script: "Use your words. What do you want? What does she want? How can you both get some of what you want?" This three-question framework is the seed of negotiation theory. Model active listening: repeat back what they said before responding.</p>
@@ -173,6 +194,12 @@ order: 3
 <p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
 <p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
 
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Solo building is their sweet spot. KAPLA, LEGO, and Minecraft Creative are ideal — long, focused, independent construction sessions. Don't force collaborative building projects. Pair programming (Robot Turtles, Cubetto) works best 1:1 with a parent, not in a group.</div>
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Coding logic games (sequencing, instructions) will click quickly. Supplement physical building with narration: "Tell me what you're building and why." They may prefer the planning and explaining over the making itself — that's valid. Written instructions for their creations bridge building to communication.</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>This is their strongest section. Extend KAPLA to woodworking early. Minecraft Creative mode will produce genuinely impressive structures. Introduce real tools (hammer, saw, supervised) by age 6 — they have the spatial intuition to use them meaningfully. 3D puzzles and mechanical kits add complexity.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>One building medium, mastered deeply. If it's LEGO, go from Creative box to Technic to Architecture series. If Minecraft, let them build entire cities over months. Don't rotate materials — let them exhaust one system's possibilities before introducing another.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Rotate building media: KAPLA one month, LEGO the next, then clay, then woodworking. Each medium teaches different spatial constraints. The variety itself is the curriculum — learning that the same design intent requires different techniques in different materials.</div>
+
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 
 <h3>Ethics & Moral Reasoning</h3>
@@ -190,6 +217,11 @@ order: 3
 <h3>Cognitive Models</h3>
 <p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 
+<div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Ethics and history discussions can go deeper and longer. They'll engage with moral dilemmas verbally — extend the "is that fair?" questions into genuine back-and-forth Socratic dialogue. Introduce simple written reflection: "Draw or write what you think about this question."</div>
+<div class="t-adjust t-spatial"><div class="t-label">Spatial-Kinesthetic</div>Knowledge enters through the hands and eyes. Nature journaling (draw the ant, draw the ecosystem) is the primary vehicle. History through building: construct a castle, a Roman road, a medieval market from blocks. Maps and timelines as physical objects they create, not pages they read.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>When they fixate on a knowledge domain — dinosaurs, space, ancient Egypt — go all in. University-level picture books, documentaries, museum deep dives. One topic explored to exhaustion teaches more about learning itself than ten topics surveyed.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>The DK Eyewitness series and Nat Geo Kids subscription are perfect — broad, visually rich, topic-hopping. Let them graze across history, science, and nature without forcing depth. The connections they make between disparate topics are their version of deep thinking.</div>
+
 <h2 id="s-culture" data-tier="recommended"><span class="material-symbols-rounded">travel_explore</span>Culture & Inner Life</h2>
 
 <h3>Cultural Travel</h3>
@@ -199,6 +231,10 @@ order: 3
 <h3>Meaning-Making & Spirituality</h3>
 <p>Bible stories and Greek myths as narrative — the same way they consume Avatar. Noah's Ark, David and Goliath, Odysseus, Theseus and the Minotaur. These are humanity's oldest stories; treat them as rich narrative, not doctrine.</p>
 <p>Questions about death, God, existence: engage seriously. "Some people believe X. Other people believe Y. What do you think?" Model intellectual humility about the biggest questions.</p>
+
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Cultural travel can overwhelm — new smells, crowds, unfamiliar food, language they don't understand. Prepare them in advance with pictures and stories. Build in quiet recovery time during trips. Existential questions ("Why do people die?") will arrive earlier and hit harder. Engage fully; don't deflect.</div>
+<div class="t-adjust t-depth"><div class="t-label">Depth-Seeking</div>One destination, explored thoroughly. A week in Rome visiting the same forum three times beats a whirlwind tour of four cities. Let them become the family expert on one culture's mythology, food, or history before moving to the next.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Maximize the number of distinct cultural exposures. Short visits to many places, tasting many cuisines, hearing many languages. The comparative instinct ("In Morocco they do X, but in London they do Y") is their natural mode of cultural learning.</div>
 
 <h2 id="s-planning" data-tier="foundational"><span class="material-symbols-rounded">calendar_month</span>Planning & Milestones</h2>
 
@@ -228,6 +264,11 @@ order: 3
 <p>School. After school: outdoor play (1+ hour), snack, Spanish reading, practical life activity (cooking, cleaning with them), free play. Instrument practice if not done in evening. Key: protect unstructured outdoor time.</p>
 </div>
 </div>
+
+<div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Cap structured social activities at one per day. Build the weekly cadence with generous solo time between group engagements. Weekend mornings should default to quiet — hike or reading, not playdates. The schedule itself is the intervention.</div>
+<div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>They can handle a denser schedule than you'd expect. Back-to-back social activities on weekends are fine if they're energizing, not draining. Use their social drive to fill summer intensives with group-based options — camps, team sport clinics, group art workshops.</div>
+<div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Transitions between activities are the friction point. Build buffer time between scheduled blocks — 15 minutes of nothing between martial arts and dinner, for example. Avoid scheduling high-stimulation activities (team sport, live performance) on the same day. Their nervous system needs recovery time you can't see.</div>
+<div class="t-adjust t-breadth"><div class="t-label">Breadth-Seeking</div>Summer intensives should rotate domains year to year: nature camp one summer, art the next, swim the next. During the school year, semester-based commitments work better than year-long ones for elective activities. Keep one anchor commitment (instrument or martial art) constant while rotating the rest.</div>
 
 </div>
 
