@@ -1,5 +1,5 @@
 import { state } from './state.js';
-import { getHeadingText, renderTabs, showTab, updateAllNavs } from './navigation.js';
+import { applyProfile, getHeadingText, renderTabs, showTab, updateAllNavs } from './navigation.js';
 
 let currentDomain = null;
 
@@ -20,6 +20,7 @@ function activateDomainTab(domainTabsEl, domainMap, domainId) {
   domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === domainId));
   currentDomain = domainId;
   renderDomainTimeline(domainMap, domainId);
+  applyProfile();
   updateAllNavs();
   window.scrollTo(0, 0);
 }
@@ -74,7 +75,7 @@ export function initDomainView() {
   const firstDomainId = sorted[0]?.[0] || null;
   sorted.forEach(([id, data], i) => {
     const tab = document.createElement('div');
-    tab.className = 'tab domain-tab' + (i === 0 ? ' active' : '');
+    tab.className = 'tab' + (i === 0 ? ' active' : '');
     tab.dataset.domain = id;
     tab.innerHTML = data.label.replace(' & ', '<br>& ');
     domainTabsEl.appendChild(tab);
@@ -112,6 +113,7 @@ export function initDomainView() {
       currentDomain = firstDomainId;
       domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === firstDomainId));
       renderDomainTimeline(domainMap, currentDomain);
+      applyProfile();
       updateAllNavs();
     } else {
       domainTabsEl.style.display = 'none';
