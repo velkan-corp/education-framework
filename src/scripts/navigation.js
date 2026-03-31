@@ -31,6 +31,18 @@ function getNavEntries() {
       scrollTarget: p
     }));
   }
+  if (state.currentView === 'universe') {
+    // Find the visible universe timeline
+    const detail = document.getElementById('universe-detail');
+    if (!detail || detail.classList.contains('hidden')) return [];
+    const visible = detail.querySelector('.universe-timeline:not(.hidden)');
+    if (!visible) return [];
+    const phases = Array.from(visible.querySelectorAll('.timeline-phase'));
+    return phases.map(p => ({
+      label: p.querySelector('.timeline-age').textContent.trim(),
+      scrollTarget: p
+    }));
+  }
   const activeContent = document.querySelector('.phase-content.active');
   if (!activeContent) return [];
   const headings = Array.from(activeContent.querySelectorAll('h2[id]'));

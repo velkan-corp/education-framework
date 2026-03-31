@@ -4,6 +4,7 @@ import '../styles/global.css';
 import Topbar from '../components/Topbar.astro';
 import Sidebar from '../components/Sidebar.astro';
 import FloatingPanel from '../components/FloatingPanel.astro';
+import UniverseView from '../components/UniverseView.astro';
 
 const phases = (await getCollection('phases')).sort((a, b) => a.data.order - b.data.order);
 
@@ -83,6 +84,7 @@ const renderedPhases = await Promise.all(
       <div id="domain-view" class="hidden">
         <div id="domain-timeline"></div>
       </div>
+      <UniverseView />
     </div>
   </div>
 </div>

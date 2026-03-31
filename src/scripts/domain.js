@@ -96,37 +96,74 @@ function setupDomainHandlers(domainTabsEl, domainMap, firstDomainId) {
     }
   });
 
-  document.getElementById('view-toggle').addEventListener('click', (e) => {
-    const btn = e.target.closest('.view-btn');
-    if (!btn) return;
-    const view = btn.dataset.view;
+  function switchView(view) {
     if (view === state.currentView) return;
     state.currentView = view;
     document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+    const viewSelect = document.getElementById('view-select');
+    if (viewSelect) viewSelect.value = view;
 
     const tabsEl = document.getElementById('tabs');
+    const universeTabs = document.getElementById('universe-tabs');
     const domainView = document.getElementById('domain-view');
+    const universeView = document.getElementById('universe-view');
+    const legend = document.querySelector('.universe-legend');
+
+    // Hide everything first
+    tabsEl.classList.add('hidden');
+    domainTabsEl.classList.add('hidden');
+    if (universeTabs) universeTabs.classList.add('hidden');
+    domainView.classList.add('hidden');
+    if (universeView) universeView.classList.add('hidden');
+    if (legend) legend.classList.add('hidden');
+    document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
 
     if (view === 'domain') {
-      tabsEl.classList.add('hidden');
       domainTabsEl.classList.remove('hidden');
-      document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
       domainView.classList.remove('hidden');
       currentDomain = firstDomainId;
       domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === firstDomainId));
       renderDomainTimeline(domainMap, currentDomain);
       applyProfile();
       updateAllNavs();
+    } else if (view === 'universe') {
+      if (universeTabs) universeTabs.classList.remove('hidden');
+      if (universeView) universeView.classList.remove('hidden');
+      if (legend) legend.classList.remove('hidden');
+      // Reset to "All" tab
+      if (universeTabs) {
+        universeTabs.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.universeTab === 'all'));
+      }
+      // Show grid, hide detail
+      const grid = document.getElementById('universe-grid');
+      const detail = document.getElementById('universe-detail');
+      if (grid) grid.classList.remove('hidden');
+      if (detail) detail.classList.add('hidden');
+      document.querySelectorAll('.universe-card').forEach(c => c.classList.remove('hidden'));
+      updateAllNavs();
     } else {
-      domainTabsEl.classList.add('hidden');
       tabsEl.classList.remove('hidden');
-      domainView.classList.add('hidden');
       document.querySelector('.phase-content[data-phase="framework"]')?.classList.remove('active');
       showTab(state.currentTab);
       renderTabs();
       updateAllNavs();
     }
+  }
+
+  // Desktop: button clicks
+  document.getElementById('view-toggle').addEventListener('click', (e) => {
+    const btn = e.target.closest('.view-btn');
+    if (!btn) return;
+    switchView(btn.dataset.view);
   });
+
+  // Mobile: dropdown
+  const viewSelect = document.getElementById('view-select');
+  if (viewSelect) {
+    viewSelect.addEventListener('change', (e) => {
+      switchView(e.target.value);
+    });
+  }
 }
 
 export function initDomainView() {

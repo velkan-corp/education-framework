@@ -1,0 +1,87 @@
+---
+import { universes, TAG_LABELS } from '../data/universes';
+
+// Collect all unique tags
+const allTags = [...new Set(universes.flatMap(u => u.tags))].sort();
+
+// All phase columns for the matrix dots
+const phaseColumns = [
+  { id: 'age-4-7', label: '4–7' },
+  { id: 'age-8-10', label: '8–10' },
+  { id: 'age-11-13', label: '11–13' },
+  { id: 'age-14-16', label: '14–16' },
+  { id: 'age-17-18', label: '17–18' },
+];
+
+// Sort universes: most phases first, then alphabetically
+const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length || a.label.localeCompare(b.label));
+---
+
+<div id="universe-view" class="hidden">
+  <!-- Legend -->
+  <div class="universe-legend">
+    <span class="universe-legend-label">Age phases:</span>
+    {phaseColumns.map(col => (
+      <span class="universe-legend-phase">{col.label}</span>
+    ))}
+    <span class="universe-legend-sep">|</span>
+    <span class="phase-dot tier-foundational" /> <span class="universe-legend-tier">Foundational</span>
+    <span class="phase-dot tier-core" /> <span class="universe-legend-tier">Core</span>
+    <span class="phase-dot tier-recommended" /> <span class="universe-legend-tier">Recommended</span>
+    <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
+  </div>
+
+  <!-- Universe grid -->
+  <div class="universe-grid" id="universe-grid">
+    {sorted.map(u => (
+      <div class="universe-card" data-universe={u.id} data-tags={u.tags.join(',')}>
+        <div class="universe-card-title">{u.label}</div>
+        <div class="universe-card-phases">
+          {phaseColumns.map(col => {
+            const phase = u.phases.find(p => p.phaseId === col.id);
+            return (
+              <span
+                class={`phase-dot ${phase ? `tier-${phase.tier}` : 'empty'}`}
+                title={phase ? `${col.label}: ${phase.tier}` : col.label}
+              />
+            );
+          })}
+        </div>
+        <div class="universe-card-tags">
+          {u.tags.map(t => (
+            <span class="universe-tag">{TAG_LABELS[t] || t}</span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Universe detail (timeline) — pre-rendered for each universe -->
+  <div id="universe-detail" class="hidden">
+    <button class="universe-back" id="universe-back">← All universes</button>
+    {sorted.map(u => (
+      <div class="universe-timeline hidden" data-universe-detail={u.id}>
+        <h1 class="universe-detail-title">{u.label}</h1>
+        <div class="universe-detail-tags">
+          {u.tags.map(t => (
+            <span class="universe-tag">{TAG_LABELS[t] || t}</span>
+          ))}
+        </div>
+        {u.phases.map(phase => (
+          <div class="timeline-phase">
+            <div class="timeline-header">
+              <span class="timeline-age">{phase.phaseLabel}</span>
+              <span class={`tier-badge ${phase.tier}`}>
+                {phase.tier.charAt(0).toUpperCase() + phase.tier.slice(1)}
+              </span>
+            </div>
+            <div class="timeline-content">
+              <p><strong>{phase.title}</strong></p>
+              <p>{phase.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+</div>

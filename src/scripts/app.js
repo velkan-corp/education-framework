@@ -3,6 +3,7 @@ import { setupTabClicks, renderTabs, showTab, setupProfileToggles, updateAllNavs
 import { initSearch, openMobileSearch } from './search.js';
 import { initResourceFilters, initSectionFilters } from './filters.js';
 import { initDomainView } from './domain.js';
+import { initUniverseView } from './universe.js';
 
 function init() {
   setupTabClicks();
@@ -82,4 +83,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initResourceFilters();
   initSectionFilters();
   initDomainView();
+  initUniverseView();
 });

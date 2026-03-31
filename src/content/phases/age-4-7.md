@@ -59,17 +59,25 @@ order: 3
 <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
 <p><strong>Anchor works</strong> get full DIM treatment. The broader content diet is Absorb-mode — consume freely, discuss naturally, don't over-analyze. All content in original language with subtitles.</p>
 <h3>FOUNDATIONAL Anchors</h3>
-<p><strong>Avatar: The Last Airbender</strong> (own on Blu-ray). The four nations as interdependent system. Zuko's redemption arc. Consequence and responsibility. Once the show is finished, the Avatar comics (The Promise, The Search, The Rift) extend the universe — CORE.</p>
-<p><strong>Calvin & Hobbes Complete Collection</strong> (Fantagraphics 3-vol hardcover). Philosophy disguised as a comic strip. Inversion, imagination, social commentary. Sunday strips require the large format.</p>
-<p><strong>Don Quijote adapted</strong> (Rosa Navarro Duran's <em>Don Quijote contado a los ninos</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
+<p data-universe="avatar"><strong>Avatar: The Last Airbender</strong> (own on Blu-ray). The four nations as interdependent system. Zuko's redemption arc. Consequence and responsibility. Once the show is finished, the Avatar comics (The Promise, The Search, The Rift) extend the universe — CORE.</p>
+<p data-universe="calvin-hobbes"><strong>Calvin & Hobbes Complete Collection</strong> (Fantagraphics 3-vol hardcover). Philosophy disguised as a comic strip. Inversion, imagination, social commentary. Sunday strips require the large format.</p>
+<p data-universe="don-quijote"><strong>Don Quijote adapted</strong> (Rosa Navarro Duran's <em>Don Quijote contado a los ninos</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
 <h3>CORE</h3>
-<p><strong>Studio Ghibli</strong> — Totoro → Kiki → Spirited Away in that order (Japanese audio, subtitles). Interdependence with nature, ambiguity, beauty.</p>
-<p><strong>Roald Dahl complete works</strong> (read aloud) — morality deliberately provocative; use for discussion.</p>
-<p><strong>Mafalda</strong> (Quino, age 7+) — social commentary through a child's voice. Spanish-language. Worth reading but not the spine of the program.</p>
+<p data-universe="ghibli"><strong>Studio Ghibli</strong> — Totoro → Kiki → Spirited Away in that order (Japanese audio, subtitles). Interdependence with nature, ambiguity, beauty.</p>
+<p data-universe="roald-dahl"><strong>Roald Dahl complete works</strong> (read aloud) — morality deliberately provocative; use for discussion.</p>
+<p data-universe="mafalda"><strong>Mafalda</strong> (Quino, age 7+) — social commentary through a child's voice. Spanish-language. Worth reading but not the spine of the program.</p>
+<p data-universe="pokemon"><strong>Pokémon anime</strong> (Japanese audio, subtitles). Entry-level anime for this age. The type system is basic combinatorics. Card game basics introduce counting, turn structure, and probability. L3 Japanese exposure through media they genuinely want to watch.</p>
+<p data-universe="pixar"><strong>Pixar emotional intelligence films</strong> — Inside Out (emotional self-awareness), WALL-E (systems, ecology), Ratatouille (anyone can create), Up (loss and purpose). Not anchor works — Absorb-mode, but select for emotional literacy.</p>
+<p data-universe="little-prince"><strong>The Little Prince</strong> (Saint-Exupéry). Read in English, then Spanish, then French if L3 active. The most translated non-religious book in history. At this age it's a children's story about friendship and loss. At 14 it's philosophy. The multilingual dimension makes it unique.</p>
+<p data-universe="star-wars"><strong>Star Wars: Clone Wars</strong> (animated series, English). Entry point to the Star Wars universe. Moral complexity scales across seasons. Leads naturally to the Original Trilogy at 8-10.</p>
 <h3>RECOMMENDED — Broader Content Diet</h3>
-<p><strong>DC/Marvel entry points:</strong> Batman: The Animated Series (English, original audio). Spider-Man: Into the Spider-Verse. Moral complexity at accessible level. Shared cultural vocabulary with peers.</p>
-<p><strong>Mortadelo y Filemon</strong> (Ibanez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
+<p data-universe="dc-marvel"><strong>DC/Marvel entry points:</strong> Batman: The Animated Series (English, original audio). Spider-Man: Into the Spider-Verse. Moral complexity at accessible level. Shared cultural vocabulary with peers.</p>
+<p data-universe="mortadelo"><strong>Mortadelo y Filemon</strong> (Ibanez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
 <p><strong>The Iron Giant</strong> (film) — sacrifice, identity, "I am not a gun." <strong>WALL-E</strong> — systems, ecology, loneliness.</p>
+<p data-universe="tintin"><strong>Tintin</strong> (Hergé albums). European cultural canon. Visual literacy, geography, adventure, journalism. If L3 is French, read in French — the ligne claire art style teaches visual composition. Belgian origin, canonical across Europe.</p>
+<p data-universe="asterix"><strong>Astérix</strong> (Goscinny/Uderzo). Roman history disguised as comedy. Linguistic wordplay, European geography. If L3 French, the puns are genuine language exercises. Complements Tintin.</p>
+<p data-universe="spy-x-family"><strong>Spy x Family</strong> (anime, Japanese audio, subtitles). Lighter anime entry: a spy, an assassin, and a telepath form a fake family. Performance vs identity, found family, genuine warmth. Good bridge from Pokémon to more complex anime later.</p>
+<p data-universe="attenborough"><strong>David Attenborough nature documentaries</strong> — Planet Earth, Blue Planet. Scientific observation modeled by the greatest science communicator. Awe as curriculum. Pair with nature journals and outdoor observation.</p>
 
 <div class="program-elements">
 
@@ -131,6 +139,8 @@ order: 3
 </div>
 <p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Cafe Central.</p>
 
+<p><strong>Film scores as appreciation.</strong> John Williams (Star Wars themes), Joe Hisaishi (Ghibli soundtracks). Recognize leitmotifs: "That's Darth Vader's theme — why does it sound menacing?" Connects music to narrative universes they already love.</p>
+
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Private 1:1 lessons are already the default and will suit them best. Avoid group recitals early — build confidence through mastery first, performance later. Practice is solitary by nature; this child won't resist it.</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Add ensemble or group music classes alongside private instruction. Duets with a parent or friend, family jam sessions, call-and-response games with siblings. They need a social dimension to sustain motivation through the tedious early months.</div>
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Teacher temperament is critical — find someone patient and encouraging, not demanding. Loud instruments or aggressive correction can create lasting aversion. Start with quieter instruments (ukulele, piano at low volume) and let them build tolerance for their own mistakes gradually.</div>
@@ -149,6 +159,8 @@ order: 3
 <p>Post-meltdown debrief (only when fully calm, never during): "What happened in your body before you got upset? What could we try next time?" This builds metacognitive awareness of emotional states — the foundation for all later self-regulation.</p>
 <p><strong>Self-knowledge begins.</strong> "I'm the kind of person who..." — encourage self-description. "You're really good at X. What do you think you're good at?" Not performance praise — genuine observation prompting self-reflection. "You figured that out by yourself — how did you do it?" builds awareness of their own thinking process.</p>
 <p><strong>Joy as signal.</strong> Watch what produces genuine flow — sustained engagement, loss of time sense, intrinsic motivation. These activities are the signal for niche mastery direction. If an activity never produces flow after consistent exposure, question whether it's the right fit. Protect flow states ruthlessly: when they're absorbed, don't interrupt for meals, transitions, or "better" activities.</p>
+
+<p><strong>Climbing.</strong> Indoor bouldering from age 5+. Every route is a spatial puzzle solved with the body. Problem-solving as physical activity. Low barrier to entry, scales infinitely. Complements martial arts — different movement vocabulary.</p>
 
 <div class="t-adjust t-high-sens"><div class="t-label">High Sensitivity</div>Emotional regulation work is especially critical. They feel everything at higher amplitude — meltdowns will be bigger and recovery longer. Zones of regulation give them a vocabulary for what's happening inside. Never dismiss intensity: "I can see this is really big for you" before any problem-solving.</div>
 <div class="t-adjust t-low-sens"><div class="t-label">Low Sensitivity</div>Emotional awareness needs explicit teaching — they may not naturally notice internal signals. Use concrete physical anchors: "Where in your body do you feel that?" They need more help building the interoception habit because the signals are quieter, not because they don't exist.</div>
@@ -193,6 +205,8 @@ order: 3
 <p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
 <p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
 <p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
+
+<p><strong>Origami.</strong> Start with simple folds (crane, boat, frog). Geometry made physical — angles, symmetry, spatial reasoning through paper. Inexpensive, portable, meditative. Progresses to modular origami (polyhedra) by age 7.</p>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Solo building is their sweet spot. KAPLA, LEGO, and Minecraft Creative are ideal — long, focused, independent construction sessions. Don't force collaborative building projects. Pair programming (Robot Turtles, Cubetto) works best 1:1 with a parent, not in a group.</div>
 <div class="t-adjust t-verbal"><div class="t-label">Verbal-Abstract</div>Coding logic games (sequencing, instructions) will click quickly. Supplement physical building with narration: "Tell me what you're building and why." They may prefer the planning and explaining over the making itself — that's valid. Written instructions for their creations bridge building to communication.</div>
@@ -325,4 +339,10 @@ order: 3
 <tr><td>Spider-Man: Into the Spider-Verse</td><td>Film</td><td>Visual innovation, identity, multiverse as metaphor. English original audio. <span class="tag tag-target">Resilient Self-Efficacy</span></td></tr>
 <tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
 <tr><td>WALL-E</td><td>Film</td><td>Systems, ecology, loneliness, hope. Minimal dialogue — visual storytelling at its best. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Pokémon anime (Season 1)</td><td>Film</td><td>Japanese audio, subtitles. L3 exposure, type system as basic combinatorics, turn-based strategy. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>The Little Prince — Saint-Exupéry</td><td>Book</td><td>Multilingual editions. Friendship, loss, philosophy. The most translated non-religious book — read in English, Spanish, then French. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Inside Out (Pixar)</td><td>Film</td><td>Emotional self-awareness made visible. Core emotions as characters. Pair with zones of regulation work. <span class="tag tag-target">Self-Awareness</span></td></tr>
+<tr><td>Tintin Complete Albums — Hergé</td><td>Book</td><td>French or English. Visual literacy, geography, adventure, European cultural canon. Ligne claire art style teaches visual composition. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Astérix Complete Albums — Goscinny/Uderzo</td><td>Book</td><td>French or English. Roman history disguised as comedy, linguistic wordplay. L3 French puns are genuine language exercises. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>David Attenborough — Planet Earth</td><td>Film</td><td>Documentary series. Scientific observation modeled by the greatest science communicator. Awe as curriculum. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 </table>

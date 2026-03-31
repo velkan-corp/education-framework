@@ -21,8 +21,12 @@
   #search-icon { display: block; cursor: pointer; padding: 8px; width: 32px; height: 32px; }
   #search-input { display: none; }
   #search-results { display: none !important; }
-  /* View toggle: compact on mobile */
-  .view-btn { font-size: 10px; padding: 3px 7px; }
+  /* View toggle: dropdown on mobile */
+  .view-btn { display: none; }
+  .view-label { font-size: 9px; }
+  .view-select { display: block; }
+  /* Universe grid: 2 columns on tablet, 1 on phone */
+  .universe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   /* Timeline: less padding on mobile */
   .timeline-phase { padding-left: var(--sp-3); }
 }
