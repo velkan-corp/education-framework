@@ -1,6 +1,7 @@
 import { state } from './state.js';
-import { updateAllNavs, showTab, renderTabs } from './navigation.js';
+import { updateAllNavs } from './navigation.js';
 
+let currentTabTag = 'all';
 let currentFilter = 'all';
 
 export function initUniverseView() {
@@ -10,22 +11,33 @@ export function initUniverseView() {
   const universeTabs = document.getElementById('universe-tabs');
   if (!grid || !detail || !universeTabs) return;
 
-  // Tab clicks — filter grid or show framework
+  // Tab clicks — filter by medium/type
   universeTabs.addEventListener('click', (e) => {
     const tab = e.target.closest('.tab');
     if (!tab) return;
     const tabId = tab.dataset.universeTab;
     if (!tabId) return;
 
-    // Update active tab
     universeTabs.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab));
 
     if (tabId === 'framework') {
       showFrameworkInUniverse();
     } else {
+      currentTabTag = tabId;
       showUniverseGrid();
-      filterGrid(tabId);
+      applyFilters();
     }
+  });
+
+  // Filter pill clicks — narrow by attribute
+  document.querySelectorAll('.universe-filters .filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const filter = pill.dataset.filter;
+      document.querySelectorAll('.universe-filters .filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentFilter = filter;
+      applyFilters();
+    });
   });
 
   // Card clicks → show detail
@@ -39,20 +51,17 @@ export function initUniverseView() {
   if (backBtn) {
     backBtn.addEventListener('click', () => {
       showUniverseGrid();
-      filterGrid(currentFilter);
+      applyFilters();
     });
   }
 }
 
-function filterGrid(tag) {
-  currentFilter = tag;
+function applyFilters() {
   document.querySelectorAll('.universe-card').forEach(card => {
-    if (tag === 'all') {
-      card.classList.remove('hidden');
-    } else {
-      const tags = card.dataset.tags.split(',');
-      card.classList.toggle('hidden', !tags.includes(tag));
-    }
+    const tags = card.dataset.tags.split(',');
+    const matchesTab = currentTabTag === 'all' || tags.includes(currentTabTag);
+    const matchesFilter = currentFilter === 'all' || tags.includes(currentFilter);
+    card.classList.toggle('hidden', !(matchesTab && matchesFilter));
   });
 }
 
@@ -60,12 +69,13 @@ function showFrameworkInUniverse() {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
   const legend = document.querySelector('.universe-legend');
+  const filters = document.querySelector('.universe-filters');
 
   grid.classList.add('hidden');
   detail.classList.add('hidden');
   if (legend) legend.classList.add('hidden');
+  if (filters) filters.classList.add('hidden');
 
-  // Show framework phase content
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
   const fw = document.querySelector('.phase-content[data-phase="framework"]');
   if (fw) fw.classList.add('active');
@@ -78,15 +88,15 @@ function showUniverseDetail(universeId) {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
   const legend = document.querySelector('.universe-legend');
+  const filters = document.querySelector('.universe-filters');
 
-  // Hide framework if showing
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
 
   grid.classList.add('hidden');
   if (legend) legend.classList.add('hidden');
+  if (filters) filters.classList.add('hidden');
   detail.classList.remove('hidden');
 
-  // Show only the selected universe timeline
   detail.querySelectorAll('.universe-timeline').forEach(el => {
     el.classList.toggle('hidden', el.dataset.universeDetail !== universeId);
   });
@@ -99,13 +109,14 @@ function showUniverseGrid() {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
   const legend = document.querySelector('.universe-legend');
+  const filters = document.querySelector('.universe-filters');
 
-  // Hide framework if showing
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
 
   detail.classList.add('hidden');
   grid.classList.remove('hidden');
   if (legend) legend.classList.remove('hidden');
+  if (filters) filters.classList.remove('hidden');
 
   updateAllNavs();
 }

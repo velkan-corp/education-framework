@@ -9,4 +9,18 @@ const phases = defineCollection({
   }),
 });
 
-export const collections = { phases };
+const universes = defineCollection({
+  type: 'content',
+  schema: z.object({
+    label: z.string(),
+    tags: z.array(z.string()),
+    phases: z.array(z.object({
+      phaseId: z.string(),
+      tier: z.enum(['foundational', 'core', 'recommended']),
+      title: z.string(),
+      description: z.string(),
+    })),
+  }),
+});
+
+export const collections = { phases, universes };

@@ -5,6 +5,7 @@ import Topbar from '../components/Topbar.astro';
 import Sidebar from '../components/Sidebar.astro';
 import FloatingPanel from '../components/FloatingPanel.astro';
 import UniverseView from '../components/UniverseView.astro';
+import PhaseUniverses from '../components/PhaseUniverses.astro';
 
 const phases = (await getCollection('phases')).sort((a, b) => a.data.order - b.data.order);
 
@@ -79,6 +80,7 @@ const renderedPhases = await Promise.all(
           data-label={phase.data.label}
         >
           <phase.Content />
+          <PhaseUniverses phaseId={phase.data.phaseId} />
         </div>
       ))}
       <div id="domain-view" class="hidden">

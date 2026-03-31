@@ -1,8 +1,11 @@
 ---
-import { universes, TAG_LABELS } from '../data/universes';
+import { getCollection } from 'astro:content';
+import { TAB_TAGS, FILTER_TAGS, ALL_TAG_LABELS } from '../data/tags';
 
-// Collect all unique tags
-const allTags = [...new Set(universes.flatMap(u => u.tags))].sort();
+const universeEntries = await getCollection('universes');
+const universes = universeEntries.map(u => ({ id: u.id, ...u.data }));
+
+const filterEntries = Object.entries(FILTER_TAGS);
 
 // All phase columns for the matrix dots
 const phaseColumns = [
@@ -31,6 +34,15 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
     <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
   </div>
 
+  <!-- Attribute filters -->
+  <div class="universe-filters">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-pill active" data-filter="all">All</button>
+    {filterEntries.map(([key, label]) => (
+      <button class="filter-pill" data-filter={key}>{label}</button>
+    ))}
+  </div>
+
   <!-- Universe grid -->
   <div class="universe-grid" id="universe-grid">
     {sorted.map(u => (
@@ -49,7 +61,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         </div>
         <div class="universe-card-tags">
           {u.tags.map(t => (
-            <span class="universe-tag">{TAG_LABELS[t] || t}</span>
+            <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
           ))}
         </div>
       </div>
@@ -58,19 +70,19 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
 
   <!-- Universe detail (timeline) — pre-rendered for each universe -->
   <div id="universe-detail" class="hidden">
-    <button class="universe-back" id="universe-back">← All universes</button>
+    <button class="universe-back" id="universe-back">&larr; All universes</button>
     {sorted.map(u => (
       <div class="universe-timeline hidden" data-universe-detail={u.id}>
         <h1 class="universe-detail-title">{u.label}</h1>
         <div class="universe-detail-tags">
           {u.tags.map(t => (
-            <span class="universe-tag">{TAG_LABELS[t] || t}</span>
+            <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
           ))}
         </div>
         {u.phases.map(phase => (
           <div class="timeline-phase">
             <div class="timeline-header">
-              <span class="timeline-age">{phase.phaseLabel}</span>
+              <span class="timeline-age">{phase.phaseId.replace('age-', '').replace('-', '–')}</span>
               <span class={`tier-badge ${phase.tier}`}>
                 {phase.tier.charAt(0).toUpperCase() + phase.tier.slice(1)}
               </span>

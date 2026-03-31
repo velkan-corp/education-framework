@@ -1,12 +1,12 @@
 ---
-import { TAG_LABELS } from '../data/universes';
+import { TAB_TAGS } from '../data/tags';
 
 interface Props {
   phases: Array<{ data: { phaseId: string; label: string } }>;
 }
 const { phases } = Astro.props;
 
-const tagEntries = Object.entries(TAG_LABELS).sort((a, b) => a[1].localeCompare(b[1]));
+const tabEntries = Object.entries(TAB_TAGS);
 ---
 
 <div class="topbar">
@@ -26,7 +26,7 @@ const tagEntries = Object.entries(TAG_LABELS).sort((a, b) => a[1].localeCompare(
     <div class="tabs hidden" id="universe-tabs">
       <div class="tab" data-universe-tab="framework">Framework</div>
       <div class="tab active" data-universe-tab="all">All</div>
-      {tagEntries.map(([key, label]) => (
+      {tabEntries.map(([key, label]) => (
         <div class="tab" data-universe-tab={key}>{label}</div>
       ))}
     </div>

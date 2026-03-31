@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  phaseId: string;
+}
+const { phaseId } = Astro.props;
+
+const allUniverses = await getCollection('universes');
+
+// Collect entries for this phase, grouped by tier
+const tierOrder: Array<'foundational' | 'core' | 'recommended'> = ['foundational', 'core', 'recommended'];
+const entries: Array<{ id: string; label: string; tags: string[]; tier: string; title: string; description: string }> = [];
+
+for (const u of allUniverses) {
+  for (const p of u.data.phases) {
+    if (p.phaseId === phaseId) {
+      entries.push({ ...p, id: u.id, label: u.data.label, tags: u.data.tags });
+    }
+  }
+}
+
+const grouped = tierOrder
+  .map(tier => ({
+    tier,
+    label: tier === 'foundational' ? 'FOUNDATIONAL Anchors' : tier === 'core' ? 'CORE' : 'RECOMMENDED — Broader Content Diet',
+    items: entries.filter(e => e.tier === tier),
+  }))
+  .filter(g => g.items.length > 0);
+---
+
+{grouped.length > 0 && (
+  <div class="phase-universes">
+    <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
+    <p>Anchor works get full DIM treatment. Broader content diet is Absorb-mode — consume freely, discuss naturally. All content in original language with subtitles. See <strong>Universe</strong> journey view for full progression across ages.</p>
+    {grouped.map(group => (
+      <>
+        <h3>{group.label}</h3>
+        {group.items.map(item => (
+          <p id={`universe-${item.id}`} data-universe={item.id}><strong>{item.title}</strong>. {item.description}</p>
+        ))}
+      </>
+    ))}
+  </div>
+)}

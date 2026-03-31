@@ -56,29 +56,6 @@ order: 3
 </table>
 <p>These four models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
 
-<h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-<p><strong>Anchor works</strong> get full DIM treatment. The broader content diet is Absorb-mode — consume freely, discuss naturally, don't over-analyze. All content in original language with subtitles.</p>
-<h3>FOUNDATIONAL Anchors</h3>
-<p data-universe="avatar"><strong>Avatar: The Last Airbender</strong> (own on Blu-ray). The four nations as interdependent system. Zuko's redemption arc. Consequence and responsibility. Once the show is finished, the Avatar comics (The Promise, The Search, The Rift) extend the universe — CORE.</p>
-<p data-universe="calvin-hobbes"><strong>Calvin & Hobbes Complete Collection</strong> (Fantagraphics 3-vol hardcover). Philosophy disguised as a comic strip. Inversion, imagination, social commentary. Sunday strips require the large format.</p>
-<p data-universe="don-quijote"><strong>Don Quijote adapted</strong> (Rosa Navarro Duran's <em>Don Quijote contado a los ninos</em>). The foundational Spanish-language anchor. A funny man who confuses stories with reality — Maps ≠ Territory at its most human. Read in Spanish. A child in Madrid grows up in Quijote's landscape.</p>
-<h3>CORE</h3>
-<p data-universe="ghibli"><strong>Studio Ghibli</strong> — Totoro → Kiki → Spirited Away in that order (Japanese audio, subtitles). Interdependence with nature, ambiguity, beauty.</p>
-<p data-universe="roald-dahl"><strong>Roald Dahl complete works</strong> (read aloud) — morality deliberately provocative; use for discussion.</p>
-<p data-universe="mafalda"><strong>Mafalda</strong> (Quino, age 7+) — social commentary through a child's voice. Spanish-language. Worth reading but not the spine of the program.</p>
-<p data-universe="pokemon"><strong>Pokémon anime</strong> (Japanese audio, subtitles). Entry-level anime for this age. The type system is basic combinatorics. Card game basics introduce counting, turn structure, and probability. L3 Japanese exposure through media they genuinely want to watch.</p>
-<p data-universe="pixar"><strong>Pixar emotional intelligence films</strong> — Inside Out (emotional self-awareness), WALL-E (systems, ecology), Ratatouille (anyone can create), Up (loss and purpose). Not anchor works — Absorb-mode, but select for emotional literacy.</p>
-<p data-universe="little-prince"><strong>The Little Prince</strong> (Saint-Exupéry). Read in English, then Spanish, then French if L3 active. The most translated non-religious book in history. At this age it's a children's story about friendship and loss. At 14 it's philosophy. The multilingual dimension makes it unique.</p>
-<p data-universe="star-wars"><strong>Star Wars: Clone Wars</strong> (animated series, English). Entry point to the Star Wars universe. Moral complexity scales across seasons. Leads naturally to the Original Trilogy at 8-10.</p>
-<h3>RECOMMENDED — Broader Content Diet</h3>
-<p data-universe="dc-marvel"><strong>DC/Marvel entry points:</strong> Batman: The Animated Series (English, original audio). Spider-Man: Into the Spider-Verse. Moral complexity at accessible level. Shared cultural vocabulary with peers.</p>
-<p data-universe="mortadelo"><strong>Mortadelo y Filemon</strong> (Ibanez) — the most beloved Spanish comic. Slapstick intelligence, culturally Spanish.</p>
-<p><strong>The Iron Giant</strong> (film) — sacrifice, identity, "I am not a gun." <strong>WALL-E</strong> — systems, ecology, loneliness.</p>
-<p data-universe="tintin"><strong>Tintin</strong> (Hergé albums). European cultural canon. Visual literacy, geography, adventure, journalism. If L3 is French, read in French — the ligne claire art style teaches visual composition. Belgian origin, canonical across Europe.</p>
-<p data-universe="asterix"><strong>Astérix</strong> (Goscinny/Uderzo). Roman history disguised as comedy. Linguistic wordplay, European geography. If L3 French, the puns are genuine language exercises. Complements Tintin.</p>
-<p data-universe="spy-x-family"><strong>Spy x Family</strong> (anime, Japanese audio, subtitles). Lighter anime entry: a spy, an assassin, and a telepath form a fake family. Performance vs identity, found family, genuine warmth. Good bridge from Pokémon to more complex anime later.</p>
-<p data-universe="attenborough"><strong>David Attenborough nature documentaries</strong> — Planet Earth, Blue Planet. Scientific observation modeled by the greatest science communicator. Awe as curriculum. Pair with nature journals and outdoor observation.</p>
-
 <div class="program-elements">
 
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
@@ -139,7 +116,7 @@ order: 3
 </div>
 <p><strong>Live music exposure:</strong> Take them to performances. Classical concerts (children's matinees), jazz clubs (afternoon sessions), any live music. Madrid has excellent options: Auditorio Nacional children's programs, jazz at Cafe Central.</p>
 
-<p><strong>Film scores as appreciation.</strong> John Williams (Star Wars themes), Joe Hisaishi (Ghibli soundtracks). Recognize leitmotifs: "That's Darth Vader's theme — why does it sound menacing?" Connects music to narrative universes they already love.</p>
+<p><strong>Film scores as appreciation.</strong> <a href="#universe-star-wars">John Williams (Star Wars themes)</a>, <a href="#universe-ghibli">Joe Hisaishi (Ghibli soundtracks)</a>. Recognize leitmotifs: "That's Darth Vader's theme — why does it sound menacing?" Connects music to narrative universes they already love.</p>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Private 1:1 lessons are already the default and will suit them best. Avoid group recitals early — build confidence through mastery first, performance later. Practice is solitary by nature; this child won't resist it.</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Add ensemble or group music classes alongside private instruction. Duets with a parent or friend, family jam sessions, call-and-response games with siblings. They need a social dimension to sustain motivation through the tedious early months.</div>
@@ -202,7 +179,7 @@ order: 3
 <p><strong>Monetize:</strong> Moonjar system — save, spend, share. Weekly allowance of €5–10, real decisions with real consequences. "You spent it all on candy. That means no money for the toy next week. That's what happened." No bailouts.</p>
 
 <h3>Games & Digital Play</h3>
-<p><strong>Minecraft Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
+<p><strong><a href="#universe-minecraft">Minecraft</a> Creative mode only.</strong> No survival, no enemies — pure spatial construction and systems exploration. This is digital KAPLA blocks. Shared with parent, not solo unsupervised.</p>
 <p><strong>Also permitted:</strong> Monument Valley, Thinkrolls, age-appropriate puzzle games. Total screen time capped and budgeted.</p>
 <p><strong>The rule:</strong> Games are a tool, not a default activity. They're chosen deliberately, not fallen into from boredom.</p>
 
@@ -271,7 +248,7 @@ order: 3
 <p>Arrive → 15 min free play / connection → dinner (Socratic conversation 2–3x/week) → instrument practice (15–20 min, parent present) → reading aloud 30–45 min → bed.</p>
 </div>
 <div class="card"><div class="card-title">Weekends</div>
-<p>Saturday: Morning physical activity (hike, martial arts, cycling) → afternoon museum/cultural outing OR deep play at home → evening: family film night (Avatar episode, Ghibli, chosen content).</p>
+<p>Saturday: Morning physical activity (hike, martial arts, cycling) → afternoon museum/cultural outing OR deep play at home → evening: family film night (<a href="#universe-avatar">Avatar</a> episode, <a href="#universe-ghibli">Ghibli</a>, chosen content).</p>
 <p>Sunday: One structured activity (chess, music, sport) + extended unstructured time. Follow their lead for at least 2 hours — genuinely, not performatively.</p>
 </div>
 <div class="card"><div class="card-title">Interna Weekdays</div>
