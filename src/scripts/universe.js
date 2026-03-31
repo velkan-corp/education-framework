@@ -3,6 +3,7 @@ import { updateAllNavs } from './navigation.js';
 
 let currentTabTag = 'all';
 let currentFilter = 'all';
+let currentAge = 'all';
 
 export function initUniverseView() {
   const grid = document.getElementById('universe-grid');
@@ -29,13 +30,22 @@ export function initUniverseView() {
     }
   });
 
-  // Filter pill clicks — narrow by attribute
-  document.querySelectorAll('.universe-filters .filter-pill').forEach(pill => {
+  // Age filter clicks
+  document.querySelectorAll('#age-filters .filter-pill').forEach(pill => {
     pill.addEventListener('click', () => {
-      const filter = pill.dataset.filter;
-      document.querySelectorAll('.universe-filters .filter-pill').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('#age-filters .filter-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      currentFilter = filter;
+      currentAge = pill.dataset.age;
+      applyFilters();
+    });
+  });
+
+  // Attribute filter clicks
+  document.querySelectorAll('#attr-filters .filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#attr-filters .filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentFilter = pill.dataset.filter;
       applyFilters();
     });
   });
@@ -59,22 +69,39 @@ export function initUniverseView() {
 function applyFilters() {
   document.querySelectorAll('.universe-card').forEach(card => {
     const tags = card.dataset.tags.split(',');
+    const phases = card.dataset.phases.split(',');
     const matchesTab = currentTabTag === 'all' || tags.includes(currentTabTag);
     const matchesFilter = currentFilter === 'all' || tags.includes(currentFilter);
-    card.classList.toggle('hidden', !(matchesTab && matchesFilter));
+    const matchesAge = currentAge === 'all' || phases.includes(currentAge);
+    card.classList.toggle('hidden', !(matchesTab && matchesFilter && matchesAge));
   });
+}
+
+function hideControls() {
+  const legend = document.querySelector('.universe-legend');
+  const ageFilters = document.getElementById('age-filters');
+  const attrFilters = document.getElementById('attr-filters');
+  if (legend) legend.classList.add('hidden');
+  if (ageFilters) ageFilters.classList.add('hidden');
+  if (attrFilters) attrFilters.classList.add('hidden');
+}
+
+function showControls() {
+  const legend = document.querySelector('.universe-legend');
+  const ageFilters = document.getElementById('age-filters');
+  const attrFilters = document.getElementById('attr-filters');
+  if (legend) legend.classList.remove('hidden');
+  if (ageFilters) ageFilters.classList.remove('hidden');
+  if (attrFilters) attrFilters.classList.remove('hidden');
 }
 
 function showFrameworkInUniverse() {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
-  const legend = document.querySelector('.universe-legend');
-  const filters = document.querySelector('.universe-filters');
 
   grid.classList.add('hidden');
   detail.classList.add('hidden');
-  if (legend) legend.classList.add('hidden');
-  if (filters) filters.classList.add('hidden');
+  hideControls();
 
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
   const fw = document.querySelector('.phase-content[data-phase="framework"]');
@@ -87,14 +114,11 @@ function showFrameworkInUniverse() {
 function showUniverseDetail(universeId) {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
-  const legend = document.querySelector('.universe-legend');
-  const filters = document.querySelector('.universe-filters');
 
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
 
   grid.classList.add('hidden');
-  if (legend) legend.classList.add('hidden');
-  if (filters) filters.classList.add('hidden');
+  hideControls();
   detail.classList.remove('hidden');
 
   detail.querySelectorAll('.universe-timeline').forEach(el => {
@@ -108,15 +132,12 @@ function showUniverseDetail(universeId) {
 function showUniverseGrid() {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
-  const legend = document.querySelector('.universe-legend');
-  const filters = document.querySelector('.universe-filters');
 
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
 
   detail.classList.add('hidden');
   grid.classList.remove('hidden');
-  if (legend) legend.classList.remove('hidden');
-  if (filters) filters.classList.remove('hidden');
+  showControls();
 
   updateAllNavs();
 }

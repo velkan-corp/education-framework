@@ -34,9 +34,18 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
     <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
   </div>
 
+  <!-- Age filter -->
+  <div class="universe-filters" id="age-filters">
+    <span class="filter-label">Age:</span>
+    <button class="filter-pill active" data-age="all">All</button>
+    {phaseColumns.map(col => (
+      <button class="filter-pill" data-age={col.id}>{col.label}</button>
+    ))}
+  </div>
+
   <!-- Attribute filters -->
-  <div class="universe-filters">
-    <span class="filter-label">Filter:</span>
+  <div class="universe-filters" id="attr-filters">
+    <span class="filter-label">Attribute:</span>
     <button class="filter-pill active" data-filter="all">All</button>
     {filterEntries.map(([key, label]) => (
       <button class="filter-pill" data-filter={key}>{label}</button>
@@ -46,7 +55,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
   <!-- Universe grid -->
   <div class="universe-grid" id="universe-grid">
     {sorted.map(u => (
-      <div class="universe-card" data-universe={u.id} data-tags={u.tags.join(',')}>
+      <div class="universe-card" data-universe={u.id} data-tags={u.tags.join(',')} data-phases={u.phases.map(p => p.phaseId).join(',')}>
         <div class="universe-card-title">{u.label}</div>
         <div class="universe-card-phases">
           {phaseColumns.map(col => {
