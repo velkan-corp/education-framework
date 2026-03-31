@@ -21,12 +21,13 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
 ---
 
 <div id="universe-view" class="hidden">
-  <!-- Legend -->
-  <div class="universe-legend">
-    <span class="phase-dot tier-foundational" /> <span class="universe-legend-tier">Foundational</span>
-    <span class="phase-dot tier-core" /> <span class="universe-legend-tier">Core</span>
-    <span class="phase-dot tier-recommended" /> <span class="universe-legend-tier">Recommended</span>
-    <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
+  <!-- Attribute filters -->
+  <div class="universe-filters" id="attr-filters">
+    <span class="filter-label">Attribute:</span>
+    <button class="filter-pill active" data-filter="all">All</button>
+    {filterEntries.map(([key, label]) => (
+      <button class="filter-pill" data-filter={key}>{label}</button>
+    ))}
   </div>
 
   <!-- Age filter -->
@@ -38,13 +39,12 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
     ))}
   </div>
 
-  <!-- Attribute filters -->
-  <div class="universe-filters" id="attr-filters">
-    <span class="filter-label">Attribute:</span>
-    <button class="filter-pill active" data-filter="all">All</button>
-    {filterEntries.map(([key, label]) => (
-      <button class="filter-pill" data-filter={key}>{label}</button>
-    ))}
+  <!-- Legend -->
+  <div class="universe-legend">
+    <span class="phase-dot tier-foundational" /> <span class="universe-legend-tier">Foundational</span>
+    <span class="phase-dot tier-core" /> <span class="universe-legend-tier">Core</span>
+    <span class="phase-dot tier-recommended" /> <span class="universe-legend-tier">Recommended</span>
+    <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
   </div>
 
   <!-- Universe grid -->
