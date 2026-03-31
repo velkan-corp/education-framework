@@ -1,6 +1,35 @@
 import { state } from './state.js';
 import { renderTabs, showTab, updateAllNavs } from './navigation.js';
 
+function createSearchRegex(query) {
+  return new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+}
+
+function collectMatches(query, maxMatches, contextChars) {
+  const matches = [];
+  const re = createSearchRegex(query);
+
+  document.querySelectorAll('.phase-content').forEach(phaseEl => {
+    const tabId = phaseEl.dataset.phase;
+    const tabLabel = phaseEl.dataset.label;
+    const text = phaseEl.textContent.replace(/\s+/g, ' ');
+    let m;
+    const seen = new Set();
+    re.lastIndex = 0;
+    while ((m = re.exec(text)) !== null && matches.length < maxMatches) {
+      const start = Math.max(0, m.index - contextChars);
+      const end = Math.min(text.length, m.index + m[0].length + contextChars);
+      let snippet = text.substring(start, end).trim();
+      const key = tabId + ':' + snippet.substring(0, 30);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      matches.push({ tabId, tabLabel, snippet, matchText: m[0] });
+    }
+  });
+
+  return matches;
+}
+
 export function initSearch() {
   const input = document.getElementById('search-input');
   const results = document.getElementById('search-results');
@@ -12,11 +41,11 @@ export function initSearch() {
   });
 
   input.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { input.value = ''; results.style.display = 'none'; clearHighlights(); }
+    if (e.key === 'Escape') { input.value = ''; results.classList.add('hidden'); clearHighlights(); }
   });
 
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('#search-wrap')) { results.style.display = 'none'; }
+    if (!e.target.closest('#search-wrap')) { results.classList.add('hidden'); }
     if (!e.target.closest('#float-menu') && !e.target.closest('#fab-menu')) {
       const menu = document.getElementById('float-menu');
       if (menu) menu.classList.remove('open');
@@ -51,44 +80,26 @@ function runSearch(query) {
   const results = document.getElementById('search-results');
   clearHighlights();
 
-  if (query.length < 2) { results.style.display = 'none'; return; }
+  if (query.length < 2) { results.classList.add('hidden'); return; }
 
-  const matches = [];
-  const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-
-  document.querySelectorAll('.phase-content').forEach(phaseEl => {
-    const tabId = phaseEl.dataset.phase;
-    const tabLabel = phaseEl.dataset.label;
-    const text = phaseEl.textContent.replace(/\s+/g, ' ');
-    let m;
-    const seen = new Set();
-    re.lastIndex = 0;
-    while ((m = re.exec(text)) !== null && matches.length < 50) {
-      const start = Math.max(0, m.index - 40);
-      const end = Math.min(text.length, m.index + m[0].length + 40);
-      let snippet = text.substring(start, end).trim();
-      const key = tabId + ':' + snippet.substring(0, 30);
-      if (seen.has(key)) continue;
-      seen.add(key);
-      snippet = snippet.replace(re, '<span style="background:var(--accent);color:#fff;padding:0 2px;border-radius:2px">$&</span>');
-      matches.push({ tabId, tabLabel, snippet, index: m.index });
-    }
-  });
+  const matches = collectMatches(query, 50, 40);
+  const re = createSearchRegex(query);
 
   if (matches.length === 0) {
-    results.innerHTML = '<div style="padding:16px;color:var(--text-muted);font-size:13px">No results for "' + query.replace(/</g,'&lt;') + '"</div>';
-    results.style.display = 'block';
+    results.innerHTML = '<div class="sr-no-results">No results for "' + query.replace(/</g,'&lt;') + '"</div>';
+    results.classList.remove('hidden');
     return;
   }
 
-  results.innerHTML = matches.map(m =>
-    `<div class="sr-item" data-tab="${m.tabId}" data-query="${query.replace(/"/g,'&quot;')}" style="padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;font-size:13px;line-height:1.5" onmouseenter="this.style.background='var(--surface2)'" onmouseleave="this.style.background='transparent'">
-      <div style="font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:3px">${m.tabLabel}</div>
-      <div style="color:var(--text-muted)">\u2026${m.snippet}\u2026</div>
-    </div>`
-  ).join('');
+  results.innerHTML = matches.map(m => {
+    const highlighted = m.snippet.replace(re, '<span class="sr-highlight">$&</span>');
+    return `<div class="sr-item" data-tab="${m.tabId}" data-query="${query.replace(/"/g,'&quot;')}">
+      <div class="sr-item-label">${m.tabLabel}</div>
+      <div class="sr-item-snippet">\u2026${highlighted}\u2026</div>
+    </div>`;
+  }).join('');
 
-  results.style.display = 'block';
+  results.classList.remove('hidden');
 
   results.querySelectorAll('.sr-item').forEach(item => {
     item.addEventListener('click', () => {
@@ -98,7 +109,7 @@ function runSearch(query) {
       renderTabs();
       showTab(state.currentTab);
       updateAllNavs();
-      results.style.display = 'none';
+      results.classList.add('hidden');
       setTimeout(() => highlightInContent(q), 50);
     });
   });
@@ -109,7 +120,7 @@ function highlightInContent(query) {
   const content = document.querySelector('.phase-content.active');
   if (!content) return;
   const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, null, false);
-  const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+  const re = createSearchRegex(query);
   const textNodes = [];
   while (walker.nextNode()) textNodes.push(walker.currentNode);
 
@@ -124,7 +135,7 @@ function highlightInContent(query) {
     while ((m = re.exec(val)) !== null) {
       if (m.index > last) frag.appendChild(document.createTextNode(val.substring(last, m.index)));
       const mark = document.createElement('mark');
-      mark.style.cssText = 'background:var(--accent);color:#fff;padding:0 2px;border-radius:2px';
+      mark.className = 'sr-highlight';
       mark.setAttribute('data-search-highlight', '1');
       mark.textContent = m[0];
       if (!firstMark) firstMark = mark;
@@ -159,33 +170,17 @@ function runMobileSearch(query) {
   clearHighlights();
   if (query.length < 2) { results.innerHTML = ''; return; }
 
-  const matches = [];
-  const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-  document.querySelectorAll('.phase-content').forEach(phaseEl => {
-    const tabId = phaseEl.dataset.phase;
-    const tabLabel = phaseEl.dataset.label;
-    const text = phaseEl.textContent.replace(/\s+/g, ' ');
-    let m; const seen = new Set(); re.lastIndex = 0;
-    while ((m = re.exec(text)) !== null && matches.length < 30) {
-      const start = Math.max(0, m.index - 30);
-      const end = Math.min(text.length, m.index + m[0].length + 30);
-      let snippet = text.substring(start, end).trim();
-      const key = tabId + ':' + snippet.substring(0, 30);
-      if (seen.has(key)) continue; seen.add(key);
-      snippet = snippet.replace(re, '<strong>$&</strong>');
-      matches.push({ tabId, tabLabel, snippet });
-    }
-  });
+  const matches = collectMatches(query, 30, 30);
 
   if (matches.length === 0) {
-    results.innerHTML = '<div style="padding:16px;color:var(--text-muted)">No results</div>';
+    results.innerHTML = '<div class="sr-no-results">No results</div>';
     return;
   }
 
   results.innerHTML = matches.map(m =>
-    `<div class="sr-item" data-tab="${m.tabId}" style="cursor:pointer">
-      <div style="font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:2px">${m.tabLabel}</div>
-      <div style="color:var(--text-muted)">\u2026${m.snippet}\u2026</div>
+    `<div class="sr-item" data-tab="${m.tabId}">
+      <div class="sr-item-label">${m.tabLabel}</div>
+      <div class="sr-item-snippet">\u2026${m.snippet.replace(createSearchRegex(query), '<strong>$&</strong>')}\u2026</div>
     </div>`
   ).join('');
 

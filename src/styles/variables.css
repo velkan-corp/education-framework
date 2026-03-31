@@ -1,0 +1,71 @@
+:root {
+  /*
+   * Education Framework — "Botanical" palette
+   * Plum depth + jade growth + warm coral energy on cream ground
+   * Counterpoint: rich plum against warm cream creates intellectual weight without coldness
+   */
+  --bg: #f8f4ec;
+  --surface: #ede6da;
+  --surface2: #e2dace;
+  --border: #d4cabc;
+  --text: #201a18;
+  --text-muted: #7a6e64;
+
+  /* Accents — depth, growth, warmth */
+  --accent: #7a3a6e;   /* Plum — primary, headings, intellectual depth */
+  --accent2: #2a8a6a;  /* Jade — growth, links, language track */
+  --accent3: #5a8a3a;  /* Moss — music, nature, organic */
+  --accent4: #e07a3a;  /* Warm coral — highlights, energy */
+  --accent5: #c4943a;  /* Amber — secondary warmth */
+  --warn: #c44040;     /* Warm red — alerts */
+
+  /* Temperament colors — distinct on cream ground, harmonized with botanical palette */
+  --intro: #5858a0;    /* Soft indigo — introverts */
+  --ext: #c06050;      /* Coral — extroverts */
+  --verbal: #3a7a4a;   /* Forest — verbal */
+  --spatial: #a08830;  /* Ochre — spatial */
+  --hisens: #8858a0;   /* Lavender — high sensitivity */
+  --losens: #3a6a90;   /* Steel — low sensitivity */
+  --depth: #2a7a7a;    /* Teal — depth-seeking */
+  --breadth: #a04870;  /* Rose — breadth-seeking */
+
+  /* Typography */
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Fibonacci spacing */
+  --sp-1: 5px;
+  --sp-2: 8px;
+  --sp-3: 13px;
+  --sp-4: 21px;
+  --sp-5: 34px;
+  --sp-6: 55px;
+
+  /* Derived tints — change accents above, these follow
+     Using color-mix for single-source-of-truth transparency */
+  --accent-hover: color-mix(in srgb, var(--accent) 6%, transparent);
+  --accent-subtle: color-mix(in srgb, var(--accent) 8%, transparent);
+  --accent-light: color-mix(in srgb, var(--accent) 10%, transparent);
+  --accent-border: color-mix(in srgb, var(--accent) 20%, transparent);
+  --accent2-subtle: color-mix(in srgb, var(--accent2) 8%, transparent);
+  --accent2-light: color-mix(in srgb, var(--accent2) 10%, transparent);
+  --accent3-subtle: color-mix(in srgb, var(--accent3) 8%, transparent);
+  --accent3-light: color-mix(in srgb, var(--accent3) 10%, transparent);
+  --accent3-border: color-mix(in srgb, var(--accent3) 30%, transparent);
+  --accent4-light: color-mix(in srgb, var(--accent4) 10%, transparent);
+  --warn-subtle: color-mix(in srgb, var(--warn) 6%, transparent);
+  --warn-border: color-mix(in srgb, var(--warn) 20%, transparent);
+  --shadow: color-mix(in srgb, var(--text) 8%, transparent);
+  --shadow-light: color-mix(in srgb, var(--text) 6%, transparent);
+  --shadow-heavy: color-mix(in srgb, var(--text) 15%, transparent);
+
+  /* Temperament tints */
+  --intro-bg: color-mix(in srgb, var(--intro) 8%, transparent);
+  --ext-bg: color-mix(in srgb, var(--ext) 8%, transparent);
+  --verbal-bg: color-mix(in srgb, var(--verbal) 8%, transparent);
+  --spatial-bg: color-mix(in srgb, var(--spatial) 8%, transparent);
+  --hisens-bg: color-mix(in srgb, var(--hisens) 8%, transparent);
+  --losens-bg: color-mix(in srgb, var(--losens) 8%, transparent);
+  --depth-bg: color-mix(in srgb, var(--depth) 8%, transparent);
+  --breadth-bg: color-mix(in srgb, var(--breadth) 8%, transparent);
+}

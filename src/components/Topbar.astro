@@ -1,0 +1,32 @@
+---
+interface Props {
+  phases: Array<{ data: { phaseId: string; label: string } }>;
+}
+const { phases } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">Education Framework</div>
+    <div class="tabs" id="tabs">
+      {phases.map((phase) => (
+        <div
+          class={`tab ${phase.data.phaseId === 'framework' ? 'active' : ''}`}
+          data-tab={phase.data.phaseId}
+        >
+          {phase.data.label}
+        </div>
+      ))}
+    </div>
+    <div class="tabs hidden" id="domain-tabs"></div>
+    <div id="view-toggle">
+      <div class="view-btn active" data-view="age">Age</div>
+      <div class="view-btn" data-view="domain">Domain</div>
+    </div>
+    <div id="search-wrap">
+      <svg id="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search-input" type="text" placeholder="Search… (⌘K)" data-mobile-placeholder="Search…" autocomplete="off">
+      <div id="search-results" class="hidden"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+/* Material Symbols — styles in <style is:inline> in index.astro to prevent Vite quote-stripping */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+a { color: var(--accent2); text-decoration: none; transition: color 0.2s ease-out; }
+a:hover { color: var(--text); text-decoration: underline; }
+
+.hidden { display: none !important; }

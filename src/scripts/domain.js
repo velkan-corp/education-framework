@@ -4,19 +4,17 @@ import { applyProfile, getHeadingText, renderTabs, showTab, updateAllNavs } from
 let currentDomain = null;
 
 function activateFrameworkTab(domainTabsEl) {
-  // Show framework phase content, hide domain timeline
   domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === 'framework'));
   currentDomain = 'framework';
-  document.getElementById('domain-view').style.display = 'none';
+  document.getElementById('domain-view').classList.add('hidden');
   document.querySelector('.phase-content[data-phase="framework"]').classList.add('active');
   updateAllNavs();
   window.scrollTo(0, 0);
 }
 
 function activateDomainTab(domainTabsEl, domainMap, domainId) {
-  // Hide framework phase, show domain timeline
   document.querySelector('.phase-content[data-phase="framework"]')?.classList.remove('active');
-  document.getElementById('domain-view').style.display = 'block';
+  document.getElementById('domain-view').classList.remove('hidden');
   domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === domainId));
   currentDomain = domainId;
   renderDomainTimeline(domainMap, domainId);
@@ -25,7 +23,7 @@ function activateDomainTab(domainTabsEl, domainMap, domainId) {
   window.scrollTo(0, 0);
 }
 
-export function initDomainView() {
+function buildDomainMap() {
   const domainMap = new Map();
   const agePhases = ['age-0-1', 'age-1-3', 'age-4-7', 'age-8-10', 'age-11-13', 'age-14-16', 'age-17-18'];
 
@@ -61,10 +59,10 @@ export function initDomainView() {
     });
   });
 
-  // Populate domain tabs — Framework first, then domains
-  const domainTabsEl = document.getElementById('domain-tabs');
-  if (!domainTabsEl) return;
+  return domainMap;
+}
 
+function populateDomainTabs(domainTabsEl, domainMap) {
   const frameworkTab = document.createElement('div');
   frameworkTab.className = 'tab';
   frameworkTab.dataset.domain = 'framework';
@@ -80,9 +78,11 @@ export function initDomainView() {
     tab.innerHTML = data.label.replace(' & ', '<br>& ');
     domainTabsEl.appendChild(tab);
   });
-  currentDomain = firstDomainId;
 
-  // Domain tab clicks
+  return firstDomainId;
+}
+
+function setupDomainHandlers(domainTabsEl, domainMap, firstDomainId) {
   domainTabsEl.addEventListener('click', (e) => {
     const tab = e.target.closest('.tab');
     if (!tab) return;
@@ -96,7 +96,6 @@ export function initDomainView() {
     }
   });
 
-  // View toggle
   document.getElementById('view-toggle').addEventListener('click', (e) => {
     const btn = e.target.closest('.view-btn');
     if (!btn) return;
@@ -105,26 +104,39 @@ export function initDomainView() {
     state.currentView = view;
     document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
 
+    const tabsEl = document.getElementById('tabs');
+    const domainView = document.getElementById('domain-view');
+
     if (view === 'domain') {
-      document.getElementById('tabs').style.display = 'none';
-      domainTabsEl.style.display = '';
+      tabsEl.classList.add('hidden');
+      domainTabsEl.classList.remove('hidden');
       document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
-      document.getElementById('domain-view').style.display = 'block';
+      domainView.classList.remove('hidden');
       currentDomain = firstDomainId;
       domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === firstDomainId));
       renderDomainTimeline(domainMap, currentDomain);
       applyProfile();
       updateAllNavs();
     } else {
-      domainTabsEl.style.display = 'none';
-      document.getElementById('tabs').style.display = '';
-      document.getElementById('domain-view').style.display = 'none';
+      domainTabsEl.classList.add('hidden');
+      tabsEl.classList.remove('hidden');
+      domainView.classList.add('hidden');
       document.querySelector('.phase-content[data-phase="framework"]')?.classList.remove('active');
       showTab(state.currentTab);
       renderTabs();
       updateAllNavs();
     }
   });
+}
+
+export function initDomainView() {
+  const domainMap = buildDomainMap();
+  const domainTabsEl = document.getElementById('domain-tabs');
+  if (!domainTabsEl) return;
+
+  const firstDomainId = populateDomainTabs(domainTabsEl, domainMap);
+  currentDomain = firstDomainId;
+  setupDomainHandlers(domainTabsEl, domainMap, firstDomainId);
 
   window._domainMap = domainMap;
 }

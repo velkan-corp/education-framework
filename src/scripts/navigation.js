@@ -138,7 +138,8 @@ export function applyProfile() {
 }
 
 function updateFabIndicator() {
-  const fab = document.getElementById('fab-profile');
+  const fab = document.getElementById('fab-menu');
+  if (!fab) return;
   const active = Object.values(state.profile).filter(v => v !== 'balanced').length;
   if (active > 0) {
     fab.style.background = 'var(--accent2)';
@@ -146,7 +147,7 @@ function updateFabIndicator() {
     fab.title = active + ' filter(s) active';
   } else {
     fab.style.background = 'var(--accent)';
-    fab.textContent = '\u2699';
-    fab.title = 'Child Profile';
+    fab.textContent = '\u2630';
+    fab.title = 'Menu';
   }
 }

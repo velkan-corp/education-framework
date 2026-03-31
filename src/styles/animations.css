@@ -1,0 +1,57 @@
+/* KEYFRAMES */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* SCROLL REVEAL */
+.phase-content.active h2,
+.phase-content.active .priority-box,
+.phase-content.active .card,
+.phase-content.active .music-track,
+.phase-content.active table {
+  animation: revealUp 0.4s ease-out both;
+}
+
+/* Stagger the reveals */
+.phase-content.active h2:nth-of-type(1) { animation-delay: 0s; }
+.phase-content.active h2:nth-of-type(2) { animation-delay: 0.05s; }
+.phase-content.active h2:nth-of-type(3) { animation-delay: 0.1s; }
+.phase-content.active .priority-box { animation-delay: 0.1s; }
+.phase-content.active .card { animation-delay: 0.15s; }
+.phase-content.active .music-track { animation-delay: 0.15s; }
+.phase-content.active table { animation-delay: 0.1s; }
+
+/* PRIORITY BADGE PULSE */
+.priority-num {
+  animation: pulseBadge 0.4s ease-out both;
+}
+.priority-item:nth-child(1) .priority-num { animation-delay: 0.1s; }
+.priority-item:nth-child(2) .priority-num { animation-delay: 0.2s; }
+.priority-item:nth-child(3) .priority-num { animation-delay: 0.3s; }
+.priority-item:nth-child(4) .priority-num { animation-delay: 0.4s; }
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
