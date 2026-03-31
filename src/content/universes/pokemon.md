@@ -5,7 +5,7 @@ phases:
   - phaseId: age-4-7
     tier: core
     title: "Pokémon anime + card game basics"
-    description: "Entry-level anime (Japanese audio, L3 exposure). Type system is basic combinatorics. Card game introduces counting, turn structure, probability."
+    description: "Entry-level anime (Japanese audio exposure). Type system is basic combinatorics. Card game introduces counting, turn structure, probability."
   - phaseId: age-8-10
     tier: core
     title: "Pokémon competitive (TCG + VGC)"

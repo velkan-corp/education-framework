@@ -23,11 +23,6 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
 <div id="universe-view" class="hidden">
   <!-- Legend -->
   <div class="universe-legend">
-    <span class="universe-legend-label">Age phases:</span>
-    {phaseColumns.map(col => (
-      <span class="universe-legend-phase">{col.label}</span>
-    ))}
-    <span class="universe-legend-sep">|</span>
     <span class="phase-dot tier-foundational" /> <span class="universe-legend-tier">Foundational</span>
     <span class="phase-dot tier-core" /> <span class="universe-legend-tier">Core</span>
     <span class="phase-dot tier-recommended" /> <span class="universe-legend-tier">Recommended</span>
