@@ -1,34 +1,198 @@
 <div class="sidebar">
   <div class="sidebar-title">Child Profile</div>
+
+  <!-- Child profile selector -->
+  <div class="profile-group profile-child-selector">
+    <div class="profile-label">Load Profile</div>
+    <div class="radio-group" data-dim="child" role="group" aria-label="Child Profile">
+      <button type="button" class="radio-btn active" data-val="custom" aria-pressed="true">Custom</button>
+      <button type="button" class="radio-btn" data-val="nico" aria-pressed="false">Nico</button>
+      <button type="button" class="radio-btn" data-val="maia" aria-pressed="false">Maia</button>
+    </div>
+  </div>
+
   <div class="profile-group">
-    <div class="profile-label">Energy <span class="info-toggle" data-tip="energy-tip">i</span></div>
-    <div class="info-tip" id="energy-tip">Introvert: recharges alone. Extrovert: recharges with people.</div>
-    <div class="radio-group" data-dim="energy">
-      <div class="radio-btn" data-val="introvert">Introvert</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="extrovert">Extrovert</div>
+
+    <!-- ═══ SECTION 1: Temperament (Rothbart ECBQ/CBQ) ═══ -->
+    <button type="button" class="profile-section-header" data-section="temperament" aria-expanded="true">
+      <span class="section-chevron">▼</span> Temperament <span class="section-source">Rothbart</span>
+    </button>
+    <div class="profile-section-body">
+
+      <div class="profile-label">Energy <button type="button" class="info-toggle" data-tip="energy-tip" aria-controls="energy-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="energy-tip">
+        <strong>Introvert:</strong> Calm physical tempo. Prefers puzzles, books, and fine motor play over running and climbing. Watches before joining group activities. Happy playing alone for extended periods. Warm with familiar people but reserved with strangers.<br><br>
+        <strong>Extrovert:</strong> High physical energy — always moving, climbing, running. Seeks out other children. Energised by social play. Gets restless or bored when alone too long. Loves high-intensity play (being chased, thrown in the air, rough-and-tumble).<br><br>
+        <em>Rothbart: Surgency/Extraversion factor (ECBQ 18-36mo, CBQ 3-7yr).</em>
+      </div>
+      <div class="radio-group" data-dim="energy" role="group" aria-label="Energy">
+        <button type="button" class="radio-btn" data-val="introvert" aria-pressed="false">Introvert</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="extrovert" aria-pressed="false">Extrovert</button>
+      </div>
+
+      <div class="profile-label">Reactivity <button type="button" class="info-toggle" data-tip="reactivity-tip" aria-controls="reactivity-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="reactivity-tip">
+        <strong>High:</strong> Transitions are hard — leaving the park, switching activities. Overwhelmed in loud or crowded settings. Tantrums hit hard and last long. Needs warnings before changes ("in 5 minutes we leave"). Startles easily.<br><br>
+        <strong>Low:</strong> Seems unbothered by noise, crowds, or sudden changes. Hard to read emotionally — composure doesn't mean contentment. May need more intense inputs to spark engagement.<br><br>
+        <em>Rothbart: Negative Affectivity factor (ECBQ/CBQ). Measures tendency to experience distress — distinct from Emotional Control (BRIEF-P), which measures ability to recover once aroused.</em>
+      </div>
+      <div class="radio-group" data-dim="reactivity" role="group" aria-label="Reactivity">
+        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
+      </div>
+
+      <div class="profile-label">Self-Regulation <button type="button" class="info-toggle" data-tip="ec-tip" aria-controls="ec-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="ec-tip">
+        <strong>High:</strong> Notices small details others miss. Sustains focus on tasks for long periods. Pauses before acting. Enjoys quiet, low-stimulus activities (puzzles, sorting, books). Deliberate and precise rather than impulsive.<br><br>
+        <strong>Low:</strong> Misses subtle details. Short attention bursts — moves quickly between activities. Acts before thinking. Prefers high-stimulus, fast-paced activities. Benefits from external structure to maintain focus.<br><br>
+        <em>Rothbart: Effortful Control factor (ECBQ/CBQ). Covers attention focusing, perceptual sensitivity, inhibitory control, and low-intensity pleasure. For specific executive capacities, see BRIEF-P section.</em>
+      </div>
+      <div class="radio-group" data-dim="selfRegulation" role="group" aria-label="Self-Regulation">
+        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
+      </div>
+
     </div>
-    <div class="profile-label">Processing <span class="info-toggle" data-tip="processing-tip">i</span></div>
-    <div class="info-tip" id="processing-tip">Spatial: thinks in images/building. Verbal: thinks in words/arguments.</div>
-    <div class="radio-group" data-dim="processing">
-      <div class="radio-btn" data-val="spatial">Spatial</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="verbal">Verbal</div>
+
+    <!-- ═══ SECTION 2: Development (ASQ) ═══ -->
+    <button type="button" class="profile-section-header" data-section="development" aria-expanded="true">
+      <span class="section-chevron">▼</span> Development <span class="section-source">ASQ</span>
+    </button>
+    <div class="profile-section-body">
+
+      <div class="profile-label">Communication <button type="button" class="info-toggle" data-tip="comm-tip" aria-controls="comm-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="comm-tip">
+        <strong>Advanced:</strong> Speaks in sentences earlier than peers. Names many colours, objects, or categories ahead of schedule. Follows complex instructions. Asks "why?" early. Uses words precisely. Produces animal sounds, colour names, or other vocabulary well ahead of age norms.<br><br>
+        <strong>Developing:</strong> Fewer words than age-typical, or relies on pointing/gestures more than speech. Benefits from expanded narration ("Truck!" → "Yes, a big red truck carrying logs"). Don't pressure verbal output — receptive language develops before expressive.<br><br>
+        <em>ASQ Communication domain.</em>
+      </div>
+      <div class="radio-group" data-dim="communication" role="group" aria-label="Communication">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Problem Solving <button type="button" class="info-toggle" data-tip="ps-tip" aria-controls="ps-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="ps-tip">
+        <strong>Advanced:</strong> Completes puzzles, building tasks, or visual search well ahead of age norms. Finds hidden objects that peers can't. Understands spatial relationships (nesting, sorting by size, matching shapes) earlier than expected. Categorises objects precisely.<br><br>
+        <strong>Developing:</strong> Needs more time and scaffolding for puzzles, building, and sorting tasks. Benefits from demonstration before independent attempts. Simpler challenges, more repetition, no time pressure.<br><br>
+        <em>ASQ Problem Solving domain.</em>
+      </div>
+      <div class="radio-group" data-dim="problemSolving" role="group" aria-label="Problem Solving">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Gross Motor <button type="button" class="info-toggle" data-tip="gm-tip" aria-controls="gm-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="gm-tip">
+        <strong>Advanced:</strong> Walking, running, climbing ahead of peers. Climbs playground structures others avoid. Good balance and coordination. Confident on uneven surfaces.<br><br>
+        <strong>Developing:</strong> Slower to reach gross motor milestones. Avoids climbing or uneven surfaces. Less steady on feet than peers. Note: preference for sitting (Energy: Introvert) is different from a gross motor delay — assess capability, not preference.<br><br>
+        <em>ASQ Gross Motor domain.</em>
+      </div>
+      <div class="radio-group" data-dim="grossMotor" role="group" aria-label="Gross Motor">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Fine Motor <button type="button" class="info-toggle" data-tip="fm-tip" aria-controls="fm-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="fm-tip">
+        <strong>Advanced:</strong> Draws recognisable shapes, uses scissors, manipulates small objects earlier than expected. Stacks many blocks. Good at puzzles requiring precise placement. Uses utensils well.<br><br>
+        <strong>Developing:</strong> Struggles with drawing, stacking, or small object manipulation. Uses whole-hand grasp more than pincer. Benefits from simpler manipulation tasks and patience.<br><br>
+        <em>ASQ Fine Motor domain.</em>
+      </div>
+      <div class="radio-group" data-dim="fineMotor" role="group" aria-label="Fine Motor">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Personal-Social <button type="button" class="info-toggle" data-tip="social-tip" aria-controls="social-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="social-tip">
+        <strong>Advanced:</strong> Self-help skills ahead of schedule (feeding self, dressing attempts, toileting readiness). Initiates social interaction, shows empathy ("she's sad"), imitates complex behaviours, understands social rules. May show notable pride in accomplishments.<br><br>
+        <strong>Developing:</strong> Needs more scaffolding for self-help tasks. Less social initiation, less imitation of peers. May not yet show empathy or read others' emotions. Provide more narration of social situations.<br><br>
+        <em>ASQ Personal-Social domain. Partially overlaps with Energy + Reactivity (temperament) but captures developmental milestones (self-help, theory of mind, imitation) that temperament doesn't.</em>
+      </div>
+      <div class="radio-group" data-dim="personalSocial" role="group" aria-label="Personal-Social">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
     </div>
-    <div class="profile-label">Sensitivity <span class="info-toggle" data-tip="sensitivity-tip">i</span></div>
-    <div class="info-tip" id="sensitivity-tip">High: overwhelmed by stimuli, needs gentle exposure. Low: needs more intensity.</div>
-    <div class="radio-group" data-dim="sensitivity">
-      <div class="radio-btn" data-val="high-sens">High</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="low-sens">Low</div>
+
+    <!-- ═══ SECTION 3: Executive Function (BRIEF-P) ═══ -->
+    <button type="button" class="profile-section-header" data-section="executiveFunction" aria-expanded="true">
+      <span class="section-chevron">▼</span> Executive Function <span class="section-source">BRIEF-P</span>
+    </button>
+    <div class="profile-section-body">
+
+      <div class="profile-label">Inhibit <button type="button" class="info-toggle" data-tip="inhib-tip" aria-controls="inhib-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="inhib-tip">
+        <strong>Advanced:</strong> Pauses before acting. Checks before responding. Rejects near-matches instead of overgeneralising — says "mama's car" only for the exact car, not every similar one. Waits for the right answer rather than guessing. Doesn't grab impulsively.<br><br>
+        <strong>Developing:</strong> Acts first, corrects later. Labels things impulsively — "doggy!" at every four-legged animal. Grabs before looking. Needs help slowing down: "look again, is it really the same?"<br><br>
+        <em>BRIEF-P Inhibit subscale. Partially overlaps with Self-Regulation (Rothbart EC) but measures specific behavioural inhibition capacity, not broad dispositional self-regulation.</em>
+      </div>
+      <div class="radio-group" data-dim="inhibit" role="group" aria-label="Inhibit">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Shift <button type="button" class="info-toggle" data-tip="shift-tip" aria-controls="shift-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="shift-tip">
+        <strong>Advanced:</strong> Switches between tasks or rules without difficulty. Can play one game, then switch to different rules. Uses different cognitive modes flexibly — precise matching when needed, categorical thinking when needed. Adapts when plans change.<br><br>
+        <strong>Developing:</strong> Gets stuck on one approach even when it's not working. Struggles with rule changes ("now we sort by colour, not shape"). Benefits from explicit rule-stating: "now we're playing a different game with different rules."<br><br>
+        <em>BRIEF-P Shift subscale. Different from Reactivity (distress at transitions) — Shift is cognitive flexibility, not emotional regulation.</em>
+      </div>
+      <div class="radio-group" data-dim="shift" role="group" aria-label="Shift">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Emotional Control <button type="button" class="info-toggle" data-tip="emoctl-tip" aria-controls="emoctl-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="emoctl-tip">
+        <strong>Advanced:</strong> Recovers quickly from upset. Modulates emotional response to fit the situation. Doesn't escalate minor frustrations into meltdowns. Can be redirected when upset.<br><br>
+        <strong>Developing:</strong> Once upset, stays upset for a long time. Minor frustrations escalate. Hard to redirect or soothe. Needs more co-regulation support (holding, rocking, deep pressure).<br><br>
+        <em>BRIEF-P Emotional Control subscale. Related to but distinct from Reactivity (Rothbart): Reactivity measures how easily the child GETS upset; Emotional Control measures how well they RECOVER.</em>
+      </div>
+      <div class="radio-group" data-dim="emotionalControl" role="group" aria-label="Emotional Control">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Working Memory <button type="button" class="info-toggle" data-tip="wm-tip" aria-controls="wm-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="wm-tip">
+        <strong>Advanced:</strong> Follows multi-step instructions ("get your shoes, put them by the door, then come back"). Holds a mental image while searching (finding Wally = holding a multi-feature target in mind while scanning). Remembers where things were put.<br><br>
+        <strong>Developing:</strong> Loses track of multi-step instructions — completes the first step, forgets the rest. Needs instructions one at a time. Loses objects frequently. Benefits from visual cues and simplified steps.<br><br>
+        <em>BRIEF-P Working Memory subscale.</em>
+      </div>
+      <div class="radio-group" data-dim="workingMemory" role="group" aria-label="Working Memory">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
+      <div class="profile-label">Plan/Organize <button type="button" class="info-toggle" data-tip="plan-tip" aria-controls="plan-tip" aria-expanded="false">i</button></div>
+      <div class="info-tip" id="plan-tip">
+        <strong>Advanced:</strong> Shows goal-directed behaviour — sets up materials before starting, follows a sequence, anticipates what comes next. Organises toys or objects by category without being asked.<br><br>
+        <strong>Developing:</strong> Starts tasks without preparation. Doesn't anticipate steps. Jumps between activities without completing them. Benefits from visual schedules and step-by-step routines.<br><br>
+        <em>BRIEF-P Plan/Organize subscale. Not yet meaningfully assessable before age ~3. Default to Balanced for younger children.</em>
+      </div>
+      <div class="radio-group" data-dim="planOrganize" role="group" aria-label="Plan/Organize">
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
+      </div>
+
     </div>
-    <div class="profile-label">Novelty <span class="info-toggle" data-tip="novelty-tip">i</span></div>
-    <div class="info-tip" id="novelty-tip">Depth: obsesses on one thing for months. Breadth: cycles through interests.</div>
-    <div class="radio-group" data-dim="novelty">
-      <div class="radio-btn" data-val="depth">Depth</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="breadth">Breadth</div>
-    </div>
+
   </div>
   <div class="nav-links" id="nav-links"></div>
 </div>

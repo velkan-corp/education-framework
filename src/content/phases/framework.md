@@ -141,7 +141,7 @@ order: 0
 <p><strong>Name it when it happens.</strong> "You just spent 2 hours on that problem and you're smiling. That's the feeling."</p>
 <p><strong>Protect flow states ruthlessly.</strong> When they're in flow, everything else waits.</p>
 <p><strong>Debrief failures as gifts.</strong> Not "it's okay" but "what did that teach you that winning wouldn't have?"</p>
-<p><strong>Archetype alignment.</strong> The temperament system isn't a constraint — it's an identity to empower. Joy = alignment between who you are and what you do.</p>
+<p><strong>Archetype alignment.</strong> The profile system isn't a constraint — it's an identity to empower. Joy = alignment between who you are and what you do.</p>
 <h3>Imbuing Kindness</h3>
 <p><strong>Model it relentlessly.</strong> How you treat the waiter. How you speak about absent people. The child watches everything.</p>
 <p><strong>Frame kindness as strength.</strong> A child who can win a fight but helps their opponent up is learning kindness from power. Martial art + kindness = capable AND kind.</p>
@@ -160,15 +160,15 @@ order: 0
 <p>The framework develops capability. This section converts capability into externally validated, admissions-visible excellence. Not gaming the system — making the excellence VISIBLE. A child who is genuinely excellent but can't demonstrate it loses to a child who is slightly less excellent but packages it brilliantly.</p>
 
 <h3>Competition Pipeline</h3>
-<p>Deliberate escalation: local → regional → national → international. The domain determines the path:</p>
+<p>Deliberate escalation: local → regional → national → international. The domain determines the path, and the path depends on jurisdiction. Build for the gatekeepers that actually matter for the chosen route, not for a generic prestige fantasy.</p>
 <table>
-<tr><th>Domain</th><th>Pipeline</th></tr>
-<tr><td>Math</td><td>AMC 8 (age 10) → AMC 10/12 → AIME → USAMO → IMO</td></tr>
-<tr><td>Science</td><td>School fairs → Science Olympiad → Intel ISEF → Regeneron STS</td></tr>
-<tr><td>Debate</td><td>School → regional → nationals → WSDC / international</td></tr>
-<tr><td>Music</td><td>ABRSM grades → national youth competitions → international festivals</td></tr>
-<tr><td>Coding</td><td>Hackathons → open-source contributions → app with real users</td></tr>
-<tr><td>Entrepreneurship</td><td>School fair → Techstars Weekend → real revenue → LaunchX</td></tr>
+<tr><th>Domain</th><th>US-Leaning Route</th><th>Spain / EU Route</th></tr>
+<tr><td>Math</td><td>AMC 8 → AMC 10/12 → AIME → USAMO → IMO</td><td>Canguro / math circles → ESTALMAT or equivalent enrichment → national olympiad tracks → IMO / EGMO / EU-level camps</td></tr>
+<tr><td>Science</td><td>School fairs → Science Olympiad → ISEF → Regeneron STS</td><td>School fairs → regional olympiads (physics, chemistry, biology, informatics) → national olympiads → EUCYS / international olympiads</td></tr>
+<tr><td>Debate</td><td>School → regional → nationals → WSDC / international</td><td>School leagues → bilingual debate circuits → Model European Parliament / EYP / WSDC / international circuits</td></tr>
+<tr><td>Music</td><td>ABRSM / youth competitions → summer festivals → conservatory-linked teachers</td><td>ABRSM or Trinity / conservatorio access → youth orchestra / chamber circuit → conservatorio profesional or superior / European festivals</td></tr>
+<tr><td>Coding</td><td>Hackathons → open-source contributions → app with real users</td><td>Hackathons → robotics / informatics competitions → FabLab or startup internships → product with real users</td></tr>
+<tr><td>Entrepreneurship</td><td>School fair → Startup Weekend Youth → real revenue → selective founder programs</td><td>School enterprise → local incubator / chamber / municipal entrepreneurship programs → real revenue → accelerator-style mentorship</td></tr>
 </table>
 
 <h3>Ship-It Escalation</h3>
@@ -187,13 +187,21 @@ order: 0
 <p>By 14, consciously shape the story: what's the thread connecting niche, projects, service, intellectual interests? The narrative isn't fabricated — it's discovered from the life already being lived, then sharpened. The application essay doesn't write itself — the LIFE is shaped into a coherent arc. Add to quarterly review: "What's the narrative? How do this quarter's activities strengthen it?"</p>
 
 <h3>Test Preparation</h3>
-<p>PSAT diagnostic at 14-15. SAT/ACT prep starting age 15 — private tutor, not group class. Target: 1550+ SAT or 35+ ACT. Table stakes, not differentiator — but a 1400 with an amazing spike still loses to a 1560 with the same spike.</p>
+<p>Route-specific gatekeeping matters. For a US-selective route: PSAT diagnostic at 14-15, SAT/ACT prep starting age 15, tutor if needed, target elite-range scores. For Spain/EU routes: prioritize expediente, Bachillerato or IB performance, PAU/EvAU or equivalent, language certifications, olympiads, portfolio, audition, or interview depending on the path. The mistake is not "failing to take the SAT." The mistake is ignoring whichever gatekeeper the chosen route actually uses.</p>
 
 <h3>Recommendation Letter Strategy</h3>
 <p>Cultivate 2-3 mentor relationships starting age 13-14: the niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. These relationships need 2+ years to produce extraordinary letters. The mentor must know the child well enough to write with SPECIFIC, COMPELLING examples — not generic praise.</p>
 
 <h3>Community Leadership at Visible Scale</h3>
 <p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Admissions wants: "this person made their community better" — demonstrated, not claimed.</p>
+
+<h3>Multiple Elite Routes</h3>
+<p><strong>US-selective university route:</strong> standardized tests if required, spike + narrative + recommendation letters + selective programs.</p>
+<p><strong>Spain / EU academic route:</strong> expediente, PAU/EvAU or IB/A-level equivalent, olympiads, research, language certifications, interviews, and subject-specific excellence.</p>
+<p><strong>Conservatory / arts / film route:</strong> audition portfolio, repertoire, competitions, public performance record, teacher pedigree, artistic identity.</p>
+<p><strong>FP superior / apprenticeship / technical mastery route:</strong> industrial skill, portfolio, work placements, certifications, employer references, real competence under constraints.</p>
+<p><strong>Founder route:</strong> users, revenue, product quality, team, narrative, capital discipline, and evidence that the child can create value without institutional permission.</p>
+<p>The framework remains elite. It is simply not single-route. Excellence is the constant; packaging changes with the arena.</p>
 
 <h2 id="s-coercion"><span class="material-symbols-rounded">visibility</span>Risk 1: The Framework Becomes Coercive</h2>
 <div class="warn-box">
@@ -215,8 +223,24 @@ order: 0
 
 <h2 id="s-archetype"><span class="material-symbols-rounded">visibility</span>Risk 3: Building for the Wrong Child</h2>
 <p>This framework has an implicit "ideal student" — high-attention, systems-oriented, intellectually voracious, enjoys density and depth. What if your child is a dreamer, a socializer, a kinesthetic learner who couldn't care less about dense illustration pages?</p>
-<p><strong>The temperament system exists for this reason.</strong> Use it honestly. The sliders in the sidebar aren't labels — they're calibration tools. Adjust the framework to the child you have, not the child the framework imagines. The resource tiers in each age phase include temperament notes — a resource marked RECOMMENDED generally may be FOUNDATIONAL for a spatial-kinesthetic child.</p>
-<p>A spatial-kinesthetic breadth-seeking extrovert is not a worse student — they need a different path to the same ten targets. Resilient self-efficacy, deep curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
+<p><strong>The profile system exists for this reason.</strong> Use it honestly. The dimensions in the sidebar aren't labels — they're calibration tools. Adjust the framework to the child you have, not the child the framework imagines.</p>
+
+<h3>Profile System: Three Instruments</h3>
+<p>The child profile uses three validated psychometric instruments, one per assessment layer. Each is used in its complete published structure — no custom constructs, no cherry-picking.</p>
+<table>
+<tr><th>Layer</th><th>Instrument</th><th>Dimensions</th><th>What it changes</th></tr>
+<tr><td><strong>Temperament</strong></td><td>Rothbart ECBQ/CBQ</td><td>Energy (Surgency), Reactivity (Negative Affectivity), Self-Regulation (Effortful Control)</td><td><strong>HOW</strong> activities are approached: social structure, stress management, focus pattern, detail emphasis</td></tr>
+<tr><td><strong>Development</strong></td><td>ASQ (Ages & Stages Questionnaire)</td><td>Communication, Problem Solving, Gross Motor, Fine Motor, Personal-Social</td><td><strong>WHEN</strong> and <strong>WHAT LEVEL</strong>: accelerate for Advanced, scaffold for Developing</td></tr>
+<tr><td><strong>Executive Function</strong></td><td>BRIEF-P</td><td>Inhibit, Shift, Emotional Control, Working Memory, Plan/Organize</td><td><strong>HOW COMPLEX</strong> cognitive demands can be: multi-step instructions, rule-change flexibility, restraint tasks</td></tr>
+</table>
+
+<p><strong>Why three instruments:</strong> No single validated instrument covers temperament (dispositional tendencies), cognitive development (milestone achievement), and executive function (cognitive control capacities). Partial overlaps exist — Rothbart's Negative Affectivity and BRIEF-P's Emotional Control both involve emotion, but they measure different things (tendency to get upset vs. ability to recover). Rothbart's Effortful Control and BRIEF-P's Inhibit/WM/Shift overlap on executive capacities, but at different levels (broad temperamental disposition vs. specific behavioural capacities). No overlaps are perfect substitutes; all 13 dimensions are independent toggles.</p>
+
+<p><strong>Frameworks excluded:</strong> Aron's Sensory Processing Sensitivity (subsumed by Rothbart), Thomas & Chess (superseded by Rothbart), Gardner's Multiple Intelligences (poorly validated), Riding's Cognitive Style Analysis (not validated under age 11), CHC theory (professional-only instruments — provides theoretical grounding for ASQ domains but not used directly).</p>
+
+<p><strong>Saved profiles:</strong> Load a named child profile (e.g. "Nico", "Maia") to set all 13 dimensions at once from a pre-assessed baseline. Individual dimensions can be adjusted after loading — this reverts to "Custom".</p>
+
+<p>An extrovert with low self-regulation and developing problem-solving is not a worse student — they need a different path to the same ten targets. Resilient self-efficacy, deep curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
 <p><strong>Build for the best.</strong> Expectations are high by design. A child who is expected to reason from first principles, sustain deep relationships, and engage seriously with the world is more likely to do so than one whose ceiling was preemptively lowered. If a particular child can't reach a particular benchmark, that's discovered through observation and adjusted in the moment — not by lowering aspirations for all possible children in advance. High expectations are non-negotiable; rigid timelines are not.</p>
 
 <h2 id="s-coparent"><span class="material-symbols-rounded">family_restroom</span>Co-Parenting: Asymmetric Roles</h2>
@@ -258,6 +282,15 @@ order: 0
 <p><strong>One fun night per week:</strong> Family watches something purely entertaining, chosen by the kids. No CRAFT analysis, no debrief. Just enjoyment. This also gives you data on what they're drawn to unconstrained.</p>
 <p><strong>Selection still matters:</strong> Pixar is rest AND quality storytelling. TikTok scroll is neither rest nor quality. The hierarchy: great entertainment > good entertainment > passive consumption > algorithmic feed.</p>
 
+<h2 id="s-safety"><span class="material-symbols-rounded">shield</span>Adolescent Safety & Digital Reality</h2>
+<p>From age 11 onward, safety becomes a first-class curriculum, not a side warning. The child needs explicit training in body autonomy, consent, coercion, abuse patterns, pornography, privacy, digital reputation, scams, and online manipulation before peers or algorithms teach distorted versions.</p>
+<p><strong>Body autonomy and consent:</strong> Their body is theirs. "No" must be legible, respected, and recoverable from social pressure. Consent must be enthusiastic, reversible, specific, and impossible under coercion, intimidation, fear, or intoxication.</p>
+<p><strong>Secrets, coercion, and abuse:</strong> No adult or older teen gets a private secret, special channel, or "don't tell your parents" relationship. Flattery, gifts, isolation, guilt, threats, and urgency are manipulation tools. Name them directly.</p>
+<p><strong>Pornography:</strong> It will arrive. The rule is not magical prevention; it is interpretation. Porn is performance, not instruction. It distorts bodies, desire, power, and consent. If they see it, discuss it without shame and with analytical clarity.</p>
+<p><strong>Privacy and reputation:</strong> Screenshots are forever. Private images are not private. Group chats are reputation machines. The child should assume that anything sent digitally can be copied, reframed, and resurfaced later.</p>
+<p><strong>Online manipulation:</strong> Catfishing, blackmail, radicalization funnels, parasocial grooming, fake authority, algorithmic outrage, and scam urgency all exploit the same levers: loneliness, status hunger, shame, secrecy, and fear of exclusion.</p>
+<p><strong>Family protocol:</strong> If anyone asks for sexual content, secrecy, money, location, or an in-person meeting; if they feel trapped, ashamed, blackmailed, or afraid; or if they think they have made a serious mistake — they tell a parent immediately, and the first response is help, not punishment.</p>
+
 <h2 id="s-interna"><span class="material-symbols-rounded">people</span>The Interna Brief</h2>
 <p>The interna runs the daytime program. She doesn't need the philosophy — she needs clear, concrete, updated instructions.</p>
 <p><strong>One-page document, in Spanish, updated quarterly:</strong></p>
@@ -272,7 +305,7 @@ order: 0
 <p>The framework is a living document. Without a feedback loop, it becomes a plan you wrote once and slowly forget.</p>
 <p><strong>Every 3 months, 30 minutes, both parents:</strong></p>
 <p><strong>1. The Ten Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling? Pay particular attention to Targets 7–8 (Relational Intelligence, Empathy & Kindness) — these are harder to observe than intellectual targets but more predictive of long-term wellbeing.</p>
-<p><strong>2. Temperament check:</strong> Have the dimensions shifted? A 4-year-old introvert may be a 10-year-old ambivert. Update the profile.</p>
+<p><strong>2. Profile check:</strong> Have any dimensions shifted? A 4-year-old introvert may be a 10-year-old ambivert. A child who was Developing in communication at 2 may be On Track at 4. Re-assess all three layers (Rothbart, ASQ, BRIEF-P) and update the profile.</p>
 <p><strong>3. What worked this quarter?</strong> Specific activities, books, conversations that produced visible growth.</p>
 <p><strong>4. What didn't work?</strong> What are they resisting? Is the resistance signal or noise? (See Risk 2.)</p>
 <p><strong>5. What surprised you?</strong> Interests, skills, or connections you didn't plan for. These are often more important than the planned ones.</p>
@@ -280,6 +313,7 @@ order: 0
 <p><strong>7. Time audit:</strong> Are the recommended activities actually fitting? If not, what gets cut? Use the tier system: cut RECOMMENDED (Tier 3) first, then CORE (Tier 2) if necessary. Never cut FOUNDATIONAL (Tier 1): sleep, outdoor time, unstructured time, team sport, physical activity.</p>
 <p><strong>8. Onion layer check:</strong> Which mental models were revisited this quarter? At what depth? Are previously learned concepts being reinforced or fading?</p>
 <p><strong>9. Portfolio check:</strong> What was shipped, competed in, published, or built this quarter? How does it strengthen the narrative? What's the next escalation?</p>
+<p><strong>10. Safety check:</strong> Are boundaries clear? Any secrecy, coercion, digital-risk behavior, concerning group chats, manipulative peers, reputation issues, or online contact that needs intervention? Is the child still bringing problems to you early?</p>
 <p><strong>Log the answers.</strong> Review the log annually. Patterns over 4 quarters reveal more than any single observation.</p>
 <p><strong>The child's experience of this review should be invisible.</strong> This is a parent-facing calibration tool, not a report card.</p>
 
@@ -290,6 +324,6 @@ order: 0
 <tr><td>0–3</td><td>Securely attached (seeks comfort, explores freely, protests separation briefly then recovers). Babbling/talking on curve. Physically confident — climbs, runs, falls without excessive fear. Comfortable around other children.</td><td>Clingy or avoidant. Excessive caution with new environments. Speech delay without other explanation. Distressed by other children's proximity.</td></tr>
 <tr><td>4–7</td><td>Asks "why" relentlessly. Sustains focus 20+ min. Handles small failures without meltdown. Initiates play without adult direction. Navigates basic conflicts with peers. Shows concern when another child is hurt.</td><td>Waits for permission to play. Melts down at minor frustration. Performs for adults. Can't resolve any peer conflict without adult mediation. Indifferent to others' distress.</td></tr>
 <tr><td>8–10</td><td>Has a passionate domain. Can explain reasoning. Reads voluntarily. Handles losing analytically. Collaborates on team sport — adjusts to teammates, accepts different roles. Shows empathy spontaneously.</td><td>Goes through motions. Avoids challenge. Can't articulate beliefs. Practice feels like punishment. Can't function in a team without dominating or withdrawing.</td></tr>
-<tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Empathy is performed, not felt.</td></tr>
-<tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only.</td></tr>
+<tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked. Understands body autonomy, basic consent, privacy, and when to report manipulation immediately.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Empathy is performed, not felt. Keeps dangerous secrets because shame or peer pressure is stronger than trust.</td></tr>
+<tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something. Handles consent, reputation, and digital risk with adult-level seriousness.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only. Repeatedly tolerates coercion, sends self-endangering content, or confuses intensity with trust.</td></tr>
 </table>

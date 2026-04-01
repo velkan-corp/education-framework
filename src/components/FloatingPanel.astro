@@ -1,34 +1,105 @@
 <!-- SINGLE MOBILE FAB -->
-<button class="profile-fab" id="fab-menu" title="Menu">&#9776;</button>
+<button type="button" class="profile-fab" id="fab-menu" title="Menu" aria-controls="float-menu" aria-expanded="false">&#9776;</button>
 
 <!-- COMBINED FLOATING PANEL: sections + profile -->
 <div class="profile-float" id="float-menu">
   <div id="float-menu-sections"></div>
   <div class="float-panel-divider">
     <div class="profile-float-title">Child Profile</div>
+
+    <!-- Child profile selector -->
+    <div class="profile-label">Load Profile</div>
+    <div class="radio-group" data-dim="child" role="group" aria-label="Child Profile">
+      <button type="button" class="radio-btn active" data-val="custom" aria-pressed="true">Custom</button>
+      <button type="button" class="radio-btn" data-val="nico" aria-pressed="false">Nico</button>
+      <button type="button" class="radio-btn" data-val="maia" aria-pressed="false">Maia</button>
+    </div>
+
+    <!-- Temperament (Rothbart) -->
+    <div class="profile-float-section">Temperament</div>
     <div class="profile-label">Energy</div>
-    <div class="radio-group" data-dim="energy">
-      <div class="radio-btn" data-val="introvert">Introvert</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="extrovert">Extrovert</div>
+    <div class="radio-group" data-dim="energy" role="group" aria-label="Energy">
+      <button type="button" class="radio-btn" data-val="introvert" aria-pressed="false">Introvert</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="extrovert" aria-pressed="false">Extrovert</button>
     </div>
-    <div class="profile-label">Processing</div>
-    <div class="radio-group" data-dim="processing">
-      <div class="radio-btn" data-val="spatial">Spatial</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="verbal">Verbal</div>
+    <div class="profile-label">Reactivity</div>
+    <div class="radio-group" data-dim="reactivity" role="group" aria-label="Reactivity">
+      <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
     </div>
-    <div class="profile-label">Sensitivity</div>
-    <div class="radio-group" data-dim="sensitivity">
-      <div class="radio-btn" data-val="high-sens">High</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="low-sens">Low</div>
+    <div class="profile-label">Self-Regulation</div>
+    <div class="radio-group" data-dim="selfRegulation" role="group" aria-label="Self-Regulation">
+      <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
     </div>
-    <div class="profile-label">Novelty</div>
-    <div class="radio-group" data-dim="novelty">
-      <div class="radio-btn" data-val="depth">Depth</div>
-      <div class="radio-btn active" data-val="balanced">Balanced</div>
-      <div class="radio-btn" data-val="breadth">Breadth</div>
+
+    <!-- Development (ASQ) -->
+    <div class="profile-float-section">Development</div>
+    <div class="profile-label">Communication</div>
+    <div class="radio-group" data-dim="communication" role="group" aria-label="Communication">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Problem Solving</div>
+    <div class="radio-group" data-dim="problemSolving" role="group" aria-label="Problem Solving">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Gross Motor</div>
+    <div class="radio-group" data-dim="grossMotor" role="group" aria-label="Gross Motor">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Fine Motor</div>
+    <div class="radio-group" data-dim="fineMotor" role="group" aria-label="Fine Motor">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Personal-Social</div>
+    <div class="radio-group" data-dim="personalSocial" role="group" aria-label="Personal-Social">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+
+    <!-- Executive Function (BRIEF-P) -->
+    <div class="profile-float-section">Executive Function</div>
+    <div class="profile-label">Inhibit</div>
+    <div class="radio-group" data-dim="inhibit" role="group" aria-label="Inhibit">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Shift</div>
+    <div class="radio-group" data-dim="shift" role="group" aria-label="Shift">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Emotional Control</div>
+    <div class="radio-group" data-dim="emotionalControl" role="group" aria-label="Emotional Control">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Working Memory</div>
+    <div class="radio-group" data-dim="workingMemory" role="group" aria-label="Working Memory">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
+    </div>
+    <div class="profile-label">Plan/Organize</div>
+    <div class="radio-group" data-dim="planOrganize" role="group" aria-label="Plan/Organize">
+      <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Adv</button>
+      <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
+      <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Dev</button>
     </div>
   </div>
 </div>
@@ -37,7 +108,7 @@
 <div id="mobile-search-overlay">
   <div id="mobile-search-bar">
     <input id="mobile-search-input" type="text" placeholder="Search…" autocomplete="off">
-    <button id="mobile-search-close">✕</button>
+    <button type="button" id="mobile-search-close">✕</button>
   </div>
   <div id="mobile-search-results"></div>
 </div>

@@ -1,4 +1,4 @@
-import { state } from './state.js';
+import { state, childProfiles } from './state.js';
 
 export function getHeadingText(h) {
   let text = '';
@@ -12,7 +12,7 @@ export function getHeadingText(h) {
 function buildSectionNav(containerEl, entries, options = {}) {
   const { linkClass = 'nav-link', titleClass = 'sidebar-title', titleStyle = '', onClickExtra = null } = options;
   containerEl.innerHTML = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>Sections</div>` +
-    entries.map(e => `<div class="${linkClass}">${e.label}</div>`).join('');
+    entries.map(e => `<button type="button" class="${linkClass}">${e.label}</button>`).join('');
   containerEl.querySelectorAll(`.${linkClass}`).forEach((link, i) => {
     link.addEventListener('click', () => {
       entries[i].scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -63,7 +63,10 @@ export function updateAllNavs() {
     buildSectionNav(floatEl, entries, {
       linkClass: 'float-nav-link',
       titleClass: 'profile-float-title',
-      onClickExtra: () => document.getElementById('float-menu').classList.remove('open')
+      onClickExtra: () => {
+        document.getElementById('float-menu').classList.remove('open');
+        document.getElementById('fab-menu')?.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 }
@@ -71,7 +74,9 @@ export function updateAllNavs() {
 export function renderTabs() {
   const tabsEl = document.getElementById('tabs');
   tabsEl.querySelectorAll('.tab').forEach(tab => {
-    tab.classList.toggle('active', tab.dataset.tab === state.currentTab);
+    const active = tab.dataset.tab === state.currentTab;
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', String(active));
   });
 }
 
@@ -99,6 +104,8 @@ export function showTab(tabId) {
 export function toggleFloatMenu() {
   const panel = document.getElementById('float-menu');
   panel.classList.toggle('open');
+  const fab = document.getElementById('fab-menu');
+  if (fab) fab.setAttribute('aria-expanded', String(panel.classList.contains('open')));
   if (panel.classList.contains('open')) updateAllNavs();
 }
 
@@ -113,6 +120,70 @@ export function wrapTablesForMobile() {
   });
 }
 
+/* ── Profile class map ── */
+
+const classMap = {
+  // Rothbart ECBQ
+  energy:          { introvert: 't-introvert', extrovert: 't-extrovert' },
+  reactivity:      { high: 't-high-react', low: 't-low-react' },
+  selfRegulation:  { high: 't-ec-high', low: 't-ec-low' },
+  // ASQ
+  communication:   { advanced: 't-comm-adv', developing: 't-comm-dev' },
+  problemSolving:  { advanced: 't-ps-adv', developing: 't-ps-dev' },
+  grossMotor:      { advanced: 't-gm-adv', developing: 't-gm-dev' },
+  fineMotor:       { advanced: 't-fm-adv', developing: 't-fm-dev' },
+  personalSocial:  { advanced: 't-social-adv', developing: 't-social-dev' },
+  // BRIEF-P
+  inhibit:         { advanced: 't-inhib-adv', developing: 't-inhib-dev' },
+  shift:           { advanced: 't-shift-adv', developing: 't-shift-dev' },
+  emotionalControl:{ advanced: 't-emoctl-adv', developing: 't-emoctl-dev' },
+  workingMemory:   { advanced: 't-wm-adv', developing: 't-wm-dev' },
+  planOrganize:    { advanced: 't-plan-adv', developing: 't-plan-dev' }
+};
+
+/* ── Child profile loading ── */
+
+let activeChildProfile = null;
+
+export function loadChildProfile(key) {
+  const cp = childProfiles[key];
+  if (!cp) return;
+  activeChildProfile = key;
+  Object.assign(state.profile, cp.profile);
+  syncAllRadioButtons();
+  applyProfile();
+  updateFabIndicator();
+  updateChildSelector(key);
+}
+
+function clearChildProfile() {
+  if (activeChildProfile) {
+    activeChildProfile = null;
+    updateChildSelector(null);
+  }
+}
+
+function updateChildSelector(activeKey) {
+  document.querySelectorAll('.radio-group[data-dim="child"] .radio-btn').forEach(btn => {
+    const isActive = (activeKey === null && btn.dataset.val === 'custom') ||
+                     (btn.dataset.val === activeKey);
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
+  });
+}
+
+function syncAllRadioButtons() {
+  for (const [dim, val] of Object.entries(state.profile)) {
+    document.querySelectorAll(`.radio-group[data-dim="${dim}"] .radio-btn`).forEach(b => {
+      const active = b.dataset.val === val;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', String(active));
+    });
+  }
+}
+
+/* ── Profile toggles ── */
+
 export function setupProfileToggles() {
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.radio-btn');
@@ -122,22 +193,55 @@ export function setupProfileToggles() {
     e.stopPropagation();
     const dim = group.dataset.dim;
     const val = btn.dataset.val;
+
+    // Child profile selector
+    if (dim === 'child') {
+      if (val === 'custom') {
+        clearChildProfile();
+      } else {
+        loadChildProfile(val);
+      }
+      return;
+    }
+
+    // Individual dimension change — revert to Custom
     state.profile[dim] = val;
+    clearChildProfile();
     document.querySelectorAll(`.radio-group[data-dim="${dim}"] .radio-btn`).forEach(b => {
-      b.classList.toggle('active', b.dataset.val === val);
+      const active = b.dataset.val === val;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', String(active));
     });
     applyProfile();
     updateFabIndicator();
   });
 }
 
+/* ── Collapsible sections ── */
+
+export function setupCollapsibleSections() {
+  document.querySelectorAll('.profile-section-header').forEach(header => {
+    const sectionKey = header.dataset.section;
+    const content = header.nextElementSibling;
+    if (!content) return;
+
+    // Restore collapsed state
+    if (state.collapsed[sectionKey]) {
+      content.classList.add('collapsed');
+      header.classList.add('collapsed');
+    }
+
+    header.addEventListener('click', () => {
+      const isCollapsed = content.classList.toggle('collapsed');
+      header.classList.toggle('collapsed', isCollapsed);
+      state.collapsed[sectionKey] = isCollapsed;
+    });
+  });
+}
+
+/* ── Apply profile to content ── */
+
 export function applyProfile() {
-  const classMap = {
-    energy: { introvert: 't-introvert', extrovert: 't-extrovert' },
-    processing: { verbal: 't-verbal', spatial: 't-spatial' },
-    sensitivity: { 'high-sens': 't-high-sens', 'low-sens': 't-low-sens' },
-    novelty: { depth: 't-depth', breadth: 't-breadth' }
-  };
   document.querySelectorAll('.t-adjust').forEach(el => el.classList.remove('visible'));
   let activeCount = 0;
   for (const [dim, val] of Object.entries(state.profile)) {

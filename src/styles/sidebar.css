@@ -23,6 +23,7 @@
 .profile-label { font-size: 12px; color: var(--text-muted); margin-bottom: var(--sp-1); }
 
 .info-toggle {
+  border: none;
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -33,6 +34,8 @@
   line-height: 14px;
   font-size: 9px;
   cursor: pointer;
+  padding: 0;
+  appearance: none;
   margin-left: 3px;
   vertical-align: middle;
   transition: background 0.15s ease-out;
@@ -50,11 +53,13 @@
 .radio-group { display: flex; gap: 2px; margin-bottom: var(--sp-2); }
 
 .radio-btn {
+  font-family: var(--font-body);
   flex: 1;
   padding: var(--sp-1) 4px;
   font-size: 11px;
   text-align: center;
   cursor: pointer;
+  appearance: none;
   border-radius: 4px;
   background: var(--surface2);
   color: var(--text-muted);
@@ -64,16 +69,85 @@
 .radio-btn:hover { color: var(--text); }
 .radio-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
+/* Child profile selector */
+.profile-child-selector { margin-bottom: var(--sp-3); padding-bottom: var(--sp-3); border-bottom: 1px solid var(--border); }
+
+/* Collapsible instrument sections */
+.profile-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: var(--sp-2) 0;
+  margin-top: var(--sp-2);
+  font-size: 11px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  border-top: 1px solid var(--border);
+  transition: color 0.15s ease-out;
+}
+.profile-section-header:first-of-type { border-top: none; margin-top: 0; }
+.profile-section-header:hover { color: var(--text); }
+.section-chevron {
+  font-size: 9px;
+  transition: transform 0.2s ease-out;
+  display: inline-block;
+}
+.profile-section-header.collapsed .section-chevron { transform: rotate(-90deg); }
+.section-source {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--text-muted);
+  opacity: 0.6;
+  margin-left: auto;
+}
+
+.profile-section-body {
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+  opacity: 1;
+}
+.profile-section-body.collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Float panel section headers (mobile) */
+.profile-float-section {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--border);
+  font-weight: 700;
+}
+
 .nav-links { margin-top: var(--sp-4); border-top: 1px solid var(--border); padding-top: var(--sp-3); }
 
 .nav-link {
   display: block;
+  width: 100%;
   padding: var(--sp-1) var(--sp-2);
   font-size: 12px;
+  font-family: var(--font-body);
   color: var(--text-muted);
   cursor: pointer;
+  text-align: left;
   border-radius: 4px;
   margin-bottom: 2px;
+  border: none;
+  background: none;
   transition: all 0.15s ease-out;
 }
 .nav-link:hover { background: var(--surface2); color: var(--text); }

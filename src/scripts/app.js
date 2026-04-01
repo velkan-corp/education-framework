@@ -1,15 +1,102 @@
 import { state } from './state.js';
-import { setupTabClicks, renderTabs, showTab, setupProfileToggles, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
+import { setupTabClicks, renderTabs, showTab, setupProfileToggles, setupCollapsibleSections, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
 import { initSearch, openMobileSearch } from './search.js';
 import { initResourceFilters, initSectionFilters } from './filters.js';
 import { initDomainView } from './domain.js';
 import { initUniverseView } from './universe.js';
 
+function findByAnchorBase(container, targetId) {
+  if (!container) return null;
+  return Array.from(container.querySelectorAll('[data-anchor-base]')).find((el) => el.dataset.anchorBase === targetId) ?? null;
+}
+
+function scopePhaseAnchors() {
+  document.querySelectorAll('.phase-content').forEach((phaseEl) => {
+    const phaseId = phaseEl.dataset.phase;
+    if (!phaseId) return;
+
+    const anchorMap = new Map();
+
+    phaseEl.querySelectorAll('[id]').forEach((el) => {
+      if (el.dataset.anchorBase) return;
+
+      const baseId = el.id;
+      if (!baseId) return;
+
+      const scopedId = `${phaseId}-${baseId}`;
+      el.dataset.anchorBase = baseId;
+      el.id = scopedId;
+      anchorMap.set(baseId, scopedId);
+    });
+
+    phaseEl.querySelectorAll('a[href^="#"]').forEach((link) => {
+      if (link.dataset.anchorScoped === 'true') return;
+
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      const baseId = href.slice(1);
+      const scopedId = anchorMap.get(baseId);
+      if (!scopedId) return;
+
+      link.dataset.anchorBase = baseId;
+      link.dataset.anchorScoped = 'true';
+      link.setAttribute('href', `#${scopedId}`);
+    });
+  });
+}
+
+function findAnchorTarget(targetId) {
+  if (!targetId) return null;
+
+  const direct = document.getElementById(targetId);
+  if (direct) return direct;
+
+  const activePhase = document.querySelector('.phase-content.active');
+  const activeFallback = findByAnchorBase(activePhase, targetId);
+  if (activeFallback) return activeFallback;
+
+  const allPhases = document.querySelectorAll('.phase-content');
+  for (const phaseEl of allPhases) {
+    const match = findByAnchorBase(phaseEl, targetId);
+    if (match) return match;
+  }
+
+  return null;
+}
+
+function navigateToAnchor(targetId) {
+  const target = findAnchorTarget(targetId);
+  if (!target) return false;
+
+  const scrollToTarget = () => {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (window.location.hash !== `#${target.id}`) {
+      window.history.replaceState(null, '', `#${target.id}`);
+    }
+  };
+
+  const phaseEl = target.closest('.phase-content');
+  if (phaseEl && !phaseEl.classList.contains('active')) {
+    state.currentTab = phaseEl.dataset.phase;
+    renderTabs();
+    showTab(state.currentTab);
+    updateAllNavs();
+    window.setTimeout(scrollToTarget, 50);
+    return true;
+  }
+
+  scrollToTarget();
+  return true;
+}
+
 function init() {
+  scopePhaseAnchors();
   setupTabClicks();
   renderTabs();
   showTab(state.currentTab);
   setupProfileToggles();
+  setupCollapsibleSections();
   updateAllNavs();
   wrapTablesForMobile();
 
@@ -33,48 +120,29 @@ function init() {
       e.stopPropagation();
       const tipId = toggle.dataset.tip;
       const tip = document.getElementById(tipId);
-      if (tip) tip.classList.toggle('open');
+      if (tip) {
+        const open = tip.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+      }
       return;
     }
   });
 
-  // Handle anchor links — find target by iterating elements (not querySelector by id, which fails with duplicate ids)
+  // Handle internal anchor links across phase-scoped content.
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href^="#"]');
     if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href) return;
+
     e.preventDefault();
-    const targetId = link.getAttribute('href').slice(1);
-
-    function findById(container, id) {
-      return Array.from(container.querySelectorAll('[id]')).find(el => el.id === id);
-    }
-
-    const activePhase = document.querySelector('.phase-content.active');
-    if (activePhase) {
-      const el = findById(activePhase, targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        return;
-      }
-    }
-
-    const allPhases = document.querySelectorAll('.phase-content');
-    for (const phase of allPhases) {
-      const el = findById(phase, targetId);
-      if (el) {
-        state.currentTab = phase.dataset.phase;
-        renderTabs();
-        showTab(state.currentTab);
-        updateAllNavs();
-        setTimeout(() => {
-          const active = document.querySelector('.phase-content.active');
-          const found = findById(active, targetId);
-          if (found) found.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 50);
-        return;
-      }
-    }
+    navigateToAnchor(href.slice(1));
   });
+
+  if (window.location.hash) {
+    navigateToAnchor(window.location.hash.slice(1));
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
