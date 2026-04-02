@@ -22,9 +22,9 @@ export const state = {
     planOrganize: 'balanced'
   },
   collapsed: {
-    temperament: false,
-    development: false,
-    executiveFunction: false
+    temperament: true,
+    development: true,
+    executiveFunction: true
   }
 };
 

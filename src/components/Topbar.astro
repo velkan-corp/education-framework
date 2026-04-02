@@ -12,29 +12,32 @@ const tabEntries = Object.entries(TAB_TAGS);
 <div class="topbar">
   <div class="topbar-inner">
     <div class="logo">Education Framework</div>
-    <div class="tabs" id="tabs">
+    <div class="tabs" id="tabs" role="tablist" aria-label="Age phases">
       {phases.map((phase) => (
-        <div
+        <button
+          type="button"
           class={`tab ${phase.data.phaseId === 'framework' ? 'active' : ''}`}
           data-tab={phase.data.phaseId}
+          role="tab"
+          aria-selected={phase.data.phaseId === 'framework' ? 'true' : 'false'}
         >
           {phase.data.label}
-        </div>
+        </button>
       ))}
     </div>
-    <div class="tabs hidden" id="domain-tabs"></div>
-    <div class="tabs hidden" id="universe-tabs">
-      <div class="tab" data-universe-tab="framework">Framework</div>
-      <div class="tab active" data-universe-tab="all">All</div>
+    <div class="tabs hidden" id="domain-tabs" role="tablist" aria-label="Domains"></div>
+    <div class="tabs hidden" id="universe-tabs" role="tablist" aria-label="Universes">
+      <button type="button" class="tab" data-universe-tab="framework" role="tab" aria-selected="false">Framework</button>
+      <button type="button" class="tab active" data-universe-tab="all" role="tab" aria-selected="true">All</button>
       {tabEntries.map(([key, label]) => (
-        <div class="tab" data-universe-tab={key}>{label}</div>
+        <button type="button" class="tab" data-universe-tab={key} role="tab" aria-selected="false">{label}</button>
       ))}
     </div>
-    <div id="view-toggle">
+    <div id="view-toggle" role="group" aria-label="Journey view">
       <span class="view-label">Journey:</span>
-      <div class="view-btn active" data-view="age">Age</div>
-      <div class="view-btn" data-view="domain">Domain</div>
-      <div class="view-btn" data-view="universe">Universe</div>
+      <button type="button" class="view-btn active" data-view="age" aria-pressed="true">Age</button>
+      <button type="button" class="view-btn" data-view="domain" aria-pressed="false">Domain</button>
+      <button type="button" class="view-btn" data-view="universe" aria-pressed="false">Universe</button>
       <select id="view-select" class="view-select">
         <option value="age" selected>Age</option>
         <option value="domain">Domain</option>
@@ -42,7 +45,9 @@ const tabEntries = Object.entries(TAB_TAGS);
       </select>
     </div>
     <div id="search-wrap">
-      <svg id="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <button id="search-icon" type="button" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
       <input id="search-input" type="text" placeholder="Search… (⌘K)" data-mobile-placeholder="Search…" autocomplete="off">
       <div id="search-results" class="hidden"></div>
     </div>

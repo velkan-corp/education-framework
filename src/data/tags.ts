@@ -7,7 +7,7 @@ export const TAB_TAGS: Record<string, string> = {
   maker: 'Maker',
 };
 
-export const FILTER_TAGS: Record<string, string> = {
+export const EXTRA_TAG_LABELS: Record<string, string> = {
   english: 'English',
   spanish: 'Spanish',
   french: 'French',
@@ -18,4 +18,4 @@ export const FILTER_TAGS: Record<string, string> = {
   stem: 'STEM',
 };
 
-export const ALL_TAG_LABELS: Record<string, string> = { ...TAB_TAGS, ...FILTER_TAGS };
+export const ALL_TAG_LABELS: Record<string, string> = { ...TAB_TAGS, ...EXTRA_TAG_LABELS };

@@ -154,6 +154,19 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+.phase-universe-item { margin-bottom: var(--sp-3); }
+.phase-universe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: calc(var(--sp-2) * -0.5);
+}
+.phase-universe-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: calc(var(--sp-2) * -0.5);
+}
+
 .warn-box {
   background: var(--warn-subtle);
   border: 1px solid var(--warn-border);

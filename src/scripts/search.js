@@ -49,6 +49,7 @@ export function initSearch() {
     if (!e.target.closest('#float-menu') && !e.target.closest('#fab-menu')) {
       const menu = document.getElementById('float-menu');
       if (menu) menu.classList.remove('open');
+      document.getElementById('fab-menu')?.setAttribute('aria-expanded', 'false');
     }
   });
 
@@ -93,10 +94,10 @@ function runSearch(query) {
 
   results.innerHTML = matches.map(m => {
     const highlighted = m.snippet.replace(re, '<span class="sr-highlight">$&</span>');
-    return `<div class="sr-item" data-tab="${m.tabId}" data-query="${query.replace(/"/g,'&quot;')}">
+    return `<button type="button" class="sr-item" data-tab="${m.tabId}" data-query="${query.replace(/"/g,'&quot;')}">
       <div class="sr-item-label">${m.tabLabel}</div>
       <div class="sr-item-snippet">\u2026${highlighted}\u2026</div>
-    </div>`;
+    </button>`;
   }).join('');
 
   results.classList.remove('hidden');
@@ -178,10 +179,10 @@ function runMobileSearch(query) {
   }
 
   results.innerHTML = matches.map(m =>
-    `<div class="sr-item" data-tab="${m.tabId}">
+    `<button type="button" class="sr-item" data-tab="${m.tabId}">
       <div class="sr-item-label">${m.tabLabel}</div>
       <div class="sr-item-snippet">\u2026${m.snippet.replace(createSearchRegex(query), '<strong>$&</strong>')}\u2026</div>
-    </div>`
+    </button>`
   ).join('');
 
   results.querySelectorAll('.sr-item').forEach(item => {

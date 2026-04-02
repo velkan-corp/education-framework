@@ -4,7 +4,11 @@ import { applyProfile, getHeadingText, renderTabs, showTab, updateAllNavs } from
 let currentDomain = null;
 
 function activateFrameworkTab(domainTabsEl) {
-  domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === 'framework'));
+  domainTabsEl.querySelectorAll('.tab').forEach(t => {
+    const active = t.dataset.domain === 'framework';
+    t.classList.toggle('active', active);
+    t.setAttribute('aria-selected', String(active));
+  });
   currentDomain = 'framework';
   document.getElementById('domain-view').classList.add('hidden');
   document.querySelector('.phase-content[data-phase="framework"]').classList.add('active');
@@ -15,7 +19,11 @@ function activateFrameworkTab(domainTabsEl) {
 function activateDomainTab(domainTabsEl, domainMap, domainId) {
   document.querySelector('.phase-content[data-phase="framework"]')?.classList.remove('active');
   document.getElementById('domain-view').classList.remove('hidden');
-  domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === domainId));
+  domainTabsEl.querySelectorAll('.tab').forEach(t => {
+    const active = t.dataset.domain === domainId;
+    t.classList.toggle('active', active);
+    t.setAttribute('aria-selected', String(active));
+  });
   currentDomain = domainId;
   renderDomainTimeline(domainMap, domainId);
   applyProfile();
@@ -63,18 +71,24 @@ function buildDomainMap() {
 }
 
 function populateDomainTabs(domainTabsEl, domainMap) {
-  const frameworkTab = document.createElement('div');
+  const frameworkTab = document.createElement('button');
+  frameworkTab.type = 'button';
   frameworkTab.className = 'tab';
   frameworkTab.dataset.domain = 'framework';
+  frameworkTab.setAttribute('role', 'tab');
+  frameworkTab.setAttribute('aria-selected', 'false');
   frameworkTab.textContent = 'Framework';
   domainTabsEl.appendChild(frameworkTab);
 
   const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
   const firstDomainId = sorted[0]?.[0] || null;
   sorted.forEach(([id, data], i) => {
-    const tab = document.createElement('div');
+    const tab = document.createElement('button');
+    tab.type = 'button';
     tab.className = 'tab' + (i === 0 ? ' active' : '');
     tab.dataset.domain = id;
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
     tab.innerHTML = data.label.replace(' & ', '<br>& ');
     domainTabsEl.appendChild(tab);
   });
@@ -99,7 +113,11 @@ function setupDomainHandlers(domainTabsEl, domainMap, firstDomainId) {
   function switchView(view) {
     if (view === state.currentView) return;
     state.currentView = view;
-    document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+    document.querySelectorAll('.view-btn').forEach(b => {
+      const active = b.dataset.view === view;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', String(active));
+    });
     const viewSelect = document.getElementById('view-select');
     if (viewSelect) viewSelect.value = view;
 
@@ -122,17 +140,26 @@ function setupDomainHandlers(domainTabsEl, domainMap, firstDomainId) {
       domainTabsEl.classList.remove('hidden');
       domainView.classList.remove('hidden');
       currentDomain = firstDomainId;
-      domainTabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.domain === firstDomainId));
+      domainTabsEl.querySelectorAll('.tab').forEach(t => {
+        const active = t.dataset.domain === firstDomainId;
+        t.classList.toggle('active', active);
+        t.setAttribute('aria-selected', String(active));
+      });
       renderDomainTimeline(domainMap, currentDomain);
       applyProfile();
       updateAllNavs();
     } else if (view === 'universe') {
       if (universeTabs) universeTabs.classList.remove('hidden');
       if (universeView) universeView.classList.remove('hidden');
+      document.querySelectorAll('.universe-filters').forEach((filterRow) => filterRow.classList.remove('hidden'));
       if (legend) legend.classList.remove('hidden');
       // Reset to "All" tab
       if (universeTabs) {
-        universeTabs.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.universeTab === 'all'));
+        universeTabs.querySelectorAll('.tab').forEach(t => {
+          const active = t.dataset.universeTab === 'all';
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', String(active));
+        });
       }
       // Show grid, hide detail
       const grid = document.getElementById('universe-grid');

@@ -1,11 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
-import { TAB_TAGS, FILTER_TAGS, ALL_TAG_LABELS } from '../data/tags';
+import { ALL_TAG_LABELS } from '../data/tags';
+import {
+  ENGAGEMENT_MODES,
+  ENGAGEMENT_MODE_LABELS,
+  INTENSITY_LABELS,
+  LANGUAGE_LABELS,
+  MODEL_LABELS,
+  MODEL_IDS,
+  RISK_LABELS,
+  SOCIAL_VALUE_LABELS,
+  TARGET_IDS,
+  TARGET_LABELS,
+  UNIVERSE_KINDS,
+  UNIVERSE_KIND_LABELS,
+  UNIVERSE_LANGUAGES,
+} from '../data/universeTaxonomy';
 
 const universeEntries = await getCollection('universes');
 const universes = universeEntries.map(u => ({ id: u.id, ...u.data }));
-
-const filterEntries = Object.entries(FILTER_TAGS);
+const universeById = new Map(universes.map((u) => [u.id, u]));
 
 // All phase columns for the matrix dots
 const phaseColumns = [
@@ -16,42 +30,114 @@ const phaseColumns = [
   { id: 'age-17-18', label: '17–18' },
 ];
 
+const usedLanguages = UNIVERSE_LANGUAGES.filter((language) =>
+  universes.some((universe) => (universe.languages ?? []).includes(language))
+);
+const usedKinds = UNIVERSE_KINDS.filter((kind) =>
+  universes.some((universe) => universe.kind === kind)
+);
+const usedTargets = TARGET_IDS.filter((target) =>
+  universes.some((universe) => (universe.targets ?? []).includes(target))
+);
+const usedModels = MODEL_IDS.filter((model) =>
+  universes.some((universe) => (universe.models ?? []).includes(model))
+);
+const usedModes = ENGAGEMENT_MODES.filter((mode) =>
+  universes.some((universe) => universe.phases.some((phase) => phase.mode === mode))
+);
+
 // Sort universes: most phases first, then alphabetically
 const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length || a.label.localeCompare(b.label));
 ---
 
 <div id="universe-view" class="hidden">
-  <!-- Attribute filters -->
-  <div class="universe-filters" id="attr-filters">
-    <span class="filter-label">Attribute:</span>
-    <button class="filter-pill active" data-filter="all">All</button>
-    {filterEntries.map(([key, label]) => (
-      <button class="filter-pill" data-filter={key}>{label}</button>
-    ))}
-  </div>
+  <div class="universe-filter-stack">
+    <div class="universe-filters" id="age-filters">
+      <span class="filter-label">Age:</span>
+      <button type="button" class="filter-pill active" data-age="all">All</button>
+      {phaseColumns.map((col) => (
+        <button type="button" class="filter-pill" data-age={col.id}>{col.label}</button>
+      ))}
+    </div>
 
-  <!-- Age filter -->
-  <div class="universe-filters" id="age-filters">
-    <span class="filter-label">Age:</span>
-    <button class="filter-pill active" data-age="all">All</button>
-    {phaseColumns.map(col => (
-      <button class="filter-pill" data-age={col.id}>{col.label}</button>
-    ))}
-  </div>
+    <div class="universe-filters" id="tier-filters">
+      <span class="filter-label">Tier:</span>
+      <button type="button" class="filter-pill active" data-tier="all">All</button>
+      <button type="button" class="filter-pill tier-pill" data-tier="foundational">
+        <span class="phase-dot tier-foundational" />
+        <span>Foundational</span>
+      </button>
+      <button type="button" class="filter-pill tier-pill" data-tier="core">
+        <span class="phase-dot tier-core" />
+        <span>Core</span>
+      </button>
+      <button type="button" class="filter-pill tier-pill" data-tier="recommended">
+        <span class="phase-dot tier-recommended" />
+        <span>Recommended</span>
+      </button>
+    </div>
 
-  <!-- Legend -->
-  <div class="universe-legend">
-    <span class="phase-dot tier-foundational" /> <span class="universe-legend-tier">Foundational</span>
-    <span class="phase-dot tier-core" /> <span class="universe-legend-tier">Core</span>
-    <span class="phase-dot tier-recommended" /> <span class="universe-legend-tier">Recommended</span>
-    <span class="phase-dot empty" /> <span class="universe-legend-tier">Not present</span>
+    <div class="universe-filters" id="language-filters">
+      <span class="filter-label">Language:</span>
+      <button type="button" class="filter-pill active" data-language="all">All</button>
+      {usedLanguages.map((language) => (
+        <button type="button" class="filter-pill" data-language={language}>{LANGUAGE_LABELS[language]}</button>
+      ))}
+    </div>
+
+    <div class="universe-filters" id="kind-filters">
+      <span class="filter-label">Kind:</span>
+      <button type="button" class="filter-pill active" data-kind="all">All</button>
+      {usedKinds.map((kind) => (
+        <button type="button" class="filter-pill" data-kind={kind}>{UNIVERSE_KIND_LABELS[kind]}</button>
+      ))}
+    </div>
+
+    <div class="universe-filters" id="target-filters">
+      <span class="filter-label">Targets:</span>
+      <button type="button" class="filter-pill active" data-target="all">All</button>
+      {usedTargets.map((target) => (
+        <button type="button" class="filter-pill" data-target={target}>{TARGET_LABELS[target]}</button>
+      ))}
+    </div>
+
+    <div class="universe-filters" id="model-filters">
+      <span class="filter-label">Models:</span>
+      <button type="button" class="filter-pill active" data-model="all">All</button>
+      {usedModels.map((model) => (
+        <button type="button" class="filter-pill" data-model={model}>{MODEL_LABELS[model]}</button>
+      ))}
+    </div>
+
+    <div class="universe-filters" id="mode-filters">
+      <span class="filter-label">Phase Mode:</span>
+      <button type="button" class="filter-pill active" data-mode="all">All</button>
+      {usedModes.map((mode) => (
+        <button type="button" class="filter-pill" data-mode={mode}>{ENGAGEMENT_MODE_LABELS[mode]}</button>
+      ))}
+    </div>
   </div>
 
   <!-- Universe grid -->
   <div class="universe-grid" id="universe-grid">
     {sorted.map(u => (
-      <div class="universe-card" data-universe={u.id} data-tags={u.tags.join(',')} data-phases={u.phases.map(p => p.phaseId).join(',')}>
+      <button
+        type="button"
+        class="universe-card"
+        data-universe={u.id}
+        data-tags={u.tags.join(',')}
+        data-phases={u.phases.map((p) => p.phaseId).join(',')}
+        data-languages={(u.languages ?? []).join(',')}
+        data-kind={u.kind ?? ''}
+        data-targets={(u.targets ?? []).join(',')}
+        data-models={(u.models ?? []).join(',')}
+        data-modes={Array.from(new Set(u.phases.map((p) => p.mode).filter(Boolean))).join(',')}
+        data-tiers={Array.from(new Set(u.phases.map((p) => p.tier))).join(',')}
+        data-phase-modes={u.phases.filter((p) => p.mode).map((p) => `${p.phaseId}:${p.mode}`).join(',')}
+        data-phase-tiers={u.phases.map((p) => `${p.phaseId}:${p.tier}`).join(',')}
+      >
         <div class="universe-card-title">{u.label}</div>
+        {u.summary && <div class="universe-card-summary">{u.summary}</div>}
         <div class="universe-card-phases">
           {phaseColumns.map(col => {
             const phase = u.phases.find(p => p.phaseId === col.id);
@@ -68,20 +154,75 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
             <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
           ))}
         </div>
-      </div>
+      </button>
     ))}
   </div>
 
   <!-- Universe detail (timeline) — pre-rendered for each universe -->
   <div id="universe-detail" class="hidden">
-    <button class="universe-back" id="universe-back">&larr; All universes</button>
+    <button type="button" class="universe-back" id="universe-back">&larr; All universes</button>
     {sorted.map(u => (
       <div class="universe-timeline hidden" data-universe-detail={u.id}>
         <h1 class="universe-detail-title">{u.label}</h1>
+        {u.summary && <p class="universe-detail-summary">{u.summary}</p>}
+        {u.whyItBelongs && <p class="universe-note"><strong>Why it belongs.</strong> {u.whyItBelongs}</p>}
         <div class="universe-detail-tags">
           {u.tags.map(t => (
             <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
           ))}
+        </div>
+        <div class="universe-meta-grid">
+          {u.kind && (
+            <div class="universe-meta-block">
+              <div class="universe-meta-label">Kind</div>
+              <div class="universe-meta-value">{UNIVERSE_KIND_LABELS[u.kind]}</div>
+            </div>
+          )}
+          {(u.targets ?? []).length > 0 && (
+            <div class="universe-meta-block">
+              <div class="universe-meta-label">Targets</div>
+              <div class="universe-meta-chips">
+                {u.targets.map((target) => (
+                  <span class="universe-tag">{TARGET_LABELS[target]}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          {(u.models ?? []).length > 0 && (
+            <div class="universe-meta-block">
+              <div class="universe-meta-label">Models</div>
+              <div class="universe-meta-chips">
+                {u.models.map((model) => (
+                  <span class="universe-tag">{MODEL_LABELS[model]}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          {(u.intensity || u.socialValue || (u.riskFlags ?? []).length > 0 || (u.languages ?? []).length > 0) && (
+            <div class="universe-meta-block">
+              <div class="universe-meta-label">Profile</div>
+              <div class="universe-meta-chips">
+                {u.intensity && <span class="universe-tag">{INTENSITY_LABELS[u.intensity]}</span>}
+                {u.socialValue && <span class="universe-tag">{SOCIAL_VALUE_LABELS[u.socialValue]}</span>}
+                {(u.languages ?? []).map((language) => (
+                  <span class="universe-tag">{LANGUAGE_LABELS[language] || language}</span>
+                ))}
+                {(u.riskFlags ?? []).map((risk) => (
+                  <span class="universe-tag">{RISK_LABELS[risk]}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          {(u.substitutes ?? []).length > 0 && (
+            <div class="universe-meta-block">
+              <div class="universe-meta-label">Substitutes</div>
+              <div class="universe-meta-chips">
+                {u.substitutes.map((substituteId) => (
+                  <span class="universe-tag">{universeById.get(substituteId)?.label ?? substituteId}</span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
         {u.phases.map(phase => (
           <div class="timeline-phase">
@@ -94,6 +235,25 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
             <div class="timeline-content">
               <p><strong>{phase.title}</strong></p>
               <p>{phase.description}</p>
+              {(phase.mode || phase.goals?.length || phase.projects?.length) && (
+                <div class="universe-timeline-meta">
+                  {phase.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[phase.mode]}</span>}
+                </div>
+              )}
+              {phase.goals && phase.goals.length > 0 && (
+                <ul class="timeline-list">
+                  {phase.goals.map((goal) => <li>{goal}</li>)}
+                </ul>
+              )}
+              {phase.cautions && <p class="timeline-caution"><strong>Caution.</strong> {phase.cautions}</p>}
+              {phase.projects && phase.projects.length > 0 && (
+                <>
+                  <p><strong>Make:</strong></p>
+                  <ul class="timeline-list">
+                    {phase.projects.map((project) => <li>{project}</li>)}
+                  </ul>
+                </>
+              )}
             </div>
           </div>
         ))}

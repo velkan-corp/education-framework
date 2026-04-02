@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { ENGAGEMENT_MODE_LABELS, MODEL_LABELS, TARGET_LABELS } from '../data/universeTaxonomy';
 
 interface Props {
   phaseId: string;
@@ -10,12 +11,31 @@ const allUniverses = await getCollection('universes');
 
 // Collect entries for this phase, grouped by tier
 const tierOrder: Array<'foundational' | 'core' | 'recommended'> = ['foundational', 'core', 'recommended'];
-const entries: Array<{ id: string; label: string; tags: string[]; tier: string; title: string; description: string }> = [];
+const entries: Array<{
+  id: string;
+  label: string;
+  tags: string[];
+  tier: string;
+  title: string;
+  description: string;
+  mode?: keyof typeof ENGAGEMENT_MODE_LABELS;
+  goals?: string[];
+  cautions?: string;
+  targets?: Array<keyof typeof TARGET_LABELS>;
+  models?: Array<keyof typeof MODEL_LABELS>;
+}> = [];
 
 for (const u of allUniverses) {
   for (const p of u.data.phases) {
     if (p.phaseId === phaseId) {
-      entries.push({ ...p, id: u.id, label: u.data.label, tags: u.data.tags });
+      entries.push({
+        ...p,
+        id: u.id,
+        label: u.data.label,
+        tags: u.data.tags,
+        targets: u.data.targets,
+        models: u.data.models,
+      });
     }
   }
 }
@@ -37,7 +57,26 @@ const grouped = tierOrder
       <>
         <h3>{group.label}</h3>
         {group.items.map(item => (
-          <p id={`universe-${item.id}`} data-universe={item.id}><strong>{item.title}</strong>. {item.description}</p>
+          <div class="phase-universe-item" id={`universe-${item.id}`} data-universe={item.id}>
+            <p><strong>{item.title}</strong>. {item.description}</p>
+            {(item.mode || item.targets?.length || item.models?.length || item.goals?.length) && (
+              <p class="phase-universe-meta">
+                {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
+                {(item.targets ?? []).slice(0, 2).map((target) => (
+                  <span class="universe-tag">{TARGET_LABELS[target]}</span>
+                ))}
+                {(item.models ?? []).slice(0, 2).map((model) => (
+                  <span class="universe-tag">{MODEL_LABELS[model]}</span>
+                ))}
+              </p>
+            )}
+            {item.goals && item.goals.length > 0 && (
+              <p class="phase-universe-note"><strong>Focus.</strong> {item.goals.join(' • ')}</p>
+            )}
+            {item.cautions && (
+              <p class="phase-universe-note"><strong>Caution.</strong> {item.cautions}</p>
+            )}
+          </div>
         ))}
       </>
     ))}
