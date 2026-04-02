@@ -106,12 +106,25 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 }
 .t-adjust.t-introvert { background: var(--intro-bg); border-color: var(--intro); }
 .t-adjust.t-extrovert { background: var(--ext-bg); border-color: var(--ext); }
+.t-adjust.t-high-react { background: var(--high-react-bg); border-color: var(--high-react); }
+.t-adjust.t-low-react { background: var(--low-react-bg); border-color: var(--low-react); }
+.t-adjust.t-ec-high { background: var(--ec-high-bg); border-color: var(--ec-high); }
+.t-adjust.t-ec-low { background: var(--ec-low-bg); border-color: var(--ec-low); }
 .t-adjust.t-verbal { background: var(--verbal-bg); border-color: var(--verbal); }
 .t-adjust.t-spatial { background: var(--spatial-bg); border-color: var(--spatial); }
 .t-adjust.t-high-sens { background: var(--hisens-bg); border-color: var(--hisens); }
 .t-adjust.t-low-sens { background: var(--losens-bg); border-color: var(--losens); }
 .t-adjust.t-depth { background: var(--depth-bg); border-color: var(--depth); }
 .t-adjust.t-breadth { background: var(--breadth-bg); border-color: var(--breadth); }
+/* Development (ASQ) & Executive Function (BRIEF-P) adjustments */
+.t-adjust.t-comm-adv, .t-adjust.t-ps-adv, .t-adjust.t-gm-adv, .t-adjust.t-fm-adv, .t-adjust.t-social-adv,
+.t-adjust.t-inhib-adv, .t-adjust.t-shift-adv, .t-adjust.t-emoctl-adv, .t-adjust.t-wm-adv, .t-adjust.t-plan-adv {
+  background: var(--accent2-subtle); border-color: var(--accent2);
+}
+.t-adjust.t-comm-dev, .t-adjust.t-ps-dev, .t-adjust.t-gm-dev, .t-adjust.t-fm-dev, .t-adjust.t-social-dev,
+.t-adjust.t-inhib-dev, .t-adjust.t-shift-dev, .t-adjust.t-emoctl-dev, .t-adjust.t-wm-dev, .t-adjust.t-plan-dev {
+  background: var(--accent4-light); border-color: var(--accent4);
+}
 .t-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; opacity: .7; margin-bottom: 4px; }
 
 /* CARDS */

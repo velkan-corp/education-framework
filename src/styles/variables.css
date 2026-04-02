@@ -28,6 +28,10 @@
   --losens: #3a6a90;   /* Steel — low sensitivity */
   --depth: #2a7a7a;    /* Teal — depth-seeking */
   --breadth: #a04870;  /* Rose — breadth-seeking */
+  --high-react: #c45840; /* Brick — high reactivity */
+  --low-react: #4a7a90;  /* Cool steel — low reactivity */
+  --ec-high: #3a7a68;    /* Deep sage — high effortful control */
+  --ec-low: #c08a48;     /* Honey amber — low effortful control */
 
   /* Typography */
   --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
@@ -68,4 +72,8 @@
   --losens-bg: color-mix(in srgb, var(--losens) 8%, transparent);
   --depth-bg: color-mix(in srgb, var(--depth) 8%, transparent);
   --breadth-bg: color-mix(in srgb, var(--breadth) 8%, transparent);
+  --high-react-bg: color-mix(in srgb, var(--high-react) 8%, transparent);
+  --low-react-bg: color-mix(in srgb, var(--low-react) 8%, transparent);
+  --ec-high-bg: color-mix(in srgb, var(--ec-high) 8%, transparent);
+  --ec-low-bg: color-mix(in srgb, var(--ec-low) 8%, transparent);
 }
