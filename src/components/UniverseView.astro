@@ -77,44 +77,49 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
       </button>
     </div>
 
-    <div class="universe-filters" id="language-filters">
-      <span class="filter-label">Language:</span>
-      <button type="button" class="filter-pill active" data-language="all">All</button>
-      {usedLanguages.map((language) => (
-        <button type="button" class="filter-pill" data-language={language}>{LANGUAGE_LABELS[language]}</button>
-      ))}
-    </div>
+    <button type="button" class="filter-section-toggle collapsed" id="advanced-filters-toggle" aria-expanded="false">
+      <span class="section-chevron">▼</span> More Filters
+    </button>
+    <div class="filter-section-body collapsed" id="advanced-filters-body">
+      <div class="universe-filters" id="language-filters">
+        <span class="filter-label">Language:</span>
+        <button type="button" class="filter-pill active" data-language="all">All</button>
+        {usedLanguages.map((language) => (
+          <button type="button" class="filter-pill" data-language={language}>{LANGUAGE_LABELS[language]}</button>
+        ))}
+      </div>
 
-    <div class="universe-filters" id="kind-filters">
-      <span class="filter-label">Kind:</span>
-      <button type="button" class="filter-pill active" data-kind="all">All</button>
-      {usedKinds.map((kind) => (
-        <button type="button" class="filter-pill" data-kind={kind}>{UNIVERSE_KIND_LABELS[kind]}</button>
-      ))}
-    </div>
+      <div class="universe-filters" id="kind-filters">
+        <span class="filter-label">Kind:</span>
+        <button type="button" class="filter-pill active" data-kind="all">All</button>
+        {usedKinds.map((kind) => (
+          <button type="button" class="filter-pill" data-kind={kind}>{UNIVERSE_KIND_LABELS[kind]}</button>
+        ))}
+      </div>
 
-    <div class="universe-filters" id="target-filters">
-      <span class="filter-label">Targets:</span>
-      <button type="button" class="filter-pill active" data-target="all">All</button>
-      {usedTargets.map((target) => (
-        <button type="button" class="filter-pill" data-target={target}>{TARGET_LABELS[target]}</button>
-      ))}
-    </div>
+      <div class="universe-filters" id="target-filters">
+        <span class="filter-label">Targets:</span>
+        <button type="button" class="filter-pill active" data-target="all">All</button>
+        {usedTargets.map((target) => (
+          <button type="button" class="filter-pill" data-target={target}>{TARGET_LABELS[target]}</button>
+        ))}
+      </div>
 
-    <div class="universe-filters" id="model-filters">
-      <span class="filter-label">Models:</span>
-      <button type="button" class="filter-pill active" data-model="all">All</button>
-      {usedModels.map((model) => (
-        <button type="button" class="filter-pill" data-model={model}>{MODEL_LABELS[model]}</button>
-      ))}
-    </div>
+      <div class="universe-filters" id="model-filters">
+        <span class="filter-label">Models:</span>
+        <button type="button" class="filter-pill active" data-model="all">All</button>
+        {usedModels.map((model) => (
+          <button type="button" class="filter-pill" data-model={model}>{MODEL_LABELS[model]}</button>
+        ))}
+      </div>
 
-    <div class="universe-filters" id="mode-filters">
-      <span class="filter-label">Phase Mode:</span>
-      <button type="button" class="filter-pill active" data-mode="all">All</button>
-      {usedModes.map((mode) => (
-        <button type="button" class="filter-pill" data-mode={mode}>{ENGAGEMENT_MODE_LABELS[mode]}</button>
-      ))}
+      <div class="universe-filters" id="mode-filters">
+        <span class="filter-label">Phase Mode:</span>
+        <button type="button" class="filter-pill active" data-mode="all">All</button>
+        {usedModes.map((mode) => (
+          <button type="button" class="filter-pill" data-mode={mode}>{ENGAGEMENT_MODE_LABELS[mode]}</button>
+        ))}
+      </div>
     </div>
   </div>
 

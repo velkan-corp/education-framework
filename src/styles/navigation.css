@@ -120,6 +120,46 @@
   margin-bottom: var(--sp-3);
 }
 
+.filter-section-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.15s ease-out;
+}
+.filter-section-toggle:hover { color: var(--text); }
+.filter-section-toggle .section-chevron {
+  font-size: 10px;
+  transition: transform 0.2s ease-out;
+}
+.filter-section-toggle.collapsed .section-chevron {
+  transform: rotate(-90deg);
+}
+
+.filter-section-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  overflow: hidden;
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.filter-section-body.collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* UNIVERSE VIEW */
 .universe-filters {
   display: flex; flex-wrap: wrap; gap: 4px; align-items: center;

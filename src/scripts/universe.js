@@ -2,13 +2,15 @@ import { state } from './state.js';
 import { updateAllNavs } from './navigation.js';
 
 let currentTabTag = 'all';
+// Single-select filters (primary)
 let currentAge = 'all';
 let currentTier = 'all';
-let currentLanguage = 'all';
-let currentKind = 'all';
-let currentTarget = 'all';
-let currentModel = 'all';
-let currentMode = 'all';
+// Multi-select filters (advanced) — empty Set means "all"
+let selectedLanguages = new Set();
+let selectedKinds = new Set();
+let selectedTargets = new Set();
+let selectedModels = new Set();
+let selectedModes = new Set();
 
 function splitCsv(value) {
   if (!value) return [];
@@ -27,6 +29,47 @@ function bindSingleSelectFilter(containerId, datasetKey, onChange) {
       applyFilters();
     });
   });
+}
+
+function bindMultiSelectFilter(containerId, datasetKey, selectionSet) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const allPill = container.querySelector(`.filter-pill[data-${datasetKey}="all"]`);
+  const valuePills = container.querySelectorAll(`.filter-pill:not([data-${datasetKey}="all"])`);
+
+  function syncAllPill() {
+    if (allPill) allPill.classList.toggle('active', selectionSet.size === 0);
+  }
+
+  if (allPill) {
+    allPill.addEventListener('click', () => {
+      selectionSet.clear();
+      valuePills.forEach((p) => p.classList.remove('active'));
+      syncAllPill();
+      applyFilters();
+    });
+  }
+
+  valuePills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      const val = pill.dataset[datasetKey];
+      if (selectionSet.has(val)) {
+        selectionSet.delete(val);
+        pill.classList.remove('active');
+      } else {
+        selectionSet.add(val);
+        pill.classList.add('active');
+      }
+      syncAllPill();
+      applyFilters();
+    });
+  });
+}
+
+function setMatchesMulti(cardValues, selectionSet) {
+  if (selectionSet.size === 0) return true;
+  return cardValues.some((v) => selectionSet.has(v));
 }
 
 export function initUniverseView() {
@@ -58,27 +101,31 @@ export function initUniverseView() {
     }
   });
 
+  // Primary filters — single-select
   bindSingleSelectFilter('age-filters', 'age', (value) => {
     currentAge = value;
   });
   bindSingleSelectFilter('tier-filters', 'tier', (value) => {
     currentTier = value;
   });
-  bindSingleSelectFilter('language-filters', 'language', (value) => {
-    currentLanguage = value;
-  });
-  bindSingleSelectFilter('kind-filters', 'kind', (value) => {
-    currentKind = value;
-  });
-  bindSingleSelectFilter('target-filters', 'target', (value) => {
-    currentTarget = value;
-  });
-  bindSingleSelectFilter('model-filters', 'model', (value) => {
-    currentModel = value;
-  });
-  bindSingleSelectFilter('mode-filters', 'mode', (value) => {
-    currentMode = value;
-  });
+
+  // Advanced filters — multi-select (OR within, AND across)
+  bindMultiSelectFilter('language-filters', 'language', selectedLanguages);
+  bindMultiSelectFilter('kind-filters', 'kind', selectedKinds);
+  bindMultiSelectFilter('target-filters', 'target', selectedTargets);
+  bindMultiSelectFilter('model-filters', 'model', selectedModels);
+  bindMultiSelectFilter('mode-filters', 'mode', selectedModes);
+
+  // Collapsible advanced filters
+  const toggle = document.getElementById('advanced-filters-toggle');
+  const body = document.getElementById('advanced-filters-body');
+  if (toggle && body) {
+    toggle.addEventListener('click', () => {
+      const isCollapsed = body.classList.toggle('collapsed');
+      toggle.classList.toggle('collapsed', isCollapsed);
+      toggle.setAttribute('aria-expanded', String(!isCollapsed));
+    });
+  }
 
   // Card clicks → show detail
   grid.addEventListener('click', (e) => {
@@ -107,20 +154,24 @@ function applyFilters() {
     const tiers = splitCsv(card.dataset.tiers);
     const phaseModes = splitCsv(card.dataset.phaseModes);
     const phaseTiers = splitCsv(card.dataset.phaseTiers);
+
     const matchesTab = currentTabTag === 'all' || tags.includes(currentTabTag);
     const matchesAge = currentAge === 'all' || phases.includes(currentAge);
     const matchesTier = currentTier === 'all'
       || (currentAge === 'all'
         ? tiers.includes(currentTier)
         : phaseTiers.includes(`${currentAge}:${currentTier}`));
-    const matchesLanguage = currentLanguage === 'all' || languages.includes(currentLanguage);
-    const matchesKind = currentKind === 'all' || card.dataset.kind === currentKind;
-    const matchesTarget = currentTarget === 'all' || targets.includes(currentTarget);
-    const matchesModel = currentModel === 'all' || models.includes(currentModel);
-    const matchesMode = currentMode === 'all'
+    const matchesLanguage = setMatchesMulti(languages, selectedLanguages);
+    const matchesKind = selectedKinds.size === 0 || selectedKinds.has(card.dataset.kind);
+    const matchesTarget = setMatchesMulti(targets, selectedTargets);
+    const matchesModel = setMatchesMulti(models, selectedModels);
+    const matchesMode = selectedModes.size === 0
       || (currentAge === 'all'
-        ? modes.includes(currentMode)
-        : phaseModes.includes(`${currentAge}:${currentMode}`));
+        ? modes.some((m) => selectedModes.has(m))
+        : phaseModes.some((pm) => {
+            const mode = pm.split(':')[1];
+            return selectedModes.has(mode);
+          }));
 
     card.classList.toggle('hidden', !(
       matchesTab
