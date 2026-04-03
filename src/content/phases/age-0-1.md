@@ -132,8 +132,6 @@ order: 1
 <h3>Nature & Ecology</h3>
 <p>Outdoor time as default, not special occasion. Daily exposure to natural light, wind, temperature variation, natural sounds. Name what you see: trees, birds, rain, clouds. The sensory richness of outdoor environments is qualitatively different from indoor spaces — more variable, less predictable, more stimulating to developing neural systems.</p>
 
-<h3>Cognitive Development</h3>
-<p><strong>Thinking, Fast and Slow — Daniel Kahneman:</strong> Essential reading for cognitive biases and heuristics. System 1 vs. System 2 thinking. Understanding your own mental errors is foundational to better decision-making.</p>
 
 <div class="t-adjust t-ps-adv"><div class="t-label">Problem Solving: Advanced</div>If they demonstrate early curiosity about how things work — turning objects over, examining from multiple angles, systematically exploring features — provide more complex objects to inspect. Mechanical toys with moving parts, textured balls with different surfaces, objects that open and close. The investigative behaviour itself is the cognitive milestone. Praise the process: "You're looking at every side of it."</div>
 <div class="t-adjust t-ps-dev"><div class="t-label">Problem Solving: Developing</div>Simplify the environment. Fewer objects, more time with each. Draw their attention to interesting features — tap the object, turn it slowly, demonstrate one action and wait. Guided discovery: show them one property of an object, then let them find others. Patience and repetition matter more than variety at this stage.</div>
