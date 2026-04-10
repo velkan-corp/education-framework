@@ -221,6 +221,18 @@ order: 3
 <p><strong>Peer selection:</strong> One or two children who are observably ahead of them in some domain. Not to create competition — to normalize high performance as something peers do.</p>
 <p><strong>Madrid-specific:</strong> Chess clubs (Club de Ajedrez Madrid), British Council youth programs, music conservatory preparation programs, international school extracurriculars.</p>
 
+<h2 id="s-social-independence" data-tier="core"><span class="material-symbols-rounded">psychology</span>Social Independence</h2>
+
+<h3>Stories as Curriculum</h3>
+<p>"Horton Hears a Who" (Dr. Seuss) — one person was right when everyone else was wrong. "A person's a person no matter how small." "Ferdinand" (Munro Leaf) — the bull who would rather smell flowers than fight. Being different from your peers is fine. "Swimmy" (Leo Lionni) — cooperation AND individual vision. "The Emperor's New Clothes" (Hans Christian Andersen) — the child who said what was true when everyone else was pretending. These are not just stories. They are case studies in social independence, told at the right developmental level.</p>
+
+<h3>Practices</h3>
+<p><strong>Celebrate unpopular choices explicitly.</strong> When the child makes a choice different from their peers — different game, different food, different activity — name it positively: "You decided differently from everyone else. That takes courage."</p>
+<p><strong>Practice saying "no" and "I don't want to" as complete sentences.</strong> Role-play: "Your friend wants to play X but you want to play Y. What do you say?" The ability to refuse without guilt is a foundational life skill. Don't undermine it by teaching compliance as the default.</p>
+<p><strong>One visible domain of difference.</strong> The niche mastery commitment already creates this — a child who plays chess seriously at 6 or practices violin daily is already different from peers. Name it positively: "You're the kind of person who goes deep into things. That's unusual and excellent."</p>
+<p><strong>Never force social conformity for your own comfort.</strong> Do not say "just go along with it" about anything that doesn't involve safety. If the child wants to wear the unusual hat, bring the book to the party, or order something different from everyone else — let them. These are low-stakes practice runs for high-stakes independence later.</p>
+<p><strong>Comfort challenges (age 6–7).</strong> Wear an unusual hat to the park. Bring a book to a party. Order something different from everyone else at a restaurant. Share something you made, not something you bought. Low-stakes practice at being visibly different. Debrief after: "How did it feel? Did anything bad happen?"</p>
+
 <h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
 
 <h3>Coding</h3>
@@ -253,6 +265,25 @@ order: 3
 
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>This child can hold a design in mind while building. Give verbal building instructions without visual reference: "Make a tower that's five blocks wide and ten blocks tall, with a door on the left side." Multi-step coding sequences (6-8 steps in Cubetto or Scratch Jr.) are manageable. Cooking recipes from memory after one read-through become accessible. Praise holding the plan in mind across steps, not just the final result.</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Working Memory: Developing</div>Keep the instructions visible throughout the build. A picture of the target, a step-by-step guide on the table, or a parent repeating the next step as needed. Don't test memory during creative tasks — the cognitive load of building plus remembering exceeds capacity. Coding sequences should be laid out physically (Cubetto blocks on the board) so the full program is visible, not held in mind.</div>
+
+<h2 id="s-material-culture" data-tier="core"><span class="material-symbols-rounded">handyman</span>Material Culture & Craft</h2>
+
+<h3>Observe & Name</h3>
+<p><strong>Monthly field trips to see how things are made.</strong> Bakery (watch bread being shaped and baked), cobbler or shoe repair shop, tailor or seamstress, ceramics workshop, woodworking shop, blacksmith if accessible. Madrid has all of these. The goal: see that things are made by people, using materials, with skill.</p>
+<p><strong>Weekly object conversation.</strong> Pick any household object. "What is this made of? How do you think someone made it? What would happen if we broke it — could we fix it?" No lectures — questions. Follow their curiosity.</p>
+<p><strong>Cooking progression.</strong> By age 7, they cook one simple meal per week with real knives (supervised), real heat, real ingredients. Not baking kits — actual food. Scrambled eggs. Pasta with sauce. A salad with dressing they mixed. Name every ingredient's origin: "These tomatoes grew in a garden. This olive oil came from pressing olives."</p>
+<p><strong>Sewing basics.</strong> Thread a needle. Sew a button by age 7. Simple running stitch. Make a small pouch from fabric scraps. This is not gendered — it is material competence. Every human should know how to attach a button.</p>
+<p><strong>Gardening.</strong> Grow one food plant from seed to plate per year. Lettuce, tomatoes, herbs. The full cycle: soil, seed, water, sun, wait, harvest, eat. This connects food to its source directly.</p>
+<p><strong>Nature materials collection.</strong> Maintain a naturalist's collection box: rocks, shells, feathers, bark, seed pods, dried flowers. Name the materials. Compare textures, weights, colours. "This is granite — feel how heavy it is. This is pumice — feel how light. Both are stone. Why the difference?"</p>
+
+<h3>Energy & Systems Awareness</h3>
+<p>"Where does the light come from when you flip the switch?" "Where does the hot water come from?" "What makes the car go?" Not answers yet — questions. Let them wonder and speculate before explaining. The goal is curiosity about the invisible systems that surround them.</p>
+<p><strong>Visits:</strong> Construction site (machines, materials, process — watch from a safe distance). Car wash (mechanical systems visible and fascinating). Fire station (how the truck works). Post office (where letters go). These are not field trips for entertainment — they are exposures to how the world functions.</p>
+
+<h3>Philosophical Seed</h3>
+<p><strong>"Things are made by people."</strong> Every manufactured object was designed and built by a human being (or a machine that a human built). This combats the magical-thinking consumer mindset where objects simply "exist in shops." When you see a chair, someone cut the wood, shaped the legs, joined them, sanded the surface, and finished it. Name this consistently.</p>
+<p><strong>Wabi-sabi exposure.</strong> "This old wooden spoon has marks from years of cooking. That's what makes it beautiful." "This teddy bear is worn because you've loved it so much. The wear IS the value." Begin building comfort with imperfection, age, and use as forms of beauty.</p>
+<p><strong>Stories:</strong> "Ox-Cart Man" (Donald Hall) — the cycle of making, selling, and starting over. A family makes everything they need, sells the surplus, and begins again. "Extra Yarn" (Mac Barnett) — generosity and craft. "The Lorax" (Dr. Seuss) — resource extraction and consequences.</p>
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 
