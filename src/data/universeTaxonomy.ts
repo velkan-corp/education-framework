@@ -68,6 +68,7 @@ export const TARGET_IDS = [
   'empathy-kindness',
   'physical-system-mastery',
   'adaptability',
+  'creative-production',
 ] as const;
 
 export const MODEL_IDS = [
@@ -132,6 +133,7 @@ export const TARGET_LABELS: Record<(typeof TARGET_IDS)[number], string> = {
   'empathy-kindness': 'Empathy & Kindness',
   'physical-system-mastery': 'Physical System Mastery',
   adaptability: 'Adaptability',
+  'creative-production': 'Creative Production',
 };
 
 export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {

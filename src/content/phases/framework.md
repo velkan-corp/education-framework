@@ -19,12 +19,12 @@ order: 0
 </div>
 
 <div class="principle">
-<h3>2. Depth + Specialist Niches</h3>
-<p>Generalist base with specialist spikes. Being demonstrably excellent at one specific thing by 16 opens more doors than being good at ten things. This is what gets into every Ivy League school. It's what builds credibility, career optionality, and self-efficacy. Not well-roundedness — sharpness.</p>
+<h3>2. Depth Within Breadth</h3>
+<p>Generalist base with specialist spikes. Being demonstrably excellent at one specific thing by 16 opens more doors than being good at ten things. It builds credibility, career optionality, and self-efficacy. Not well-roundedness alone — sharpness within breadth. The generalist base matters too: Epstein's "Range" (2019) shows that in complex, "wicked" environments, late specialisers and broad samplers often outperform early specialists. The framework's answer: explore widely until age 8-10, then deepen. The spike emerges from breadth, not instead of it.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Spence's signaling theory (1973):</strong> In markets with information asymmetry, costly signals (years of deep investment in a domain) communicate quality more effectively than cheap signals (a list of activities).</p>
-<p><strong>Ivy League admission data:</strong> Admissions officers consistently report that "spiky" applicants — demonstrable depth in one area — are preferred over "well-rounded" applicants with many shallow activities.</p>
 <p><strong>Transfer of learning (Barnett & Ceci, 2002):</strong> Deep structural understanding transfers to new domains; surface exposure does not.</p>
+<p><strong>Counter-evidence — Epstein, "Range" (2019):</strong> In "wicked" learning environments (most of real life), generalists outperform specialists. Early specialisation in sport predicts burnout and dropout (Jayanthi et al., 2013 meta-analysis). The framework mitigates this by maintaining the generalist base (multiple content universes, diverse mental models) alongside the specialist spike.</p>
 </details>
 </div>
 
@@ -68,12 +68,13 @@ order: 0
 </div>
 
 <div class="principle">
-<h3>7. Joy Is the Signal</h3>
-<p>Not hedonistic joy — process joy. Pain + reflection = progress. The satisfaction of the struggle-learn-grow cycle IS the reward. Know your archetype, accept it, lean into it. Amor fati — love your fate, embrace difficulty as material. If the child isn't experiencing genuine joy in at least some framework activities, something is structurally wrong. Joy isn't a reward for hard work; it's a precondition for creative and social excellence.</p>
+<h3>7. Joy Is the Signal; Gratitude Is the Practice</h3>
+<p>Not hedonistic joy — process joy. The satisfaction of the struggle-learn-grow cycle IS the reward. Know your archetype, accept it, lean into it. Amor fati — love your fate, embrace difficulty as material. If the child isn't experiencing genuine joy in at least some framework activities, something is structurally wrong. Joy isn't a reward for hard work; it's a precondition for creative and social excellence. Gratitude is the complementary practice: noticing and naming what is already good. Weekly gratitude naming at dinner — "What went well this week? What are you grateful for?" — is one of the most robustly validated wellbeing interventions in positive psychology.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Fredrickson's broaden-and-build (2001):</strong> Positive emotions expand cognitive and behavioral repertoires — they literally make you more creative, more social, and more resilient.</p>
 <p><strong>Csikszentmihalyi's flow (1990):</strong> Flow states — deep engagement at the challenge-skill boundary — are the highest form of process joy. Prioritize activities that produce flow.</p>
-<p><strong>Dalio's Principles (2017):</strong> "Pain + reflection = progress." The cycle of struggling, failing, reflecting, and improving IS the source of meaning.</p>
+<p><strong>Ryan & Deci, Self-Determination Theory (2000):</strong> Intrinsic motivation — driven by autonomy, competence, and relatedness — predicts persistence and performance far better than external rewards. When the child experiences joy in the process, they are intrinsically motivated. When joy disappears, the framework is imposing, not enabling.</p>
+<p><strong>Emmons & McCullough (2003); Froh et al. (2008):</strong> Gratitude interventions produce significant wellbeing increases in both adults and adolescents. Weekly gratitude journaling is among the most robust positive psychology interventions — small effort, lasting effect.</p>
 </details>
 </div>
 
@@ -83,7 +84,7 @@ order: 0
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Curry et al. meta-analysis (2018):</strong> Kindness interventions are among the most effective wellbeing interventions ever studied.</p>
 <p><strong>Lyubomirsky (2005):</strong> People randomly assigned to perform acts of kindness showed significant wellbeing increases lasting months.</p>
-<p><strong>Taleb's barbell strategy:</strong> Extremely safe in 90% of life, concentrated asymmetric bets in 10%. Maximizes upside while preventing ruin.</p>
+<p><strong>Note on the barbell framing:</strong> The "very conservative in most things, asymmetric bets in a few" framing is borrowed from Taleb's investment philosophy as a useful analogy for life design — it is a framing device, not a finding from developmental research.</p>
 </details>
 </div>
 
@@ -99,33 +100,50 @@ order: 0
 
 <div class="principle">
 <h3>10. Windows Close — Act with Urgency</h3>
-<p>Critical periods are real and non-recoverable. Native accent narrows after 7-10. Music ear training optimal before 7. Peer influence dominates after 12. Identity crystallizes 14-16. What happens at 14-16 IS the university application. The framework is time-sensitive by design. Don't waste the early years.</p>
+<p>Some developmental windows are neurobiological and genuinely time-sensitive. Others are strategic — earlier is better but the window doesn't "close." The framework distinguishes between them:</p>
+<p><strong>Tier A — Neurobiological windows (non-recoverable):</strong> Native accent narrows after 7-10. Absolute pitch and ear training optimal before 7. Secure attachment (0-3) shapes all subsequent emotional regulation. These are use-it-or-lose-it: the neural circuitry is shaped during the window and reorganisation afterward is dramatically harder.</p>
+<p><strong>Tier B — Strategic windows (earlier-is-better, not closed):</strong> Peer influence becomes dominant after 12. Identity formation accelerates 14-16. Niche mastery benefits from early start but can begin at any age. Physical skills, reasoning, relationships — all benefit from early investment but remain fully developable throughout life.</p>
+<p>The framework is time-sensitive by design, but honestly so: don't waste the Tier A windows, and don't create false urgency about Tier B domains.</p>
 <details class="evidence"><summary>Evidence</summary>
-<p><strong>Hartshorne et al. (2018):</strong> Largest study on language acquisition (670,000 participants). Native-level grammar requires immersion before age 10.</p>
-<p><strong>Knudsen's sensitive periods (2004):</strong> Neural circuits for auditory processing are shaped during early windows. Once closed, reorganization is dramatically harder.</p>
-<p><strong>Ivy League timeline:</strong> Activities started at 16 look like resume padding. Activities sustained from 10-11 look like genuine commitment. The application starts at 14; the foundation starts at 4.</p>
+<p><strong>Hartshorne et al. (2018):</strong> Largest study on language acquisition (670,000 participants). Native-level grammar requires immersion before age 10. The window narrows gradually; it does not slam shut.</p>
+<p><strong>Knudsen's sensitive periods (2004):</strong> Neural circuits for auditory processing are shaped during early windows. Once closed, reorganisation is dramatically harder. This is Tier A: neurobiological, not strategic.</p>
+<p><strong>Erikson's psychosocial development (1968):</strong> Identity formation peaks in adolescence (12-18) but is not a closing window — identity continues to develop throughout adulthood. This is Tier B: strategically important, not neurobiologically time-limited.</p>
 </details>
 </div>
 
-<h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>The Ten Targets</h2>
-<p>Who the child becomes, not what they know. All ten are FOUNDATIONAL.</p>
+<h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>The Eleven Targets</h2>
+<p>Who the child becomes, not what they know. All eleven are FOUNDATIONAL. Validated against CASEL, VIA Character Strengths, WHO Life Skills, Self-Determination Theory, Positive Youth Development (5 Cs), OECD SSES, and 21st Century Skills frameworks. Each target maps to at least one established construct; together they extend beyond any single framework.</p>
 <table>
 <tr><th>#</th><th>Target</th><th>What It Is</th></tr>
-<tr><td>1</td><td>Resilient Self-Efficacy</td><td>"I can figure this out, even when it's hard and takes time." Effort produces results, sustained through plateaus.</td></tr>
-<tr><td>2</td><td>Agency</td><td>"I choose, and I own the consequences." Not entitlement — ownership.</td></tr>
-<tr><td>3</td><td>Self-Awareness</td><td>Know your patterns, biases, cognitive style, failure modes, energy cycles. The operating system.</td></tr>
+<tr><td>1</td><td>Resilient Self-Efficacy</td><td>"I can figure this out, even when it's hard and takes time." Effort produces results, sustained through plateaus. Fuses Bandura's self-efficacy, Dweck's growth mindset, and Duckworth's perseverance of effort.</td></tr>
+<tr><td>2</td><td>Agency & Ethical Reasoning</td><td>"I choose well, and I own the consequences." Not entitlement — ownership with ethical responsibility. Decisions are evaluated for their impact on others, not just their outcome for self.</td></tr>
+<tr><td>3</td><td>Self-Awareness & Self-Regulation</td><td>Know your patterns, biases, cognitive style, failure modes, energy cycles — and regulate your emotional and cognitive responses. The operating system. Includes emotional regulation as a discrete, practicable skill: recognising, naming, and managing emotional states rather than being controlled by them.</td></tr>
 <tr><td>4</td><td>Deep Curiosity</td><td>The drive to understand AND the ability to sustain attention long enough to actually do it.</td></tr>
-<tr><td>5</td><td>First-Principles Reasoning</td><td>"What is actually true and why?" Not what everyone believes — what the evidence supports.</td></tr>
+<tr><td>5</td><td>First-Principles Reasoning</td><td>"What is actually true and why?" Not what everyone believes — what the evidence supports. Epistemological reasoning: decompose to axioms, rebuild from fundamentals.</td></tr>
 <tr><td>6</td><td>Communication Mastery</td><td>Written, oral, visual, digital, performative. Sales and persuasion included.</td></tr>
 <tr><td>7</td><td>Relational Intelligence</td><td>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships. Network as strategic asset.</td></tr>
-<tr><td>8</td><td>Empathy & Kindness</td><td>Feel others' experience AND act on it. Kindness as strength. Default behavior, not intellectual position.</td></tr>
-<tr><td>9</td><td>Physical System Mastery</td><td>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance.</td></tr>
+<tr><td>8</td><td>Empathy & Kindness</td><td>Feel others' experience AND act on it. Kindness as strength. Default behaviour, not intellectual position. Includes gratitude as a trainable disposition.</td></tr>
+<tr><td>9</td><td>Physical System Mastery</td><td>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance. Most developmental frameworks ignore the physical substrate — this one does not.</td></tr>
 <tr><td>10</td><td>Adaptability</td><td>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for. Ambiguity tolerance is the emotional foundation; adaptability is the action.</td></tr>
+<tr><td>11</td><td>Creative Production</td><td>Generate novel, valuable output — ideas, artifacts, solutions, art, arguments. Not creativity as personality trait but as a practicable skill: divergent thinking, combination, iteration, and the courage to produce original work. The DIM method's "Make" phase is the primary development mechanism. Assessed quarterly: "What did you create this quarter that didn't exist before?"</td></tr>
 </table>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Operational Principles</h2>
-<h3>DIM Method</h3>
-<p><strong>Absorb</strong> (experience fully without analysis) → <strong>Interrogate</strong> (ask why, go deeper) → <strong>Make</strong> (create something in response). For anchor works and deep experiences, not everything. Fun night, sports, casual reading are Absorb-only.</p>
+<h3>DIM Method — Evidence-Based Deep Engagement Cycle</h3>
+<p>An evidence-informed design heuristic for deep engagement with content. Not a validated method in itself — each phase maps to robustly validated cognitive mechanisms:</p>
+<p><strong>Absorb</strong> (experience fully without analysis) → <strong>Check</strong> ("explain what you understand so far") → <strong>Interrogate</strong> (ask why, go deeper) → <strong>Make</strong> (create something in response) → <strong>Revisit</strong> (spaced retrieval at 1 week, 1 month).</p>
+<table>
+<tr><th>Phase</th><th>What Happens</th><th>Evidence Base</th></tr>
+<tr><td><strong>Absorb</strong></td><td>Experience the content fully before receiving explanation. Encounter the phenomenon, the story, the problem before being told what to think about it.</td><td>5E Model's Explore-before-Explain sequence: g=0.82 across 61 RCTs (Polanin et al., 2024). The strongest evidence of any lesson design in science education.</td></tr>
+<tr><td><strong>Check</strong></td><td>Brief formative assessment before proceeding. "Explain what you understand so far." Catches misconceptions before they are baked into a Make artifact.</td><td>Bloom's mastery learning: d=0.25-0.50 on standardised measures. Black & Wiliam (1998) formative assessment: d=0.40-0.70. The assess-correct-reassess cycle is one of the highest-leverage teaching moves.</td></tr>
+<tr><td><strong>Interrogate</strong></td><td>Ask why. Go deeper. Generate explanations. Question assumptions. Retrieve and elaborate.</td><td>Retrieval practice: g=0.61 (Roediger & Karpicke, 2006). Elaborative interrogation: moderate-to-high utility (Dunlosky et al., 2013 meta-analysis). Classroom discussion: d=0.82 (Hattie).</td></tr>
+<tr><td><strong>Make</strong></td><td>Create something in response — an artifact, an argument, a performance, a product. The creation forces transfer and consolidation.</td><td>Project-based learning: d=0.65-1.12 across multiple meta-analyses. Constructionism (Papert): creating artifacts externalises understanding. Bloom's "Create" level requires all lower cognitive levels.</td></tr>
+<tr><td><strong>Revisit</strong></td><td>Spaced retrieval: return to the material at 1 week and 1 month. Brief — a 5-minute recall, a conversation, a quiz. Not re-teaching; retrieval.</td><td>Spaced practice: d=0.54 (2025 meta-analysis). Cepeda et al. (2006): 254 studies, spacing produces 10-30% better retention. The strongest effect in all of cognitive science.</td></tr>
+</table>
+<p><strong>Scope:</strong> DIM is for deep engagement with anchor content — not for everything. Fun nights, sports, casual reading, and social play are Absorb-only. For <strong>foundational skill acquisition</strong> (phonics, arithmetic, basic facts), the evidence supports explicit, direct instruction with spaced retrieval — not DIM. Direct Instruction (Engelmann) has effect sizes of d=0.87-0.97 across hundreds of studies for foundational skills. DIM is the wrong tool for "learn your times tables." It is the right tool for "understand why the Roman Empire fell."</p>
+<p><strong>Scaffolding calibration:</strong> The amount of guidance in Interrogate and Make phases must be calibrated to the child's expertise level (Sweller's expertise reversal effect: what helps novices harms experts). Ages 4-7: heavy scaffolding — guided questions, structured making templates, adult co-construction. Ages 8-13: moderate scaffolding — open questions, choice of making medium, adult available but not directing. Ages 14+: light scaffolding — the child drives the interrogation and makes independently. Adult is a thinking partner, not a guide.</p>
+<h3>Conundrums — Ethical Reasoning Through Dilemmas</h3>
+<p>Adapted from Astra Nova School's pedagogical format. Open-ended scenarios with 3-5 defensible options and no single correct answer. The child must argue a position, hear opposing positions, and navigate constructive disagreement. Applied weekly at dinner from age 8, increasing in complexity. Examples: "A discovered treasure — who deserves the most payment: the researcher, the translator, or the finder?" "A school must cut one programme — art, sport, or music. Which and why?" This operationalises ethical reasoning (Target 2) and first-principles thinking (Target 5) without moralising. The format teaches that reasonable people can disagree on values, and that defending a position requires evidence and logic, not volume.</p>
 <h3>Multi-Medium, Original Language</h3>
 <p>Content across books, comics, film, anime, games, TV series. Always in original language with subtitles — no dubbing. Anchor works get full DIM treatment. Broader content diet is Absorb-mode: consume freely, don't over-analyze. Volume is good.</p>
 <h3>Language Architecture</h3>
@@ -162,16 +180,7 @@ order: 0
 <p>The framework develops capability. This section converts capability into externally validated, admissions-visible excellence. Not gaming the system — making the excellence VISIBLE. A child who is genuinely excellent but can't demonstrate it loses to a child who is slightly less excellent but packages it brilliantly.</p>
 
 <h3>Competition Pipeline</h3>
-<p>Deliberate escalation: local → regional → national → international. The domain determines the path, and the path depends on jurisdiction. Build for the gatekeepers that actually matter for the chosen route, not for a generic prestige fantasy.</p>
-<table>
-<tr><th>Domain</th><th>US-Leaning Route</th><th>Spain / EU Route</th></tr>
-<tr><td>Math</td><td>AMC 8 → AMC 10/12 → AIME → USAMO → IMO</td><td>Canguro / math circles → ESTALMAT or equivalent enrichment → national olympiad tracks → IMO / EGMO / EU-level camps</td></tr>
-<tr><td>Science</td><td>School fairs → Science Olympiad → ISEF → Regeneron STS</td><td>School fairs → regional olympiads (physics, chemistry, biology, informatics) → national olympiads → EUCYS / international olympiads</td></tr>
-<tr><td>Debate</td><td>School → regional → nationals → WSDC / international</td><td>School leagues → bilingual debate circuits → Model European Parliament / EYP / WSDC / international circuits</td></tr>
-<tr><td>Music</td><td>ABRSM / youth competitions → summer festivals → conservatory-linked teachers</td><td>ABRSM or Trinity / conservatorio access → youth orchestra / chamber circuit → conservatorio profesional or superior / European festivals</td></tr>
-<tr><td>Coding</td><td>Hackathons → open-source contributions → app with real users</td><td>Hackathons → robotics / informatics competitions → FabLab or startup internships → product with real users</td></tr>
-<tr><td>Entrepreneurship</td><td>School fair → Startup Weekend Youth → real revenue → selective founder programs</td><td>School enterprise → local incubator / chamber / municipal entrepreneurship programs → real revenue → accelerator-style mentorship</td></tr>
-</table>
+<p>Deliberate escalation: local → regional → national → international. The domain determines the path, and the path depends on jurisdiction. Build for the gatekeepers that actually matter for the chosen route, not for a generic prestige fantasy. See Appendix for route-specific pathways (US, Spain/EU).</p>
 
 <h3>Ship-It Escalation</h3>
 <p><strong>Age 10:</strong> Toy project — it works, shown to family. <strong>Age 12:</strong> Project with real users (100+) or real revenue. <strong>Age 14:</strong> Project at scale — 1,000+ users, meaningful revenue, or measurable community impact. <strong>Age 16:</strong> Portfolio of 3+ shipped projects with demonstrable external validation.</p>
@@ -189,13 +198,13 @@ order: 0
 <p>By 14, consciously shape the story: what's the thread connecting niche, projects, service, intellectual interests? The narrative isn't fabricated — it's discovered from the life already being lived, then sharpened. The application essay doesn't write itself — the LIFE is shaped into a coherent arc. Add to quarterly review: "What's the narrative? How do this quarter's activities strengthen it?"</p>
 
 <h3>Test Preparation</h3>
-<p>Route-specific gatekeeping matters. For a US-selective route: PSAT diagnostic at 14-15, SAT/ACT prep starting age 15, tutor if needed, target elite-range scores. For Spain/EU routes: prioritize expediente, Bachillerato or IB performance, PAU/EvAU or equivalent, language certifications, olympiads, portfolio, audition, or interview depending on the path. The mistake is not "failing to take the SAT." The mistake is ignoring whichever gatekeeper the chosen route actually uses.</p>
+<p>Route-specific gatekeeping matters. The mistake is not "failing to take the SAT." The mistake is ignoring whichever gatekeeper the chosen route actually uses. See Appendix for route-specific test preparation guidance.</p>
 
 <h3>Recommendation Letter Strategy</h3>
-<p>Cultivate 2-3 mentor relationships starting age 13-14: the niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. These relationships need 2+ years to produce extraordinary letters. The mentor must know the child well enough to write with SPECIFIC, COMPELLING examples — not generic praise.</p>
+<p>Cultivate 2-3 mentor relationships starting age 13-14. These relationships need 2+ years to produce extraordinary letters. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. See Appendix for tactical details.</p>
 
 <h3>Community Leadership at Visible Scale</h3>
-<p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Admissions wants: "this person made their community better" — demonstrated, not claimed.</p>
+<p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Contributing to community is a developmental endpoint in its own right — Positive Youth Development research (Lerner et al., 2005) identifies Contribution as the highest outcome, not a strategy. The child who makes their community better is exercising the full target set: agency, empathy, communication, relational intelligence, creative production. That this is also what admissions committees value is a happy alignment, not the primary motivation.</p>
 
 <h3>Multiple Elite Routes</h3>
 <p><strong>US-selective university route:</strong> standardized tests if required, spike + narrative + recommendation letters + selective programs.</p>
@@ -306,7 +315,7 @@ order: 0
 <h2 id="s-quarterly"><span class="material-symbols-rounded">calendar_month</span>Quarterly Review Protocol</h2>
 <p>The framework is a living document. Without a feedback loop, it becomes a plan you wrote once and slowly forget.</p>
 <p><strong>Every 3 months, 30 minutes, both parents:</strong></p>
-<p><strong>1. The Ten Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling? Pay particular attention to Targets 7–8 (Relational Intelligence, Empathy & Kindness) — these are harder to observe than intellectual targets but more predictive of long-term wellbeing.</p>
+<p><strong>1. The Eleven Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling? Pay particular attention to Targets 7–8 (Relational Intelligence, Empathy & Kindness) — these are harder to observe than intellectual targets but more predictive of long-term wellbeing. For Target 11 (Creative Production): "What did they create this quarter that didn't exist before?"</p>
 <p><strong>2. Profile check:</strong> Have any dimensions shifted? A 4-year-old introvert may be a 10-year-old ambivert. A child who was Developing in communication at 2 may be On Track at 4. Re-assess all three layers (Rothbart, ASQ, BRIEF-P) and update the profile.</p>
 <p><strong>3. What worked this quarter?</strong> Specific activities, books, conversations that produced visible growth.</p>
 <p><strong>4. What didn't work?</strong> What are they resisting? Is the resistance signal or noise? (See Risk 2.)</p>
@@ -327,5 +336,26 @@ order: 0
 <tr><td>4–7</td><td>Asks "why" relentlessly. Sustains focus 20+ min. Handles small failures without meltdown. Initiates play without adult direction. Navigates basic conflicts with peers. Shows concern when another child is hurt.</td><td>Waits for permission to play. Melts down at minor frustration. Performs for adults. Can't resolve any peer conflict without adult mediation. Indifferent to others' distress.</td></tr>
 <tr><td>8–10</td><td>Has a passionate domain. Can explain reasoning. Reads voluntarily. Handles losing analytically. Collaborates on team sport — adjusts to teammates, accepts different roles. Shows empathy spontaneously.</td><td>Goes through motions. Avoids challenge. Can't articulate beliefs. Practice feels like punishment. Can't function in a team without dominating or withdrawing.</td></tr>
 <tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked. Understands body autonomy, basic consent, privacy, and when to report manipulation immediately.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Empathy is performed, not felt. Keeps dangerous secrets because shame or peer pressure is stronger than trust.</td></tr>
-<tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something. Handles consent, reputation, and digital risk with adult-level seriousness.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only. Repeatedly tolerates coercion, sends self-endangering content, or confuses intensity with trust.</td></tr>
+<tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something. Handles consent, reputation, and digital risk with adult-level seriousness. Creates original work. Evaluates own performance by internal standards.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only. Repeatedly tolerates coercion, sends self-endangering content, or confuses intensity with trust. No creative output beyond assignments.</td></tr>
 </table>
+
+<h2 id="s-appendix"><span class="material-symbols-rounded">description</span>Appendix: Tactical Implementation Details</h2>
+<p>The following operational details support the Application Architecture. They are route-specific and time-sensitive — review and update annually.</p>
+
+<h3>Competition Pipeline: Route-Specific Pathways</h3>
+<table>
+<tr><th>Domain</th><th>US-Leaning Route</th><th>Spain / EU Route</th></tr>
+<tr><td>Math</td><td>AMC 8 → AMC 10/12 → AIME → USAMO → IMO</td><td>Canguro / math circles → ESTALMAT or equivalent enrichment → national olympiad tracks → IMO / EGMO / EU-level camps</td></tr>
+<tr><td>Science</td><td>School fairs → Science Olympiad → ISEF → Regeneron STS</td><td>School fairs → regional olympiads (physics, chemistry, biology, informatics) → national olympiads → EUCYS / international olympiads</td></tr>
+<tr><td>Debate</td><td>School → regional → nationals → WSDC / international</td><td>School leagues → bilingual debate circuits → Model European Parliament / EYP / WSDC / international circuits</td></tr>
+<tr><td>Music</td><td>ABRSM / youth competitions → summer festivals → conservatory-linked teachers</td><td>ABRSM or Trinity / conservatorio access → youth orchestra / chamber circuit → conservatorio profesional or superior / European festivals</td></tr>
+<tr><td>Coding</td><td>Hackathons → open-source contributions → app with real users</td><td>Hackathons → robotics / informatics competitions → FabLab or startup internships → product with real users</td></tr>
+<tr><td>Entrepreneurship</td><td>School fair → Startup Weekend Youth → real revenue → selective founder programs</td><td>School enterprise → local incubator / chamber / municipal entrepreneurship programs → real revenue → accelerator-style mentorship</td></tr>
+</table>
+
+<h3>Test Preparation: Route-Specific Guidance</h3>
+<p><strong>US-selective route:</strong> PSAT diagnostic at 14-15, SAT/ACT prep starting age 15, tutor if needed, target elite-range scores.</p>
+<p><strong>Spain/EU routes:</strong> Prioritize expediente, Bachillerato or IB performance, PAU/EvAU or equivalent, language certifications, olympiads, portfolio, audition, or interview depending on the path.</p>
+
+<h3>Recommendation Letter Cultivation</h3>
+<p>The niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. Start at age 13-14. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. These relationships need 2+ years to produce extraordinary letters.</p>

@@ -4,7 +4,7 @@ kind: maker-system
 summary: "Understanding how everyday objects are made, repairing before replacing, and developing the material competence that liberates from consumer dependence."
 whyItBelongs: "Material literacy is the bridge between physical competence and philosophical independence. The person who understands how things are made, can repair what breaks, and evaluates objects by construction rather than brand is free in a way that the person who can only buy is not. This system develops agency, first-principles reasoning, and physical mastery simultaneously."
 tags: [maker, stem]
-targets: [agency, deep-curiosity, first-principles-reasoning, physical-system-mastery, resilient-self-efficacy]
+targets: [agency, deep-curiosity, first-principles-reasoning, physical-system-mastery, resilient-self-efficacy, creative-production]
 models: [cause-effect, incentives, feedback-loops, inversion, via-negativa]
 intensity: medium
 socialValue: broad
