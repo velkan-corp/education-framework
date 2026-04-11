@@ -3,16 +3,13 @@ phaseId: "framework"
 label: "Framework"
 order: 0
 ---
-<div class="fw-tabs" id="fw-tabs">
-  <button type="button" class="fw-tab active" data-fw-tab="philosophy">Philosophy</button>
-  <button type="button" class="fw-tab" data-fw-tab="methods">Methods</button>
-  <button type="button" class="fw-tab" data-fw-tab="operations">Operations</button>
-</div>
+<div class="program-elements">
 
-<div class="fw-tab-content active" data-fw-panel="philosophy">
+<h1>Education Framework</h1>
+<p class="subtitle">A developmental framework for ages 0-18. Guided childhood with freedom. Compounding is the master principle. Start early, stay consistent, go deep.</p>
 
-<h1>Philosophy</h1>
-<p class="subtitle">What we believe about childhood development and why. The foundational convictions, target outcomes, and thinking toolkit that everything else is built on.</p>
+<h2 id="s-philosophy"><span class="material-symbols-rounded">star</span>Philosophy</h2>
+<p>What we believe about childhood development and why. The foundational convictions, target outcomes, and thinking toolkit that everything else is built on.</p>
 
 <h2 id="s-principles"><span class="material-symbols-rounded">star</span>The Ten Principles</h2>
 
@@ -157,12 +154,8 @@ order: 0
 <tr><td>12</td><td>Model Failure</td><td>Where does this model give the wrong answer?</td><td>Age 14-16</td></tr>
 </table>
 
-</div><!-- end philosophy panel -->
-
-<div class="fw-tab-content" data-fw-panel="methods">
-
-<h1>Methods</h1>
-<p class="subtitle">How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
+<h2 id="s-methods"><span class="material-symbols-rounded">build</span>Methods</h2>
+<p>How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement & Teaching</h2>
 <h3>Engagement Cycle — Evidence-Based Deep Engagement</h3>
@@ -210,12 +203,8 @@ order: 0
 <p><strong>Taleb's barbell:</strong> Very conservative in most things. Asymmetric bets in a few. Never risk ruin for marginal gain.</p>
 <p><strong>Teach them to recognize it.</strong> "That happened because you were prepared AND in the right room AND someone remembered you were kind."</p>
 
-</div><!-- end methods panel -->
-
-<div class="fw-tab-content" data-fw-panel="operations">
-
-<h1>Operations</h1>
-<p class="subtitle">Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>
+<h2 id="s-operations"><span class="material-symbols-rounded">settings</span>Operations</h2>
+<p>Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>
 
 <h2 id="s-application"><span class="material-symbols-rounded">workspace_premium</span>The Application Architecture</h2>
 <p>The framework develops capability. This section converts capability into externally validated, admissions-visible excellence. Not gaming the system — making the excellence VISIBLE. A child who is genuinely excellent but can't demonstrate it loses to a child who is slightly less excellent but packages it brilliantly.</p>
@@ -401,4 +390,4 @@ order: 0
 <h3>Recommendation Letter Cultivation</h3>
 <p>The niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. Start at age 13-14. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. These relationships need 2+ years to produce extraordinary letters.</p>
 
-</div><!-- end operations panel -->
+</div><!-- end program-elements -->

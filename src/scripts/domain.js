@@ -229,24 +229,6 @@ function setupNavigation() {
   // Logo → Home
   document.getElementById('nav-home')?.addEventListener('click', () => showView('home'));
 
-  // Framework sub-tabs (Philosophy / Methods / Operations)
-  document.addEventListener('click', (e) => {
-    const tab = e.target.closest('.fw-tab');
-    if (!tab) return;
-    const panel = tab.dataset.fwTab;
-    if (!panel) return;
-
-    tab.closest('.fw-tabs').querySelectorAll('.fw-tab').forEach(t => t.classList.toggle('active', t === tab));
-
-    const fwContent = document.querySelector('.phase-content[data-phase="framework"]');
-    if (fwContent) {
-      fwContent.querySelectorAll('.fw-tab-content').forEach(p => {
-        p.classList.toggle('active', p.dataset.fwPanel === panel);
-      });
-    }
-    window.scrollTo(0, 0);
-  });
-
   // Home cards
   document.querySelectorAll('.home-card[data-nav]').forEach(card => {
     card.addEventListener('click', () => {
