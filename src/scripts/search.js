@@ -1,5 +1,6 @@
 import { state } from './state.js';
-import { renderTabs, showTab, updateAllNavs } from './navigation.js';
+import { showTab, updateAllNavs } from './navigation.js';
+import { showView } from './domain.js';
 
 function createSearchRegex(query) {
   return new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
@@ -106,10 +107,8 @@ function runSearch(query) {
     item.addEventListener('click', () => {
       const tabId = item.dataset.tab;
       const q = item.dataset.query;
-      state.currentTab = tabId;
-      renderTabs();
-      showTab(state.currentTab);
-      updateAllNavs();
+      const view = tabId === 'framework' ? 'framework' : 'age';
+      showView(view, { phaseId: tabId });
       results.classList.add('hidden');
       setTimeout(() => highlightInContent(q), 50);
     });
@@ -187,8 +186,9 @@ function runMobileSearch(query) {
 
   results.querySelectorAll('.sr-item').forEach(item => {
     item.addEventListener('click', () => {
-      state.currentTab = item.dataset.tab;
-      renderTabs(); showTab(state.currentTab); updateAllNavs();
+      const tabId = item.dataset.tab;
+      const view = tabId === 'framework' ? 'framework' : 'age';
+      showView(view, { phaseId: tabId });
       closeMobileSearch();
       setTimeout(() => highlightInContent(query), 50);
     });

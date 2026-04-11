@@ -102,7 +102,7 @@ function setActiveNavItem(view) {
   document.querySelectorAll('.nav-item[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false'));
 }
 
-function showView(view, options = {}) {
+export function showView(view, options = {}) {
   state.currentView = view;
   hideAllViews();
   setActiveNavItem(view);
