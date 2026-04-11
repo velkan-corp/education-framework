@@ -118,57 +118,99 @@ order: 0
 
 <h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>The Eleven Targets</h2>
 <p>Who the child becomes, not what they know. All eleven are FOUNDATIONAL. Validated against CASEL, VIA Character Strengths, WHO Life Skills, Self-Determination Theory, Positive Youth Development (5 Cs), OECD SSES, and 21st Century Skills frameworks. Each target maps to at least one established construct; together they extend beyond any single framework.</p>
-<table>
-<tr><th>#</th><th>Target</th><th>What It Is</th></tr>
-<tr><td>1</td><td>Resilient Self-Efficacy</td><td>"I can figure this out, even when it's hard and takes time." Effort produces results, sustained through plateaus. Fuses Bandura's self-efficacy, Dweck's growth mindset, and Duckworth's perseverance of effort.</td></tr>
-<tr><td>2</td><td>Agency & Ethical Reasoning</td><td>"I choose well, and I own the consequences." Not entitlement — ownership with ethical responsibility. Decisions are evaluated for their impact on others, not just their outcome for self.</td></tr>
-<tr><td>3</td><td>Self-Awareness & Self-Regulation</td><td>Know your patterns, biases, cognitive style, failure modes, energy cycles — and regulate your emotional and cognitive responses. The operating system. Includes emotional regulation as a discrete, practicable skill: recognising, naming, and managing emotional states rather than being controlled by them.</td></tr>
-<tr><td>4</td><td>Deep Curiosity</td><td>The drive to understand AND the ability to sustain attention long enough to actually do it.</td></tr>
-<tr><td>5</td><td>First-Principles Reasoning</td><td>"What is actually true and why?" Not what everyone believes — what the evidence supports. Epistemological reasoning: decompose to axioms, rebuild from fundamentals.</td></tr>
-<tr><td>6</td><td>Communication Mastery</td><td>Written, oral, visual, digital, performative. Sales and persuasion included.</td></tr>
-<tr><td>7</td><td>Relational Intelligence</td><td>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships. Network as strategic asset.</td></tr>
-<tr><td>8</td><td>Empathy & Kindness</td><td>Feel others' experience AND act on it. Kindness as strength. Default behaviour, not intellectual position. Includes gratitude as a trainable disposition.</td></tr>
-<tr><td>9</td><td>Physical System Mastery</td><td>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance. Most developmental frameworks ignore the physical substrate — this one does not.</td></tr>
-<tr><td>10</td><td>Adaptability</td><td>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for. Ambiguity tolerance is the emotional foundation; adaptability is the action.</td></tr>
-<tr><td>11</td><td>Creative Production</td><td>Generate novel, valuable output — ideas, artifacts, solutions, art, arguments. Not creativity as personality trait but as a practicable skill: divergent thinking, combination, iteration, and the courage to produce original work. The engagement cycle's "Make" phase is the primary development mechanism. Assessed quarterly: "What did you create this quarter that didn't exist before?"</td></tr>
-</table>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy</h4><p>"I can figure this out, even when it's hard and takes time." Fuses Bandura's self-efficacy, Dweck's growth mindset, and Duckworth's perseverance.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning</h4><p>"I choose well, and I own the consequences." Ownership with ethical responsibility.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation</h4><p>Know your patterns, biases, failure modes — and regulate your responses. The operating system.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>The drive to understand AND the ability to sustain attention long enough to actually do it.</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>First-Principles Reasoning</h4><p>"What is actually true and why?" Decompose to axioms, rebuild from fundamentals.</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Written, oral, visual, digital, performative. Sales and persuasion included.</p></div>
+<div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence</h4><p>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness</h4><p>Feel others' experience AND act on it. Kindness as strength. Includes gratitude.</p></div>
+<div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance.</p></div>
+<div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for.</p></div>
+<div class="target-card"><span class="target-num">11</span><h4>Creative Production</h4><p>Generate novel, valuable output. Divergent thinking, combination, iteration, and the courage to produce original work.</p></div>
+</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
 <h3>Twelve Universal Models</h3>
-<p>Introduced progressively through the Onion Layers — each model appears first as lived experience, then named, then stress-tested, then synthesised with others, then critiqued. See each phase's Mental Models section for the age-specific engagement.</p>
-<table>
-<tr><th>#</th><th>Model</th><th>Core Question</th><th>Introduced</th></tr>
-<tr><td>1</td><td>Cause & Effect</td><td>Then what? And then what?</td><td>Age 4-7</td></tr>
-<tr><td>2</td><td>Feedback Loops</td><td>Does the output amplify or dampen the input?</td><td>Age 4-7</td></tr>
-<tr><td>3</td><td>Incentives</td><td>Show me the incentive, I'll show you the outcome.</td><td>Age 4-7</td></tr>
-<tr><td>4</td><td>Inversion</td><td>What would make this fail? Now avoid that.</td><td>Age 4-7</td></tr>
-<tr><td>5</td><td>Maps ≠ Territory</td><td>Is this the thing, or a representation of the thing?</td><td>Age 8-10</td></tr>
-<tr><td>6</td><td>Compounding</td><td>What happens if this continues for 10 years?</td><td>Age 8-10</td></tr>
-<tr><td>7</td><td>Probability</td><td>What's the actual likelihood? Not "will it" — "how likely?"</td><td>Age 8-10</td></tr>
-<tr><td>8</td><td>Emergence</td><td>What arises from simple parts that none of the parts contain?</td><td>Age 11-13</td></tr>
-<tr><td>9</td><td>Complementary Opposites</td><td>Is this an either/or or a both/and?</td><td>Age 11-13</td></tr>
-<tr><td>10</td><td>Via Negativa</td><td>What improves by removing rather than adding?</td><td>Age 11-13</td></tr>
-<tr><td>11</td><td>Antifragility</td><td>Does this system benefit from disorder?</td><td>Age 14-16</td></tr>
-<tr><td>12</td><td>Model Failure</td><td>Where does this model give the wrong answer?</td><td>Age 14-16</td></tr>
-</table>
+<p>Introduced progressively through the Onion Layers. See each phase's Mental Models section for age-specific engagement.</p>
+
+<div class="model-timeline">
+<div class="model-age-group">
+<div class="model-age-label">Age 4-7 — Experience</div>
+<div class="model-cards">
+<div class="model-card"><span class="model-num">1</span><strong>Cause & Effect</strong><br>Then what? And then what?</div>
+<div class="model-card"><span class="model-num">2</span><strong>Feedback Loops</strong><br>Does the output amplify or dampen the input?</div>
+<div class="model-card"><span class="model-num">3</span><strong>Incentives</strong><br>Show me the incentive, I'll show you the outcome.</div>
+<div class="model-card"><span class="model-num">4</span><strong>Inversion</strong><br>What would make this fail? Now avoid that.</div>
+</div>
+</div>
+<div class="model-age-group">
+<div class="model-age-label">Age 8-10 — Name</div>
+<div class="model-cards">
+<div class="model-card"><span class="model-num">5</span><strong>Maps ≠ Territory</strong><br>Is this the thing, or a representation of it?</div>
+<div class="model-card"><span class="model-num">6</span><strong>Compounding</strong><br>What happens if this continues for 10 years?</div>
+<div class="model-card"><span class="model-num">7</span><strong>Probability</strong><br>What's the actual likelihood?</div>
+</div>
+</div>
+<div class="model-age-group">
+<div class="model-age-label">Age 11-13 — Stress-Test</div>
+<div class="model-cards">
+<div class="model-card"><span class="model-num">8</span><strong>Emergence</strong><br>What arises from simple parts that none contain?</div>
+<div class="model-card"><span class="model-num">9</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
+<div class="model-card"><span class="model-num">10</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
+</div>
+</div>
+<div class="model-age-group">
+<div class="model-age-label">Age 14-16 — Synthesize</div>
+<div class="model-cards">
+<div class="model-card"><span class="model-num">11</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
+<div class="model-card"><span class="model-num">12</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
+</div>
+</div>
+</div>
 
 <h2 id="s-methods"><span class="material-symbols-rounded">build</span>Methods</h2>
 <p>How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement & Teaching</h2>
-<h3>Engagement Cycle — Evidence-Based Deep Engagement</h3>
-<p>An evidence-informed design heuristic for deep engagement with content. Not a validated method in itself — each phase maps to robustly validated cognitive mechanisms:</p>
-<p><strong>Absorb</strong> (experience fully without analysis) → <strong>Check</strong> ("explain what you understand so far") → <strong>Interrogate</strong> (ask why, go deeper) → <strong>Make</strong> (create something in response) → <strong>Revisit</strong> (spaced retrieval at 1 week, 1 month).</p>
-<table>
-<tr><th>Phase</th><th>What Happens</th><th>Evidence Base</th></tr>
-<tr><td><strong>Absorb</strong></td><td>Experience the content fully before receiving explanation. Encounter the phenomenon, the story, the problem before being told what to think about it.</td><td>5E Model's Explore-before-Explain sequence: g=0.82 across 61 RCTs (Polanin et al., 2024). The strongest evidence of any lesson design in science education.</td></tr>
-<tr><td><strong>Check</strong></td><td>Brief formative assessment before proceeding. "Explain what you understand so far." Catches misconceptions before they are baked into a Make artifact.</td><td>Bloom's mastery learning: d=0.25-0.50 on standardised measures. Black & Wiliam (1998) formative assessment: d=0.40-0.70. The assess-correct-reassess cycle is one of the highest-leverage teaching moves.</td></tr>
-<tr><td><strong>Interrogate</strong></td><td>Ask why. Go deeper. Generate explanations. Question assumptions. Retrieve and elaborate.</td><td>Retrieval practice: g=0.61 (Roediger & Karpicke, 2006). Elaborative interrogation: moderate-to-high utility (Dunlosky et al., 2013 meta-analysis). Classroom discussion: d=0.82 (Hattie).</td></tr>
-<tr><td><strong>Make</strong></td><td>Create something in response — an artifact, an argument, a performance, a product. The creation forces transfer and consolidation.</td><td>Project-based learning: d=0.65-1.12 across multiple meta-analyses. Constructionism (Papert): creating artifacts externalises understanding. Bloom's "Create" level requires all lower cognitive levels.</td></tr>
-<tr><td><strong>Revisit</strong></td><td>Spaced retrieval: return to the material at 1 week and 1 month. Brief — a 5-minute recall, a conversation, a quiz. Not re-teaching; retrieval.</td><td>Spaced practice: d=0.54 (2025 meta-analysis). Cepeda et al. (2006): 254 studies, spacing produces 10-30% better retention. The strongest effect in all of cognitive science.</td></tr>
-</table>
+<h3>Engagement Cycle</h3>
+<p>An evidence-informed design heuristic for deep engagement with content. Five phases, each mapped to robustly validated cognitive mechanisms:</p>
+
+<div class="cycle-pipeline">
+<div class="cycle-step">
+<div class="cycle-step-name">Absorb</div>
+<div class="cycle-step-desc">Experience fully before explanation. Encounter the phenomenon first.</div>
+<details class="evidence"><summary>Evidence</summary><p>5E Model Explore-before-Explain: g=0.82 across 61 RCTs (Polanin et al., 2024).</p></details>
+</div>
+<div class="cycle-arrow"></div>
+<div class="cycle-step">
+<div class="cycle-step-name">Check</div>
+<div class="cycle-step-desc">"Explain what you understand so far." Catch misconceptions early.</div>
+<details class="evidence"><summary>Evidence</summary><p>Bloom's mastery learning: d=0.25-0.50. Black & Wiliam formative assessment: d=0.40-0.70.</p></details>
+</div>
+<div class="cycle-arrow"></div>
+<div class="cycle-step">
+<div class="cycle-step-name">Interrogate</div>
+<div class="cycle-step-desc">Ask why. Go deeper. Generate explanations. Question assumptions.</div>
+<details class="evidence"><summary>Evidence</summary><p>Retrieval practice: g=0.61 (Roediger & Karpicke). Classroom discussion: d=0.82 (Hattie).</p></details>
+</div>
+<div class="cycle-arrow"></div>
+<div class="cycle-step">
+<div class="cycle-step-name">Make</div>
+<div class="cycle-step-desc">Create something: an artifact, argument, performance, or product.</div>
+<details class="evidence"><summary>Evidence</summary><p>PBL: d=0.65-1.12. Constructionism (Papert): creating artifacts externalises understanding.</p></details>
+</div>
+<div class="cycle-arrow"></div>
+<div class="cycle-step">
+<div class="cycle-step-name">Revisit</div>
+<div class="cycle-step-desc">Return at 1 week and 1 month. Brief retrieval, not re-teaching.</div>
+<details class="evidence"><summary>Evidence</summary><p>Spaced practice: d=0.54. Cepeda et al.: 254 studies, 10-30% better retention.</p></details>
+</div>
+</div>
 <p><strong>Scope:</strong> The engagement cycle is for deep engagement with anchor content — not for everything. Fun nights, sports, casual reading, and social play are Absorb-only. For <strong>foundational skill acquisition</strong> (phonics, arithmetic, basic facts), the evidence supports explicit, direct instruction with spaced retrieval — not the engagement cycle. Direct Instruction (Engelmann) has effect sizes of d=0.87-0.97 across hundreds of studies for foundational skills. The engagement cycle is the wrong tool for "learn your times tables." It is the right tool for "understand why the Roman Empire fell."</p>
 <p><strong>Scaffolding calibration:</strong> The amount of guidance in Interrogate and Make phases must be calibrated to the child's expertise level (Sweller's expertise reversal effect: what helps novices harms experts). Ages 4-7: heavy scaffolding — guided questions, structured making templates, adult co-construction. Ages 8-13: moderate scaffolding — open questions, choice of making medium, adult available but not directing. Ages 14+: light scaffolding — the child drives the interrogation and makes independently. Adult is a thinking partner, not a guide.</p>
 <h3>Conundrums — Ethical Reasoning Through Dilemmas</h3>
@@ -183,25 +225,39 @@ order: 0
 <p>Material competence produces social independence. When you understand how a shoe is made, brand mystique evaporates. When you can make and repair things, you need less — and need is the hook consumerism uses. When your identity is anchored in capability rather than consumption, social pressure to "have the right things" has no leverage. The framework develops two reinforcing threads across all phases: <strong>material literacy</strong> (understand how everyday objects are made, value craftsmanship over brand, develop the capability to make and repair) and <strong>social independence</strong> (develop an internal locus of evaluation where your sense of worth comes from your own values, not external approval). These are not separate curricula — they are causally linked. The person who can make, repair, and understand is free in a way that the person who can only buy is not.</p>
 
 <h2 id="s-joy-kindness-luck"><span class="material-symbols-rounded">favorite</span>Joy, Kindness & Luck</h2>
-<h3>Imbuing Joy</h3>
-<p><strong>Model it.</strong> If the parent visibly finds joy in their own struggle-learn-grow process, the child absorbs it.</p>
-<p><strong>Name it when it happens.</strong> "You just spent 2 hours on that problem and you're smiling. That's the feeling."</p>
-<p><strong>Protect flow states ruthlessly.</strong> When they're in flow, everything else waits.</p>
-<p><strong>Debrief failures as gifts.</strong> Not "it's okay" but "what did that teach you that winning wouldn't have?"</p>
-<p><strong>Archetype alignment.</strong> The profile system isn't a constraint — it's an identity to empower. Joy = alignment between who you are and what you do.</p>
-<h3>Imbuing Kindness</h3>
-<p><strong>Model it relentlessly.</strong> How you treat the waiter. How you speak about absent people. The child watches everything.</p>
-<p><strong>Frame kindness as strength.</strong> A child who can win a fight but helps their opponent up is learning kindness from power. Martial art + kindness = capable AND kind.</p>
-<p><strong>Service as regular habit.</strong> Same place, repeatedly. "Why are these people here? What would actually help?"</p>
-<p><strong>Name it.</strong> "You noticed she was sad and went to sit with her. That's kind, and it's strong."</p>
-<p><strong>Natural social consequences.</strong> "You said that and she stopped playing with you. What happened?"</p>
-<h3>Maximizing Luck</h3>
-<p><strong>Luck = preparation × exposure × kindness.</strong></p>
-<p><strong>Preparation:</strong> When opportunity appears, be ready. The framework builds this.</p>
-<p><strong>Exposure:</strong> Be in more rooms. Every institution, program, competition is an exposure event.</p>
-<p><strong>Kindness creates return luck.</strong> People help people who helped them. Reliable kindness accumulates social capital that converts into opportunity years later.</p>
-<p><strong>Taleb's barbell:</strong> Very conservative in most things. Asymmetric bets in a few. Never risk ruin for marginal gain.</p>
-<p><strong>Teach them to recognize it.</strong> "That happened because you were prepared AND in the right room AND someone remembered you were kind."</p>
+
+<div class="triad-grid">
+<div class="triad-card">
+<h4>Imbuing Joy</h4>
+<ul>
+<li><strong>Model it.</strong> Your visible joy in the struggle-learn-grow process is the primary mechanism.</li>
+<li><strong>Name it.</strong> "You spent 2 hours on that and you're smiling. That's the feeling."</li>
+<li><strong>Protect flow states.</strong> When they're in flow, everything else waits.</li>
+<li><strong>Debrief failures as gifts.</strong> "What did that teach you that winning wouldn't have?"</li>
+<li><strong>Archetype alignment.</strong> Joy = alignment between who you are and what you do.</li>
+</ul>
+</div>
+<div class="triad-card">
+<h4>Imbuing Kindness</h4>
+<ul>
+<li><strong>Model it relentlessly.</strong> How you treat the waiter. How you speak about absent people.</li>
+<li><strong>Frame as strength.</strong> Capable AND kind. Martial art + kindness.</li>
+<li><strong>Service as habit.</strong> Same place, repeatedly. "What would actually help?"</li>
+<li><strong>Name it.</strong> "You noticed she was sad and went to sit with her. That's kind, and strong."</li>
+<li><strong>Natural consequences.</strong> "You said that and she stopped playing with you."</li>
+</ul>
+</div>
+<div class="triad-card">
+<h4>Maximizing Luck</h4>
+<ul>
+<li><strong>Luck = preparation × exposure × kindness.</strong> Maximize all three.</li>
+<li><strong>Preparation.</strong> When opportunity appears, be ready.</li>
+<li><strong>Exposure.</strong> Be in more rooms. Every program is an exposure event.</li>
+<li><strong>Kindness compounds.</strong> People help people who helped them.</li>
+<li><strong>Barbell strategy.</strong> Conservative in most things. Asymmetric bets in a few.</li>
+</ul>
+</div>
+</div>
 
 <h2 id="s-operations"><span class="material-symbols-rounded">settings</span>Operations</h2>
 <p>Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>

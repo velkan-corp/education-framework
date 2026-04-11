@@ -301,6 +301,205 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
+/* ── TARGET CARD GRID ── */
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+.target-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4);
+  position: relative;
+  transition: border-color var(--duration-micro) var(--ease-out), box-shadow var(--duration-micro) var(--ease-out), transform var(--duration-component) var(--ease-out);
+}
+.target-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+.target-num {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--accent);
+  opacity: 0.4;
+  line-height: 1;
+  margin-bottom: var(--sp-2);
+}
+.target-card h4 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 var(--sp-2) 0;
+}
+.target-card p {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── MODEL TIMELINE ── */
+.model-timeline {
+  margin: var(--sp-4) 0;
+  border-left: 3px solid var(--accent-border);
+  padding-left: var(--sp-4);
+}
+.model-age-group {
+  margin-bottom: var(--sp-4);
+  position: relative;
+}
+.model-age-group::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--sp-4) - 7px);
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+}
+.model-age-label {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+}
+.model-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+.model-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  flex: 1;
+  min-width: 180px;
+  transition: border-color var(--duration-micro) var(--ease-out);
+}
+.model-card:hover { border-color: var(--accent-border); }
+.model-num {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  color: var(--accent);
+  opacity: 0.5;
+  margin-right: var(--sp-1);
+}
+
+/* ── ENGAGEMENT CYCLE PIPELINE ── */
+.cycle-pipeline {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: var(--sp-4) 0;
+  flex-wrap: wrap;
+}
+.cycle-step {
+  flex: 1;
+  min-width: 140px;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3);
+  text-align: center;
+  transition: border-color var(--duration-micro) var(--ease-out), box-shadow var(--duration-micro) var(--ease-out);
+}
+.cycle-step:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-sm);
+}
+.cycle-step-name {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: var(--sp-1);
+}
+.cycle-step-desc {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+}
+.cycle-step .evidence { border-top: none; padding-top: 0; }
+.cycle-step .evidence summary { justify-content: center; font-size: 9px; }
+.cycle-step .evidence p { font-size: 10px; text-align: left; }
+.cycle-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  color: var(--border);
+  font-size: 18px;
+  flex-shrink: 0;
+  align-self: center;
+}
+.cycle-arrow::after { content: '→'; }
+
+/* ── TRIAD GRID (Joy / Kindness / Luck) ── */
+.triad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0;
+}
+.triad-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4);
+}
+.triad-card h4 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--accent);
+  margin: 0 0 var(--sp-3) 0;
+}
+.triad-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.triad-card li {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  padding: var(--sp-1) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.triad-card li:last-child { border-bottom: none; }
+
+/* ── SECTION DIVIDERS for Philosophy / Methods / Operations ── */
+#s-philosophy, #s-methods, #s-operations {
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-5);
+  border-top: 2px solid var(--border);
+}
+#s-philosophy { margin-top: var(--sp-4); border-top: none; }
+
+/* ── RESPONSIVE for new components ── */
+@media (max-width: 900px) {
+  .target-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .cycle-pipeline { flex-direction: column; align-items: stretch; }
+  .cycle-arrow { transform: rotate(90deg); align-self: center; padding: 2px 0; }
+  .triad-grid { grid-template-columns: 1fr; }
+  .model-cards { flex-direction: column; }
+  .model-card { min-width: auto; }
+}
+
 /* SECTION TIER FILTERS */
 .program-elements {
   border-top: 2px solid var(--border);
