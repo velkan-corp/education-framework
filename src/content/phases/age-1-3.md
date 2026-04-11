@@ -250,4 +250,10 @@ order: 2
 <tr><td>Aquaplay Water Table</td><td>Toy</td><td>Water play, cause-effect, locks/dams/channels = early systems thinking. <span class="tag tag-target">First-Principles seed</span></td></tr>
 <tr><td>Maisy books (Lucy Cousins) — Spanish</td><td>Book</td><td>Interna reading list. Simple, repetitive, engaging in Spanish. <span class="tag tag-target">Communication Mastery</span></td></tr>
 <tr><td>Magnifying Glass (child-sized)</td><td>Equipment</td><td>Curiosity tool. Transforms any walk into an investigation. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>The Sneetches and Other Stories — Dr. Seuss</td><td>Book</td><td>First narrative about in-groups, conformity, and the absurdity of status markers. Read at 2.5-3. <span class="tag tag-target">Self-Awareness</span></td></tr>
+<tr><td>Tumbling Mat (folding panel)</td><td>Equipment</td><td>Tumbl Trak or similar folding mat for home tumbling. Forward rolls, animal crawls, handstand attempts. Foundation for later gymnastics. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Doorframe Pull-Up Bar</td><td>Equipment</td><td>For hanging practice — grip strength, shoulder stability, vestibular development. Supervised. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Latin Dance Family Playlist</td><td>Music</td><td>Salsa, merengue, cumbia, flamenco. Put on at home — hold their hands and dance. Music = movement = joy. <span class="tag tag-target">Physical System Mastery</span></td></tr>
+<tr><td>Sensory Material Sample Box (DIY)</td><td>Equipment</td><td>Untreated wood pieces (pine, oak, walnut), metal objects, fabric swatches (cotton, wool, silk, linen), stone, leather. Named and explored during practical life. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Child-Sized Cooking Tools</td><td>Equipment</td><td>Small pitcher, step stool, apron, child-safe utensils. Cooking as education begins now — they stir, pour, tear, knead. <span class="tag tag-target">Agency</span></td></tr>
 </table>

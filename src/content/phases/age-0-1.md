@@ -211,4 +211,5 @@ order: 1
 <tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
 <tr><td>Jellycat Soft Toys</td><td>Toy</td><td>Comfort object. Texture variety. Secure attachment support. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
 <tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
+<tr><td>Diverse Rhythm Playlist</td><td>Music</td><td>Spotify/Apple Music: Afro-Cuban, Brazilian, flamenco, waltz, reggae. Real music, not children's music. Dance with the infant to varied rhythms daily. <span class="tag tag-target">Physical System Mastery</span></td></tr>
 </table>
