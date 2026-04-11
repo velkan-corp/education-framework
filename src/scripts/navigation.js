@@ -96,6 +96,9 @@ export function showTab(tabId) {
   document.querySelectorAll('.phase-content').forEach(el => {
     el.classList.toggle('active', el.dataset.phase === tabId);
   });
+  // Sync item dropdown if in age view
+  const navItem = document.getElementById('nav-item');
+  if (navItem && state.currentView === 'age') navItem.value = tabId;
   applyProfile();
   wrapTablesForMobile();
   updateAllNavs();

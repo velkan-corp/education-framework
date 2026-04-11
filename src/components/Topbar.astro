@@ -12,7 +12,25 @@ const tabEntries = Object.entries(TAB_TAGS);
 <div class="topbar">
   <div class="topbar-inner">
     <div class="logo">Education Framework</div>
-    <div class="tabs" id="tabs" role="tablist" aria-label="Age phases">
+
+    <!-- Navigation dropdowns -->
+    <div class="nav-dropdowns">
+      <label class="nav-label" for="nav-view">View by:</label>
+      <select id="nav-view" class="nav-select">
+        <option value="age" selected>Age</option>
+        <option value="domain">Domain</option>
+        <option value="universe">Universe</option>
+      </select>
+      <select id="nav-item" class="nav-select nav-item-select">
+        <option value="framework" selected>Framework</option>
+        {phases.filter(p => p.data.phaseId !== 'framework').map((phase) => (
+          <option value={phase.data.phaseId}>{phase.data.label}</option>
+        ))}
+      </select>
+    </div>
+
+    <!-- Hidden tab bars (retained for JS data hooks) -->
+    <div class="tabs" id="tabs" role="tablist" aria-label="Age phases" hidden>
       {phases.map((phase) => (
         <button
           type="button"
@@ -25,25 +43,15 @@ const tabEntries = Object.entries(TAB_TAGS);
         </button>
       ))}
     </div>
-    <div class="tabs hidden" id="domain-tabs" role="tablist" aria-label="Domains"></div>
-    <div class="tabs hidden" id="universe-tabs" role="tablist" aria-label="Universes">
+    <div class="tabs" id="domain-tabs" role="tablist" aria-label="Domains" hidden></div>
+    <div class="tabs" id="universe-tabs" role="tablist" aria-label="Universes" hidden>
       <button type="button" class="tab" data-universe-tab="framework" role="tab" aria-selected="false">Framework</button>
       <button type="button" class="tab active" data-universe-tab="all" role="tab" aria-selected="true">All</button>
       {tabEntries.map(([key, label]) => (
         <button type="button" class="tab" data-universe-tab={key} role="tab" aria-selected="false">{label}</button>
       ))}
     </div>
-    <div id="view-toggle" role="group" aria-label="Journey view">
-      <span class="view-label">Journey:</span>
-      <button type="button" class="view-btn active" data-view="age" aria-pressed="true">Age</button>
-      <button type="button" class="view-btn" data-view="domain" aria-pressed="false">Domain</button>
-      <button type="button" class="view-btn" data-view="universe" aria-pressed="false">Universe</button>
-      <select id="view-select" class="view-select">
-        <option value="age" selected>Age</option>
-        <option value="domain">Domain</option>
-        <option value="universe">Universe</option>
-      </select>
-    </div>
+
     <div id="search-wrap">
       <button id="search-icon" type="button" aria-label="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

@@ -21,10 +21,10 @@
   #search-icon { display: block; cursor: pointer; padding: 8px; width: 32px; height: 32px; }
   #search-input { display: none; }
   #search-results { display: none !important; }
-  /* View toggle: dropdown on mobile */
-  .view-btn { display: none; }
-  .view-label { font-size: 9px; }
-  .view-select { display: block; }
+  /* Navigation dropdowns: stack on mobile */
+  .nav-dropdowns { flex-wrap: wrap; gap: 4px; }
+  .nav-label { font-size: 10px; }
+  .nav-select { font-size: 12px; padding: 5px 8px; }
   /* Universe grid: 2 columns on tablet, 1 on phone */
   .universe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   /* Timeline: less padding on mobile */
