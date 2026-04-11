@@ -154,6 +154,23 @@ order: 0
 <p>Material competence produces social independence. When you understand how a shoe is made, brand mystique evaporates. When you can make and repair things, you need less — and need is the hook consumerism uses. When your identity is anchored in capability rather than consumption, social pressure to "have the right things" has no leverage. The framework develops two reinforcing threads across all phases: <strong>material literacy</strong> (understand how everyday objects are made, value craftsmanship over brand, develop the capability to make and repair) and <strong>social independence</strong> (develop an internal locus of evaluation where your sense of worth comes from your own values, not external approval). These are not separate curricula — they are causally linked. The person who can make, repair, and understand is free in a way that the person who can only buy is not.</p>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
+<h3>Twelve Universal Models</h3>
+<p>The thinking toolkit. Introduced progressively through the Onion Layers — each model appears first as lived experience, then named, then stress-tested, then synthesised with others, then critiqued. See each phase's Mental Models section for the age-specific engagement.</p>
+<table>
+<tr><th>#</th><th>Model</th><th>Core Question</th><th>Introduced</th></tr>
+<tr><td>1</td><td>Cause & Effect</td><td>Then what? And then what?</td><td>Age 4-7</td></tr>
+<tr><td>2</td><td>Feedback Loops</td><td>Does the output amplify or dampen the input?</td><td>Age 4-7</td></tr>
+<tr><td>3</td><td>Incentives</td><td>Show me the incentive, I'll show you the outcome.</td><td>Age 4-7</td></tr>
+<tr><td>4</td><td>Inversion</td><td>What would make this fail? Now avoid that.</td><td>Age 4-7</td></tr>
+<tr><td>5</td><td>Maps ≠ Territory</td><td>Is this the thing, or a representation of the thing?</td><td>Age 8-10</td></tr>
+<tr><td>6</td><td>Compounding</td><td>What happens if this continues for 10 years?</td><td>Age 8-10</td></tr>
+<tr><td>7</td><td>Probability</td><td>What's the actual likelihood? Not "will it" — "how likely?"</td><td>Age 8-10</td></tr>
+<tr><td>8</td><td>Emergence</td><td>What arises from simple parts that none of the parts contain?</td><td>Age 11-13</td></tr>
+<tr><td>9</td><td>Complementary Opposites</td><td>Is this an either/or or a both/and?</td><td>Age 11-13</td></tr>
+<tr><td>10</td><td>Via Negativa</td><td>What improves by removing rather than adding?</td><td>Age 11-13</td></tr>
+<tr><td>11</td><td>Antifragility</td><td>Does this system benefit from disorder?</td><td>Age 14-16</td></tr>
+<tr><td>12</td><td>Model Failure</td><td>Where does this model give the wrong answer?</td><td>Age 14-16</td></tr>
+</table>
 
 <h2 id="s-joy-kindness-luck"><span class="material-symbols-rounded">favorite</span>Joy, Kindness & Luck — How To</h2>
 <h3>Imbuing Joy</h3>
