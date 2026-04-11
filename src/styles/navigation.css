@@ -532,6 +532,184 @@
   flex: 1; overflow-y: auto; background: var(--bg);
 }
 
+/* ── UNIVERSE VIEW ── */
+.universe-filter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+.filter-section-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color var(--duration-micro) var(--ease-out);
+}
+.filter-section-toggle:hover { color: var(--text); }
+.filter-section-toggle .section-chevron {
+  font-size: 10px;
+  transition: transform 0.2s var(--ease-out);
+}
+.filter-section-toggle.collapsed .section-chevron {
+  transform: rotate(-90deg);
+}
+
+.filter-section-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  overflow: hidden;
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.3s var(--ease-out), opacity 0.2s var(--ease-out);
+}
+.filter-section-body.collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.universe-filters {
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
+  margin-bottom: 0; padding: 0;
+}
+
+.universe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-4);
+}
+
+.universe-card {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-4);
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  transition: transform var(--duration-component) var(--ease-out),
+              border-color var(--duration-component) var(--ease-out),
+              box-shadow var(--duration-component) var(--ease-out);
+}
+.universe-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.universe-card-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: var(--sp-2);
+}
+
+.universe-card-summary {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+  line-height: 1.5;
+}
+
+.universe-card-phases {
+  display: flex; gap: 4px; margin-bottom: var(--sp-2);
+}
+
+.phase-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.phase-dot.tier-foundational { background: var(--accent); border-color: var(--accent); }
+.phase-dot.tier-core { background: var(--accent4); border-color: var(--accent4); }
+.phase-dot.tier-recommended { background: var(--surface2); border-color: var(--text-muted); }
+.phase-dot.empty { background: transparent; }
+
+.tier-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.universe-card-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+
+.universe-tag {
+  font-size: 9px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px; padding: 1px 6px; border-radius: 8px;
+  background: var(--accent-light); color: var(--accent);
+}
+
+.universe-back {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600;
+  color: var(--accent); background: none; border: none;
+  cursor: pointer; padding: var(--sp-2) 0; margin-bottom: var(--sp-3);
+  transition: color var(--duration-micro) var(--ease-out);
+}
+.universe-back:hover { color: var(--text); }
+
+.universe-detail-title {
+  font-family: var(--font-heading);
+  font-size: 24px; font-weight: 400;
+  color: var(--text); margin-bottom: var(--sp-2);
+}
+.universe-detail-tags {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  margin-bottom: var(--sp-4);
+}
+
+.universe-detail-summary,
+.universe-note {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-3);
+}
+
+.universe-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.universe-meta-block {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3);
+}
+
+.universe-meta-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+}
+
+.universe-meta-value { font-size: 13px; color: var(--text); }
+
+.universe-meta-chips,
+.universe-timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
 /* ── FOCUS STYLES ── */
 .nav-item:focus-visible,
 .nav-logo:focus-visible,

@@ -51,7 +51,19 @@ const tabEntries = Object.entries(TAB_TAGS);
         </div>
       </div>
 
-      <button type="button" class="nav-item" data-view="universe">Universes</button>
+      <!-- Universes — dropdown trigger -->
+      <div class="nav-dropdown-wrap">
+        <button type="button" class="nav-item" data-view="universe" aria-expanded="false" aria-haspopup="true">
+          Universes
+          <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu" id="nav-universe-dropdown">
+          <button type="button" class="nav-dropdown-item active" role="menuitem" data-universe-filter="all">All</button>
+          {tabEntries.map(([key, label]) => (
+            <button type="button" class="nav-dropdown-item" role="menuitem" data-universe-filter={key}>{label}</button>
+          ))}
+        </div>
+      </div>
     </div>
 
     <!-- Search -->
@@ -88,7 +100,13 @@ const tabEntries = Object.entries(TAB_TAGS);
     <div class="mobile-menu-label">By Domain</div>
     <div id="mobile-domain-items"><!-- Populated by JS --></div>
   </div>
-  <button type="button" class="mobile-menu-item" data-view="universe">Universes</button>
+  <div class="mobile-menu-group">
+    <div class="mobile-menu-label">Universes</div>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter="all">All</button>
+    {tabEntries.map(([key, label]) => (
+      <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter={key}>{label}</button>
+    ))}
+  </div>
 </div>
 
 <!-- Pass data to JS -->

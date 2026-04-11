@@ -147,7 +147,17 @@ function showView(view, options = {}) {
     const detail = document.getElementById('universe-detail');
     if (grid) grid.classList.remove('hidden');
     if (detail) detail.classList.add('hidden');
-    document.querySelectorAll('.universe-card').forEach(c => c.classList.remove('hidden'));
+
+    // Apply type filter if provided
+    const filter = options.filter || 'all';
+    document.querySelectorAll('.universe-card').forEach(card => {
+      if (filter === 'all') {
+        card.classList.remove('hidden');
+      } else {
+        const tags = (card.dataset.tags || '').split(',');
+        card.classList.toggle('hidden', !tags.includes(filter));
+      }
+    });
   }
 
   updateAllNavs();
@@ -197,6 +207,17 @@ function setupNavigation() {
     showView('domain', { domainId: item.dataset.domain });
   });
 
+  // Desktop dropdown items — universe type filter
+  document.getElementById('nav-universe-dropdown')?.addEventListener('click', (e) => {
+    const item = e.target.closest('.nav-dropdown-item[data-universe-filter]');
+    if (!item) return;
+    showView('universe', { filter: item.dataset.universeFilter });
+    // Highlight active filter
+    document.querySelectorAll('#nav-universe-dropdown .nav-dropdown-item').forEach(i => {
+      i.classList.toggle('active', i === item);
+    });
+  });
+
   // Close dropdowns on outside click
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-dropdown-wrap')) {
@@ -240,6 +261,8 @@ function setupNavigation() {
       showView('age', { phaseId: item.dataset.phase });
     } else if (view === 'domain' && item.dataset.domain) {
       showView('domain', { domainId: item.dataset.domain });
+    } else if (view === 'universe' && item.dataset.universeFilter) {
+      showView('universe', { filter: item.dataset.universeFilter });
     } else if (view) {
       showView(view);
     }
