@@ -1,0 +1,52 @@
+---
+interface Props {
+  phaseCount: number;
+  universeCount: number;
+}
+const { phaseCount, universeCount } = Astro.props;
+---
+
+<div class="home-view" id="home-view">
+  <div class="home-hero">
+    <h1 class="home-title">Education Framework</h1>
+    <p class="home-subtitle">A developmental framework for ages 0-18. Eleven targets, evidence-based methods, {universeCount} content universes, calibrated to each child's profile.</p>
+  </div>
+
+  <div class="home-grid">
+    <button type="button" class="home-card" data-nav="framework">
+      <div class="home-card-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h2 class="home-card-title">Framework</h2>
+      <p class="home-card-desc">Philosophy, principles, targets, and operational guidance. The foundation everything else is built on.</p>
+      <span class="home-card-meta">11 targets, 10 principles</span>
+    </button>
+
+    <button type="button" class="home-card" data-nav="age">
+      <div class="home-card-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+      </div>
+      <h2 class="home-card-title">By Age</h2>
+      <p class="home-card-desc">Developmental priorities, activities, mental models, and content for each stage. From neural foundations to launch.</p>
+      <span class="home-card-meta">{phaseCount} age phases</span>
+    </button>
+
+    <button type="button" class="home-card" data-nav="domain">
+      <div class="home-card-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </div>
+      <h2 class="home-card-title">By Domain</h2>
+      <p class="home-card-desc">Track a single domain across all ages: Communication, Music, Mind &amp; Body, Social, Building, and more.</p>
+      <span class="home-card-meta">Track one thread through time</span>
+    </button>
+
+    <button type="button" class="home-card" data-nav="universe">
+      <div class="home-card-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      </div>
+      <h2 class="home-card-title">Universes</h2>
+      <p class="home-card-desc">Books, films, games, maker systems, and literary canons. The content library that drives the framework.</p>
+      <span class="home-card-meta">{universeCount} content universes</span>
+    </button>
+  </div>
+</div>

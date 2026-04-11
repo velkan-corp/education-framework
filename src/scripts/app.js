@@ -1,5 +1,5 @@
 import { state } from './state.js';
-import { renderTabs, showTab, setupProfileToggles, setupCollapsibleSections, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
+import { showTab, setupProfileToggles, setupCollapsibleSections, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
 import { initSearch, openMobileSearch } from './search.js';
 import { initResourceFilters, initSectionFilters } from './filters.js';
 import { initDomainView } from './domain.js';
@@ -79,7 +79,6 @@ function navigateToAnchor(targetId) {
   const phaseEl = target.closest('.phase-content');
   if (phaseEl && !phaseEl.classList.contains('active')) {
     state.currentTab = phaseEl.dataset.phase;
-    renderTabs();
     showTab(state.currentTab);
     updateAllNavs();
     window.setTimeout(scrollToTarget, 50);
@@ -94,21 +93,23 @@ function init() {
   scopePhaseAnchors();
   setupProfileToggles();
   setupCollapsibleSections();
-  updateAllNavs();
   wrapTablesForMobile();
 
-  // Combined mobile FAB
+  // Mobile FAB
   const fabMenu = document.getElementById('fab-menu');
   if (fabMenu) fabMenu.addEventListener('click', toggleFloatMenu);
 
-  // Search icon — overlay on mobile, focus on desktop
-  document.getElementById('search-icon').addEventListener('click', () => {
-    if (window.innerWidth <= 900) {
-      openMobileSearch();
-    } else {
-      document.getElementById('search-input').focus();
-    }
-  });
+  // Search icon
+  const searchIcon = document.getElementById('search-icon');
+  if (searchIcon) {
+    searchIcon.addEventListener('click', () => {
+      if (window.innerWidth <= 900) {
+        openMobileSearch();
+      } else {
+        document.getElementById('search-input')?.focus();
+      }
+    });
+  }
 
   // Info tooltip toggles
   document.addEventListener('click', (e) => {
@@ -125,14 +126,12 @@ function init() {
     }
   });
 
-  // Handle internal anchor links across phase-scoped content.
+  // Internal anchor links
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href^="#"]');
     if (!link) return;
-
     const href = link.getAttribute('href');
     if (!href) return;
-
     e.preventDefault();
     navigateToAnchor(href.slice(1));
   });

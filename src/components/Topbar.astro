@@ -3,42 +3,96 @@ import { TAB_TAGS } from '../data/tags';
 
 interface Props {
   phases: Array<{ data: { phaseId: string; label: string } }>;
+  domainCount?: number;
+  universeCount?: number;
 }
-const { phases } = Astro.props;
+const { phases, domainCount = 0, universeCount = 0 } = Astro.props;
 
+const agePhases = phases.filter(p => p.data.phaseId !== 'framework');
 const tabEntries = Object.entries(TAB_TAGS);
 ---
 
-<div class="topbar">
+<nav class="topbar" role="navigation" aria-label="Main navigation">
   <div class="topbar-inner">
-    <button type="button" class="logo" id="nav-home" aria-label="Framework overview">Education Framework</button>
+    <!-- Logo / Home -->
+    <button type="button" class="nav-logo" id="nav-home" aria-label="Home">
+      <span class="nav-logo-mark">EF</span>
+      <span class="nav-logo-text">Education Framework</span>
+    </button>
 
-    <!-- Navigation dropdowns -->
-    <div class="nav-dropdowns">
-      <label class="nav-label" for="nav-view">View by</label>
-      <select id="nav-view" class="nav-select">
-        <option value="" disabled selected>Select view...</option>
-        <option value="age">Age</option>
-        <option value="domain">Domain</option>
-        <option value="universe">Universe</option>
-      </select>
-      <select id="nav-item" class="nav-select nav-item-select" disabled>
-        <option value="" disabled selected>Select...</option>
-      </select>
+    <!-- Main navigation -->
+    <div class="nav-items" id="nav-items">
+      <button type="button" class="nav-item active" data-view="home">Home</button>
+      <button type="button" class="nav-item" data-view="framework">Framework</button>
+
+      <!-- By Age — dropdown trigger -->
+      <div class="nav-dropdown-wrap">
+        <button type="button" class="nav-item" data-view="age" aria-expanded="false" aria-haspopup="true">
+          By Age
+          <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          {agePhases.map((phase) => (
+            <button type="button" class="nav-dropdown-item" role="menuitem" data-phase={phase.data.phaseId}>
+              <span class="nav-dropdown-label">{phase.data.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- By Domain — dropdown trigger -->
+      <div class="nav-dropdown-wrap">
+        <button type="button" class="nav-item" data-view="domain" aria-expanded="false" aria-haspopup="true">
+          By Domain
+          <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav-dropdown nav-dropdown-domain" role="menu" id="nav-domain-dropdown">
+          <!-- Populated by JS from domainMap -->
+        </div>
+      </div>
+
+      <button type="button" class="nav-item" data-view="universe">Universes</button>
     </div>
 
-    <!-- Phase data for JS (no visible tabs) -->
-    <script is:inline define:vars={{ phaseData: phases.filter(p => p.data.phaseId !== 'framework').map(p => ({ id: p.data.phaseId, label: p.data.label })), universeTabData: tabEntries.map(([key, label]) => ({ key, label })) }}>
-      window.__phaseData = phaseData;
-      window.__universeTabData = universeTabData;
-    </script>
-
+    <!-- Search -->
     <div id="search-wrap">
       <button id="search-icon" type="button" aria-label="Search">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
-      <input id="search-input" type="text" placeholder="Search… (⌘K)" data-mobile-placeholder="Search…" autocomplete="off">
+      <input id="search-input" type="text" placeholder="Search... (⌘K)" autocomplete="off">
       <div id="search-results" class="hidden"></div>
     </div>
+
+    <!-- Mobile hamburger -->
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
+</nav>
+
+<!-- Mobile slide-down menu -->
+<div class="mobile-menu hidden" id="mobile-menu">
+  <button type="button" class="mobile-menu-item" data-view="home">Home</button>
+  <button type="button" class="mobile-menu-item" data-view="framework">Framework</button>
+  <div class="mobile-menu-group">
+    <div class="mobile-menu-label">By Age</div>
+    {agePhases.map((phase) => (
+      <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="age" data-phase={phase.data.phaseId}>
+        {phase.data.label}
+      </button>
+    ))}
+  </div>
+  <div class="mobile-menu-group">
+    <div class="mobile-menu-label">By Domain</div>
+    <div id="mobile-domain-items"><!-- Populated by JS --></div>
+  </div>
+  <button type="button" class="mobile-menu-item" data-view="universe">Universes</button>
 </div>
+
+<!-- Pass data to JS -->
+<script is:inline define:vars={{ phaseData: agePhases.map(p => ({ id: p.data.phaseId, label: p.data.label })), universeTabData: tabEntries.map(([key, label]) => ({ key, label })) }}>
+  window.__phaseData = phaseData;
+  window.__universeTabData = universeTabData;
+</script>

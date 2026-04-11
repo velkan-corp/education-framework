@@ -1,41 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap');
+
 :root {
-  /*
-   * Education Framework — "Botanical" palette
-   * Plum depth + jade growth + warm coral energy on cream ground
-   * Counterpoint: rich plum against warm cream creates intellectual weight without coldness
-   */
-  --bg: #f8f4ec;
-  --surface: #ede6da;
-  --surface2: #e2dace;
-  --border: #d4cabc;
-  --text: #201a18;
-  --text-muted: #7a6e64;
+  /* ── Explorer's Journal palette ── */
+  --bg: #f5f3f0;
+  --surface: #edeae6;
+  --surface2: #e4e0db;
+  --surface3: #d8d3cc;
+  --border: #cdc6bc;
+  --border-light: #ddd8d1;
+  --text: #1a1d28;
+  --text-secondary: #3d4152;
+  --text-muted: #6b7084;
 
-  /* Accents — depth, growth, warmth */
-  --accent: #7a3a6e;   /* Plum — primary, headings, intellectual depth */
-  --accent2: #2a8a6a;  /* Jade — growth, links, language track */
-  --accent3: #5a8a3a;  /* Moss — music, nature, organic */
-  --accent4: #e07a3a;  /* Warm coral — highlights, energy */
-  --accent5: #c4943a;  /* Amber — secondary warmth */
-  --warn: #c44040;     /* Warm red — alerts */
+  /* Accents */
+  --accent: #1a9a7a;     /* Jade — primary, explorer green, growth */
+  --accent2: #7a3a6e;    /* Plum — depth, intellectual weight */
+  --accent3: #5a8a3a;    /* Moss — nature, organic */
+  --accent4: #e07a3a;    /* Coral — energy, attention, warmth */
+  --accent5: #c4943a;    /* Amber — secondary warmth */
+  --warn: #c44040;       /* Red — alerts */
 
-  /* Temperament colors — distinct on cream ground, harmonized with botanical palette */
-  --intro: #5858a0;    /* Soft indigo — introverts */
-  --ext: #c06050;      /* Coral — extroverts */
-  --verbal: #3a7a4a;   /* Forest — verbal */
-  --spatial: #a08830;  /* Ochre — spatial */
-  --hisens: #8858a0;   /* Lavender — high sensitivity */
-  --losens: #3a6a90;   /* Steel — low sensitivity */
-  --depth: #2a7a7a;    /* Teal — depth-seeking */
-  --breadth: #a04870;  /* Rose — breadth-seeking */
-  --high-react: #c45840; /* Brick — high reactivity */
-  --low-react: #4a7a90;  /* Cool steel — low reactivity */
-  --ec-high: #3a7a68;    /* Deep sage — high effortful control */
-  --ec-low: #c08a48;     /* Honey amber — low effortful control */
+  /* Temperament colors */
+  --intro: #5858a0;
+  --ext: #c06050;
+  --verbal: #3a7a4a;
+  --spatial: #a08830;
+  --hisens: #8858a0;
+  --losens: #3a6a90;
+  --depth: #2a7a7a;
+  --breadth: #a04870;
+  --high-react: #c45840;
+  --low-react: #4a7a90;
+  --ec-high: #3a7a68;
+  --ec-low: #c08a48;
 
-  /* Typography */
-  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
-  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  /* Typography — distinctive, not generic */
+  --font-heading: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, system-ui, sans-serif;
 
   /* Fibonacci spacing */
   --sp-1: 5px;
@@ -45,11 +46,21 @@
   --sp-5: 34px;
   --sp-6: 55px;
 
-  /* Derived tints — change accents above, these follow
-     Using color-mix for single-source-of-truth transparency */
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadows — layered depth */
+  --shadow-sm: 0 1px 3px rgba(26, 29, 40, 0.06), 0 1px 2px rgba(26, 29, 40, 0.04);
+  --shadow-md: 0 4px 12px rgba(26, 29, 40, 0.08), 0 2px 4px rgba(26, 29, 40, 0.04);
+  --shadow-lg: 0 8px 24px rgba(26, 29, 40, 0.10), 0 4px 8px rgba(26, 29, 40, 0.06);
+  --shadow-xl: 0 16px 48px rgba(26, 29, 40, 0.12), 0 8px 16px rgba(26, 29, 40, 0.06);
+
+  /* Derived tints */
   --accent-hover: color-mix(in srgb, var(--accent) 6%, transparent);
   --accent-subtle: color-mix(in srgb, var(--accent) 8%, transparent);
-  --accent-light: color-mix(in srgb, var(--accent) 10%, transparent);
+  --accent-light: color-mix(in srgb, var(--accent) 12%, transparent);
   --accent-border: color-mix(in srgb, var(--accent) 20%, transparent);
   --accent2-subtle: color-mix(in srgb, var(--accent2) 8%, transparent);
   --accent2-light: color-mix(in srgb, var(--accent2) 10%, transparent);
@@ -76,4 +87,11 @@
   --low-react-bg: color-mix(in srgb, var(--low-react) 8%, transparent);
   --ec-high-bg: color-mix(in srgb, var(--ec-high) 8%, transparent);
   --ec-low-bg: color-mix(in srgb, var(--ec-low) 8%, transparent);
+
+  /* Motion */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-micro: 120ms;
+  --duration-component: 250ms;
+  --duration-page: 400ms;
 }

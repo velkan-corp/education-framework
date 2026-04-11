@@ -1,14 +1,8 @@
 import { state } from './state.js';
-import { applyProfile, getHeadingText, renderTabs, showTab, updateAllNavs } from './navigation.js';
+import { applyProfile, getHeadingText, showTab, updateAllNavs } from './navigation.js';
 
-let currentDomain = null;
 let domainMap = null;
-
-const VIEW_DESCRIPTIONS = {
-  age: 'Each age bracket covers developmental priorities, activities, mental models, and content for that stage.',
-  domain: 'Track a single domain (e.g., Music, Communication) across all age brackets to see how it progresses over time.',
-  universe: 'Browse the content library: books, films, games, maker systems, and literary canons that drive the framework.'
-};
+let currentDomain = null;
 
 /* ── Domain map ── */
 
@@ -39,8 +33,7 @@ function buildDomainMap() {
         map.set(sectionId, { label, phases: [] });
       }
       map.get(sectionId).phases.push({
-        phaseId,
-        phaseLabel,
+        phaseId, phaseLabel,
         tier: h2.dataset.tier,
         content: contentEls.join('')
       });
@@ -66,234 +59,191 @@ function renderDomainTimeline(sectionId) {
   `).join('');
 }
 
-/* ── View title + description ── */
+/* ── Populate domain dropdown in nav ── */
 
-function updateViewHeader(view, itemLabel) {
-  let titleEl = document.getElementById('view-title');
-  let descEl = document.getElementById('view-description');
+function populateDomainDropdowns() {
+  if (!domainMap) return;
+  const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
 
-  if (!titleEl) {
-    // Create title element if it doesn't exist
-    const content = document.querySelector('.content');
-    if (!content) return;
-    const header = document.createElement('div');
-    header.id = 'view-header';
-    header.innerHTML = '<h1 id="view-title"></h1><p id="view-description" class="subtitle"></p>';
-    content.prepend(header);
-    titleEl = document.getElementById('view-title');
-    descEl = document.getElementById('view-description');
+  // Desktop dropdown
+  const desktop = document.getElementById('nav-domain-dropdown');
+  if (desktop) {
+    desktop.innerHTML = sorted.map(([id, data]) =>
+      `<button type="button" class="nav-dropdown-item" role="menuitem" data-domain="${id}">${data.label}</button>`
+    ).join('');
   }
 
-  const headerEl = document.getElementById('view-header');
-  if (view === 'age') {
-    // Age view has its own titles in the phase content
-    if (headerEl) headerEl.style.display = 'none';
-  } else {
-    if (headerEl) headerEl.style.display = 'block';
-    titleEl.textContent = itemLabel || '';
-    descEl.textContent = VIEW_DESCRIPTIONS[view] || '';
+  // Mobile items
+  const mobile = document.getElementById('mobile-domain-items');
+  if (mobile) {
+    mobile.innerHTML = sorted.map(([id, data]) =>
+      `<button type="button" class="mobile-menu-item mobile-menu-sub" data-view="domain" data-domain="${id}">${data.label}</button>`
+    ).join('');
   }
 }
 
-/* ── Dropdown population ── */
+/* ── View management ── */
 
-function populateItemDropdown(view) {
-  const navItem = document.getElementById('nav-item');
-  if (!navItem) return;
-
-  const prevValue = navItem.value;
-  navItem.innerHTML = '';
-
-  if (view === 'age') {
-    const phases = window.__phaseData || [];
-    phases.forEach(p => {
-      const opt = document.createElement('option');
-      opt.value = p.id;
-      opt.textContent = p.label;
-      navItem.appendChild(opt);
-    });
-    navItem.value = prevValue || state.currentTab || (phases[0] && phases[0].id);
-
-  } else if (view === 'domain') {
-    if (!domainMap) return;
-    const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
-    sorted.forEach(([id, data]) => {
-      const opt = document.createElement('option');
-      opt.value = id;
-      opt.textContent = data.label;
-      navItem.appendChild(opt);
-    });
-    const firstId = sorted[0]?.[0] || null;
-    navItem.value = (prevValue && domainMap.has(prevValue)) ? prevValue : firstId;
-
-  } else if (view === 'universe') {
-    const uniTabs = window.__universeTabData || [];
-    const allOpt = document.createElement('option');
-    allOpt.value = 'all';
-    allOpt.textContent = 'All';
-    navItem.appendChild(allOpt);
-    uniTabs.forEach(t => {
-      const opt = document.createElement('option');
-      opt.value = t.key;
-      opt.textContent = t.label;
-      navItem.appendChild(opt);
-    });
-    navItem.value = 'all';
-  }
-}
-
-/* ── Framework (home) ── */
-
-function showFramework() {
-  state.currentView = 'age';
-  state.currentTab = 'framework';
-
-  // Reset both dropdowns to placeholder state
-  const navView = document.getElementById('nav-view');
-  const navItem = document.getElementById('nav-item');
-  if (navView) navView.value = '';
-  if (navItem) {
-    navItem.innerHTML = '<option value="" disabled selected>Select...</option>';
-    navItem.disabled = true;
-  }
-
-  // Hide domain/universe views
-  const domainView = document.getElementById('domain-view');
-  const universeView = document.getElementById('universe-view');
-  const legend = document.querySelector('.universe-legend');
-  if (domainView) domainView.classList.add('hidden');
-  if (universeView) universeView.classList.add('hidden');
-  if (legend) legend.classList.add('hidden');
-  document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
-
-  // Show framework phase
-  document.querySelectorAll('.phase-content').forEach(el => {
-    el.classList.toggle('active', el.dataset.phase === 'framework');
-  });
-
-  // Highlight logo
-  const logo = document.getElementById('nav-home');
-  if (logo) logo.classList.add('active');
-
-  updateViewHeader('age', null);
-  applyProfile();
-  updateAllNavs();
-  window.scrollTo(0, 0);
-}
-
-/* ── View switching ── */
-
-function switchView(view) {
-  state.currentView = view;
-
-  const navView = document.getElementById('nav-view');
-  if (navView) navView.value = view;
-
-  // Remove logo active state
-  const logo = document.getElementById('nav-home');
-  if (logo) logo.classList.remove('active');
-
-  const domainView = document.getElementById('domain-view');
-  const universeView = document.getElementById('universe-view');
-  const legend = document.querySelector('.universe-legend');
-
-  // Hide all content
-  if (domainView) domainView.classList.add('hidden');
-  if (universeView) universeView.classList.add('hidden');
-  if (legend) legend.classList.add('hidden');
-  document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
+function hideAllViews() {
   document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
+  document.getElementById('domain-view')?.classList.add('hidden');
+  document.getElementById('universe-view')?.classList.add('hidden');
+  document.getElementById('home-view')?.classList.add('hidden');
+  document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
+  document.querySelector('.universe-legend')?.classList.add('hidden');
+}
 
-  // Populate and enable item dropdown
-  const navItem = document.getElementById('nav-item');
-  if (navItem) navItem.disabled = false;
-  populateItemDropdown(view);
-  const selectedValue = navItem ? navItem.value : null;
+function setActiveNavItem(view) {
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.classList.toggle('active', item.dataset.view === view);
+  });
+  // Close any open dropdowns
+  document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+  document.querySelectorAll('.nav-item[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false'));
+}
 
-  if (view === 'domain') {
-    if (domainView) domainView.classList.remove('hidden');
-    currentDomain = selectedValue;
-    if (currentDomain) {
-      const data = domainMap.get(currentDomain);
-      updateViewHeader('domain', data ? data.label : '');
-      renderDomainTimeline(currentDomain);
-      applyProfile();
-    }
-    updateAllNavs();
+function showView(view, options = {}) {
+  state.currentView = view;
+  hideAllViews();
+  setActiveNavItem(view);
+
+  // Close mobile menu
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburger = document.getElementById('nav-hamburger');
+  if (mobileMenu) mobileMenu.classList.add('hidden');
+  if (hamburger) hamburger.classList.remove('open');
+
+  if (view === 'home') {
+    document.getElementById('home-view')?.classList.remove('hidden');
+    document.getElementById('home-view').style.display = '';
+  } else if (view === 'framework') {
+    state.currentTab = 'framework';
+    showTab('framework');
+  } else if (view === 'age') {
+    const phaseId = options.phaseId || (window.__phaseData?.[0]?.id) || 'age-0-1';
+    state.currentTab = phaseId;
+    showTab(phaseId);
+  } else if (view === 'domain') {
+    const domainId = options.domainId || (domainMap ? Array.from(domainMap.keys())[0] : null);
+    if (!domainId) return;
+    currentDomain = domainId;
+    const data = domainMap.get(domainId);
+
+    document.getElementById('domain-view')?.classList.remove('hidden');
+    document.getElementById('domain-title').textContent = data ? data.label : '';
+    document.getElementById('domain-description').textContent = 'Tracking this domain across all age brackets — from earliest foundations to 17-18 synthesis.';
+    renderDomainTimeline(domainId);
+    applyProfile();
+
+    // Highlight active domain item
+    document.querySelectorAll('.nav-dropdown-item[data-domain]').forEach(item => {
+      item.classList.toggle('active', item.dataset.domain === domainId);
+    });
   } else if (view === 'universe') {
-    if (universeView) universeView.classList.remove('hidden');
+    document.getElementById('universe-view')?.classList.remove('hidden');
     document.querySelectorAll('.universe-filters').forEach(f => f.classList.remove('hidden'));
-    if (legend) legend.classList.remove('hidden');
+    document.querySelector('.universe-legend')?.classList.remove('hidden');
     const grid = document.getElementById('universe-grid');
     const detail = document.getElementById('universe-detail');
     if (grid) grid.classList.remove('hidden');
     if (detail) detail.classList.add('hidden');
     document.querySelectorAll('.universe-card').forEach(c => c.classList.remove('hidden'));
-    updateViewHeader('universe', 'Content Library');
-    updateAllNavs();
-  } else {
-    // Age view — show first age phase (not framework)
-    const firstPhase = (window.__phaseData || [])[0];
-    if (selectedValue) {
-      state.currentTab = selectedValue;
-    } else if (firstPhase) {
-      state.currentTab = firstPhase.id;
-      if (navItem) navItem.value = firstPhase.id;
-    }
-    showTab(state.currentTab);
-    updateViewHeader('age', null);
-    updateAllNavs();
   }
 
+  updateAllNavs();
   window.scrollTo(0, 0);
 }
 
-/* ── Item selection ── */
+/* ── Event handlers ── */
 
-function handleItemChange(value) {
-  const view = state.currentView;
+function setupNavigation() {
+  // Desktop nav items
+  document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+    item.addEventListener('click', (e) => {
+      const view = item.dataset.view;
 
-  // Remove logo active state
-  const logo = document.getElementById('nav-home');
-  if (logo) logo.classList.remove('active');
+      // If it's a dropdown trigger, toggle the dropdown instead
+      const wrap = item.closest('.nav-dropdown-wrap');
+      if (wrap) {
+        const dropdown = wrap.querySelector('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
 
-  if (view === 'age') {
-    state.currentTab = value;
-    showTab(value);
-    updateViewHeader('age', null);
-    updateAllNavs();
-    window.scrollTo(0, 0);
+        // Close all dropdowns first
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.nav-item[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false'));
 
-  } else if (view === 'domain') {
-    if (value === currentDomain) return;
-    currentDomain = value;
-    document.querySelector('.phase-content[data-phase="framework"]')?.classList.remove('active');
-    document.getElementById('domain-view').classList.remove('hidden');
-    const data = domainMap.get(value);
-    updateViewHeader('domain', data ? data.label : '');
-    renderDomainTimeline(value);
-    applyProfile();
-    updateAllNavs();
-    window.scrollTo(0, 0);
-
-  } else if (view === 'universe') {
-    // Filter universe cards by category
-    const grid = document.getElementById('universe-grid');
-    const detail = document.getElementById('universe-detail');
-    if (grid) grid.classList.remove('hidden');
-    if (detail) detail.classList.add('hidden');
-
-    document.querySelectorAll('.universe-card').forEach(card => {
-      if (value === 'all') {
-        card.classList.remove('hidden');
-      } else {
-        const tags = (card.dataset.tags || '').split(',');
-        card.classList.toggle('hidden', !tags.includes(value));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          item.setAttribute('aria-expanded', 'true');
+        }
+        return;
       }
-    });
 
-    updateViewHeader('universe', 'Content Library');
+      showView(view);
+    });
+  });
+
+  // Desktop dropdown items — age phases
+  document.querySelectorAll('.nav-dropdown-item[data-phase]').forEach(item => {
+    item.addEventListener('click', () => {
+      showView('age', { phaseId: item.dataset.phase });
+    });
+  });
+
+  // Desktop dropdown items — domains (delegated since they're dynamic)
+  document.getElementById('nav-domain-dropdown')?.addEventListener('click', (e) => {
+    const item = e.target.closest('.nav-dropdown-item[data-domain]');
+    if (!item) return;
+    showView('domain', { domainId: item.dataset.domain });
+  });
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown-wrap')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      document.querySelectorAll('.nav-item[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    }
+  });
+
+  // Logo → Home
+  document.getElementById('nav-home')?.addEventListener('click', () => showView('home'));
+
+  // Home cards
+  document.querySelectorAll('.home-card[data-nav]').forEach(card => {
+    card.addEventListener('click', () => {
+      const nav = card.dataset.nav;
+      if (nav === 'framework') showView('framework');
+      else if (nav === 'age') showView('age');
+      else if (nav === 'domain') showView('domain');
+      else if (nav === 'universe') showView('universe');
+    });
+  });
+
+  // Hamburger toggle
+  const hamburger = document.getElementById('nav-hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      hamburger.classList.toggle('open', !isOpen);
+      hamburger.setAttribute('aria-expanded', String(!isOpen));
+    });
   }
+
+  // Mobile menu items (delegated)
+  mobileMenu?.addEventListener('click', (e) => {
+    const item = e.target.closest('.mobile-menu-item');
+    if (!item) return;
+    const view = item.dataset.view;
+    if (view === 'age' && item.dataset.phase) {
+      showView('age', { phaseId: item.dataset.phase });
+    } else if (view === 'domain' && item.dataset.domain) {
+      showView('domain', { domainId: item.dataset.domain });
+    } else if (view) {
+      showView(view);
+    }
+  });
 }
 
 /* ── Init ── */
@@ -302,24 +252,9 @@ export function initDomainView() {
   domainMap = buildDomainMap();
   window._domainMap = domainMap;
 
-  // Home button
-  const homeBtn = document.getElementById('nav-home');
-  if (homeBtn) {
-    homeBtn.addEventListener('click', () => showFramework());
-  }
+  populateDomainDropdowns();
+  setupNavigation();
 
-  // Show framework on load
-  showFramework();
-
-  // View dropdown handler
-  const navView = document.getElementById('nav-view');
-  if (navView) {
-    navView.addEventListener('change', (e) => switchView(e.target.value));
-  }
-
-  // Item dropdown handler
-  const navItem = document.getElementById('nav-item');
-  if (navItem) {
-    navItem.addEventListener('change', (e) => handleItemChange(e.target.value));
-  }
+  // Start with Home view
+  showView('home');
 }

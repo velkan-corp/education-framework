@@ -1,43 +1,51 @@
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  /* Navigation: show hamburger, hide desktop nav */
+  .nav-items { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-logo-text { display: none; }
+  #search-input { display: none; }
+
+  /* Sidebar: hidden on mobile, FAB takes over */
   .sidebar { display: none; }
+  .profile-fab { display: block; }
+  .profile-float { max-height: 80vh; overflow-y: auto; }
+
+  /* Content: full width */
   .content { padding: var(--sp-4) var(--sp-3); max-width: 100%; }
-  .card-grid { grid-template-columns: 1fr; }
-  .music-track { flex-direction: column; }
-  .logo { display: none; }
-  .tab { font-size: 12px; min-height: 40px; }
+
+  /* Home grid: single column */
+  .home-grid { grid-template-columns: 1fr; }
+  .home-title { font-size: 28px; }
+
+  /* Content typography */
   h1 { font-size: 22px; }
   h2 { font-size: 17px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .music-track { flex-direction: column; }
   td:first-child { white-space: normal; width: auto; }
   .priority-box { padding: 14px; }
   .topbar-inner { flex-wrap: nowrap; }
-  .tabs { flex: 1; min-width: 0; }
-  /* Single mobile FAB + combined panel */
-  .profile-fab { display: block; }
-  .profile-float { max-height: 80vh; overflow-y: auto; }
-  /* Tables: reduce min-width to prevent horizontal scroll */
+
+  /* Tables */
   .table-scroll table { min-width: auto; }
-  /* Search: icon opens full-screen overlay on mobile */
-  #search-icon { display: block; cursor: pointer; padding: 8px; width: 32px; height: 32px; }
-  #search-input { display: none; }
-  #search-results { display: none !important; }
-  /* Navigation dropdowns: stack on mobile */
-  .nav-dropdowns { flex-wrap: wrap; gap: 4px; }
-  .nav-label { font-size: 10px; }
-  .nav-select { font-size: 12px; padding: 5px 8px; }
-  /* Universe grid: 2 columns on tablet, 1 on phone */
+
+  /* Universe grid */
   .universe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-  /* Timeline: less padding on mobile */
+
+  /* Timeline */
   .timeline-phase { padding-left: var(--sp-3); }
 }
+
 @media (max-width: 500px) {
-  .tab { font-size: 11px; min-height: 36px; }
-  .tabs { gap: 0.25rem; padding: 0 0.25rem; }
+  .home-card { padding: var(--sp-4); }
+  .home-card-title { font-size: 17px; }
 }
 
-/* PRINT */
+/* ── PRINT ── */
 @media print {
-  .topbar, .sidebar, .profile-fab, .profile-float { display: none !important; }
+  .topbar, .sidebar, .profile-fab, .profile-float, .mobile-menu, #mobile-search-overlay { display: none !important; }
   .content { max-width: 100%; padding: var(--sp-4); }
   .t-adjust { display: block !important; }
+  .phase-content { display: block !important; }
 }
