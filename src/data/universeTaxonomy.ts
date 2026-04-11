@@ -177,6 +177,6 @@ export const ENGAGEMENT_MODE_LABELS: Record<(typeof ENGAGEMENT_MODES)[number], s
   absorb: 'Absorb',
   interrogate: 'Interrogate',
   make: 'Make',
-  dim: 'Full DIM',
+  dim: 'Full Engagement Cycle',
   critique: 'Critique',
 };
