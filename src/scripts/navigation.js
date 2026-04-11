@@ -11,6 +11,10 @@ export function getHeadingText(h) {
 
 function buildSectionNav(containerEl, entries, options = {}) {
   const { linkClass = 'nav-link', titleClass = 'sidebar-title', titleStyle = '', onClickExtra = null } = options;
+  if (entries.length === 0) {
+    containerEl.innerHTML = '';
+    return;
+  }
   containerEl.innerHTML = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>Sections</div>` +
     entries.map(e => `<button type="button" class="${linkClass}">${e.label}</button>`).join('');
   containerEl.querySelectorAll(`.${linkClass}`).forEach((link, i) => {
@@ -71,34 +75,13 @@ export function updateAllNavs() {
   }
 }
 
-export function renderTabs() {
-  const tabsEl = document.getElementById('tabs');
-  tabsEl.querySelectorAll('.tab').forEach(tab => {
-    const active = tab.dataset.tab === state.currentTab;
-    tab.classList.toggle('active', active);
-    tab.setAttribute('aria-selected', String(active));
-  });
-}
-
-export function setupTabClicks() {
-  document.getElementById('tabs').addEventListener('click', (e) => {
-    const tab = e.target.closest('.tab');
-    if (!tab) return;
-    state.currentTab = tab.dataset.tab;
-    renderTabs();
-    showTab(state.currentTab);
-    updateAllNavs();
-    window.scrollTo(0, 0);
-  });
-}
+// Legacy stubs — renderTabs is called by search.js but tabs no longer exist in DOM
+export function renderTabs() {}
 
 export function showTab(tabId) {
   document.querySelectorAll('.phase-content').forEach(el => {
     el.classList.toggle('active', el.dataset.phase === tabId);
   });
-  // Sync item dropdown if in age view
-  const navItem = document.getElementById('nav-item');
-  if (navItem && state.currentView === 'age') navItem.value = tabId;
   applyProfile();
   wrapTablesForMobile();
   updateAllNavs();

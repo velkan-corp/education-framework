@@ -1,7 +1,7 @@
 import { state } from './state.js';
 import { updateAllNavs } from './navigation.js';
 
-let currentTabTag = 'all';
+// Tab-based category filtering removed — all filtering now via filter pills
 // Single-select filters (primary)
 let currentAge = 'all';
 let currentTier = 'all';
@@ -132,7 +132,6 @@ function applyFilters() {
     const phaseModes = splitCsv(card.dataset.phaseModes);
     const phaseTiers = splitCsv(card.dataset.phaseTiers);
 
-    const matchesTab = currentTabTag === 'all' || tags.includes(currentTabTag);
     const matchesAge = currentAge === 'all' || phases.includes(currentAge);
     const matchesTier = currentTier === 'all'
       || (currentAge === 'all'
@@ -151,8 +150,7 @@ function applyFilters() {
           }));
 
     card.classList.toggle('hidden', !(
-      matchesTab
-      && matchesAge
+      matchesAge
       && matchesTier
       && matchesLanguage
       && matchesKind
@@ -173,22 +171,6 @@ function showControls() {
   const legend = document.querySelector('.universe-legend');
   if (legend) legend.classList.remove('hidden');
   document.querySelectorAll('.universe-filters').forEach((filterRow) => filterRow.classList.remove('hidden'));
-}
-
-function showFrameworkInUniverse() {
-  const grid = document.getElementById('universe-grid');
-  const detail = document.getElementById('universe-detail');
-
-  grid.classList.add('hidden');
-  detail.classList.add('hidden');
-  hideControls();
-
-  document.querySelectorAll('.phase-content').forEach(el => el.classList.remove('active'));
-  const fw = document.querySelector('.phase-content[data-phase="framework"]');
-  if (fw) fw.classList.add('active');
-
-  updateAllNavs();
-  window.scrollTo(0, 0);
 }
 
 function showUniverseDetail(universeId) {
