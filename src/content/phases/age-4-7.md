@@ -235,12 +235,12 @@ order: 3
 <p><strong>Peer selection:</strong> One or two children who are observably ahead of them in some domain. Not to create competition — to normalize high performance as something peers do.</p>
 <p><strong>Madrid-specific:</strong> Chess clubs (Club de Ajedrez Madrid), British Council youth programs, music conservatory preparation programs, international school extracurriculars.</p>
 
-<h2 id="s-social-independence" data-tier="core"><span class="material-symbols-rounded">psychology</span>Social Independence</h2>
+<h3>Social Independence</h3>
 
-<h3>Stories as Curriculum</h3>
+<h4>Stories as Curriculum</h4>
 <p>"Horton Hears a Who" (Dr. Seuss) — one person was right when everyone else was wrong. "A person's a person no matter how small." "Ferdinand" (Munro Leaf) — the bull who would rather smell flowers than fight. Being different from your peers is fine. "Swimmy" (Leo Lionni) — cooperation AND individual vision. "The Emperor's New Clothes" (Hans Christian Andersen) — the child who said what was true when everyone else was pretending. These are not just stories. They are case studies in social independence, told at the right developmental level.</p>
 
-<h3>Practices</h3>
+<h4>Practices</h4>
 <p><strong>Celebrate unpopular choices explicitly.</strong> When the child makes a choice different from their peers — different game, different food, different activity — name it positively: "You decided differently from everyone else. That takes courage."</p>
 <p><strong>Practice saying "no" and "I don't want to" as complete sentences.</strong> Role-play: "Your friend wants to play X but you want to play Y. What do you say?" The ability to refuse without guilt is a foundational life skill. Don't undermine it by teaching compliance as the default.</p>
 <p><strong>One visible domain of difference.</strong> The niche mastery commitment already creates this — a child who plays chess seriously at 6 or practices violin daily is already different from peers. Name it positively: "You're the kind of person who goes deep into things. That's unusual and excellent."</p>
