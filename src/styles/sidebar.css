@@ -71,6 +71,20 @@
 
 /* Child profile selector */
 .profile-child-selector { margin-bottom: var(--sp-3); padding-bottom: var(--sp-3); border-bottom: 1px solid var(--border); }
+.reset-profile-btn {
+  display: block;
+  width: 100%;
+  margin-top: var(--sp-2);
+  padding: 4px 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+.reset-profile-btn:hover { color: var(--text); border-color: var(--text-muted); }
 
 /* Collapsible instrument sections */
 .profile-section-header {

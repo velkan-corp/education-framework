@@ -184,7 +184,24 @@ function syncAllRadioButtons() {
 
 /* ── Profile toggles ── */
 
+function resetToBalanced() {
+  for (const key of Object.keys(state.profile)) {
+    state.profile[key] = 'balanced';
+  }
+  clearChildProfile();
+  syncAllRadioButtons();
+  applyProfile();
+  updateFabIndicator();
+}
+
 export function setupProfileToggles() {
+  document.querySelectorAll('.reset-profile-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetToBalanced();
+    });
+  });
+
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.radio-btn');
     if (!btn) return;

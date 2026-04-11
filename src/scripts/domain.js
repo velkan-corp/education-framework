@@ -43,7 +43,7 @@ function buildDomainMap() {
     if (!programZone) return;
 
     programZone.querySelectorAll('h2[data-tier]').forEach(h2 => {
-      const sectionId = h2.id;
+      const sectionId = h2.dataset.anchorBase || h2.id;
       if (!sectionId) return;
 
       const label = getHeadingText(h2);
