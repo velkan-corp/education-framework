@@ -362,6 +362,45 @@
   color: var(--accent);
 }
 
+/* ── FRAMEWORK SUB-TABS ── */
+.fw-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--sp-3);
+}
+.fw-tab {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: none;
+  cursor: pointer;
+  transition: all var(--duration-micro) var(--ease-out);
+}
+.fw-tab:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+.fw-tab.active {
+  color: var(--accent);
+  font-weight: 600;
+  background: var(--accent-light);
+  border-color: var(--accent-border);
+}
+
+.fw-tab-content {
+  display: none;
+  animation: content-in var(--duration-page) var(--ease-out);
+}
+.fw-tab-content.active {
+  display: block;
+}
+
 /* ── DOMAIN VIEW HEADER ── */
 #domain-header {
   margin-bottom: var(--sp-5);

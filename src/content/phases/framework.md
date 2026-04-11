@@ -3,8 +3,16 @@ phaseId: "framework"
 label: "Framework"
 order: 0
 ---
+<div class="fw-tabs" id="fw-tabs">
+  <button type="button" class="fw-tab active" data-fw-tab="philosophy">Philosophy</button>
+  <button type="button" class="fw-tab" data-fw-tab="methods">Methods</button>
+  <button type="button" class="fw-tab" data-fw-tab="operations">Operations</button>
+</div>
+
+<div class="fw-tab-content active" data-fw-panel="philosophy">
+
 <h1>Philosophy</h1>
-<p class="subtitle">Guided childhood with freedom. Compounding is the master principle. Start early, stay consistent, go deep.</p>
+<p class="subtitle">What we believe about childhood development and why. The foundational convictions, target outcomes, and thinking toolkit that everything else is built on.</p>
 
 <h2 id="s-principles"><span class="material-symbols-rounded">star</span>The Ten Principles</h2>
 
@@ -128,8 +136,36 @@ order: 0
 <tr><td>11</td><td>Creative Production</td><td>Generate novel, valuable output — ideas, artifacts, solutions, art, arguments. Not creativity as personality trait but as a practicable skill: divergent thinking, combination, iteration, and the courage to produce original work. The engagement cycle's "Make" phase is the primary development mechanism. Assessed quarterly: "What did you create this quarter that didn't exist before?"</td></tr>
 </table>
 
-<h2 id="s-operational"><span class="material-symbols-rounded">build</span>Operational Principles</h2>
-<h3>Engagement Cycle — Evidence-Based Deep Engagement Cycle</h3>
+<h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
+<h3>The Onion Layers</h3>
+<p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
+<h3>Twelve Universal Models</h3>
+<p>Introduced progressively through the Onion Layers — each model appears first as lived experience, then named, then stress-tested, then synthesised with others, then critiqued. See each phase's Mental Models section for the age-specific engagement.</p>
+<table>
+<tr><th>#</th><th>Model</th><th>Core Question</th><th>Introduced</th></tr>
+<tr><td>1</td><td>Cause & Effect</td><td>Then what? And then what?</td><td>Age 4-7</td></tr>
+<tr><td>2</td><td>Feedback Loops</td><td>Does the output amplify or dampen the input?</td><td>Age 4-7</td></tr>
+<tr><td>3</td><td>Incentives</td><td>Show me the incentive, I'll show you the outcome.</td><td>Age 4-7</td></tr>
+<tr><td>4</td><td>Inversion</td><td>What would make this fail? Now avoid that.</td><td>Age 4-7</td></tr>
+<tr><td>5</td><td>Maps ≠ Territory</td><td>Is this the thing, or a representation of the thing?</td><td>Age 8-10</td></tr>
+<tr><td>6</td><td>Compounding</td><td>What happens if this continues for 10 years?</td><td>Age 8-10</td></tr>
+<tr><td>7</td><td>Probability</td><td>What's the actual likelihood? Not "will it" — "how likely?"</td><td>Age 8-10</td></tr>
+<tr><td>8</td><td>Emergence</td><td>What arises from simple parts that none of the parts contain?</td><td>Age 11-13</td></tr>
+<tr><td>9</td><td>Complementary Opposites</td><td>Is this an either/or or a both/and?</td><td>Age 11-13</td></tr>
+<tr><td>10</td><td>Via Negativa</td><td>What improves by removing rather than adding?</td><td>Age 11-13</td></tr>
+<tr><td>11</td><td>Antifragility</td><td>Does this system benefit from disorder?</td><td>Age 14-16</td></tr>
+<tr><td>12</td><td>Model Failure</td><td>Where does this model give the wrong answer?</td><td>Age 14-16</td></tr>
+</table>
+
+</div><!-- end philosophy panel -->
+
+<div class="fw-tab-content" data-fw-panel="methods">
+
+<h1>Methods</h1>
+<p class="subtitle">How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
+
+<h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement & Teaching</h2>
+<h3>Engagement Cycle — Evidence-Based Deep Engagement</h3>
 <p>An evidence-informed design heuristic for deep engagement with content. Not a validated method in itself — each phase maps to robustly validated cognitive mechanisms:</p>
 <p><strong>Absorb</strong> (experience fully without analysis) → <strong>Check</strong> ("explain what you understand so far") → <strong>Interrogate</strong> (ask why, go deeper) → <strong>Make</strong> (create something in response) → <strong>Revisit</strong> (spaced retrieval at 1 week, 1 month).</p>
 <table>
@@ -152,27 +188,8 @@ order: 0
 <p>For the niche mastery domain: always the best available private instructor. 1:1 with a practitioner who performs at a high level, not just teaches. Not group classes — those are for social/ensemble skills. No budget limit on the primary instructor.</p>
 <h3>Capability Liberates</h3>
 <p>Material competence produces social independence. When you understand how a shoe is made, brand mystique evaporates. When you can make and repair things, you need less — and need is the hook consumerism uses. When your identity is anchored in capability rather than consumption, social pressure to "have the right things" has no leverage. The framework develops two reinforcing threads across all phases: <strong>material literacy</strong> (understand how everyday objects are made, value craftsmanship over brand, develop the capability to make and repair) and <strong>social independence</strong> (develop an internal locus of evaluation where your sense of worth comes from your own values, not external approval). These are not separate curricula — they are causally linked. The person who can make, repair, and understand is free in a way that the person who can only buy is not.</p>
-<h3>The Onion Layers</h3>
-<p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
-<h3>Twelve Universal Models</h3>
-<p>The thinking toolkit. Introduced progressively through the Onion Layers — each model appears first as lived experience, then named, then stress-tested, then synthesised with others, then critiqued. See each phase's Mental Models section for the age-specific engagement.</p>
-<table>
-<tr><th>#</th><th>Model</th><th>Core Question</th><th>Introduced</th></tr>
-<tr><td>1</td><td>Cause & Effect</td><td>Then what? And then what?</td><td>Age 4-7</td></tr>
-<tr><td>2</td><td>Feedback Loops</td><td>Does the output amplify or dampen the input?</td><td>Age 4-7</td></tr>
-<tr><td>3</td><td>Incentives</td><td>Show me the incentive, I'll show you the outcome.</td><td>Age 4-7</td></tr>
-<tr><td>4</td><td>Inversion</td><td>What would make this fail? Now avoid that.</td><td>Age 4-7</td></tr>
-<tr><td>5</td><td>Maps ≠ Territory</td><td>Is this the thing, or a representation of the thing?</td><td>Age 8-10</td></tr>
-<tr><td>6</td><td>Compounding</td><td>What happens if this continues for 10 years?</td><td>Age 8-10</td></tr>
-<tr><td>7</td><td>Probability</td><td>What's the actual likelihood? Not "will it" — "how likely?"</td><td>Age 8-10</td></tr>
-<tr><td>8</td><td>Emergence</td><td>What arises from simple parts that none of the parts contain?</td><td>Age 11-13</td></tr>
-<tr><td>9</td><td>Complementary Opposites</td><td>Is this an either/or or a both/and?</td><td>Age 11-13</td></tr>
-<tr><td>10</td><td>Via Negativa</td><td>What improves by removing rather than adding?</td><td>Age 11-13</td></tr>
-<tr><td>11</td><td>Antifragility</td><td>Does this system benefit from disorder?</td><td>Age 14-16</td></tr>
-<tr><td>12</td><td>Model Failure</td><td>Where does this model give the wrong answer?</td><td>Age 14-16</td></tr>
-</table>
 
-<h2 id="s-joy-kindness-luck"><span class="material-symbols-rounded">favorite</span>Joy, Kindness & Luck — How To</h2>
+<h2 id="s-joy-kindness-luck"><span class="material-symbols-rounded">favorite</span>Joy, Kindness & Luck</h2>
 <h3>Imbuing Joy</h3>
 <p><strong>Model it.</strong> If the parent visibly finds joy in their own struggle-learn-grow process, the child absorbs it.</p>
 <p><strong>Name it when it happens.</strong> "You just spent 2 hours on that problem and you're smiling. That's the feeling."</p>
@@ -192,6 +209,13 @@ order: 0
 <p><strong>Kindness creates return luck.</strong> People help people who helped them. Reliable kindness accumulates social capital that converts into opportunity years later.</p>
 <p><strong>Taleb's barbell:</strong> Very conservative in most things. Asymmetric bets in a few. Never risk ruin for marginal gain.</p>
 <p><strong>Teach them to recognize it.</strong> "That happened because you were prepared AND in the right room AND someone remembered you were kind."</p>
+
+</div><!-- end methods panel -->
+
+<div class="fw-tab-content" data-fw-panel="operations">
+
+<h1>Operations</h1>
+<p class="subtitle">Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>
 
 <h2 id="s-application"><span class="material-symbols-rounded">workspace_premium</span>The Application Architecture</h2>
 <p>The framework develops capability. This section converts capability into externally validated, admissions-visible excellence. Not gaming the system — making the excellence VISIBLE. A child who is genuinely excellent but can't demonstrate it loses to a child who is slightly less excellent but packages it brilliantly.</p>
@@ -376,3 +400,5 @@ order: 0
 
 <h3>Recommendation Letter Cultivation</h3>
 <p>The niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. Start at age 13-14. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. These relationships need 2+ years to produce extraordinary letters.</p>
+
+</div><!-- end operations panel -->
