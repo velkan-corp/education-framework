@@ -93,6 +93,9 @@ order: 1
 <h3>Physical System</h3>
 <p>Tummy time, floor freedom, outdoor exposure to weather variation. Daily outdoor blanket time regardless of weather.</p>
 
+<h3>Dance & Movement Seed</h3>
+<p><strong>Dance with them.</strong> Hold, bounce to the beat, sway together. They feel rhythm through your body before they hear it independently. Play diverse rhythms throughout the day — not just 4/4: Afro-Cuban, Brazilian, flamenco compás, waltz, reggae. The auditory-motor coupling that makes rhythm feel natural is being wired now (Zentner & Eerola, 2010 — infants as young as 5 months show rhythmic movement responses to music). No instruction needed — this is entirely parent-guided. The gymnastics substrate is already here: tummy time, floor freedom, reaching, rolling. These ARE the prerequisites for later tumbling.</p>
+
 <h3>Self-Awareness & Emotional Intelligence</h3>
 <p>Co-regulation is the entire curriculum. The infant cannot regulate alone — they borrow your nervous system. When they cry, you remain calm. When they're distressed, you name it: "You're frustrated. That's okay. I'm here." This is not sentiment — it's the neurobiological foundation of self-regulation. Children who experience consistent co-regulation develop stronger prefrontal-amygdala connectivity. The parent's emotional state IS the child's regulation tool.</p>
 <p><strong>Kindness modeling begins here.</strong> The parent's emotional tone IS the child's first experience of kindness. Responding to distress with warmth, not irritation. Narrating gently, not correcting harshly. The child's first model of "how people treat each other" is you.</p>
