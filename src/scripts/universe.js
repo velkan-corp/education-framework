@@ -76,30 +76,7 @@ export function initUniverseView() {
   const grid = document.getElementById('universe-grid');
   const detail = document.getElementById('universe-detail');
   const backBtn = document.getElementById('universe-back');
-  const universeTabs = document.getElementById('universe-tabs');
-  if (!grid || !detail || !universeTabs) return;
-
-  // Tab clicks — filter by medium/type
-  universeTabs.addEventListener('click', (e) => {
-    const tab = e.target.closest('.tab');
-    if (!tab) return;
-    const tabId = tab.dataset.universeTab;
-    if (!tabId) return;
-
-    universeTabs.querySelectorAll('.tab').forEach(t => {
-      const active = t === tab;
-      t.classList.toggle('active', active);
-      t.setAttribute('aria-selected', String(active));
-    });
-
-    if (tabId === 'framework') {
-      showFrameworkInUniverse();
-    } else {
-      currentTabTag = tabId;
-      showUniverseGrid();
-      applyFilters();
-    }
-  });
+  if (!grid || !detail) return;
 
   // Primary filters — single-select
   bindSingleSelectFilter('age-filters', 'age', (value) => {

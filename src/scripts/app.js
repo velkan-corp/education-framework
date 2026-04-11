@@ -1,5 +1,5 @@
 import { state } from './state.js';
-import { setupTabClicks, renderTabs, showTab, setupProfileToggles, setupCollapsibleSections, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
+import { renderTabs, showTab, setupProfileToggles, setupCollapsibleSections, updateAllNavs, wrapTablesForMobile, toggleFloatMenu } from './navigation.js';
 import { initSearch, openMobileSearch } from './search.js';
 import { initResourceFilters, initSectionFilters } from './filters.js';
 import { initDomainView } from './domain.js';
@@ -92,9 +92,6 @@ function navigateToAnchor(targetId) {
 
 function init() {
   scopePhaseAnchors();
-  setupTabClicks();
-  renderTabs();
-  showTab(state.currentTab);
   setupProfileToggles();
   setupCollapsibleSections();
   updateAllNavs();

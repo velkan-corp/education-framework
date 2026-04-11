@@ -11,46 +11,27 @@ const tabEntries = Object.entries(TAB_TAGS);
 
 <div class="topbar">
   <div class="topbar-inner">
-    <div class="logo">Education Framework</div>
+    <button type="button" class="logo" id="nav-home" aria-label="Framework overview">Education Framework</button>
 
     <!-- Navigation dropdowns -->
     <div class="nav-dropdowns">
-      <label class="nav-label" for="nav-view">View by:</label>
+      <label class="nav-label" for="nav-view">View by</label>
       <select id="nav-view" class="nav-select">
-        <option value="age" selected>Age</option>
+        <option value="" disabled selected>Select view...</option>
+        <option value="age">Age</option>
         <option value="domain">Domain</option>
         <option value="universe">Universe</option>
       </select>
-      <select id="nav-item" class="nav-select nav-item-select">
-        <option value="framework" selected>Framework</option>
-        {phases.filter(p => p.data.phaseId !== 'framework').map((phase) => (
-          <option value={phase.data.phaseId}>{phase.data.label}</option>
-        ))}
+      <select id="nav-item" class="nav-select nav-item-select" disabled>
+        <option value="" disabled selected>Select...</option>
       </select>
     </div>
 
-    <!-- Hidden tab bars (retained for JS data hooks) -->
-    <div class="tabs" id="tabs" role="tablist" aria-label="Age phases" hidden>
-      {phases.map((phase) => (
-        <button
-          type="button"
-          class={`tab ${phase.data.phaseId === 'framework' ? 'active' : ''}`}
-          data-tab={phase.data.phaseId}
-          role="tab"
-          aria-selected={phase.data.phaseId === 'framework' ? 'true' : 'false'}
-        >
-          {phase.data.label}
-        </button>
-      ))}
-    </div>
-    <div class="tabs" id="domain-tabs" role="tablist" aria-label="Domains" hidden></div>
-    <div class="tabs" id="universe-tabs" role="tablist" aria-label="Universes" hidden>
-      <button type="button" class="tab" data-universe-tab="framework" role="tab" aria-selected="false">Framework</button>
-      <button type="button" class="tab active" data-universe-tab="all" role="tab" aria-selected="true">All</button>
-      {tabEntries.map(([key, label]) => (
-        <button type="button" class="tab" data-universe-tab={key} role="tab" aria-selected="false">{label}</button>
-      ))}
-    </div>
+    <!-- Phase data for JS (no visible tabs) -->
+    <script is:inline define:vars={{ phaseData: phases.filter(p => p.data.phaseId !== 'framework').map(p => ({ id: p.data.phaseId, label: p.data.label })), universeTabData: tabEntries.map(([key, label]) => ({ key, label })) }}>
+      window.__phaseData = phaseData;
+      window.__universeTabData = universeTabData;
+    </script>
 
     <div id="search-wrap">
       <button id="search-icon" type="button" aria-label="Search">

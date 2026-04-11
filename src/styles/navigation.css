@@ -294,6 +294,24 @@
   gap: 4px;
 }
 
+/* VIEW HEADER (domain/universe titles) */
+#view-header {
+  margin-bottom: var(--sp-4);
+}
+#view-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 var(--sp-2) 0;
+}
+#view-description {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* SEARCH */
 #search-wrap {
   flex-shrink: 0;
