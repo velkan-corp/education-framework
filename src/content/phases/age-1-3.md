@@ -24,13 +24,13 @@ order: 2
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
 <div class="target-grid">
 <div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy seed</h4><p>Let them struggle — don't complete their tasks, narrate the process. Montessori practical life: child-sized pitcher, easy-on shoes, step stool; Grimm's Rainbow, nesting cups, shape sorters.</p></div>
-<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning seed</h4><p>Offer real choices within bounds — never fake choices. Moonjar (age 3): start with coins for tiny real decisions.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Moral Reasoning seed</h4><p>Offer real choices within bounds — never fake choices. Moonjar (age 3): start with coins for tiny real decisions.</p></div>
 <div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation seed</h4><p>Name their states before they can: "You look angry. Are you angry?" Encourage early self-description. Emotion-focused picture books; mirror play.</p></div>
 <div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>Follow their attention — if they're fascinated by ants, stop and watch ants for 30 minutes. Magnifying glass, bug catching kit, nature walks with no destination.</p></div>
 <div class="target-card"><span class="target-num">5</span><h4>First-Principles seed</h4><p>"Why?" is arriving — answer seriously, even simplified. DK My First series; Eric Carle books (cause-and-effect narrative).</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Use adult vocabulary, then define: "That's an excavator — it digs." Richard Scarry (labels everything); Where's Wally (visual search to verbal description).</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence seed</h4><p>Parallel play is developmentally correct — don't force sharing, model turn-taking. Playdates with 2-3 consistent families.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness seed</h4><p>Build social-emotional vocabulary that precedes actual social skills. Emotion-focused picture books; real social situations narrated in real time.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness seed</h4><p>Build social-emotional vocabulary that precedes actual social skills. Emotion-focused picture books; real social situations narrated in real time.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Outdoor daily regardless of weather — climbing, jumping, running on uneven surfaces. Balance bike from 18 months; challenging playgrounds.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Varied environments, flexible routines, and open-ended play build tolerance for change and novelty.</p></div>
 </div>

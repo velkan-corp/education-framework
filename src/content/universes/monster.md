@@ -5,7 +5,7 @@ summary: "Conscience, responsibility, identity, and the consequences of mercy in
 whyItBelongs: "Monster is a serious late-adolescent text because it asks whether goodness can survive contact with evil without becoming naive or self-destructive."
 tags: [comics, japanese]
 languages: [japanese]
-targets: [self-awareness, first-principles-reasoning, relational-intelligence, empathy-kindness]
+targets: [self-awareness, first-principles-reasoning, relational-intelligence, compassion-kindness]
 models: [cause-effect, model-failure, incentives, maps-not-territory]
 intensity: extreme
 riskFlags: [violence, horror, despair]

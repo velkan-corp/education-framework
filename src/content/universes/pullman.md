@@ -5,7 +5,7 @@ summary: "Theology, consciousness, authority, and adolescence handled with unusu
 whyItBelongs: "Pullman is important because he lets the framework discuss religion, metaphysics, and moral autonomy at child and teen scale without flattening the questions."
 tags: [books, english]
 languages: [english]
-targets: [deep-curiosity, self-awareness, first-principles-reasoning, empathy-kindness]
+targets: [deep-curiosity, self-awareness, first-principles-reasoning, compassion-kindness]
 models: [maps-not-territory, complementary-opposites, model-failure, via-negativa]
 intensity: high
 riskFlags: [violence, despair]

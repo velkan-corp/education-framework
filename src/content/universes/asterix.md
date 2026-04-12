@@ -5,7 +5,7 @@ summary: "European history, geography, and linguistic play delivered through com
 whyItBelongs: "Asterix is a strong Europe-adjacent language bridge because it combines history, satire, and wordplay without losing momentum or humor."
 tags: [comics, french]
 languages: [french]
-targets: [deep-curiosity, communication-mastery, empathy-kindness, adaptability]
+targets: [deep-curiosity, communication-mastery, compassion-kindness, adaptability]
 models: [incentives, maps-not-territory, complementary-opposites]
 intensity: low
 socialValue: bridge

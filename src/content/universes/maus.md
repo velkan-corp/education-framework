@@ -5,7 +5,7 @@ summary: "Holocaust testimony, memory, and inheritance rendered through comics w
 whyItBelongs: "Maus belongs because it shows that comics can carry historical trauma, family memory, and moral weight without diluting any of them."
 tags: [comics, english]
 languages: [english]
-targets: [self-awareness, empathy-kindness, communication-mastery, resilient-self-efficacy]
+targets: [self-awareness, compassion-kindness, communication-mastery, resilient-self-efficacy]
 models: [cause-effect, model-failure, maps-not-territory]
 intensity: extreme
 riskFlags: [violence, despair]

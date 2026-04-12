@@ -5,7 +5,7 @@ summary: "Christianity, Islam, Judaism, Hinduism, Buddhism, and secular humanism
 whyItBelongs: "The framework claims to prepare globally literate humans, but a person who doesn't understand the basic architecture of the world's major religions is not globally literate. These traditions shaped history, law, art, ethics, and the daily lives of billions. Understanding them is as fundamental as understanding political systems or economic models. The framework's analytical, non-moralistic register is the right approach: study each tradition as an intellectual system — what it claims about reality, what ethics it derives, what it produces culturally, where it succeeds and where it fails. Not comparative theology — comparative anthropology of meaning-making."
 tags: [books, english, spanish, philosophy, classics]
 languages: [english, spanish]
-targets: [deep-curiosity, empathy-kindness, first-principles-reasoning, self-awareness, adaptability]
+targets: [deep-curiosity, compassion-kindness, first-principles-reasoning, self-awareness, adaptability]
 models: [maps-not-territory, incentives, emergence, complementary-opposites, model-failure]
 intensity: medium
 socialValue: broad

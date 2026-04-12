@@ -5,7 +5,7 @@ summary: "Rhythm, rhyme, phonemic awareness, and subversive moral philosophy —
 whyItBelongs: "Seuss is the foundational English-language poet for children. The rhythmic structure (anapestic tetrameter) wires phonemic awareness that predicts reading fluency. But the content is equally important: The Sneetches teaches social independence, Horton teaches moral courage, The Lorax teaches systems thinking and consequences. For a bilingual framework where English is the minority language, Seuss provides the rhythmic substrate that makes English feel musical rather than foreign."
 tags: [books, english]
 languages: [english]
-targets: [communication-mastery, deep-curiosity, agency, empathy-kindness]
+targets: [communication-mastery, deep-curiosity, agency, compassion-kindness]
 models: [cause-effect, incentives]
 intensity: low
 socialValue: broad

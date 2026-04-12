@@ -5,7 +5,7 @@ summary: "Optimistic institutional science fiction about diplomacy, duty, and wh
 whyItBelongs: "Star Trek is one of the best vehicles for teaching institutions, pluralism, leadership, and technological ethics without collapsing into cynicism."
 tags: [cinema, books, english, philosophy]
 languages: [english]
-targets: [agency, first-principles-reasoning, communication-mastery, empathy-kindness]
+targets: [agency, first-principles-reasoning, communication-mastery, compassion-kindness]
 models: [feedback-loops, incentives, probability, via-negativa, model-failure]
 intensity: medium
 riskFlags: [violence, manipulation]

@@ -5,7 +5,7 @@ summary: "Greek and Roman mythology as middle-grade adventure. The gateway that 
 whyItBelongs: "Percy Jackson is the most effective reading gateway for ages 8-12 in English. Riordan translates the entire Greek mythological canon into accessible adventure narrative — and does it with genuine mythological accuracy. A child who reads the series arrives at Homer's Iliad and Odyssey with embodied knowledge: they know who Athena is, what the Underworld looks like, why Odysseus matters. The series also teaches dyslexia and ADHD as superpowers (Percy has both), normalising neurodivergence. The progression from Percy Jackson → Heroes of Olympus → Trials of Apollo spans ages 8-14 with increasing narrative complexity."
 tags: [books, english]
 languages: [english]
-targets: [deep-curiosity, communication-mastery, resilient-self-efficacy, empathy-kindness, relational-intelligence]
+targets: [deep-curiosity, communication-mastery, resilient-self-efficacy, compassion-kindness, relational-intelligence]
 models: [cause-effect, incentives, inversion]
 intensity: medium
 socialValue: broad

@@ -5,7 +5,7 @@ summary: "Existential cinema about faith, death, silence, and the limits of huma
 whyItBelongs: "Bergman belongs at the capstone because he makes interior life, mortality, and spiritual doubt feel unavoidable rather than ornamental."
 tags: [cinema, philosophy]
 languages: [swedish]
-targets: [self-awareness, first-principles-reasoning, empathy-kindness, adaptability]
+targets: [self-awareness, first-principles-reasoning, compassion-kindness, adaptability]
 models: [maps-not-territory, complementary-opposites, via-negativa, model-failure]
 intensity: high
 riskFlags: [despair]

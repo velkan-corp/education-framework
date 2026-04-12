@@ -5,7 +5,7 @@ summary: "Shared Spanish comic culture through slapstick, language play, and exa
 whyItBelongs: "Mortadelo matters because it is local cultural fluency. It gives the child shared references with Spanish peers and keeps Spanish tied to comedy and play."
 tags: [comics, spanish]
 languages: [spanish]
-targets: [deep-curiosity, communication-mastery, empathy-kindness]
+targets: [deep-curiosity, communication-mastery, compassion-kindness]
 models: [cause-effect, inversion, model-failure]
 intensity: low
 socialValue: broad

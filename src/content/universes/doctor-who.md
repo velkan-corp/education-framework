@@ -5,7 +5,7 @@ summary: "Time travel, mercy, improvisation, and consequence inside a broad-acce
 whyItBelongs: "Doctor Who is unusually good at teaching curiosity, nonviolent intelligence, and causal consequences because it makes ideas, tradeoffs, and mercy feel adventurous rather than academic."
 tags: [cinema, english]
 languages: [english]
-targets: [agency, deep-curiosity, empathy-kindness, adaptability]
+targets: [agency, deep-curiosity, compassion-kindness, adaptability]
 models: [cause-effect, feedback-loops, probability, via-negativa, model-failure]
 intensity: medium
 riskFlags: [horror, manipulation]

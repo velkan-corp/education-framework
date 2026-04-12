@@ -5,7 +5,7 @@ summary: "Adventure, geography, visual clarity, and European cultural literacy t
 whyItBelongs: "Tintin is a durable Europe-facing bridge because it combines travel, politics, and visual readability with very low entry friction."
 tags: [comics, french]
 languages: [french]
-targets: [deep-curiosity, communication-mastery, empathy-kindness, adaptability]
+targets: [deep-curiosity, communication-mastery, compassion-kindness, adaptability]
 models: [cause-effect, maps-not-territory, model-failure]
 intensity: low
 socialValue: bridge

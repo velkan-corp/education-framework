@@ -5,7 +5,7 @@ summary: "Symmetry, color, tone, and meticulous style used to make emotional dis
 whyItBelongs: "Wes Anderson is a useful aesthetic universe because it trains visual composition and tonal control without needing adult-level thematic heaviness."
 tags: [cinema, english]
 languages: [english]
-targets: [communication-mastery, self-awareness, empathy-kindness, adaptability]
+targets: [communication-mastery, self-awareness, compassion-kindness, adaptability]
 models: [complementary-opposites, inversion, maps-not-territory, model-failure]
 intensity: low
 socialValue: bridge

@@ -4,7 +4,7 @@ kind: maker-system
 summary: "Narrative-ready figures that demand storytelling, not building. The historical theming plants seeds for later study."
 whyItBelongs: "Playmobil occupies a different niche from LEGO: where LEGO is about construction (spatial, engineering), Playmobil is about narrative (characters, settings, scenarios). The figures come pre-built — the play IS the storytelling. For a framework emphasising communication mastery and creative production, Playmobil provides the stage on which oral narrative develops. The historical sets (Pirates, Medieval Knights, Romans, Farm) plant embodied reference points: a child who has narrated castle sieges has a visceral anchor when they encounter feudal Europe at age 8."
 tags: [maker, english, spanish]
-targets: [communication-mastery, creative-production, deep-curiosity, empathy-kindness]
+targets: [communication-mastery, creative-production, deep-curiosity, compassion-kindness]
 models: [cause-effect, incentives]
 intensity: low
 socialValue: broad

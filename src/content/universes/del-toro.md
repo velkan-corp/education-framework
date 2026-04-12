@@ -5,7 +5,7 @@ summary: "Monsters, fairy tales, war, and tenderness used to explore survival an
 whyItBelongs: "Del Toro belongs because he uses genre beautifully to make horror, history, and compassion coexist instead of canceling each other out."
 tags: [cinema, spanish]
 languages: [spanish]
-targets: [empathy-kindness, self-awareness, deep-curiosity, adaptability]
+targets: [compassion-kindness, self-awareness, deep-curiosity, adaptability]
 models: [complementary-opposites, via-negativa, cause-effect, model-failure]
 intensity: high
 riskFlags: [violence, horror, despair]

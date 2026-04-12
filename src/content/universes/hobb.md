@@ -5,7 +5,7 @@ summary: "Deep character interiority, attachment, loss, and emotional consequenc
 whyItBelongs: "Hobb is one of the strongest authors for teaching how inner life shapes action, and how competence does not erase vulnerability."
 tags: [books, english]
 languages: [english]
-targets: [self-awareness, relational-intelligence, empathy-kindness, adaptability]
+targets: [self-awareness, relational-intelligence, compassion-kindness, adaptability]
 models: [cause-effect, complementary-opposites, model-failure, via-negativa]
 intensity: high
 riskFlags: [violence, despair]

@@ -5,7 +5,7 @@ summary: "Strategy, manipulation, empathy, and the moral distortions created by 
 whyItBelongs: "Ender matters because it links tactical brilliance to moral injury. It is useful when the child can hold empathy and strategic competence together."
 tags: [books, english]
 languages: [english]
-targets: [resilient-self-efficacy, first-principles-reasoning, relational-intelligence, empathy-kindness]
+targets: [resilient-self-efficacy, first-principles-reasoning, relational-intelligence, compassion-kindness]
 models: [cause-effect, probability, maps-not-territory, model-failure]
 intensity: high
 riskFlags: [violence, manipulation, coercion]

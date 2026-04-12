@@ -5,7 +5,7 @@ summary: "Revolution, migration, and adolescence seen from inside a non-Western 
 whyItBelongs: "Persepolis gives the framework a direct, human-scale route into revolution, exile, and ideology without turning them into abstractions."
 tags: [comics, english]
 languages: [english, french]
-targets: [self-awareness, communication-mastery, relational-intelligence, empathy-kindness]
+targets: [self-awareness, communication-mastery, relational-intelligence, compassion-kindness]
 models: [incentives, maps-not-territory, model-failure]
 intensity: high
 riskFlags: [violence, coercion, despair]

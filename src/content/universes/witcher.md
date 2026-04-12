@@ -5,7 +5,7 @@ summary: "Moral compromise, political realism, and the costs of refusing easy pu
 whyItBelongs: "The Witcher is useful because it forces the student to sit inside ambiguity without pretending neutrality is innocent."
 tags: [books, game, english]
 languages: [english, polish]
-targets: [first-principles-reasoning, relational-intelligence, empathy-kindness, adaptability]
+targets: [first-principles-reasoning, relational-intelligence, compassion-kindness, adaptability]
 models: [maps-not-territory, incentives, complementary-opposites, model-failure]
 intensity: high
 riskFlags: [violence, sexuality, coercion]

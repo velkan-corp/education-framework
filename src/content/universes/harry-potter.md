@@ -5,7 +5,7 @@ summary: "A scalable ethics and institution-reading curriculum disguised as irre
 whyItBelongs: "Harry Potter works because the reader ages with the material. It is one of the best early vehicles for loyalty, prejudice, authority, sacrifice, and ambiguity that remains socially legible."
 tags: [books, english]
 languages: [english]
-targets: [self-awareness, communication-mastery, relational-intelligence, empathy-kindness]
+targets: [self-awareness, communication-mastery, relational-intelligence, compassion-kindness]
 models: [cause-effect, incentives, emergence, model-failure]
 intensity: medium
 riskFlags: [violence]

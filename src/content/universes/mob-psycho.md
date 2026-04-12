@@ -5,7 +5,7 @@ summary: "Emotional honesty, humility, and human connection in a world that keep
 whyItBelongs: "Mob Psycho 100 is unusually good at teaching that power without emotional maturity is just noise. It is a clean antidote to status-seeking shonen logic."
 tags: [anime, japanese]
 languages: [japanese]
-targets: [self-awareness, empathy-kindness, relational-intelligence, adaptability]
+targets: [self-awareness, compassion-kindness, relational-intelligence, adaptability]
 models: [cause-effect, inversion, model-failure, complementary-opposites]
 intensity: medium
 socialValue: bridge

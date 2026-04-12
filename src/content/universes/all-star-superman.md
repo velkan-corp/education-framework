@@ -5,7 +5,7 @@ summary: "A humane Superman story about mortality, service, and choosing kindnes
 whyItBelongs: "All-Star Superman is the cleanest antidote to cynicism in the superhero canon. It teaches that power matters less than what you do with it when time is short."
 tags: [comics, english]
 languages: [english]
-targets: [self-awareness, empathy-kindness, resilient-self-efficacy, communication-mastery]
+targets: [self-awareness, compassion-kindness, resilient-self-efficacy, communication-mastery]
 models: [complementary-opposites, via-negativa, model-failure]
 intensity: medium
 socialValue: broad

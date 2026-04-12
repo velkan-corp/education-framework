@@ -5,7 +5,7 @@ summary: "Language at its most compressed, precise, and musical. The art form wh
 whyItBelongs: "Poetry is the highest-leverage communication mastery content in the framework. A person who reads and writes poetry develops: precision with language (every word matters), musicality (rhythm, meter, sound), emotional compression (saying in 14 lines what prose needs 14 pages for), metaphorical thinking (seeing one thing through another), and memorability (poetry is designed to be remembered). The framework emphasises Communication Mastery (Target 6) across written, oral, and performative media — poetry is where all three converge. A person who can quote Ozymandias, recite Neruda in Spanish, and write a sonnet has a relationship with language that prose alone cannot build."
 tags: [books, english, spanish, classics, philosophy]
 languages: [english, spanish]
-targets: [communication-mastery, creative-production, self-awareness, empathy-kindness, deep-curiosity]
+targets: [communication-mastery, creative-production, self-awareness, compassion-kindness, deep-curiosity]
 models: [via-negativa, complementary-opposites, maps-not-territory]
 intensity: medium
 socialValue: bridge

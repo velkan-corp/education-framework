@@ -2,10 +2,10 @@
 label: Rimworld
 kind: strategy-system
 summary: "Colony survival simulation where emergent narrative arises from interacting systems. Every colonist has a psychology. Every decision has cascading consequences."
-whyItBelongs: "Rimworld is the best systems-thinking game after Factorio, but with a crucial addition: human psychology as a system variable. Colonists have moods, relationships, skills, and breaking points. A colony fails not just from resource scarcity but from mental breakdowns, social conflict, and poor leadership decisions. This teaches Emergence (#9) and Feedback Loops (#2) through lived consequence — and adds the human element that Factorio lacks. The moral dilemmas (organ harvesting, prisoner treatment, triage under scarcity) operationalise ethical reasoning without moralising."
+whyItBelongs: "Rimworld is the best systems-thinking game after Factorio, but with a crucial addition: human psychology as a system variable. Colonists have moods, relationships, skills, and breaking points. A colony fails not just from resource scarcity but from mental breakdowns, social conflict, and poor leadership decisions. This teaches Emergence (#9) and Feedback Loops (#2) through lived consequence — and adds the human element that Factorio lacks. The moral dilemmas (organ harvesting, prisoner treatment, triage under scarcity) operationalise moral reasoning without moralising."
 tags: [game, english, strategy]
 languages: [english]
-targets: [adaptability, first-principles-reasoning, agency, deep-curiosity, empathy-kindness]
+targets: [adaptability, first-principles-reasoning, agency, deep-curiosity, compassion-kindness]
 models: [emergence, feedback-loops, probability, incentives, complementary-opposites]
 intensity: high
 riskFlags: [violence, despair, manipulation]
@@ -23,7 +23,7 @@ phases:
   - phaseId: age-14-16
     tier: recommended
     title: "Modding, optimisation, and moral philosophy"
-    description: "Higher difficulties. Modded scenarios. The game becomes a laboratory for testing systems thinking: 'What happens if I change this variable?' Colony design as applied engineering. The ethical questions deepen: war crimes are mechanically optimal but morally repugnant. 'Is it okay to harvest organs from raiders who were trying to kill you?' There is no right answer — that is the point. This is applied ethical reasoning (Target 2) in a consequence-rich environment."
+    description: "Higher difficulties. Modded scenarios. The game becomes a laboratory for testing systems thinking: 'What happens if I change this variable?' Colony design as applied engineering. The ethical questions deepen: war crimes are mechanically optimal but morally repugnant. 'Is it okay to harvest organs from raiders who were trying to kill you?' There is no right answer — that is the point. This is applied moral reasoning (Target 2) in a consequence-rich environment."
     mode: critique
     goals:
       - "Optimise complex systems while navigating genuine moral trade-offs."

@@ -20,13 +20,13 @@ order: 1
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
 <div class="target-grid">
 <div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy seed</h4><p>Respond consistently to signals — reliability teaches "my actions produce results." Lovevery Play Gym for graduated reach/grasp challenges.</p></div>
-<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning seed</h4><p>Let them reach, bat, grab, explore without constant redirection. Replace hanging objects regularly — novelty maintains engagement.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Moral Reasoning seed</h4><p>Let them reach, bat, grab, explore without constant redirection. Replace hanging objects regularly — novelty maintains engagement.</p></div>
 <div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation seed</h4><p>Co-regulation is the curriculum — name their emotions to build the foundation of self-knowledge. Consistent narration of emotional and physical states.</p></div>
 <div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity seed</h4><p>High-contrast visual input and varied sensory stimulation — don't interrupt sustained attention. Montessori mobile sequence; fewer toys, more time with each.</p></div>
 <div class="target-card"><span class="target-num">5</span><h4>First-Principles seed</h4><p>Not yet applicable — pre-linguistic. Seeds planted through cause-and-effect sensory exploration.</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Communication Mastery seed</h4><p>Narrate everything — pair language with physical action to bind word to sensation.</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence seed</h4><p>Secure attachment IS the foundation — responsive caregiving produces the internal security for later social independence. Parent-and-baby groups with 3-4 families.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness seed</h4><p>Co-regulation models emotional attunement — name their emotions to give handles for experiences. Consistent narration of emotional states.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness seed</h4><p>Co-regulation models emotional attunement — name their emotions to give handles for experiences. Consistent narration of emotional states.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery seed</h4><p>Tummy time, floor freedom, outdoor exposure to weather variation. Baby Bjorn Bouncer; outdoor blanket time daily regardless of weather.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability seed</h4><p>Varied sensory environments and routine flexibility build early tolerance for change.</p></div>
 </div>
@@ -237,7 +237,7 @@ order: 1
 <tr><td>Yoto Mini</td><td>Equipment</td><td>Portable audio device for travel. Screen-free, durable, intuitive. Makes screen-free audio accessible everywhere. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
 <tr><td>Where's Wally Complete Collection</td><td>Book</td><td>Introduce at 6–9 months (point and narrate). Sustained visual search. Lasts years. <span class="tag tag-target">Deep Curiosity seed</span></td></tr>
 <tr><td>Hape Pound & Tap Bench</td><td>Toy</td><td>Cause-effect with satisfying feedback. Hammering = direct consequence of action. <span class="tag tag-target">Resilient Self-Efficacy seed</span></td></tr>
-<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>Comfort object. Texture variety. Secure attachment support. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
-<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor. <span class="tag tag-target">Empathy & Kindness seed</span></td></tr>
+<tr><td>Jellycat Soft Toys</td><td>Toy</td><td>Comfort object. Texture variety. Secure attachment support. <span class="tag tag-target">Compassion & Kindness seed</span></td></tr>
+<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Book</td><td>Beautiful illustrations, rhythmic text for read-aloud. Bedtime ritual anchor. <span class="tag tag-target">Compassion & Kindness seed</span></td></tr>
 <tr><td>Diverse Rhythm Playlist</td><td>Music</td><td>Spotify/Apple Music: Afro-Cuban, Brazilian, flamenco, waltz, reggae. Real music, not children's music. Dance with the infant to varied rhythms daily. <span class="tag tag-target">Physical System Mastery</span></td></tr>
 </table>

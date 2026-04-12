@@ -5,7 +5,7 @@ summary: "Violence, conscience, and pacifism inside an historical epic about wha
 whyItBelongs: "Vinland Saga matters because it takes the warrior story seriously enough to ask what a life beyond violence would actually require."
 tags: [anime, japanese]
 languages: [japanese]
-targets: [self-awareness, empathy-kindness, resilient-self-efficacy, adaptability]
+targets: [self-awareness, compassion-kindness, resilient-self-efficacy, adaptability]
 models: [via-negativa, complementary-opposites, feedback-loops, model-failure]
 intensity: high
 riskFlags: [violence, despair]

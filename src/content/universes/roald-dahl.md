@@ -5,7 +5,7 @@ summary: "Dark humor, power, injustice, and the limits of adult authority."
 whyItBelongs: "Dahl is useful because children immediately feel the injustice. That makes him a strong entry point for discussing power, cruelty, and revenge."
 tags: [books, english]
 languages: [english]
-targets: [communication-mastery, self-awareness, empathy-kindness, adaptability]
+targets: [communication-mastery, self-awareness, compassion-kindness, adaptability]
 models: [inversion, cause-effect, model-failure, complementary-opposites]
 intensity: medium
 riskFlags: [violence, coercion]

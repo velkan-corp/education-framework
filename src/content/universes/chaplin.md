@@ -5,7 +5,7 @@ summary: "Silent comedy that turns physical performance into social criticism an
 whyItBelongs: "Chaplin teaches that visual storytelling can carry philosophy, class critique, and emotional precision without dialogue."
 tags: [cinema, english]
 languages: [english]
-targets: [resilient-self-efficacy, communication-mastery, empathy-kindness, adaptability]
+targets: [resilient-self-efficacy, communication-mastery, compassion-kindness, adaptability]
 models: [cause-effect, inversion, complementary-opposites, via-negativa]
 intensity: medium
 socialValue: broad

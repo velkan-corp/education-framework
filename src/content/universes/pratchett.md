@@ -5,7 +5,7 @@ summary: "Humor, moral seriousness, and institutional critique fused into unusua
 whyItBelongs: "Pratchett is valuable because he can smuggle dense ethical and political thought through comedy without losing warmth or clarity."
 tags: [books, english, philosophy]
 languages: [english]
-targets: [resilient-self-efficacy, communication-mastery, empathy-kindness, adaptability]
+targets: [resilient-self-efficacy, communication-mastery, compassion-kindness, adaptability]
 models: [inversion, maps-not-territory, via-negativa, model-failure]
 intensity: medium
 socialValue: bridge

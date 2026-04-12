@@ -5,7 +5,7 @@ summary: "Ecology, war, leadership, and radical empathy at a scale larger and ha
 whyItBelongs: "Nausicaa is one of the best bridges from beauty into serious ecological and civilizational thinking. It rewards both younger wonder and older political reading."
 tags: [comics, cinema, japanese]
 languages: [japanese]
-targets: [agency, deep-curiosity, empathy-kindness, adaptability]
+targets: [agency, deep-curiosity, compassion-kindness, adaptability]
 models: [feedback-loops, emergence, complementary-opposites, model-failure]
 intensity: high
 riskFlags: [violence, despair]

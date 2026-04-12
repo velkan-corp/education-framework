@@ -5,7 +5,7 @@ summary: "Neurologist and writer who revealed the mind's architecture through it
 whyItBelongs: "The framework targets Self-Awareness and Self-Regulation but lacks a dedicated exploration of how the mind actually works. Sacks provides this through narrative — not textbook neuroscience but deeply human stories of people whose brains work differently. The Man Who Mistook His Wife for a Hat, Awakenings, Musicophilia: each case illuminates a different cognitive system by showing what happens when it breaks. For children developing self-awareness, understanding that perception, memory, and identity are constructed — and can be disrupted — is foundational."
 tags: [books, english, stem, philosophy]
 languages: [english]
-targets: [self-awareness, deep-curiosity, empathy-kindness, first-principles-reasoning]
+targets: [self-awareness, deep-curiosity, compassion-kindness, first-principles-reasoning]
 models: [maps-not-territory, emergence, model-failure, cause-effect]
 intensity: medium
 riskFlags: [despair]

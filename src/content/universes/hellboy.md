@@ -5,7 +5,7 @@ summary: "Folklore, occult pulp, and mythic archaeology rendered through a singu
 whyItBelongs: "Hellboy is valuable because it teaches comparative mythology through action and atmosphere rather than academic summary."
 tags: [comics, english]
 languages: [english]
-targets: [deep-curiosity, communication-mastery, empathy-kindness, adaptability]
+targets: [deep-curiosity, communication-mastery, compassion-kindness, adaptability]
 models: [maps-not-territory, emergence, complementary-opposites, model-failure]
 intensity: high
 riskFlags: [violence, horror]

@@ -5,7 +5,7 @@ summary: "A bridge universe for systems, responsibility, redemption, and politic
 whyItBelongs: "Avatar is one of the best early anchor universes because it is emotionally accessible, morally legible, and structurally rich enough to teach systems thinking without flattening character."
 tags: [anime, japanese]
 languages: [english]
-targets: [resilient-self-efficacy, first-principles-reasoning, empathy-kindness, adaptability]
+targets: [resilient-self-efficacy, first-principles-reasoning, compassion-kindness, adaptability]
 models: [cause-effect, feedback-loops, incentives, emergence]
 intensity: medium
 riskFlags: [violence]

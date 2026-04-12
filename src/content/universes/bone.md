@@ -5,7 +5,7 @@ summary: "A deceptively funny epic that scales from slapstick to loyalty, myth, 
 whyItBelongs: "Bone is one of the best long-form entry points into epic narrative because it starts accessible and rewards rereading with deeper political and spiritual layers."
 tags: [comics, english]
 languages: [english]
-targets: [deep-curiosity, resilient-self-efficacy, empathy-kindness, communication-mastery]
+targets: [deep-curiosity, resilient-self-efficacy, compassion-kindness, communication-mastery]
 models: [cause-effect, feedback-loops, emergence, complementary-opposites]
 intensity: medium
 socialValue: bridge

@@ -5,7 +5,7 @@ summary: "A small book carrying friendship, loss, responsibility, and anti-burea
 whyItBelongs: "The Little Prince works because it matures with the reader and supports multilingual rereading unusually well. It is both gentle and conceptually sharp."
 tags: [books, classics, french]
 languages: [english, spanish, french]
-targets: [self-awareness, communication-mastery, empathy-kindness, adaptability]
+targets: [self-awareness, communication-mastery, compassion-kindness, adaptability]
 models: [maps-not-territory, inversion, complementary-opposites]
 intensity: low
 socialValue: bridge

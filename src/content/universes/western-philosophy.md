@@ -2,7 +2,7 @@
 label: Western Philosophy
 kind: literary-canon
 summary: "From Socrates to Sartre — the tradition of systematic reasoning about truth, ethics, knowledge, and the good life."
-whyItBelongs: "The framework references Stoicism, existentialism, utilitarianism, deontology, and virtue ethics across multiple phases but has no unified philosophical universe. Western philosophy provides the intellectual scaffolding for first-principles reasoning (Target 5), ethical reasoning (Target 2), and self-awareness (Target 3). Understanding the tradition — not as history but as a toolkit for living — gives children the vocabulary and frameworks to examine their own assumptions. The framework already borrows heavily from these traditions; this universe makes the borrowing explicit and systematic."
+whyItBelongs: "The framework references Stoicism, existentialism, utilitarianism, deontology, and virtue ethics across multiple phases but has no unified philosophical universe. Western philosophy provides the intellectual scaffolding for first-principles reasoning (Target 5), moral reasoning (Target 2), and self-awareness (Target 3). Understanding the tradition — not as history but as a toolkit for living — gives children the vocabulary and frameworks to examine their own assumptions. The framework already borrows heavily from these traditions; this universe makes the borrowing explicit and systematic."
 tags: [books, english, philosophy, classics]
 languages: [english, greek]
 targets: [first-principles-reasoning, self-awareness, agency, communication-mastery, adaptability]
@@ -13,7 +13,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Philosophy Through Story"
-    description: "Not primary texts — philosophy introduced through accessible narrative. The children's adaptation of Plato's cave allegory (picture book versions exist). Aesop's Fables as ethical reasoning: 'What is the moral? Do you agree with it? Can you think of when the opposite would be true?' Sophie's World (Jostein Gaarder) at age 10 — the history of philosophy as a mystery novel. The goal is not to teach philosophy but to establish that people have been asking 'What is real? What is right? How should I live?' for 2,500 years."
+    description: "Not primary texts — philosophy introduced through accessible narrative. The children's adaptation of Plato's cave allegory (picture book versions exist). Aesop's Fables as moral reasoning: 'What is the moral? Do you agree with it? Can you think of when the opposite would be true?' Sophie's World (Jostein Gaarder) at age 10 — the history of philosophy as a mystery novel. The goal is not to teach philosophy but to establish that people have been asking 'What is real? What is right? How should I live?' for 2,500 years."
     mode: absorb
     goals:
       - "Encounter the idea that 'big questions' have a tradition of rigorous investigation."
@@ -37,7 +37,7 @@ phases:
     goals:
       - "Read Stoic primary sources, not summaries."
       - "Apply at least three ethical frameworks to the same dilemma and compare their answers."
-      - "Understand that ethical reasoning is not relativism — it is rigorous analysis of competing moral claims."
+      - "Understand that moral reasoning is not relativism — it is rigorous analysis of competing moral claims."
     projects:
       - "Take one real ethical dilemma you face and analyse it through utilitarian, deontological, and virtue ethics lenses. Where do they agree? Where do they conflict?"
   - phaseId: age-17-18

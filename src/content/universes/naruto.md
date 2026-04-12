@@ -5,7 +5,7 @@ summary: "Persistence, belonging, and the cycle of hatred translated into a long
 whyItBelongs: "Naruto works as a developmental anchor because it turns rejection, effort, friendship, and ideological conflict into a huge accessible narrative."
 tags: [anime, books, japanese]
 languages: [japanese]
-targets: [resilient-self-efficacy, relational-intelligence, empathy-kindness, adaptability]
+targets: [resilient-self-efficacy, relational-intelligence, compassion-kindness, adaptability]
 models: [feedback-loops, cause-effect, emergence, model-failure]
 intensity: high
 riskFlags: [violence, manipulation]

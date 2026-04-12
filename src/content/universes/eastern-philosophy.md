@@ -5,7 +5,7 @@ summary: "Daoism, Buddhism, Confucianism, and Vedantic thought — civilisationa
 whyItBelongs: "The framework's philosophical content is overwhelmingly Western: Stoicism, existentialism, utilitarianism, deontology. A globally literate person needs to understand that Western philosophy is ONE tradition among several, each with different axioms, different methods, and different conclusions about what matters. Daoism teaches complementary opposites and effortless action. Buddhism teaches impermanence and the constructed nature of the self. Confucianism teaches relational ethics and social harmony. These are not exotic supplements — they are alternative operating systems for the mind."
 tags: [books, english, philosophy, classics]
 languages: [english]
-targets: [self-awareness, first-principles-reasoning, adaptability, empathy-kindness, deep-curiosity]
+targets: [self-awareness, first-principles-reasoning, adaptability, compassion-kindness, deep-curiosity]
 models: [complementary-opposites, via-negativa, emergence, maps-not-territory, model-failure]
 intensity: medium
 socialValue: bridge

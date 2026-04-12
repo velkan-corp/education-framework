@@ -5,7 +5,7 @@ summary: "Moral psychology under pressure, where reasoning, guilt, faith, and fr
 whyItBelongs: "Dostoevsky belongs because he makes inner conflict legible at full force. He is the great novelist of self-justification, conscience, and spiritual struggle."
 tags: [books, classics, philosophy]
 languages: [english, russian]
-targets: [self-awareness, first-principles-reasoning, relational-intelligence, empathy-kindness]
+targets: [self-awareness, first-principles-reasoning, relational-intelligence, compassion-kindness]
 models: [complementary-opposites, model-failure, incentives, maps-not-territory]
 intensity: high
 riskFlags: [despair]

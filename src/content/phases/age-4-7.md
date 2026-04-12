@@ -23,13 +23,13 @@ order: 3
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
 <div class="target-grid">
 <div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy</h4><p>Graduated challenge in one real domain — praise process, not talent. One long-form commitment, 3-4 years minimum.</p></div>
-<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning</h4><p>Natural consequences operate without rescue — no jacket means cold. Post-mortem together, analytically.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Moral Reasoning</h4><p>Natural consequences operate without rescue — no jacket means cold. Post-mortem together, analytically.</p></div>
 <div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation</h4><p>Encourage self-description: "I'm the kind of person who..." Zones of regulation and recognizing physiological signals.</p></div>
 <div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>Protect and feed whatever they hyperfocus on — the obsession IS the curriculum. Museums as regular practice.</p></div>
 <div class="target-card"><span class="target-num">5</span><h4>First-Principles</h4><p>Socratic at dinner: "Why do you think that?" "What if the opposite were true?" Start with story characters, generalize.</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Storytelling games at dinner, explain-it-back after any film, debate character decisions. Writing stories begins.</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence</h4><p>Team sport begins — coordinating with others toward a shared goal under rules they didn't set.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness</h4><p>Helping as habit: cook, clean, donate toys. "Other beings need things, and you can provide some."</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness</h4><p>Helping as habit: cook, clean, donate toys. "Other beings need things, and you can provide some."</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Cold-weather outdoor play, long hikes, martial arts with real contact. They carry their own water.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Open-ended creative play with no right answer. KAPLA and LEGO become primary curriculum vehicles at this age.</p></div>
 <div class="target-card"><span class="target-num">11</span><h4>Creative Production</h4><p>Open-ended building, drawing, storytelling, and cooking. The "Make" phase of the engagement cycle begins here.</p></div>
@@ -229,7 +229,7 @@ order: 3
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
 
 <h3>Team Sport</h3>
-<p>Team sport begins at age 4. This is the primary vehicle for Targets 11-12 (Relational Intelligence, Empathy & Kindness). Not for competition — for the experience of coordinating with others toward a shared goal under rules.</p>
+<p>Team sport begins at age 4. This is the primary vehicle for Targets 11-12 (Relational Intelligence, Compassion & Kindness). Not for competition — for the experience of coordinating with others toward a shared goal under rules.</p>
 <p><strong>Options:</strong> Football (most accessible in Madrid), basketball, rugby, hockey. The specific sport matters less than: (1) it's genuinely team-based, (2) there's a coach who develops character not just skill, (3) the child plays with children they didn't choose.</p>
 <p><strong>What to watch for:</strong> How do they handle a teammate's mistake? Do they encourage or blame? How do they respond to being benched? Can they follow a captain who isn't their friend? The emotional learning happens in these moments, not in the goals scored.</p>
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Smaller team sports (basketball, futsal) may be less overwhelming than 11-a-side football. One team sport session per week is sufficient — don't overload social energy. Recovery time after matches is real, not avoidance.</div>
@@ -325,7 +325,7 @@ order: 3
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 
 <h3>Ethics & Moral Reasoning</h3>
-<p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of ethical reasoning. Ethics and history discussions can go deeper and longer than you expect at this age — extend the "is that fair?" questions into genuine back-and-forth Socratic dialogue. Introduce simple written reflection: "Draw or write what you think about this question."</p>
+<p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of moral reasoning. Ethics and history discussions can go deeper and longer than you expect at this age — extend the "is that fair?" questions into genuine back-and-forth Socratic dialogue. Introduce simple written reflection: "Draw or write what you think about this question."</p>
 
 <h3>History</h3>
 <p>History as story at this age. "Who built this castle? When? Why?" Historical picture books and timeline awareness — "a long, long time ago, before cars, before electricity." Usborne history encyclopedias for browsing. The goal is temporal awareness: things were different before, and specific people made specific choices that changed things.</p>
@@ -418,7 +418,7 @@ order: 3
 <table>
 <tr><th>Resource</th><th>Type</th><th>Description</th></tr>
 <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FOUNDATIONAL — Integral to program</td></tr>
-<tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>Primary anchor universe. Own it physically — don't rely on streaming. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Avatar The Last Airbender Blu-ray</td><td>Film</td><td>Primary anchor universe. Own it physically — don't rely on streaming. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
 <tr><td>Calvin and Hobbes Complete Collection (Fantagraphics)</td><td>Book</td><td>Primary anchor. 3-vol hardcover — Sunday strip compositions require large format. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
 <tr><td>Red Cross / Cruz Roja Swimming Lessons</td><td>Service</td><td>Structured progression to independent swimming. Non-negotiable life skill. <span class="tag tag-target">Physical System Mastery</span></td></tr>
 <tr><td>Art of Problem Solving Beast Academy</td><td>Service</td><td>Significantly harder than school math. Real difficulty by design. Grades 2–5. From age 6. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
@@ -452,13 +452,13 @@ order: 3
 <tr><td>Deuter Junior 18L Backpack</td><td>Equipment</td><td>They carry their own water and snacks. Physical ownership of responsibility. <span class="tag tag-target">Physical System Mastery</span></td></tr>
 <tr><td>Muay Thai Kids Class</td><td>Service</td><td>Real contact, real technique, real pads. Alternative to Jiu-Jitsu. <span class="tag tag-target">Physical System Mastery</span></td></tr>
 <tr><td>Brio World Wooden Train System</td><td>Toy</td><td>Wooden track railway. Open-ended construction, spatial reasoning, persistence. Escalate from basic to advanced track sets. Lasts through age 10+. <span class="tag tag-target">Adaptability</span></td></tr>
-<tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
-<tr><td>Batman: The Animated Series</td><td>Film</td><td>Moral complexity, visual storytelling, noir aesthetics. English original audio. Entry point to DC universe. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Studio Ghibli Films (Totoro → Kiki → Spirited Away)</td><td>Film</td><td>Supplementary anchor. Watch in sequence. Interdependence with nature, ambiguity, beauty. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
+<tr><td>Batman: The Animated Series</td><td>Film</td><td>Moral complexity, visual storytelling, noir aesthetics. English original audio. Entry point to DC universe. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
 <tr><td>Spider-Man: Into the Spider-Verse</td><td>Film</td><td>Visual innovation, identity, multiverse as metaphor. English original audio. <span class="tag tag-target">Resilient Self-Efficacy</span></td></tr>
-<tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>The Iron Giant</td><td>Film</td><td>Sacrifice, identity, choice. "I am not a gun." One of the best animated films ever made. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
 <tr><td>WALL-E</td><td>Film</td><td>Systems, ecology, loneliness, hope. Minimal dialogue — visual storytelling at its best. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 <tr><td>Pokémon anime (Season 1)</td><td>Film</td><td>Japanese audio, subtitles. L3 exposure, type system as basic combinatorics, turn-based strategy. <span class="tag tag-target">Deep Curiosity</span></td></tr>
-<tr><td>The Little Prince — Saint-Exupéry</td><td>Book</td><td>Multilingual editions. Friendship, loss, philosophy. The most translated non-religious book — read in English, Spanish, then French. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>The Little Prince — Saint-Exupéry</td><td>Book</td><td>Multilingual editions. Friendship, loss, philosophy. The most translated non-religious book — read in English, Spanish, then French. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
 <tr><td>Inside Out (Pixar)</td><td>Film</td><td>Emotional self-awareness made visible. Core emotions as characters. Pair with zones of regulation work. <span class="tag tag-target">Self-Awareness</span></td></tr>
 <tr><td>Tintin Complete Albums — Hergé</td><td>Book</td><td>French or English. Visual literacy, geography, adventure, European cultural canon. Ligne claire art style teaches visual composition. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 <tr><td>Astérix Complete Albums — Goscinny/Uderzo</td><td>Book</td><td>French or English. Roman history disguised as comedy, linguistic wordplay. L3 French puns are genuine language exercises. <span class="tag tag-target">Communication Mastery</span></td></tr>
@@ -472,7 +472,7 @@ order: 3
 <tr><td>Gardening Starter Kit</td><td>Equipment</td><td>Seed trays, potting soil, herb seeds (basil, mint, cherry tomatoes). One food plant from seed to plate per year. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 <tr><td>Nature Collection Box</td><td>Equipment</td><td>Wooden compartment box for rocks, shells, feathers, bark, seed pods. Named and compared. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 <tr><td>Ox-Cart Man — Donald Hall</td><td>Book</td><td>The cycle of making, selling, and starting over. A family makes everything they need. Material culture anchor text. <span class="tag tag-target">Agency</span></td></tr>
-<tr><td>Extra Yarn — Mac Barnett</td><td>Book</td><td>Generosity and craft. The making IS the story. <span class="tag tag-target">Empathy & Kindness</span></td></tr>
+<tr><td>Extra Yarn — Mac Barnett</td><td>Book</td><td>Generosity and craft. The making IS the story. <span class="tag tag-target">Compassion & Kindness</span></td></tr>
 <tr><td>Horton Hears a Who — Dr. Seuss</td><td>Book</td><td>One person was right when everyone else was wrong. Social independence anchor. <span class="tag tag-target">Agency</span></td></tr>
 <tr><td>The Story of Ferdinand — Munro Leaf</td><td>Book</td><td>The bull who preferred flowers to fighting. Being different from peers is fine. <span class="tag tag-target">Self-Awareness</span></td></tr>
 <tr><td>Swimmy — Leo Lionni</td><td>Book</td><td>Cooperation AND individual vision. <span class="tag tag-target">Relational Intelligence</span></td></tr>

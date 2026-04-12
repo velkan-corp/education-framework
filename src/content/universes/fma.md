@@ -5,7 +5,7 @@ summary: "Sacrifice, institutional corruption, knowledge limits, and consequence
 whyItBelongs: "Fullmetal Alchemist: Brotherhood is one of the best adolescent anchor works because it fuses systems, ethics, and feeling without losing narrative drive."
 tags: [anime, japanese]
 languages: [japanese]
-targets: [resilient-self-efficacy, first-principles-reasoning, empathy-kindness, adaptability]
+targets: [resilient-self-efficacy, first-principles-reasoning, compassion-kindness, adaptability]
 models: [cause-effect, incentives, via-negativa, model-failure]
 intensity: high
 riskFlags: [violence, coercion]

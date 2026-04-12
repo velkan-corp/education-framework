@@ -11,67 +11,95 @@ order: 0
 
 <h2 id="s-principles"><span class="material-symbols-rounded">star</span>The Ten Principles</h2>
 
-<div class="principle">
-<h3>1. Compounding Is Everything</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">1</span>
+<span class="principle-name">Compounding Is Everything</span>
+<span class="principle-thesis">Start early, stay consistent, go deep. Every concept revisited annually at greater depth.</span>
+</summary>
 <p>The master principle. Language compounds. Practice compounds. Relationships compound. Network compounds. 30 minutes of reading daily from age 3 to 18 is ~2,700 hours. Start early + stay consistent + layer depth = exponential returns. Every concept is revisited annually at greater depth — intensive immersion, then re-engagement the following year, never starting from zero.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Ebbinghaus (1885):</strong> The spacing effect — information revisited at increasing intervals is retained orders of magnitude longer than information crammed once. The most robustly replicated finding in cognitive science.</p>
 <p><strong>Ericsson's deliberate practice:</strong> Accumulated hours of quality practice at the edge of ability explain the majority of variance in expert performance. Starting early compounds because each hour builds on the previous.</p>
 <p><strong>Compound interest math:</strong> €100/month at 7% from age 10 to 60 = €264,000. From age 20 = €122,000. The 10-year head start more than doubles the outcome. This applies to every domain, not just money.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>2. Depth Within Breadth</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">2</span>
+<span class="principle-name">Depth Within Breadth</span>
+<span class="principle-thesis">One sharp spike by 16 within a generalist base. Explore widely, then deepen.</span>
+</summary>
 <p>Generalist base with specialist spikes. Being demonstrably excellent at one specific thing by 16 opens more doors than being good at ten things. It builds credibility, career optionality, and self-efficacy. Not well-roundedness alone — sharpness within breadth. The generalist base matters too: Epstein's "Range" (2019) shows that in complex, "wicked" environments, late specialisers and broad samplers often outperform early specialists. The framework's answer: explore widely until age 8-10, then deepen. The spike emerges from breadth, not instead of it.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Spence's signaling theory (1973):</strong> In markets with information asymmetry, costly signals (years of deep investment in a domain) communicate quality more effectively than cheap signals (a list of activities).</p>
 <p><strong>Transfer of learning (Barnett & Ceci, 2002):</strong> Deep structural understanding transfers to new domains; surface exposure does not.</p>
 <p><strong>Counter-evidence — Epstein, "Range" (2019):</strong> In "wicked" learning environments (most of real life), generalists outperform specialists. Early specialisation in sport predicts burnout and dropout (Jayanthi et al., 2013 meta-analysis). The framework mitigates this by maintaining the generalist base (multiple content universes, diverse mental models) alongside the specialist spike.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>3. Relationships Are Infrastructure</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">3</span>
+<span class="principle-name">Relationships Are Infrastructure</span>
+<span class="principle-thesis">Quality of relationships at 50 is the best predictor of health and happiness at 80.</span>
+</summary>
 <p>Quality of relationships at 50 is the single best predictor of health and happiness at 80 — better than IQ, cholesterol, social class, or genetics. Network isn't nice-to-have — it's the primary life asset. Build it deliberately from childhood. Every institution choice is a network choice. Team sport is FOUNDATIONAL because it builds relational intelligence through involuntary social mixing under pressure.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Harvard Grant Study (Waldinger, 84 years):</strong> The longest-running study on human development. Quality of relationships at midlife was the single strongest predictor of late-life health and happiness — not career success, wealth, IQ, or social class.</p>
 <p><strong>Granovetter (1973):</strong> Most opportunities come through acquaintances, not close friends. A broad network with diverse weak ties produces more opportunity than a narrow network of strong ties.</p>
 <p><strong>Harris, "The Nurture Assumption" (1998):</strong> After age 12, peer group influence on values and behavior exceeds parental influence. Institution selection IS the framework after that point.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>4. Communication Is Everything</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">4</span>
+<span class="principle-name">Communication Is Everything</span>
+<span class="principle-thesis">Written, oral, visual, digital, performative. Persuasion is a life skill, not a business skill.</span>
+</summary>
 <p>Written, oral, visual, digital, performative — every medium the audience needs. Sales and persuasion are life skills, not business skills. Every interaction is a negotiation. The ability to articulate, persuade, close, and create value is as foundational as literacy.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Columbia Business School longitudinal:</strong> Negotiation skill predicts income outcomes independent of IQ and education level.</p>
 <p><strong>Cialdini's influence research (2001):</strong> Persuasion follows predictable, trainable principles (reciprocity, commitment, social proof, authority, liking, scarcity).</p>
 <p><strong>Mayer's multimedia learning (2009):</strong> People learn better from words and pictures than from words alone. Communication mastery across media is a cognitive multiplier.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>5. Self-Awareness Is the Operating System</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">5</span>
+<span class="principle-name">Self-Awareness Is the Operating System</span>
+<span class="principle-thesis">Know your patterns, biases, cognitive style, failure modes. The substrate everything else runs on.</span>
+</summary>
 <p>Know your patterns, biases, cognitive style, failure modes, energy cycles. It's the substrate everything else runs on. A child who knows HOW they think, learn, fail, and recover can optimize everything else. Know your archetype. Accept it. Lean into it.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Flavell's metacognition (1979):</strong> Metacognitive awareness — knowing what you know and don't know — is one of the strongest predictors of academic achievement, stronger than IQ in many studies.</p>
 <p><strong>Zimmerman's self-regulated learning (2002):</strong> Students who self-regulate (plan, monitor, adjust their own learning) consistently outperform those who don't, across all domains.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>6. Practice, Not Theory</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">6</span>
+<span class="principle-name">Practice, Not Theory</span>
+<span class="principle-thesis">If you can't apply it, don't learn it. Deliberate practice at the edge of ability.</span>
+</summary>
 <p>If you can't apply it, don't learn it. Things memorized and never practiced get forgotten. Things learned but never applied are waste. The applicability test: does this skill compound through use? If no, cut it. Deliberate practice — at the edge of ability, with immediate feedback, targeting specific weaknesses — is the standard. Not "do it more" but "do the hard part better."</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Ebbinghaus forgetting curve (1885):</strong> Without reinforcement, 70% of learned material is forgotten within 24 hours. Only active retrieval and spaced repetition counteract this.</p>
 <p><strong>Testing effect (Roediger & Karpicke, 2006):</strong> Actively recalling information produces 50% better long-term retention than re-reading.</p>
 <p><strong>Ericsson's deliberate practice (1993):</strong> Expert performance is explained by practice specifically designed to address weaknesses, with immediate feedback, at the edge of current ability.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>7. Joy Is the Signal; Gratitude Is the Practice</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">7</span>
+<span class="principle-name">Joy Is the Signal; Gratitude Is the Practice</span>
+<span class="principle-thesis">Process joy is a precondition for excellence, not a reward. Gratitude is the complementary practice.</span>
+</summary>
 <p>Not hedonistic joy — process joy. The satisfaction of the struggle-learn-grow cycle IS the reward. Know your archetype, accept it, lean into it. Amor fati — love your fate, embrace difficulty as material. If the child isn't experiencing genuine joy in at least some framework activities, something is structurally wrong. Joy isn't a reward for hard work; it's a precondition for creative and social excellence. Gratitude is the complementary practice: noticing and naming what is already good. Weekly gratitude naming at dinner — "What went well this week? What are you grateful for?" — is one of the most robustly validated wellbeing interventions in positive psychology.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Fredrickson's broaden-and-build (2001):</strong> Positive emotions expand cognitive and behavioral repertoires — they literally make you more creative, more social, and more resilient.</p>
@@ -79,30 +107,42 @@ order: 0
 <p><strong>Ryan & Deci, Self-Determination Theory (2000):</strong> Intrinsic motivation — driven by autonomy, competence, and relatedness — predicts persistence and performance far better than external rewards. When the child experiences joy in the process, they are intrinsically motivated. When joy disappears, the framework is imposing, not enabling.</p>
 <p><strong>Emmons & McCullough (2003); Froh et al. (2008):</strong> Gratitude interventions produce significant wellbeing increases in both adults and adolescents. Weekly gratitude journaling is among the most robust positive psychology interventions — small effort, lasting effect.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>8. Kindness Creates Luck</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">8</span>
+<span class="principle-name">Kindness Creates Luck</span>
+<span class="principle-thesis">Luck = preparation x exposure x kindness. Maximize all three.</span>
+</summary>
 <p>Kindness as strength, not submission. Kind people build better networks, maintain deeper relationships, and are more resilient. Luck = preparation × exposure × kindness. Maximize all three. Be very conservative in most things (protect the downside), take asymmetric bets in a few (the niche, the moonshot). Never risk ruin for marginal gain.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Curry et al. meta-analysis (2018):</strong> Kindness interventions are among the most effective wellbeing interventions ever studied.</p>
 <p><strong>Lyubomirsky (2005):</strong> People randomly assigned to perform acts of kindness showed significant wellbeing increases lasting months.</p>
 <p><strong>Note on the barbell framing:</strong> The "very conservative in most things, asymmetric bets in a few" framing is borrowed from Taleb's investment philosophy as a useful analogy for life design — it is a framing device, not a finding from developmental research.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>9. Physical System Mastery</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">9</span>
+<span class="principle-name">Physical System Mastery</span>
+<span class="principle-thesis">Sleep is the #1 intervention. Exercise is a cognitive optimizer. The body and brain are one system.</span>
+</summary>
 <p>The body and brain are one system. Sleep is the #1 intervention — a well-rested child who does nothing else outperforms a sleep-deprived child who does everything. Exercise is a cognitive optimizer. Design and maintain the body-mind system like the high-performance machine it is.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Walker, "Why We Sleep" (2017):</strong> 6 hours/night for 2 weeks produces the same cognitive impairment as 48 hours without sleep. Non-negotiable.</p>
 <p><strong>Ratey, "Spark" (2008):</strong> Exercise increases BDNF, promoting neuronal growth. 30 minutes of cardio before studying measurably improves retention.</p>
 <p><strong>Hillman longitudinal studies:</strong> Aerobically fit children show superior academic achievement, attention, and executive function, controlling for SES and IQ.</p>
 </details>
-</div>
+</details>
 
-<div class="principle">
-<h3>10. Windows Close — Act with Urgency</h3>
+<details class="principle">
+<summary>
+<span class="principle-num">10</span>
+<span class="principle-name">Windows Close — Act with Urgency</span>
+<span class="principle-thesis">Some developmental windows are neurobiological and non-recoverable. Others are strategic.</span>
+</summary>
 <p>Some developmental windows are neurobiological and genuinely time-sensitive. Others are strategic — earlier is better but the window doesn't "close." The framework distinguishes between them:</p>
 <p><strong>Tier A — Neurobiological windows (non-recoverable):</strong> Native accent narrows after 7-10. Absolute pitch and ear training optimal before 7. Secure attachment (0-3) shapes all subsequent emotional regulation. These are use-it-or-lose-it: the neural circuitry is shaped during the window and reorganisation afterward is dramatically harder.</p>
 <p><strong>Tier B — Strategic windows (earlier-is-better, not closed):</strong> Peer influence becomes dominant after 12. Identity formation accelerates 14-16. Niche mastery benefits from early start but can begin at any age. Physical skills, reasoning, relationships — all benefit from early investment but remain fully developable throughout life.</p>
@@ -112,19 +152,19 @@ order: 0
 <p><strong>Knudsen's sensitive periods (2004):</strong> Neural circuits for auditory processing are shaped during early windows. Once closed, reorganisation is dramatically harder. This is Tier A: neurobiological, not strategic.</p>
 <p><strong>Erikson's psychosocial development (1968):</strong> Identity formation peaks in adolescence (12-18) but is not a closing window — identity continues to develop throughout adulthood. This is Tier B: strategically important, not neurobiologically time-limited.</p>
 </details>
-</div>
+</details>
 
 <h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>The Eleven Targets</h2>
 <p>Who the child becomes, not what they know. All eleven are FOUNDATIONAL. Validated against CASEL, VIA Character Strengths, WHO Life Skills, Self-Determination Theory, Positive Youth Development (5 Cs), OECD SSES, and 21st Century Skills frameworks. Each target maps to at least one established construct; together they extend beyond any single framework.</p>
 <div class="target-grid">
 <div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy</h4><p>"I can figure this out, even when it's hard and takes time." Fuses Bandura's self-efficacy, Dweck's growth mindset, and Duckworth's perseverance.</p></div>
-<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning</h4><p>"I choose well, and I own the consequences." Ownership with ethical responsibility.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Moral Reasoning</h4><p>"I choose well, and I own the consequences." Ownership with moral responsibility.</p></div>
 <div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation</h4><p>Know your patterns, biases, failure modes — and regulate your responses. The operating system.</p></div>
 <div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>The drive to understand AND the ability to sustain attention long enough to actually do it.</p></div>
 <div class="target-card"><span class="target-num">5</span><h4>First-Principles Reasoning</h4><p>"What is actually true and why?" Decompose to axioms, rebuild from fundamentals.</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Written, oral, visual, digital, performative. Sales and persuasion included.</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence</h4><p>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness</h4><p>Feel others' experience AND act on it. Kindness as strength. Includes gratitude.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness</h4><p>Feel others' experience AND act on it. Kindness as strength. Includes gratitude.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for.</p></div>
 <div class="target-card"><span class="target-num">11</span><h4>Creative Production</h4><p>Generate novel, valuable output. Divergent thinking, combination, iteration, and the courage to produce original work.</p></div>
@@ -214,8 +254,8 @@ order: 0
 </div>
 <p><strong>Scope:</strong> The engagement cycle is for deep engagement with anchor content — not for everything. Fun nights, sports, casual reading, and social play are Absorb-only. For <strong>foundational skill acquisition</strong> (phonics, arithmetic, basic facts), the evidence supports explicit, direct instruction with spaced retrieval — not the engagement cycle. Direct Instruction (Engelmann) has effect sizes of d=0.87-0.97 across hundreds of studies for foundational skills. The engagement cycle is the wrong tool for "learn your times tables." It is the right tool for "understand why the Roman Empire fell."</p>
 <p><strong>Scaffolding calibration:</strong> The amount of guidance in Interrogate and Make phases must be calibrated to the child's expertise level (Sweller's expertise reversal effect: what helps novices harms experts). Ages 4-7: heavy scaffolding — guided questions, structured making templates, adult co-construction. Ages 8-13: moderate scaffolding — open questions, choice of making medium, adult available but not directing. Ages 14+: light scaffolding — the child drives the interrogation and makes independently. Adult is a thinking partner, not a guide.</p>
-<h3>Conundrums — Ethical Reasoning Through Dilemmas</h3>
-<p>Adapted from Astra Nova School's pedagogical format. Open-ended scenarios with 3-5 defensible options and no single correct answer. The child must argue a position, hear opposing positions, and navigate constructive disagreement. Applied weekly at dinner from age 8, increasing in complexity. Examples: "A discovered treasure — who deserves the most payment: the researcher, the translator, or the finder?" "A school must cut one programme — art, sport, or music. Which and why?" This operationalises ethical reasoning (Target 2) and first-principles thinking (Target 5) without moralising. The format teaches that reasonable people can disagree on values, and that defending a position requires evidence and logic, not volume.</p>
+<h3>Conundrums — Moral Reasoning Through Dilemmas</h3>
+<p>Adapted from Astra Nova School's pedagogical format. Open-ended scenarios with 3-5 defensible options and no single correct answer. The child must argue a position, hear opposing positions, and navigate constructive disagreement. Applied weekly at dinner from age 8, increasing in complexity. Examples: "A discovered treasure — who deserves the most payment: the researcher, the translator, or the finder?" "A school must cut one programme — art, sport, or music. Which and why?" This operationalises moral reasoning (Target 2) and first-principles thinking (Target 5) without moralising. The format teaches that reasonable people can disagree on values, and that defending a position requires evidence and logic, not volume.</p>
 <h3>Multi-Medium, Original Language</h3>
 <p>Content across books, comics, film, anime, games, TV series. Always in original language with subtitles — no dubbing. Anchor works get full full engagement cycle treatment. Broader content diet is Absorb-mode: consume freely, don't over-analyze. Volume is good.</p>
 <h3>Language Architecture</h3>
@@ -421,7 +461,7 @@ order: 0
 <h2 id="s-quarterly"><span class="material-symbols-rounded">calendar_month</span>Quarterly Review Protocol</h2>
 <p>The framework is a living document. Without a feedback loop, it becomes a plan you wrote once and slowly forget.</p>
 <p><strong>Every 3 months, 30 minutes, both parents:</strong></p>
-<p><strong>1. The Eleven Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling? Pay particular attention to Targets 7–8 (Relational Intelligence, Empathy & Kindness) — these are harder to observe than intellectual targets but more predictive of long-term wellbeing. For Target 11 (Creative Production): "What did they create this quarter that didn't exist before?"</p>
+<p><strong>1. The Eleven Targets scan:</strong> For each target, rate 1–5 based on observable evidence (not hope). Where are they strong? Where are they stalling? Pay particular attention to Targets 7–8 (Relational Intelligence, Compassion & Kindness) — these are harder to observe than intellectual targets but more predictive of long-term wellbeing. For Target 11 (Creative Production): "What did they create this quarter that didn't exist before?"</p>
 <p><strong>2. Profile check:</strong> Have any dimensions shifted? A 4-year-old introvert may be a 10-year-old ambivert. A child who was Developing in communication at 2 may be On Track at 4. Re-assess all three layers (Rothbart, ASQ, BRIEF-P) and update the profile.</p>
 <p><strong>3. What worked this quarter?</strong> Specific activities, books, conversations that produced visible growth.</p>
 <p><strong>4. What didn't work?</strong> What are they resisting? Is the resistance signal or noise? (See Risk 2.)</p>

@@ -5,7 +5,7 @@ summary: "Beauty, tenderness, ecology, and ambiguity without moral simplificatio
 whyItBelongs: "Ghibli teaches children and adolescents to tolerate ambiguity, beauty, and interdependence without needing a clean villain or a flattened moral lesson."
 tags: [anime, cinema, japanese]
 languages: [japanese]
-targets: [self-awareness, deep-curiosity, empathy-kindness, adaptability]
+targets: [self-awareness, deep-curiosity, compassion-kindness, adaptability]
 models: [cause-effect, emergence, complementary-opposites, via-negativa]
 intensity: medium
 riskFlags: [violence, despair]

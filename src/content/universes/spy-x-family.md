@@ -5,7 +5,7 @@ summary: "Found family, performance, secrecy, and tenderness in a spy-comedy wra
 whyItBelongs: "Spy × Family is a strong bridge title because it is accessible, emotionally warm, and subtly trains the reader to separate identity from role."
 tags: [anime, japanese]
 languages: [japanese]
-targets: [relational-intelligence, empathy-kindness, communication-mastery, adaptability]
+targets: [relational-intelligence, compassion-kindness, communication-mastery, adaptability]
 models: [maps-not-territory, complementary-opposites, model-failure]
 intensity: low
 socialValue: broad

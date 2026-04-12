@@ -5,7 +5,7 @@ summary: "Awe, observation, and natural systems taught through disciplined docum
 whyItBelongs: "Attenborough is valuable because he models attention. The child sees not just animals but the posture of careful observation and explanation."
 tags: [cinema, english]
 languages: [english]
-targets: [deep-curiosity, communication-mastery, empathy-kindness, physical-system-mastery]
+targets: [deep-curiosity, communication-mastery, compassion-kindness, physical-system-mastery]
 models: [cause-effect, feedback-loops, compounding, emergence]
 intensity: low
 socialValue: broad

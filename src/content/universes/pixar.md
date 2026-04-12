@@ -5,7 +5,7 @@ summary: "Emotionally accessible cinema that carries identity, loss, ambition, a
 whyItBelongs: "Pixar is one of the best early bridges into emotional literacy because it packages serious themes in forms children actually want to revisit."
 tags: [cinema, english]
 languages: [english, spanish]
-targets: [self-awareness, communication-mastery, empathy-kindness, adaptability]
+targets: [self-awareness, communication-mastery, compassion-kindness, adaptability]
 models: [cause-effect, feedback-loops, emergence]
 intensity: medium
 riskFlags: [despair]

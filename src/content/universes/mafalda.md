@@ -5,7 +5,7 @@ summary: "Spanish-language wit, politics, and existential comedy through a child
 whyItBelongs: "Mafalda is a compact bridge into civic awareness, irony, and social observation while remaining accessible and culturally local."
 tags: [comics, spanish, books]
 languages: [spanish]
-targets: [self-awareness, deep-curiosity, communication-mastery, empathy-kindness]
+targets: [self-awareness, deep-curiosity, communication-mastery, compassion-kindness]
 models: [incentives, maps-not-territory, model-failure]
 intensity: low
 socialValue: bridge
