@@ -2,14 +2,47 @@
 interface Props {
   phaseCount: number;
   universeCount: number;
+  lang?: string;
 }
-const { phaseCount, universeCount } = Astro.props;
+const { phaseCount, universeCount, lang = 'en' } = Astro.props;
+
+const t = lang === 'es' ? {
+  title: 'Marco Educativo',
+  subtitle: `Un marco de desarrollo para edades de 0 a 18 años. Once objetivos, métodos basados en evidencia, ${universeCount} universos de contenido, calibrado al perfil de cada niño.`,
+  framework: 'Marco',
+  frameworkDesc: 'Filosofía, principios, objetivos y guía operativa. La base sobre la que se construye todo lo demás.',
+  frameworkMeta: '11 objetivos, 10 principios',
+  age: 'Por Edad',
+  ageDesc: 'Prioridades de desarrollo, actividades, modelos mentales y contenido para cada etapa. Desde los cimientos neuronales hasta el lanzamiento.',
+  ageMeta: `${phaseCount} fases de edad`,
+  domain: 'Por Dominio',
+  domainDesc: 'Sigue un dominio a través de todas las edades: Comunicación, Música, Cuerpo y Mente, Social, Construcción y más.',
+  domainMeta: 'Sigue un hilo a través del tiempo',
+  universe: 'Universos',
+  universeDesc: 'Libros, películas, juegos, sistemas maker y cánones literarios. La biblioteca de contenido que impulsa el marco.',
+  universeMeta: `${universeCount} universos de contenido`,
+} : {
+  title: 'Education Framework',
+  subtitle: `A developmental framework for ages 0-18. Eleven targets, evidence-based methods, ${universeCount} content universes, calibrated to each child's profile.`,
+  framework: 'Framework',
+  frameworkDesc: 'Philosophy, principles, targets, and operational guidance. The foundation everything else is built on.',
+  frameworkMeta: '11 targets, 10 principles',
+  age: 'By Age',
+  ageDesc: 'Developmental priorities, activities, mental models, and content for each stage. From neural foundations to launch.',
+  ageMeta: `${phaseCount} age phases`,
+  domain: 'By Domain',
+  domainDesc: 'Track a single domain across all ages: Communication, Music, Mind & Body, Social, Building, and more.',
+  domainMeta: 'Track one thread through time',
+  universe: 'Universes',
+  universeDesc: 'Books, films, games, maker systems, and literary canons. The content library that drives the framework.',
+  universeMeta: `${universeCount} content universes`,
+};
 ---
 
 <div class="home-view" id="home-view">
   <div class="home-hero">
-    <h1 class="home-title">Education Framework</h1>
-    <p class="home-subtitle">A developmental framework for ages 0-18. Eleven targets, evidence-based methods, {universeCount} content universes, calibrated to each child's profile.</p>
+    <h1 class="home-title">{t.title}</h1>
+    <p class="home-subtitle">{t.subtitle}</p>
   </div>
 
   <div class="home-grid">
@@ -17,36 +50,36 @@ const { phaseCount, universeCount } = Astro.props;
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
       </div>
-      <h2 class="home-card-title">Framework</h2>
-      <p class="home-card-desc">Philosophy, principles, targets, and operational guidance. The foundation everything else is built on.</p>
-      <span class="home-card-meta">11 targets, 10 principles</span>
+      <h2 class="home-card-title">{t.framework}</h2>
+      <p class="home-card-desc">{t.frameworkDesc}</p>
+      <span class="home-card-meta">{t.frameworkMeta}</span>
     </button>
 
     <button type="button" class="home-card" data-nav="age">
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
       </div>
-      <h2 class="home-card-title">By Age</h2>
-      <p class="home-card-desc">Developmental priorities, activities, mental models, and content for each stage. From neural foundations to launch.</p>
-      <span class="home-card-meta">{phaseCount} age phases</span>
+      <h2 class="home-card-title">{t.age}</h2>
+      <p class="home-card-desc">{t.ageDesc}</p>
+      <span class="home-card-meta">{t.ageMeta}</span>
     </button>
 
     <button type="button" class="home-card" data-nav="domain">
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </div>
-      <h2 class="home-card-title">By Domain</h2>
-      <p class="home-card-desc">Track a single domain across all ages: Communication, Music, Mind &amp; Body, Social, Building, and more.</p>
-      <span class="home-card-meta">Track one thread through time</span>
+      <h2 class="home-card-title">{t.domain}</h2>
+      <p class="home-card-desc">{t.domainDesc}</p>
+      <span class="home-card-meta">{t.domainMeta}</span>
     </button>
 
     <button type="button" class="home-card" data-nav="universe">
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
       </div>
-      <h2 class="home-card-title">Universes</h2>
-      <p class="home-card-desc">Books, films, games, maker systems, and literary canons. The content library that drives the framework.</p>
-      <span class="home-card-meta">{universeCount} content universes</span>
+      <h2 class="home-card-title">{t.universe}</h2>
+      <p class="home-card-desc">{t.universeDesc}</p>
+      <span class="home-card-meta">{t.universeMeta}</span>
     </button>
   </div>
 </div>

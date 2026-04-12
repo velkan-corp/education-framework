@@ -64,11 +64,11 @@ const agePhaseCount = phases.filter(p => p.data.phaseId !== 'framework').length;
 </head>
 <body>
 <div class="app">
-  <Topbar phases={phases} universeCount={universes.length} />
+  <Topbar phases={phases} universeCount={universes.length} lang="es" />
 
   <div class="main-layout">
     <div class="content" id="content">
-      <Home phaseCount={agePhaseCount} universeCount={universes.length} />
+      <Home phaseCount={agePhaseCount} universeCount={universes.length} lang="es" />
 
       {renderedPhases.map((phase) => (
         <div
@@ -92,7 +92,7 @@ const agePhaseCount = phases.filter(p => p.data.phaseId !== 'framework').length;
       <UniverseView collection="universes-es" />
     </div>
 
-    <Sidebar />
+    <Sidebar lang="es" />
   </div>
 </div>
 

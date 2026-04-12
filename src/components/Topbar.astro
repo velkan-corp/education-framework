@@ -5,11 +5,18 @@ interface Props {
   phases: Array<{ data: { phaseId: string; label: string } }>;
   domainCount?: number;
   universeCount?: number;
+  lang?: string;
 }
-const { phases, domainCount = 0, universeCount = 0 } = Astro.props;
+const { phases, domainCount = 0, universeCount = 0, lang = 'en' } = Astro.props;
 
 const agePhases = phases.filter(p => p.data.phaseId !== 'framework');
 const tabEntries = Object.entries(TAB_TAGS);
+
+const nav = lang === 'es' ? {
+  home: 'Inicio', framework: 'Marco', byAge: 'Por Edad', byDomain: 'Por Dominio', universes: 'Universos', search: 'Buscar...'
+} : {
+  home: 'Home', framework: 'Framework', byAge: 'By Age', byDomain: 'By Domain', universes: 'Universes', search: 'Search... (⌘K)'
+};
 ---
 
 <nav class="topbar" role="navigation" aria-label="Main navigation">
@@ -22,13 +29,13 @@ const tabEntries = Object.entries(TAB_TAGS);
 
     <!-- Main navigation -->
     <div class="nav-items" id="nav-items">
-      <button type="button" class="nav-item active" data-view="home">Home</button>
-      <button type="button" class="nav-item" data-view="framework">Framework</button>
+      <button type="button" class="nav-item active" data-view="home">{nav.home}</button>
+      <button type="button" class="nav-item" data-view="framework">{nav.framework}</button>
 
       <!-- By Age — dropdown trigger -->
       <div class="nav-dropdown-wrap">
         <button type="button" class="nav-item" data-view="age" aria-expanded="false" aria-haspopup="true">
-          By Age
+          {nav.byAge}
           <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
         <div class="nav-dropdown" role="menu">
@@ -43,7 +50,7 @@ const tabEntries = Object.entries(TAB_TAGS);
       <!-- By Domain — dropdown trigger -->
       <div class="nav-dropdown-wrap">
         <button type="button" class="nav-item" data-view="domain" aria-expanded="false" aria-haspopup="true">
-          By Domain
+          {nav.byDomain}
           <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
         <div class="nav-dropdown nav-dropdown-domain" role="menu" id="nav-domain-dropdown">
@@ -54,7 +61,7 @@ const tabEntries = Object.entries(TAB_TAGS);
       <!-- Universes — dropdown trigger -->
       <div class="nav-dropdown-wrap">
         <button type="button" class="nav-item" data-view="universe" aria-expanded="false" aria-haspopup="true">
-          Universes
+          {nav.universes}
           <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
         <div class="nav-dropdown" role="menu" id="nav-universe-dropdown">
@@ -76,7 +83,7 @@ const tabEntries = Object.entries(TAB_TAGS);
       <button id="search-icon" type="button" aria-label="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
-      <input id="search-input" type="text" placeholder="Search... (⌘K)" autocomplete="off">
+      <input id="search-input" type="text" placeholder={nav.search} autocomplete="off">
       <div id="search-results" class="hidden"></div>
     </div>
 
@@ -91,10 +98,10 @@ const tabEntries = Object.entries(TAB_TAGS);
 
 <!-- Mobile slide-down menu -->
 <div class="mobile-menu hidden" id="mobile-menu">
-  <button type="button" class="mobile-menu-item" data-view="home">Home</button>
-  <button type="button" class="mobile-menu-item" data-view="framework">Framework</button>
+  <button type="button" class="mobile-menu-item" data-view="home">{nav.home}</button>
+  <button type="button" class="mobile-menu-item" data-view="framework">{nav.framework}</button>
   <div class="mobile-menu-group">
-    <div class="mobile-menu-label">By Age</div>
+    <div class="mobile-menu-label">{nav.byAge}</div>
     {agePhases.map((phase) => (
       <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="age" data-phase={phase.data.phaseId}>
         {phase.data.label}
@@ -102,11 +109,11 @@ const tabEntries = Object.entries(TAB_TAGS);
     ))}
   </div>
   <div class="mobile-menu-group">
-    <div class="mobile-menu-label">By Domain</div>
+    <div class="mobile-menu-label">{nav.byDomain}</div>
     <div id="mobile-domain-items"><!-- Populated by JS --></div>
   </div>
   <div class="mobile-menu-group">
-    <div class="mobile-menu-label">Universes</div>
+    <div class="mobile-menu-label">{nav.universes}</div>
     <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter="all">All</button>
     {tabEntries.map(([key, label]) => (
       <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter={key}>{label}</button>
