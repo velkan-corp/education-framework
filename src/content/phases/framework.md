@@ -133,12 +133,12 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
-<h3>Twelve Universal Models</h3>
-<p>Introduced progressively through the Onion Layers. See each phase's Mental Models section for age-specific engagement.</p>
+<h3>Fifteen Universal Models</h3>
+<p>Introduced progressively through the Onion Layers. Four balanced groups across four layers. See each phase's Mental Models section for age-specific engagement.</p>
 
 <div class="model-timeline">
 <div class="model-age-group">
-<div class="model-age-label">Age 4-7 — Experience</div>
+<div class="model-age-label">Age 4-7 — Layer 1: Experience</div>
 <div class="model-cards">
 <div class="model-card"><span class="model-num">1</span><strong>Cause & Effect</strong><br>Then what? And then what?</div>
 <div class="model-card"><span class="model-num">2</span><strong>Feedback Loops</strong><br>Does the output amplify or dampen the input?</div>
@@ -147,26 +147,29 @@ order: 0
 </div>
 </div>
 <div class="model-age-group">
-<div class="model-age-label">Age 8-10 — Name</div>
+<div class="model-age-label">Age 8-10 — Layer 2: Name</div>
 <div class="model-cards">
 <div class="model-card"><span class="model-num">5</span><strong>Maps ≠ Territory</strong><br>Is this the thing, or a representation of it?</div>
 <div class="model-card"><span class="model-num">6</span><strong>Compounding</strong><br>What happens if this continues for 10 years?</div>
 <div class="model-card"><span class="model-num">7</span><strong>Probability</strong><br>What's the actual likelihood?</div>
+<div class="model-card"><span class="model-num">8</span><strong>Opportunity Cost</strong><br>What am I giving up by choosing this?</div>
 </div>
 </div>
 <div class="model-age-group">
-<div class="model-age-label">Age 11-13 — Stress-Test</div>
+<div class="model-age-label">Age 11-13 — Layer 3: Stress-Test</div>
 <div class="model-cards">
-<div class="model-card"><span class="model-num">8</span><strong>Emergence</strong><br>What arises from simple parts that none contain?</div>
-<div class="model-card"><span class="model-num">9</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
-<div class="model-card"><span class="model-num">10</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
+<div class="model-card"><span class="model-num">9</span><strong>Emergence</strong><br>What arises from simple parts that none contain?</div>
+<div class="model-card"><span class="model-num">10</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
+<div class="model-card"><span class="model-num">11</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
+<div class="model-card"><span class="model-num">12</span><strong>Cognitive Biases</strong><br>How is my brain misleading me right now?</div>
 </div>
 </div>
 <div class="model-age-group">
-<div class="model-age-label">Age 14-16 — Synthesize</div>
+<div class="model-age-label">Age 14-16 — Layer 4: Synthesize</div>
 <div class="model-cards">
-<div class="model-card"><span class="model-num">11</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
-<div class="model-card"><span class="model-num">12</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
+<div class="model-card"><span class="model-num">13</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
+<div class="model-card"><span class="model-num">14</span><strong>Game Theory</strong><br>How does the other player's strategy affect mine?</div>
+<div class="model-card"><span class="model-num">15</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
 </div>
 </div>
 </div>

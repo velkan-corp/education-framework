@@ -63,11 +63,14 @@ order: 1
 <span class="model-dot future" title="Maps ≠ Territory"><span class="model-dot-num">5</span><span class="model-dot-name">Maps≠</span></span>
 <span class="model-dot future" title="Compounding"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" title="Probability"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
-<span class="model-dot future" title="Emergence"><span class="model-dot-num">8</span><span class="model-dot-name">Emerge</span></span>
-<span class="model-dot future" title="Complementary Opposites"><span class="model-dot-num">9</span><span class="model-dot-name">Oppos.</span></span>
-<span class="model-dot future" title="Via Negativa"><span class="model-dot-num">10</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" title="Antifragility"><span class="model-dot-num">11</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" title="Model Failure"><span class="model-dot-num">12</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" title="Opportunity Cost"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
+<span class="model-dot future" title="Emergence"><span class="model-dot-num">9</span><span class="model-dot-name">Emerge</span></span>
+<span class="model-dot future" title="Complementary Opposites"><span class="model-dot-num">10</span><span class="model-dot-name">Oppos.</span></span>
+<span class="model-dot future" title="Via Negativa"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" title="Cognitive Biases"><span class="model-dot-num">12</span><span class="model-dot-name">Biases</span></span>
+<span class="model-dot future" title="Antifragility"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" title="Game Theory"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
+<span class="model-dot future" title="Model Failure"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
 </div>
 </div>
 <p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>

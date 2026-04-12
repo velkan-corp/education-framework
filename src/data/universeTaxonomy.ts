@@ -83,7 +83,10 @@ export const MODEL_IDS = [
   'complementary-opposites',
   'via-negativa',
   'antifragility',
+  'game-theory',
   'model-failure',
+  'opportunity-cost',
+  'cognitive-biases',
 ] as const;
 
 export const INTENSITY_LEVELS = ['low', 'medium', 'high', 'extreme'] as const;
@@ -148,7 +151,10 @@ export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {
   'complementary-opposites': 'Complementary Opposites',
   'via-negativa': 'Via Negativa',
   antifragility: 'Antifragility',
+  'game-theory': 'Game Theory',
   'model-failure': 'Model Failure',
+  'opportunity-cost': 'Opportunity Cost',
+  'cognitive-biases': 'Cognitive Biases',
 };
 
 export const INTENSITY_LABELS: Record<(typeof INTENSITY_LEVELS)[number], string> = {
