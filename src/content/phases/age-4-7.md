@@ -21,20 +21,19 @@ order: 3
 </div>
 
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
-<table>
-<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
-<tr><td>Resilient Self-Efficacy</td><td>Graduated challenge in one real domain. Success → harder version. Praise process: "you kept trying" not "you're so smart." One long-form commitment, 3–4 years minimum. The plateau is normal and survivable.</td><td>Chess (Goula set + Murray & Cowan book) · LEGO Classic 10698 · Cooking with real ingredients · Primary instrument + teacher. OR martial art. One commitment, not five activities.</td></tr>
-<tr><td>Self-Compassion</td><td>Debrief failures analytically: "What went wrong? What would you try next?" Curiosity about failure, not comfort.</td><td><a href="#s-resources">After the Fall</a> (Santat) · <a href="#s-resources">The Most Magnificent Thing</a> (Spires)</td></tr>
-<tr><td>Agency</td><td>Natural consequences operate without rescue. No jacket → cold. Post-mortem together, analytically.</td><td><a href="#s-resources">Moonjar Save Spend Share Bank</a> — €5–10/week to manage independently.</td></tr>
-<tr><td>First-Principles</td><td>Socratic at dinner. "Why do you think that?" "What if the opposite were true?" Start with story characters, generalize.</td><td>Beast Academy (math, age 6+) · Big Questions from Little People (Harris)</td></tr>
-<tr><td>Deep Curiosity</td><td>Protect and feed whatever they hyperfocus on. The obsession IS the curriculum. Museums as regular practice. Your own visible wonder is the primary mechanism. Go with questions, leave with new ones.</td><td>If dinosaurs: Safari TOOB sets + DK Eyewitness. Any interest: Nat Geo Kids subscription. <a href="#s-resources">Museum memberships (Natural History, Science, Art)</a>. Field trips: bakery, post office, fire station.</td></tr>
-<tr><td>Adaptability</td><td>Open-ended creative play with no right answer. Read books without moralizing the ending. KAPLA and LEGO become primary curriculum vehicles at this age. Beast Academy works well for visual/spatial math. Build physical models of story concepts — build the Fire Nation, draw the Avatar world map. The content curriculum enters through making.</td><td><a href="#s-resources">KAPLA Blocks 200-piece</a> · Flotsam (Wiesner) · <a href="#s-resources">Journey Trilogy</a> (Becker) · Playmobil historical sets (Pirates, Medieval Knights, Romans) — narrative-ready figures that demand storytelling, not building. The historical theming plants seeds: a child who narrates castle sieges and pirate raids has an embodied reference point when they encounter feudal Europe or the Age of Exploration.</td></tr>
-<tr><td>Communication Mastery</td><td>Storytelling games at dinner. Explain-it-back after any film. Debate character decisions. Extend dinner conversations. Introduce simple debate: "Convince me that [character] was right." Writing stories begins — provide journals, not prompts. Roald Dahl and Calvin & Hobbes will hit hard at this age.</td><td><a href="#s-resources">Rory's Story Cubes</a> · <a href="#s-resources">Dixit</a> · <a href="#s-resources">Roald Dahl complete works</a> (read aloud)</td></tr>
-<tr><td>Physical System Mastery</td><td>Cold-weather outdoor play. Long hikes. Martial arts with real contact.</td><td>Jiu-Jitsu (Gracie Bullyproof) or Muay Thai kids. Woom 3 bike. <a href="#s-resources">Deuter Junior 18L backpack</a> — they carry their own water.</td></tr>
-<tr><td>Relational Intelligence</td><td>Team sport begins. Coordinating with others toward a shared goal under rules they didn't set. Conflict resolution: "What do you want? What does she want? How can you both get some?"</td><td>Football, basketball, or similar team sport enrollment. NOT for competition — for social calibration.</td></tr>
-<tr><td>Empathy & Kindness</td><td>Helping as habit: cook, clean, carry groceries for the elderly neighbor. Donate toys — let them choose which and hand over personally. "Other beings need things, and you can provide some."</td><td>Animal shelter visits. Service as regular activity, not special event. <a href="#s-resources">After the Fall</a> (perspective-taking through story).</td></tr>
-<tr><td>Self-Awareness</td><td>"I'm the kind of person who..." — encourage self-description. Zones of regulation (color-coded energy levels). Recognize physiological signals: "My stomach feels tight when I'm nervous." Post-meltdown debrief: "What happened in your body before you got upset?"</td><td>Emotion journals. Self-description conversations at dinner. "What are you good at? How do you know?"</td></tr>
-</table>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy</h4><p>Graduated challenge in one real domain — praise process, not talent. One long-form commitment, 3-4 years minimum.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning</h4><p>Natural consequences operate without rescue — no jacket means cold. Post-mortem together, analytically.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation</h4><p>Encourage self-description: "I'm the kind of person who..." Zones of regulation and recognizing physiological signals.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>Protect and feed whatever they hyperfocus on — the obsession IS the curriculum. Museums as regular practice.</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>First-Principles</h4><p>Socratic at dinner: "Why do you think that?" "What if the opposite were true?" Start with story characters, generalize.</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Storytelling games at dinner, explain-it-back after any film, debate character decisions. Writing stories begins.</p></div>
+<div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence</h4><p>Team sport begins — coordinating with others toward a shared goal under rules they didn't set.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness</h4><p>Helping as habit: cook, clean, donate toys. "Other beings need things, and you can provide some."</p></div>
+<div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Cold-weather outdoor play, long hikes, martial arts with real contact. They carry their own water.</p></div>
+<div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Open-ended creative play with no right answer. KAPLA and LEGO become primary curriculum vehicles at this age.</p></div>
+<div class="target-card"><span class="target-num">11</span><h4>Creative Production</h4><p>Open-ended building, drawing, storytelling, and cooking. The "Make" phase of the engagement cycle begins here.</p></div>
+</div>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>The niche mastery activity can be solitary (instrument practice, chess puzzles, drawing) rather than group-based. Reduce extracurricular scheduling — one activity per day maximum. Protect solo reading/building time as sacred, not as "doing nothing."</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Team martial arts, group music classes, collaborative building projects. The dinner Socratic ritual may work better as a family debate format. Playdates are learning environments — use them.</div>
@@ -74,6 +73,23 @@ order: 3
 <div class="t-adjust t-plan-dev"><div class="t-label">Plan/Organize: Developing</div>Provide the plan externally: a visual sequence of steps, a pre-sorted set of materials, a template to follow. Model planning aloud ("First I need to... then I'll... and finally...") so the internal monologue has a template. Don't expect them to plan before doing — let them start, then pause to reflect: "What's the next step?" Planning is a learned skill, not an innate trait, and it develops later than parents expect.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
+<div class="model-tracker">
+<div class="model-tracker-label">Layer 1: Experience</div>
+<div class="model-tracker-bar">
+<span class="model-dot new" title="Cause & Effect">1</span>
+<span class="model-dot new" title="Feedback Loops">2</span>
+<span class="model-dot new" title="Incentives">3</span>
+<span class="model-dot new" title="Inversion">4</span>
+<span class="model-dot future" title="Maps ≠ Territory">5</span>
+<span class="model-dot future" title="Compounding">6</span>
+<span class="model-dot future" title="Probability">7</span>
+<span class="model-dot future" title="Emergence">8</span>
+<span class="model-dot future" title="Complementary Opposites">9</span>
+<span class="model-dot future" title="Via Negativa">10</span>
+<span class="model-dot future" title="Antifragility">11</span>
+<span class="model-dot future" title="Model Failure">12</span>
+</div>
+</div>
 <p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>
 <table>
 <tr><th>Universal Model</th><th>How to Introduce (Layer 1)</th></tr>

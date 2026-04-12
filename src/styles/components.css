@@ -167,7 +167,7 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   animation: fadeIn 0.3s ease-out forwards;
 }
 
-/* Phase universe items — card style with tier color coding */
+/* Phase universe — compact display */
 .phase-universes h3 {
   font-size: 11px;
   font-weight: 700;
@@ -176,7 +176,7 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   padding: var(--sp-2) var(--sp-3);
   border-radius: var(--radius-sm);
   margin-top: var(--sp-4);
-  margin-bottom: var(--sp-3);
+  margin-bottom: var(--sp-2);
 }
 .phase-universes h3:first-of-type { margin-top: var(--sp-3); }
 
@@ -197,27 +197,36 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   border-left: 3px solid var(--border);
 }
 
-.phase-universe-item {
+.phase-universe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--sp-2);
   margin-bottom: var(--sp-3);
-  padding: var(--sp-3);
+}
+.phase-universe-compact {
+  padding: var(--sp-2) var(--sp-3);
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
+  cursor: default;
   transition: border-color var(--duration-micro) var(--ease-out);
 }
-.phase-universe-item:hover {
-  border-color: var(--accent-border);
-}
-.phase-universe-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin-top: var(--sp-1);
-}
-.phase-universe-note {
+.phase-universe-compact:hover { border-color: var(--accent-border); }
+.phase-universe-title {
+  font-family: var(--font-heading);
   font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.phase-universe-desc {
+  font-size: 11px;
   color: var(--text-muted);
-  margin-top: var(--sp-1);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.phase-universe-compact .universe-tag {
+  font-size: 8px;
 }
 
 .warn-box {
@@ -498,6 +507,57 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   .triad-grid { grid-template-columns: 1fr; }
   .model-cards { flex-direction: column; }
   .model-card { min-width: auto; }
+}
+
+/* ── MODEL TRACKER (age pages) ── */
+.model-tracker {
+  margin-bottom: var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+.model-tracker-label {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+}
+.model-tracker-bar {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.model-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: default;
+  transition: transform var(--duration-micro) var(--ease-out);
+}
+.model-dot:hover { transform: scale(1.1); }
+.model-dot.new {
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+.model-dot.active {
+  background: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+.model-dot.future {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  opacity: 0.5;
 }
 
 /* SECTION TIER FILTERS */

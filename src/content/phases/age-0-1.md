@@ -18,17 +18,18 @@ order: 1
 <p><strong>The three real levers:</strong> (1) Responsive caregiving → secure attachment → emotional regulation → all virtue development. (2) Language saturation → vocabulary → reading → academic outcomes. (3) Sensory richness → neural connectivity → perceptual and cognitive capacity.</p>
 
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
-<table>
-<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
-<tr><td>Resilient Self-Efficacy seed</td><td>Respond consistently to signals. Reliability teaches "my actions produce results." Don't intervene too quickly when they struggle — the effort itself wires persistence.</td><td><a href="#s-resources">Lovevery Play Gym</a> for graduated reach/grasp challenges.</td></tr>
-<tr><td>Self-Compassion seed</td><td>Soothe distress with warmth and physical contact. Teaches: emotional states are survivable.</td><td><a href="#s-resources">Ergobaby 360 Carrier</a> — hands-free contact.</td></tr>
-<tr><td>Agency seed</td><td>Let them reach, bat, grab, explore without constant redirection.</td><td>Replace hanging objects regularly — novelty maintains engagement.</td></tr>
-<tr><td>Deep Curiosity seed</td><td>High-contrast visual input; varied sensory stimulation. Don't interrupt sustained attention — if they're staring at something for 3 minutes, that IS the work. Include natural materials in sensory play: untreated wood blocks, metal spoons, wool fabric, cotton, ceramic bowls (supervised). Plastic is convenient; real materials teach different weights, temperatures, and textures. This is the substrate for later material literacy.</td><td>Montessori mobile sequence: Munari → Octahedron → Gobbi → Dancers. Fewer toys, more time with each.</td></tr>
-<tr><td>Physical System Mastery seed</td><td>Tummy time, floor freedom, outdoor exposure to weather variation.</td><td><a href="#s-resources">Baby Bjorn Bouncer</a>. Outdoor blanket time daily regardless of weather.</td></tr>
-<tr><td>Relational Intelligence seed</td><td>Secure attachment IS the foundation. Responsive caregiving produces children who later navigate social complexity with confidence. This is also the substrate for later social independence — a child who trusts that their caregivers are reliable develops the internal security to later resist external social pressure from confidence rather than compliance.</td><td>Parent-and-baby groups. 3-4 families with similar-age children.</td></tr>
-<tr><td>Empathy & Kindness seed</td><td>Co-regulation models emotional attunement. Name their emotions: "You're frustrated." This gives handles for experiences.</td><td>Consistent narration of emotional states.</td></tr>
-<tr><td>Self-Awareness seed</td><td>Co-regulation is the curriculum. Name their emotions: "You're frustrated." This gives handles for experiences and builds the foundation of self-knowledge.</td><td>Consistent narration of emotional and physical states.</td></tr>
-</table>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy seed</h4><p>Respond consistently to signals — reliability teaches "my actions produce results." Lovevery Play Gym for graduated reach/grasp challenges.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning seed</h4><p>Let them reach, bat, grab, explore without constant redirection. Replace hanging objects regularly — novelty maintains engagement.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation seed</h4><p>Co-regulation is the curriculum — name their emotions to build the foundation of self-knowledge. Consistent narration of emotional and physical states.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity seed</h4><p>High-contrast visual input and varied sensory stimulation — don't interrupt sustained attention. Montessori mobile sequence; fewer toys, more time with each.</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>First-Principles seed</h4><p>Not yet applicable — pre-linguistic. Seeds planted through cause-and-effect sensory exploration.</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Communication Mastery seed</h4><p>Narrate everything — pair language with physical action to bind word to sensation.</p></div>
+<div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence seed</h4><p>Secure attachment IS the foundation — responsive caregiving produces the internal security for later social independence. Parent-and-baby groups with 3-4 families.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness seed</h4><p>Co-regulation models emotional attunement — name their emotions to give handles for experiences. Consistent narration of emotional states.</p></div>
+<div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery seed</h4><p>Tummy time, floor freedom, outdoor exposure to weather variation. Baby Bjorn Bouncer; outdoor blanket time daily regardless of weather.</p></div>
+<div class="target-card"><span class="target-num">10</span><h4>Adaptability seed</h4><p>Varied sensory environments and routine flexibility build early tolerance for change.</p></div>
+</div>
 
 <div class="t-adjust t-high-react"><div class="t-label">High Reactivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>
 <div class="t-adjust t-low-react"><div class="t-label">Low Reactivity</div>May need more intense stimulation to engage. Bolder contrasts, more physical play, varied textures. Don't mistake calm for contentment — they may simply need more input.</div>
@@ -52,6 +53,23 @@ order: 1
 <div class="t-adjust t-inhib-dev"><div class="t-label">Inhibit: Developing</div>No meaningful inhibitory control is expected at this age. If they grab everything immediately with no pause, that is entirely normal. Do not attempt to train "waiting" before 12 months — the prefrontal circuitry is not yet wired. Focus instead on consistent, calm redirection when they reach for unsafe objects.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models at This Stage</h2>
+<div class="model-tracker">
+<div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
+<div class="model-tracker-bar">
+<span class="model-dot future" title="Cause & Effect">1</span>
+<span class="model-dot future" title="Feedback Loops">2</span>
+<span class="model-dot future" title="Incentives">3</span>
+<span class="model-dot future" title="Inversion">4</span>
+<span class="model-dot future" title="Maps ≠ Territory">5</span>
+<span class="model-dot future" title="Compounding">6</span>
+<span class="model-dot future" title="Probability">7</span>
+<span class="model-dot future" title="Emergence">8</span>
+<span class="model-dot future" title="Complementary Opposites">9</span>
+<span class="model-dot future" title="Via Negativa">10</span>
+<span class="model-dot future" title="Antifragility">11</span>
+<span class="model-dot future" title="Model Failure">12</span>
+</div>
+</div>
 <p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>
 <table>
 <tr><th>Model</th><th>How It's Built</th></tr>
@@ -125,6 +143,10 @@ order: 1
 <div class="t-adjust t-fm-dev"><div class="t-label">Fine Motor: Developing</div>Stick with large, easy-to-grasp objects. Soft blocks they can hold with a full-hand grip. Sensory play that doesn't require pincer precision — scooping sand, squeezing soft toys, batting at hanging objects. The progression is reach → contact → grasp → hold. Don't skip to placing or stacking before grasping is reliable.</div>
 <div class="t-adjust t-ps-adv"><div class="t-label">Problem Solving: Advanced</div>If they show early cause-and-effect mastery (deliberately dropping objects to watch them fall, pulling a cloth to retrieve a toy), increase complexity — hide objects under two covers and let them search, or use toys that require a two-step action to activate. Praise persistence: "You tried both — you kept going."</div>
 <div class="t-adjust t-ps-dev"><div class="t-label">Problem Solving: Developing</div>Simplify to single-step cause-and-effect: push button → light, shake rattle → sound. Use toys with immediate, satisfying feedback. Repeat the same toy interaction many times before introducing variation — mastery of one simple mechanism builds the template for all future problem solving.</div>
+
+<h2 id="s-material-culture" data-tier="recommended"><span class="material-symbols-rounded">handyman</span>Material Culture & Craft</h2>
+<p><strong>Sensory substrate.</strong> At this age, material culture is sensory exploration. Include natural materials in play: untreated wood blocks, metal spoons, wool fabric, cotton, ceramic bowls (supervised). Plastic is convenient; real materials teach different weights, temperatures, and textures. This is the substrate for all later material literacy — the child who has felt the difference between wood and metal at 6 months recognises it instinctively at 6 years.</p>
+<p><strong>Parent behaviour:</strong> Model appreciation for objects. "This wooden bowl is 20 years old and still beautiful." The child absorbs tone, not content.</p>
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 

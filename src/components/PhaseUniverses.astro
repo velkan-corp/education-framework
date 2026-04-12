@@ -9,7 +9,6 @@ const { phaseId } = Astro.props;
 
 const allUniverses = await getCollection('universes');
 
-// Collect entries for this phase, grouped by tier
 const tierOrder: Array<'foundational' | 'core' | 'recommended'> = ['foundational', 'core', 'recommended'];
 const entries: Array<{
   id: string;
@@ -43,7 +42,7 @@ for (const u of allUniverses) {
 const grouped = tierOrder
   .map(tier => ({
     tier,
-    label: tier === 'foundational' ? 'FOUNDATIONAL Anchors' : tier === 'core' ? 'CORE' : 'RECOMMENDED — Broader Content Diet',
+    label: tier === 'foundational' ? 'FOUNDATIONAL Anchors' : tier === 'core' ? 'CORE' : 'RECOMMENDED',
     items: entries.filter(e => e.tier === tier),
   }))
   .filter(g => g.items.length > 0);
@@ -52,32 +51,19 @@ const grouped = tierOrder
 {grouped.length > 0 && (
   <div class="phase-universes">
     <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-    <p>Anchor works get the full engagement cycle (Absorb → Check → Interrogate → Make → Revisit). Broader content diet is Absorb-mode — consume freely, discuss naturally. All content in original language with subtitles. See <strong>Universe</strong> journey view for full progression across ages.</p>
+    <p class="subtitle">Anchor works get the full engagement cycle. Broader content is Absorb-mode. See <strong>Universes</strong> view for full detail and progression across ages.</p>
     {grouped.map(group => (
       <>
         <h3>{group.label}</h3>
-        {group.items.map(item => (
-          <div class="phase-universe-item" id={`universe-${item.id}`} data-universe={item.id}>
-            <p><strong>{item.title}</strong>. {item.description}</p>
-            {(item.mode || item.targets?.length || item.models?.length || item.goals?.length) && (
-              <p class="phase-universe-meta">
-                {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
-                {(item.targets ?? []).slice(0, 2).map((target) => (
-                  <span class="universe-tag">{TARGET_LABELS[target]}</span>
-                ))}
-                {(item.models ?? []).slice(0, 2).map((model) => (
-                  <span class="universe-tag">{MODEL_LABELS[model]}</span>
-                ))}
-              </p>
-            )}
-            {item.goals && item.goals.length > 0 && (
-              <p class="phase-universe-note"><strong>Focus.</strong> {item.goals.join(' • ')}</p>
-            )}
-            {item.cautions && (
-              <p class="phase-universe-note"><strong>Caution.</strong> {item.cautions}</p>
-            )}
-          </div>
-        ))}
+        <div class="phase-universe-grid">
+          {group.items.map(item => (
+            <div class="phase-universe-compact" data-universe={item.id}>
+              <div class="phase-universe-title">{item.label}</div>
+              <div class="phase-universe-desc">{item.title}</div>
+              {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
+            </div>
+          ))}
+        </div>
       </>
     ))}
   </div>

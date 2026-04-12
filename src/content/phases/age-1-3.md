@@ -22,19 +22,18 @@ order: 2
 </div>
 
 <h2 id="s-activity"><span class="material-symbols-rounded">calendar_month</span>Activity Map</h2>
-<table>
-<tr><th>Target</th><th>Core Approach</th><th>Key Resources</th></tr>
-<tr><td>Resilient Self-Efficacy seed</td><td>Let them struggle. Pouring water, putting on shoes, stacking blocks. Don't complete their tasks. Narrate: "You're figuring it out." Don't intervene for at least 90 seconds when they're struggling — narrate the process, not the outcome.</td><td>Montessori practical life: child-sized pitcher, easy-on shoes, step stool. <a href="#s-resources">Grimm's Rainbow</a>, nesting cups, shape sorters — toys with clear but non-trivial goals.</td></tr>
-<tr><td>Self-Compassion</td><td>When they fall or fail, stay calm. "You fell. That happens. Want to try again?" Not "oh no, are you okay?!" — which teaches that falling is alarming.</td><td>Model your own minor failures. "Oops, I dropped it. Let me try again."</td></tr>
-<tr><td>Agency</td><td>Offer real choices within bounds: "Red shirt or blue shirt?" "Apple or banana?" Never fake choices.</td><td>Moonjar (age 3): start with coins. Tiny real decisions.</td></tr>
-<tr><td>First-Principles seed</td><td>"Why?" is arriving. Answer seriously. "Why is the sky blue?" deserves a real answer, even simplified.</td><td>DK My First series. <a href="#s-resources">Eric Carle</a> books (cause-and-effect narrative).</td></tr>
-<tr><td>Deep Curiosity</td><td>Follow their attention. If they're fascinated by ants, stop and watch ants for 30 minutes. Your schedule is less important than their wonder. Protect sustained attention — if they're absorbed in sand play for 20 minutes, don't interrupt for a "better" activity. That IS the best activity.</td><td><a href="#s-resources">Magnifying glass</a>. Bug catching kit. Nature walks with no destination. Reduce toy clutter: 5–8 toys available, rotated weekly.</td></tr>
-<tr><td>Communication Mastery</td><td>Use adult vocabulary, then define: "That's an excavator — it digs." Don't dumb down language. They absorb more than they produce.</td><td><a href="#s-resources">Richard Scarry</a> (labels everything). Where's Wally (visual search → verbal description).</td></tr>
-<tr><td>Physical System Mastery</td><td>Outdoor daily regardless of weather. Climbing, jumping, running on uneven surfaces. Barefoot when safe.</td><td>Balance bike (from 18 months). Playground with challenge — not the safe toddler section.</td></tr>
-<tr><td>Relational Intelligence seed</td><td>Parallel play is developmentally correct. Don't force sharing. Model turn-taking: "My turn... your turn." Narrate social situations: "She's sad because..."</td><td>Playdates with 2-3 consistent families. Park playgroups.</td></tr>
-<tr><td>Empathy & Kindness seed</td><td>"She's crying because she wanted the ball." Build social-emotional vocabulary that precedes actual social skills. Help them notice others' feelings.</td><td>Emotion-focused picture books. Real social situations narrated in real time.</td></tr>
-<tr><td>Self-Awareness seed</td><td>Emotion vocabulary: "You look angry. Are you angry?" Name their states before they can. "I'm the kind of person who..." begins — encourage self-description.</td><td>Emotion-focused picture books. Mirror play. "Tell me about your picture."</td></tr>
-</table>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Resilient Self-Efficacy seed</h4><p>Let them struggle — don't complete their tasks, narrate the process. Montessori practical life: child-sized pitcher, easy-on shoes, step stool; Grimm's Rainbow, nesting cups, shape sorters.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Agency & Ethical Reasoning seed</h4><p>Offer real choices within bounds — never fake choices. Moonjar (age 3): start with coins for tiny real decisions.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Self-Awareness & Self-Regulation seed</h4><p>Name their states before they can: "You look angry. Are you angry?" Encourage early self-description. Emotion-focused picture books; mirror play.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Deep Curiosity</h4><p>Follow their attention — if they're fascinated by ants, stop and watch ants for 30 minutes. Magnifying glass, bug catching kit, nature walks with no destination.</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>First-Principles seed</h4><p>"Why?" is arriving — answer seriously, even simplified. DK My First series; Eric Carle books (cause-and-effect narrative).</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Use adult vocabulary, then define: "That's an excavator — it digs." Richard Scarry (labels everything); Where's Wally (visual search to verbal description).</p></div>
+<div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence seed</h4><p>Parallel play is developmentally correct — don't force sharing, model turn-taking. Playdates with 2-3 consistent families.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Empathy & Kindness seed</h4><p>Build social-emotional vocabulary that precedes actual social skills. Emotion-focused picture books; real social situations narrated in real time.</p></div>
+<div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Outdoor daily regardless of weather — climbing, jumping, running on uneven surfaces. Balance bike from 18 months; challenging playgrounds.</p></div>
+<div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Varied environments, flexible routines, and open-ended play build tolerance for change and novelty.</p></div>
+</div>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Respect the need for solitary play. Don't force sharing or group play at this age — parallel play is normal and healthy until ~3. Quiet reading time is not isolation; it's recharging.</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Maximize social exposure. Playdates, park groups, music classes with other children. They learn through social interaction more than solitary exploration. The interna's social schedule matters more.</div>
@@ -64,6 +63,23 @@ order: 2
 <div class="t-adjust t-plan-dev"><div class="t-label">Plan/Organize: Developing</div>If there is no evidence of planning or sequencing (entirely impulsive play, no cleanup attempts, no anticipation of next steps), this is normal before age 3. Support with external structure: "First shoes, then outside" with consistent pairing. Cleanup routines with a specific song that signals the sequence. The routine IS the plan at this age — you are the external organiser until their prefrontal cortex comes online.</div>
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
+<div class="model-tracker">
+<div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
+<div class="model-tracker-bar">
+<span class="model-dot future" title="Cause & Effect">1</span>
+<span class="model-dot future" title="Feedback Loops">2</span>
+<span class="model-dot future" title="Incentives">3</span>
+<span class="model-dot future" title="Inversion">4</span>
+<span class="model-dot future" title="Maps ≠ Territory">5</span>
+<span class="model-dot future" title="Compounding">6</span>
+<span class="model-dot future" title="Probability">7</span>
+<span class="model-dot future" title="Emergence">8</span>
+<span class="model-dot future" title="Complementary Opposites">9</span>
+<span class="model-dot future" title="Via Negativa">10</span>
+<span class="model-dot future" title="Antifragility">11</span>
+<span class="model-dot future" title="Model Failure">12</span>
+</div>
+</div>
 <p>Layer 0 continues — Pre-linguistic to early-linguistic. The framework uses 12 universal mental models revisited annually. At this age, models are still primarily experiential, now with emerging verbal scaffolding.</p>
 <table>
 <tr><th>Model</th><th>How It's Built</th></tr>
@@ -140,12 +156,6 @@ order: 2
 <div class="t-adjust t-shift-adv"><div class="t-label">Shift: Advanced</div>If they adapt to different social rules in different settings (gentle at the library, louder at the park, patient with a baby), name the flexibility: "You knew to be quiet here — you changed your behaviour for the place." Social flexibility is cognitive flexibility made visible. Introduce role-play: "You be the doctor, I'll be the patient" requires holding a new perspective while maintaining social interaction.</div>
 <div class="t-adjust t-shift-dev"><div class="t-label">Shift: Developing</div>If they rigidly apply the same behaviour everywhere (shouting in the library, demanding the same toy at every house), provide explicit contextual cues before entering each setting: "At Maria's house, we play gently. At the park, we can run and shout." Use visual cues or a consistent verbal script for each environment. Don't expect them to infer social rules from context — spell them out every time until the pattern internalises.</div>
 
-<h3>Material Culture Seeds</h3>
-<p><strong>Sensory material library.</strong> Maintain a box of material samples for exploration: untreated wood pieces (pine, oak, walnut — different weights, grains, temperatures), metal objects (aluminum spoon, copper penny, steel bolt), fabric swatches (cotton, silk, wool, linen), stone, ceramic, leather. Named and handled during practical life. "This is wool. Feel how different it is from cotton. Wool comes from sheep."</p>
-<p><strong>Cooking as education.</strong> They stir, pour, tear lettuce, knead dough. Not efficiency — education. Name every ingredient and where it comes from. "This is flour. It was wheat. A farmer grew it." Accompany to the market — Mercado de la Paz, any local market — see raw ingredients before they become meals. See the fishmonger, the butcher, the fruit vendor. Not a lesson; an exposure.</p>
-<p><strong>Real fasteners on clothes.</strong> Dress themselves with real buttons, real zippers, real laces as motor skills allow. Not velcro shortcuts. The fastening mechanism is material literacy AND fine motor development.</p>
-<p><strong>Narrate the materiality of objects.</strong> "This table is made of wood. Feel how smooth it is. Someone sanded it." "Your shirt is cotton. It was a plant." Model valuing objects for what they are: "These shoes are good because they fit well and will last," not because of a name on them.</p>
-
 <h3>Social Independence Seeds</h3>
 <p><strong>Model not apologizing for who you are.</strong> Narrate difference without anxiety: "Some families do it differently, and that is fine. We do it this way." When your parenting choices draw commentary from other parents, respond with relaxed indifference. The child watches everything.</p>
 <p><strong>Accept "no" without drama.</strong> When the child says "no" to something age-appropriate — a food, an activity, a social interaction — accept it as a complete sentence. The capacity to refuse is the earliest form of social independence. Don't override preferences for your own convenience.</p>
@@ -162,6 +172,12 @@ order: 2
 <div class="t-adjust t-ps-dev"><div class="t-label">Problem Solving: Developing</div>If building is random stacking with no apparent goal, model intentional construction alongside them — narrate your process: "I'm going to put this big one at the bottom so it's stable." Don't direct their building, but let them observe yours. Offer problems with obvious solutions: "This ball needs to go in the cup — which cup fits?" Keep the gap between challenge and current ability small.</div>
 <div class="t-adjust t-plan-adv"><div class="t-label">Plan/Organize: Advanced</div>If they show early signs of sequencing in construction (gathering materials first, then building), reinforce the planning behaviour. Before building: "What do we need?" "What should we build first — the walls or the roof?" After building: "What did you make? Tell me about it." This verbalisation of the building plan is the earliest executive planning visible in play. Praise: "You got everything ready before you started — that's planning."</div>
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>If they can hold a building goal in mind while working ("I'm making a tower for the giraffe"), increase complexity by adding constraints mid-build: "Can you make it taller? Now can you add a door?" Holding the original goal while incorporating new requirements stretches working memory. Brio track layouts are excellent — remembering the destination while building the route. Praise: "You remembered you were building a road to the farm — even when it got tricky."</div>
+
+<h2 id="s-material-culture" data-tier="core"><span class="material-symbols-rounded">handyman</span>Material Culture & Craft</h2>
+<p><strong>Sensory material library.</strong> Maintain a box of material samples for exploration: untreated wood pieces (pine, oak, walnut — different weights, grains, temperatures), metal objects (aluminum spoon, copper penny, steel bolt), fabric swatches (cotton, silk, wool, linen), stone, ceramic, leather. Named and handled during practical life. "This is wool. Feel how different it is from cotton. Wool comes from sheep."</p>
+<p><strong>Cooking as education.</strong> They stir, pour, tear lettuce, knead dough. Not efficiency — education. Name every ingredient and where it comes from. "This is flour. It was wheat. A farmer grew it." Accompany to the market — Mercado de la Paz, any local market — see raw ingredients before they become meals.</p>
+<p><strong>Real fasteners on clothes.</strong> Dress themselves with real buttons, real zippers, real laces as motor skills allow. Not velcro shortcuts. The fastening mechanism is material literacy AND fine motor development.</p>
+<p><strong>Narrate the materiality of objects.</strong> "This table is made of wood. Feel how smooth it is. Someone sanded it." "Your shirt is cotton. It was a plant." Model valuing objects for what they are, not their brand.</p>
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 <p>Name everything outdoors. Plants, insects, weather, soil, puddles. "What does the ant carry? Where is it going?" Seasonal awareness: leaves falling, flowers blooming, rain patterns. Outdoor time minimum: 1.5 hours daily regardless of weather (the interna brief specifies this). Nature is the default environment; indoors is the exception.</p>
