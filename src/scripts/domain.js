@@ -263,6 +263,30 @@ function setupNavigation() {
     showView('universe', { showDetail: universeId });
   });
 
+  // Language switcher
+  const langSwitch = document.getElementById('lang-switch');
+  const langSwitchMobile = document.getElementById('lang-switch-mobile');
+  if (langSwitch || langSwitchMobile) {
+    const isSpanish = window.location.pathname.includes('/es/');
+    const targetHref = isSpanish
+      ? window.location.pathname.replace('/es/', '/').replace('/es', '/')
+      : window.location.pathname.replace(/\/$/, '') + '/../es/';
+    const base = document.querySelector('link[rel="icon"]')?.href?.match(/(.*)\/favicon/)?.[1] || '';
+    const switchUrl = isSpanish
+      ? base + '/'
+      : base + '/es/';
+    const label = isSpanish ? 'EN' : 'ES';
+
+    if (langSwitch) {
+      langSwitch.href = switchUrl;
+      langSwitch.querySelector('.lang-switch-label').textContent = label;
+    }
+    if (langSwitchMobile) {
+      langSwitchMobile.href = switchUrl;
+      langSwitchMobile.textContent = isSpanish ? 'English' : 'Español';
+    }
+  }
+
   // Home cards
   document.querySelectorAll('.home-card[data-nav]').forEach(card => {
     card.addEventListener('click', () => {
