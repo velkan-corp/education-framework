@@ -243,6 +243,18 @@ function setupNavigation() {
   // Logo → Home
   document.getElementById('nav-home')?.addEventListener('click', () => showView('home'));
 
+  // Model tracker tooltips — tap to toggle on mobile
+  document.addEventListener('click', (e) => {
+    const dot = e.target.closest('.model-dot');
+    if (!dot) {
+      document.querySelectorAll('.model-dot.tooltip-visible').forEach(d => d.classList.remove('tooltip-visible'));
+      return;
+    }
+    const wasVisible = dot.classList.contains('tooltip-visible');
+    document.querySelectorAll('.model-dot.tooltip-visible').forEach(d => d.classList.remove('tooltip-visible'));
+    if (!wasVisible) dot.classList.add('tooltip-visible');
+  });
+
   // Universe navigation from phase cards
   document.addEventListener('click', (e) => {
     const link = e.target.closest('[data-universe-nav]');

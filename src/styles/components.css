@@ -644,10 +644,40 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   padding: var(--sp-1) var(--sp-2);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
-  cursor: default;
+  cursor: pointer;
+  position: relative;
   transition: transform var(--duration-micro) var(--ease-out);
 }
 .model-dot:hover { transform: scale(1.05); }
+
+/* Custom tooltip — appears on hover (desktop) and click (mobile via JS) */
+.model-dot::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--text);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  max-width: 240px;
+  white-space: normal;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 50ms ease-out;
+  z-index: 50;
+  box-shadow: var(--shadow-md);
+}
+.model-dot:hover::after,
+.model-dot.tooltip-visible::after {
+  opacity: 1;
+}
 .model-dot-num { display: none; }
 .model-dot-name {
   font-size: 9px;

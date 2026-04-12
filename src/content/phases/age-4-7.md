@@ -76,21 +76,21 @@ order: 3
 <div class="model-tracker">
 <div class="model-tracker-label">Layer 1: Experience</div>
 <div class="model-tracker-bar">
-<span class="model-dot new" title="Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
-<span class="model-dot new" title="Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
-<span class="model-dot new" title="Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
-<span class="model-dot new" title="What would make this fail?"><span class="model-dot-num">4</span><span class="model-dot-name">Invert</span></span>
-<span class="model-dot future" title="Is this the thing, or a representation?"><span class="model-dot-num">5</span><span class="model-dot-name">Maps≠</span></span>
-<span class="model-dot future" title="What happens if this continues for 10 years?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
-<span class="model-dot future" title="What's the actual likelihood?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
-<span class="model-dot future" title="What am I giving up by choosing this?"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
-<span class="model-dot future" title="What arises from simple parts that none contain?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerge</span></span>
-<span class="model-dot future" title="Is this an either/or or a both/and?"><span class="model-dot-num">10</span><span class="model-dot-name">Oppos.</span></span>
-<span class="model-dot future" title="What improves by removing rather than adding?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" title="How is my brain misleading me right now?"><span class="model-dot-num">12</span><span class="model-dot-name">Biases</span></span>
-<span class="model-dot future" title="Does this system benefit from disorder?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" title="How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
-<span class="model-dot future" title="Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot new" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
+<span class="model-dot new" data-tip="Feedback Loops — Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
+<span class="model-dot new" data-tip="Incentives — Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
+<span class="model-dot new" data-tip="Inversion — What would make this fail?"><span class="model-dot-num">4</span><span class="model-dot-name">Invert</span></span>
+<span class="model-dot future" data-tip="Maps ≠ Territory — Is this the thing, or a representation?"><span class="model-dot-num">5</span><span class="model-dot-name">Maps≠</span></span>
+<span class="model-dot future" data-tip="Compounding — What happens if this continues for 10 years?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
+<span class="model-dot future" data-tip="Probability — What's the actual likelihood?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
+<span class="model-dot future" data-tip="Opportunity Cost — What am I giving up by choosing this?"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
+<span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerge</span></span>
+<span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">10</span><span class="model-dot-name">Oppos.</span></span>
+<span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">12</span><span class="model-dot-name">Biases</span></span>
+<span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
+<span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
 </div>
 </div>
 <p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>
@@ -160,7 +160,7 @@ order: 3
 <h4>Classical / Reading Track</h4>
 <p>Instrument selection: <strong>Piano</strong> is the best first instrument (visual layout of theory, both hands independent, harmonic). Alternative: violin (Suzuki method) or ukulele.</p>
 <p>Staff notation from day one. Scales, simple pieces, sight-reading exercises. Weekly lesson with a teacher who demands precision.</p>
-<p><strong>Private instruction is the default.</strong> 1:1 with the best teacher available — not group conservatory class. A performing practitioner who demonstrates, not just explains. No budget limit on the primary instructor. Group lessons are supplementary for ensemble/social skills.</p>
+<p><strong>Private instruction is the default.</strong> 1:1 with the best teacher available — not group conservatory class. A performing practitioner who demonstrates, not just explains. Prioritise teacher quality above all other resource decisions. Group lessons are supplementary for ensemble/social skills.</p>
 <p>Daily practice: 15–20 minutes, same time each day, non-negotiable.</p>
 </div>
 <div>
@@ -369,7 +369,7 @@ order: 3
 
 <h3>Institution Decisions</h3>
 <p><strong>⚡ Primary school (age 4-5).</strong> Determines peer group for 6+ years. This compounds. Look for: academic rigor without crushing play, bilingual or English-medium, families who take something seriously. In Madrid: British Council, International College Spain, Hastings, King's College.</p>
-<p><strong>⚡ Niche mastery teacher (age 4-5).</strong> The TEACHER matters more than the activity. Best available private instructor, 1:1. A practitioner who performs at a high level, not just teaches. This is the single highest-leverage resource investment at this age. No budget limit.</p>
+<p><strong>⚡ Niche mastery teacher (age 4-5).</strong> The TEACHER matters more than the activity. Best available private instructor, 1:1. A practitioner who performs at a high level, not just teaches. This is the single highest-leverage resource investment at this age. Prioritise teacher quality.</p>
 <p><strong>⚡ Team sport club (age 6-8).</strong> Social calibration window. Coach who develops character, not just talent. Madrid: football junior leagues, basketball, rugby. The club culture becomes the child's social default.</p>
 
 <h3>Summer Intensives</h3>
