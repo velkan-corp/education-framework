@@ -137,6 +137,10 @@ order: 3
 <h3>Visual & Spatial</h3>
 <p>Drawing as observation, not "art class." Draw what you see: the plant, the house, your shoe. This trains the eye-hand-mind loop that underpins all spatial thinking. Simple maps: draw our apartment, draw the route to school. Graph reading: weather charts, their own height-tracking chart. LEGO and Brio at this age are spatial reasoning curricula disguised as play.</p>
 
+<h3>Language Milestones</h3>
+<p><strong>L1+L2:</strong> Both languages at conversational fluency by 5-6. Reading readiness in the dominant language (Spanish, via school) by 5-6; English reading follows 6-12 months later. By 7: can read simple chapter books in the dominant language, picture books in the minority language. Accent in both languages should be native or near-native if OPOL has been consistent.</p>
+<p><strong>L3 window opens:</strong> Age 6-8 is the introduction point for L3 (French or other). Private tutor or immersion, not classroom. The goal is conversational exposure, not fluency yet.</p>
+
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Written expression will be the stronger channel. Lean into journaling, letter-writing, and story dictation over oral performance. Show-and-tell can start as family-only audience — one or two people, not a crowd.</div>
 <div class="t-adjust t-extrovert"><div class="t-label">Extrovert</div>Oral performance is their natural strength — storytelling games, show-and-tell, dinner debates. Channel the verbal energy into structured formats: "You have one minute to convince us." Let them narrate stop-motion films and podcast-style recordings.</div>
 <div class="t-adjust t-ec-high"><div class="t-label">High Self-Regulation</div>Communication enters through making. Stop-motion animation, photography, map-drawing, and comic strips are all communication — don't privilege text over visual narrative. Let them illustrate stories rather than write them, then caption the illustrations.</div>
