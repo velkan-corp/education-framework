@@ -74,10 +74,6 @@ order: 2
 <tr><td>Object Permanence (advanced)</td><td>Hide objects in sequences. Memory games. Things exist when hidden.</td></tr>
 </table>
 
-<h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-<p><strong>Primary anchors:</strong> Richard Scarry (systems, vocabulary, categorization), Where's Wally (visual search, sustained attention, pattern recognition).</p>
-<p><strong>Supplementary:</strong> Eric Carle, Julia Donaldson (Gruffalo series), Dr. Seuss (phonemic awareness in English), Sandra Boynton (rhythm and humor).</p>
-
 <div class="program-elements">
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 <h3>Language — Written & Oral</h3>
@@ -212,6 +208,10 @@ order: 2
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>Use the planning cadence to exercise memory — "Remember, after lunch we're going to the park, then to buy bread, then home for a bath." Can they recall the sequence an hour later? Routines with 3+ steps where they must remember "what comes next" without prompting are active working memory training. Praise: "You remembered the whole plan — bath, then books, then sleep. That's a lot to hold in your head."</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Working Memory: Developing</div>If they cannot hold even the daily routine sequence in mind, keep the verbal plan to one step at a time: "Now we put on shoes." Complete. "Now we go to the door." Complete. Visual schedules with pictures are essential — they offload memory to the environment. Use the same phrases in the same order daily. The routine itself becomes the memory, not their internal recall. Gradually extend from 1-step to 2-step as the routine stabilises.</div>
 </div>
+
+<h3>Content Anchors</h3>
+<p><strong>Primary anchors:</strong> Richard Scarry (systems, vocabulary, categorization), Where's Wally (visual search, sustained attention, pattern recognition).</p>
+<p><strong>Supplementary:</strong> Eric Carle, Julia Donaldson (Gruffalo series), Dr. Seuss (phonemic awareness in English), Sandra Boynton (rhythm and humor).</p>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>
 <h3>Start Here — 5 Essentials</h3>

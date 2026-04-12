@@ -60,10 +60,6 @@ order: 1
 <tr><td>Categorization</td><td>Shape sorters, color grouping. "Find all the round ones."</td></tr>
 </table>
 
-<h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-<p><strong>Anchor:</strong> Richard Scarry's "Busy, Busy World" and "What Do People Do All Day?" — systems, categorization, scale. Every page is a dense information environment.</p>
-<p><strong>Read aloud:</strong> Anything with rhythm and repetition. The content matters less than the vocal patterns, prosody, and the ritual of reading together.</p>
-
 <div class="program-elements">
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 
@@ -176,6 +172,10 @@ order: 1
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>If they remember the location of a hidden toy after a brief delay, begin simple "find it" games with 2-3 second gaps between hiding and seeking. Multi-location hide-and-seek (two possible hiding spots) stretches emerging working memory. Praise remembering: "You knew where it was — you held it in your mind."</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Working Memory: Developing</div>If they don't search for hidden objects or forget immediately, shorten the delay — hide while they're watching and let them retrieve instantly. The progression is: see it hidden → retrieve immediately → retrieve after 1 second → retrieve after 3 seconds. Don't rush the delay extension. Consistency builds the memory circuit.</div>
 </div>
+
+<h3>Content Anchors</h3>
+<p><strong>Anchor:</strong> Richard Scarry's "Busy, Busy World" and "What Do People Do All Day?" — systems, categorization, scale. Every page is a dense information environment.</p>
+<p><strong>Read aloud:</strong> Anything with rhythm and repetition. The content matters less than the vocal patterns, prosody, and the ritual of reading together.</p>
 
 <h2 id="s-resources"><span class="material-symbols-rounded">local_library</span>Resources</h2>
 <h3>Start Here — 5 Essentials</h3>
