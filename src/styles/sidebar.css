@@ -2,12 +2,14 @@
 .sidebar {
   width: 240px;
   min-width: 240px;
+  flex-shrink: 0;
+  margin-left: auto;
   background: var(--surface);
-  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
   padding: var(--sp-4) var(--sp-3);
   position: sticky;
-  top: 52px;
-  height: calc(100vh - 52px);
+  top: 56px;
+  height: calc(100vh - 56px);
   overflow-y: auto;
 }
 
