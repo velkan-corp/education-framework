@@ -76,18 +76,18 @@ order: 3
 <div class="model-tracker">
 <div class="model-tracker-label">Layer 1: Experience</div>
 <div class="model-tracker-bar">
-<span class="model-dot new" title="Cause & Effect">1</span>
-<span class="model-dot new" title="Feedback Loops">2</span>
-<span class="model-dot new" title="Incentives">3</span>
-<span class="model-dot new" title="Inversion">4</span>
-<span class="model-dot future" title="Maps ≠ Territory">5</span>
-<span class="model-dot future" title="Compounding">6</span>
-<span class="model-dot future" title="Probability">7</span>
-<span class="model-dot future" title="Emergence">8</span>
-<span class="model-dot future" title="Complementary Opposites">9</span>
-<span class="model-dot future" title="Via Negativa">10</span>
-<span class="model-dot future" title="Antifragility">11</span>
-<span class="model-dot future" title="Model Failure">12</span>
+<span class="model-dot new" title="Cause & Effect"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
+<span class="model-dot new" title="Feedback Loops"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
+<span class="model-dot new" title="Incentives"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
+<span class="model-dot new" title="Inversion"><span class="model-dot-num">4</span><span class="model-dot-name">Invert</span></span>
+<span class="model-dot future" title="Maps ≠ Territory"><span class="model-dot-num">5</span><span class="model-dot-name">Maps≠</span></span>
+<span class="model-dot future" title="Compounding"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
+<span class="model-dot future" title="Probability"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
+<span class="model-dot future" title="Emergence"><span class="model-dot-num">8</span><span class="model-dot-name">Emerge</span></span>
+<span class="model-dot future" title="Complementary Opposites"><span class="model-dot-num">9</span><span class="model-dot-name">Oppos.</span></span>
+<span class="model-dot future" title="Via Negativa"><span class="model-dot-num">10</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" title="Antifragility"><span class="model-dot-num">11</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" title="Model Failure"><span class="model-dot-num">12</span><span class="model-dot-name">Failure</span></span>
 </div>
 </div>
 <p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>

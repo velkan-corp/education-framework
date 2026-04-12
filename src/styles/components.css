@@ -531,18 +531,32 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 }
 .model-dot {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  gap: 2px;
+  min-width: 56px;
+  padding: var(--sp-1) var(--sp-2);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
   cursor: default;
   transition: transform var(--duration-micro) var(--ease-out);
 }
-.model-dot:hover { transform: scale(1.1); }
+.model-dot:hover { transform: scale(1.05); }
+.model-dot-num {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+.model-dot-name {
+  font-size: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+}
 .model-dot.new {
   background: var(--accent);
   color: #fff;
