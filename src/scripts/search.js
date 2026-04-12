@@ -110,7 +110,8 @@ function runSearch(query) {
       const view = tabId === 'framework' ? 'framework' : 'age';
       showView(view, { phaseId: tabId });
       results.classList.add('hidden');
-      setTimeout(() => highlightInContent(q), 50);
+      // Wait for content animation to complete before highlighting and scrolling
+      setTimeout(() => highlightInContent(q), 500);
     });
   });
 }
@@ -190,7 +191,7 @@ function runMobileSearch(query) {
       const view = tabId === 'framework' ? 'framework' : 'age';
       showView(view, { phaseId: tabId });
       closeMobileSearch();
-      setTimeout(() => highlightInContent(query), 50);
+      setTimeout(() => highlightInContent(query), 500);
     });
   });
 }

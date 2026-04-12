@@ -491,13 +491,31 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 }
 .triad-card li:last-child { border-bottom: none; }
 
-/* ── SECTION DIVIDERS for Philosophy / Methods / Operations ── */
-#s-philosophy, #s-methods, #s-operations {
-  margin-top: var(--sp-6);
-  padding-top: var(--sp-5);
-  border-top: 2px solid var(--border);
+/* ── FRAMEWORK SECTION HEADERS (Philosophy / Methods / Operations) ── */
+.fw-section-header {
+  font-family: var(--font-heading);
+  font-size: 26px !important;
+  font-weight: 400;
+  color: var(--text);
+  margin-top: var(--sp-6) !important;
+  margin-bottom: var(--sp-3);
+  padding: var(--sp-4) 0 var(--sp-3);
+  border-top: 3px solid var(--accent);
+  letter-spacing: -0.3px;
 }
-#s-philosophy { margin-top: var(--sp-4); border-top: none; }
+.fw-section-header:first-of-type {
+  margin-top: var(--sp-3) !important;
+  border-top: none;
+}
+.fw-section-header .material-symbols-rounded {
+  font-size: 26px;
+  color: var(--accent);
+}
+.fw-section-header + p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-5);
+}
 
 /* ── RESPONSIVE for new components ── */
 @media (max-width: 900px) {
@@ -543,19 +561,13 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   transition: transform var(--duration-micro) var(--ease-out);
 }
 .model-dot:hover { transform: scale(1.05); }
-.model-dot-num {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1;
-}
+.model-dot-num { display: none; }
 .model-dot-name {
-  font-size: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  line-height: 1.1;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
   text-align: center;
-  white-space: nowrap;
 }
 .model-dot.new {
   background: var(--accent);

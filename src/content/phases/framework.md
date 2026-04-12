@@ -6,7 +6,7 @@ order: 0
 <h1>Education Framework</h1>
 <p class="subtitle">A developmental framework for ages 0-18. Guided childhood with freedom. Compounding is the master principle. Start early, stay consistent, go deep.</p>
 
-<h2 id="s-philosophy"><span class="material-symbols-rounded">star</span>Philosophy</h2>
+<h2 id="s-philosophy" class="fw-section-header"><span class="material-symbols-rounded">star</span>Philosophy</h2>
 <p>What we believe about childhood development and why. The foundational convictions, target outcomes, and thinking toolkit that everything else is built on.</p>
 
 <h2 id="s-principles"><span class="material-symbols-rounded">star</span>The Ten Principles</h2>
@@ -174,7 +174,7 @@ order: 0
 </div>
 </div>
 
-<h2 id="s-methods"><span class="material-symbols-rounded">build</span>Methods</h2>
+<h2 id="s-methods" class="fw-section-header"><span class="material-symbols-rounded">build</span>Methods</h2>
 <p>How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement & Teaching</h2>
@@ -260,7 +260,7 @@ order: 0
 </div>
 </div>
 
-<h2 id="s-operations"><span class="material-symbols-rounded">settings</span>Operations</h2>
+<h2 id="s-operations" class="fw-section-header"><span class="material-symbols-rounded">settings</span>Operations</h2>
 <p>Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>
 
 <h2 id="s-application"><span class="material-symbols-rounded">workspace_premium</span>The Application Architecture</h2>
