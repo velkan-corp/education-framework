@@ -3,8 +3,6 @@ phaseId: "framework"
 label: "Framework"
 order: 0
 ---
-<div class="program-elements">
-
 <h1>Education Framework</h1>
 <p class="subtitle">A developmental framework for ages 0-18. Guided childhood with freedom. Compounding is the master principle. Start early, stay consistent, go deep.</p>
 
@@ -446,4 +444,3 @@ order: 0
 <h3>Recommendation Letter Cultivation</h3>
 <p>The niche mastery teacher/coach, the research mentor, one school teacher who sees them deeply. Start at age 13-14. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. These relationships need 2+ years to produce extraordinary letters.</p>
 
-</div><!-- end program-elements -->

@@ -9,14 +9,27 @@ export function getHeadingText(h) {
   return text.trim();
 }
 
+// IDs of the three framework group headers
+const FW_GROUPS = new Set(['s-philosophy', 's-methods', 's-operations']);
+
 function buildSectionNav(containerEl, entries, options = {}) {
   const { linkClass = 'nav-link', titleClass = 'sidebar-title', titleStyle = '', onClickExtra = null } = options;
   if (entries.length === 0) {
     containerEl.innerHTML = '';
     return;
   }
-  containerEl.innerHTML = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>Sections</div>` +
-    entries.map(e => `<button type="button" class="${linkClass}">${e.label}</button>`).join('');
+
+  // Check if this is the framework page (has group headers)
+  const hasGroups = entries.some(e => e.groupId && FW_GROUPS.has(e.groupId));
+
+  let html = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>Sections</div>`;
+  entries.forEach(e => {
+    const isGroup = hasGroups && e.groupId && FW_GROUPS.has(e.groupId);
+    const cls = isGroup ? `${linkClass} nav-link-group` : linkClass;
+    html += `<button type="button" class="${cls}">${e.label}</button>`;
+  });
+  containerEl.innerHTML = html;
+
   containerEl.querySelectorAll(`.${linkClass}`).forEach((link, i) => {
     link.addEventListener('click', () => {
       entries[i].scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -49,7 +62,17 @@ function getNavEntries() {
   }
   const activeContent = document.querySelector('.phase-content.active');
   if (!activeContent) return [];
+
+  // Framework page: only show the 3 top-level sections, not every h2
+  const isFramework = activeContent.dataset.phase === 'framework';
   const headings = Array.from(activeContent.querySelectorAll('h2[id]'));
+
+  if (isFramework) {
+    return headings
+      .filter(h => FW_GROUPS.has(h.dataset.anchorBase || h.id))
+      .map(h => ({ label: getHeadingText(h), scrollTarget: h }));
+  }
+
   return headings.map(h => ({
     label: getHeadingText(h),
     scrollTarget: h
