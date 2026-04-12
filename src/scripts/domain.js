@@ -148,16 +148,30 @@ export function showView(view, options = {}) {
     if (grid) grid.classList.remove('hidden');
     if (detail) detail.classList.add('hidden');
 
-    // Apply type filter if provided
-    const filter = options.filter || 'all';
-    document.querySelectorAll('.universe-card').forEach(card => {
-      if (filter === 'all') {
-        card.classList.remove('hidden');
-      } else {
-        const tags = (card.dataset.tags || '').split(',');
-        card.classList.toggle('hidden', !tags.includes(filter));
+    // Show specific universe detail if requested
+    if (options.showDetail) {
+      const detailEl = document.getElementById('universe-detail');
+      if (detailEl) {
+        grid.classList.add('hidden');
+        detailEl.classList.remove('hidden');
+        detailEl.querySelectorAll('.universe-timeline').forEach(el => {
+          el.classList.toggle('hidden', el.dataset.universeDetail !== options.showDetail);
+        });
+        document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
+        document.querySelector('.universe-legend')?.classList.add('hidden');
       }
-    });
+    } else {
+      // Apply type filter if provided
+      const filter = options.filter || 'all';
+      document.querySelectorAll('.universe-card').forEach(card => {
+        if (filter === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          const tags = (card.dataset.tags || '').split(',');
+          card.classList.toggle('hidden', !tags.includes(filter));
+        }
+      });
+    }
   }
 
   updateAllNavs();
@@ -228,6 +242,14 @@ function setupNavigation() {
 
   // Logo → Home
   document.getElementById('nav-home')?.addEventListener('click', () => showView('home'));
+
+  // Universe navigation from phase cards
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('[data-universe-nav]');
+    if (!link) return;
+    const universeId = link.dataset.universeNav;
+    showView('universe', { showDetail: universeId });
+  });
 
   // Home cards
   document.querySelectorAll('.home-card[data-nav]').forEach(card => {

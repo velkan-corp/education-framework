@@ -51,17 +51,44 @@ const grouped = tierOrder
 {grouped.length > 0 && (
   <div class="phase-universes">
     <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-    <p class="subtitle">Anchor works get the full engagement cycle. Broader content is Absorb-mode. See <strong>Universes</strong> view for full detail and progression across ages.</p>
+    <p class="subtitle">Click any item to see details for this age. See <strong>Universes</strong> view for full progression across all ages.</p>
     {grouped.map(group => (
       <>
         <h3>{group.label}</h3>
         <div class="phase-universe-grid">
           {group.items.map(item => (
-            <div class="phase-universe-compact" data-universe={item.id}>
-              <div class="phase-universe-title">{item.label}</div>
-              <div class="phase-universe-desc">{item.title}</div>
-              {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
-            </div>
+            <details class="phase-universe-card" data-universe={item.id}>
+              <summary class="phase-universe-summary">
+                <span class="phase-universe-title">{item.label}</span>
+                <span class="phase-universe-subtitle">{item.title}</span>
+                {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
+              </summary>
+              <div class="phase-universe-detail">
+                <p>{item.description}</p>
+                {item.goals && item.goals.length > 0 && (
+                  <div class="phase-universe-goals">
+                    <strong>Focus:</strong>
+                    <ul>
+                      {item.goals.map(g => <li>{g}</li>)}
+                    </ul>
+                  </div>
+                )}
+                {item.cautions && (
+                  <p class="phase-universe-caution"><strong>Caution:</strong> {item.cautions}</p>
+                )}
+                {(item.targets?.length || item.models?.length) && (
+                  <div class="phase-universe-meta">
+                    {(item.targets ?? []).slice(0, 3).map((target) => (
+                      <span class="universe-tag">{TARGET_LABELS[target]}</span>
+                    ))}
+                    {(item.models ?? []).slice(0, 3).map((model) => (
+                      <span class="universe-tag">{MODEL_LABELS[model]}</span>
+                    ))}
+                  </div>
+                )}
+                <button type="button" class="phase-universe-link" data-universe-nav={item.id}>View full journey across ages</button>
+              </div>
+            </details>
           ))}
         </div>
       </>
