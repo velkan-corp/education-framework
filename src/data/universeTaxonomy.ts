@@ -87,6 +87,7 @@ export const MODEL_IDS = [
   'model-failure',
   'opportunity-cost',
   'cognitive-biases',
+  'power-structures',
 ] as const;
 
 export const INTENSITY_LEVELS = ['low', 'medium', 'high', 'extreme'] as const;
@@ -155,6 +156,7 @@ export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {
   'model-failure': 'Model Failure',
   'opportunity-cost': 'Opportunity Cost',
   'cognitive-biases': 'Cognitive Biases',
+  'power-structures': 'Power Structures',
 };
 
 export const INTENSITY_LABELS: Record<(typeof INTENSITY_LEVELS)[number], string> = {
