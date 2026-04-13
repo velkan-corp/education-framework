@@ -91,6 +91,7 @@ order: 3
 <span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
 <span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
 <span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">16</span><span class="model-dot-name">Power</span></span>
 </div>
 </div>
 <p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>
@@ -100,8 +101,9 @@ order: 3
 <tr><td>Incentives (#3)</td><td>"Why does that character want that?" After every story. Not rhetorical — reason it out together. "Why does your friend share toys?"</td></tr>
 <tr><td>Inversion (#4)</td><td>"What if the villain was right?" "What if nobody followed any rules?" Calvin & Hobbes: Calvin constantly inverts social norms.</td></tr>
 <tr><td>Cause & Effect (#1)</td><td>Continues from 0-3 at greater complexity. Field trips: "What happens if the baker doesn't bake? Then what?" Dice games for simple probability.</td></tr>
+<tr><td>Power Structures (#16)</td><td>"Who made the rules? Who gets to decide?" Concrete experience: parent rules vs. child choices — "You can choose what to wear, but you can't choose whether to go to school. Why are those different?" Game rules — who invented them? Can you change them? What happens if you don't follow them? Playground dynamics: who chooses the game at break? How? Calvin & Hobbes: Calvin's constant, unsuccessful negotiations with parents and teachers for more power. "Why can't Calvin just do what he wants?"</td></tr>
 </table>
-<p>These four models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
+<p>These models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
 
 <div class="program-elements">
 
@@ -225,6 +227,17 @@ order: 3
 
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>Multi-step classroom instructions are manageable. Practice at home with increasingly complex sequences: cooking recipes with 3-4 steps from memory, Simon-style memory games, and "I went to the market and bought..." verbal chains. The morning routine can become self-managed from a memorised sequence rather than visual checklist. Praise holding instructions in mind across a delay, not just immediate recall.</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Working Memory: Developing</div>Classroom instruction-following will be a challenge. Provide external supports: visual schedules at home, picture-based task sequences, and physical placement cues (shoes by the door, backpack on the hook). Repeat instructions at most twice, then guide physically. Working memory develops substantially between ages 5-7 — support now builds the scaffold for the leap ahead.</div>
+
+<h3>Hardship & Discomfort — Building the Substrate</h3>
+<p>This is NOT the age for formal hardship milestones. It IS the age for building the substrate: normalising discomfort as part of life, not as punishment or special exercise. The family culture established now determines whether hardship milestones at 11-16 feel like natural escalation or traumatic imposition.</p>
+<p><strong>Walking in rain without complaint.</strong> Not "endurance training" — just life. The family walks. In all weather. If it's raining, you get wet. This is normal.</p>
+<p><strong>Carrying their own gear.</strong> Their water, their snack, their backpack on hikes. Age-appropriate weight, but their responsibility. Not "strength training" — independence.</p>
+<p><strong>No rescue from cold.</strong> No jacket means cold. This is already in the framework (Target 2: natural consequences). Now frame it explicitly as the beginning of the hardship architecture: discomfort is information, not emergency.</p>
+<p><strong>Waiting is hardship.</strong> Boredom is hardship. Not filling every moment with stimulation is the earliest form of structured deprivation. Protect unstructured time not just for curiosity but for the practice of enduring emptiness without rescue.</p>
+<p><strong>Family culture of comfort removal.</strong> Walking instead of driving for short distances. Camping without electricity. All-weather outdoor play. Cold-weather play is not "exposure" — it's play that happens to be cold. The framing matters: if parents treat discomfort as something to be avoided, children learn that comfort is a right. If parents treat discomfort as unremarkable, children learn that comfort is a preference, not a need.</p>
+
+<div class="t-adjust t-high-react"><div class="t-label">High Reactivity — Hardship Substrate</div>Deliberate cold-water exercises remain voluntary — model enthusiastically but never force. However, cold-as-weather (going outside in winter, camping in cool conditions, walking in rain) is family culture, not an opt-in exercise. The distinction: "We don't force cold showers, but we do go outside in all weather. That's not cold exposure — that's life." Hiking difficulty should ramp gradually. If they melt down from physical discomfort, co-regulate first, then continue — don't retreat to the car.</div>
+<div class="t-adjust t-low-react"><div class="t-label">Low Reactivity — Hardship Substrate</div>Push harder on physical challenges. Longer hikes, colder conditions, heavier packs. These children need more intensity to reach the productive discomfort zone. If they seem comfortable in every situation, the situations aren't challenging enough.</div>
 
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social & Relational</h2>
 

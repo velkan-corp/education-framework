@@ -173,8 +173,8 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
-<h3>Fifteen Universal Models</h3>
-<p>Introduced progressively through the Onion Layers. Four balanced groups across four layers. See each phase's Mental Models section for age-specific engagement.</p>
+<h3>Sixteen Universal Models</h3>
+<p>Introduced progressively through the Onion Layers. Four balanced groups of four across four layers. See each phase's Mental Models section for age-specific engagement.</p>
 
 <div class="model-timeline">
 <div class="model-age-group">
@@ -210,6 +210,7 @@ order: 0
 <div class="model-card"><span class="model-num">13</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
 <div class="model-card"><span class="model-num">14</span><strong>Game Theory</strong><br>How does the other player's strategy affect mine?</div>
 <div class="model-card"><span class="model-num">15</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
+<div class="model-card"><span class="model-num">16</span><strong>Power Structures</strong><br>Who decides, who benefits, and why does this arrangement persist?</div>
 </div>
 </div>
 </div>
@@ -300,6 +301,51 @@ order: 0
 </div>
 </div>
 
+<h2 id="s-hardship"><span class="material-symbols-rounded">local_fire_department</span>Hardship Architecture</h2>
+<p>The framework engineers curated difficulty — plateaus, competitions, expeditions, cold exposure — but every hardship comes with a debrief, a philosophical frame, and an opt-out. Real resilience also requires involuntary, unframed difficulty where there is no lesson and no safety net. Power is the difference between doing what you want or failing to do so. Toughness is the substrate that makes power usable under pressure.</p>
+<p>The framework's respect for agency ("the child outranks the plan about them") does not mean protection from all involuntary difficulty. Certain <strong>categories</strong> of experience are Tier 1 (Foundational) — the child must undergo them. Specific choices within each category remain the child's. You must do the expedition. You choose which one, when, and with whom. This is the same principle that already governs sleep, physical activity, and unstructured time — non-negotiable structural commitments where the category is fixed but implementation is flexible.</p>
+
+<h3>Three Components</h3>
+
+<h4>A. Tier 1 Hardship Milestones</h4>
+<p>Non-negotiable experiences completed before age 18. The child chooses <em>which</em> and <em>when</em>, not <em>whether</em>.</p>
+<ol>
+<li><strong>Solo overnight in wilderness (13+).</strong> With preparation, gear, and a known area. Alone. One night. Face darkness, solitude, and self-reliance with zero social buffer.</li>
+<li><strong>Multi-day expedition without parental contact.</strong> School trip, scouting expedition, wilderness program. 3+ days, no phone calls to parents.</li>
+<li><strong>Working for money.</strong> Real job, real boss, real consequences for underperformance. Not tutoring siblings. Babysitting, retail, food service, farm work, office assistance. The lesson: your time has a price, your boss doesn't care about your feelings, and showing up is non-negotiable.</li>
+<li><strong>Service in context of genuine human suffering.</strong> Hospital volunteer, homeless shelter, refugee support. Not the school fundraiser. Sustained exposure (monthly for 6+ months) to difficulty that can't be solved by writing a cheque.</li>
+<li><strong>Physical challenge taken to genuine exhaustion.</strong> A hike that pushes to the limit, a martial arts grading that leaves nothing in the tank, a swimming distance that tests will. Not injury — genuine exhaustion where they discover what's on the other side.</li>
+</ol>
+
+<h4>B. Structured Deprivation</h4>
+<p>Seneca, Letter 18: <em>"Set aside a certain number of days, during which you shall be content with the scantiest and cheapest fare, with coarse and rough dress, saying to yourself the while: 'Is this the condition that I feared?'"</em></p>
+<ul>
+<li><strong>Technology fasts.</strong> Zero devices for days — not screen-time limits. The family does it together. Not deprivation theatre; genuine disconnection as practice.</li>
+<li><strong>Budget constraints.</strong> Manage real, limited money for real needs. The constraint is the teacher.</li>
+<li><strong>Comfort removal as family culture.</strong> Walking instead of driving. Camping without amenities. Cold as weather, not as "exposure exercise." The language matters: these are framed as normal life, not special interventions.</li>
+</ul>
+<p>Best implemented as family culture, not prescription. If cold-water swimming is "what we do on Saturdays" rather than "hardship training," it normalises discomfort without making it feel like a lesson.</p>
+
+<h4>C. Non-Curated Social Placement</h4>
+<p>The framework's "institutional selection" strategy is right for core development. But periodic departure from curated environments builds social resilience that optimised settings cannot.</p>
+<ul>
+<li><strong>Contexts where the child has no status</strong> and must earn belonging from scratch.</li>
+<li><strong>Being the weakest or least skilled in the room.</strong> The experience of incompetence in a domain where others are advanced.</li>
+<li><strong>Groups not selected for developmental compatibility.</strong> Summer jobs, exchange programs, joining a team as a beginner among experienced players.</li>
+</ul>
+
+<h3>Coercion Test for Hardship</h3>
+<p>Hardship milestones being Tier 1 creates a new coercion surface. The test: can they choose HOW and WHEN to fulfil each milestone without relationship consequences? If they push back on the <em>category</em> (not just the specific implementation), listen for signal. A child who refuses all hardship at 15 after embracing it at 12 may be signalling something important. But a child who avoids hardship because it's uncomfortable is receiving the exact lesson the milestone is designed to provide.</p>
+
+<h3>Profile Adjustments for Hardship</h3>
+<p>Reactivity is the primary calibration axis. See phase-specific <code>t-adjust</code> blocks for details. Key principles:</p>
+<ul>
+<li><strong>High Reactivity:</strong> Graduated exposure with longer ramp. The milestone is still non-negotiable — the PATH to it is adjusted. Solo overnight may need a solo-afternoon → solo-evening → solo-overnight progression.</li>
+<li><strong>Low Reactivity:</strong> Push harder and earlier. They need more intensity to reach productive discomfort. Escalate until they report genuine difficulty.</li>
+<li><strong>Introvert:</strong> Non-curated social placement is the hardest component. Build in recovery time. Solo overnight may actually be easier — solitude is not the stressor.</li>
+<li><strong>Extrovert:</strong> Solo overnight is the hardest component. The deprivation of social contact IS the challenge.</li>
+</ul>
+
 <h2 id="s-operations" class="fw-section-header"><span class="material-symbols-rounded">settings</span>Operations</h2>
 <p>Logistics, risk management, execution protocols, and the systems that keep the framework running. Reference when planning, not required reading.</p>
 
@@ -346,7 +392,7 @@ order: 0
 <h3>The Central Danger</h3>
 <p>This framework is extraordinarily intentional. Every book chosen, every toy justified, every dinner conversation structured. There is a line between "curated environment" and "controlling parent," and the child's experience of which side you're on depends entirely on execution tone.</p>
 <p><strong>The test:</strong> Can they say "no" to any element without consequence to the relationship? If they refuse the cold shower, skip instrument practice, or want to read a "bad" book — do you accept it gracefully or does tension appear?</p>
-<p><strong>The antidote:</strong> The three-tier system makes "hold it loosely" concrete. Tier 1 (FOUNDATIONAL) elements — sleep, relationship > framework, the ten targets, physical activity, unstructured time — are structural; protect them. Tier 2 (CORE) elements — engagement cycle, Socratic dinner, niche mastery — adapt with reasonable flexibility. Tier 3 (RECOMMENDED) elements — specific books, games, instruments, sports — swap freely based on the child in front of you. The child outranks the plan about them. Always.</p>
+<p><strong>The antidote:</strong> The three-tier system makes "hold it loosely" concrete. Tier 1 (FOUNDATIONAL) elements — sleep, relationship > framework, the eleven targets, physical activity, unstructured time, hardship milestones — are structural; protect them. Tier 2 (CORE) elements — engagement cycle, Socratic dinner, niche mastery — adapt with reasonable flexibility. Tier 3 (RECOMMENDED) elements — specific books, games, instruments, sports — swap freely based on the child in front of you. The child outranks the plan about them. Always.</p>
 </div>
 <p><strong>Signs it's becoming coercive:</strong> They practice the instrument when you're watching but not when you're away. They perform curiosity for your approval. They hide interests they think you'd disapprove of. They excel at the framework activities but seem anxious or performative.</p>
 <p><strong>Signs it's working:</strong> They pursue framework activities autonomously. They push back on specific elements while engaging with others. They bring their own questions and interests that surprise you. They fail openly without shame.</p>
@@ -355,7 +401,7 @@ order: 0
 <p>At some point — likely age 12–14 — one or both children may reject significant parts of this program. They may want to play Fortnite for six hours, read nothing, and think chess is stupid. This is normal identity differentiation, not failure.</p>
 <p><strong>The protocol:</strong></p>
 <p>1. <strong>Distinguish signal from noise.</strong> "I hate violin because my friends think it's lame" is social pressure (noise). "I hate violin because I genuinely don't enjoy it anymore after 8 years" is signal. Respond differently.</p>
-<p>2. <strong>Protect Tier 1, release Tiers 2–3.</strong> Physical health, basic responsibility, respect, the ten targets as aspirations — non-negotiable. Specific content choices, activity preferences, aesthetic tastes — negotiable. Use the tier system: never compromise FOUNDATIONAL, adapt CORE, release RECOMMENDED entirely.</p>
+<p>2. <strong>Protect Tier 1, release Tiers 2–3.</strong> Physical health, basic responsibility, respect, the eleven targets as aspirations — non-negotiable. Specific content choices, activity preferences, aesthetic tastes — negotiable. Use the tier system: never compromise FOUNDATIONAL, adapt CORE, release RECOMMENDED entirely.</p>
 <p>3. <strong>Stay in relationship.</strong> The worst outcome isn't that they quit chess. It's that they stop talking to you. If you must choose between maintaining the framework and maintaining the relationship, choose the relationship every time.</p>
 <p>4. <strong>Trust the foundation.</strong> If you've done the work for the first 10–12 years, the substrate is built. They may reject the surface expression while retaining the deep patterns. The 14-year-old who "quits reading" often returns to books at 19 with a hunger that self-directed reading satisfies differently than parental curation.</p>
 
@@ -378,7 +424,7 @@ order: 0
 
 <p><strong>Saved profiles:</strong> Load a named child profile (e.g. "Nico", "Maia") to set all 13 dimensions at once from a pre-assessed baseline. Individual dimensions can be adjusted after loading — this reverts to "Custom".</p>
 
-<p>An extrovert with low self-regulation and developing problem-solving is not a worse student — they need a different path to the same ten targets. Resilient self-efficacy, deep curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
+<p>An extrovert with low self-regulation and developing problem-solving is not a worse student — they need a different path to the same eleven targets. Resilient self-efficacy, deep curiosity, relational intelligence, and first-principles reasoning can be built through sports, social leadership, and hands-on building as effectively as through books, chess, and music. The targets are universal; the methods are not.</p>
 <p><strong>Build for the best.</strong> Expectations are high by design. A child who is expected to reason from first principles, sustain deep relationships, and engage seriously with the world is more likely to do so than one whose ceiling was preemptively lowered. If a particular child can't reach a particular benchmark, that's discovered through observation and adjusted in the moment — not by lowering aspirations for all possible children in advance. High expectations are non-negotiable; rigid timelines are not.</p>
 
 <h2 id="s-coparent"><span class="material-symbols-rounded">family_restroom</span>Co-Parenting: Asymmetric Roles</h2>
@@ -471,6 +517,7 @@ order: 0
 <p><strong>8. Onion layer check:</strong> Which mental models were revisited this quarter? At what depth? Are previously learned concepts being reinforced or fading?</p>
 <p><strong>9. Portfolio check:</strong> What was shipped, competed in, published, or built this quarter? How does it strengthen the narrative? What's the next escalation?</p>
 <p><strong>10. Safety check:</strong> Are boundaries clear? Any secrecy, coercion, digital-risk behavior, concerning group chats, manipulative peers, reputation issues, or online contact that needs intervention? Is the child still bringing problems to you early?</p>
+<p><strong>11. Hardship architecture check:</strong> Which milestones have been completed? Which are approaching? Is the child choosing implementation details (agency preserved) or avoiding the categories entirely (requires intervention)? Has family deprivation culture been consistent — technology fasts, comfort removal, budget constraints — or has it lapsed into comfort? Any non-curated social placement this quarter?</p>
 <p><strong>Log the answers.</strong> Review the log annually. Patterns over 4 quarters reveal more than any single observation.</p>
 <p><strong>The child's experience of this review should be invisible.</strong> This is a parent-facing calibration tool, not a report card.</p>
 
