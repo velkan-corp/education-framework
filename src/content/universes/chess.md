@@ -6,7 +6,7 @@ whyItBelongs: "Chess teaches second-order effects and emotional regulation under
 tags: [strategy, english, stem]
 languages: [english]
 targets: [resilient-self-efficacy, first-principles-reasoning, adaptability]
-models: [cause-effect, probability, compounding]
+models: [cause-effect, probability, compounding, opportunity-cost]
 intensity: medium
 socialValue: bridge
 substitutes: [go, mtg, factorio]

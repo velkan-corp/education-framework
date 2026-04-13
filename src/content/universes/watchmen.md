@@ -6,7 +6,7 @@ whyItBelongs: "Watchmen is a capstone text for students ready to treat comics as
 tags: [comics, english]
 languages: [english]
 targets: [self-awareness, first-principles-reasoning, communication-mastery, adaptability]
-models: [incentives, probability, via-negativa, model-failure]
+models: [incentives, probability, via-negativa, model-failure, cognitive-biases]
 intensity: extreme
 riskFlags: [violence, sexuality, despair, manipulation]
 socialValue: niche

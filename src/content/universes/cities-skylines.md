@@ -6,7 +6,7 @@ whyItBelongs: "Cities: Skylines makes infrastructure legible. It is especially u
 tags: [game, english, stem]
 languages: [english]
 targets: [first-principles-reasoning, agency, deep-curiosity, adaptability]
-models: [feedback-loops, incentives, compounding, emergence, model-failure]
+models: [feedback-loops, incentives, compounding, emergence, model-failure, opportunity-cost]
 intensity: medium
 socialValue: niche
 substitutes: [civilization, factorio, age-of-empires]

@@ -6,7 +6,7 @@ whyItBelongs: "Disco Elysium es un texto culminante porque convierte la ideolog√
 tags: [game, english, philosophy]
 languages: [english]
 targets: [self-awareness, communication-mastery, first-principles-reasoning, adaptability]
-models: [maps-not-territory, incentives, model-failure, complementary-opposites]
+models: [maps-not-territory, incentives, model-failure, complementary-opposites, cognitive-biases]
 intensity: extreme
 riskFlags: [despair, sexuality, manipulation, coercion]
 socialValue: niche

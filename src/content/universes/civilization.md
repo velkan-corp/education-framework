@@ -6,7 +6,7 @@ whyItBelongs: "Civilization is useful because it turns large historical abstract
 tags: [game, strategy, english, stem]
 languages: [english]
 targets: [agency, deep-curiosity, first-principles-reasoning, adaptability]
-models: [feedback-loops, incentives, compounding, emergence, model-failure, power-structures]
+models: [feedback-loops, incentives, compounding, emergence, model-failure, power-structures, game-theory, opportunity-cost]
 intensity: medium
 socialValue: bridge
 substitutes: [age-of-empires, star-trek, dune]

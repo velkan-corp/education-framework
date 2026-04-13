@@ -6,7 +6,7 @@ whyItBelongs: "Martin es valioso porque derrumba la lectura ingenua de bien cont
 tags: [books, english]
 languages: [english]
 targets: [first-principles-reasoning, relational-intelligence, adaptability, self-awareness]
-models: [incentives, feedback-loops, model-failure, probability, power-structures]
+models: [incentives, feedback-loops, model-failure, probability, power-structures, game-theory, cognitive-biases]
 intensity: high
 riskFlags: [violence, sexuality, despair]
 socialValue: niche

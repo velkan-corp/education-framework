@@ -6,7 +6,7 @@ whyItBelongs: "Liu Cixin brings non-Western science fiction into the framework a
 tags: [books, english, philosophy]
 languages: [english, chinese]
 targets: [first-principles-reasoning, deep-curiosity, adaptability]
-models: [probability, incentives, emergence, model-failure, maps-not-territory]
+models: [probability, incentives, emergence, model-failure, maps-not-territory, game-theory]
 intensity: high
 riskFlags: [despair]
 socialValue: niche

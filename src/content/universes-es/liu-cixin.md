@@ -6,7 +6,7 @@ whyItBelongs: "Liu Cixin incorpora ciencia ficci√≥n no occidental al marco al m√
 tags: [books, english, philosophy]
 languages: [english, chinese]
 targets: [first-principles-reasoning, deep-curiosity, adaptability]
-models: [probability, incentives, emergence, model-failure, maps-not-territory]
+models: [probability, incentives, emergence, model-failure, maps-not-territory, game-theory]
 intensity: high
 riskFlags: [despair]
 socialValue: niche

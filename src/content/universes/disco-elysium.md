@@ -6,7 +6,7 @@ whyItBelongs: "Disco Elysium is a capstone text because it turns ideology, failu
 tags: [game, english, philosophy]
 languages: [english]
 targets: [self-awareness, communication-mastery, first-principles-reasoning, adaptability]
-models: [maps-not-territory, incentives, model-failure, complementary-opposites]
+models: [maps-not-territory, incentives, model-failure, complementary-opposites, cognitive-biases]
 intensity: extreme
 riskFlags: [despair, sexuality, manipulation, coercion]
 socialValue: niche

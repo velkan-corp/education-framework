@@ -6,7 +6,7 @@ whyItBelongs: "Legend of the Galactic Heroes is one of the strongest texts for c
 tags: [anime, japanese, philosophy]
 languages: [japanese]
 targets: [first-principles-reasoning, communication-mastery, relational-intelligence, adaptability]
-models: [incentives, cause-effect, feedback-loops, model-failure, power-structures]
+models: [incentives, cause-effect, feedback-loops, model-failure, power-structures, game-theory]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: niche

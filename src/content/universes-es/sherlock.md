@@ -6,7 +6,7 @@ whyItBelongs: "Sherlock Holmes es la introducción más limpia del marco a la in
 tags: [books, english]
 languages: [english]
 targets: [first-principles-reasoning, deep-curiosity, communication-mastery]
-models: [cause-effect, inversion, maps-not-territory, model-failure]
+models: [cause-effect, inversion, maps-not-territory, model-failure, cognitive-biases]
 intensity: medium
 socialValue: bridge
 substitutes: [camus, kafka, doctor-who]
