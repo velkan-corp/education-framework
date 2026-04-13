@@ -6,7 +6,7 @@ whyItBelongs: "Le Guin is central because she can teach power, identity, and ins
 tags: [books, english, philosophy]
 languages: [english]
 targets: [self-awareness, deep-curiosity, first-principles-reasoning, adaptability]
-models: [maps-not-territory, complementary-opposites, via-negativa, model-failure]
+models: [maps-not-territory, complementary-opposites, via-negativa, model-failure, power-structures]
 intensity: high
 riskFlags: [despair, sexuality]
 socialValue: niche
@@ -28,6 +28,7 @@ phases:
     goals:
       - "Treat political theory as lived tradeoffs rather than abstract slogans."
       - "Compare scarcity, freedom, obligation, and legitimacy across social systems."
+      - "Compare the power structures of Anarres and Urras. Anarres claims to have none — does it? What informal power structures emerge when formal ones are abolished?"
   - phaseId: age-17-18
     tier: core
     title: "Left Hand of Darkness + Tehanu"

@@ -6,7 +6,7 @@ whyItBelongs: "Tolkien is one of the deepest long-form systems for teaching powe
 tags: [books, cinema, maker, english, philosophy]
 languages: [english]
 targets: [resilient-self-efficacy, deep-curiosity, first-principles-reasoning, communication-mastery]
-models: [feedback-loops, emergence, via-negativa, antifragility]
+models: [feedback-loops, emergence, via-negativa, antifragility, power-structures]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: bridge
@@ -28,6 +28,7 @@ phases:
     goals:
       - "Track how power corrupts differently across characters."
       - "Use the score and languages to show how worldbuilding becomes civilizational texture."
+      - "Track how the Ring operates as a power structure — it doesn't just corrupt individuals, it reorganises relationships and loyalties. Why does everyone who seeks it believe they'll be the exception?"
     cautions: "This only works if you preserve depth and pace. Do not reduce it to trivia, battle spectacle, or a binge."
   - phaseId: age-14-16
     tier: core

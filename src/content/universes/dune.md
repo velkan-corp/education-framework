@@ -6,7 +6,7 @@ whyItBelongs: "Dune is a serious systems text disguised as science fiction. It t
 tags: [books, cinema, english, philosophy]
 languages: [english]
 targets: [deep-curiosity, first-principles-reasoning, adaptability]
-models: [feedback-loops, incentives, emergence, via-negativa, model-failure]
+models: [feedback-loops, incentives, emergence, via-negativa, model-failure, power-structures]
 intensity: high
 riskFlags: [violence, manipulation, coercion]
 socialValue: bridge
@@ -23,6 +23,7 @@ phases:
     cautions: "Requires patience and discussion support; if it becomes pure homework, switch to a nearby universe and come back later."
     projects:
       - "Map the incentive structure of House Atreides, House Harkonnen, the Emperor, and the Fremen."
+      - "Analyse who holds formal authority vs. actual power in the Imperium — Emperor, Landsraad, CHOAM, Bene Gesserit, Spacing Guild. Where do formal and actual power diverge?"
   - phaseId: age-17-18
     tier: foundational
     title: "Dune books 2–6 (full hexalogy)"

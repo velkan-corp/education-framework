@@ -6,7 +6,7 @@ whyItBelongs: "Martin es valioso porque derrumba la lectura ingenua de bien cont
 tags: [books, english]
 languages: [english]
 targets: [first-principles-reasoning, relational-intelligence, adaptability, self-awareness]
-models: [incentives, feedback-loops, model-failure, probability]
+models: [incentives, feedback-loops, model-failure, probability, power-structures]
 intensity: high
 riskFlags: [violence, sexuality, despair]
 socialValue: niche
@@ -21,6 +21,8 @@ phases:
       - "Enseñar el rastreo de incentivos como hábito de lectura."
       - "Hacer que el estudiante vea que el comportamiento racional puede aun así producir sistemas catastróficos."
     cautions: "No es una lectura reconfortante; la violencia y la política sexual son centrales en el texto."
+    projects:
+      - "Mapear quién tiene el poder en Poniente en tres momentos distintos de la historia. Rastrear cómo cambia y por qué. ¿Quién se beneficia de que el Trono de Hierro exista como concepto, independientemente de quién se siente en él?"
   - phaseId: age-17-18
     tier: recommended
     title: "Festín de cuervos + Danza de dragones"

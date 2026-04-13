@@ -6,7 +6,7 @@ whyItBelongs: "Tolkien es uno de los sistemas narrativos de largo recorrido más
 tags: [books, cinema, maker, english, philosophy]
 languages: [english]
 targets: [resilient-self-efficacy, deep-curiosity, first-principles-reasoning, communication-mastery]
-models: [feedback-loops, emergence, via-negativa, antifragility]
+models: [feedback-loops, emergence, via-negativa, antifragility, power-structures]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: bridge
@@ -28,6 +28,7 @@ phases:
     goals:
       - "Rastrear cómo el poder corrompe de forma diferente a distintos personajes."
       - "Usar la banda sonora y las lenguas para mostrar cómo la construcción de mundos se convierte en textura civilizacional."
+      - "Rastrear cómo el Anillo opera como una estructura de poder — no solo corrompe individuos, reorganiza relaciones y lealtades. ¿Por qué todos los que lo buscan creen que serán la excepción?"
     cautions: "Esto solo funciona si se preservan la profundidad y el ritmo. No reducirlo a trivia, espectáculo de batallas o maratón de visionado."
   - phaseId: age-14-16
     tier: core

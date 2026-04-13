@@ -6,7 +6,7 @@ whyItBelongs: "V for Vendetta es una forma compacta de discutir tiranía, rebeli
 tags: [comics, english]
 languages: [english]
 targets: [first-principles-reasoning, communication-mastery, relational-intelligence, adaptability]
-models: [incentives, via-negativa, model-failure, maps-not-territory]
+models: [incentives, via-negativa, model-failure, maps-not-territory, power-structures]
 intensity: high
 riskFlags: [violence, coercion, despair, manipulation]
 socialValue: niche
@@ -20,5 +20,6 @@ phases:
     goals:
       - "Distinguir la resistencia legítima de la rebelión estetizada."
       - "Preguntar qué hacen los sistemas coercitivos con el lenguaje, el miedo y la vida pública."
+      - "Analizar la estructura de poder del régimen Norsefire — ¿cómo mantiene el control mediante los medios, la vigilancia, el miedo y la división? ¿Qué hace que los sistemas autoritarios se auto-perpetúen?"
     cautions: "Es políticamente cargado y a menudo brutal; leerlo como texto de discusión en lugar de pieza ambiental."
 ---

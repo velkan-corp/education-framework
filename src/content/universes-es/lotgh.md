@@ -6,7 +6,7 @@ whyItBelongs: "Legend of the Galactic Heroes es uno de los textos más potentes 
 tags: [anime, japanese, philosophy]
 languages: [japanese]
 targets: [first-principles-reasoning, communication-mastery, relational-intelligence, adaptability]
-models: [incentives, cause-effect, feedback-loops, model-failure]
+models: [incentives, cause-effect, feedback-loops, model-failure, power-structures]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: niche
@@ -20,5 +20,6 @@ phases:
     goals:
       - "Comparar sistemas políticos por incentivos, no por eslóganes."
       - "Usar a Yang y Reinhard como dos tipos diferentes de brillantez bajo presión histórica."
+      - "Analizar cómo Yang y Reinhard acumulan y ejercen el poder — uno a través de la legitimidad institucional, el otro a través del carisma personal. ¿Cuál es más duradero?"
     cautions: "El ritmo es lento y discursivo. Funciona mejor cuando al estudiante le gusta la argumentación institucional de largo formato."
 ---

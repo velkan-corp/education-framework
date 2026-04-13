@@ -6,7 +6,7 @@ whyItBelongs: "Le Guin es central porque puede enseñar poder, identidad y alter
 tags: [books, english, philosophy]
 languages: [english]
 targets: [self-awareness, deep-curiosity, first-principles-reasoning, adaptability]
-models: [maps-not-territory, complementary-opposites, via-negativa, model-failure]
+models: [maps-not-territory, complementary-opposites, via-negativa, model-failure, power-structures]
 intensity: high
 riskFlags: [despair, sexuality]
 socialValue: niche
@@ -28,6 +28,7 @@ phases:
     goals:
       - "Tratar la teoría política como concesiones vividas en lugar de eslóganes abstractos."
       - "Comparar escasez, libertad, obligación y legitimidad entre sistemas sociales."
+      - "Comparar las estructuras de poder de Anarres y Urras. Anarres afirma no tener ninguna — ¿es cierto? ¿Qué estructuras de poder informales emergen cuando se abolen las formales?"
   - phaseId: age-17-18
     tier: core
     title: "La mano izquierda de la oscuridad + Tehanu"
