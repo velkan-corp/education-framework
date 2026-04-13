@@ -91,6 +91,7 @@ order: 3
 <span class="model-dot future" data-tip="Antifragilidad — ¿Se beneficia este sistema del desorden?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
 <span class="model-dot future" data-tip="Teoría de Juegos — ¿Cómo afecta la estrategia del otro jugador a la mía?"><span class="model-dot-num">14</span><span class="model-dot-name">Juegos</span></span>
 <span class="model-dot future" data-tip="Fallo del Modelo — ¿Dónde da este modelo la respuesta equivocada?"><span class="model-dot-num">15</span><span class="model-dot-name">Fallo</span></span>
+<span class="model-dot future" data-tip="Estructuras de Poder — ¿Quién decide, quién se beneficia y por qué persiste este arreglo?"><span class="model-dot-num">16</span><span class="model-dot-name">Poder</span></span>
 </div>
 </div>
 <p>Capa 1 — Experiencia. Introducir a través de historias, juego y experiencia encarnada. Sin jerga.</p>
@@ -100,8 +101,9 @@ order: 3
 <tr><td>Incentivos (#3)</td><td>"¿Por qué ese personaje quiere eso?" Después de cada historia. No retórico — razónalo juntos. "¿Por qué tu amigo comparte juguetes?"</td></tr>
 <tr><td>Inversión (#4)</td><td>"¿Y si el villano tuviera razón?" "¿Y si nadie siguiera ninguna regla?" Calvin & Hobbes: Calvin invierte constantemente las normas sociales.</td></tr>
 <tr><td>Causa y Efecto (#1)</td><td>Continúa desde 0-3 con mayor complejidad. Excursiones: "¿Qué pasa si el panadero no hornea? ¿Y luego qué?" Juegos de dados para probabilidad simple.</td></tr>
+<tr><td>Estructuras de Poder (#16)</td><td>"¿Quién hizo las reglas? ¿Quién decide?" Experiencia concreta: reglas de los padres vs. elecciones del niño — "Tú puedes elegir qué ponerte, pero no puedes elegir si ir al colegio. ¿Por qué son diferentes?" Reglas de juegos — ¿quién las inventó? ¿Puedes cambiarlas? ¿Qué pasa si no las sigues? Dinámica del patio: ¿quién elige el juego en el recreo? ¿Cómo? Calvin & Hobbes: las constantes e infructuosas negociaciones de Calvin con padres y profesores para tener más poder. "¿Por qué Calvin no puede simplemente hacer lo que quiere?"</td></tr>
 </table>
-<p>Estos cuatro modelos se revisitarán cada año con profundidad creciente a través de las capas de cebolla. Consulta la pestaña de Filosofía para la progresión completa.</p>
+<p>Estos modelos se revisitarán cada año con profundidad creciente a través de las capas de cebolla. Consulta la pestaña de Filosofía para la progresión completa.</p>
 
 <div class="program-elements">
 
@@ -225,6 +227,17 @@ order: 3
 
 <div class="t-adjust t-wm-adv"><div class="t-label">Memoria de Trabajo: Avanzada</div>Las instrucciones de clase de múltiples pasos son manejables. Practica en casa con secuencias cada vez más complejas: recetas de cocina con 3-4 pasos de memoria, juegos de memoria estilo Simon, y cadenas verbales de "Fui al mercado y compré..." La rutina matutina puede volverse autogestionada desde una secuencia memorizada en vez de una lista visual. Elogia retener instrucciones en la mente a lo largo de un retraso, no solo la evocación inmediata.</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Memoria de Trabajo: En Desarrollo</div>Seguir instrucciones en clase será un desafío. Proporciona apoyos externos: horarios visuales en casa, secuencias de tareas basadas en imágenes, y pistas de colocación física (zapatos junto a la puerta, mochila en el gancho). Repite instrucciones como mucho dos veces, luego guía físicamente. La memoria de trabajo se desarrolla sustancialmente entre los 5-7 años — el apoyo ahora construye el andamiaje para el salto adelante.</div>
+
+<h3>Adversidad e Incomodidad — Construyendo el Sustrato</h3>
+<p>Esta NO es la edad para hitos formales de adversidad. SÍ es la edad para construir el sustrato: normalizar la incomodidad como parte de la vida, no como castigo o ejercicio especial. La cultura familiar establecida ahora determina si los hitos de adversidad a los 11-16 se sienten como una escalada natural o una imposición traumática.</p>
+<p><strong>Caminar bajo la lluvia sin quejarse.</strong> No es "entrenamiento de resistencia" — es simplemente la vida. La familia camina. Con cualquier clima. Si llueve, te mojas. Esto es normal.</p>
+<p><strong>Cargar su propio equipo.</strong> Su agua, su merienda, su mochila en las excursiones. Peso apropiado para su edad, pero su responsabilidad. No es "entrenamiento de fuerza" — es independencia.</p>
+<p><strong>Sin rescate del frío.</strong> Sin chaqueta significa frío. Esto ya está en el marco (Objetivo 2: consecuencias naturales). Ahora enmarcarlo explícitamente como el inicio de la arquitectura de adversidad: la incomodidad es información, no emergencia.</p>
+<p><strong>Esperar es adversidad.</strong> El aburrimiento es adversidad. No llenar cada momento con estimulación es la forma más temprana de privación estructurada. Proteger el tiempo no estructurado no solo por curiosidad sino por la práctica de soportar el vacío sin rescate.</p>
+<p><strong>Cultura familiar de eliminación del confort.</strong> Caminar en vez de conducir para distancias cortas. Acampar sin electricidad. Juego al aire libre con cualquier clima. El juego en clima frío no es "exposición" — es juego que resulta ser frío. El encuadre importa: si los padres tratan la incomodidad como algo que hay que evitar, los niños aprenden que el confort es un derecho. Si los padres tratan la incomodidad como algo insignificante, los niños aprenden que el confort es una preferencia, no una necesidad.</p>
+
+<div class="t-adjust t-high-react"><div class="t-label">Alta Reactividad — Sustrato de Adversidad</div>Los ejercicios deliberados de agua fría siguen siendo voluntarios — modelar con entusiasmo pero nunca forzar. Sin embargo, el frío-como-clima (salir en invierno, acampar en condiciones frescas, caminar bajo la lluvia) es cultura familiar, no un ejercicio opcional. La distinción: "No forzamos duchas frías, pero sí salimos con cualquier clima. Eso no es exposición al frío — es la vida." La dificultad de las excursiones debe aumentar gradualmente. Si tienen una crisis por incomodidad física, co-regular primero, luego continuar — no retirarse al coche.</div>
+<div class="t-adjust t-low-react"><div class="t-label">Baja Reactividad — Sustrato de Adversidad</div>Exigir más en los desafíos físicos. Excursiones más largas, condiciones más frías, mochilas más pesadas. Estos niños necesitan más intensidad para alcanzar la zona productiva de incomodidad. Si parecen cómodos en cada situación, las situaciones no son suficientemente desafiantes.</div>
 
 <h2 id="s-social" data-tier="foundational"><span class="material-symbols-rounded">people</span>Social y Relacional</h2>
 

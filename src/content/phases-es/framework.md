@@ -173,8 +173,8 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>El Kit de Herramientas de Pensamiento</h2>
 <h3>Las Capas de la Cebolla</h3>
 <p>Cada concepto fundamental se revisita anualmente con mayor profundidad: Experimentar (4-7) → Nombrar (8-10) → Poner a Prueba (11-13) → Sintetizar (14-16) → Criticar (17-18). Semanas de inmersión intensiva dentro de cada año, y luego reenganche al año siguiente.</p>
-<h3>Quince Modelos Universales</h3>
-<p>Introducidos progresivamente a través de las Capas de la Cebolla. Cuatro grupos equilibrados a lo largo de cuatro capas. Consulta la sección de Modelos Mentales de cada fase para el enfoque específico por edad.</p>
+<h3>Dieciséis Modelos Universales</h3>
+<p>Introducidos progresivamente a través de las Capas de la Cebolla. Cuatro grupos equilibrados de cuatro a lo largo de cuatro capas. Consulta la sección de Modelos Mentales de cada fase para el enfoque específico por edad.</p>
 
 <div class="model-timeline">
 <div class="model-age-group">
@@ -210,6 +210,7 @@ order: 0
 <div class="model-card"><span class="model-num">13</span><strong>Antifragilidad</strong><br>¿Este sistema se beneficia del desorden?</div>
 <div class="model-card"><span class="model-num">14</span><strong>Teoría de Juegos</strong><br>¿Cómo afecta la estrategia del otro jugador a la mía?</div>
 <div class="model-card"><span class="model-num">15</span><strong>Fallo del Modelo</strong><br>¿Dónde da este modelo la respuesta equivocada?</div>
+<div class="model-card"><span class="model-num">16</span><strong>Estructuras de Poder</strong><br>¿Quién decide, quién se beneficia y por qué persiste este arreglo?</div>
 </div>
 </div>
 </div>
@@ -300,6 +301,51 @@ order: 0
 </div>
 </div>
 
+<h2 id="s-hardship"><span class="material-symbols-rounded">local_fire_department</span>Arquitectura de Adversidad</h2>
+<p>El marco diseña dificultad curada — mesetas, competiciones, expediciones, exposición al frío — pero cada adversidad viene con un debrief, un marco filosófico y una salida. La resiliencia real también requiere dificultad involuntaria y no enmarcada donde no hay lección ni red de seguridad. El poder es la diferencia entre hacer lo que quieres o fracasar en hacerlo. La dureza es el sustrato que hace el poder utilizable bajo presión.</p>
+<p>El respeto del marco por la agencia ("el niño está por encima del plan sobre él") no significa protección de toda dificultad involuntaria. Ciertas <strong>categorías</strong> de experiencia son Nivel 1 (Fundacional) — el niño debe experimentarlas. Las elecciones específicas dentro de cada categoría siguen siendo del niño. Debes hacer la expedición. Tú eliges cuál, cuándo y con quién. Este es el mismo principio que ya gobierna el sueño, la actividad física y el tiempo no estructurado — compromisos estructurales no negociables donde la categoría es fija pero la implementación es flexible.</p>
+
+<h3>Tres Componentes</h3>
+
+<h4>A. Hitos de Adversidad de Nivel 1</h4>
+<p>Experiencias no negociables completadas antes de los 18. El niño elige <em>cuál</em> y <em>cuándo</em>, no <em>si</em>.</p>
+<ol>
+<li><strong>Noche solo en la naturaleza (13+).</strong> Con preparación, equipo y un área conocida. Solo. Una noche. Enfrentar la oscuridad, la soledad y la autosuficiencia sin ningún amortiguador social.</li>
+<li><strong>Expedición de varios días sin contacto parental.</strong> Viaje escolar, expedición de scouts, programa de naturaleza. 3+ días, sin llamadas telefónicas a los padres.</li>
+<li><strong>Trabajar por dinero.</strong> Trabajo real, jefe real, consecuencias reales por bajo rendimiento. No dar clases a los hermanos. Cuidar niños, comercio, hostelería, trabajo agrícola, asistencia en oficina. La lección: tu tiempo tiene un precio, a tu jefe no le importan tus sentimientos y presentarse no es negociable.</li>
+<li><strong>Servicio en contexto de sufrimiento humano genuino.</strong> Voluntariado en hospital, albergue para personas sin hogar, apoyo a refugiados. No la recaudación del colegio. Exposición sostenida (mensual durante 6+ meses) a una dificultad que no se puede resolver escribiendo un cheque.</li>
+<li><strong>Desafío físico llevado al agotamiento genuino.</strong> Una caminata que lleve al límite, un examen de arte marcial que no deje nada en el tanque, una distancia de natación que ponga a prueba la voluntad. No lesión — agotamiento genuino donde descubren lo que hay al otro lado.</li>
+</ol>
+
+<h4>B. Privación Estructurada</h4>
+<p>Séneca, Carta 18: <em>"Reserva un cierto número de días durante los cuales te contentarás con la comida más escasa y barata, con ropa tosca y áspera, diciéndote a ti mismo: '¿Es esta la condición que temía?'"</em></p>
+<ul>
+<li><strong>Ayunos tecnológicos.</strong> Cero dispositivos durante días — no límites de tiempo de pantalla. La familia lo hace junta. No es teatro de privación; desconexión genuina como práctica.</li>
+<li><strong>Restricciones de presupuesto.</strong> Gestionar dinero real y limitado para necesidades reales. La restricción es el maestro.</li>
+<li><strong>Eliminación de comodidades como cultura familiar.</strong> Caminar en vez de conducir. Acampar sin comodidades. El frío como clima, no como "ejercicio de exposición". El lenguaje importa: se enmarcan como vida normal, no como intervenciones especiales.</li>
+</ul>
+<p>Mejor implementado como cultura familiar, no como prescripción. Si nadar en agua fría es "lo que hacemos los sábados" en vez de "entrenamiento de adversidad", normaliza la incomodidad sin que parezca una lección.</p>
+
+<h4>C. Ubicación Social No Curada</h4>
+<p>La estrategia de "selección institucional" del marco es correcta para el desarrollo central. Pero la salida periódica de entornos curados construye resiliencia social que los entornos optimizados no pueden.</p>
+<ul>
+<li><strong>Contextos donde el niño no tiene estatus</strong> y debe ganarse la pertenencia desde cero.</li>
+<li><strong>Ser el más débil o menos hábil en la sala.</strong> La experiencia de la incompetencia en un dominio donde otros son avanzados.</li>
+<li><strong>Grupos no seleccionados por compatibilidad de desarrollo.</strong> Trabajos de verano, programas de intercambio, unirse a un equipo como principiante entre jugadores experimentados.</li>
+</ul>
+
+<h3>Test de Coerción para la Adversidad</h3>
+<p>Que los hitos de adversidad sean Nivel 1 crea una nueva superficie de coerción. El test: ¿pueden elegir CÓMO y CUÁNDO cumplir cada hito sin consecuencias para la relación? Si rechazan la <em>categoría</em> (no solo la implementación específica), escucha la señal. Un niño que rechaza toda adversidad a los 15 tras abrazarla a los 12 puede estar señalando algo importante. Pero un niño que evita la adversidad porque es incómoda está recibiendo exactamente la lección que el hito está diseñado para proporcionar.</p>
+
+<h3>Ajustes de Perfil para la Adversidad</h3>
+<p>La reactividad es el eje de calibración principal. Consulta los bloques <code>t-adjust</code> específicos de cada fase para más detalles. Principios clave:</p>
+<ul>
+<li><strong>Alta Reactividad:</strong> Exposición graduada con rampa más larga. El hito sigue siendo no negociable — el CAMINO hacia él se ajusta. La noche solo puede necesitar una progresión de tarde-solo → anochecer-solo → noche-solo.</li>
+<li><strong>Baja Reactividad:</strong> Presiona más y antes. Necesitan más intensidad para alcanzar la incomodidad productiva. Escala hasta que reporten dificultad genuina.</li>
+<li><strong>Introvertido:</strong> La ubicación social no curada es el componente más difícil. Incluye tiempo de recuperación. La noche solo puede ser de hecho más fácil — la soledad no es el estresor.</li>
+<li><strong>Extrovertido:</strong> La noche solo es el componente más difícil. La privación de contacto social ES el desafío.</li>
+</ul>
+
 <h2 id="s-operations" class="fw-section-header"><span class="material-symbols-rounded">settings</span>Operaciones</h2>
 <p>Logística, gestión de riesgos, protocolos de ejecución y los sistemas que mantienen el marco en funcionamiento. Referencia al planificar, no lectura obligatoria.</p>
 
@@ -346,7 +392,7 @@ order: 0
 <h3>El Peligro Central</h3>
 <p>Este marco es extraordinariamente intencional. Cada libro elegido, cada juguete justificado, cada conversación en la cena estructurada. Hay una línea entre "entorno curado" y "padre controlador", y la experiencia del niño sobre en qué lado estás depende enteramente del tono de ejecución.</p>
 <p><strong>El test:</strong> ¿Pueden decir "no" a cualquier elemento sin consecuencia para la relación? Si rechazan la ducha fría, se saltan la práctica del instrumento, o quieren leer un libro "malo" — ¿lo aceptas con naturalidad o aparece tensión?</p>
-<p><strong>El antídoto:</strong> El sistema de tres niveles hace concreto el "sostenlo con soltura". Los elementos de Nivel 1 (FUNDACIONAL) — sueño, relación > marco, los diez objetivos, actividad física, tiempo no estructurado — son estructurales; protégelos. Los elementos de Nivel 2 (CENTRAL) — ciclo de engagement, cena socrática, maestría del nicho — se adaptan con flexibilidad razonable. Los elementos de Nivel 3 (RECOMENDADO) — libros específicos, juegos, instrumentos, deportes — se intercambian libremente según el niño que tienes delante. El niño está por encima del plan sobre él. Siempre.</p>
+<p><strong>El antídoto:</strong> El sistema de tres niveles hace concreto el "sostenlo con soltura". Los elementos de Nivel 1 (FUNDACIONAL) — sueño, relación > marco, los once objetivos, actividad física, tiempo no estructurado, hitos de adversidad — son estructurales; protégelos. Los elementos de Nivel 2 (CENTRAL) — ciclo de engagement, cena socrática, maestría del nicho — se adaptan con flexibilidad razonable. Los elementos de Nivel 3 (RECOMENDADO) — libros específicos, juegos, instrumentos, deportes — se intercambian libremente según el niño que tienes delante. El niño está por encima del plan sobre él. Siempre.</p>
 </div>
 <p><strong>Señales de que se está volviendo coercitivo:</strong> Practican el instrumento cuando los miras pero no cuando no estás. Simulan curiosidad para tu aprobación. Esconden intereses que creen que desaprobarías. Rinden en las actividades del marco pero parecen ansiosos o performativos.</p>
 <p><strong>Señales de que está funcionando:</strong> Persiguen las actividades del marco de forma autónoma. Rechazan elementos específicos mientras se involucran con otros. Traen sus propias preguntas e intereses que te sorprenden. Fracasan abiertamente sin vergüenza.</p>
@@ -355,7 +401,7 @@ order: 0
 <p>En algún momento — probablemente entre los 12 y los 14 — uno o ambos niños pueden rechazar partes significativas de este programa. Pueden querer jugar a Fortnite durante seis horas, no leer nada, y pensar que el ajedrez es estúpido. Esto es diferenciación de identidad normal, no un fracaso.</p>
 <p><strong>El protocolo:</strong></p>
 <p>1. <strong>Distingue señal de ruido.</strong> "Odio el violín porque mis amigos piensan que es ridículo" es presión social (ruido). "Odio el violín porque genuinamente ya no lo disfruto después de 8 años" es señal. Responde de forma diferente.</p>
-<p>2. <strong>Protege el Nivel 1, suelta los Niveles 2-3.</strong> Salud física, responsabilidad básica, respeto, los diez objetivos como aspiraciones — no negociable. Elecciones de contenido específicas, preferencias de actividades, gustos estéticos — negociable. Usa el sistema de niveles: nunca comprometas lo FUNDACIONAL, adapta lo CENTRAL, suelta lo RECOMENDADO por completo.</p>
+<p>2. <strong>Protege el Nivel 1, suelta los Niveles 2-3.</strong> Salud física, responsabilidad básica, respeto, los once objetivos como aspiraciones — no negociable. Elecciones de contenido específicas, preferencias de actividades, gustos estéticos — negociable. Usa el sistema de niveles: nunca comprometas lo FUNDACIONAL, adapta lo CENTRAL, suelta lo RECOMENDADO por completo.</p>
 <p>3. <strong>Permanece en la relación.</strong> El peor resultado no es que dejen el ajedrez. Es que dejen de hablarte. Si debes elegir entre mantener el marco y mantener la relación, elige la relación siempre.</p>
 <p>4. <strong>Confía en los cimientos.</strong> Si has hecho el trabajo durante los primeros 10-12 años, el sustrato está construido. Pueden rechazar la expresión superficial mientras retienen los patrones profundos. El adolescente de 14 años que "deja de leer" a menudo vuelve a los libros a los 19 con un hambre que la lectura autodirigida satisface de forma diferente a la curación parental.</p>
 
@@ -378,7 +424,7 @@ order: 0
 
 <p><strong>Perfiles guardados:</strong> Carga un perfil nombrado de un niño (p. ej. "Nico", "Maia") para establecer las 13 dimensiones de golpe desde una línea base pre-evaluada. Las dimensiones individuales pueden ajustarse después de cargar — esto revierte a "Personalizado".</p>
 
-<p>Un extrovertido con baja autorregulación y resolución de problemas en desarrollo no es un peor estudiante — necesita un camino diferente hacia los mismos diez objetivos. La autoeficacia resiliente, la curiosidad profunda, la inteligencia relacional y el razonamiento desde primeros principios pueden construirse a través del deporte, el liderazgo social y la construcción práctica tan efectivamente como a través de los libros, el ajedrez y la música. Los objetivos son universales; los métodos no.</p>
+<p>Un extrovertido con baja autorregulación y resolución de problemas en desarrollo no es un peor estudiante — necesita un camino diferente hacia los mismos once objetivos. La autoeficacia resiliente, la curiosidad profunda, la inteligencia relacional y el razonamiento desde primeros principios pueden construirse a través del deporte, el liderazgo social y la construcción práctica tan efectivamente como a través de los libros, el ajedrez y la música. Los objetivos son universales; los métodos no.</p>
 <p><strong>Construye para lo mejor.</strong> Las expectativas son altas por diseño. Un niño del que se espera que razone desde primeros principios, sostenga relaciones profundas y se involucre seriamente con el mundo tiene más probabilidades de hacerlo que uno cuyo techo se bajó preventivamente. Si un niño particular no puede alcanzar un punto de referencia particular, eso se descubre a través de la observación y se ajusta en el momento — no bajando aspiraciones para todos los posibles niños por adelantado. Las altas expectativas no son negociables; los plazos rígidos no lo son.</p>
 
 <h2 id="s-coparent"><span class="material-symbols-rounded">family_restroom</span>Co-Crianza: Roles Asimétricos</h2>
@@ -471,6 +517,7 @@ order: 0
 <p><strong>8. Revisión de capa de la cebolla:</strong> ¿Qué modelos mentales se revisitaron este trimestre? ¿A qué profundidad? ¿Los conceptos previamente aprendidos se están reforzando o desvaneciendo?</p>
 <p><strong>9. Revisión de portfolio:</strong> ¿Qué se lanzó, compitió, publicó o construyó este trimestre? ¿Cómo fortalece la narrativa? ¿Cuál es la siguiente escalación?</p>
 <p><strong>10. Revisión de seguridad:</strong> ¿Los límites están claros? ¿Algún secretismo, coerción, comportamiento de riesgo digital, chats de grupo preocupantes, compañeros manipuladores, problemas de reputación o contacto online que necesite intervención? ¿El niño sigue trayéndote los problemas pronto?</p>
+<p><strong>11. Revisión de arquitectura de adversidad:</strong> ¿Qué hitos se han completado? ¿Cuáles se acercan? ¿El niño está eligiendo detalles de implementación (agencia preservada) o evitando las categorías por completo (requiere intervención)? ¿La cultura familiar de privación ha sido consistente — ayunos tecnológicos, eliminación de comodidades, restricciones de presupuesto — o ha caído en la comodidad? ¿Alguna ubicación social no curada este trimestre?</p>
 <p><strong>Registra las respuestas.</strong> Revisa el registro anualmente. Los patrones a lo largo de 4 trimestres revelan más que cualquier observación aislada.</p>
 <p><strong>La experiencia del niño de esta revisión debería ser invisible.</strong> Esta es una herramienta de calibración para los padres, no una tarjeta de notas.</p>
 
