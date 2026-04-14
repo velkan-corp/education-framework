@@ -165,7 +165,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
 
   <!-- Universe detail (timeline) — pre-rendered for each universe -->
   <div id="universe-detail" class="hidden">
-    <button type="button" class="universe-back" id="universe-back">&larr; All universes</button>
+    <button type="button" class="universe-back" id="universe-back">&larr; All items</button>
     {sorted.map(u => (
       <div class="universe-timeline hidden" data-universe-detail={u.id}>
         <h1 class="universe-detail-title">{u.label}</h1>

@@ -45,6 +45,7 @@ export const UNIVERSE_KINDS = [
   'maker-system',
   'literary-canon',
   'practice-domain',
+  'knowledge-domain',
 ] as const;
 
 export const UNIVERSE_LANGUAGES = [
@@ -118,6 +119,7 @@ export const UNIVERSE_KIND_LABELS: Record<(typeof UNIVERSE_KINDS)[number], strin
   'maker-system': 'Maker System',
   'literary-canon': 'Literary Canon',
   'practice-domain': 'Practice Domain',
+  'knowledge-domain': 'Knowledge Domain',
 };
 
 export const LANGUAGE_LABELS: Record<(typeof UNIVERSE_LANGUAGES)[number], string> = {
