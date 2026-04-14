@@ -128,11 +128,12 @@ order: 0
 <summary>
 <span class="principle-num">9</span>
 <span class="principle-name">Dominio del Sistema Físico</span>
-<span class="principle-thesis">El sueño es la intervención #1. El ejercicio es un optimizador cognitivo. El cuerpo y el cerebro son un solo sistema.</span>
+<span class="principle-thesis">El sueño es la intervención #1. La nutrición es la #2. El ejercicio es la #3. El cuerpo y el cerebro son un solo sistema.</span>
 </summary>
-<p>El cuerpo y el cerebro son un solo sistema. El sueño es la intervención #1 — un niño bien descansado que no hace nada más supera a un niño privado de sueño que lo hace todo. El ejercicio es un optimizador cognitivo. Diseña y mantén el sistema cuerpo-mente como la máquina de alto rendimiento que es.</p>
+<p>El cuerpo y el cerebro son un solo sistema. El sueño es la intervención #1 — un niño bien descansado que no hace nada más supera a un niño privado de sueño que lo hace todo. La nutrición es la #2 — no se puede compensar una mala dieta con ejercicio, y lo que un niño come afecta directamente la cognición, el estado de ánimo, la energía y la función inmune de forma más inmediata que cualquier otro factor excepto el sueño. El ejercicio es la #3 — un optimizador cognitivo, no solo una medida de salud. Diseña y mantén el sistema cuerpo-mente como la máquina de alto rendimiento que es.</p>
 <details class="evidence"><summary>Evidencia</summary>
 <p><strong>Walker, "Why We Sleep" (2017):</strong> 6 horas/noche durante 2 semanas producen el mismo deterioro cognitivo que 48 horas sin dormir. No negociable.</p>
+<p><strong>Stevenson et al. (2014), O'Neil et al. (2014):</strong> La calidad de la dieta en la infancia predice el rendimiento cognitivo, el logro académico y la salud mental independientemente del nivel socioeconómico. El consumo de alimentos procesados se correlaciona con atención reducida, peor memoria y aumento de problemas de comportamiento. El mecanismo: eje intestino-cerebro, inflamación y estabilidad de glucosa en sangre.</p>
 <p><strong>Ratey, "Spark" (2008):</strong> El ejercicio aumenta el BDNF, promoviendo el crecimiento neuronal. 30 minutos de cardio antes de estudiar mejoran mediblemente la retención.</p>
 <p><strong>Estudios longitudinales de Hillman:</strong> Los niños aeróbicamente en forma muestran rendimiento académico, atención y función ejecutiva superiores, controlando por nivel socioeconómico y CI.</p>
 </details>

@@ -128,11 +128,12 @@ order: 0
 <summary>
 <span class="principle-num">9</span>
 <span class="principle-name">Physical System Mastery</span>
-<span class="principle-thesis">Sleep is the #1 intervention. Exercise is a cognitive optimizer. The body and brain are one system.</span>
+<span class="principle-thesis">Sleep is the #1 intervention. Nutrition is the #2. Exercise is the #3. The body and brain are one system.</span>
 </summary>
-<p>The body and brain are one system. Sleep is the #1 intervention — a well-rested child who does nothing else outperforms a sleep-deprived child who does everything. Exercise is a cognitive optimizer. Design and maintain the body-mind system like the high-performance machine it is.</p>
+<p>The body and brain are one system. Sleep is the #1 intervention — a well-rested child who does nothing else outperforms a sleep-deprived child who does everything. Nutrition is #2 — you cannot out-exercise a bad diet, and what a child eats directly affects cognition, mood, energy, and immune function more immediately than any other input except sleep. Exercise is #3 — a cognitive optimizer, not just a health measure. Design and maintain the body-mind system like the high-performance machine it is.</p>
 <details class="evidence"><summary>Evidence</summary>
 <p><strong>Walker, "Why We Sleep" (2017):</strong> 6 hours/night for 2 weeks produces the same cognitive impairment as 48 hours without sleep. Non-negotiable.</p>
+<p><strong>Stevenson et al. (2014), O'Neil et al. (2014):</strong> Diet quality in childhood predicts cognitive performance, academic achievement, and mental health independently of SES. Processed food consumption correlates with reduced attention, poorer memory, and increased behavioral problems. The mechanism: gut-brain axis, inflammation, and blood glucose stability.</p>
 <p><strong>Ratey, "Spark" (2008):</strong> Exercise increases BDNF, promoting neuronal growth. 30 minutes of cardio before studying measurably improves retention.</p>
 <p><strong>Hillman longitudinal studies:</strong> Aerobically fit children show superior academic achievement, attention, and executive function, controlling for SES and IQ.</p>
 </details>
