@@ -6,7 +6,7 @@ whyItBelongs: "Warhammer importa menos como volcado de lore que como pipeline de
 tags: [game, maker, strategy, english]
 languages: [english]
 targets: [resilient-self-efficacy, agency, first-principles-reasoning, physical-system-mastery]
-models: [feedback-loops, incentives, compounding, probability, emergence]
+models: [feedback-loops, incentives, compounding, probability, emergence, scale]
 intensity: high
 riskFlags: [violence, coercion]
 socialValue: bridge

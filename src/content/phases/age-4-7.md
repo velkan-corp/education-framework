@@ -92,6 +92,9 @@ order: 3
 <span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
 <span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
 <span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">16</span><span class="model-dot-name">Power</span></span>
+<span class="model-dot future" data-tip="Leverage — Where is the highest-return point to apply effort?"><span class="model-dot-num">17</span><span class="model-dot-name">Lever.</span></span>
+<span class="model-dot future" data-tip="Skin in the Game — Does this person bear the consequences of their advice?"><span class="model-dot-num">18</span><span class="model-dot-name">Skin</span></span>
+<span class="model-dot future" data-tip="Scale — What changes when you make this bigger or smaller?"><span class="model-dot-num">19</span><span class="model-dot-name">Scale</span></span>
 </div>
 </div>
 <p>Layer 1 — Experience. Introduce through story, play, and embodied experience. No jargon.</p>

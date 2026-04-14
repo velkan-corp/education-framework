@@ -6,7 +6,7 @@ whyItBelongs: "Go complements chess by shifting attention from direct control to
 tags: [strategy, japanese, stem]
 languages: [japanese]
 targets: [resilient-self-efficacy, first-principles-reasoning, relational-intelligence, adaptability]
-models: [feedback-loops, probability, emergence, complementary-opposites]
+models: [feedback-loops, probability, emergence, complementary-opposites, leverage]
 intensity: high
 socialValue: niche
 substitutes: [chess, civilization, baba-is-you]

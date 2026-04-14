@@ -11,7 +11,8 @@ const t = lang === 'es' ? {
   subtitle: `Un marco de desarrollo para edades de 0 a 18 años. Once objetivos, métodos basados en evidencia, ${universeCount} universos de contenido, calibrado al perfil de cada niño.`,
   framework: 'Marco',
   frameworkDesc: 'Filosofía, principios, objetivos y guía operativa. La base sobre la que se construye todo lo demás.',
-  frameworkMeta: '11 objetivos, 10 principios',
+  frameworkMeta: '11 OBJETIVOS · 10 PRINCIPIOS · 19 MODELOS',
+  sectionLabel: 'El Currículo — el mismo contenido, dos vistas',
   age: 'Por Edad',
   ageDesc: 'Prioridades de desarrollo, actividades, modelos mentales y contenido para cada etapa. Desde los cimientos neuronales hasta el lanzamiento.',
   ageMeta: `${phaseCount} fases de edad`,
@@ -19,14 +20,15 @@ const t = lang === 'es' ? {
   domainDesc: 'Sigue un dominio a través de todas las edades: Comunicación, Música, Cuerpo y Mente, Social, Construcción y más.',
   domainMeta: 'Sigue un hilo a través del tiempo',
   universe: 'Universos',
-  universeDesc: 'Libros, películas, juegos, sistemas maker y cánones literarios. La biblioteca de contenido que impulsa el marco.',
-  universeMeta: `${universeCount} universos de contenido`,
+  universeDesc: 'La biblioteca de contenido — libros, películas, juegos, sistemas maker y dominios de práctica. Una vista enfocada del material curado que impulsa el currículo.',
+  universeMeta: `${universeCount}+ UNIVERSOS`,
 } : {
   title: 'Education Framework',
   subtitle: `A developmental framework for ages 0-18. Eleven targets, evidence-based methods, ${universeCount} content universes, calibrated to each child's profile.`,
   framework: 'Framework',
   frameworkDesc: 'Philosophy, principles, targets, and operational guidance. The foundation everything else is built on.',
-  frameworkMeta: '11 targets, 10 principles',
+  frameworkMeta: '11 TARGETS · 10 PRINCIPLES · 19 MODELS',
+  sectionLabel: 'The Curriculum — same content, two views',
   age: 'By Age',
   ageDesc: 'Developmental priorities, activities, mental models, and content for each stage. From neural foundations to launch.',
   ageMeta: `${phaseCount} age phases`,
@@ -34,8 +36,8 @@ const t = lang === 'es' ? {
   domainDesc: 'Track a single domain across all ages: Communication, Music, Mind & Body, Social, Building, and more.',
   domainMeta: 'Track one thread through time',
   universe: 'Universes',
-  universeDesc: 'Books, films, games, maker systems, and literary canons. The content library that drives the framework.',
-  universeMeta: `${universeCount} content universes`,
+  universeDesc: 'The content library — books, films, games, maker systems, and practice domains. A focused view of the curated material that drives the curriculum.',
+  universeMeta: `${universeCount}+ UNIVERSES`,
 };
 ---
 
@@ -46,7 +48,7 @@ const t = lang === 'es' ? {
   </div>
 
   <div class="home-grid">
-    <button type="button" class="home-card" data-nav="framework">
+    <button type="button" class="home-card home-card-full" data-nav="framework">
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
       </div>
@@ -54,6 +56,8 @@ const t = lang === 'es' ? {
       <p class="home-card-desc">{t.frameworkDesc}</p>
       <span class="home-card-meta">{t.frameworkMeta}</span>
     </button>
+
+    <div class="home-section-label">{t.sectionLabel}</div>
 
     <button type="button" class="home-card" data-nav="age">
       <div class="home-card-icon">
@@ -73,7 +77,7 @@ const t = lang === 'es' ? {
       <span class="home-card-meta">{t.domainMeta}</span>
     </button>
 
-    <button type="button" class="home-card" data-nav="universe">
+    <button type="button" class="home-card home-card-full" data-nav="universe">
       <div class="home-card-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
       </div>

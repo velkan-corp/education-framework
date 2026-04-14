@@ -6,7 +6,7 @@ whyItBelongs: "FromSoft games are the sharpest available training for persistenc
 tags: [game, english, philosophy]
 languages: [english, japanese]
 targets: [resilient-self-efficacy, agency, first-principles-reasoning, adaptability]
-models: [via-negativa, antifragility, model-failure, cause-effect]
+models: [via-negativa, antifragility, model-failure, cause-effect, skin-in-the-game]
 intensity: extreme
 riskFlags: [violence, despair]
 socialValue: niche

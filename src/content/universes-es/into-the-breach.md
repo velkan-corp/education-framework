@@ -6,7 +6,7 @@ whyItBelongs: "Into the Breach es una de las formas más puras de enseñar pensa
 tags: [game, strategy, english]
 languages: [english]
 targets: [first-principles-reasoning, agency, adaptability, resilient-self-efficacy]
-models: [cause-effect, feedback-loops, probability, model-failure]
+models: [cause-effect, feedback-loops, probability, model-failure, leverage]
 intensity: medium
 socialValue: niche
 substitutes: [chess, xcom, baba-is-you]

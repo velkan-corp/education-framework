@@ -6,7 +6,7 @@ whyItBelongs: "Fullmetal Alchemist: Brotherhood es una de las mejores obras ancl
 tags: [anime, japanese]
 languages: [japanese]
 targets: [resilient-self-efficacy, first-principles-reasoning, compassion-kindness, adaptability]
-models: [cause-effect, incentives, via-negativa, model-failure]
+models: [cause-effect, incentives, via-negativa, model-failure, skin-in-the-game]
 intensity: high
 riskFlags: [violence, coercion]
 socialValue: bridge

@@ -6,7 +6,7 @@ whyItBelongs: "The framework teaches mental models (feedback loops, compounding,
 tags: [books, english, philosophy, strategy]
 languages: [english]
 targets: [first-principles-reasoning, adaptability, self-awareness, agency, deep-curiosity]
-models: [feedback-loops, compounding, incentives, emergence, probability, cause-effect, model-failure]
+models: [feedback-loops, compounding, incentives, emergence, probability, cause-effect, model-failure, scale]
 intensity: high
 socialValue: bridge
 phases:

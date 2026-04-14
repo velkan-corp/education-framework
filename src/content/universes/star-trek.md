@@ -6,7 +6,7 @@ whyItBelongs: "Star Trek is one of the best vehicles for teaching institutions, 
 tags: [cinema, books, english, philosophy]
 languages: [english]
 targets: [agency, first-principles-reasoning, communication-mastery, compassion-kindness]
-models: [feedback-loops, incentives, probability, via-negativa, model-failure]
+models: [feedback-loops, incentives, probability, via-negativa, model-failure, scale]
 intensity: medium
 riskFlags: [violence, manipulation]
 socialValue: bridge

@@ -92,6 +92,7 @@ order: 0
 <p><strong>Efecto de examen (Roediger & Karpicke, 2006):</strong> Recuperar activamente la información produce un 50% mejor retención a largo plazo que releerla.</p>
 <p><strong>Práctica deliberada de Ericsson (1993):</strong> El rendimiento experto se explica por práctica específicamente diseñada para abordar debilidades, con feedback inmediato, en el límite de la capacidad actual.</p>
 </details>
+<p><strong>La velocidad como contrapeso.</strong> El marco podría producir pensadores brillantes que sobreanalizan y subactúan. La corrección: la mayoría de las decisiones son reversibles. La distinción de Bezos entre "puerta de un sentido vs. puerta de dos sentidos" — las puertas de un sentido (irreversibles, de alta consecuencia) merecen deliberación cuidadosa. Las puertas de dos sentidos (reversibles, de baja consecuencia) deben tomarse rápido con el 70% de la información que desearías tener, y luego ajustarse. El sesgo es hacia la acción: lanzar vence a planificar pasado un umbral. Un niño que lanza diez proyectos imperfectos aprende más que un niño que pule uno para siempre. Aplicado al propio marco: implementar, observar, ajustar — no planificar perfectamente y luego implementar.</p>
 </details>
 
 <details class="principle">
@@ -173,8 +174,8 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>El Kit de Herramientas de Pensamiento</h2>
 <h3>Las Capas de la Cebolla</h3>
 <p>Cada concepto fundamental se revisita anualmente con mayor profundidad: Experimentar (4-7) → Nombrar (8-10) → Poner a Prueba (11-13) → Sintetizar (14-16) → Criticar (17-18). Semanas de inmersión intensiva dentro de cada año, y luego reenganche al año siguiente.</p>
-<h3>Dieciséis Modelos Universales</h3>
-<p>Introducidos progresivamente a través de las Capas de la Cebolla. Cuatro grupos equilibrados de cuatro a lo largo de cuatro capas. Consulta la sección de Modelos Mentales de cada fase para el enfoque específico por edad.</p>
+<h3>Diecinueve Modelos Universales</h3>
+<p>Introducidos progresivamente a través de las Capas de la Cebolla. Cuatro grupos a lo largo de cuatro capas (4-5-5-5). Consulta la sección de Modelos Mentales de cada fase para el enfoque específico por edad.</p>
 
 <div class="model-timeline">
 <div class="model-age-group">
@@ -193,6 +194,7 @@ order: 0
 <div class="model-card"><span class="model-num">6</span><strong>Interés Compuesto</strong><br>¿Qué pasa si esto continúa durante 10 años?</div>
 <div class="model-card"><span class="model-num">7</span><strong>Probabilidad</strong><br>¿Cuál es la probabilidad real?</div>
 <div class="model-card"><span class="model-num">8</span><strong>Coste de Oportunidad</strong><br>¿A qué renuncio al elegir esto?</div>
+<div class="model-card"><span class="model-num">17</span><strong>Apalancamiento</strong><br>¿Dónde está el punto de mayor retorno para aplicar el esfuerzo?</div>
 </div>
 </div>
 <div class="model-age-group">
@@ -202,6 +204,7 @@ order: 0
 <div class="model-card"><span class="model-num">10</span><strong>Opuestos Complementarios</strong><br>¿Esto es un o-lo-uno-o-lo-otro, o un ambos-a-la-vez?</div>
 <div class="model-card"><span class="model-num">11</span><strong>Via Negativa</strong><br>¿Qué mejora al quitar en vez de añadir?</div>
 <div class="model-card"><span class="model-num">12</span><strong>Sesgos Cognitivos</strong><br>¿Cómo me está engañando mi cerebro ahora mismo?</div>
+<div class="model-card"><span class="model-num">18</span><strong>Piel en el Juego</strong><br>¿Asume esta persona las consecuencias de su consejo?</div>
 </div>
 </div>
 <div class="model-age-group">
@@ -211,6 +214,7 @@ order: 0
 <div class="model-card"><span class="model-num">14</span><strong>Teoría de Juegos</strong><br>¿Cómo afecta la estrategia del otro jugador a la mía?</div>
 <div class="model-card"><span class="model-num">15</span><strong>Fallo del Modelo</strong><br>¿Dónde da este modelo la respuesta equivocada?</div>
 <div class="model-card"><span class="model-num">16</span><strong>Estructuras de Poder</strong><br>¿Quién decide, quién se beneficia y por qué persiste este arreglo?</div>
+<div class="model-card"><span class="model-num">19</span><strong>Escala</strong><br>¿Qué cambia cuando haces esto más grande o más pequeño?</div>
 </div>
 </div>
 </div>
@@ -259,10 +263,25 @@ order: 0
 <p>Adaptado del formato pedagógico de Astra Nova School. Escenarios abiertos con 3-5 opciones defendibles y sin una única respuesta correcta. El niño debe argumentar una posición, escuchar posiciones opuestas y navegar el desacuerdo constructivo. Se aplican semanalmente en la cena desde los 8 años, con complejidad creciente. Ejemplos: "Un tesoro descubierto — ¿quién merece el mayor pago: el investigador, el traductor o el descubridor?" "Un colegio debe eliminar un programa — arte, deporte o música. ¿Cuál y por qué?" Esto operacionaliza el razonamiento moral (Objetivo 2) y el pensamiento desde primeros principios (Objetivo 5) sin moralizar. El formato enseña que personas razonables pueden discrepar en valores, y que defender una posición requiere evidencia y lógica, no volumen.</p>
 <h3>Multi-Medio, Idioma Original</h3>
 <p>Contenido a través de libros, cómics, cine, anime, videojuegos, series de televisión. Siempre en idioma original con subtítulos — sin doblaje. Las obras ancla reciben el tratamiento completo del ciclo de engagement. La dieta de contenido más amplia es modo Absorber: consume libremente, no sobreanalices. El volumen es bueno.</p>
+<h3>El Gusto como Capacidad de Desarrollo</h3>
+<p>El gusto es la capacidad de distinguir lo bueno de lo excelente en un dominio. Precede a la capacidad de producir trabajo excelente — debes ver la brecha antes de poder cerrarla. El gusto se desarrolla a través de la exposición sostenida al mejor trabajo en un dominio, no a través de la explicación.</p>
+<p>El sistema de universos cumple parcialmente esta función — exposición curada a contenido excelente en múltiples medios. Pero el gusto como capacidad de desarrollo nombrada requiere atención explícita:</p>
+<ul>
+<li><strong>Exposición a lo mejor, no a lo más popular.</strong> La diferencia entre una buena película y una excelente. Entre código competente y código elegante. Entre un ensayo decente y uno que cambia tu forma de pensar.</li>
+<li><strong>Articular la calidad.</strong> "¿Por qué es bueno esto?" es la pregunta semilla. No solo "me gusta" sino "¿qué hace específicamente que esto sea excelente?" Esto es Dominio de la Comunicación (Objetivo 6) aplicado a la evaluación.</li>
+<li><strong>La brecha gusto-capacidad como motivación.</strong> La brecha entre la capacidad actual del niño y su gusto — su capacidad de ver cómo luce la excelencia — es el motor de la práctica deliberada. Cuando el gusto supera la capacidad, la frustración es productiva. Cuando la capacidad supera el gusto, el crecimiento se estanca.</li>
+<li><strong>Especificidad de dominio.</strong> El gusto en música no se transfiere al gusto en código. Cada dominio requiere su propio corpus de exposición. El enfoque multi-universo y multi-medio del marco desarrolla el gusto en múltiples dominios simultáneamente.</li>
+</ul>
 <h3>Arquitectura Lingüística</h3>
 <p>L1 + L2 bilingüe desde el nacimiento (OPOL — One Parent One Language / Un Padre Un Idioma). Ninguna lengua subordinada. L3 a través de exposición por inmersión desde los 6-8 años: tutor privado, verano en el país, no aula. En Madrid: inglés (padre) + español (madre/colegio) + francés u otra L3.</p>
 <h3>Instrucción Privada por Defecto</h3>
 <p>Para el dominio del nicho de maestría: siempre el mejor instructor privado disponible. 1:1 con un profesional que actúe a alto nivel, no solo que enseñe. No clases grupales — esas son para habilidades sociales/de conjunto. Prioriza la calidad del maestro por encima de todas las demás decisiones de recursos.</p>
+<h3>Redes de Pares Aspiracionales</h3>
+<p>La selección institucional determina el grupo de pares — este marco la trata como la decisión parental de mayor impacto después de los 12 (Harris, 1998). Pero la selección institucional optimiza para la <em>protección</em> (evitar malas influencias) más que para la <em>aceleración</em> (encontrar personas que eleven tu techo). Ambas importan. El marco necesita un mecanismo deliberado para la segunda.</p>
+<p><strong>El mecanismo:</strong> Los pares aspiracionales recalibran tu clase de referencia de lo que es posible. Un niño que es el mejor ajedrecista de su colegio tiene una arquitectura de ambición. El mismo niño, después de un torneo de fin de semana donde un par de su edad juega a 2100 Elo, tiene otra diferente. No puedes des-conocer cómo luce la excelencia a tu edad. El techo se mueve, y no vuelve atrás.</p>
+<p><strong>Las comunidades de pares online son infraestructura legítima.</strong> La geografía limita los pares físicos pero no los intelectuales. Un niño en las afueras de Madrid puede tener interacción diaria con los mejores jóvenes ajedrecistas (chess.com, Lichess), programadores (Codeforces, GitHub, AoPS), matemáticos (comunidad AoPS, servidores Discord de olimpiadas), escritores (comunidades de fan fiction, talleres de escritura) y creadores (comunidad Scratch, foros de Arduino) del mundo — si se le conecta deliberadamente. Estos no son sustitutos inferiores de los pares físicos; son acceso a una densidad de talento que ninguna ciudad individual proporciona.</p>
+<p><strong>Programas de verano como recalibración anual.</strong> Intensivos residenciales con pares de capacidad igual o superior — campamentos de matemáticas, veranos de conservatorio, bootcamps de programación, programas de investigación (RSI, MOSTEC, ESTALMAT) — son la reunión física anual de las redes de pares aspiracionales. El niño vuelve con un techo recalibrado y, a menudo, relaciones duraderas con los mejores jóvenes de su dominio.</p>
+<p><strong>Buscar la sala donde eres el peor.</strong> Esto es distinto de la ubicación social no curada de la arquitectura de adversidad (que construye resiliencia a través de la incomodidad en entornos sociales desconocidos). La búsqueda de pares aspiracionales trata sobre <em>ambición</em>, no resiliencia. El ajedrecista que se une al club donde pierde todas las partidas. El músico que toca con profesionales. El programador que contribuye a un proyecto de código abierto donde los demás contribuidores son mejores. La incomodidad es incidental; la recalibración es el objetivo.</p>
 <h3>La Capacidad Libera</h3>
 <p>La competencia material produce independencia social. Cuando entiendes cómo se hace un zapato, la mística de marca se evapora. Cuando puedes hacer y reparar cosas, necesitas menos — y la necesidad es el gancho que usa el consumismo. Cuando tu identidad está anclada en la capacidad y no en el consumo, la presión social de "tener las cosas correctas" no tiene palanca. El marco desarrolla dos hilos que se refuerzan mutuamente a lo largo de todas las fases: <strong>alfabetización material</strong> (entender cómo se hacen los objetos cotidianos, valorar la artesanía por encima de la marca, desarrollar la capacidad de hacer y reparar) e <strong>independencia social</strong> (desarrollar un locus de evaluación interno donde tu sentido de valía proviene de tus propios valores, no de la aprobación externa). No son currículos separados — están causalmente vinculados. La persona que puede hacer, reparar y entender es libre de un modo en que la persona que solo puede comprar no lo es.</p>
 
@@ -357,6 +376,18 @@ order: 0
 
 <h3>Escalación Ship-It</h3>
 <p><strong>Edad 10:</strong> Proyecto de juguete — funciona, lo enseñas a la familia. <strong>Edad 12:</strong> Proyecto con usuarios reales (100+) o ingresos reales. <strong>Edad 14:</strong> Proyecto a escala — 1.000+ usuarios, ingresos significativos o impacto comunitario medible. <strong>Edad 16:</strong> Portfolio de 3+ proyectos lanzados con validación externa demostrable.</p>
+
+<h3>Distribución — Hacer la Excelencia Encontrable</h3>
+<p>La brecha entre "Construí algo excelente" y "las personas adecuadas lo saben" es la distribución. Lanzar es necesario pero no suficiente. La distribución activa — hacer el trabajo encontrable por las personas que lo valorarían — es una habilidad distinta de la creación.</p>
+<p><strong>La distribución no es vanidad.</strong> Es cómo el valor encuentra a su audiencia. Un ensayo brillante que nadie lee tiene impacto cero. El mismo ensayo, publicado donde las 50 personas adecuadas lo ven, puede cambiar una trayectoria profesional. Cada pieza compartida construye reputación, red y superficie de oportunidad. El niño que crea trabajo excelente pero nunca lo distribuye está dejando interés compuesto sobre la mesa.</p>
+<p><strong>La escalación:</strong></p>
+<ul>
+<li><strong>Edad 10-12:</strong> Compartir dentro de la familia y la comunidad inmediata. Mostrar y contar. Blog o newsletter familiar.</li>
+<li><strong>Edad 12-14:</strong> Compartir en comunidades específicas del dominio. Publicar en foros, contribuir a código abierto, participar en competiciones, publicar en medios del colegio.</li>
+<li><strong>Edad 14-16:</strong> Presencia pública curada. Sitio web de portfolio, blog con suscriptores reales, redes sociales sobre el nicho, presentaciones en conferencias.</li>
+<li><strong>Edad 16-18:</strong> Distribución de grado profesional. Artículos publicados, canal de YouTube, podcast, newsletter con crecimiento. El trabajo les precede en las salas.</li>
+</ul>
+<p>La distribución conecta con el Dominio de la Comunicación (Objetivo 6) y la Producción Creativa (Objetivo 11). Crear el trabajo y distribuir el trabajo son habilidades complementarias — ninguna sustituye a la otra.</p>
 
 <h3>Trayectoria de Investigación y Publicación</h3>
 <p><strong>Edad 13-14:</strong> Identificar laboratorios/investigadores universitarios en el nicho. Email en frío a profesores (los padres ayudan a redactarlo). Ofrecer voluntariado/prácticas.</p>

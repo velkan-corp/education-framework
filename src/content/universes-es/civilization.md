@@ -6,7 +6,7 @@ whyItBelongs: "Civilization es util porque convierte grandes abstracciones histo
 tags: [game, strategy, english, stem]
 languages: [english]
 targets: [agency, deep-curiosity, first-principles-reasoning, adaptability]
-models: [feedback-loops, incentives, compounding, emergence, model-failure, power-structures, game-theory, opportunity-cost]
+models: [feedback-loops, incentives, compounding, emergence, model-failure, power-structures, game-theory, opportunity-cost, scale]
 intensity: medium
 socialValue: bridge
 substitutes: [age-of-empires, star-trek, dune]

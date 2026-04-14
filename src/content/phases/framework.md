@@ -92,6 +92,7 @@ order: 0
 <p><strong>Testing effect (Roediger & Karpicke, 2006):</strong> Actively recalling information produces 50% better long-term retention than re-reading.</p>
 <p><strong>Ericsson's deliberate practice (1993):</strong> Expert performance is explained by practice specifically designed to address weaknesses, with immediate feedback, at the edge of current ability.</p>
 </details>
+<p><strong>Speed as counterweight.</strong> The framework could produce brilliant thinkers who over-analyse and under-act. The correction: most decisions are reversible. Bezos's "one-way door vs. two-way door" — one-way doors (irreversible, high-consequence) deserve careful deliberation. Two-way doors (reversible, low-consequence) should be made fast with 70% of the information you wish you had, then adjusted. The bias is toward action: shipping beats planning past a threshold. A child who ships ten imperfect projects learns more than a child who polishes one forever. Applied to the framework itself: implement, observe, adjust — not plan perfectly, then implement.</p>
 </details>
 
 <details class="principle">
@@ -173,8 +174,8 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
-<h3>Sixteen Universal Models</h3>
-<p>Introduced progressively through the Onion Layers. Four balanced groups of four across four layers. See each phase's Mental Models section for age-specific engagement.</p>
+<h3>Nineteen Universal Models</h3>
+<p>Introduced progressively through the Onion Layers. Four groups across four layers (4-5-5-5). See each phase's Mental Models section for age-specific engagement.</p>
 
 <div class="model-timeline">
 <div class="model-age-group">
@@ -193,6 +194,7 @@ order: 0
 <div class="model-card"><span class="model-num">6</span><strong>Compounding</strong><br>What happens if this continues for 10 years?</div>
 <div class="model-card"><span class="model-num">7</span><strong>Probability</strong><br>What's the actual likelihood?</div>
 <div class="model-card"><span class="model-num">8</span><strong>Opportunity Cost</strong><br>What am I giving up by choosing this?</div>
+<div class="model-card"><span class="model-num">17</span><strong>Leverage</strong><br>Where is the highest-return point to apply effort?</div>
 </div>
 </div>
 <div class="model-age-group">
@@ -202,6 +204,7 @@ order: 0
 <div class="model-card"><span class="model-num">10</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
 <div class="model-card"><span class="model-num">11</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
 <div class="model-card"><span class="model-num">12</span><strong>Cognitive Biases</strong><br>How is my brain misleading me right now?</div>
+<div class="model-card"><span class="model-num">18</span><strong>Skin in the Game</strong><br>Does this person bear the consequences of their advice?</div>
 </div>
 </div>
 <div class="model-age-group">
@@ -211,6 +214,7 @@ order: 0
 <div class="model-card"><span class="model-num">14</span><strong>Game Theory</strong><br>How does the other player's strategy affect mine?</div>
 <div class="model-card"><span class="model-num">15</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
 <div class="model-card"><span class="model-num">16</span><strong>Power Structures</strong><br>Who decides, who benefits, and why does this arrangement persist?</div>
+<div class="model-card"><span class="model-num">19</span><strong>Scale</strong><br>What changes when you make this bigger or smaller?</div>
 </div>
 </div>
 </div>
@@ -259,10 +263,25 @@ order: 0
 <p>Adapted from Astra Nova School's pedagogical format. Open-ended scenarios with 3-5 defensible options and no single correct answer. The child must argue a position, hear opposing positions, and navigate constructive disagreement. Applied weekly at dinner from age 8, increasing in complexity. Examples: "A discovered treasure — who deserves the most payment: the researcher, the translator, or the finder?" "A school must cut one programme — art, sport, or music. Which and why?" This operationalises moral reasoning (Target 2) and first-principles thinking (Target 5) without moralising. The format teaches that reasonable people can disagree on values, and that defending a position requires evidence and logic, not volume.</p>
 <h3>Multi-Medium, Original Language</h3>
 <p>Content across books, comics, film, anime, games, TV series. Always in original language with subtitles — no dubbing. Anchor works get full full engagement cycle treatment. Broader content diet is Absorb-mode: consume freely, don't over-analyze. Volume is good.</p>
+<h3>Taste as Developmental Capacity</h3>
+<p>Taste is the ability to distinguish good from great in a domain. It precedes the ability to produce great work — you must see the gap before you can close it. Taste is developed through sustained exposure to the best work in a domain, not through explanation.</p>
+<p>The universe system partially serves this function — curated exposure to excellent content across media. But taste as a named developmental capacity requires explicit attention:</p>
+<ul>
+<li><strong>Exposure to the best, not the most popular.</strong> The difference between a good film and a great one. Between competent code and elegant code. Between a decent essay and one that changes how you think.</li>
+<li><strong>Articulating quality.</strong> "Why is this good?" is the seed question. Not just "I like it" but "what specifically makes this excellent?" This is Communication Mastery (Target 6) applied to evaluation.</li>
+<li><strong>The taste-ability gap as motivation.</strong> The gap between the child's current ability and their taste — their ability to see what excellent looks like — is the engine of deliberate practice. When taste exceeds ability, the frustration is productive. When ability exceeds taste, growth stalls.</li>
+<li><strong>Domain specificity.</strong> Taste in music does not transfer to taste in code. Each domain requires its own exposure corpus. The framework's multi-universe, multi-medium approach develops taste across domains simultaneously.</li>
+</ul>
 <h3>Language Architecture</h3>
 <p>L1 + L2 bilingual from birth (OPOL — One Parent One Language). Neither language subordinate. L3 through immersion exposure starting age 6-8: private tutor, summer in-country, not classroom. In Madrid: English (father) + Spanish (mother/school) + French or other L3.</p>
 <h3>Private Instruction Default</h3>
 <p>For the niche mastery domain: always the best available private instructor. 1:1 with a practitioner who performs at a high level, not just teaches. Not group classes — those are for social/ensemble skills. Prioritise teacher quality above all other resource decisions.</p>
+<h3>Aspirational Peer Networks</h3>
+<p>Institutional selection determines the peer group — this framework treats it as the single highest-leverage parental decision after age 12 (Harris, 1998). But institutional selection optimises for <em>protection</em> (avoid bad influence) more than <em>acceleration</em> (find people who raise your ceiling). Both matter. The framework needs a deliberate mechanism for the second.</p>
+<p><strong>The mechanism:</strong> Aspirational peers recalibrate your reference class of what is possible. A child who is the best chess player in their school has one ambition architecture. The same child, after a weekend tournament where a peer their age plays at 2100 Elo, has a different one. You cannot un-know what excellence at your age looks like. The ceiling moves, and it doesn't move back.</p>
+<p><strong>Online peer communities are legitimate infrastructure.</strong> Geography constrains physical peers but not intellectual ones. A child in suburban Madrid can have daily interaction with the best young chess players (chess.com, Lichess), programmers (Codeforces, GitHub, AoPS), mathematicians (AoPS community, olympiad Discord servers), writers (fan fiction communities, writing workshops), and makers (Scratch community, Arduino forums) in the world — if deliberately connected. These are not inferior substitutes for physical peers; they are access to a talent density that no single city provides.</p>
+<p><strong>Summer programmes as annual recalibration.</strong> Residential intensives with peers of equal or greater ability — math camps, conservatory summers, coding bootcamps, research programmes (RSI, MOSTEC, ESTALMAT) — are the annual physical gathering for aspirational peer networks. The child returns with a recalibrated ceiling and, often, lasting relationships with the best young people in their domain.</p>
+<p><strong>Seeking the room where you are the worst.</strong> This is distinct from the hardship architecture's non-curated social placement (which builds resilience through discomfort in unfamiliar social environments). Aspirational peer seeking is about <em>ambition</em>, not resilience. The chess player who joins the club where they lose every game. The musician who sits in with professionals. The coder who contributes to an open-source project where the other contributors are better. The discomfort is incidental; the recalibration is the point.</p>
 <h3>Capability Liberates</h3>
 <p>Material competence produces social independence. When you understand how a shoe is made, brand mystique evaporates. When you can make and repair things, you need less — and need is the hook consumerism uses. When your identity is anchored in capability rather than consumption, social pressure to "have the right things" has no leverage. The framework develops two reinforcing threads across all phases: <strong>material literacy</strong> (understand how everyday objects are made, value craftsmanship over brand, develop the capability to make and repair) and <strong>social independence</strong> (develop an internal locus of evaluation where your sense of worth comes from your own values, not external approval). These are not separate curricula — they are causally linked. The person who can make, repair, and understand is free in a way that the person who can only buy is not.</p>
 
@@ -357,6 +376,18 @@ order: 0
 
 <h3>Ship-It Escalation</h3>
 <p><strong>Age 10:</strong> Toy project — it works, shown to family. <strong>Age 12:</strong> Project with real users (100+) or real revenue. <strong>Age 14:</strong> Project at scale — 1,000+ users, meaningful revenue, or measurable community impact. <strong>Age 16:</strong> Portfolio of 3+ shipped projects with demonstrable external validation.</p>
+
+<h3>Distribution — Making Excellence Findable</h3>
+<p>The gap between "I built something excellent" and "the right people know about it" is distribution. Shipping is necessary but not sufficient. Active distribution — making work findable by the people who would value it — is a distinct skill from creation.</p>
+<p><strong>Distribution is not vanity.</strong> It is how value finds its audience. A brilliant essay read by no one has zero impact. The same essay, posted where the right 50 people see it, can change a career trajectory. Every shared piece builds reputation, network, and opportunity surface area. The child who creates excellent work but never distributes it is leaving compounding on the table.</p>
+<p><strong>The escalation:</strong></p>
+<ul>
+<li><strong>Age 10–12:</strong> Share within family and immediate community. Show-and-tell. Family blog or newsletter.</li>
+<li><strong>Age 12–14:</strong> Share in domain-specific communities. Post on forums, contribute to open-source, enter competitions, publish in school outlets.</li>
+<li><strong>Age 14–16:</strong> Curated public presence. Portfolio site, blog with real subscribers, social media about the niche, conference presentations.</li>
+<li><strong>Age 16–18:</strong> Professional-grade distribution. Published articles, YouTube channel, podcast, newsletter with growth. The work precedes them into rooms.</li>
+</ul>
+<p>Distribution connects to Communication Mastery (Target 6) and Creative Production (Target 11). Creating the work and distributing the work are complementary skills — neither substitutes for the other.</p>
 
 <h3>Research & Publication Track</h3>
 <p><strong>Age 13-14:</strong> Identify university labs/researchers in the niche. Cold email professors (parent helps draft). Offer to volunteer/intern.</p>

@@ -92,6 +92,9 @@ order: 3
 <span class="model-dot future" data-tip="Teoría de Juegos — ¿Cómo afecta la estrategia del otro jugador a la mía?"><span class="model-dot-num">14</span><span class="model-dot-name">Juegos</span></span>
 <span class="model-dot future" data-tip="Fallo del Modelo — ¿Dónde da este modelo la respuesta equivocada?"><span class="model-dot-num">15</span><span class="model-dot-name">Fallo</span></span>
 <span class="model-dot future" data-tip="Estructuras de Poder — ¿Quién decide, quién se beneficia y por qué persiste este arreglo?"><span class="model-dot-num">16</span><span class="model-dot-name">Poder</span></span>
+<span class="model-dot future" data-tip="Apalancamiento — ¿Dónde está el punto de mayor retorno para aplicar el esfuerzo?"><span class="model-dot-num">17</span><span class="model-dot-name">Apal.</span></span>
+<span class="model-dot future" data-tip="Piel en el Juego — ¿Asume esta persona las consecuencias de su consejo?"><span class="model-dot-num">18</span><span class="model-dot-name">Piel</span></span>
+<span class="model-dot future" data-tip="Escala — ¿Qué cambia cuando haces esto más grande o más pequeño?"><span class="model-dot-num">19</span><span class="model-dot-name">Escala</span></span>
 </div>
 </div>
 <p>Capa 1 — Experiencia. Introducir a través de historias, juego y experiencia encarnada. Sin jerga.</p>

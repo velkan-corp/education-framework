@@ -6,7 +6,7 @@ whyItBelongs: "Vinland Saga importa porque toma la historia del guerrero lo sufi
 tags: [anime, japanese]
 languages: [japanese]
 targets: [self-awareness, compassion-kindness, resilient-self-efficacy, adaptability]
-models: [via-negativa, complementary-opposites, feedback-loops, model-failure]
+models: [via-negativa, complementary-opposites, feedback-loops, model-failure, skin-in-the-game]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: niche

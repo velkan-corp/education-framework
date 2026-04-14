@@ -6,7 +6,7 @@ whyItBelongs: "XCOM is useful because it makes uncertainty and irreversible cost
 tags: [game, strategy, english]
 languages: [english]
 targets: [resilient-self-efficacy, agency, first-principles-reasoning, adaptability]
-models: [feedback-loops, probability, antifragility, model-failure]
+models: [feedback-loops, probability, antifragility, model-failure, leverage]
 intensity: high
 riskFlags: [violence]
 socialValue: niche

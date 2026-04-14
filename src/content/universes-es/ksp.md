@@ -6,7 +6,7 @@ whyItBelongs: "KSP es una de las formas más limpias de hacer que la física se 
 tags: [game, english, stem]
 languages: [english]
 targets: [resilient-self-efficacy, agency, first-principles-reasoning, physical-system-mastery]
-models: [cause-effect, feedback-loops, compounding, probability, model-failure]
+models: [cause-effect, feedback-loops, compounding, probability, model-failure, leverage]
 intensity: medium
 socialValue: niche
 substitutes: [minecraft, factorio, outer-wilds]

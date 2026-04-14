@@ -6,7 +6,7 @@ whyItBelongs: "D&D es uno de los mejores sistemas creativos sociales porque obli
 tags: [game, books, strategy, english]
 languages: [english]
 targets: [communication-mastery, relational-intelligence, deep-curiosity, adaptability]
-models: [probability, cause-effect, complementary-opposites, model-failure]
+models: [probability, cause-effect, complementary-opposites, model-failure, scale]
 intensity: medium
 socialValue: bridge
 substitutes: [mtg, pokemon, lego]

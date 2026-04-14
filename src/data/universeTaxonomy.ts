@@ -34,6 +34,8 @@ export const UNIVERSE_TAGS = [
   'classics',
   'philosophy',
   'stem',
+  'activity',
+  'physical',
 ] as const;
 
 export const UNIVERSE_KINDS = [
@@ -42,6 +44,7 @@ export const UNIVERSE_KINDS = [
   'strategy-system',
   'maker-system',
   'literary-canon',
+  'practice-domain',
 ] as const;
 
 export const UNIVERSE_LANGUAGES = [
@@ -88,6 +91,9 @@ export const MODEL_IDS = [
   'opportunity-cost',
   'cognitive-biases',
   'power-structures',
+  'leverage',
+  'skin-in-the-game',
+  'scale',
 ] as const;
 
 export const INTENSITY_LEVELS = ['low', 'medium', 'high', 'extreme'] as const;
@@ -111,6 +117,7 @@ export const UNIVERSE_KIND_LABELS: Record<(typeof UNIVERSE_KINDS)[number], strin
   'strategy-system': 'Strategy System',
   'maker-system': 'Maker System',
   'literary-canon': 'Literary Canon',
+  'practice-domain': 'Practice Domain',
 };
 
 export const LANGUAGE_LABELS: Record<(typeof UNIVERSE_LANGUAGES)[number], string> = {
@@ -157,6 +164,9 @@ export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {
   'opportunity-cost': 'Opportunity Cost',
   'cognitive-biases': 'Cognitive Biases',
   'power-structures': 'Power Structures',
+  leverage: 'Leverage',
+  'skin-in-the-game': 'Skin in the Game',
+  scale: 'Scale',
 };
 
 export const INTENSITY_LABELS: Record<(typeof INTENSITY_LEVELS)[number], string> = {

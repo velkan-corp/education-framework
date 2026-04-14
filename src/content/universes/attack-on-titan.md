@@ -6,7 +6,7 @@ whyItBelongs: "Attack on Titan is a hard text about how fear, inheritance, and i
 tags: [anime, books, japanese, philosophy]
 languages: [japanese]
 targets: [first-principles-reasoning, self-awareness, relational-intelligence, adaptability]
-models: [cause-effect, incentives, maps-not-territory, model-failure]
+models: [cause-effect, incentives, maps-not-territory, model-failure, skin-in-the-game]
 intensity: extreme
 riskFlags: [violence, despair, coercion]
 socialValue: niche

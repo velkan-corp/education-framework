@@ -6,7 +6,7 @@ whyItBelongs: "Papers, Please es uno de los simuladores de ética institucional 
 tags: [game, english]
 languages: [english]
 targets: [self-awareness, first-principles-reasoning, relational-intelligence, adaptability]
-models: [incentives, compounding, via-negativa, model-failure]
+models: [incentives, compounding, via-negativa, model-failure, skin-in-the-game]
 intensity: high
 riskFlags: [violence, coercion, despair]
 socialValue: niche

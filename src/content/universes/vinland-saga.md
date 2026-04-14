@@ -6,7 +6,7 @@ whyItBelongs: "Vinland Saga matters because it takes the warrior story seriously
 tags: [anime, japanese]
 languages: [japanese]
 targets: [self-awareness, compassion-kindness, resilient-self-efficacy, adaptability]
-models: [via-negativa, complementary-opposites, feedback-loops, model-failure]
+models: [via-negativa, complementary-opposites, feedback-loops, model-failure, skin-in-the-game]
 intensity: high
 riskFlags: [violence, despair]
 socialValue: niche

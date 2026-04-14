@@ -6,7 +6,7 @@ whyItBelongs: "Los juegos de FromSoft son el entrenamiento más afilado disponib
 tags: [game, english, philosophy]
 languages: [english, japanese]
 targets: [resilient-self-efficacy, agency, first-principles-reasoning, adaptability]
-models: [via-negativa, antifragility, model-failure, cause-effect]
+models: [via-negativa, antifragility, model-failure, cause-effect, skin-in-the-game]
 intensity: extreme
 riskFlags: [violence, despair]
 socialValue: niche

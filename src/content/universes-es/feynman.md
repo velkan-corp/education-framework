@@ -6,7 +6,7 @@ whyItBelongs: "Feynman es la encarnación del razonamiento desde primeros princi
 tags: [books, english, stem, philosophy]
 languages: [english]
 targets: [first-principles-reasoning, deep-curiosity, communication-mastery, resilient-self-efficacy, self-awareness]
-models: [cause-effect, maps-not-territory, inversion, model-failure]
+models: [cause-effect, maps-not-territory, inversion, model-failure, leverage]
 intensity: medium
 socialValue: niche
 phases:

@@ -6,7 +6,7 @@ whyItBelongs: "Age of Empires convierte la historia en una secuencia de decision
 tags: [game, strategy, english]
 languages: [english]
 targets: [deep-curiosity, first-principles-reasoning, agency, adaptability]
-models: [cause-effect, feedback-loops, compounding, model-failure]
+models: [cause-effect, feedback-loops, compounding, model-failure, scale]
 intensity: medium
 socialValue: bridge
 substitutes: [civilization, star-trek, into-the-breach]

@@ -6,7 +6,7 @@ whyItBelongs: "Factorio es una de las herramientas de pensamiento sistémico má
 tags: [game, strategy, stem]
 languages: [english]
 targets: [agency, first-principles-reasoning, adaptability]
-models: [feedback-loops, compounding, emergence, via-negativa, opportunity-cost]
+models: [feedback-loops, compounding, emergence, via-negativa, opportunity-cost, leverage]
 intensity: high
 socialValue: bridge
 substitutes: [minecraft, cities-skylines, into-the-breach]

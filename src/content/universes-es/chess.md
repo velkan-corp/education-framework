@@ -6,7 +6,7 @@ whyItBelongs: "El ajedrez ensena efectos de segundo orden y regulacion emocional
 tags: [strategy, english, stem]
 languages: [english]
 targets: [resilient-self-efficacy, first-principles-reasoning, adaptability]
-models: [cause-effect, probability, compounding, opportunity-cost]
+models: [cause-effect, probability, compounding, opportunity-cost, leverage]
 intensity: medium
 socialValue: bridge
 substitutes: [go, mtg, factorio]

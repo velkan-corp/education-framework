@@ -6,7 +6,7 @@ whyItBelongs: "Age of Empires makes history feel like a sequence of constrained 
 tags: [game, strategy, english]
 languages: [english]
 targets: [deep-curiosity, first-principles-reasoning, agency, adaptability]
-models: [cause-effect, feedback-loops, compounding, model-failure]
+models: [cause-effect, feedback-loops, compounding, model-failure, scale]
 intensity: medium
 socialValue: bridge
 substitutes: [civilization, star-trek, into-the-breach]
