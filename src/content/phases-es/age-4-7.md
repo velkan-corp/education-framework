@@ -286,7 +286,7 @@ order: 3
 <p><strong>Nunca fuerces la conformidad social por tu propia comodidad.</strong> No digas "simplemente sigue la corriente" sobre nada que no implique seguridad. Si el niño quiere llevar el sombrero inusual, traer el libro a la fiesta, o pedir algo diferente de todos en el restaurante — déjale. Estos son ensayos de bajo riesgo para la independencia de alto riesgo posterior.</p>
 <p><strong>Desafíos de comodidad (edad 6–7).</strong> Llevar un sombrero inusual al parque. Traer un libro a una fiesta. Pedir algo diferente de todos en un restaurante. Compartir algo que hiciste, no algo que compraste. Práctica de bajo riesgo en ser visiblemente diferente. Repasa después: "¿Cómo te sentiste? ¿Pasó algo malo?"</p>
 
-<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Construcción y Creación</h2>
+<h2 id="s-making" data-tier="foundational"><span class="material-symbols-rounded">construction</span>Creación y Artesanía</h2>
 
 <h3>Programación</h3>
 <p>Juegos de lógica y secuenciación. Robot Turtles (juego de mesa), Cubetto, o Bee-Bot para programación física. Programación desconectada: "Dame instrucciones paso a paso para hacer un sándwich" — descubren que los ordenadores (y las personas siguiendo instrucciones literalmente) necesitan precisión. Juegos de reconocimiento de patrones. Secuencias de "¿Qué viene después?"</p>
@@ -318,8 +318,6 @@ order: 3
 
 <div class="t-adjust t-wm-adv"><div class="t-label">Memoria de Trabajo: Avanzada</div>Este niño puede mantener un diseño en la mente mientras construye. Da instrucciones de construcción verbales sin referencia visual: "Haz una torre de cinco bloques de ancho y diez de alto, con una puerta en el lado izquierdo." Secuencias de programación de múltiples pasos (6-8 pasos en Cubetto o Scratch Jr.) son manejables. Recetas de cocina de memoria después de una lectura se vuelven accesibles. Elogia mantener el plan en la mente a lo largo de los pasos, no solo el resultado final.</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Memoria de Trabajo: En Desarrollo</div>Mantén las instrucciones visibles durante toda la construcción. Una imagen del objetivo, una guía paso a paso en la mesa, o un padre repitiendo el siguiente paso según sea necesario. No pongas a prueba la memoria durante tareas creativas — la carga cognitiva de construir más recordar excede la capacidad. Las secuencias de programación deben colocarse físicamente (bloques de Cubetto en el tablero) para que el programa completo sea visible, no retenido en la mente.</div>
-
-<h2 id="s-material-culture" data-tier="core"><span class="material-symbols-rounded">handyman</span>Cultura Material y Artesanía</h2>
 
 <h3>Observar y Nombrar</h3>
 <p><strong>Excursiones mensuales para ver cómo se hacen las cosas.</strong> Panadería (ver cómo se da forma y se hornea el pan), zapatero o taller de reparación de calzado, sastre o costurera, taller de cerámica, taller de carpintería, herrero si es accesible. Madrid tiene todo esto. El objetivo: ver que las cosas las hacen personas, usando materiales, con habilidad.</p>

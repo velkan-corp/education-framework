@@ -286,7 +286,7 @@ order: 3
 <p><strong>Never force social conformity for your own comfort.</strong> Do not say "just go along with it" about anything that doesn't involve safety. If the child wants to wear the unusual hat, bring the book to the party, or order something different from everyone else — let them. These are low-stakes practice runs for high-stakes independence later.</p>
 <p><strong>Comfort challenges (age 6–7).</strong> Wear an unusual hat to the park. Bring a book to a party. Order something different from everyone else at a restaurant. Share something you made, not something you bought. Low-stakes practice at being visibly different. Debrief after: "How did it feel? Did anything bad happen?"</p>
 
-<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
+<h2 id="s-making" data-tier="foundational"><span class="material-symbols-rounded">construction</span>Making & Craft</h2>
 
 <h3>Coding</h3>
 <p>Logic games and sequencing. Robot Turtles (board game), Cubetto, or Bee-Bot for physical programming. Unplugged coding: "Give me step-by-step instructions to make a sandwich" — they discover that computers (and people following instructions literally) need precision. Pattern recognition games. "What comes next?" sequences.</p>
@@ -318,8 +318,6 @@ order: 3
 
 <div class="t-adjust t-wm-adv"><div class="t-label">Working Memory: Advanced</div>This child can hold a design in mind while building. Give verbal building instructions without visual reference: "Make a tower that's five blocks wide and ten blocks tall, with a door on the left side." Multi-step coding sequences (6-8 steps in Cubetto or Scratch Jr.) are manageable. Cooking recipes from memory after one read-through become accessible. Praise holding the plan in mind across steps, not just the final result.</div>
 <div class="t-adjust t-wm-dev"><div class="t-label">Working Memory: Developing</div>Keep the instructions visible throughout the build. A picture of the target, a step-by-step guide on the table, or a parent repeating the next step as needed. Don't test memory during creative tasks — the cognitive load of building plus remembering exceeds capacity. Coding sequences should be laid out physically (Cubetto blocks on the board) so the full program is visible, not held in mind.</div>
-
-<h2 id="s-material-culture" data-tier="core"><span class="material-symbols-rounded">handyman</span>Material Culture & Craft</h2>
 
 <h3>Observe & Name</h3>
 <p><strong>Monthly field trips to see how things are made.</strong> Bakery (watch bread being shaped and baked), cobbler or shoe repair shop, tailor or seamstress, ceramics workshop, woodworking shop, blacksmith if accessible. Madrid has all of these. The goal: see that things are made by people, using materials, with skill.</p>

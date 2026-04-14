@@ -141,7 +141,7 @@ order: 1
 <div class="t-adjust t-social-dev"><div class="t-label">Personal-Social: Developing</div>If social engagement is limited — infrequent eye contact, no social smile by 3 months, or no stranger awareness by 8 months — increase face-to-face interaction time with primary caregivers before expanding the social circle. Use exaggerated facial expressions and slow, predictable interaction routines. Consult paediatrician if milestones are significantly delayed.</div>
 <div class="t-adjust t-comm-adv"><div class="t-label">Communication: Advanced</div>In social settings, an early communicator can be the bridge — narrate what the other baby is doing: "She's reaching for the ball too. You could give it to her." This pairs social awareness with language, building the verbal-social connection early. Praise the narration attempt: "You told her about the toy."</div>
 
-<h2 id="s-building" data-tier="core"><span class="material-symbols-rounded">construction</span>Building & Making</h2>
+<h2 id="s-making" data-tier="foundational"><span class="material-symbols-rounded">construction</span>Making & Craft</h2>
 <p>No screens. Sensory play is the building. None of the digital media or structured making tools apply yet — the infant's entire "building" curriculum is tactile exploration, grasping, and cause-and-effect discovery through physical objects.</p>
 
 <div class="t-adjust t-high-react"><div class="t-label">High Reactivity</div>Introduce new textures one at a time. Wet, sticky, or gritty sensory play (finger paint, sand, food play) may trigger aversion. Start with dry, smooth textures and graduate slowly. Never force contact — offer and wait.</div>
@@ -150,7 +150,7 @@ order: 1
 <div class="t-adjust t-ps-adv"><div class="t-label">Problem Solving: Advanced</div>If they show early cause-and-effect mastery (deliberately dropping objects to watch them fall, pulling a cloth to retrieve a toy), increase complexity — hide objects under two covers and let them search, or use toys that require a two-step action to activate. Praise persistence: "You tried both — you kept going."</div>
 <div class="t-adjust t-ps-dev"><div class="t-label">Problem Solving: Developing</div>Simplify to single-step cause-and-effect: push button → light, shake rattle → sound. Use toys with immediate, satisfying feedback. Repeat the same toy interaction many times before introducing variation — mastery of one simple mechanism builds the template for all future problem solving.</div>
 
-<h2 id="s-material-culture" data-tier="recommended"><span class="material-symbols-rounded">handyman</span>Material Culture & Craft</h2>
+<h3>Material Culture</h3>
 <p><strong>Sensory substrate.</strong> At this age, material culture is sensory exploration. Include natural materials in play: untreated wood blocks, metal spoons, wool fabric, cotton, ceramic bowls (supervised). Plastic is convenient; real materials teach different weights, temperatures, and textures. This is the substrate for all later material literacy — the child who has felt the difference between wood and metal at 6 months recognises it instinctively at 6 years.</p>
 <p><strong>Parent behaviour:</strong> Model appreciation for objects. "This wooden bowl is 20 years old and still beautiful." The child absorbs tone, not content.</p>
 
