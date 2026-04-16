@@ -433,15 +433,23 @@
   background: var(--accent-light);
   color: var(--accent);
 }
-.home-phase-age,
-.home-thread-icon {
-  font-size: 16px;
+.home-phase-age {
+  font-size: 14px;
   font-weight: 600;
   color: var(--accent);
-  min-width: 24px;
+  width: 38px;
+  text-align: left;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.home-thread-icon {
+  font-size: 18px;
+  color: var(--accent);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
-/* Thread grid */
 .home-thread-grid {
   display: flex;
   flex-direction: column;
