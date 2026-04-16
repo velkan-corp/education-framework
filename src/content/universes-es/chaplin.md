@@ -14,7 +14,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "El chico, Tiempos modernos, La quimera del oro"
-    description: "El cine mudo ensena narrativa visual sin dialogo. Comentario social, comedia fisica como forma de arte. Una puerta de entrada para comprender que el cine no necesita palabras."
+    description: "El cine mudo ensena narrativa visual sin dialogo. Comentario social, comedia fisica como forma de arte. Una puerta de entrada para comprender que el cine no necesita palabras. Cantinflas: el Chaplin mexicano. Comentario de clase a través del slapstick en español — el espejo bilingüe de la tradición anglófona de Chaplin. Esencial para la alfabetización cultural en lengua española."
     mode: absorb
     goals:
       - "Entrenar la atencion al gesto, el ritmo y la composicion visual."

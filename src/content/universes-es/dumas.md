@@ -14,7 +14,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "El conde de Montecristo (abreviado) y Los tres mosqueteros"
-    description: "Montecristo abreviado (Robin Buss o Penguin Classics abreviado): Edmond Dantès, encarcelado injustamente, escapa, adquiere una fortuna y destruye sistemáticamente a quienes lo traicionaron. La trama es una clase magistral de paciencia, preparación y despliegue estratégico. Los tres mosqueteros: amistad, lealtad, intriga política, espadachines. Registro más ligero pero igualmente absorbente. Ambas enseñan que la narrativa puede sostenerse a lo largo de cientos de páginas cuando cada escena avanza el plan."
+    description: "Montecristo abreviado (Robin Buss o Penguin Classics abreviado): Edmond Dantès, encarcelado injustamente, escapa, adquiere una fortuna y destruye sistemáticamente a quienes lo traicionaron. La trama es una clase magistral de paciencia, preparación y despliegue estratégico. Los tres mosqueteros: amistad, lealtad, intriga política, espadachines. Registro más ligero pero igualmente absorbente. Ambas enseñan que la narrativa puede sostenerse a lo largo de cientos de páginas cuando cada escena avanza el plan. Indiana Jones 1-3 (Spielberg) como heredero cinematográfico de la trama de aventuras de Dumas — el mismo impulso irresistible, la misma mezcla de ingenio y tensión."
     mode: dim
     goals:
       - "Experimentar narrativa sostenida a lo largo de cientos de páginas — construir resistencia lectora mediante una trama irresistible."

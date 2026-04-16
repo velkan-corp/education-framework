@@ -15,7 +15,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Do Androids Dream of Electric Sheep? and Ubik"
-    description: "Do Androids Dream: empathy as the test for humanity — but the test is unreliable, and the tester might fail it himself. Read alongside Blade Runner (Villeneuve or Scott) — the adaptation is different enough to teach how interpretation transforms source material. Ubik: reality dissolves layer by layer. What you thought was the real world was already a simulation. These are short, fast, disorienting. They should be."
+    description: "Do Androids Dream: empathy as the test for humanity — but the test is unreliable, and the tester might fail it himself. Read alongside Blade Runner (Villeneuve or Scott) — the adaptation is different enough to teach how interpretation transforms source material. Ubik: reality dissolves layer by layer. What you thought was the real world was already a simulation. These are short, fast, disorienting. They should be. Robocop (Verhoeven, 1987): corporate ownership of identity played as satire. A Scanner Darkly (Linklater, 2006): Dick's own novel as rotoscoped film — identity dissolution as visual style."
     mode: dim
     goals:
       - "Engage with the question 'what is real?' as an operational problem, not a philosophical abstraction."

@@ -15,7 +15,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "2001: A Space Odyssey"
-    description: "Cinema as philosophical experience. AI consciousness (HAL), evolution, the limits of human understanding. Demands patience and rewards it with awe."
+    description: "Cinema as philosophical experience. AI consciousness (HAL), evolution, the limits of human understanding. Demands patience and rewards it with awe. Yorgos Lanthimos as Kubrick's contemporary successor: The Favourite (power as absurdist game), Killing of a Sacred Deer (the clinical precision of cosmic punishment). Both use detachment to expose what warmth conceals."
     mode: critique
     goals:
       - "Treat pacing and ambiguity as part of the meaning, not as obstacles to it."

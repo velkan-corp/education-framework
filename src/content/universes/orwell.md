@@ -23,7 +23,7 @@ phases:
   - phaseId: age-17-18
     tier: core
     title: "Essays — Politics and the English Language"
-    description: "'Politics and the English Language' is the most important essay on writing ever published. Its thesis: unclear writing is not just bad style — it enables political dishonesty. 'The great enemy of clear language is insincerity.' Also: 'Shooting an Elephant' (the mechanics of imperial coercion), 'Why I Write' (the political motive behind all prose). Orwell's essays complete what his novels begin: the defence of clear thought through clear language."
+    description: "'Politics and the English Language' is the most important essay on writing ever published. Its thesis: unclear writing is not just bad style — it enables political dishonesty. 'The great enemy of clear language is insincerity.' Also: 'Shooting an Elephant' (the mechanics of imperial coercion), 'Why I Write' (the political motive behind all prose). Orwell's essays complete what his novels begin: the defence of clear thought through clear language. Terry Gilliam's Brazil as Orwell's 1984 reimagined as dark comedy — bureaucratic dystopia where the paperwork is the oppression."
     mode: critique
     goals:
       - "Internalise Orwell's thesis: clear prose is a political act, and unclear prose is a political weapon."

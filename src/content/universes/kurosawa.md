@@ -15,7 +15,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Seven Samurai + Yojimbo + Rashomon"
-    description: "THE bridge from Ghibli to serious cinema. Seven Samurai is structurally perfect. Rashomon teaches Maps ≠ Territory through contradictory testimony."
+    description: "THE bridge from Ghibli to serious cinema. Seven Samurai is structurally perfect. Rashomon teaches Maps ≠ Territory through contradictory testimony. Sergio Leone remade Kurosawa as Westerns — A Fistful of Dollars is Yojimbo, The Magnificent Seven is Seven Samurai. The comparison teaches how genre and culture transform the same story."
     mode: interrogate
     goals:
       - "Use samurai narratives to explore duty, strategy, and group formation."

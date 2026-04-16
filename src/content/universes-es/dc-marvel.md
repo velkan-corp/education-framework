@@ -22,7 +22,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Cómics DC/Marvel + MCU"
-    description: "Consumo en volumen. Alfabetización visual a través de cómics. Películas como vocabulario cultural compartido."
+    description: "Consumo en volumen. Alfabetización visual a través de cómics. Películas como vocabulario cultural compartido. La trilogía El caballero oscuro de Christopher Nolan: Batman Begins (el miedo como herramienta), El caballero oscuro (el Joker como agente del caos — 'algunos hombres solo quieren ver el mundo arder'), El caballero oscuro: La leyenda renace (revolución y fracaso institucional). Logan (2017): la película de superhéroes como elegía — qué pasa cuando el mito termina."
     mode: interrogate
     goals:
       - "Enseñar la diferencia entre producción desechable de franquicia y arcos de personaje duraderos."

@@ -14,7 +14,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "The Count of Monte Cristo (abridged) and The Three Musketeers"
-    description: "Monte Cristo abridged (Robin Buss or Penguin Classics abridged): Edmond Dantès, wrongfully imprisoned, escapes, acquires a fortune, and systematically destroys those who betrayed him. The plotting is a masterclass in patience, preparation, and strategic deployment. The Three Musketeers: friendship, loyalty, political intrigue, swashbuckling. Lighter register but equally compelling. Both teach that narrative can sustain across hundreds of pages when every scene advances the plan."
+    description: "Monte Cristo abridged (Robin Buss or Penguin Classics abridged): Edmond Dantès, wrongfully imprisoned, escapes, acquires a fortune, and systematically destroys those who betrayed him. The plotting is a masterclass in patience, preparation, and strategic deployment. The Three Musketeers: friendship, loyalty, political intrigue, swashbuckling. Lighter register but equally compelling. Both teach that narrative can sustain across hundreds of pages when every scene advances the plan. Indiana Jones 1-3 (Spielberg) as the cinematic heir to Dumas's adventure plotting — the same irresistible momentum, the same mix of wit and stakes."
     mode: dim
     goals:
       - "Experience sustained narrative across hundreds of pages — building reading stamina through irresistible plotting."

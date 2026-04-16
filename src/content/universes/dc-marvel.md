@@ -22,7 +22,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "DC/Marvel comics + MCU"
-    description: "Volume consumption. Visual literacy through comics. Films as shared cultural vocabulary."
+    description: "Volume consumption. Visual literacy through comics. Films as shared cultural vocabulary. Christopher Nolan's Dark Knight trilogy: Batman Begins (fear as tool), The Dark Knight (the Joker as chaos agent — 'some men just want to watch the world burn'), The Dark Knight Rises (revolution and institutional failure). Logan (2017): the superhero film as elegy — what happens after the myth ends."
     mode: interrogate
     goals:
       - "Teach the difference between disposable franchise output and durable character arcs."

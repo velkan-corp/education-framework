@@ -14,7 +14,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "The Kid, Modern Times, The Gold Rush"
-    description: "Silent film teaches visual storytelling without dialogue. Social commentary, physical comedy as art form. A gateway to understanding that cinema doesn't need words."
+    description: "Silent film teaches visual storytelling without dialogue. Social commentary, physical comedy as art form. A gateway to understanding that cinema doesn't need words. Cantinflas: the Mexican Chaplin. Slapstick class commentary in Spanish — the bilingual mirror to Chaplin's English-language tradition. Essential for Spanish-language cultural literacy."
     mode: absorb
     goals:
       - "Train attention to gesture, timing, and visual setup."

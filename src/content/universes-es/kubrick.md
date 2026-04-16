@@ -15,7 +15,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "2001: Una odisea del espacio"
-    description: "El cine como experiencia filosófica. Conciencia de la IA (HAL), evolución, los límites de la comprensión humana. Exige paciencia y la recompensa con asombro."
+    description: "El cine como experiencia filosófica. Conciencia de la IA (HAL), evolución, los límites de la comprensión humana. Exige paciencia y la recompensa con asombro. Yorgos Lanthimos como sucesor contemporáneo de Kubrick: La favorita (el poder como juego absurdista), El sacrificio de un ciervo sagrado (la precisión clínica del castigo cósmico). Ambos usan el distanciamiento para exponer lo que la calidez oculta."
     mode: critique
     goals:
       - "Tratar el ritmo y la ambigüedad como parte del significado, no como obstáculos."

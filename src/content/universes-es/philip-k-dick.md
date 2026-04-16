@@ -15,7 +15,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Do Androids Dream of Electric Sheep? and Ubik"
-    description: "¿Sueñan los androides con ovejas eléctricas?: la empatía como prueba de humanidad — pero la prueba es poco fiable, y el examinador podría suspenderla él mismo. Léelo junto a Blade Runner (Villeneuve o Scott) — la adaptación es suficientemente distinta para enseñar cómo la interpretación transforma el material original. Ubik: la realidad se disuelve capa a capa. Lo que creías el mundo real ya era una simulación. Son breves, rápidos, desorientadores. Así deben ser."
+    description: "¿Sueñan los androides con ovejas eléctricas?: la empatía como prueba de humanidad — pero la prueba es poco fiable, y el examinador podría suspenderla él mismo. Léelo junto a Blade Runner (Villeneuve o Scott) — la adaptación es suficientemente distinta para enseñar cómo la interpretación transforma el material original. Ubik: la realidad se disuelve capa a capa. Lo que creías el mundo real ya era una simulación. Son breves, rápidos, desorientadores. Así deben ser. Robocop (Verhoeven, 1987): la propiedad corporativa de la identidad como sátira. A Scanner Darkly (Linklater, 2006): la propia novela de Dick como película rotoscópica — la disolución de la identidad como estilo visual."
     mode: dim
     goals:
       - "Abordar la pregunta '¿qué es real?' como problema operativo, no como abstracción filosófica."

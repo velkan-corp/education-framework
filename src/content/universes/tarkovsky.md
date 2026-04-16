@@ -15,7 +15,7 @@ phases:
   - phaseId: age-17-18
     tier: recommended
     title: "Stalker + Solaris"
-    description: "Cinema as meditation. Stalker: faith, desire, the Zone as metaphor. Solaris: consciousness, memory, love. The patience IS the point. The destination of the Ghibli \u2192 Kurosawa \u2192 Tarkovsky cinema thread."
+    description: "Cinema as meditation. Stalker: faith, desire, the Zone as metaphor. Solaris: consciousness, memory, love. The patience IS the point. The destination of the Ghibli \u2192 Kurosawa \u2192 Tarkovsky cinema thread. Terrence Malick as the American heir to Tarkovsky's visual-poetic tradition: The Tree of Life (creation, memory, grace), The Thin Red Line (war as spiritual crisis), Badlands (violence and innocence). Both directors make films where image carries more meaning than dialogue."
     mode: critique
     goals:
       - "Use slowness to make the viewer notice attention, longing, and spiritual hunger."

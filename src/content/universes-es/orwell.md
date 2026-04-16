@@ -23,7 +23,7 @@ phases:
   - phaseId: age-17-18
     tier: core
     title: "Essays — Politics and the English Language"
-    description: "'La política y la lengua inglesa' es el ensayo más importante sobre escritura jamás publicado. Su tesis: la escritura confusa no es solo mal estilo — permite la deshonestidad política. 'El gran enemigo del lenguaje claro es la falta de sinceridad.' También: 'Matar a un elefante' (la mecánica de la coerción imperial), 'Por qué escribo' (el motivo político detrás de toda prosa). Los ensayos de Orwell completan lo que sus novelas comienzan: la defensa del pensamiento claro a través del lenguaje claro."
+    description: "'La política y la lengua inglesa' es el ensayo más importante sobre escritura jamás publicado. Su tesis: la escritura confusa no es solo mal estilo — permite la deshonestidad política. 'El gran enemigo del lenguaje claro es la falta de sinceridad.' También: 'Matar a un elefante' (la mecánica de la coerción imperial), 'Por qué escribo' (el motivo político detrás de toda prosa). Los ensayos de Orwell completan lo que sus novelas comienzan: la defensa del pensamiento claro a través del lenguaje claro. Brazil de Terry Gilliam como el 1984 de Orwell reimaginado como comedia negra — distopía burocrática donde el papeleo es la opresión."
     mode: critique
     goals:
       - "Interiorizar la tesis de Orwell: la prosa clara es un acto político, y la prosa confusa es un arma política."

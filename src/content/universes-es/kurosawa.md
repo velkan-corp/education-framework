@@ -15,7 +15,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Los siete samuráis + Yojimbo + Rashomon"
-    description: "EL puente de Ghibli al cine serio. Los siete samuráis es estructuralmente perfecto. Rashomon enseña Mapas ≠ Territorio a través de testimonios contradictorios."
+    description: "EL puente de Ghibli al cine serio. Los siete samuráis es estructuralmente perfecto. Rashomon enseña Mapas ≠ Territorio a través de testimonios contradictorios. Sergio Leone rehizo a Kurosawa como westerns — Por un puñado de dólares es Yojimbo, Los siete magníficos es Los siete samuráis. La comparación enseña cómo el género y la cultura transforman la misma historia."
     mode: interrogate
     goals:
       - "Usar las narrativas de samuráis para explorar deber, estrategia y formación de grupo."
