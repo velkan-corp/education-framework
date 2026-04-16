@@ -813,6 +813,56 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   color: var(--accent);
 }
 
+/* Resource → Universe link block */
+.resource-universe-block {
+  margin-bottom: var(--sp-4);
+}
+.resource-universe-card {
+  display: block;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+  transition: box-shadow var(--duration-micro) var(--ease-out);
+}
+.resource-universe-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+.resource-universe-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: var(--sp-1);
+}
+.resource-universe-card strong {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--accent);
+}
+.resource-universe-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: var(--sp-1) 0;
+  line-height: 1.5;
+}
+.resource-timeline-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin: 0 0 var(--sp-3);
+  border: none;
+  padding: 0;
+}
+
 .browse-universe-link {
   font-size: 13px;
   color: var(--accent);

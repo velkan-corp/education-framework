@@ -163,26 +163,46 @@ function showResourceDetail(key) {
   detail.classList.remove('hidden');
 
   const header = document.getElementById('resources-detail-header');
-  const universeLink = data.universeId
-    ? `<a data-universe-nav="${data.universeId}" class="browse-universe-link">View in Library →</a>`
-    : '';
+
+  // If resource has a universe, pull summary + full timeline from the universe card
+  let universeBlock = '';
+  if (data.universeId) {
+    const uCard = document.querySelector(`.universe-card[data-universe="${data.universeId}"]`);
+    const uTitle = uCard?.querySelector('.universe-label')?.textContent || '';
+    const uSummary = uCard?.querySelector('.universe-summary')?.textContent || '';
+    universeBlock = `
+      <div class="resource-universe-block">
+        <a data-universe-nav="${data.universeId}" class="resource-universe-card">
+          <span class="resource-universe-label">Part of</span>
+          <strong>${uTitle || data.universeId}</strong>
+          ${uSummary ? `<p>${uSummary}</p>` : ''}
+          <span class="browse-universe-link">View full universe →</span>
+        </a>
+      </div>
+    `;
+  }
+
   header.innerHTML = `
     <div class="browse-detail-title">
       <h1>${data.name}</h1>
       <span class="category-badge">${data.category}</span>
-      ${universeLink}
     </div>
+    ${universeBlock}
   `;
 
   const timeline = document.getElementById('resources-timeline');
-  timeline.innerHTML = data.phases.map(phase => `
-    <div class="timeline-phase">
-      <div class="timeline-header">
-        <span class="timeline-age">${phase.phaseLabel}</span>
+  timeline.innerHTML = `
+    <h3 class="resource-timeline-label">Recommended at</h3>
+    ${data.phases.map(phase => `
+      <div class="timeline-phase">
+        <div class="timeline-header">
+          <span class="timeline-age">${phase.phaseLabel}</span>
+          <span class="tier-badge ${phase.tier ? 'tier-' + phase.tier : ''}">${phase.tier || ''}</span>
+        </div>
+        <div class="timeline-content">${phase.description}</div>
       </div>
-      <div class="timeline-content">${phase.description}</div>
-    </div>
-  `).join('');
+    `).join('')}
+  `;
 
   updateAllNavs();
   window.scrollTo(0, 0);
