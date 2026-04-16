@@ -17,7 +17,10 @@ import {
   UNIVERSE_LANGUAGES,
 } from '../data/universeTaxonomy';
 
-const universeEntries = await getCollection('universes');
+interface Props { collection?: string; }
+const { collection = 'universes' } = Astro.props;
+
+const universeEntries = await getCollection(collection as any);
 const universes = universeEntries.map(u => ({ id: u.id, ...u.data }));
 const universeById = new Map(universes.map((u) => [u.id, u]));
 
