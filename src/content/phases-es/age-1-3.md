@@ -64,15 +64,12 @@ order: 2
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Modelos Mentales</h2>
 <div class="model-tracker">
-<div class="model-tracker-label">Capa 0: Precursores Cognitivos</div>
+<div class="model-tracker-label">Capa 0: Fundación Pre-lingüística</div>
 <div class="model-tracker-bar">
-<span class="model-dot precursor" data-tip="Permanencia del Objeto (avanzada) — Las cosas existen cuando están ocultas; memoria de secuencia"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot precursor" data-tip="Categorización — Clasificar por color, forma, tamaño"><span class="model-dot-name">Categ.</span></span>
-<span class="model-dot precursor" data-tip="Iteración — Eso no funcionó. ¿Qué más podemos probar?"><span class="model-dot-name">Iter.</span></span>
-<span class="model-dot precursor" data-tip="Escala y Tamaño — Las cosas tienen propiedades relativas: más grande, más pequeño, más pesado"><span class="model-dot-name">Scale</span></span>
-</div>
-<div class="model-tracker-label">Capa 0: Fundacion Pre-linguistica</div>
-<div class="model-tracker-bar">
+<span class="model-dot new" data-tip="Permanencia del Objeto (avanzada) — Las cosas existen cuando están ocultas; memoria de secuencia"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorización — Clasificar por color, forma, tamaño"><span class="model-dot-name">Categ.</span></span>
+<span class="model-dot new" data-tip="Iteración — Eso no funcionó. ¿Qué más podemos probar?"><span class="model-dot-name">Iter.</span></span>
+<span class="model-dot new" data-tip="Escala y Tamaño — Las cosas tienen propiedades relativas: más grande, más pequeño, más pesado"><span class="model-dot-name">Scale</span></span>
 <span class="model-dot future" data-tip="Causa y Efecto — Y luego que? Y despues?"><span class="model-dot-num">1</span><span class="model-dot-name">Causa</span></span>
 <span class="model-dot future" data-tip="Bucles de Retroalimentacion — La salida amplifica o amortigua la entrada?"><span class="model-dot-num">2</span><span class="model-dot-name">Bucles</span></span>
 <span class="model-dot future" data-tip="Incentivos — Muestrame el incentivo y te mostrare el resultado"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>

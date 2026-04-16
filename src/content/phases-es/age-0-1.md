@@ -52,15 +52,12 @@ order: 1
 <div class="t-adjust t-inhib-adv"><div class="t-label">Inhibicion: Avanzada</div>El control inhibitorio apenas emerge antes de los 12 meses — incluso los bebes avanzados no pueden verdaderamente inhibir. Si muestran senales tempranas de pausar antes de agarrar (alrededor de los 10-11 meses), refuerza suavemente con "espera... vale, ahora cogelo." Esto planta la semilla mas temprana. Elogia la pausa: "Esperaste."</div>
 <div class="t-adjust t-inhib-dev"><div class="t-label">Inhibicion: En Desarrollo</div>No se espera ningun control inhibitorio significativo a esta edad. Si agarran todo inmediatamente sin pausa, eso es completamente normal. No intentes entrenar la "espera" antes de los 12 meses — los circuitos prefrontales aun no estan cableados. Enfocate en cambio en la redireccion constante y calmada cuando alcancen objetos inseguros.</div>
 
-<h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Modelos Mentales en Esta Etapa</h2>
+<h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Modelos Mentales</h2>
 <div class="model-tracker">
-<div class="model-tracker-label">Capa 0: Precursores Cognitivos</div>
+<div class="model-tracker-label">Capa 0: Fundación Pre-lingüística</div>
 <div class="model-tracker-bar">
-<span class="model-dot precursor" data-tip="Permanencia del Objeto — Las cosas existen cuando no puedes verlas"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot precursor" data-tip="Categorización — Clasificar el mundo en grupos por propiedades compartidas"><span class="model-dot-name">Categ.</span></span>
-</div>
-<div class="model-tracker-label">Capa 0: Fundacion Pre-linguistica</div>
-<div class="model-tracker-bar">
+<span class="model-dot new" data-tip="Permanencia del Objeto — Las cosas existen cuando no puedes verlas"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorización — Clasificar el mundo en grupos por propiedades compartidas"><span class="model-dot-name">Categ.</span></span>
 <span class="model-dot future" data-tip="Causa y Efecto — Y luego que? Y despues?"><span class="model-dot-num">1</span><span class="model-dot-name">Causa</span></span>
 <span class="model-dot future" data-tip="Bucles de Retroalimentacion — La salida amplifica o amortigua la entrada?"><span class="model-dot-num">2</span><span class="model-dot-name">Bucles</span></span>
 <span class="model-dot future" data-tip="Incentivos — Muestrame el incentivo y te mostrare el resultado"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>

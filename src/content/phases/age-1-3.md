@@ -64,15 +64,12 @@ order: 2
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
 <div class="model-tracker">
-<div class="model-tracker-label">Layer 0: Cognitive Precursors</div>
-<div class="model-tracker-bar">
-<span class="model-dot precursor" data-tip="Object Permanence (advanced) — Things exist when hidden; sequence memory"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot precursor" data-tip="Categorization — Sorting by color, shape, size"><span class="model-dot-name">Categ.</span></span>
-<span class="model-dot precursor" data-tip="Iteration — That didn't work. What else could we try?"><span class="model-dot-name">Iter.</span></span>
-<span class="model-dot precursor" data-tip="Scale & Size — Things have relative properties: bigger, smaller, heavier"><span class="model-dot-name">Scale</span></span>
-</div>
 <div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
 <div class="model-tracker-bar">
+<span class="model-dot new" data-tip="Object Permanence (advanced) — Things exist when hidden; sequence memory"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorization — Sorting by color, shape, size"><span class="model-dot-name">Categ.</span></span>
+<span class="model-dot new" data-tip="Iteration — That didn't work. What else could we try?"><span class="model-dot-name">Iter.</span></span>
+<span class="model-dot new" data-tip="Scale &amp; Size — Things have relative properties: bigger, smaller, heavier"><span class="model-dot-name">Scale</span></span>
 <span class="model-dot future" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
 <span class="model-dot future" data-tip="Feedback Loops — Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
 <span class="model-dot future" data-tip="Incentives — Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>

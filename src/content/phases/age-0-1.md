@@ -52,15 +52,12 @@ order: 1
 <div class="t-adjust t-inhib-adv"><div class="t-label">Inhibit: Advanced</div>Inhibitory control is barely emergent before 12 months — even advanced infants cannot truly inhibit. If they show early signs of pausing before grabbing (around 10-11 months), gently reinforce with "wait... okay, now take it." This plants the earliest seed. Praise the pause: "You waited."</div>
 <div class="t-adjust t-inhib-dev"><div class="t-label">Inhibit: Developing</div>No meaningful inhibitory control is expected at this age. If they grab everything immediately with no pause, that is entirely normal. Do not attempt to train "waiting" before 12 months — the prefrontal circuitry is not yet wired. Focus instead on consistent, calm redirection when they reach for unsafe objects.</div>
 
-<h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models at This Stage</h2>
+<h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models</h2>
 <div class="model-tracker">
-<div class="model-tracker-label">Layer 0: Cognitive Precursors</div>
-<div class="model-tracker-bar">
-<span class="model-dot precursor" data-tip="Object Permanence — Things exist when you can't see them"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot precursor" data-tip="Categorization — Sorting the world into groups by shared properties"><span class="model-dot-name">Categ.</span></span>
-</div>
 <div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
 <div class="model-tracker-bar">
+<span class="model-dot new" data-tip="Object Permanence — Things exist when you can't see them"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorization — Sorting the world into groups by shared properties"><span class="model-dot-name">Categ.</span></span>
 <span class="model-dot future" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
 <span class="model-dot future" data-tip="Feedback Loops — Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
 <span class="model-dot future" data-tip="Incentives — Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
