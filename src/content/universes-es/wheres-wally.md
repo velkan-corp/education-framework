@@ -10,14 +10,6 @@ models: [cause-effect, maps-not-territory]
 intensity: low
 socialValue: broad
 phases:
-  - phaseId: age-0-1
-    tier: recommended
-    title: "Entornos visuales densos"
-    description: "Ediciones de cartón y ediciones estándar abiertas de pie. Estímulo visual denso en una etapa en la que el cerebro está construyendo capacidad perceptiva. Todavía no hay tarea de búsqueda — las páginas son entornos de información. Señala y nombra: '¡Mira el perro! ¡El hombre se está cayendo al agua!' Cada relectura revela algo nuevo. La densidad visual construye atención sostenida y vocabulario simultáneamente."
-    mode: absorb
-    goals:
-      - "Exposición a entornos visuales densos y detallados que recompensan la observación sostenida."
-      - "Construcción de vocabulario a través de señalar y nombrar en contextos visuales ricos."
   - phaseId: age-1-3
     tier: foundational
     title: "Búsqueda visual activa y estrategia sistemática"

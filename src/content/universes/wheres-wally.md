@@ -10,14 +10,6 @@ models: [cause-effect, maps-not-territory]
 intensity: low
 socialValue: broad
 phases:
-  - phaseId: age-0-1
-    tier: recommended
-    title: "Dense visual environments"
-    description: "Board book editions and standard editions propped open. Dense visual input at a stage when the brain is building perceptual capacity. No search task yet — the pages are information environments. Point and name: 'Look at the dog! The man is falling in the water!' Every re-read reveals something new. The visual density builds sustained attention and vocabulary simultaneously."
-    mode: absorb
-    goals:
-      - "Exposure to dense, detailed visual environments that reward sustained looking."
-      - "Vocabulary building through point-and-name in rich visual contexts."
   - phaseId: age-1-3
     tier: foundational
     title: "Active visual search and systematic strategy"
