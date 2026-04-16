@@ -497,15 +497,12 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 
 /* ── ENGAGEMENT CYCLE PIPELINE ── */
 .cycle-pipeline {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0;
   margin: var(--sp-4) 0;
-  flex-wrap: wrap;
 }
 .cycle-step {
-  flex: 1;
-  min-width: 140px;
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
@@ -695,6 +692,19 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   background: var(--accent-light);
   color: var(--accent);
   border: 1px solid var(--accent-border);
+}
+.model-dot.precursor {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dotted var(--border);
+  opacity: 0.7;
+  font-size: 10px;
+  min-width: 44px;
+  padding: 4px 6px;
+}
+.model-dot.precursor .model-dot-name {
+  font-size: 8px;
+  font-style: italic;
 }
 .model-dot.future {
   background: transparent;

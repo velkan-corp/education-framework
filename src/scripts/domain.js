@@ -298,6 +298,20 @@ function setupNavigation() {
     });
   });
 
+  // Home phase pills — deep-link to specific age
+  document.querySelectorAll('.home-phase-pill[data-phase-id]').forEach(pill => {
+    pill.addEventListener('click', () => {
+      showView('age', { phaseId: pill.dataset.phaseId });
+    });
+  });
+
+  // Home thread pills — deep-link to specific thread
+  document.querySelectorAll('.home-thread-pill[data-domain-id]').forEach(pill => {
+    pill.addEventListener('click', () => {
+      showView('domain', { domainId: pill.dataset.domainId });
+    });
+  });
+
   // Hamburger toggle
   const hamburger = document.getElementById('nav-hamburger');
   const mobileMenu = document.getElementById('mobile-menu');

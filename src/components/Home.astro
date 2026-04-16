@@ -6,38 +6,52 @@ interface Props {
 }
 const { phaseCount, universeCount, lang = 'en' } = Astro.props;
 
+const phases = [
+  { id: 'age-0-1', label: '0–1' },
+  { id: 'age-1-3', label: '1–3' },
+  { id: 'age-4-7', label: '4–7' },
+  { id: 'age-8-10', label: '8–10' },
+  { id: 'age-11-13', label: '11–13' },
+  { id: 'age-14-16', label: '14–16' },
+  { id: 'age-17-18', label: '17–18' },
+];
+
+const threads = [
+  { id: 's-communication', icon: 'record_voice_over', label: lang === 'es' ? 'Comunicación' : 'Communication' },
+  { id: 's-music', icon: 'music_note', label: lang === 'es' ? 'Música' : 'Music' },
+  { id: 's-mind-body', icon: 'fitness_center', label: lang === 'es' ? 'Cuerpo y Mente' : 'Mind & Body' },
+  { id: 's-social', icon: 'people', label: lang === 'es' ? 'Social' : 'Social' },
+  { id: 's-making', icon: 'construction', label: lang === 'es' ? 'Construcción' : 'Making & Craft' },
+  { id: 's-knowledge', icon: 'lightbulb', label: lang === 'es' ? 'Conocimiento' : 'Knowledge' },
+  { id: 's-culture', icon: 'travel_explore', label: lang === 'es' ? 'Cultura' : 'Culture' },
+];
+
 const t = lang === 'es' ? {
   title: 'Marco Educativo',
   subtitle: `Un marco de desarrollo para edades de 0 a 18 años. Once objetivos, métodos basados en evidencia, ${universeCount} universos de contenido, calibrado al perfil de cada niño.`,
   framework: 'Marco',
-  frameworkDesc: 'Filosofía, principios, objetivos y guía operativa. La base sobre la que se construye todo lo demás.',
+  frameworkDesc: 'Filosofía, principios, once objetivos y guía operativa. La base sobre la que se construye todo lo demás.',
   frameworkMeta: '11 OBJETIVOS · 10 PRINCIPIOS · 19 MODELOS',
-  sectionLabel: 'El Currículo — el mismo contenido, dos vistas',
-  age: 'Por Edad',
-  ageDesc: 'Prioridades de desarrollo, actividades, modelos mentales y contenido para cada etapa. Desde los cimientos neuronales hasta el lanzamiento.',
-  ageMeta: `${phaseCount} fases de edad`,
-  domain: 'Por Hilo',
-  domainDesc: 'Sigue un hilo a través de todas las edades: Comunicación, Música, Cuerpo y Mente, Social, Construcción y más.',
-  domainMeta: 'Sigue un hilo a través del tiempo',
-  universe: 'Biblioteca',
-  universeDesc: 'La biblioteca de contenido — libros, películas, juegos, sistemas maker y dominios de práctica. Una vista enfocada del material curado que impulsa el currículo.',
-  universeMeta: `${universeCount}+ UNIVERSOS`,
+  curriculumLabel: 'Currículo',
+  curriculumDesc: 'El mismo contenido, dos formas de navegarlo.',
+  ageLabel: 'Por Edad',
+  threadLabel: 'Por Hilo',
+  library: 'Biblioteca',
+  libraryDesc: `${universeCount} universos de contenido — literatura, ciencia ficción, filosofía, anime, cine, juegos, artes marciales, cocina, economía, ciencia cognitiva, diseño, música, y más. Filtrable por edad, idioma, tipo e intensidad.`,
+  libraryMeta: `${universeCount}+ UNIVERSOS`,
 } : {
   title: 'Education Framework',
-  subtitle: `A developmental framework for ages 0-18. Eleven targets, evidence-based methods, ${universeCount} content universes, calibrated to each child's profile.`,
+  subtitle: `A developmental framework for ages 0–18. Eleven targets, evidence-based methods, ${universeCount} content universes, calibrated to each child's profile.`,
   framework: 'Framework',
-  frameworkDesc: 'Philosophy, principles, targets, and operational guidance. The foundation everything else is built on.',
+  frameworkDesc: 'Philosophy, principles, eleven targets, and operational guidance. The foundation everything else is built on.',
   frameworkMeta: '11 TARGETS · 10 PRINCIPLES · 19 MODELS',
-  sectionLabel: 'The Curriculum — same content, two views',
-  age: 'By Age',
-  ageDesc: 'Developmental priorities, activities, mental models, and content for each stage. From neural foundations to launch.',
-  ageMeta: `${phaseCount} age phases`,
-  domain: 'By Thread',
-  domainDesc: 'Track a single thread across all ages: Communication, Music, Mind & Body, Social, Building, and more.',
-  domainMeta: 'Track one thread through time',
-  universe: 'Library',
-  universeDesc: 'The content library — books, films, games, maker systems, and practice domains. A focused view of the curated material that drives the curriculum.',
-  universeMeta: `${universeCount}+ UNIVERSES`,
+  curriculumLabel: 'Curriculum',
+  curriculumDesc: 'The same content, two ways to navigate it.',
+  ageLabel: 'By Age',
+  threadLabel: 'By Thread',
+  library: 'Library',
+  libraryDesc: `${universeCount} content universes — literature, science fiction, philosophy, anime, cinema, games, martial arts, cooking, economics, cognitive science, design, music, and more. Filterable by age, language, type, and intensity.`,
+  libraryMeta: `${universeCount}+ UNIVERSES`,
 };
 ---
 
@@ -47,43 +61,70 @@ const t = lang === 'es' ? {
     <p class="home-subtitle">{t.subtitle}</p>
   </div>
 
-  <div class="home-grid">
-    <button type="button" class="home-card home-card-full" data-nav="framework">
-      <div class="home-card-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+  <div class="home-stack">
+    <!-- 1. Framework — standalone -->
+    <button type="button" class="home-card" data-nav="framework">
+      <div class="home-card-inner">
+        <div class="home-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <h2 class="home-card-title">{t.framework}</h2>
+          <p class="home-card-desc">{t.frameworkDesc}</p>
+          <span class="home-card-meta">{t.frameworkMeta}</span>
+        </div>
       </div>
-      <h2 class="home-card-title">{t.framework}</h2>
-      <p class="home-card-desc">{t.frameworkDesc}</p>
-      <span class="home-card-meta">{t.frameworkMeta}</span>
     </button>
 
-    <div class="home-section-label">{t.sectionLabel}</div>
-
-    <button type="button" class="home-card" data-nav="age">
-      <div class="home-card-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+    <!-- 2. Curriculum — two views grouped -->
+    <div class="home-curriculum">
+      <div class="home-curriculum-header">
+        <h2 class="home-curriculum-title">{t.curriculumLabel}</h2>
+        <p class="home-curriculum-desc">{t.curriculumDesc}</p>
       </div>
-      <h2 class="home-card-title">{t.age}</h2>
-      <p class="home-card-desc">{t.ageDesc}</p>
-      <span class="home-card-meta">{t.ageMeta}</span>
-    </button>
 
-    <button type="button" class="home-card" data-nav="domain">
-      <div class="home-card-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </div>
-      <h2 class="home-card-title">{t.domain}</h2>
-      <p class="home-card-desc">{t.domainDesc}</p>
-      <span class="home-card-meta">{t.domainMeta}</span>
-    </button>
+      <div class="home-curriculum-views">
+        <!-- By Age -->
+        <div class="home-curriculum-view">
+          <h3 class="home-view-label">{t.ageLabel}</h3>
+          <div class="home-phase-grid">
+            {phases.map((phase) => (
+              <button type="button" class="home-phase-pill" data-nav="age" data-phase-id={phase.id}>
+                <span class="home-phase-age">{phase.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
 
-    <button type="button" class="home-card home-card-full" data-nav="universe">
-      <div class="home-card-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        <div class="home-curriculum-divider"></div>
+
+        <!-- By Thread -->
+        <div class="home-curriculum-view">
+          <h3 class="home-view-label">{t.threadLabel}</h3>
+          <div class="home-thread-grid">
+            {threads.map((thread) => (
+              <button type="button" class="home-thread-pill" data-nav="domain" data-domain-id={thread.id}>
+                <span class="material-symbols-rounded home-thread-icon">{thread.icon}</span>
+                <span class="home-thread-label">{thread.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
-      <h2 class="home-card-title">{t.universe}</h2>
-      <p class="home-card-desc">{t.universeDesc}</p>
-      <span class="home-card-meta">{t.universeMeta}</span>
+    </div>
+
+    <!-- 3. Library — standalone -->
+    <button type="button" class="home-card" data-nav="universe">
+      <div class="home-card-inner">
+        <div class="home-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <div>
+          <h2 class="home-card-title">{t.library}</h2>
+          <p class="home-card-desc">{t.libraryDesc}</p>
+          <span class="home-card-meta">{t.libraryMeta}</span>
+        </div>
+      </div>
     </button>
   </div>
 </div>

@@ -9,6 +9,15 @@ models: [maps-not-territory, power-structures, scale]
 intensity: medium
 socialValue: bridge
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Puzles, construcción y juego espacial"
+    description: "Encajables, vasos apilables, puzles sencillos (4-12 piezas). No son juguetes — son la instanciación física de la lógica espacial. Circuitos de trenes de madera Brio World — construir las vías ES razonamiento espacial: ¿qué pieza conecta? ¿Se cierra el circuito? ¿Qué pasa si añado un puente? Torres de bloques con derrumbe intencionado ('¿cuántos hasta que se caiga?'). Magna-Tiles a partir de 2,5 años para construcción 3D. Arcoíris Grimm's para escultura espacial libre. Comienzan los mapas físicos: '¿Dónde estamos? ¿Dónde está el parque? ¿Hacia dónde queda casa?' El niño que ha pasado cientos de horas encajando formas, cerrando circuitos y equilibrando estructuras llega a los 4 años pensando ya en tres dimensiones."
+    mode: absorb
+    goals:
+      - "Construir razonamiento espacial a través de manipulación física — encajar, apilar, conectar, equilibrar."
+      - "Desarrollar resolución de problemas sistemática: intentar, fallar, ajustar, reintentar."
+      - "Iniciar la orientación espacial: ¿dónde estoy en relación a lugares familiares?"
   - phaseId: age-4-7
     tier: recommended
     title: "Orientación y primeros mapas"

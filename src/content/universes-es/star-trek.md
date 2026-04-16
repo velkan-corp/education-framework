@@ -15,7 +15,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Star Trek: La nueva generación (episodios seleccionados)"
-    description: "Ciencia ficción optimista. La Federación como sistema político — diplomacia por encima de la violencia. Picard como modelo de liderazgo a través de la razón y la empatía. Empezar con Measure of a Man (derechos de la IA), Inner Light (empatía), Darmok (lenguaje y comunicación)."
+    description: "Ciencia ficción optimista. La Federación como sistema político — diplomacia por encima de la violencia. Picard como modelo de liderazgo a través de la razón y la compasión. Empezar con Measure of a Man (derechos de la IA), Inner Light (compasión), Darmok (lenguaje y comunicación)."
     mode: interrogate
     goals:
       - "Hacer que el liderazgo se perciba como intelectual y moral, no solo enérgico."

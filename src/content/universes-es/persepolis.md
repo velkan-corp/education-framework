@@ -15,7 +15,7 @@ phases:
   - phaseId: age-11-13
     tier: recommended
     title: "Persépolis (Marjane Satrapi)"
-    description: "La Revolución Iraní a través de los ojos de una niña. Perspectiva no occidental. Empatía a través del cómic."
+    description: "La Revolución Iraní a través de los ojos de una niña. Perspectiva no occidental. Compasión a través del cómic."
     mode: critique
     goals:
       - "Usar la memoria para humanizar la ideología, la presión estatal y el exilio."

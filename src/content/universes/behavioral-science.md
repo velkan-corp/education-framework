@@ -22,12 +22,14 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Influence, nudges, and evolutionary psychology"
-    description: "Cialdini's Influence (full read). Thaler and Sunstein's Nudge. Ariely's Predictably Irrational. Evolutionary psychology: reciprocal altruism, costly signalling, status hierarchies, coalitional instincts. 'You are a social primate with hardware optimised for a 150-person tribe. Understanding the mechanism gives you power over it.'"
+    description: "Cialdini's Influence (full read). Thaler and Sunstein's Nudge. Ariely's Predictably Irrational. Evolutionary psychology: reciprocal altruism, costly signalling, status hierarchies, coalitional instincts. 'You are a social primate with hardware optimised for a 150-person tribe. Understanding the mechanism gives you power over it.' Bloom's Against Empathy: empathy is biased (we empathise more with people who look like us), exhausting (it causes burnout), and counterproductive (the identifiable victim effect misallocates resources). Compassion — recognising suffering and acting on it — is sustainable, scalable, and action-oriented. Mullainathan & Shafir's Scarcity: poverty is not a character flaw but a bandwidth tax — scarcity of money, time, or cognitive resources consumes mental capacity and produces worse decisions. The policy implications are transformative."
     mode: critique
     goals:
       - "Read three primary texts on behavioral science — Cialdini, Thaler/Sunstein, Ariely."
       - "Understand evolutionary psychology as the hardware layer beneath cultural software."
       - "Recognise status games, signalling, and coalitional instincts in daily social life."
+      - "Distinguish empathy (feeling others' pain — biased and exhausting) from compassion (recognising suffering and acting — sustainable and scalable)."
+      - "Understand Mullainathan's scarcity thesis: poverty consumes cognitive bandwidth, producing worse decisions as a structural effect, not a character flaw."
   - phaseId: age-17-18
     tier: core
     title: "Moral psychology and the ethics of nudging"

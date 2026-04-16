@@ -11,6 +11,15 @@ intensity: high
 riskFlags: [violence]
 socialValue: niche
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Animal movements and inversion comfort"
+    description: "Not gymnastics class — play that builds the motor patterns tumbling requires. Animal movement games: bear crawls, crab walks, log rolls, frog jumps. Forward rolls on soft surfaces (tumbling mat or grass). Hanging from playground bars — grip strength, shoulder stability, and the vestibular input that later aerial awareness requires. Balance on low beams, curbs, fallen logs. Walk along lines on the floor. Handstand attempts against a wall (supervised) — inversion comfort begins now. Most children find being upside-down thrilling at this age; the earlier they're comfortable inverted, the easier later tumbling progressions become. Parent-guided at home or in the park — no formal instruction needed yet."
+    mode: absorb
+    goals:
+      - "Build the motor pattern vocabulary that later tumbling requires — rolls, crawls, jumps, balance."
+      - "Develop grip strength and shoulder stability through hanging."
+      - "Establish inversion comfort early — being upside-down should feel natural, not frightening."
   - phaseId: age-4-7
     tier: foundational
     title: "Foundational tumbling and the flexibility golden window"

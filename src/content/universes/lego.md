@@ -11,6 +11,15 @@ intensity: low
 socialValue: broad
 substitutes: [minecraft, ksp, warhammer]
 phases:
+  - phaseId: age-1-3
+    tier: foundational
+    title: "Duplo — open-ended construction"
+    description: "Duplo IS LEGO for this age. Open-ended construction — towers, bridges, enclosures, vehicles. Spatial reasoning, iteration, fine motor development. Narrate the building: 'You made it taller! What happens if we add one more?' Let them build before showing them what to build. Avoid themed sets with prescribed outcomes — open-ended creativity is the curriculum. Block towers with intentional collapse ('how tall before it falls?') introduce cause-effect and iteration simultaneously."
+    mode: make
+    goals:
+      - "Prioritise invention over instruction — freestyle building before following pictures."
+      - "Build the habit of iteration: build, collapse, rebuild differently."
+      - "Develop fine motor control through connecting and disconnecting blocks."
   - phaseId: age-4-7
     tier: foundational
     title: "LEGO System (Classic + themed sets)"

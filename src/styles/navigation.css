@@ -327,23 +327,131 @@
   max-width: 560px;
 }
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+/* Vertical stack — three distinct blocks */
+.home-stack {
+  display: flex;
+  flex-direction: column;
   gap: var(--sp-4);
 }
-.home-card-full {
-  grid-column: 1 / -1;
+
+/* Cards (Framework + Library) — horizontal layout with icon */
+.home-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
 }
-.home-section-label {
-  grid-column: 1 / -1;
+.home-card-inner .home-card-desc {
+  margin-bottom: var(--sp-2);
+}
+
+/* ── Curriculum group — the visual container that says "these two belong together" ── */
+.home-curriculum {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+}
+.home-curriculum-header {
+  margin-bottom: var(--sp-4);
+}
+.home-curriculum-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 var(--sp-1);
+  border: none;
+  padding: 0;
+}
+.home-curriculum-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+.home-curriculum-views {
+  display: flex;
+  gap: var(--sp-5);
+}
+.home-curriculum-view {
+  flex: 1;
+  min-width: 0;
+}
+.home-curriculum-divider {
+  width: 1px;
+  background: var(--border-light);
+  align-self: stretch;
+}
+.home-view-label {
   font-family: var(--font-body);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--text-muted);
-  padding: var(--sp-2) 0 0;
+  margin: 0 0 var(--sp-2);
+  padding: 0;
+  border: none;
+}
+
+/* Age phase pills — horizontal row of age ranges */
+.home-phase-grid {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+.home-phase-pill {
+  padding: var(--sp-1) var(--sp-3);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: border-color var(--duration-micro) var(--ease-out),
+              background var(--duration-micro) var(--ease-out);
+}
+.home-phase-pill:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+}
+.home-phase-age {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+/* Thread pills */
+.home-thread-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+.home-thread-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-2);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: border-color var(--duration-micro) var(--ease-out),
+              background var(--duration-micro) var(--ease-out),
+              color var(--duration-micro) var(--ease-out);
+}
+.home-thread-pill:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.home-thread-icon {
+  font-size: 16px;
+  color: var(--accent);
 }
 
 .home-card {
@@ -676,6 +784,9 @@
   cursor: pointer;
   text-align: left;
   font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   transition: transform var(--duration-component) var(--ease-out),
               border-color var(--duration-component) var(--ease-out),
               box-shadow var(--duration-component) var(--ease-out);

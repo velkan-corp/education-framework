@@ -14,7 +14,7 @@ phases:
   - phaseId: age-11-13
     tier: recommended
     title: "Mob Psycho 100 (3 temporadas, audio en japonés)"
-    description: "El mejor anime sobre inteligencia emocional. Tesis central: los poderes psíquicos NO son lo que te hace valioso — la conexión sí. Sirve directamente a los objetivos de Inteligencia Relacional y Empatía."
+    description: "El mejor anime sobre inteligencia emocional. Tesis central: los poderes psíquicos NO son lo que te hace valioso — la conexión sí. Sirve directamente a los objetivos de Inteligencia Relacional y Compasión y Amabilidad."
     mode: dim
     goals:
       - "Mostrar que el autocontrol y la amabilidad son más fuertes que el poder performativo."

@@ -14,7 +14,7 @@ phases:
   - phaseId: age-11-13
     tier: recommended
     title: "Mob Psycho 100 (3 seasons, Japanese audio)"
-    description: "The best anime about emotional intelligence. Central thesis: psychic powers are NOT what makes you valuable — connection is. Directly serves Relational Intelligence and Empathy targets."
+    description: "The best anime about emotional intelligence. Central thesis: psychic powers are NOT what makes you valuable — connection is. Directly serves Relational Intelligence and Compassion & Kindness targets."
     mode: dim
     goals:
       - "Show that self-control and kindness are stronger than performative power."

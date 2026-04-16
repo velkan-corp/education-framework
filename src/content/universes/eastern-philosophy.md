@@ -21,7 +21,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Primary Texts"
-    description: "Tao Te Ching (Lao Tzu) — Stephen Mitchell or Ursula Le Guin translation. 81 short chapters. 'The Tao that can be told is not the eternal Tao.' Wu wei (effortless action, non-forcing) as a complement to the framework's urgency principle. Bhagavad Gita (selected passages) — duty, action without attachment to outcome, the dialogue between Arjuna and Krishna. Buddhist Four Noble Truths and Eightfold Path: suffering exists, it has a cause, it can end, here is the path. Analects of Confucius (selections): 'What you do not wish for yourself, do not do to others' — the Golden Rule, 500 years before Christ."
+    description: "Tao Te Ching (Lao Tzu) — Stephen Mitchell or Ursula Le Guin translation. 81 short chapters. 'The Tao that can be told is not the eternal Tao.' Wu wei (effortless action, non-forcing) as a complement to the framework's urgency principle. Bhagavad Gita (selected passages) — duty, action without attachment to outcome, the dialogue between Arjuna and Krishna. Buddhist Four Noble Truths and Eightfold Path: suffering exists, it has a cause, it can end, here is the path. Analects of Confucius (selections): 'What you do not wish for yourself, do not do to others' — the Golden Rule, 500 years before Christ. Hesse's Siddhartha: a novel about the Buddha's path to enlightenment — deceptively simple, landing differently at different ages. Not a textbook but a narrative entry point to Buddhist and Hindu thought."
     mode: dim
     goals:
       - "Read primary philosophical texts from non-Western traditions."

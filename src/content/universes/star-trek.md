@@ -15,7 +15,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Star Trek: The Next Generation (selected episodes)"
-    description: "Optimistic sci-fi. The Federation as political system — diplomacy over violence. Picard as model of leadership through reason and empathy. Start with Measure of a Man (AI rights), Inner Light (empathy), Darmok (language and communication)."
+    description: "Optimistic sci-fi. The Federation as political system — diplomacy over violence. Picard as model of leadership through reason and compassion. Start with Measure of a Man (AI rights), Inner Light (compassion), Darmok (language and communication)."
     mode: interrogate
     goals:
       - "Make leadership feel intellectual and moral, not only forceful."

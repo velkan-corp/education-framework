@@ -54,6 +54,11 @@ order: 1
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Mental Models at This Stage</h2>
 <div class="model-tracker">
+<div class="model-tracker-label">Layer 0: Cognitive Precursors</div>
+<div class="model-tracker-bar">
+<span class="model-dot precursor" data-tip="Object Permanence — Things exist when you can't see them"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot precursor" data-tip="Categorization — Sorting the world into groups by shared properties"><span class="model-dot-name">Categ.</span></span>
+</div>
 <div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
 <div class="model-tracker-bar">
 <span class="model-dot future" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
@@ -64,13 +69,13 @@ order: 1
 <span class="model-dot future" data-tip="Compounding — What happens if this continues for 10 years?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" data-tip="Probability — What's the actual likelihood?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Opportunity Cost — What am I giving up by choosing this?"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
-<span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerge</span></span>
-<span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">10</span><span class="model-dot-name">Oppos.</span></span>
-<span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">12</span><span class="model-dot-name">Biases</span></span>
-<span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
-<span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerge</span></span>
+<span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">11</span><span class="model-dot-name">Oppos.</span></span>
+<span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">13</span><span class="model-dot-name">Biases</span></span>
+<span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">16</span><span class="model-dot-name">Game</span></span>
+<span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">17</span><span class="model-dot-name">Failure</span></span>
 </div>
 </div>
 <p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>

@@ -166,7 +166,7 @@ order: 0
 <div class="target-card"><span class="target-num">5</span><h4>First-Principles Reasoning</h4><p>"What is actually true and why?" Decompose to axioms, rebuild from fundamentals.</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Communication Mastery</h4><p>Written, oral, visual, digital, performative. Sales and persuasion included.</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Relational Intelligence</h4><p>Build trust, read dynamics, navigate conflict, collaborate, sustain deep relationships.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness</h4><p>Feel others' experience AND act on it. Kindness as strength. Includes gratitude.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness</h4><p>Compassion, not empathy. Empathy means feeling what others feel — it is biased and exhausting. Compassion means recognising suffering and acting on it — it is sustainable and scalable. Kindness as strength. Includes gratitude.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Design the body-mind system. Sleep, exercise, nutrition, hardship tolerance.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Thrive in uncertainty. Adjust when the model fails. Operate in environments you weren't trained for.</p></div>
 <div class="target-card"><span class="target-num">11</span><h4>Creative Production</h4><p>Generate novel, valuable output. Divergent thinking, combination, iteration, and the courage to produce original work.</p></div>
@@ -195,26 +195,26 @@ order: 0
 <div class="model-card"><span class="model-num">6</span><strong>Compounding</strong><br>What happens if this continues for 10 years?</div>
 <div class="model-card"><span class="model-num">7</span><strong>Probability</strong><br>What's the actual likelihood?</div>
 <div class="model-card"><span class="model-num">8</span><strong>Opportunity Cost</strong><br>What am I giving up by choosing this?</div>
-<div class="model-card"><span class="model-num">17</span><strong>Leverage</strong><br>Where is the highest-return point to apply effort?</div>
+<div class="model-card"><span class="model-num">9</span><strong>Leverage</strong><br>Where is the highest-return point to apply effort?</div>
 </div>
 </div>
 <div class="model-age-group">
 <div class="model-age-label">Age 11-13 — Layer 3: Stress-Test</div>
 <div class="model-cards">
-<div class="model-card"><span class="model-num">9</span><strong>Emergence</strong><br>What arises from simple parts that none contain?</div>
-<div class="model-card"><span class="model-num">10</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
-<div class="model-card"><span class="model-num">11</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
-<div class="model-card"><span class="model-num">12</span><strong>Cognitive Biases</strong><br>How is my brain misleading me right now?</div>
-<div class="model-card"><span class="model-num">18</span><strong>Skin in the Game</strong><br>Does this person bear the consequences of their advice?</div>
+<div class="model-card"><span class="model-num">10</span><strong>Emergence</strong><br>What arises from simple parts that none contain?</div>
+<div class="model-card"><span class="model-num">11</span><strong>Complementary Opposites</strong><br>Is this an either/or or a both/and?</div>
+<div class="model-card"><span class="model-num">12</span><strong>Via Negativa</strong><br>What improves by removing rather than adding?</div>
+<div class="model-card"><span class="model-num">13</span><strong>Cognitive Biases</strong><br>How is my brain misleading me right now?</div>
+<div class="model-card"><span class="model-num">14</span><strong>Skin in the Game</strong><br>Does this person bear the consequences of their advice?</div>
 </div>
 </div>
 <div class="model-age-group">
 <div class="model-age-label">Age 14-16 — Layer 4: Synthesize</div>
 <div class="model-cards">
-<div class="model-card"><span class="model-num">13</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
-<div class="model-card"><span class="model-num">14</span><strong>Game Theory</strong><br>How does the other player's strategy affect mine?</div>
-<div class="model-card"><span class="model-num">15</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
-<div class="model-card"><span class="model-num">16</span><strong>Power Structures</strong><br>Who decides, who benefits, and why does this arrangement persist?</div>
+<div class="model-card"><span class="model-num">15</span><strong>Antifragility</strong><br>Does this system benefit from disorder?</div>
+<div class="model-card"><span class="model-num">16</span><strong>Game Theory</strong><br>How does the other player's strategy affect mine?</div>
+<div class="model-card"><span class="model-num">17</span><strong>Model Failure</strong><br>Where does this model give the wrong answer?</div>
+<div class="model-card"><span class="model-num">18</span><strong>Power Structures</strong><br>Who decides, who benefits, and why does this arrangement persist?</div>
 <div class="model-card"><span class="model-num">19</span><strong>Scale</strong><br>What changes when you make this bigger or smaller?</div>
 </div>
 </div>
@@ -409,7 +409,7 @@ order: 0
 <p>Cultivate 2-3 mentor relationships starting age 13-14. These relationships need 2+ years to produce extraordinary letters. The mentor must know the child well enough to write with specific, compelling examples — not generic praise. See Appendix for tactical details.</p>
 
 <h3>Community Leadership at Visible Scale</h3>
-<p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Contributing to community is a developmental endpoint in its own right — Positive Youth Development research (Lerner et al., 2005) identifies Contribution as the highest outcome, not a strategy. The child who makes their community better is exercising the full target set: agency, empathy, communication, relational intelligence, creative production. That this is also what admissions committees value is a happy alignment, not the primary motivation.</p>
+<p>Not volunteering — creating. Found a club, launch an initiative, build a platform that serves others. Must have evidence of impact with numbers. Contributing to community is a developmental endpoint in its own right — Positive Youth Development research (Lerner et al., 2005) identifies Contribution as the highest outcome, not a strategy. The child who makes their community better is exercising the full target set: agency, compassion, communication, relational intelligence, creative production. That this is also what admissions committees value is a happy alignment, not the primary motivation.</p>
 
 <h3>Multiple Elite Routes</h3>
 <p><strong>US-selective university route:</strong> standardized tests if required, spike + narrative + recommendation letters + selective programs.</p>
@@ -559,8 +559,8 @@ order: 0
 <tr><th>Age</th><th>Signs It's Working</th><th>Signs It's Not</th><th>Key Milestones</th></tr>
 <tr><td>0–3</td><td>Securely attached (seeks comfort, explores freely, protests separation briefly then recovers). Babbling/talking on curve. Physically confident — climbs, runs, falls without excessive fear. Comfortable around other children.</td><td>Clingy or avoidant. Excessive caution with new environments. Speech delay without other explanation. Distressed by other children's proximity.</td><td>Can name 10+ objects in both languages. Physically confident (climbs, runs, falls without excessive fear). Sustained attention 5+ minutes on chosen activity. Secure attachment evident.</td></tr>
 <tr><td>4–7</td><td>Asks "why" relentlessly. Sustains focus 20+ min. Handles small failures without meltdown. Initiates play without adult direction. Navigates basic conflicts with peers. Shows concern when another child is hurt.</td><td>Waits for permission to play. Melts down at minor frustration. Performs for adults. Can't resolve any peer conflict without adult mediation. Indifferent to others' distress.</td><td>Reads simple chapter books in dominant language. Plays chess or equivalent strategy game. Cooks one simple meal with supervision. Can sew a button. Has a niche activity 3+ years running. Quotes a poem from memory.</td></tr>
-<tr><td>8–10</td><td>Has a passionate domain. Can explain reasoning. Reads voluntarily. Handles losing analytically. Collaborates on team sport — adjusts to teammates, accepts different roles. Shows empathy spontaneously.</td><td>Goes through motions. Avoids challenge. Can't articulate beliefs. Practice feels like punishment. Can't function in a team without dominating or withdrawing.</td><td>5 meals without recipe. Built something that works (code, woodwork, electronics). Can explain a mental model by name. Can debate a position they disagree with. Built own PC or equivalent technical project.</td></tr>
-<tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked. Understands body autonomy, basic consent, privacy, and when to report manipulation immediately.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Empathy is performed, not felt. Keeps dangerous secrets because shame or peer pressure is stronger than trust.</td><td>Shipped something real with external users. Can wire a plug and fix a tap. Manages own schedule. Has a standing backflip (if gymnastics progression followed). Can dance salsa. Reads primary sources (Kahneman, selected philosophy).</td></tr>
+<tr><td>8–10</td><td>Has a passionate domain. Can explain reasoning. Reads voluntarily. Handles losing analytically. Collaborates on team sport — adjusts to teammates, accepts different roles. Shows compassion spontaneously.</td><td>Goes through motions. Avoids challenge. Can't articulate beliefs. Practice feels like punishment. Can't function in a team without dominating or withdrawing.</td><td>5 meals without recipe. Built something that works (code, woodwork, electronics). Can explain a mental model by name. Can debate a position they disagree with. Built own PC or equivalent technical project.</td></tr>
+<tr><td>11–13</td><td>Argues substantively. Questions authority. Has shipped something. Manages own time. Sustains friendships through disagreement. Takes initiative in group settings. Acts on concern for others without being asked. Understands body autonomy, basic consent, privacy, and when to report manipulation immediately.</td><td>Compliant without conviction. Hides interests. Performance anxiety. Can't tolerate being wrong. Social interactions are transactional. Compassion is performed, not felt. Keeps dangerous secrets because shame or peer pressure is stronger than trust.</td><td>Shipped something real with external users. Can wire a plug and fix a tap. Manages own schedule. Has a standing backflip (if gymnastics progression followed). Can dance salsa. Reads primary sources (Kahneman, selected philosophy).</td></tr>
 <tr><td>14–18</td><td>Thinks independently. Genuine niche. Makes defensible decisions. Reads primary sources. Has deep relationships beyond family. Collaborates with people they didn't choose. Acts ethically when it costs them something. Handles consent, reputation, and digital risk with adult-level seriousness. Creates original work. Evaluates own performance by internal standards.</td><td>Still performing for approval. No autonomous intellectual life. Risk-averse. Can't handle ambiguity. Relationships are shallow or instrumental. Moral reasoning is theoretical only. Repeatedly tolerates coercion, sends self-endangering content, or confuses intensity with trust. No creative output beyond assignments.</td><td>Portfolio of 3+ shipped projects. Standing backflip casual. Cooks dinner party for 8. Furnishes first space on a budget. Can argue any position from first principles. Reads in 2+ languages fluently. Internal locus of evaluation operational.</td></tr>
 </table>
 

@@ -15,7 +15,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Maus (Art Spiegelman)"
-    description: "El Holocausto a través del cómic. El medio ES el mensaje. Sirve directamente al objetivo de Empatía y Bondad."
+    description: "El Holocausto a través del cómic. El medio ES el mensaje. Sirve directamente al objetivo de Compasión y Amabilidad."
     mode: critique
     goals:
       - "Tratar la memoria histórica y el testimonio como el tema central."

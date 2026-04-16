@@ -21,7 +21,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Textos primarios"
-    description: "Tao Te Ching (Lao Tzu) — traducción de Stephen Mitchell o Ursula Le Guin. 81 capítulos breves. 'El Tao que puede ser nombrado no es el Tao eterno.' Wu wei (acción sin esfuerzo, no-forzar) como complemento al principio de urgencia del marco. Bhagavad Gita (pasajes seleccionados) — deber, acción sin apego al resultado, el diálogo entre Arjuna y Krishna. Las Cuatro Nobles Verdades budistas y el Óctuple Sendero: el sufrimiento existe, tiene una causa, puede cesar, este es el camino. Analectas de Confucio (selecciones): 'Lo que no desees para ti, no lo hagas a los demás' — la Regla de Oro, 500 años antes de Cristo."
+    description: "Tao Te Ching (Lao Tzu) — traducción de Stephen Mitchell o Ursula Le Guin. 81 capítulos breves. 'El Tao que puede ser nombrado no es el Tao eterno.' Wu wei (acción sin esfuerzo, no-forzar) como complemento al principio de urgencia del marco. Bhagavad Gita (pasajes seleccionados) — deber, acción sin apego al resultado, el diálogo entre Arjuna y Krishna. Las Cuatro Nobles Verdades budistas y el Óctuple Sendero: el sufrimiento existe, tiene una causa, puede cesar, este es el camino. Analectas de Confucio (selecciones): 'Lo que no desees para ti, no lo hagas a los demás' — la Regla de Oro, 500 años antes de Cristo. Siddhartha de Hesse: una novela sobre el camino del Buda hacia la iluminación — engañosamente simple, que impacta de forma diferente a diferentes edades. No es un manual sino un punto de entrada narrativo al pensamiento budista e hindú."
     mode: dim
     goals:
       - "Leer textos filosóficos primarios de tradiciones no occidentales."

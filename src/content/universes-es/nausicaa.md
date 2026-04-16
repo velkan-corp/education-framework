@@ -1,7 +1,7 @@
 ---
 label: "Nausicaa of the Valley of the Wind"
 kind: fictional-universe
-summary: "Ecología, guerra, liderazgo y empatía radical a una escala mayor y más dura que la mayoría de la fantasía infantil."
+summary: "Ecología, guerra, liderazgo y compasión radical a una escala mayor y más dura que la mayoría de la fantasía infantil."
 whyItBelongs: "Nausicaä es uno de los mejores puentes desde la belleza hacia el pensamiento ecológico y civilizatorio serio. Recompensa tanto el asombro infantil como la lectura política más madura."
 tags: [comics, cinema, japanese]
 languages: [japanese]
@@ -15,7 +15,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Nausicaä (película de Miyazaki de 1984, audio en japonés)"
-    description: "Ecología postapocalíptica, liderazgo, empatía radical. La película es accesible a esta edad y sirve de puente al universo Ghibli."
+    description: "Ecología postapocalíptica, liderazgo, compasión radical. La película es accesible a esta edad y sirve de puente al universo Ghibli."
     mode: interrogate
     goals:
       - "Mostrar la interdependencia ecológica sin aplanarla en una lección."

@@ -1,8 +1,8 @@
 ---
 label: "Ender's Game"
 kind: fictional-universe
-summary: "Strategy, manipulation, empathy, and the moral distortions created by systems of war."
-whyItBelongs: "Ender matters because it links tactical brilliance to moral injury. It is useful when the child can hold empathy and strategic competence together."
+summary: "Strategy, manipulation, compassion, and the moral distortions created by systems of war."
+whyItBelongs: "Ender matters because it links tactical brilliance to moral injury. It is useful when the child can hold compassion and strategic competence together."
 tags: [books, english]
 languages: [english]
 targets: [resilient-self-efficacy, first-principles-reasoning, relational-intelligence, compassion-kindness]
@@ -15,7 +15,7 @@ phases:
   - phaseId: age-8-10
     tier: core
     title: "Ender's Game (book 1)"
-    description: "Strategy, empathy, moral weight of violence. Maps ≠ Territory: the simulation IS real."
+    description: "Strategy, compassion, moral weight of violence. Maps ≠ Territory: the simulation IS real."
     mode: interrogate
     goals:
       - "Tie strategy to consequence rather than glamorizing winning."
@@ -24,7 +24,7 @@ phases:
   - phaseId: age-11-13
     tier: foundational
     title: "Ender's Game + Speaker for the Dead"
-    description: "Speaker directly serves Relational Intelligence and Empathy: xenology as applied empathy, understanding radical otherness."
+    description: "Speaker directly serves Relational Intelligence and Compassion: xenology as applied compassion, understanding radical otherness."
     mode: critique
     goals:
       - "Pair strategic brilliance with the later obligation to understand and repair."

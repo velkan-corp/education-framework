@@ -15,7 +15,7 @@ phases:
   - phaseId: age-17-18
     tier: foundational
     title: "Ficciones + El Aleph (en espanol)"
-    description: "El escritor mas denso en cualquier idioma. Cada cuento es un experimento mental sobre el infinito, la identidad o los limites de la representacion. Mapa ≠ Territorio es su tema central. Ancla esencial en lengua espanola junto a Cervantes."
+    description: "El escritor mas denso en cualquier idioma. Cada cuento es un experimento mental sobre el infinito, la identidad o los limites de la representacion. Mapa ≠ Territorio es su tema central. Ancla esencial en lengua espanola junto a Cervantes. Si una noche de invierno un viajero de Calvino: una novela sobre leer novelas — estructuralmente imposible, de alguna manera funciona. El mismo ADN metaficcional que Borges pero expresado como arquitectura narrativa en lugar de puzzle filosófico."
     mode: critique
     goals:
       - "Leer ficcion como una maquina de pensamiento, no solo como personaje y trama."

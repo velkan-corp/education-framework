@@ -10,6 +10,15 @@ models: [cause-effect, leverage, feedback-loops]
 intensity: low
 socialValue: bridge
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Kitchen participation — education, not efficiency"
+    description: "They stir, pour, tear lettuce, knead dough, crack eggs (badly). Not efficiency — education. Every interaction with food is a lesson in materials, origins, and transformation. Name every ingredient and where it comes from: 'This is flour. It was wheat. A farmer grew it.' Accompany to the market — Mercado de la Paz, any local market — see raw ingredients before they become meals. Child-sized tools: small pitcher, step stool, apron, child-safe knife for soft foods. The kitchen is the original Montessori classroom: measuring is mathematics, mixing is chemistry, waiting for bread to rise is patience made edible."
+    mode: absorb
+    goals:
+      - "Normalise cooking as something everyone does — participation, not observation."
+      - "Build a vocabulary of ingredients, origins, and transformations."
+      - "Develop fine motor skills through pouring, stirring, kneading, and tearing."
   - phaseId: age-4-7
     tier: core
     title: "Kitchen helper — measuring, mixing, tasting"
@@ -31,7 +40,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Meal planning, budget cooking, and cultural range"
-    description: "Plan a week of meals within a budget. Cook from multiple cultural traditions. Understand nutrition as a system, not a set of rules."
+    description: "Plan a week of meals within a budget. Cook from multiple cultural traditions. Understand nutrition as a system, not a set of rules. Nutrition as a system, not a set of rules: macronutrients (protein, carbs, fat — what each does), reading food labels, the food industry's incentive structure (why processed food is cheap and marketed aggressively). 'If you understand what food actually does in your body, you don't need diet rules.'"
     mode: interrogate
     goals:
       - "Experience budget constraint as a creative challenge, not a limitation."
@@ -39,7 +48,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Dinner party for 8"
-    description: "The milestone: plan, shop, cook, and host a dinner party for 8 people. Timing, presentation, and hosting are the skills — not just the cooking."
+    description: "The milestone: plan, shop, cook, and host a dinner party for 8 people. Timing, presentation, and hosting are the skills — not just the cooking. Sports nutrition and caloric needs for different activities. Evidence vs. diet culture: intermittent fasting, keto, veganism — what does the evidence actually say? Eating disorder awareness: the line between disciplined nutrition and disordered eating. The food industry as a case study in incentives: who profits when you eat badly?"
     mode: critique
     goals:
       - "Exercise hospitality as a social skill — managing timing, conversation, and multiple dishes simultaneously."
@@ -47,7 +56,7 @@ phases:
   - phaseId: age-17-18
     tier: core
     title: "Autonomous food system"
-    description: "They manage their own nutrition: meal planning, shopping, cooking, and eating well without parental infrastructure. This is the 'furnishes first space on a budget' competency applied to food."
+    description: "They manage their own nutrition: meal planning, shopping, cooking, and eating well without parental infrastructure. This is the 'furnishes first space on a budget' competency applied to food. Autonomous nutrition system: they manage their own nutrition based on understanding, not rules. Can read any nutrition claim and evaluate it like a scientist: source, method, sample size, funding, effect size."
     mode: critique
     goals:
       - "An autonomous food system that survives the transition to university — they eat well because they can cook, not because a dining hall exists."

@@ -10,6 +10,15 @@ models: [complementary-opposites, feedback-loops]
 intensity: medium
 socialValue: bridge
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Música es movimiento es alegría"
+    description: "Cuando suena música, todos se mueven. Sin sillas, sin quedarse quietos. Pon salsa, merengue, cumbia, flamenco en casa — cógeles de las manos y baila. El objetivo: cablear música-movimiento-alegría como un único circuito neuronal antes de que el lenguaje y la autoconciencia lleguen a complicarlo. Introducción a las palmas flamencas a los 2,5-3 años: dar palmas con ritmos simples con la música. En Madrid es culturalmente natural — el flamenco está en todas partes. Incluso las palmas básicas al compás entrenan la sincronización auditivo-motora a un nivel que la instrucción formal no puede igualar después. Juegos de baile-congelación: pon música, baila, la música para, congélate. Esto entrena tanto el movimiento rítmico como el control inhibitorio simultáneamente — diversión genuina disfrazada de entrenamiento de funciones ejecutivas."
+    mode: absorb
+    goals:
+      - "Cablear el circuito música-movimiento-alegría antes de que llegue la autoconciencia."
+      - "Construir conciencia rítmica a través de movimiento culturalmente integrado — palmas flamencas, baile latino."
+      - "Usar el baile-congelación como entrenamiento simultáneo de ritmo y práctica de inhibición."
   - phaseId: age-4-7
     tier: core
     title: "Movimiento creativo, freestyle y bases de ballet"

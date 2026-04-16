@@ -11,6 +11,15 @@ intensity: low
 socialValue: broad
 substitutes: [minecraft, ksp, warhammer]
 phases:
+  - phaseId: age-1-3
+    tier: foundational
+    title: "Duplo — construcción abierta"
+    description: "Duplo ES LEGO para esta edad. Construcción abierta — torres, puentes, recintos, vehículos. Razonamiento espacial, iteración, desarrollo de motricidad fina. Narra la construcción: '¡Lo has hecho más alto! ¿Qué pasa si ponemos uno más?' Déjalos construir antes de enseñarles qué construir. Evita sets temáticos con resultados prescritos — la creatividad abierta es el currículo. Torres de bloques con derrumbe intencionado ('¿cuántos hasta que se caiga?') introducen causa-efecto e iteración simultáneamente."
+    mode: make
+    goals:
+      - "Priorizar la invención sobre la instrucción — construcción libre antes de seguir imágenes."
+      - "Construir el hábito de la iteración: construir, derrumbar, reconstruir diferente."
+      - "Desarrollar el control de motricidad fina conectando y desconectando bloques."
   - phaseId: age-4-7
     tier: foundational
     title: "LEGO System (Classic + sets temáticos)"

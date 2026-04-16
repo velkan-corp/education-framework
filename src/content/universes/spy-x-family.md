@@ -22,7 +22,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Spy \xD7 Family continues"
-    description: "The themes of identity and deception deepen. Anya's telepathy as literal empathy device."
+    description: "The themes of identity and deception deepen. Anya's telepathy as literal compassion device."
     mode: interrogate
     goals:
       - "Discuss when role-playing protects people and when it hides real needs."

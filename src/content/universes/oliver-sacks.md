@@ -18,7 +18,7 @@ phases:
     mode: dim
     goals:
       - "Understand that perception, memory, and identity are brain functions — constructed, not given."
-      - "Develop empathy for neurological difference."
+      - "Develop compassion for neurological difference."
   - phaseId: age-14-16
     tier: recommended
     title: "Musicophilia + Awakenings"

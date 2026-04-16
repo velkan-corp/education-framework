@@ -10,6 +10,14 @@ models: [emergence, feedback-loops, compounding, complementary-opposites]
 intensity: medium
 socialValue: niche
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Exposición ambiental — el entorno sensorial es Bach"
+    description: "Suite para violonchelo n.º 1 durante el juego. Variaciones Goldberg durante el descanso. Conciertos de Brandeburgo como escucha activa — '¿Cuántos instrumentos puedes oír?' La estructura rítmica y la complejidad armónica cablean vías neuronales antes de que el niño pueda nombrar lo que oye. Esto no es educación musical — es diseño de entorno sensorial. La polifonía de Bach (múltiples voces independientes) es especialmente adecuada para el desarrollo auditivo temprano porque recompensa la atención a cualquier profundidad: fondo sonoro, melodía principal o conciencia estructural. El niño absorbe complejidad pasivamente; el cableado sucede esté o no 'prestando atención.'"
+    mode: absorb
+    goals:
+      - "Cablear la exposición a música polifónica compleja en el entorno sensorial diario."
+      - "Construir discriminación auditiva a través de exposición pasiva a múltiples voces musicales independientes."
   - phaseId: age-8-10
     tier: recommended
     title: "Escuchar a Bach"

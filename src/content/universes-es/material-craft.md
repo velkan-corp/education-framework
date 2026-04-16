@@ -10,6 +10,15 @@ intensity: medium
 socialValue: broad
 substitutes: [lego, minecraft]
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Materiales sensoriales y narrar el mundo físico"
+    description: "Biblioteca de materiales sensoriales: mantener una caja de muestras para exploración — piezas de madera sin tratar (pino, roble, nogal — distintos pesos, vetas, temperaturas), objetos metálicos (cuchara de aluminio, moneda de cobre, tornillo de acero), retales de tela (algodón, seda, lana, lino), piedra, cerámica, cuero. Nombrados y manipulados durante la vida práctica. 'Esto es lana. Siente qué diferente es del algodón. La lana viene de las ovejas.' Cocinar como educación material: remueven, vierten, rasgan lechuga, amasan. No es eficiencia — es educación. Nombrar cada ingrediente y de dónde viene. 'Esto es harina. Era trigo. Un agricultor lo cultivó.' Acompañar al mercado — ver ingredientes crudos antes de que se conviertan en comidas. Cierres reales en la ropa: botones, cremalleras, cordones según permita la motricidad. No atajos con velcro. Narrar la materialidad de los objetos: 'Esta mesa es de madera. Siente qué suave es. Alguien la lijó.'"
+    mode: absorb
+    goals:
+      - "Construir un vocabulario de materiales a través de experiencia sensorial directa — nombrar de qué están hechas las cosas."
+      - "Establecer el reflejo de que los objetos tienen orígenes, materiales y fabricantes."
+      - "Desarrollar motricidad fina a través de cierres reales, herramientas reales, materiales reales."
   - phaseId: age-4-7
     tier: core
     title: "Observar y Nombrar"

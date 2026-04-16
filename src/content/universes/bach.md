@@ -10,6 +10,14 @@ models: [emergence, feedback-loops, compounding, complementary-opposites]
 intensity: medium
 socialValue: niche
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Ambient exposure — the sensory environment is Bach"
+    description: "Cello Suite No. 1 during play. Goldberg Variations during rest. Brandenburg Concertos as active listening — 'How many instruments can you hear?' The rhythmic structure and harmonic complexity wire neural pathways before the child can name what they're hearing. This is not music education — it is sensory environment design. Bach's polyphony (multiple independent voices) is uniquely suited to early auditory development because it rewards attention at any depth: background wash, foreground melody, or structural awareness. The child absorbs complexity passively; the wiring happens whether or not they're 'paying attention.'"
+    mode: absorb
+    goals:
+      - "Wire exposure to complex polyphonic music into the daily sensory environment."
+      - "Build auditory discrimination through passive exposure to multiple independent musical voices."
   - phaseId: age-8-10
     tier: recommended
     title: "Listening to Bach"

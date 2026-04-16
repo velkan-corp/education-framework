@@ -22,7 +22,7 @@ phases:
   - phaseId: age-8-10
     tier: recommended
     title: "Spy × Family continúa"
-    description: "Los temas de identidad y engaño se profundizan. La telepatía de Anya como dispositivo literal de empatía."
+    description: "Los temas de identidad y engaño se profundizan. La telepatía de Anya como dispositivo literal de compasión."
     mode: interrogate
     goals:
       - "Discutir cuándo actuar un papel protege a las personas y cuándo oculta necesidades reales."

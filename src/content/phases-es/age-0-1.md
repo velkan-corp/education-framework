@@ -54,6 +54,11 @@ order: 1
 
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>Modelos Mentales en Esta Etapa</h2>
 <div class="model-tracker">
+<div class="model-tracker-label">Capa 0: Precursores Cognitivos</div>
+<div class="model-tracker-bar">
+<span class="model-dot precursor" data-tip="Permanencia del Objeto — Las cosas existen cuando no puedes verlas"><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot precursor" data-tip="Categorización — Clasificar el mundo en grupos por propiedades compartidas"><span class="model-dot-name">Categ.</span></span>
+</div>
 <div class="model-tracker-label">Capa 0: Fundacion Pre-linguistica</div>
 <div class="model-tracker-bar">
 <span class="model-dot future" data-tip="Causa y Efecto — Y luego que? Y despues?"><span class="model-dot-num">1</span><span class="model-dot-name">Causa</span></span>
@@ -64,13 +69,13 @@ order: 1
 <span class="model-dot future" data-tip="Interes Compuesto — Que pasa si esto continua 10 anos?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" data-tip="Probabilidad — Cual es la probabilidad real?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Coste de Oportunidad — A que renuncio al elegir esto?"><span class="model-dot-num">8</span><span class="model-dot-name">COpor.</span></span>
-<span class="model-dot future" data-tip="Emergencia — Que surge de partes simples que ninguna contiene?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerg.</span></span>
-<span class="model-dot future" data-tip="Opuestos Complementarios — Es esto un o/o o un y/y?"><span class="model-dot-num">10</span><span class="model-dot-name">Opues.</span></span>
-<span class="model-dot future" data-tip="Via Negativa — Que mejora eliminando en lugar de anadiendo?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" data-tip="Sesgos Cognitivos — Como me esta enganando mi cerebro ahora mismo?"><span class="model-dot-num">12</span><span class="model-dot-name">Sesgos</span></span>
-<span class="model-dot future" data-tip="Antifragilidad — Se beneficia este sistema del desorden?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" data-tip="Teoria de Juegos — Como afecta la estrategia del otro jugador a la mia?"><span class="model-dot-num">14</span><span class="model-dot-name">Juego</span></span>
-<span class="model-dot future" data-tip="Fallo del Modelo — Donde da este modelo la respuesta equivocada?"><span class="model-dot-num">15</span><span class="model-dot-name">Fallo</span></span>
+<span class="model-dot future" data-tip="Emergencia — Que surge de partes simples que ninguna contiene?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerg.</span></span>
+<span class="model-dot future" data-tip="Opuestos Complementarios — Es esto un o/o o un y/y?"><span class="model-dot-num">11</span><span class="model-dot-name">Opues.</span></span>
+<span class="model-dot future" data-tip="Via Negativa — Que mejora eliminando en lugar de anadiendo?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" data-tip="Sesgos Cognitivos — Como me esta enganando mi cerebro ahora mismo?"><span class="model-dot-num">13</span><span class="model-dot-name">Sesgos</span></span>
+<span class="model-dot future" data-tip="Antifragilidad — Se beneficia este sistema del desorden?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" data-tip="Teoria de Juegos — Como afecta la estrategia del otro jugador a la mia?"><span class="model-dot-num">16</span><span class="model-dot-name">Juego</span></span>
+<span class="model-dot future" data-tip="Fallo del Modelo — Donde da este modelo la respuesta equivocada?"><span class="model-dot-num">17</span><span class="model-dot-name">Fallo</span></span>
 </div>
 </div>
 <p>Capa 0 — Fundacion pre-linguistica. El marco utiliza 12 modelos mentales universales revisitados anualmente. A esta edad, todos los modelos son experienciales: construidos a traves de la accion y la consecuencia, no de las palabras.</p>

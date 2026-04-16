@@ -1,8 +1,8 @@
 ---
 label: "Ender's Game"
 kind: fictional-universe
-summary: "Estrategia, manipulación, empatía y las distorsiones morales creadas por sistemas de guerra."
-whyItBelongs: "Ender importa porque vincula la brillantez táctica con el daño moral. Es útil cuando el niño puede sostener empatía y competencia estratégica juntas."
+summary: "Estrategia, manipulación, compasión y las distorsiones morales creadas por sistemas de guerra."
+whyItBelongs: "Ender importa porque vincula la brillantez táctica con el daño moral. Es útil cuando el niño puede sostener compasión y competencia estratégica juntas."
 tags: [books, english]
 languages: [english]
 targets: [resilient-self-efficacy, first-principles-reasoning, relational-intelligence, compassion-kindness]
@@ -15,7 +15,7 @@ phases:
   - phaseId: age-8-10
     tier: core
     title: "El juego de Ender (libro 1)"
-    description: "Estrategia, empatía, peso moral de la violencia. Maps ≠ Territory: la simulación ES real."
+    description: "Estrategia, compasión, peso moral de la violencia. Maps ≠ Territory: la simulación ES real."
     mode: interrogate
     goals:
       - "Vincular la estrategia a las consecuencias en lugar de glorificar la victoria."
@@ -24,7 +24,7 @@ phases:
   - phaseId: age-11-13
     tier: foundational
     title: "El juego de Ender + La voz de los muertos"
-    description: "La voz de los muertos sirve directamente a la Inteligencia Relacional y la Empatía: la xenología como empatía aplicada, entender la otredad radical."
+    description: "La voz de los muertos sirve directamente a la Inteligencia Relacional y la Compasión: la xenología como compasión aplicada, entender la otredad radical."
     mode: critique
     goals:
       - "Emparejar la brillantez estratégica con la obligación posterior de entender y reparar."

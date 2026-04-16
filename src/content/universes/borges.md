@@ -15,7 +15,7 @@ phases:
   - phaseId: age-17-18
     tier: foundational
     title: "Ficciones + El Aleph (in Spanish)"
-    description: "The densest writer in any language. Every story is a thought experiment about infinity, identity, or the limits of representation. Maps ≠ Territory is his central theme. Essential Spanish-language anchor alongside Cervantes."
+    description: "The densest writer in any language. Every story is a thought experiment about infinity, identity, or the limits of representation. Maps ≠ Territory is his central theme. Essential Spanish-language anchor alongside Cervantes. Calvino's If on a winter's night a traveler: a novel about reading novels — structurally impossible, somehow works. The same metafictional DNA as Borges but expressed as narrative architecture rather than philosophical puzzle."
     mode: critique
     goals:
       - "Read fiction as a machine for thought rather than only character and plot."

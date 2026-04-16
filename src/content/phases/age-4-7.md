@@ -84,16 +84,16 @@ order: 3
 <span class="model-dot future" data-tip="Compounding — What happens if this continues for 10 years?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" data-tip="Probability — What's the actual likelihood?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Opportunity Cost — What am I giving up by choosing this?"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
-<span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerge</span></span>
-<span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">10</span><span class="model-dot-name">Oppos.</span></span>
-<span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">12</span><span class="model-dot-name">Biases</span></span>
-<span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">14</span><span class="model-dot-name">Game</span></span>
-<span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">15</span><span class="model-dot-name">Failure</span></span>
-<span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">16</span><span class="model-dot-name">Power</span></span>
-<span class="model-dot future" data-tip="Leverage — Where is the highest-return point to apply effort?"><span class="model-dot-num">17</span><span class="model-dot-name">Lever.</span></span>
-<span class="model-dot future" data-tip="Skin in the Game — Does this person bear the consequences of their advice?"><span class="model-dot-num">18</span><span class="model-dot-name">Skin</span></span>
+<span class="model-dot future" data-tip="Leverage — Where is the highest-return point to apply effort?"><span class="model-dot-num">9</span><span class="model-dot-name">Lever.</span></span>
+<span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerge</span></span>
+<span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">11</span><span class="model-dot-name">Oppos.</span></span>
+<span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">13</span><span class="model-dot-name">Biases</span></span>
+<span class="model-dot future" data-tip="Skin in the Game — Does this person bear the consequences of their advice?"><span class="model-dot-num">14</span><span class="model-dot-name">Skin</span></span>
+<span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">16</span><span class="model-dot-name">Game</span></span>
+<span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">17</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">18</span><span class="model-dot-name">Power</span></span>
 <span class="model-dot future" data-tip="Scale — What changes when you make this bigger or smaller?"><span class="model-dot-num">19</span><span class="model-dot-name">Scale</span></span>
 </div>
 </div>
@@ -104,7 +104,7 @@ order: 3
 <tr><td>Incentives (#3)</td><td>"Why does that character want that?" After every story. Not rhetorical — reason it out together. "Why does your friend share toys?"</td></tr>
 <tr><td>Inversion (#4)</td><td>"What if the villain was right?" "What if nobody followed any rules?" Calvin & Hobbes: Calvin constantly inverts social norms.</td></tr>
 <tr><td>Cause & Effect (#1)</td><td>Continues from 0-3 at greater complexity. Field trips: "What happens if the baker doesn't bake? Then what?" Dice games for simple probability.</td></tr>
-<tr><td>Power Structures (#16)</td><td>"Who made the rules? Who gets to decide?" Concrete experience: parent rules vs. child choices — "You can choose what to wear, but you can't choose whether to go to school. Why are those different?" Game rules — who invented them? Can you change them? What happens if you don't follow them? Playground dynamics: who chooses the game at break? How? Calvin & Hobbes: Calvin's constant, unsuccessful negotiations with parents and teachers for more power. "Why can't Calvin just do what he wants?"</td></tr>
+<tr><td>Power Structures (#18)</td><td>"Who made the rules? Who gets to decide?" Concrete experience: parent rules vs. child choices — "You can choose what to wear, but you can't choose whether to go to school. Why are those different?" Game rules — who invented them? Can you change them? What happens if you don't follow them? Playground dynamics: who chooses the game at break? How? Calvin & Hobbes: Calvin's constant, unsuccessful negotiations with parents and teachers for more power. "Why can't Calvin just do what he wants?"</td></tr>
 </table>
 <p>These models will be revisited every year at increasing depth through the onion layers. See Philosophy tab for the full progression.</p>
 
@@ -267,7 +267,7 @@ order: 3
 <p><strong>First negotiations.</strong> "I want X" evolves to "I want X because Y." Structure requests: what do you want, why, and what can you offer in return? Turn-taking in disagreements. "What does the other person want? Can you both get something?" Every conflict is a negotiation — frame it that way from the start.</p>
 
 <h3>Service & Kindness</h3>
-<p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is ethics made physical.</p>
+<p>Helping as habit, not event. Help cook, help clean, help carry groceries for the elderly neighbor. Donate toys they've outgrown — let them choose which ones and hand them over personally. Visit an animal shelter. The principle: other beings need things, and you can provide some of those things. This is morality made physical.</p>
 
 <h3>Social World & Network</h3>
 <p><strong>First institutional affiliations.</strong> The martial arts dojo, the music school, the chess club — these are network decisions as much as skill decisions. Choose institutions where the other families value something seriously.</p>
@@ -338,7 +338,7 @@ order: 3
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Knowledge & Thinking</h2>
 
-<h3>Ethics & Moral Reasoning</h3>
+<h3>Moral Reasoning</h3>
 <p>Fairness is the entry point. "Is that fair? Why or why not?" These conversations arise naturally — sharing toys, game rules, sibling disputes. Use them. Simple dilemma thinking: "If you found a toy at the park, what should you do? What if no one was watching?" The goal is not correct answers but the habit of moral reasoning. Ethics and history discussions can go deeper and longer than you expect at this age — extend the "is that fair?" questions into genuine back-and-forth Socratic dialogue. Introduce simple written reflection: "Draw or write what you think about this question."</p>
 
 <h3>History</h3>

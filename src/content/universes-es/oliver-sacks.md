@@ -18,7 +18,7 @@ phases:
     mode: dim
     goals:
       - "Comprender que la percepción, la memoria y la identidad son funciones cerebrales — construidas, no dadas."
-      - "Desarrollar empatía hacia la diferencia neurológica."
+      - "Desarrollar compasión hacia la diferencia neurológica."
   - phaseId: age-14-16
     tier: recommended
     title: "Musicofilia + Despertares"

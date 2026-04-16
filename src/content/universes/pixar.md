@@ -12,6 +12,15 @@ riskFlags: [despair]
 socialValue: broad
 substitutes: [ghibli, avatar, little-prince]
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Pixar shorts — first stories without words"
+    description: "Pixar shorts as first screen narrative (age 2+): La Luna (parent-child, finding your own way), Bao (mother-child bond, letting go), Day & Night (difference as complementarity), Partly Cloudy (loyalty). 5-7 minutes — perfect attention span. Wordless or near-wordless — comprehension doesn't require language. Emotional themes land through image and music alone. Toy Story from 2.5+ as first full-length feature if attention span allows. Co-watch always — narrate emotions and actions."
+    mode: absorb
+    goals:
+      - "Experience visual storytelling where emotion is conveyed through image and music, not dialogue."
+      - "Build the association between screen content and emotional vocabulary — 'He looks sad. Why do you think he's sad?'"
+    cautions: "Same screen-time principle as Ghibli: minimal, intentional, co-watched. These are high-value exceptions, not routine."
   - phaseId: age-4-7
     tier: core
     title: "Inside Out + WALL-E + Ratatouille + Up"

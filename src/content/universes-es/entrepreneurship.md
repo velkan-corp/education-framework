@@ -41,7 +41,7 @@ phases:
   - phaseId: age-17-18
     tier: recommended
     title: "Identidad fundadora o evidencia de portfolio"
-    description: "O bien una búsqueda emprendedora seria o un portfolio de 3+ proyectos construidos que demuestren la capacidad de crear valor sin permiso institucional."
+    description: "O bien una búsqueda emprendedora seria o un portfolio de 3+ proyectos construidos que demuestren la capacidad de crear valor sin permiso institucional. El manantial de Rand: controvertido, filosóficamente tosco, pero el impulso es real. La negativa de Howard Roark a comprometerse se lee de forma diferente cuando has construido cosas tú mismo. Leer como mitología sobre la integridad creativa, no como economía — la filosofía es cruda pero la energía es genuina. Toma la filosofía con cautela, toma la energía tal cual. The Hard Thing About Hard Things de Horowitz: el único libro de negocios que no miente sobre lo que realmente se siente al operar."
     mode: critique
     goals:
       - "El portfolio demuestra: puedo identificar una necesidad, construir una solución, lanzarla, distribuirla y mantenerla."

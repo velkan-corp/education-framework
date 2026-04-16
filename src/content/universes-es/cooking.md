@@ -10,6 +10,15 @@ models: [cause-effect, leverage, feedback-loops]
 intensity: low
 socialValue: bridge
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Participación en la cocina — educación, no eficiencia"
+    description: "Remueven, vierten, rasgan lechuga, amasan, cascan huevos (mal). No es eficiencia — es educación. Cada interacción con la comida es una lección de materiales, orígenes y transformación. Nombrar cada ingrediente y de dónde viene: 'Esto es harina. Era trigo. Un agricultor lo cultivó.' Acompañar al mercado — Mercado de la Paz, cualquier mercado local — ver ingredientes crudos antes de que se conviertan en comidas. Herramientas a su medida: jarrita pequeña, banqueta, delantal, cuchillo infantil seguro para alimentos blandos. La cocina es el aula Montessori original: medir es matemáticas, mezclar es química, esperar a que el pan suba es paciencia hecha comestible."
+    mode: absorb
+    goals:
+      - "Normalizar cocinar como algo que hace todo el mundo — participación, no observación."
+      - "Construir un vocabulario de ingredientes, orígenes y transformaciones."
+      - "Desarrollar motricidad fina a través de verter, remover, amasar y rasgar."
   - phaseId: age-4-7
     tier: core
     title: "Ayudante de cocina — medir, mezclar, probar"
@@ -31,7 +40,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Planificación de menús, cocina con presupuesto y diversidad cultural"
-    description: "Planificar una semana de comidas dentro de un presupuesto. Cocinar de múltiples tradiciones culturales. Entender la nutrición como un sistema, no un conjunto de reglas."
+    description: "Planificar una semana de comidas dentro de un presupuesto. Cocinar de múltiples tradiciones culturales. Entender la nutrición como un sistema, no un conjunto de reglas. Nutrición como sistema, no como conjunto de reglas: macronutrientes (proteína, carbohidratos, grasa — qué hace cada uno), leer etiquetas nutricionales, la estructura de incentivos de la industria alimentaria (por qué la comida procesada es barata y se comercializa agresivamente). 'Si entiendes lo que la comida realmente hace en tu cuerpo, no necesitas reglas de dieta.'"
     mode: interrogate
     goals:
       - "Experimentar la restricción presupuestaria como un reto creativo, no una limitación."
@@ -39,7 +48,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Cena para 8"
-    description: "El hito: planificar, comprar, cocinar y recibir una cena para 8 personas. Los tiempos, la presentación y la hospitalidad son las habilidades — no solo la cocina."
+    description: "El hito: planificar, comprar, cocinar y recibir una cena para 8 personas. Los tiempos, la presentación y la hospitalidad son las habilidades — no solo la cocina. Nutrición deportiva y necesidades calóricas para diferentes actividades. Evidencia vs. cultura de dieta: ayuno intermitente, keto, veganismo — ¿qué dice realmente la evidencia? Conciencia sobre trastornos alimentarios: la línea entre nutrición disciplinada y alimentación desordenada. La industria alimentaria como caso de estudio en incentivos: ¿quién se beneficia cuando comes mal?"
     mode: critique
     goals:
       - "Ejercitar la hospitalidad como habilidad social — gestionar tiempos, conversación y múltiples platos simultáneamente."
@@ -47,7 +56,7 @@ phases:
   - phaseId: age-17-18
     tier: core
     title: "Sistema alimentario autónomo"
-    description: "Gestionan su propia nutrición: planificación de menús, compra, cocina y comer bien sin infraestructura parental. Es la competencia de 'amueblar el primer espacio con presupuesto' aplicada a la comida."
+    description: "Gestionan su propia nutrición: planificación de menús, compra, cocina y comer bien sin infraestructura parental. Es la competencia de 'amueblar el primer espacio con presupuesto' aplicada a la comida. Sistema nutricional autónomo: gestionan su propia nutrición basándose en comprensión, no en reglas. Pueden leer cualquier afirmación nutricional y evaluarla como un científico: fuente, método, tamaño de muestra, financiación, tamaño del efecto."
     mode: critique
     goals:
       - "Un sistema alimentario autónomo que sobreviva la transición a la universidad — comen bien porque saben cocinar, no porque exista un comedor."

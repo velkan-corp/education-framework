@@ -50,7 +50,7 @@ phases:
   - phaseId: age-17-18
     tier: recommended
     title: "La poesía como identidad"
-    description: "A los 18, tienen una antología personal — poemas que llevan en la memoria y a los que recurren. Pueden citar Ozymandias, 'If', la Letanía contra el Miedo, el inicio del Quijote en español y a Borges a voluntad. Han escrito poemas propios de los que no se avergüenzan. La poesía no es una asignatura — es una relación con el lenguaje que profundiza todo lo demás: argumentación, empatía, observación, memoria. Rumi (selección, traducciones de Barks): 'Más allá de las ideas de lo correcto y lo incorrecto, hay un campo. Te encontraré allí.' Este es el puente entre la filosofía occidental y la oriental, expresado en poesía."
+    description: "A los 18, tienen una antología personal — poemas que llevan en la memoria y a los que recurren. Pueden citar Ozymandias, 'If', la Letanía contra el Miedo, el inicio del Quijote en español y a Borges a voluntad. Han escrito poemas propios de los que no se avergüenzan. La poesía no es una asignatura — es una relación con el lenguaje que profundiza todo lo demás: argumentación, compasión, observación, memoria. Rumi (selección, traducciones de Barks): 'Más allá de las ideas de lo correcto y lo incorrecto, hay un campo. Te encontraré allí.' Este es el puente entre la filosofía occidental y la oriental, expresado en poesía."
     mode: critique
     goals:
       - "Tener una antología personal de poemas memorizados extraídos de múltiples lenguas y tradiciones."

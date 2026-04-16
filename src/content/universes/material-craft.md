@@ -10,6 +10,15 @@ intensity: medium
 socialValue: broad
 substitutes: [lego, minecraft]
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Sensory materials and narrating the physical world"
+    description: "Sensory material library: maintain a box of material samples for exploration — untreated wood pieces (pine, oak, walnut — different weights, grains, temperatures), metal objects (aluminium spoon, copper penny, steel bolt), fabric swatches (cotton, silk, wool, linen), stone, ceramic, leather. Named and handled during practical life. 'This is wool. Feel how different it is from cotton. Wool comes from sheep.' Cooking as material education: they stir, pour, tear lettuce, knead dough. Not efficiency — education. Name every ingredient and where it comes from. 'This is flour. It was wheat. A farmer grew it.' Accompany to the market — see raw ingredients before they become meals. Real fasteners on clothes: buttons, zippers, laces as motor skills allow. Not velcro shortcuts. Narrate the materiality of objects: 'This table is made of wood. Feel how smooth it is. Someone sanded it.'"
+    mode: absorb
+    goals:
+      - "Build a vocabulary of materials through direct sensory experience — name what things are made of."
+      - "Establish the reflex that objects have origins, materials, and makers."
+      - "Develop fine motor skills through real fasteners, real tools, real materials."
   - phaseId: age-4-7
     tier: core
     title: "Observe & Name"

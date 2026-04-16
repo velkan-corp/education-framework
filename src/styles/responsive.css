@@ -14,9 +14,11 @@
   /* Content: full width */
   .content { padding: var(--sp-4) var(--sp-3); max-width: 100%; }
 
-  /* Home grid: single column */
-  .home-grid { grid-template-columns: 1fr; }
+  /* Home responsive */
   .home-title { font-size: 28px; }
+  .home-curriculum-views { flex-direction: column; gap: var(--sp-3); }
+  .home-curriculum-divider { width: 100%; height: 1px; }
+  .home-card-inner { flex-direction: column; }
 
   /* Content typography */
   h1 { font-size: 22px; }

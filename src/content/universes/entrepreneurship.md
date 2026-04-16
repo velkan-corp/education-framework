@@ -41,7 +41,7 @@ phases:
   - phaseId: age-17-18
     tier: recommended
     title: "Founder identity or portfolio evidence"
-    description: "Either a serious entrepreneurial pursuit or a portfolio of 3+ built projects that demonstrate the ability to create value without institutional permission."
+    description: "Either a serious entrepreneurial pursuit or a portfolio of 3+ built projects that demonstrate the ability to create value without institutional permission. Rand's The Fountainhead: controversial, philosophically blunt, but the drive is real. Howard Roark's refusal to compromise reads differently when you've built things yourself. Read as mythology about creative integrity, not as economics — the philosophy is crude but the energy is genuine. Take the philosophy with salt, take the energy straight. Horowitz's The Hard Thing About Hard Things: the only business book that doesn't lie about what operating actually feels like."
     mode: critique
     goals:
       - "The portfolio demonstrates: I can identify a need, build a solution, ship it, distribute it, and sustain it."

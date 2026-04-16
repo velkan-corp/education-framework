@@ -12,6 +12,15 @@ riskFlags: [despair]
 socialValue: broad
 substitutes: [ghibli, avatar, little-prince]
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Cortos de Pixar — primeras historias sin palabras"
+    description: "Cortos de Pixar como primera narrativa de pantalla (a partir de 2 años): La Luna (padre-hijo, encontrar tu propio camino), Bao (vínculo madre-hijo, dejar ir), Day & Night (la diferencia como complementariedad), Partly Cloudy (lealtad). 5-7 minutos — duración perfecta de atención. Sin palabras o casi — la comprensión no requiere lenguaje. Los temas emocionales llegan a través de imagen y música solas. Toy Story a partir de 2,5 años como primer largometraje si la atención lo permite. Co-visionar siempre — narrar emociones y acciones."
+    mode: absorb
+    goals:
+      - "Experimentar narración visual donde la emoción se transmite a través de imagen y música, no diálogo."
+      - "Construir la asociación entre contenido de pantalla y vocabulario emocional — 'Parece triste. ¿Por qué crees que está triste?'"
+    cautions: "Mismo principio de tiempo de pantalla que Ghibli: mínimo, intencional, co-visionado. Son excepciones de alto valor, no rutina."
   - phaseId: age-4-7
     tier: core
     title: "Inside Out + WALL-E + Ratatouille + Up"

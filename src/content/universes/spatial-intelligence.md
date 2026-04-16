@@ -10,6 +10,15 @@ models: [maps-not-territory, power-structures, scale]
 intensity: medium
 socialValue: bridge
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Puzzles, construction, and spatial play"
+    description: "Shape sorters, nesting cups, simple puzzles (4-12 pieces). These are not toys — they are the physical instantiation of spatial logic. Brio World wooden train layouts — the track-building IS spatial reasoning: which piece connects? Does the loop close? What happens if I add a bridge? Block towers with intentional collapse ('how tall before it falls?'). Magna-Tiles from 2.5+ for 3D construction. Grimm's Rainbow for freeform spatial sculpture. Physical maps begin: 'Where are we? Where is the park? Which way is home?' The child who has spent hundreds of hours fitting shapes, closing loops, and balancing structures arrives at age 4 already thinking in three dimensions."
+    mode: absorb
+    goals:
+      - "Build spatial reasoning through physical manipulation — fitting, stacking, connecting, balancing."
+      - "Develop systematic problem-solving: try, fail, adjust, retry."
+      - "Begin spatial orientation: where am I relative to familiar places?"
   - phaseId: age-4-7
     tier: recommended
     title: "Physical maps and treasure maps"

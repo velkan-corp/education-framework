@@ -50,7 +50,7 @@ phases:
   - phaseId: age-17-18
     tier: recommended
     title: "Poetry as Identity"
-    description: "By 18, they have a personal anthology — poems they carry in memory and draw on. They can quote Ozymandias, 'If,' the Litany Against Fear, the opening of Don Quijote in Spanish, and Borges at will. They have written poems of their own that they are not embarrassed by. Poetry is not a school subject — it is a relationship with language that deepens everything else: argument, empathy, observation, memory. Rumi (selected, Barks translations): 'Out beyond ideas of wrongdoing and rightdoing, there is a field. I'll meet you there.' This is the bridge between Western and Eastern philosophy, expressed in poetry."
+    description: "By 18, they have a personal anthology — poems they carry in memory and draw on. They can quote Ozymandias, 'If,' the Litany Against Fear, the opening of Don Quijote in Spanish, and Borges at will. They have written poems of their own that they are not embarrassed by. Poetry is not a school subject — it is a relationship with language that deepens everything else: argument, compassion, observation, memory. Rumi (selected, Barks translations): 'Out beyond ideas of wrongdoing and rightdoing, there is a field. I'll meet you there.' This is the bridge between Western and Eastern philosophy, expressed in poetry."
     mode: critique
     goals:
       - "Have a personal anthology of memorised poems drawn from multiple languages and traditions."

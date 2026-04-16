@@ -84,16 +84,16 @@ order: 3
 <span class="model-dot future" data-tip="Interés Compuesto — ¿Qué pasa si esto continúa durante 10 años?"><span class="model-dot-num">6</span><span class="model-dot-name">Comp.</span></span>
 <span class="model-dot future" data-tip="Probabilidad — ¿Cuál es la probabilidad real?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Coste de Oportunidad — ¿A qué renuncio al elegir esto?"><span class="model-dot-num">8</span><span class="model-dot-name">CostOp</span></span>
-<span class="model-dot future" data-tip="Emergencia — ¿Qué surge de partes simples que ninguna contiene?"><span class="model-dot-num">9</span><span class="model-dot-name">Emerg.</span></span>
-<span class="model-dot future" data-tip="Opuestos Complementarios — ¿Es esto un o/o, o un y/y?"><span class="model-dot-num">10</span><span class="model-dot-name">Opues.</span></span>
-<span class="model-dot future" data-tip="Via Negativa — ¿Qué mejora al quitar en vez de añadir?"><span class="model-dot-num">11</span><span class="model-dot-name">V.Neg.</span></span>
-<span class="model-dot future" data-tip="Sesgos Cognitivos — ¿Cómo me está engañando mi cerebro ahora mismo?"><span class="model-dot-num">12</span><span class="model-dot-name">Sesgos</span></span>
-<span class="model-dot future" data-tip="Antifragilidad — ¿Se beneficia este sistema del desorden?"><span class="model-dot-num">13</span><span class="model-dot-name">Antifr.</span></span>
-<span class="model-dot future" data-tip="Teoría de Juegos — ¿Cómo afecta la estrategia del otro jugador a la mía?"><span class="model-dot-num">14</span><span class="model-dot-name">Juegos</span></span>
-<span class="model-dot future" data-tip="Fallo del Modelo — ¿Dónde da este modelo la respuesta equivocada?"><span class="model-dot-num">15</span><span class="model-dot-name">Fallo</span></span>
-<span class="model-dot future" data-tip="Estructuras de Poder — ¿Quién decide, quién se beneficia y por qué persiste este arreglo?"><span class="model-dot-num">16</span><span class="model-dot-name">Poder</span></span>
-<span class="model-dot future" data-tip="Apalancamiento — ¿Dónde está el punto de mayor retorno para aplicar el esfuerzo?"><span class="model-dot-num">17</span><span class="model-dot-name">Apal.</span></span>
-<span class="model-dot future" data-tip="Piel en el Juego — ¿Asume esta persona las consecuencias de su consejo?"><span class="model-dot-num">18</span><span class="model-dot-name">Piel</span></span>
+<span class="model-dot future" data-tip="Apalancamiento — ¿Dónde está el punto de mayor retorno para aplicar el esfuerzo?"><span class="model-dot-num">9</span><span class="model-dot-name">Apal.</span></span>
+<span class="model-dot future" data-tip="Emergencia — ¿Qué surge de partes simples que ninguna contiene?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerg.</span></span>
+<span class="model-dot future" data-tip="Opuestos Complementarios — ¿Es esto un o/o, o un y/y?"><span class="model-dot-num">11</span><span class="model-dot-name">Opues.</span></span>
+<span class="model-dot future" data-tip="Via Negativa — ¿Qué mejora al quitar en vez de añadir?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
+<span class="model-dot future" data-tip="Sesgos Cognitivos — ¿Cómo me está engañando mi cerebro ahora mismo?"><span class="model-dot-num">13</span><span class="model-dot-name">Sesgos</span></span>
+<span class="model-dot future" data-tip="Piel en el Juego — ¿Asume esta persona las consecuencias de su consejo?"><span class="model-dot-num">14</span><span class="model-dot-name">Piel</span></span>
+<span class="model-dot future" data-tip="Antifragilidad — ¿Se beneficia este sistema del desorden?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
+<span class="model-dot future" data-tip="Teoría de Juegos — ¿Cómo afecta la estrategia del otro jugador a la mía?"><span class="model-dot-num">16</span><span class="model-dot-name">Juegos</span></span>
+<span class="model-dot future" data-tip="Fallo del Modelo — ¿Dónde da este modelo la respuesta equivocada?"><span class="model-dot-num">17</span><span class="model-dot-name">Fallo</span></span>
+<span class="model-dot future" data-tip="Estructuras de Poder — ¿Quién decide, quién se beneficia y por qué persiste este arreglo?"><span class="model-dot-num">18</span><span class="model-dot-name">Poder</span></span>
 <span class="model-dot future" data-tip="Escala — ¿Qué cambia cuando haces esto más grande o más pequeño?"><span class="model-dot-num">19</span><span class="model-dot-name">Escala</span></span>
 </div>
 </div>
@@ -104,7 +104,7 @@ order: 3
 <tr><td>Incentivos (#3)</td><td>"¿Por qué ese personaje quiere eso?" Después de cada historia. No retórico — razónalo juntos. "¿Por qué tu amigo comparte juguetes?"</td></tr>
 <tr><td>Inversión (#4)</td><td>"¿Y si el villano tuviera razón?" "¿Y si nadie siguiera ninguna regla?" Calvin & Hobbes: Calvin invierte constantemente las normas sociales.</td></tr>
 <tr><td>Causa y Efecto (#1)</td><td>Continúa desde 0-3 con mayor complejidad. Excursiones: "¿Qué pasa si el panadero no hornea? ¿Y luego qué?" Juegos de dados para probabilidad simple.</td></tr>
-<tr><td>Estructuras de Poder (#16)</td><td>"¿Quién hizo las reglas? ¿Quién decide?" Experiencia concreta: reglas de los padres vs. elecciones del niño — "Tú puedes elegir qué ponerte, pero no puedes elegir si ir al colegio. ¿Por qué son diferentes?" Reglas de juegos — ¿quién las inventó? ¿Puedes cambiarlas? ¿Qué pasa si no las sigues? Dinámica del patio: ¿quién elige el juego en el recreo? ¿Cómo? Calvin & Hobbes: las constantes e infructuosas negociaciones de Calvin con padres y profesores para tener más poder. "¿Por qué Calvin no puede simplemente hacer lo que quiere?"</td></tr>
+<tr><td>Estructuras de Poder (#18)</td><td>"¿Quién hizo las reglas? ¿Quién decide?" Experiencia concreta: reglas de los padres vs. elecciones del niño — "Tú puedes elegir qué ponerte, pero no puedes elegir si ir al colegio. ¿Por qué son diferentes?" Reglas de juegos — ¿quién las inventó? ¿Puedes cambiarlas? ¿Qué pasa si no las sigues? Dinámica del patio: ¿quién elige el juego en el recreo? ¿Cómo? Calvin & Hobbes: las constantes e infructuosas negociaciones de Calvin con padres y profesores para tener más poder. "¿Por qué Calvin no puede simplemente hacer lo que quiere?"</td></tr>
 </table>
 <p>Estos modelos se revisitarán cada año con profundidad creciente a través de las capas de cebolla. Consulta la pestaña de Filosofía para la progresión completa.</p>
 
@@ -267,7 +267,7 @@ order: 3
 <p><strong>Primeras negociaciones.</strong> "Quiero X" evoluciona a "Quiero X porque Y." Estructura las peticiones: qué quieres, por qué, y qué puedes ofrecer a cambio. Toma de turnos en los desacuerdos. "¿Qué quiere la otra persona? ¿Podéis conseguir algo ambos?" Cada conflicto es una negociación — enmárcalo así desde el principio.</p>
 
 <h3>Servicio y Amabilidad</h3>
-<p>Ayudar como hábito, no como evento. Ayudar a cocinar, a limpiar, a llevar la compra a la vecina mayor. Donar juguetes que se les quedan pequeños — deja que elijan cuáles y los entreguen personalmente. Visitar un refugio de animales. El principio: otros seres necesitan cosas, y tú puedes proporcionar algunas de esas cosas. Esto es ética hecha física.</p>
+<p>Ayudar como hábito, no como evento. Ayudar a cocinar, a limpiar, a llevar la compra a la vecina mayor. Donar juguetes que se les quedan pequeños — deja que elijan cuáles y los entreguen personalmente. Visitar un refugio de animales. El principio: otros seres necesitan cosas, y tú puedes proporcionar algunas de esas cosas. Esto es la moral hecha física.</p>
 
 <h3>Mundo Social y Red</h3>
 <p><strong>Primeras afiliaciones institucionales.</strong> El dojo de artes marciales, la escuela de música, el club de ajedrez — estas son decisiones de red tanto como decisiones de habilidad. Elige instituciones donde las otras familias valoren algo seriamente.</p>
@@ -338,7 +338,7 @@ order: 3
 
 <h2 id="s-knowledge" data-tier="core"><span class="material-symbols-rounded">lightbulb</span>Conocimiento y Pensamiento</h2>
 
-<h3>Ética y Razonamiento Moral</h3>
+<h3>Razonamiento Moral</h3>
 <p>La justicia es el punto de entrada. "¿Es justo? ¿Por qué sí o por qué no?" Estas conversaciones surgen naturalmente — compartir juguetes, reglas de juegos, disputas entre hermanos. Úsalas. Pensamiento de dilema simple: "Si encontraras un juguete en el parque, ¿qué deberías hacer? ¿Y si nadie estuviera mirando?" El objetivo no son respuestas correctas sino el hábito del razonamiento moral. Las discusiones de ética e historia pueden ir más profundo y durar más de lo que esperas a esta edad — extiende las preguntas de "¿es justo?" en un diálogo socrático genuino de ida y vuelta. Introduce reflexión escrita simple: "Dibuja o escribe lo que piensas sobre esta pregunta."</p>
 
 <h3>Historia</h3>

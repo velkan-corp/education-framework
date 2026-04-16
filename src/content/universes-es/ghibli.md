@@ -12,6 +12,15 @@ riskFlags: [violence, despair]
 socialValue: broad
 substitutes: [avatar, pixar, doctor-who]
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Totoro y Ponyo — primera película animada"
+    description: "Mi vecino Totoro como primera experiencia de película animada (a partir de 2 años). Suave, ritmo pausado, sin villano, sin conflicto argumental — asombro, naturaleza, vínculo entre hermanos. Audio en japonés (original). El ritmo pausado enseña atención visual sostenida de una manera que la animación moderna (diseñada para golpes de dopamina) destruye activamente. Ponyo a partir de 2,5 años — igualmente suave, visualmente espectacular, emocionalmente simple. No es televisión de fondo — co-visionar, narrar estados emocionales ('Mei está emocionada — ¡ha encontrado un Totoro!'), y dejar que el niño marque el ritmo. Si pierde interés a los 40 minutos, parar. La terminará la próxima vez."
+    mode: absorb
+    goals:
+      - "Experimentar narrativa animada con genuina calidad artística y ritmo pausado."
+      - "Construir atención visual sostenida a través de películas que premian la paciencia, no la estimulación."
+    cautions: "El tiempo de pantalla a esta edad debe ser mínimo e intencional. Totoro y Ponyo son excepciones por su ritmo y calidad artística — no una licencia para exposición general a pantallas."
   - phaseId: age-4-7
     tier: core
     title: "Totoro → Kiki → El viaje de Chihiro"

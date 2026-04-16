@@ -12,6 +12,15 @@ riskFlags: [violence, despair]
 socialValue: broad
 substitutes: [avatar, pixar, doctor-who]
 phases:
+  - phaseId: age-1-3
+    tier: recommended
+    title: "Totoro and Ponyo — first animated film"
+    description: "My Neighbor Totoro as first animated film experience (age 2+). Gentle, slow-paced, no villain, no conflict-driven plot — wonder, nature, sibling bond. Japanese audio (original). The quiet pacing teaches sustained visual attention in a way that modern animation (designed for dopamine hits) actively destroys. Ponyo at 2.5+ — equally gentle, visually spectacular, emotionally simple. These are not background television — co-watch, narrate emotional states ('Mei is excited — she found a Totoro!'), and let the child set the pace. If they lose interest at 40 minutes, stop. They'll finish next time."
+    mode: absorb
+    goals:
+      - "Experience animated narrative with genuine artistic quality and slow pacing."
+      - "Build sustained visual attention through films that reward patience, not stimulation."
+    cautions: "Screen time at this age should be minimal and intentional. Totoro and Ponyo are exceptions because of their pacing and artistic quality — not a license for general screen exposure."
   - phaseId: age-4-7
     tier: core
     title: "Totoro → Kiki → Spirited Away"

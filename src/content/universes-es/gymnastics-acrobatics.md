@@ -11,6 +11,15 @@ intensity: high
 riskFlags: [violence]
 socialValue: niche
 phases:
+  - phaseId: age-1-3
+    tier: core
+    title: "Movimientos animales y comodidad en inversión"
+    description: "No es clase de gimnasia — juego que construye los patrones motores que el tumbling requiere. Juegos de movimientos animales: caminar como osos, cangrejos, rodar como troncos, saltar como ranas. Volteretas hacia delante en superficies blandas (colchoneta o césped). Colgarse de las barras del parque — fuerza de agarre, estabilidad de hombros y el input vestibular que la conciencia aérea posterior requiere. Equilibrio en vigas bajas, bordillos, troncos caídos. Caminar por líneas en el suelo. Intentos de pino contra la pared (supervisado) — la comodidad en inversión empieza ahora. La mayoría de los niños encuentran emocionante estar boca abajo a esta edad; cuanto antes se sientan cómodos invertidos, más fáciles serán las progresiones de tumbling posteriores. Guiado por los padres en casa o en el parque — no se necesita instrucción formal todavía."
+    mode: absorb
+    goals:
+      - "Construir el vocabulario de patrones motores que el tumbling posterior requiere — volteretas, gateos, saltos, equilibrio."
+      - "Desarrollar fuerza de agarre y estabilidad de hombros a través de colgarse."
+      - "Establecer comodidad en inversión temprano — estar boca abajo debería sentirse natural, no aterrador."
   - phaseId: age-4-7
     tier: foundational
     title: "Volteretas básicas y la ventana dorada de flexibilidad"
