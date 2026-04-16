@@ -79,6 +79,17 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
       </button>
     </div>
 
+    <div class="universe-filters" id="medium-filters">
+      <span class="filter-label">Medium:</span>
+      <button type="button" class="filter-pill active" data-medium="all">All</button>
+      <button type="button" class="filter-pill" data-medium="books">Books</button>
+      <button type="button" class="filter-pill" data-medium="anime">Anime</button>
+      <button type="button" class="filter-pill" data-medium="cinema">Film & TV</button>
+      <button type="button" class="filter-pill" data-medium="comics">Comics</button>
+      <button type="button" class="filter-pill" data-medium="game">Games</button>
+      <button type="button" class="filter-pill" data-medium="maker">Maker</button>
+    </div>
+
     <button type="button" class="filter-section-toggle collapsed" id="advanced-filters-toggle" aria-expanded="false">
       <span class="section-chevron">▼</span> More Filters
     </button>

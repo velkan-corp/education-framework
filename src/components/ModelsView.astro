@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import { LAYER_LABELS } from '../data/frameworkTaxonomy';
+
+interface Props { lang?: string; }
+const { lang = 'en' } = Astro.props;
+
+const collection = lang === 'es' ? 'models-es' : 'models';
+const modelsRaw = await getCollection(collection);
+const models = modelsRaw.sort((a, b) => a.data.number - b.data.number);
+
+const layers = [1, 2, 3, 4] as const;
+const allLayers = [1, 2, 3, 4, 5] as const;
+---
+
+<div id="models-view" class="hidden">
+  <div id="models-grid">
+    <div class="browse-header">
+      <h1 class="browse-title">{lang === 'es' ? 'Modelos Mentales' : 'Mental Models'}</h1>
+      <p class="browse-subtitle">{lang === 'es'
+        ? '19 modelos universales introducidos progresivamente a través de cuatro capas.'
+        : '19 universal models introduced progressively through four layers.'}</p>
+    </div>
+
+    <div class="browse-filter-row" id="model-layer-filters">
+      <button type="button" class="browse-filter-pill active" data-layer="all">
+        {lang === 'es' ? 'Todos' : 'All'}
+      </button>
+      {allLayers.map(l => (
+        <button type="button" class="browse-filter-pill" data-layer={String(l)}>
+          {LAYER_LABELS[l][lang]}
+        </button>
+      ))}
+    </div>
+
+    {layers.map(l => {
+      const layerModels = models.filter(m => m.data.layer === l);
+      return (
+        <div class="browse-layer-group" data-layer-group={String(l)}>
+          <div class="browse-layer-label">{LAYER_LABELS[l][lang]}</div>
+          <div class="browse-card-grid">
+            {layerModels.map(async (m) => {
+              const { Content } = await m.render();
+              return (
+                <button type="button" class="browse-card" data-browse-id={m.data.modelId} data-layer={m.data.layer}>
+                  <span class="browse-num">{m.data.number}</span>
+                  <div class="browse-card-body">
+                    <Content />
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+
+    <div class="browse-layer-group" data-layer-group="5">
+      <div class="browse-layer-label">{LAYER_LABELS[5][lang]}</div>
+      <p class="browse-layer-note">{lang === 'es'
+        ? 'Los 19 modelos son criticados, puestos a prueba y extendidos. No se introducen modelos nuevos — se critican los existentes.'
+        : 'All 19 models are critiqued, stress-tested, and extended. No new models introduced — the existing models are challenged.'}</p>
+      <div class="browse-card-grid">
+        {models.map(async (m) => {
+          const { Content } = await m.render();
+          return (
+            <button type="button" class="browse-card" data-browse-id={m.data.modelId} data-layer="5">
+              <span class="browse-num">{m.data.number}</span>
+              <div class="browse-card-body">
+                <Content />
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+
+  <div id="models-detail" class="hidden">
+    <button type="button" class="browse-back" id="models-back">
+      <span class="material-symbols-rounded">arrow_back</span>
+      {lang === 'es' ? 'Todos los Modelos' : 'All Models'}
+    </button>
+    <div id="models-detail-header"></div>
+    <div id="models-timeline"></div>
+  </div>
+</div>

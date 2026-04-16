@@ -19,6 +19,18 @@ const phaseSchema = z.object({
   order: z.number(),
 });
 
+const modelSchema = z.object({
+  modelId: z.enum(MODEL_IDS),
+  number: z.number().int().min(1).max(19),
+  layer: z.number().int().min(1).max(4),
+  shortName: z.string(),
+});
+
+const targetSchema = z.object({
+  targetId: z.enum(TARGET_IDS),
+  number: z.number().int().min(1).max(11),
+});
+
 const universeSchema = z.object({
   label: z.string(),
   kind: z.enum(UNIVERSE_KINDS).optional(),
@@ -46,9 +58,16 @@ const universeSchema = z.object({
 
 const phases = defineCollection({ type: 'content', schema: phaseSchema });
 const universes = defineCollection({ type: 'content', schema: universeSchema });
+const models = defineCollection({ type: 'content', schema: modelSchema });
+const targets = defineCollection({ type: 'content', schema: targetSchema });
 
 // Spanish collections — same schemas, separate content
 const phasesEs = defineCollection({ type: 'content', schema: phaseSchema });
 const universesEs = defineCollection({ type: 'content', schema: universeSchema });
+const modelsEs = defineCollection({ type: 'content', schema: modelSchema });
+const targetsEs = defineCollection({ type: 'content', schema: targetSchema });
 
-export const collections = { phases, universes, 'phases-es': phasesEs, 'universes-es': universesEs };
+export const collections = {
+  phases, universes, models, targets,
+  'phases-es': phasesEs, 'universes-es': universesEs, 'models-es': modelsEs, 'targets-es': targetsEs,
+};

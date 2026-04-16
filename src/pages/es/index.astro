@@ -6,6 +6,9 @@ import Home from '../../components/Home.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import FloatingPanel from '../../components/FloatingPanel.astro';
 import UniverseView from '../../components/UniverseView.astro';
+import ModelsView from '../../components/ModelsView.astro';
+import TargetsView from '../../components/TargetsView.astro';
+import ResourcesView from '../../components/ResourcesView.astro';
 import PhaseUniverses from '../../components/PhaseUniverses.astro';
 
 const phases = (await getCollection('phases-es')).sort((a, b) => a.data.order - b.data.order);
@@ -82,14 +85,16 @@ const agePhaseCount = phases.filter(p => p.data.phaseId !== 'framework').length;
       ))}
 
       <div id="domain-view" class="hidden">
-        <div id="domain-header">
-          <h1 id="domain-title"></h1>
-          <p id="domain-description" class="subtitle"></p>
-        </div>
+        <div id="domain-header"></div>
         <div id="domain-timeline"></div>
       </div>
 
       <UniverseView collection="universes-es" />
+
+      <!-- Across Ages views -->
+      <TargetsView lang="es" />
+      <ModelsView lang="es" />
+      <ResourcesView lang="es" />
     </div>
 
     <Sidebar lang="es" />

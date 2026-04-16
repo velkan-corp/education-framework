@@ -4,6 +4,9 @@ import { initSearch, openMobileSearch } from './search.js';
 import { initResourceFilters, initSectionFilters } from './filters.js';
 import { initDomainView } from './domain.js';
 import { initUniverseView } from './universe.js';
+import { initModelsView } from './models.js';
+import { initTargetsView } from './targets.js';
+import { initResourcesView } from './resources.js';
 
 function findByAnchorBase(container, targetId) {
   if (!container) return null;
@@ -148,4 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSectionFilters();
   initDomainView();
   initUniverseView();
+  initModelsView();
+  initTargetsView();
+  initResourcesView();
 });

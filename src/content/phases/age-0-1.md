@@ -29,6 +29,7 @@ order: 1
 <div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness seed</h4><p>Co-regulation models emotional attunement — name their emotions to give handles for experiences. Consistent narration of emotional states.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery seed</h4><p>Tummy time, floor freedom, outdoor exposure to weather variation. Baby Bjorn Bouncer; outdoor blanket time daily regardless of weather.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability seed</h4><p>Varied sensory environments and routine flexibility build early tolerance for change.</p></div>
+<div class="target-card"><span class="target-num">11</span><h4>Creative Production seed</h4><p>Process over product — banging, mouthing, dropping, stacking. Sensory-motor exploration IS the first creative act. Heuristic play baskets; open-ended objects over single-function toys.</p></div>
 </div>
 
 <div class="t-adjust t-high-react"><div class="t-label">High Reactivity</div>Reduce sensory intensity. One stimulus at a time. Quieter environments. Slower transitions. Watch for overstimulation cues (gaze aversion, arching) and respond immediately.</div>

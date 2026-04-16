@@ -33,6 +33,7 @@ order: 2
 <div class="target-card"><span class="target-num">8</span><h4>Compassion & Kindness seed</h4><p>Build social-emotional vocabulary that precedes actual social skills. Emotion-focused picture books; real social situations narrated in real time.</p></div>
 <div class="target-card"><span class="target-num">9</span><h4>Physical System Mastery</h4><p>Outdoor daily regardless of weather — climbing, jumping, running on uneven surfaces. Balance bike from 18 months; challenging playgrounds.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Adaptability</h4><p>Varied environments, flexible routines, and open-ended play build tolerance for change and novelty.</p></div>
+<div class="target-card"><span class="target-num">11</span><h4>Creative Production seed</h4><p>Open-ended making — finger paint, playdough, block towers, sand, water. No models to copy, no "correct" output. The product is irrelevant; the act of producing is the target.</p></div>
 </div>
 
 <div class="t-adjust t-introvert"><div class="t-label">Introvert</div>Respect the need for solitary play. Don't force sharing or group play at this age — parallel play is normal and healthy until ~3. Quiet reading time is not isolation; it's recharging.</div>

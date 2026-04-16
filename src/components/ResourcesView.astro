@@ -1,0 +1,58 @@
+---
+import { RESOURCE_CATEGORIES, RESOURCE_CATEGORY_LABELS } from '../data/frameworkTaxonomy';
+
+interface Props { lang?: string; }
+const { lang = 'en' } = Astro.props;
+---
+
+<div id="resources-view" class="hidden">
+  <div id="resources-grid">
+    <div class="browse-header">
+      <h1 class="browse-title">{lang === 'es' ? 'Recursos' : 'Resources'}</h1>
+      <p class="browse-subtitle">{lang === 'es'
+        ? 'Libros, juguetes, equipamiento y servicios recomendados en cada fase.'
+        : 'Books, toys, equipment, and services recommended at each age phase.'}</p>
+    </div>
+
+    <div class="browse-filter-row" id="resource-category-filters">
+      <button type="button" class="browse-filter-pill active" data-category="all">
+        {lang === 'es' ? 'Todos' : 'All'}
+      </button>
+      {RESOURCE_CATEGORIES.map(cat => (
+        <button type="button" class="browse-filter-pill" data-category={cat}>
+          {RESOURCE_CATEGORY_LABELS[cat][lang]}
+        </button>
+      ))}
+    </div>
+
+    <div class="browse-filter-row" id="resource-age-filters">
+      <!-- Populated by JS from phase data -->
+    </div>
+
+    <div class="browse-filter-row" id="resource-tier-filters">
+      <button type="button" class="browse-filter-pill active" data-tier="all">
+        {lang === 'es' ? 'Todos los Niveles' : 'All Tiers'}
+      </button>
+      <button type="button" class="browse-filter-pill" data-tier="foundational">Foundational</button>
+      <button type="button" class="browse-filter-pill" data-tier="core">Core</button>
+      <button type="button" class="browse-filter-pill" data-tier="recommended">{lang === 'es' ? 'Recomendado' : 'Recommended'}</button>
+    </div>
+
+    <div class="browse-filter-row" id="resource-target-filters">
+      <!-- Populated by JS from discovered targets -->
+    </div>
+
+    <div id="resources-card-container">
+      <!-- Populated by JS from DOM extraction of resource tables -->
+    </div>
+  </div>
+
+  <div id="resources-detail" class="hidden">
+    <button type="button" class="browse-back" id="resources-back">
+      <span class="material-symbols-rounded">arrow_back</span>
+      {lang === 'es' ? 'Todos los Recursos' : 'All Resources'}
+    </button>
+    <div id="resources-detail-header"></div>
+    <div id="resources-timeline"></div>
+  </div>
+</div>

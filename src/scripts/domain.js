@@ -59,6 +59,71 @@ function renderDomainTimeline(sectionId) {
   `).join('');
 }
 
+/* ── Domain landing + detail ── */
+
+function showDomainLanding() {
+  if (!domainMap) return;
+  const header = document.getElementById('domain-header');
+  const timeline = document.getElementById('domain-timeline');
+
+  header.innerHTML = `
+    <h1 id="domain-title">Domains</h1>
+    <p id="domain-description" class="subtitle">Curriculum threads — each tracked across all age phases.</p>
+  `;
+
+  const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
+
+  // Get tier distribution for each domain
+  function getTierSummary(phases) {
+    const tiers = { foundational: 0, core: 0, recommended: 0 };
+    phases.forEach(p => { if (tiers[p.tier] !== undefined) tiers[p.tier]++; });
+    const parts = [];
+    if (tiers.foundational) parts.push(`${tiers.foundational} foundational`);
+    if (tiers.core) parts.push(`${tiers.core} core`);
+    if (tiers.recommended) parts.push(`${tiers.recommended} recommended`);
+    return parts.join(', ') || `${phases.length} phases`;
+  }
+
+  timeline.innerHTML = `<div class="browse-card-grid">${sorted.map(([id, data]) => `
+    <button type="button" class="browse-card domain-landing-card" data-domain-pick="${id}">
+      <div class="browse-card-body">
+        <h1>${data.label}</h1>
+        <p class="domain-tier-summary">${getTierSummary(data.phases)}</p>
+      </div>
+    </button>
+  `).join('')}</div>`;
+
+  // Bind clicks
+  timeline.querySelectorAll('[data-domain-pick]').forEach(card => {
+    card.addEventListener('click', () => showDomainDetail(card.dataset.domainPick));
+  });
+}
+
+function showDomainDetail(domainId) {
+  if (!domainMap) return;
+  currentDomain = domainId;
+  const data = domainMap.get(domainId);
+  if (!data) return;
+
+  const header = document.getElementById('domain-header');
+  header.innerHTML = `
+    <button type="button" class="browse-back" id="domain-back">
+      <span class="material-symbols-rounded">arrow_back</span> All Domains
+    </button>
+    <h1 id="domain-title">${data.label}</h1>
+    <p id="domain-description" class="subtitle">Tracking this domain across all age brackets — from earliest foundations to 17-18 synthesis.</p>
+  `;
+
+  document.getElementById('domain-back')?.addEventListener('click', () => {
+    showDomainLanding();
+    updateAllNavs();
+  });
+
+  renderDomainTimeline(domainId);
+  applyProfile();
+  updateAllNavs();
+}
+
 /* ── Populate domain dropdown in nav ── */
 
 function populateDomainDropdowns() {
@@ -89,13 +154,19 @@ function hideAllViews() {
   document.getElementById('domain-view')?.classList.add('hidden');
   document.getElementById('universe-view')?.classList.add('hidden');
   document.getElementById('home-view')?.classList.add('hidden');
+  document.getElementById('models-view')?.classList.add('hidden');
+  document.getElementById('targets-view')?.classList.add('hidden');
+  document.getElementById('resources-view')?.classList.add('hidden');
   document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
   document.querySelector('.universe-legend')?.classList.add('hidden');
 }
 
+const ACROSS_VIEWS = new Set(['domain', 'models', 'targets', 'resources', 'universe']);
+
 function setActiveNavItem(view) {
+  const navView = ACROSS_VIEWS.has(view) ? 'across-ages' : view;
   document.querySelectorAll('.nav-item').forEach(item => {
-    item.classList.toggle('active', item.dataset.view === view);
+    item.classList.toggle('active', item.dataset.view === navView);
   });
   // Close any open dropdowns
   document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
@@ -124,21 +195,38 @@ export function showView(view, options = {}) {
     state.currentTab = phaseId;
     showTab(phaseId);
   } else if (view === 'domain') {
-    const domainId = options.domainId || (domainMap ? Array.from(domainMap.keys())[0] : null);
-    if (!domainId) return;
-    currentDomain = domainId;
-    const data = domainMap.get(domainId);
-
     document.getElementById('domain-view')?.classList.remove('hidden');
-    document.getElementById('domain-title').textContent = data ? data.label : '';
-    document.getElementById('domain-description').textContent = 'Tracking this domain across all age brackets — from earliest foundations to 17-18 synthesis.';
-    renderDomainTimeline(domainId);
-    applyProfile();
+
+    if (options.domainId) {
+      // Show specific domain timeline
+      showDomainDetail(options.domainId);
+    } else {
+      // Show domain landing page — grid of all domains to pick from
+      showDomainLanding();
+    }
 
     // Highlight active domain item
     document.querySelectorAll('.nav-dropdown-item[data-domain]').forEach(item => {
       item.classList.toggle('active', item.dataset.domain === domainId);
     });
+  } else if (view === 'models') {
+    document.getElementById('models-view')?.classList.remove('hidden');
+    const grid = document.getElementById('models-grid');
+    const detail = document.getElementById('models-detail');
+    if (grid) grid.classList.remove('hidden');
+    if (detail) detail.classList.add('hidden');
+  } else if (view === 'targets') {
+    document.getElementById('targets-view')?.classList.remove('hidden');
+    const grid = document.getElementById('targets-grid');
+    const detail = document.getElementById('targets-detail');
+    if (grid) grid.classList.remove('hidden');
+    if (detail) detail.classList.add('hidden');
+  } else if (view === 'resources') {
+    document.getElementById('resources-view')?.classList.remove('hidden');
+    const grid = document.getElementById('resources-grid');
+    const detail = document.getElementById('resources-detail');
+    if (grid) grid.classList.remove('hidden');
+    if (detail) detail.classList.add('hidden');
   } else if (view === 'universe') {
     document.getElementById('universe-view')?.classList.remove('hidden');
     document.querySelectorAll('.universe-filters').forEach(f => f.classList.remove('hidden'));
@@ -214,22 +302,12 @@ function setupNavigation() {
     });
   });
 
-  // Desktop dropdown items — domains (delegated since they're dynamic)
-  document.getElementById('nav-domain-dropdown')?.addEventListener('click', (e) => {
-    const item = e.target.closest('.nav-dropdown-item[data-domain]');
+  // Desktop dropdown items — Across Ages views
+  document.getElementById('nav-across-dropdown')?.addEventListener('click', (e) => {
+    const item = e.target.closest('.nav-dropdown-item[data-across-view]');
     if (!item) return;
-    showView('domain', { domainId: item.dataset.domain });
-  });
-
-  // Desktop dropdown items — universe type filter
-  document.getElementById('nav-universe-dropdown')?.addEventListener('click', (e) => {
-    const item = e.target.closest('.nav-dropdown-item[data-universe-filter]');
-    if (!item) return;
-    showView('universe', { filter: item.dataset.universeFilter });
-    // Highlight active filter
-    document.querySelectorAll('#nav-universe-dropdown .nav-dropdown-item').forEach(i => {
-      i.classList.toggle('active', i === item);
-    });
+    const target = item.dataset.acrossView;
+    showView(target);
   });
 
   // Close dropdowns on outside click
@@ -288,13 +366,10 @@ function setupNavigation() {
   }
 
   // Home cards
-  document.querySelectorAll('.home-card[data-nav]').forEach(card => {
+  document.querySelectorAll('[data-nav]').forEach(card => {
     card.addEventListener('click', () => {
       const nav = card.dataset.nav;
-      if (nav === 'framework') showView('framework');
-      else if (nav === 'age') showView('age');
-      else if (nav === 'domain') showView('domain');
-      else if (nav === 'universe') showView('universe');
+      showView(nav);
     });
   });
 
@@ -329,12 +404,10 @@ function setupNavigation() {
     const item = e.target.closest('.mobile-menu-item');
     if (!item) return;
     const view = item.dataset.view;
-    if (view === 'age' && item.dataset.phase) {
+    if (item.dataset.acrossView) {
+      showView(item.dataset.acrossView);
+    } else if (view === 'age' && item.dataset.phase) {
       showView('age', { phaseId: item.dataset.phase });
-    } else if (view === 'domain' && item.dataset.domain) {
-      showView('domain', { domainId: item.dataset.domain });
-    } else if (view === 'universe' && item.dataset.universeFilter) {
-      showView('universe', { filter: item.dataset.universeFilter });
     } else if (view) {
       showView(view);
     }

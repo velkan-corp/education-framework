@@ -60,6 +60,17 @@ function getNavEntries() {
       scrollTarget: p
     }));
   }
+  // Cross-age browse views — timeline phases as nav entries when in detail
+  if (state.currentView === 'models' || state.currentView === 'targets' || state.currentView === 'resources') {
+    const viewId = state.currentView + '-view';
+    const detail = document.getElementById(state.currentView + '-detail');
+    if (!detail || detail.classList.contains('hidden')) return [];
+    const phases = Array.from(detail.querySelectorAll('.timeline-phase:not(.hidden)'));
+    return phases.map(p => {
+      const ageEl = p.querySelector('.timeline-age');
+      return { label: ageEl ? ageEl.textContent.trim() : '', scrollTarget: p };
+    });
+  }
   const activeContent = document.querySelector('.phase-content.active');
   if (!activeContent) return [];
 

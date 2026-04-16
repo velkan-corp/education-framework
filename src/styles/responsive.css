@@ -34,12 +34,18 @@
   /* Universe grid */
   .universe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 
+  /* Browse views */
+  .browse-card-grid { grid-template-columns: 1fr; }
+  .browse-title { font-size: 22px; }
+  .browse-filter-row { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; padding-bottom: var(--sp-1); }
+
   /* Timeline */
   .timeline-phase { padding-left: var(--sp-3); }
 }
 
 @media (max-width: 500px) {
   .home-card { padding: var(--sp-4); }
+  .home-curriculum { padding: var(--sp-4); }
   .home-card-title { font-size: 17px; }
 }
 

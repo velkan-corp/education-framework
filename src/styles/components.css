@@ -497,12 +497,14 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
 
 /* ── ENGAGEMENT CYCLE PIPELINE ── */
 .cycle-pipeline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: flex;
+  align-items: stretch;
   gap: 0;
   margin: var(--sp-4) 0;
 }
 .cycle-step {
+  flex: 1;
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
@@ -610,6 +612,232 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   .model-cards { flex-direction: column; }
   .model-card { min-width: auto; }
 }
+
+/* ── BROWSE VIEWS (Across Ages — Models, Targets, Resources) ── */
+.browse-header {
+  margin-bottom: var(--sp-5);
+}
+.browse-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 var(--sp-2);
+  border: none;
+  padding: 0;
+}
+.browse-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.browse-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+.browse-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  transition: border-color var(--duration-micro) var(--ease-out),
+              box-shadow var(--duration-micro) var(--ease-out),
+              transform var(--duration-micro) var(--ease-out);
+}
+.browse-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+.browse-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.browse-card-body h1 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 var(--sp-1);
+  border: none;
+  padding: 0;
+}
+.browse-card-body p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Browse filter pills */
+.browse-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin-bottom: var(--sp-4);
+}
+.browse-filter-pill {
+  padding: var(--sp-1) var(--sp-2);
+  font-size: 12px;
+  font-family: var(--font-body);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all var(--duration-micro) var(--ease-out);
+}
+.browse-filter-pill:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+.browse-filter-pill.active {
+  background: var(--accent-light);
+  border-color: var(--accent-border);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Browse layer groups */
+.browse-layer-group { margin-bottom: var(--sp-4); }
+.browse-layer-label {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+  padding-bottom: var(--sp-1);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.browse-layer-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 var(--sp-3);
+  font-style: italic;
+}
+
+/* Browse detail view */
+.browse-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: var(--sp-1) var(--sp-2);
+  font-size: 13px;
+  font-family: var(--font-body);
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-bottom: var(--sp-4);
+  transition: all var(--duration-micro) var(--ease-out);
+}
+.browse-back:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+}
+.browse-back .material-symbols-rounded {
+  font-size: 16px;
+  margin-right: 0;
+}
+.browse-detail-title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+.browse-detail-title .browse-num {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  font-size: 15px;
+}
+.browse-detail-title h1 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+/* Seed/full badges */
+.seed-badge, .full-badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+.seed-badge {
+  background: var(--border-light);
+  color: var(--text-muted);
+}
+.full-badge {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Category badge */
+.category-badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.browse-empty {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: var(--sp-4);
+  text-align: center;
+}
+
+/* Resource master table */
+.resource-master-table { width: 100%; }
+.resource-master-table th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); }
+.resource-row { cursor: pointer; transition: background var(--duration-micro) var(--ease-out); }
+.resource-row:hover { background: var(--accent-light); }
+.resource-name { font-weight: 500; color: var(--text); }
+.resource-type-badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--surface2, var(--surface));
+  color: var(--text-muted);
+}
+.resource-targets { max-width: 200px; }
+.resource-targets .tag { font-size: 9px; margin: 1px; }
 
 /* ── MODEL TRACKER (age pages) ── */
 .model-tracker {

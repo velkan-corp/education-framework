@@ -34,11 +34,13 @@ const t = lang === 'es' ? {
   frameworkMeta: '11 OBJETIVOS · 10 PRINCIPIOS · 19 MODELOS',
   curriculumLabel: 'Currículo',
   curriculumDesc: 'El mismo contenido, dos formas de navegarlo.',
-  ageLabel: 'Por Edad',
-  threadLabel: 'Por Hilo',
-  library: 'Biblioteca',
-  libraryDesc: `${universeCount} universos de contenido — literatura, ciencia ficción, filosofía, anime, cine, juegos, artes marciales, cocina, economía, ciencia cognitiva, diseño, música, y más. Filtrable por edad, idioma, tipo e intensidad.`,
-  libraryMeta: `${universeCount}+ UNIVERSOS`,
+  byAge: 'Por Edad',
+  acrossAges: 'A Través de las Edades',
+  targets: 'Mapa de Actividades', targetsMeta: '11 OBJETIVOS · 7 FASES',
+  models: 'Modelos Mentales', modelsMeta: '19 MODELOS · 4 CAPAS',
+  domains: 'Dominios', domainsMeta: 'HILOS CURRICULARES',
+  resources: 'Recursos', resourcesMeta: 'LIBROS · JUGUETES · EQUIPAMIENTO',
+  library: 'Biblioteca', libraryMeta: `${universeCount}+ UNIVERSOS`,
 } : {
   title: 'Education Framework',
   subtitle: `A developmental framework for ages 0–18. Eleven targets, evidence-based methods, ${universeCount} content universes, calibrated to each child's profile.`,
@@ -47,11 +49,13 @@ const t = lang === 'es' ? {
   frameworkMeta: '11 TARGETS · 10 PRINCIPLES · 19 MODELS',
   curriculumLabel: 'Curriculum',
   curriculumDesc: 'The same content, two ways to navigate it.',
-  ageLabel: 'By Age',
-  threadLabel: 'By Thread',
-  library: 'Library',
-  libraryDesc: `${universeCount} content universes — literature, science fiction, philosophy, anime, cinema, games, martial arts, cooking, economics, cognitive science, design, music, and more. Filterable by age, language, type, and intensity.`,
-  libraryMeta: `${universeCount}+ UNIVERSES`,
+  byAge: 'By Age',
+  acrossAges: 'Across Ages',
+  targets: 'Activity Map', targetsMeta: '11 TARGETS · 7 PHASES',
+  models: 'Mental Models', modelsMeta: '19 MODELS · 4 LAYERS',
+  domains: 'Domains', domainsMeta: 'CURRICULUM THREADS',
+  resources: 'Resources', resourcesMeta: 'BOOKS · TOYS · EQUIPMENT',
+  library: 'Library', libraryMeta: `${universeCount}+ UNIVERSES`,
 };
 ---
 
@@ -76,7 +80,7 @@ const t = lang === 'es' ? {
       </div>
     </button>
 
-    <!-- 2. Curriculum — two views grouped -->
+    <!-- 2. Curriculum — two axes of the same content -->
     <div class="home-curriculum">
       <div class="home-curriculum-header">
         <div class="home-card-icon">
@@ -89,7 +93,7 @@ const t = lang === 'es' ? {
       <div class="home-curriculum-views">
         <!-- By Age -->
         <div class="home-curriculum-view">
-          <h3 class="home-view-label">{t.ageLabel}</h3>
+          <h3 class="home-view-label">{t.byAge}</h3>
           <div class="home-phase-grid">
             {phases.map((phase) => (
               <button type="button" class="home-phase-pill" data-nav="age" data-phase-id={phase.id}>
@@ -102,33 +106,31 @@ const t = lang === 'es' ? {
 
         <div class="home-curriculum-divider"></div>
 
-        <!-- By Thread -->
+        <!-- Across Ages -->
         <div class="home-curriculum-view">
-          <h3 class="home-view-label">{t.threadLabel}</h3>
+          <h3 class="home-view-label">{t.acrossAges}</h3>
           <div class="home-thread-grid">
-            {threads.map((thread) => (
-              <button type="button" class="home-thread-pill" data-nav="domain" data-domain-id={thread.id}>
-                <span class="material-symbols-rounded home-thread-icon">{thread.icon}</span>
-                <span class="home-thread-label">{thread.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
+            <button type="button" class="home-thread-pill" data-nav="targets">
+              <span class="material-symbols-rounded home-thread-icon">emoji_events</span>
+              <span class="home-thread-label">{t.targets}</span>
+            </button>
+            <button type="button" class="home-thread-pill" data-nav="models">
+              <span class="material-symbols-rounded home-thread-icon">cognition</span>
+              <span class="home-thread-label">{t.models}</span>
+            </button>
+            <button type="button" class="home-thread-pill" data-nav="domain">
+              <span class="material-symbols-rounded home-thread-icon">category</span>
+              <span class="home-thread-label">{t.domains}</span>
+            </button>
+            <button type="button" class="home-thread-pill" data-nav="resources">
+              <span class="material-symbols-rounded home-thread-icon">local_library</span>
+              <span class="home-thread-label">{t.resources}</span>
+            </button>
+            <button type="button" class="home-thread-pill" data-nav="universe">
+              <span class="material-symbols-rounded home-thread-icon">menu_book</span>
+              <span class="home-thread-label">{t.library}</span>
+            </button>
       </div>
     </div>
-
-    <!-- 3. Library — standalone -->
-    <button type="button" class="home-card" data-nav="universe">
-      <div class="home-card-inner">
-        <div class="home-card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-        </div>
-        <div>
-          <h2 class="home-card-title">{t.library}</h2>
-          <p class="home-card-desc">{t.libraryDesc}</p>
-          <span class="home-card-meta">{t.libraryMeta}</span>
-        </div>
-      </div>
-    </button>
   </div>
 </div>

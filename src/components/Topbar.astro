@@ -13,9 +13,13 @@ const agePhases = phases.filter(p => p.data.phaseId !== 'framework');
 const tabEntries = Object.entries(TAB_TAGS);
 
 const nav = lang === 'es' ? {
-  home: 'Inicio', framework: 'Marco', byAge: 'Por Edad', byDomain: 'Por Hilo', universes: 'Biblioteca', search: 'Buscar...'
+  home: 'Inicio', framework: 'Marco', byAge: 'Por Edad', acrossAges: 'A Través de las Edades',
+  targets: 'Mapa de Actividades', models: 'Modelos Mentales', domains: 'Dominios',
+  resources: 'Recursos', library: 'Biblioteca', search: 'Buscar...'
 } : {
-  home: 'Home', framework: 'Framework', byAge: 'By Age', byDomain: 'By Thread', universes: 'Library', search: 'Search... (⌘K)'
+  home: 'Home', framework: 'Framework', byAge: 'By Age', acrossAges: 'Across Ages',
+  targets: 'Activity Map', models: 'Mental Models', domains: 'Domains',
+  resources: 'Resources', library: 'Library', search: 'Search... (⌘K)'
 };
 ---
 
@@ -47,28 +51,18 @@ const nav = lang === 'es' ? {
         </div>
       </div>
 
-      <!-- By Domain — dropdown trigger -->
+      <!-- Across Ages — dropdown trigger -->
       <div class="nav-dropdown-wrap">
-        <button type="button" class="nav-item" data-view="domain" aria-expanded="false" aria-haspopup="true">
-          {nav.byDomain}
+        <button type="button" class="nav-item" data-view="across-ages" aria-expanded="false" aria-haspopup="true">
+          {nav.acrossAges}
           <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
-        <div class="nav-dropdown nav-dropdown-domain" role="menu" id="nav-domain-dropdown">
-          <!-- Populated by JS from domainMap -->
-        </div>
-      </div>
-
-      <!-- Universes — dropdown trigger -->
-      <div class="nav-dropdown-wrap">
-        <button type="button" class="nav-item" data-view="universe" aria-expanded="false" aria-haspopup="true">
-          {nav.universes}
-          <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </button>
-        <div class="nav-dropdown" role="menu" id="nav-universe-dropdown">
-          <button type="button" class="nav-dropdown-item active" role="menuitem" data-universe-filter="all">All</button>
-          {tabEntries.map(([key, label]) => (
-            <button type="button" class="nav-dropdown-item" role="menuitem" data-universe-filter={key}>{label}</button>
-          ))}
+        <div class="nav-dropdown" role="menu" id="nav-across-dropdown">
+          <button type="button" class="nav-dropdown-item" role="menuitem" data-across-view="targets">{nav.targets}</button>
+          <button type="button" class="nav-dropdown-item" role="menuitem" data-across-view="models">{nav.models}</button>
+          <button type="button" class="nav-dropdown-item" role="menuitem" data-across-view="domain">{nav.domains}</button>
+          <button type="button" class="nav-dropdown-item" role="menuitem" data-across-view="resources">{nav.resources}</button>
+          <button type="button" class="nav-dropdown-item" role="menuitem" data-across-view="universe">{nav.library}</button>
         </div>
       </div>
     </div>
@@ -109,15 +103,12 @@ const nav = lang === 'es' ? {
     ))}
   </div>
   <div class="mobile-menu-group">
-    <div class="mobile-menu-label">{nav.byDomain}</div>
-    <div id="mobile-domain-items"><!-- Populated by JS --></div>
-  </div>
-  <div class="mobile-menu-group">
-    <div class="mobile-menu-label">{nav.universes}</div>
-    <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter="all">All</button>
-    {tabEntries.map(([key, label]) => (
-      <button type="button" class="mobile-menu-item mobile-menu-sub" data-view="universe" data-universe-filter={key}>{label}</button>
-    ))}
+    <div class="mobile-menu-label">{nav.acrossAges}</div>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="targets">{nav.targets}</button>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="models">{nav.models}</button>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="domain">{nav.domains}</button>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="resources">{nav.resources}</button>
+    <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="universe">{nav.library}</button>
   </div>
   <div class="mobile-menu-group" style="border-top: 1px solid var(--border); margin-top: var(--sp-3); padding-top: var(--sp-3);">
     <a class="mobile-menu-item" id="lang-switch-mobile" href=""></a>

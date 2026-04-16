@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props { lang?: string; }
+const { lang = 'en' } = Astro.props;
+
+const collection = lang === 'es' ? 'targets-es' : 'targets';
+const targetsRaw = await getCollection(collection);
+const targets = targetsRaw.sort((a, b) => a.data.number - b.data.number);
+---
+
+<div id="targets-view" class="hidden">
+  <div id="targets-grid">
+    <div class="browse-header">
+      <h1 class="browse-title">{lang === 'es' ? 'Mapa de Actividades' : 'Activity Map'}</h1>
+      <p class="browse-subtitle">{lang === 'es'
+        ? 'Los once objetivos diana — cómo evoluciona cada uno desde semilla hasta madurez a lo largo de 7 fases de edad.'
+        : 'The eleven targets — how each evolves from seed to maturity across 7 age phases.'}</p>
+    </div>
+    <div class="browse-card-grid">
+      {targets.map(async (t) => {
+        const { Content } = await t.render();
+        return (
+          <button type="button" class="browse-card" data-browse-id={t.data.targetId}>
+            <span class="browse-num">{t.data.number}</span>
+            <div class="browse-card-body">
+              <Content />
+            </div>
+          </button>
+        );
+      })}
+    </div>
+  </div>
+
+  <div id="targets-detail" class="hidden">
+    <button type="button" class="browse-back" id="targets-back">
+      <span class="material-symbols-rounded">arrow_back</span>
+      {lang === 'es' ? 'Todos los Objetivos' : 'All Targets'}
+    </button>
+    <div id="targets-detail-header"></div>
+    <div id="targets-timeline"></div>
+  </div>
+</div>

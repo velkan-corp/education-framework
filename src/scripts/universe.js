@@ -5,6 +5,7 @@ import { updateAllNavs } from './navigation.js';
 // Single-select filters (primary)
 let currentAge = 'all';
 let currentTier = 'all';
+let currentMedium = 'all';
 // Multi-select filters (advanced) — empty Set means "all"
 let selectedLanguages = new Set();
 let selectedKinds = new Set();
@@ -85,6 +86,9 @@ export function initUniverseView() {
   bindSingleSelectFilter('tier-filters', 'tier', (value) => {
     currentTier = value;
   });
+  bindSingleSelectFilter('medium-filters', 'medium', (value) => {
+    currentMedium = value;
+  });
 
   // Advanced filters — multi-select (OR within, AND across)
   bindMultiSelectFilter('language-filters', 'language', selectedLanguages);
@@ -132,6 +136,7 @@ function applyFilters() {
     const phaseModes = splitCsv(card.dataset.phaseModes);
     const phaseTiers = splitCsv(card.dataset.phaseTiers);
 
+    const matchesMedium = currentMedium === 'all' || tags.includes(currentMedium);
     const matchesAge = currentAge === 'all' || phases.includes(currentAge);
     const matchesTier = currentTier === 'all'
       || (currentAge === 'all'
@@ -150,7 +155,8 @@ function applyFilters() {
           }));
 
     card.classList.toggle('hidden', !(
-      matchesAge
+      matchesMedium
+      && matchesAge
       && matchesTier
       && matchesLanguage
       && matchesKind
@@ -165,12 +171,16 @@ function hideControls() {
   const legend = document.querySelector('.universe-legend');
   if (legend) legend.classList.add('hidden');
   document.querySelectorAll('.universe-filters').forEach((filterRow) => filterRow.classList.add('hidden'));
+  document.getElementById('advanced-filters-toggle')?.classList.add('hidden');
+  document.getElementById('advanced-filters-body')?.classList.add('hidden');
 }
 
 function showControls() {
   const legend = document.querySelector('.universe-legend');
   if (legend) legend.classList.remove('hidden');
   document.querySelectorAll('.universe-filters').forEach((filterRow) => filterRow.classList.remove('hidden'));
+  document.getElementById('advanced-filters-toggle')?.classList.remove('hidden');
+  // Don't auto-expand the advanced body — keep its collapsed state
 }
 
 function showUniverseDetail(universeId) {
