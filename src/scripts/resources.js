@@ -168,8 +168,8 @@ function showResourceDetail(key) {
   let universeBlock = '';
   if (data.universeId) {
     const uCard = document.querySelector(`.universe-card[data-universe="${data.universeId}"]`);
-    const uTitle = uCard?.querySelector('.universe-label')?.textContent || '';
-    const uSummary = uCard?.querySelector('.universe-summary')?.textContent || '';
+    const uTitle = uCard?.querySelector('.universe-card-title')?.textContent || '';
+    const uSummary = uCard?.querySelector('.universe-card-summary')?.textContent || '';
     universeBlock = `
       <div class="resource-universe-block">
         <a data-universe-nav="${data.universeId}" class="resource-universe-card">
