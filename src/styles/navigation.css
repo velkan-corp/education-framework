@@ -409,40 +409,8 @@
   flex-direction: column;
   gap: var(--sp-1);
 }
-.home-phase-pill {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-2);
-  padding: var(--sp-1) var(--sp-2);
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--text-secondary);
-  transition: border-color var(--duration-micro) var(--ease-out),
-              background var(--duration-micro) var(--ease-out),
-              color var(--duration-micro) var(--ease-out);
-}
-.home-phase-pill:hover {
-  border-color: var(--accent-border);
-  background: var(--accent-light);
-  color: var(--accent);
-}
-.home-phase-age {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--accent);
-  min-width: 24px;
-}
-
-/* Thread pills */
-.home-thread-grid {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-1);
-}
+/* Shared pill style for both Age and Thread lists */
+.home-phase-pill,
 .home-thread-pill {
   display: flex;
   align-items: center;
@@ -459,14 +427,25 @@
               background var(--duration-micro) var(--ease-out),
               color var(--duration-micro) var(--ease-out);
 }
+.home-phase-pill:hover,
 .home-thread-pill:hover {
   border-color: var(--accent-border);
   background: var(--accent-light);
   color: var(--accent);
 }
+.home-phase-age,
 .home-thread-icon {
   font-size: 16px;
+  font-weight: 600;
   color: var(--accent);
+  min-width: 24px;
+}
+
+/* Thread grid */
+.home-thread-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
 }
 
 .home-card {
