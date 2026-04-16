@@ -355,10 +355,13 @@
   padding: var(--sp-5) var(--sp-6);
 }
 .home-curriculum-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
   margin-bottom: var(--sp-4);
 }
 .home-curriculum-header .home-card-icon {
-  margin-bottom: var(--sp-2);
+  margin-bottom: 0;
 }
 .home-curriculum-title {
   font-family: var(--font-heading);
