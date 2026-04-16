@@ -7,13 +7,13 @@ interface Props {
 const { phaseCount, universeCount, lang = 'en' } = Astro.props;
 
 const phases = [
-  { id: 'age-0-1', label: '0–1' },
-  { id: 'age-1-3', label: '1–3' },
-  { id: 'age-4-7', label: '4–7' },
-  { id: 'age-8-10', label: '8–10' },
-  { id: 'age-11-13', label: '11–13' },
-  { id: 'age-14-16', label: '14–16' },
-  { id: 'age-17-18', label: '17–18' },
+  { id: 'age-0-1', label: '0–1', desc: lang === 'es' ? 'Fundaciones Neuronales' : 'Neural Foundations' },
+  { id: 'age-1-3', label: '1–3', desc: lang === 'es' ? 'Explosión Lingüística y Motricidad' : 'Language Explosion & Motor Mastery' },
+  { id: 'age-4-7', label: '4–7', desc: lang === 'es' ? 'Historias y Sistemas' : 'Stories & Systems' },
+  { id: 'age-8-10', label: '8–10', desc: lang === 'es' ? 'Primeros Principios y Sistemas' : 'First Principles & Systems' },
+  { id: 'age-11-13', label: '11–13', desc: lang === 'es' ? 'Profundidad y Complejidad' : 'Depth & Complexity' },
+  { id: 'age-14-16', label: '14–16', desc: lang === 'es' ? 'Pensamiento Interdisciplinar' : 'Cross-Domain Thinking' },
+  { id: 'age-17-18', label: '17–18', desc: lang === 'es' ? 'Síntesis y Lanzamiento' : 'Synthesis & Launch' },
 ];
 
 const threads = [
@@ -94,6 +94,7 @@ const t = lang === 'es' ? {
             {phases.map((phase) => (
               <button type="button" class="home-phase-pill" data-nav="age" data-phase-id={phase.id}>
                 <span class="home-phase-age">{phase.label}</span>
+                <span class="home-phase-desc">{phase.desc}</span>
               </button>
             ))}
           </div>

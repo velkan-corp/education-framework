@@ -338,7 +338,7 @@
 .home-card-inner {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-2);
+  gap: var(--sp-3);
 }
 .home-card-inner .home-card-icon {
   margin-bottom: 0;
@@ -357,7 +357,7 @@
 .home-curriculum-header {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-2);
+  gap: var(--sp-3);
   margin-bottom: var(--sp-4);
 }
 .home-curriculum-header .home-card-icon {
@@ -403,16 +403,19 @@
   border: none;
 }
 
-/* Age phase pills — horizontal row of age ranges */
+/* Age phase pills */
 .home-phase-grid {
   display: flex;
-  gap: var(--sp-2);
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--sp-1);
 }
 .home-phase-pill {
-  padding: var(--sp-1) var(--sp-3);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-2);
   background: transparent;
-  border: 1px solid var(--border-light);
+  border: 1px solid transparent;
   border-radius: var(--radius-sm);
   cursor: pointer;
   font-family: var(--font-body);
@@ -429,6 +432,12 @@
   font-weight: 400;
   color: var(--accent);
   line-height: 1.2;
+  min-width: 32px;
+}
+.home-phase-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.3;
 }
 
 /* Thread pills */
