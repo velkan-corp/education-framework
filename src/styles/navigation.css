@@ -501,7 +501,7 @@
   font-size: 20px;
   font-weight: 400;
   color: var(--text);
-  margin-bottom: var(--sp-2);
+  margin: 0 0 var(--sp-2);
 }
 .home-card-desc {
   font-size: 13px;
