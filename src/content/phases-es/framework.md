@@ -201,7 +201,7 @@ order: 0
 <div class="model-age-group">
 <div class="model-age-label">Edad 11-13 — Capa 3: Poner a Prueba</div>
 <div class="model-cards">
-<div class="model-card"><span class="model-num">10</span><strong>Emergencia</strong><br>¿Qué surge de partes simples que ninguna contiene por sí sola?</div>
+<div class="model-card"><span class="model-num">10</span><strong>Propiedades Emergentes</strong><br>¿Qué surge de partes simples que ninguna contiene por sí sola?</div>
 <div class="model-card"><span class="model-num">11</span><strong>Opuestos Complementarios</strong><br>¿Esto es un o-lo-uno-o-lo-otro, o un ambos-a-la-vez?</div>
 <div class="model-card"><span class="model-num">12</span><strong>Via Negativa</strong><br>¿Qué mejora al quitar en vez de añadir?</div>
 <div class="model-card"><span class="model-num">13</span><strong>Sesgos Cognitivos</strong><br>¿Cómo me está engañando mi cerebro ahora mismo?</div>

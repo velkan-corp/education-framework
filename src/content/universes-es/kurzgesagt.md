@@ -21,7 +21,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Pensamiento sistémico a través de la ciencia"
-    description: "Los vídeos existenciales y de sistemas: el sistema inmunitario, la evolución, el cambio climático, la energía nuclear, la paradoja de Fermi, qué ocurre después de morir. Estos son los modelos mentales del marco (Emergencia, Bucles de Retroalimentación, Probabilidad) hechos visuales a escala cósmica. Después de ver: '¿Qué sistema describía ese vídeo? ¿Dónde están los bucles de retroalimentación? ¿Qué pasaría si una variable cambiara?' Kurzgesagt se convierte en un ritual semanal — un vídeo, una conversación."
+    description: "Los vídeos existenciales y de sistemas: el sistema inmunitario, la evolución, el cambio climático, la energía nuclear, la paradoja de Fermi, qué ocurre después de morir. Estos son los modelos mentales del marco (Propiedades Emergentes, Bucles de Retroalimentación, Probabilidad) hechos visuales a escala cósmica. Después de ver: '¿Qué sistema describía ese vídeo? ¿Dónde están los bucles de retroalimentación? ¿Qué pasaría si una variable cambiara?' Kurzgesagt se convierte en un ritual semanal — un vídeo, una conversación."
     mode: dim
     goals:
       - "Aplicar modelos mentales a sistemas científicos presentados visualmente."

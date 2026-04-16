@@ -14,7 +14,7 @@ phases:
   - phaseId: age-11-13
     tier: core
     title: "Mistborn Era 1"
-    description: "Sistemas de magia dura = pensamiento de física. Narrativa de atraco. Emergencia: las reglas mágicas crean comportamiento emergente."
+    description: "Sistemas de magia dura = pensamiento de física. Narrativa de atraco. Propiedades Emergentes: las reglas mágicas crean comportamiento emergente."
     mode: interrogate
     goals:
       - "Mostrar cómo las reglas generan trama y estrategia."

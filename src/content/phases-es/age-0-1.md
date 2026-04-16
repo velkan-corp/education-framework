@@ -67,7 +67,7 @@ order: 1
 <span class="model-dot future" data-tip="Probabilidad — Cual es la probabilidad real?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Coste de Oportunidad — A que renuncio al elegir esto?"><span class="model-dot-num">8</span><span class="model-dot-name">COpor.</span></span>
 <span class="model-dot future" data-tip="Apalancamiento — ¿Dónde está el punto de mayor retorno para aplicar esfuerzo?"><span class="model-dot-num">9</span><span class="model-dot-name">Apal.</span></span>
-<span class="model-dot future" data-tip="Emergencia — Que surge de partes simples que ninguna contiene?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerg.</span></span>
+<span class="model-dot future" data-tip="Propiedades Emergentes — Que surge de partes simples que ninguna contiene?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerg.</span></span>
 <span class="model-dot future" data-tip="Opuestos Complementarios — Es esto un o/o o un y/y?"><span class="model-dot-num">11</span><span class="model-dot-name">Opues.</span></span>
 <span class="model-dot future" data-tip="Via Negativa — Que mejora eliminando en lugar de anadiendo?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
 <span class="model-dot future" data-tip="Sesgos Cognitivos — Como me esta enganando mi cerebro ahora mismo?"><span class="model-dot-num">13</span><span class="model-dot-name">Sesgos</span></span>

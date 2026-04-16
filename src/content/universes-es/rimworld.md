@@ -2,7 +2,7 @@
 label: Rimworld
 kind: strategy-system
 summary: "Simulación de supervivencia de colonias donde la narrativa emergente surge de sistemas que interactúan. Cada colono tiene una psicología. Cada decisión tiene consecuencias en cascada."
-whyItBelongs: "Rimworld es el mejor juego de pensamiento sistémico después de Factorio, pero con una adición crucial: la psicología humana como variable del sistema. Los colonos tienen estados de ánimo, relaciones, habilidades y puntos de quiebre. Una colonia fracasa no solo por escasez de recursos sino por crisis nerviosas, conflictos sociales y decisiones de liderazgo deficientes. Esto enseña Emergencia (#9) y Bucles de Retroalimentación (#2) a través de consecuencias vividas — y añade el elemento humano que Factorio no tiene. Los dilemas morales (cosecha de órganos, trato a prisioneros, triaje bajo escasez) operacionalizan el razonamiento moral sin moralizar."
+whyItBelongs: "Rimworld es el mejor juego de pensamiento sistémico después de Factorio, pero con una adición crucial: la psicología humana como variable del sistema. Los colonos tienen estados de ánimo, relaciones, habilidades y puntos de quiebre. Una colonia fracasa no solo por escasez de recursos sino por crisis nerviosas, conflictos sociales y decisiones de liderazgo deficientes. Esto enseña Propiedades Emergentes (#9) y Bucles de Retroalimentación (#2) a través de consecuencias vividas — y añade el elemento humano que Factorio no tiene. Los dilemas morales (cosecha de órganos, trato a prisioneros, triaje bajo escasez) operacionalizan el razonamiento moral sin moralizar."
 tags: [game, english, strategy]
 languages: [english]
 targets: [adaptability, first-principles-reasoning, agency, deep-curiosity, compassion-kindness]

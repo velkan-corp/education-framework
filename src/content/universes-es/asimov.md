@@ -30,7 +30,7 @@ phases:
   - phaseId: age-17-18
     tier: core
     title: "Los limites de la Fundacion + Preludio a la Fundacion"
-    description: "El proyecto de la psicohistoria cuestionado desde dentro: que pasa cuando el predictor se convierte en parte de la prediccion? Emergencia, Probabilidad, Mapa ≠ Territorio."
+    description: "El proyecto de la psicohistoria cuestionado desde dentro: que pasa cuando el predictor se convierte en parte de la prediccion? Propiedades Emergentes, Probabilidad, Mapa ≠ Territorio."
     mode: critique
     goals:
       - "Interrogar la prediccion desde dentro del sistema predicho."

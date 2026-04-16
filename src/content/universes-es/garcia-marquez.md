@@ -14,7 +14,7 @@ phases:
   - phaseId: age-14-16
     tier: recommended
     title: "Crónica de una muerte anunciada"
-    description: "120 páginas. Un pueblo entero sabe que va a ocurrir un asesinato y no logra evitarlo. El conocimiento colectivo fracasando en producir acción colectiva — Emergencia, Mapas ≠ Territorio, Incentivos. En español."
+    description: "120 páginas. Un pueblo entero sabe que va a ocurrir un asesinato y no logra evitarlo. El conocimiento colectivo fracasando en producir acción colectiva — Propiedades Emergentes, Mapas ≠ Territorio, Incentivos. En español."
     mode: critique
     goals:
       - "Hacer concretos el fracaso colectivo y la inercia social."

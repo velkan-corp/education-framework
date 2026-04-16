@@ -22,7 +22,7 @@ phases:
   - phaseId: age-8-10
     tier: core
     title: "Minecraft (Supervivencia + Redstone)"
-    description: "Supervivencia: gestión de recursos, planificación. Redstone: circuitos lógicos, conceptos básicos de programación. Emergencia: ecosistemas, comportamiento de mobs."
+    description: "Supervivencia: gestión de recursos, planificación. Redstone: circuitos lógicos, conceptos básicos de programación. Propiedades Emergentes: ecosistemas, comportamiento de mobs."
     mode: dim
     goals:
       - "Pasar de la construcción libre a sistemas, restricciones y concesiones de recursos."

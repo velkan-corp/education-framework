@@ -15,7 +15,7 @@ phases:
   - phaseId: age-4-7
     tier: foundational
     title: "Avatar: La Leyenda de Aang"
-    description: "Las cuatro naciones como sistema interdependiente. El arco de redencion de Zuko. Consecuencia y responsabilidad. Bucles de Retroalimentacion, Incentivos, Emergencia a traves de narrativa accesible."
+    description: "Las cuatro naciones como sistema interdependiente. El arco de redencion de Zuko. Consecuencia y responsabilidad. Bucles de Retroalimentacion, Incentivos, Propiedades Emergentes a traves de narrativa accesible."
     mode: dim
     goals:
       - "Introducir sistemas a traves de naciones, elementos y consecuencias."
@@ -25,7 +25,7 @@ phases:
   - phaseId: age-8-10
     tier: core
     title: "La Leyenda de Korra"
-    description: "Cada temporada es un sistema politico diferente: democracia (T1), teocracia (T2), anarquia (T3), fascismo (T4). Ensena directamente Incentivos, Emergencia, Bucles de Retroalimentacion."
+    description: "Cada temporada es un sistema politico diferente: democracia (T1), teocracia (T2), anarquia (T3), fascismo (T4). Ensena directamente Incentivos, Propiedades Emergentes, Bucles de Retroalimentacion."
     mode: dim
     goals:
       - "Conectar los arcos narrativos con sistemas politicos e incentivos reales."
