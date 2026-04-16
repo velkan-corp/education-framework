@@ -334,11 +334,11 @@
   gap: var(--sp-4);
 }
 
-/* Cards (Framework + Library) — horizontal layout with icon */
+/* Cards (Framework + Library) — vertical layout with icon on top */
 .home-card-inner {
   display: flex;
-  align-items: flex-start;
-  gap: var(--sp-4);
+  flex-direction: column;
+  gap: var(--sp-3);
 }
 .home-card-inner .home-card-desc {
   margin-bottom: var(--sp-2);
