@@ -247,6 +247,8 @@ export function showView(view, options = {}) {
         });
         document.querySelectorAll('.universe-filters').forEach(f => f.classList.add('hidden'));
         document.querySelector('.universe-legend')?.classList.add('hidden');
+        document.getElementById('advanced-filters-toggle')?.classList.add('hidden');
+        document.getElementById('advanced-filters-body')?.classList.add('hidden');
       }
     } else {
       // Apply type filter if provided
