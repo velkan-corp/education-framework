@@ -156,7 +156,7 @@ order: 0
 </details>
 </details>
 
-<h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>Los Once Objetivos Diana</h2>
+<h2 id="s-targets"><span class="material-symbols-rounded">emoji_events</span>Los Once Objetivos</h2>
 <p>En quién se convierte el niño, no qué sabe. Los once son FUNDACIONALES. Validados contra CASEL, VIA Character Strengths, WHO Life Skills, Teoría de la Autodeterminación, Positive Youth Development (5 Cs), OECD SSES y los marcos de Competencias del Siglo XXI. Cada objetivo se mapea a al menos un constructo establecido; juntos van más allá de cualquier marco individual.</p>
 <div class="target-grid">
 <div class="target-card"><span class="target-num">1</span><h4>Autoeficacia Resiliente</h4><p>"Puedo resolver esto, incluso cuando es difícil y lleva tiempo." Fusiona la autoeficacia de Bandura, la mentalidad de crecimiento de Dweck y la perseverancia de Duckworth.</p></div>
@@ -175,7 +175,7 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>El Kit de Herramientas de Pensamiento</h2>
 <h3>Las Capas de la Cebolla</h3>
 <p>Cada concepto fundamental se revisita anualmente con mayor profundidad: Experimentar (4-7) → Nombrar (8-10) → Poner a Prueba (11-13) → Sintetizar (14-16) → Criticar (17-18). Semanas de inmersión intensiva dentro de cada año, y luego reenganche al año siguiente.</p>
-<h3>Diecinueve Modelos Universales</h3>
+<h3>Diecinueve Modelos Mentales Universales</h3>
 <p>Introducidos progresivamente a través de las Capas de la Cebolla. Cuatro grupos a lo largo de cuatro capas (4-5-5-5). Consulta la sección de Modelos Mentales de cada fase para el enfoque específico por edad.</p>
 
 <div class="model-timeline">

@@ -175,7 +175,7 @@ order: 0
 <h2 id="s-models"><span class="material-symbols-rounded">cognition</span>The Thinking Toolkit</h2>
 <h3>The Onion Layers</h3>
 <p>Every core concept revisited annually at greater depth: Experience (4-7) → Name (8-10) → Stress-Test (11-13) → Synthesize (14-16) → Critique (17-18). Intensive immersion weeks within each year, then re-engagement the following year.</p>
-<h3>Nineteen Universal Models</h3>
+<h3>Nineteen Universal Mental Models</h3>
 <p>Introduced progressively through the Onion Layers. Four groups across four layers (4-5-5-5). See each phase's Mental Models section for age-specific engagement.</p>
 
 <div class="model-timeline">

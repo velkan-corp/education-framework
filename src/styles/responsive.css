@@ -11,8 +11,11 @@
   .profile-fab { display: block; }
   .profile-float { max-height: 80vh; overflow-y: auto; }
 
-  /* Content: full width */
-  .content { padding: var(--sp-4) var(--sp-3); max-width: 100%; }
+  /* Content: full width, prevent horizontal overflow */
+  .content { padding: var(--sp-4) var(--sp-3); max-width: 100%; overflow-x: hidden; }
+  .phase-content { overflow-x: hidden; }
+  ol, ul { padding-left: var(--sp-4); }
+  .priority-num { min-width: 24px; flex-shrink: 0; }
 
   /* Home responsive */
   .home-title { font-size: 28px; }
