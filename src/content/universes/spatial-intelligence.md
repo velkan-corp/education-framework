@@ -49,18 +49,19 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "GIS tools and geographic analysis"
-    description: "GIS tools (QGIS, Google Earth Engine). Mackinder's Heartland Theory. Kaplan's Revenge of Geography. Apply to current events: why does geography explain the Ukraine conflict better than ideology? Spatial data analysis: census data, climate data, economic data on maps."
+    description: "GIS tools (QGIS, Google Earth Engine). Mackinder's Heartland Theory. Kaplan's Revenge of Geography. Parag Khanna's Connectography — infrastructure and connectivity as the new geography. The counterargument to terrain determinism: roads, cables, and pipelines reshape geopolitical reality. Apply to current events: why does geography explain the Ukraine conflict better than ideology? Why does China's Belt and Road Initiative reshape Mackinder?"
     mode: dim
     goals:
       - "Use GIS tools to visualise and analyse spatial data."
       - "Evaluate geopolitical theories: Mackinder, Spykman, Kaplan — where do they explain and where do they over-determine?"
+      - "Khanna's connectivity thesis: infrastructure can override geography. Belt and Road, submarine cables, logistics corridors. When does built connectivity outweigh natural terrain?"
       - "Apply geographic analysis to current events with more explanatory power than ideology alone."
     projects:
       - "Create a GIS map layer combining geographic, demographic, and economic data for a region."
   - phaseId: age-17-18
     tier: core
     title: "Critique of geographic determinism"
-    description: "Critique: when does geographic determinism become reductionist? Braudel's Mediterranean — geography shapes history but doesn't determine it. GIS as professional skill. The child can read any map critically: 'Who made this? What does it emphasise? What does it hide?'"
+    description: "Critique: when does geographic determinism become reductionist? Braudel's Mediterranean — geography shapes history but doesn't determine it. Critique Khanna: does connectivity really override geography, or does it just add a layer? GIS as professional skill. The child can read any map critically: 'Who made this? What does it emphasise? What does it hide?'"
     mode: critique
     goals:
       - "Evaluate geographic determinism: powerful lens, not complete explanation."

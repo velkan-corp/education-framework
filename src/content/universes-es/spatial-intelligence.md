@@ -56,7 +56,7 @@ phases:
   - phaseId: age-14-16
     tier: core
     title: "Geopolítica, urbanismo y análisis espacial"
-    description: "Geopolítica como disciplina: Mackinder (Heartland), Mahan (poder naval), Spykman (Rimland). ¿Siguen vigentes estas teorías? La competición por el Ártico. La Nueva Ruta de la Seda china. Urbanismo y diseño de ciudades: ¿por qué algunas ciudades funcionan y otras no? (Jane Jacobs vs. Robert Moses.) Segregación espacial y su relación con la desigualdad. GIS avanzado: capas de datos, análisis de patrones, visualización geoespacial. Proyecciones cartográficas como caso de estudio de Mapa ≠ Territorio: Mercator distorsiona el tamaño, Peters distorsiona la forma — toda representación es una elección."
+    description: "Geopolítica como disciplina: Mackinder (Heartland), Mahan (poder naval), Spykman (Rimland). ¿Siguen vigentes estas teorías? Parag Khanna y Connectography — la infraestructura y la conectividad como la nueva geografía. El contraargumento al determinismo del terreno: carreteras, cables y oleoductos reconfiguran la realidad geopolítica. La Nueva Ruta de la Seda china como test de Khanna vs. Mackinder. Urbanismo y diseño de ciudades: ¿por qué algunas ciudades funcionan y otras no? (Jane Jacobs vs. Robert Moses.) GIS avanzado: capas de datos, análisis de patrones, visualización geoespacial."
     mode: interrogate
     goals:
       - "Comprender las teorías geopolíticas clásicas y evaluar su vigencia."
