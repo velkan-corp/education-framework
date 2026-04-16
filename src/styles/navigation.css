@@ -419,25 +419,22 @@
   border-radius: var(--radius-sm);
   cursor: pointer;
   font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
   transition: border-color var(--duration-micro) var(--ease-out),
-              background var(--duration-micro) var(--ease-out);
+              background var(--duration-micro) var(--ease-out),
+              color var(--duration-micro) var(--ease-out);
 }
 .home-phase-pill:hover {
   border-color: var(--accent-border);
   background: var(--accent-light);
+  color: var(--accent);
 }
 .home-phase-age {
-  font-family: var(--font-heading);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--accent);
-  line-height: 1.2;
-  min-width: 32px;
-}
-.home-phase-desc {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.3;
+  min-width: 24px;
 }
 
 /* Thread pills */
