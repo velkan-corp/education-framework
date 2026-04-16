@@ -338,7 +338,10 @@
 .home-card-inner {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-3);
+  gap: var(--sp-2);
+}
+.home-card-inner .home-card-icon {
+  margin-bottom: 0;
 }
 .home-card-inner .home-card-desc {
   margin-bottom: var(--sp-2);
@@ -353,6 +356,9 @@
 }
 .home-curriculum-header {
   margin-bottom: var(--sp-4);
+}
+.home-curriculum-header .home-card-icon {
+  margin-bottom: var(--sp-2);
 }
 .home-curriculum-title {
   font-family: var(--font-heading);
