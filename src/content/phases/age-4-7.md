@@ -491,4 +491,7 @@ order: 3
 <tr><td>The Story of Ferdinand — Munro Leaf</td><td>Book</td><td>The bull who preferred flowers to fighting. Being different from peers is fine. <span class="tag tag-target">Self-Awareness</span></td></tr>
 <tr><td>Swimmy — Leo Lionni</td><td>Book</td><td>Cooperation AND individual vision. <span class="tag tag-target">Relational Intelligence</span></td></tr>
 <tr><td>The Emperor's New Clothes — H.C. Andersen</td><td>Book</td><td>The child who said what was true when everyone pretended. Illustrated edition. <span class="tag tag-target">First-Principles Reasoning</span></td></tr>
+<tr><td>Tintin Albums (Hergé)</td><td>Book</td><td>Adventure + geography + cultural encounter. Start with Tintin in Tibet, The Blue Lotus. Maps ≠ Territory through cultural representation. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Asterix Albums (Goscinny & Uderzo)</td><td>Book</td><td>History through humour. Roman Empire as system. Wordplay rewards re-reading. Spanish edition available. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Bone Complete Edition (Jeff Smith)</td><td>Book</td><td>900-page graphic novel epic. Tolkien-scale worldbuilding in comics form. Accessible from age 6, rewards re-reading at 10. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 </table>

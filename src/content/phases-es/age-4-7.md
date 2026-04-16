@@ -491,4 +491,7 @@ order: 3
 <tr><td>The Story of Ferdinand — Munro Leaf</td><td>Libro</td><td>El toro que prefería las flores a pelear. Ser diferente de los pares está bien. <span class="tag tag-target">Autoconciencia y Autorregulación</span></td></tr>
 <tr><td>Swimmy — Leo Lionni</td><td>Libro</td><td>Cooperación E visión individual. <span class="tag tag-target">Inteligencia Relacional</span></td></tr>
 <tr><td>The Emperor's New Clothes — H.C. Andersen</td><td>Libro</td><td>El niño que dijo lo que era verdad cuando todos fingían. Edición ilustrada. <span class="tag tag-target">Razonamiento desde Primeros Principios</span></td></tr>
+<tr><td>Álbumes de Tintín (Hergé)</td><td>Libro</td><td>Aventura + geografía + encuentro cultural. Empezar con Tintín en el Tíbet, El Loto Azul. Mapa ≠ Territorio a través de la representación cultural. <span class="tag tag-target">Deep Curiosity</span></td></tr>
+<tr><td>Álbumes de Astérix (Goscinny & Uderzo)</td><td>Libro</td><td>Historia a través del humor. El Imperio Romano como sistema. Los juegos de palabras premian la relectura. <span class="tag tag-target">Communication Mastery</span></td></tr>
+<tr><td>Bone Edición Completa (Jeff Smith)</td><td>Libro</td><td>Novela gráfica épica de 900 páginas. Construcción de mundo a escala Tolkien en formato cómic. Accesible desde los 6, recompensa la relectura a los 10. <span class="tag tag-target">Deep Curiosity</span></td></tr>
 </table>
