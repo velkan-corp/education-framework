@@ -349,7 +349,7 @@
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--sp-5);
+  padding: var(--sp-5) var(--sp-6);
 }
 .home-curriculum-header {
   margin-bottom: var(--sp-4);
@@ -458,7 +458,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--sp-5);
+  padding: var(--sp-5) var(--sp-6);
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
