@@ -719,9 +719,31 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   margin-top: var(--sp-5);
   padding-top: var(--sp-3);
 }
+.section-filters-header {
+  margin-bottom: var(--sp-4);
+}
+.section-filters-title {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 var(--sp-1);
+  padding: 0;
+  border: none;
+}
+.section-filters-title .material-symbols-rounded {
+  font-size: 20px;
+  margin-right: var(--sp-1);
+  vertical-align: -2px;
+}
+.section-filters-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 var(--sp-2);
+}
 .section-filters {
   display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
-  margin-bottom: var(--sp-4); padding: var(--sp-2) 0;
+  padding: 0;
 }
 .tier-badge {
   display: inline-block; font-size: 9px; font-weight: 700;

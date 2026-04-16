@@ -179,9 +179,14 @@ export function initSectionFilters() {
       h2.appendChild(badge);
     });
 
+    const headerDiv = document.createElement('div');
+    headerDiv.className = 'section-filters-header';
+    headerDiv.innerHTML = '<h2 class="section-filters-title"><span class="material-symbols-rounded">school</span>Curriculum Threads</h2><p class="section-filters-desc">Each thread runs across all ages. Filter by priority tier.</p>';
+    container.insertBefore(headerDiv, container.firstChild);
+
     const filterDiv = document.createElement('div');
     filterDiv.className = 'section-filters';
-    filterDiv.innerHTML = '<span class="filter-label">Show</span>';
+    filterDiv.innerHTML = '';
     ['all', 'foundational', 'core', 'recommended'].forEach(val => {
       const pill = document.createElement('button');
       pill.className = 'filter-pill' + (val === 'all' ? ' active' : '');
@@ -189,7 +194,7 @@ export function initSectionFilters() {
       pill.textContent = val === 'all' ? 'All' : val.charAt(0).toUpperCase() + val.slice(1);
       filterDiv.appendChild(pill);
     });
-    container.insertBefore(filterDiv, container.firstChild);
+    headerDiv.appendChild(filterDiv);
 
     filterDiv.addEventListener('click', (e) => {
       const pill = e.target.closest('.filter-pill');

@@ -56,8 +56,8 @@ order: 1
 <div class="model-tracker">
 <div class="model-tracker-label">Capa 0: Fundación Pre-lingüística</div>
 <div class="model-tracker-bar">
-<span class="model-dot new" data-tip="Permanencia del Objeto — Las cosas existen cuando no puedes verlas"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot new" data-tip="Categorización — Clasificar el mundo en grupos por propiedades compartidas"><span class="model-dot-name">Categ.</span></span>
+<span class="model-dot new" data-tip="Permanencia del Objeto — Las cosas existen cuando no puedes verlas"><span class="model-dot-num">P1</span><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorización — Clasificar el mundo en grupos por propiedades compartidas"><span class="model-dot-num">P2</span><span class="model-dot-name">Categ.</span></span>
 <span class="model-dot future" data-tip="Causa y Efecto — Y luego que? Y despues?"><span class="model-dot-num">1</span><span class="model-dot-name">Causa</span></span>
 <span class="model-dot future" data-tip="Bucles de Retroalimentacion — La salida amplifica o amortigua la entrada?"><span class="model-dot-num">2</span><span class="model-dot-name">Bucles</span></span>
 <span class="model-dot future" data-tip="Incentivos — Muestrame el incentivo y te mostrare el resultado"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
@@ -66,18 +66,22 @@ order: 1
 <span class="model-dot future" data-tip="Interes Compuesto — Que pasa si esto continua 10 anos?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" data-tip="Probabilidad — Cual es la probabilidad real?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Coste de Oportunidad — A que renuncio al elegir esto?"><span class="model-dot-num">8</span><span class="model-dot-name">COpor.</span></span>
+<span class="model-dot future" data-tip="Apalancamiento — ¿Dónde está el punto de mayor retorno para aplicar esfuerzo?"><span class="model-dot-num">9</span><span class="model-dot-name">Apal.</span></span>
 <span class="model-dot future" data-tip="Emergencia — Que surge de partes simples que ninguna contiene?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerg.</span></span>
 <span class="model-dot future" data-tip="Opuestos Complementarios — Es esto un o/o o un y/y?"><span class="model-dot-num">11</span><span class="model-dot-name">Opues.</span></span>
 <span class="model-dot future" data-tip="Via Negativa — Que mejora eliminando en lugar de anadiendo?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
 <span class="model-dot future" data-tip="Sesgos Cognitivos — Como me esta enganando mi cerebro ahora mismo?"><span class="model-dot-num">13</span><span class="model-dot-name">Sesgos</span></span>
+<span class="model-dot future" data-tip="Piel en el Juego — ¿Esta persona soporta las consecuencias de su consejo?"><span class="model-dot-num">14</span><span class="model-dot-name">Piel</span></span>
 <span class="model-dot future" data-tip="Antifragilidad — Se beneficia este sistema del desorden?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
 <span class="model-dot future" data-tip="Teoria de Juegos — Como afecta la estrategia del otro jugador a la mia?"><span class="model-dot-num">16</span><span class="model-dot-name">Juego</span></span>
 <span class="model-dot future" data-tip="Fallo del Modelo — Donde da este modelo la respuesta equivocada?"><span class="model-dot-num">17</span><span class="model-dot-name">Fallo</span></span>
+<span class="model-dot future" data-tip="Estructuras de Poder — ¿Quién decide, quién se beneficia y por qué persiste este arreglo?"><span class="model-dot-num">18</span><span class="model-dot-name">Poder</span></span>
+<span class="model-dot future" data-tip="Escala — ¿Qué cambia cuando haces esto más grande o más pequeño?"><span class="model-dot-num">19</span><span class="model-dot-name">Escala</span></span>
 </div>
 </div>
-<p>Capa 0 — Fundacion pre-linguistica. El marco utiliza 12 modelos mentales universales revisitados anualmente. A esta edad, todos los modelos son experienciales: construidos a traves de la accion y la consecuencia, no de las palabras.</p>
+<p>Capa 0 — Fundacion pre-linguistica. El marco utiliza 19 modelos mentales universales revisitados anualmente. A esta edad, todos los modelos son experienciales: construidos a traves de la accion y la consecuencia, no de las palabras.</p>
 <table>
-<tr><th>Modelo</th><th>Como se Construye</th></tr>
+<tr><th>Precursor</th><th>Cómo se Construye (Capa 0)</th></tr>
 <tr><td>Causa y Efecto — Capa 0 (fundacion pre-linguistica para el Modelo #1)</td><td>Dominos, torres de apilar, verter agua — cualquier juguete con consecuencia fisica directa.</td></tr>
 <tr><td>Permanencia del Objeto</td><td>Cucutras, esconder objetos bajo mantas, encontrar el juguete escondido.</td></tr>
 <tr><td>Categorizacion</td><td>Encajadores de formas, agrupacion por colores. "Encuentra todos los redondos."</td></tr>

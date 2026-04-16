@@ -56,8 +56,8 @@ order: 1
 <div class="model-tracker">
 <div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
 <div class="model-tracker-bar">
-<span class="model-dot new" data-tip="Object Permanence — Things exist when you can't see them"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot new" data-tip="Categorization — Sorting the world into groups by shared properties"><span class="model-dot-name">Categ.</span></span>
+<span class="model-dot new" data-tip="Object Permanence — Things exist when you can't see them"><span class="model-dot-num">P1</span><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorization — Sorting the world into groups by shared properties"><span class="model-dot-num">P2</span><span class="model-dot-name">Categ.</span></span>
 <span class="model-dot future" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
 <span class="model-dot future" data-tip="Feedback Loops — Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
 <span class="model-dot future" data-tip="Incentives — Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
@@ -66,19 +66,22 @@ order: 1
 <span class="model-dot future" data-tip="Compounding — What happens if this continues for 10 years?"><span class="model-dot-num">6</span><span class="model-dot-name">Compd.</span></span>
 <span class="model-dot future" data-tip="Probability — What's the actual likelihood?"><span class="model-dot-num">7</span><span class="model-dot-name">Prob.</span></span>
 <span class="model-dot future" data-tip="Opportunity Cost — What am I giving up by choosing this?"><span class="model-dot-num">8</span><span class="model-dot-name">OpCost</span></span>
+<span class="model-dot future" data-tip="Leverage — Where is the highest-return point to apply effort?"><span class="model-dot-num">9</span><span class="model-dot-name">Lever.</span></span>
 <span class="model-dot future" data-tip="Emergence — What arises from simple parts that none contain?"><span class="model-dot-num">10</span><span class="model-dot-name">Emerge</span></span>
 <span class="model-dot future" data-tip="Complementary Opposites — Is this an either/or or a both/and?"><span class="model-dot-num">11</span><span class="model-dot-name">Oppos.</span></span>
 <span class="model-dot future" data-tip="Via Negativa — What improves by removing rather than adding?"><span class="model-dot-num">12</span><span class="model-dot-name">V.Neg.</span></span>
 <span class="model-dot future" data-tip="Cognitive Biases — How is my brain misleading me right now?"><span class="model-dot-num">13</span><span class="model-dot-name">Biases</span></span>
+<span class="model-dot future" data-tip="Skin in the Game — Does this person bear the consequences of their advice?"><span class="model-dot-num">14</span><span class="model-dot-name">Skin</span></span>
 <span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
 <span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">16</span><span class="model-dot-name">Game</span></span>
 <span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">17</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">18</span><span class="model-dot-name">Power</span></span>
+<span class="model-dot future" data-tip="Scale — What changes when you make this bigger or smaller?"><span class="model-dot-num">19</span><span class="model-dot-name">Scale</span></span>
 </div>
 </div>
-<p>Layer 0 — Pre-linguistic foundation. The framework uses 12 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>
+<p>Layer 0 — Pre-linguistic foundation. The framework uses 19 universal mental models revisited annually. At this age, all models are experiential: built through action and consequence, not words.</p>
 <table>
-<tr><th>Model</th><th>How It's Built</th></tr>
-<tr><td>Cause & Effect — Layer 0 (pre-linguistic foundation for Model #1)</td><td>Dominoes, stacking towers, water pouring — any toy with direct physical consequence.</td></tr>
+<tr><th>Precursor</th><th>How It's Built (Layer 0)</th></tr>
 <tr><td>Object Permanence</td><td>Peek-a-boo, hiding objects under blankets, find the hidden toy.</td></tr>
 <tr><td>Categorization</td><td>Shape sorters, color grouping. "Find all the round ones."</td></tr>
 </table>

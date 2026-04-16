@@ -66,10 +66,10 @@ order: 2
 <div class="model-tracker">
 <div class="model-tracker-label">Layer 0: Pre-linguistic Foundation</div>
 <div class="model-tracker-bar">
-<span class="model-dot new" data-tip="Object Permanence (advanced) — Things exist when hidden; sequence memory"><span class="model-dot-name">Obj.Perm.</span></span>
-<span class="model-dot new" data-tip="Categorization — Sorting by color, shape, size"><span class="model-dot-name">Categ.</span></span>
-<span class="model-dot new" data-tip="Iteration — That didn't work. What else could we try?"><span class="model-dot-name">Iter.</span></span>
-<span class="model-dot new" data-tip="Scale &amp; Size — Things have relative properties: bigger, smaller, heavier"><span class="model-dot-name">Scale</span></span>
+<span class="model-dot new" data-tip="Object Permanence (advanced) — Things exist when hidden; sequence memory"><span class="model-dot-num">P1</span><span class="model-dot-name">Obj.Perm.</span></span>
+<span class="model-dot new" data-tip="Categorization — Sorting by color, shape, size"><span class="model-dot-num">P2</span><span class="model-dot-name">Categ.</span></span>
+<span class="model-dot new" data-tip="Iteration — That didn't work. What else could we try?"><span class="model-dot-num">P3</span><span class="model-dot-name">Iter.</span></span>
+<span class="model-dot new" data-tip="Scale &amp; Size — Things have relative properties: bigger, smaller, heavier"><span class="model-dot-num">P4</span><span class="model-dot-name">Scale</span></span>
 <span class="model-dot future" data-tip="Cause &amp; Effect — Then what? And then what?"><span class="model-dot-num">1</span><span class="model-dot-name">Cause</span></span>
 <span class="model-dot future" data-tip="Feedback Loops — Does the output amplify or dampen the input?"><span class="model-dot-num">2</span><span class="model-dot-name">Loops</span></span>
 <span class="model-dot future" data-tip="Incentives — Show me the incentive, I'll show you the outcome"><span class="model-dot-num">3</span><span class="model-dot-name">Incent.</span></span>
@@ -85,16 +85,17 @@ order: 2
 <span class="model-dot future" data-tip="Antifragility — Does this system benefit from disorder?"><span class="model-dot-num">15</span><span class="model-dot-name">Antifr.</span></span>
 <span class="model-dot future" data-tip="Game Theory — How does the other player's strategy affect mine?"><span class="model-dot-num">16</span><span class="model-dot-name">Game</span></span>
 <span class="model-dot future" data-tip="Model Failure — Where does this model give the wrong answer?"><span class="model-dot-num">17</span><span class="model-dot-name">Failure</span></span>
+<span class="model-dot future" data-tip="Power Structures — Who decides, who benefits, and why does this persist?"><span class="model-dot-num">18</span><span class="model-dot-name">Power</span></span>
+<span class="model-dot future" data-tip="Scale — What changes when you make this bigger or smaller?"><span class="model-dot-num">19</span><span class="model-dot-name">Scale</span></span>
 </div>
 </div>
-<p>Layer 0 continues — Pre-linguistic to early-linguistic. The framework uses 12 universal mental models revisited annually. At this age, models are still primarily experiential, now with emerging verbal scaffolding.</p>
+<p>Layer 0 continues — Pre-linguistic to early-linguistic. The framework uses 19 universal mental models revisited annually. At this age, models are still primarily experiential, now with emerging verbal scaffolding.</p>
 <table>
-<tr><th>Model</th><th>How It's Built</th></tr>
-<tr><td>Cause & Effect — Layer 0 (continuing pre-linguistic foundation for Model #1)</td><td>Dominoes, stacking/knocking down, water play. "What happens if...?"</td></tr>
-<tr><td>Iteration</td><td>"That didn't work. What else could we try?" Don't rescue immediately.</td></tr>
-<tr><td>Categorization</td><td>Sorting by color, shape, size. "Find all the big ones."</td></tr>
-<tr><td>Scale / Size</td><td>Grimm's Rainbow, nesting cups, Duplo. Things have relative properties.</td></tr>
+<tr><th>Precursor</th><th>How It's Built (Layer 0)</th></tr>
 <tr><td>Object Permanence (advanced)</td><td>Hide objects in sequences. Memory games. Things exist when hidden.</td></tr>
+<tr><td>Categorization</td><td>Sorting by color, shape, size. "Find all the big ones."</td></tr>
+<tr><td>Iteration</td><td>"That didn't work. What else could we try?" Don't rescue immediately.</td></tr>
+<tr><td>Scale / Size</td><td>Grimm's Rainbow, nesting cups, Duplo. Things have relative properties.</td></tr>
 </table>
 
 <div class="program-elements">
