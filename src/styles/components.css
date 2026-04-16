@@ -813,6 +813,18 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   color: var(--accent);
 }
 
+.browse-universe-link {
+  font-size: 13px;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.browse-universe-link:hover {
+  text-decoration: underline;
+}
+
 .browse-empty {
   font-size: 13px;
   color: var(--text-muted);

@@ -66,11 +66,16 @@ function parseResourceTable(table, phaseId, phaseLabel, map) {
       targetTags.push(tag.textContent.trim());
     });
 
+    // Extract universe link from first cell if present
+    const universeLink = cells[0].querySelector('[data-universe-nav]');
+    const universeId = universeLink ? universeLink.dataset.universeNav : null;
+
     const key = name.toLowerCase();
     if (!map.has(key)) {
-      map.set(key, { name, category, tier: currentTier, targets: new Set(), phases: [] });
+      map.set(key, { name, category, tier: currentTier, targets: new Set(), universeId: null, phases: [] });
     }
     const entry = map.get(key);
+    if (universeId && !entry.universeId) entry.universeId = universeId;
     targetTags.forEach(t => entry.targets.add(t));
     // Use highest tier if resource appears in multiple phases with different tiers
     const tierRank = { foundational: 3, core: 2, recommended: 1 };
@@ -158,10 +163,14 @@ function showResourceDetail(key) {
   detail.classList.remove('hidden');
 
   const header = document.getElementById('resources-detail-header');
+  const universeLink = data.universeId
+    ? `<a data-universe-nav="${data.universeId}" class="browse-universe-link">View in Library →</a>`
+    : '';
   header.innerHTML = `
     <div class="browse-detail-title">
       <h1>${data.name}</h1>
       <span class="category-badge">${data.category}</span>
+      ${universeLink}
     </div>
   `;
 
