@@ -180,7 +180,8 @@ function showControls() {
   if (legend) legend.classList.remove('hidden');
   document.querySelectorAll('.universe-filters').forEach((filterRow) => filterRow.classList.remove('hidden'));
   document.getElementById('advanced-filters-toggle')?.classList.remove('hidden');
-  // Don't auto-expand the advanced body — keep its collapsed state
+  // Remove 'hidden' so the body can expand when toggled; keep its 'collapsed' state intact.
+  document.getElementById('advanced-filters-body')?.classList.remove('hidden');
 }
 
 function showUniverseDetail(universeId) {
