@@ -146,6 +146,9 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
       <button
         type="button"
         class="universe-card"
+        data-section="library"
+        data-slug={u.id}
+        data-label={u.label}
         data-universe={u.id}
         data-tags={u.tags.join(',')}
         data-phases={u.phases.map((p) => p.phaseId).join(',')}
@@ -184,7 +187,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
   <div id="universe-detail" class="hidden">
     <button type="button" class="universe-back" id="universe-back">&larr; All items</button>
     {sorted.map(u => (
-      <div class="universe-timeline hidden" data-universe-detail={u.id}>
+      <div class="universe-timeline hidden" data-section="library" data-slug={u.id} data-label={u.label} data-universe-detail={u.id}>
         <h1 class="universe-detail-title">{u.label}</h1>
         {u.summary && <p class="universe-detail-summary">{u.summary}</p>}
         {u.whyItBelongs && <p class="universe-note"><strong>Why it belongs.</strong> {u.whyItBelongs}</p>}

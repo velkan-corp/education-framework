@@ -139,7 +139,7 @@ function renderResourceCards(filter = {}) {
       <th>Targets</th>
     </tr>
     ${entries.map(([key, data]) => `
-      <tr class="resource-row" data-browse-id="${key}" data-category="${data.category}" data-tier="${data.tier}">
+      <tr class="resource-row" data-section="resource" data-slug="${key}" data-label="${data.name.replace(/"/g,'&quot;')}" data-browse-id="${key}" data-category="${data.category}" data-tier="${data.tier}" data-phases="${Array.from(new Set(data.phases.map(p => p.phaseId))).join(',')}">
         <td class="resource-name">${data.name}</td>
         <td><span class="resource-type-badge">${data.category}</span></td>
         <td><span class="tier-badge ${tierClass[data.tier] || ''}">${data.tier}</span></td>

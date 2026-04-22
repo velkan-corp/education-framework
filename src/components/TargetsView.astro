@@ -21,7 +21,7 @@ const targets = targetsRaw.sort((a, b) => a.data.number - b.data.number);
       {targets.map(async (t) => {
         const { Content } = await t.render();
         return (
-          <button type="button" class="browse-card" data-browse-id={t.data.targetId}>
+          <button type="button" class="browse-card" data-section="target" data-slug={t.data.targetId} data-label={t.data.targetId} data-browse-id={t.data.targetId}>
             <span class="browse-num">{t.data.number}</span>
             <div class="browse-card-body">
               <Content />

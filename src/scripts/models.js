@@ -144,8 +144,20 @@ function setupLayerFilters() {
   });
 }
 
+function tagModelCardsWithPhases() {
+  if (!modelMap) return;
+  document.querySelectorAll('#models-view .browse-card').forEach((card) => {
+    const num = parseInt(card.querySelector('.browse-num')?.textContent, 10);
+    const data = modelMap.get(num);
+    if (!data) return;
+    const phaseIds = Array.from(new Set(data.phases.map((p) => p.phaseId)));
+    card.dataset.phases = phaseIds.join(',');
+  });
+}
+
 export function initModelsView() {
   modelMap = buildModelMap();
+  tagModelCardsWithPhases();
   setupLayerFilters();
 
   const grid = document.getElementById('models-grid');

@@ -106,8 +106,20 @@ function showTargetsGrid() {
   updateAllNavs();
 }
 
+function tagTargetCardsWithPhases() {
+  if (!targetMap) return;
+  document.querySelectorAll('#targets-view .browse-card').forEach((card) => {
+    const num = parseInt(card.querySelector('.browse-num')?.textContent, 10);
+    const data = targetMap.get(num);
+    if (!data) return;
+    const phaseIds = Array.from(new Set(data.phases.map((p) => p.phaseId)));
+    card.dataset.phases = phaseIds.join(',');
+  });
+}
+
 export function initTargetsView() {
   targetMap = buildTargetMap();
+  tagTargetCardsWithPhases();
 
   const grid = document.getElementById('targets-grid');
   if (!grid) return;

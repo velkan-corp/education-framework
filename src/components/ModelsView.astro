@@ -42,7 +42,7 @@ const allLayers = [1, 2, 3, 4, 5] as const;
             {layerModels.map(async (m) => {
               const { Content } = await m.render();
               return (
-                <button type="button" class="browse-card" data-browse-id={m.data.modelId} data-layer={m.data.layer}>
+                <button type="button" class="browse-card" data-section="mental-model" data-slug={m.data.modelId} data-label={m.data.shortName} data-browse-id={m.data.modelId} data-layer={m.data.layer}>
                   <span class="browse-num">{m.data.number}</span>
                   <div class="browse-card-body">
                     <Content />
@@ -64,7 +64,7 @@ const allLayers = [1, 2, 3, 4, 5] as const;
         {models.map(async (m) => {
           const { Content } = await m.render();
           return (
-            <button type="button" class="browse-card" data-browse-id={m.data.modelId} data-layer="5">
+            <button type="button" class="browse-card" data-section="mental-model" data-slug={m.data.modelId} data-label={m.data.shortName} data-browse-id={m.data.modelId} data-layer="5">
               <span class="browse-num">{m.data.number}</span>
               <div class="browse-card-body">
                 <Content />
