@@ -26,8 +26,8 @@ order: 1
 <div class="target-card"><span class="target-num">5</span><h4>Semilla de Primeros Principios</h4><p>Aun no aplicable — pre-linguistico. Las semillas se plantan a traves de la exploracion sensorial de causa y efecto.</p></div>
 <div class="target-card"><span class="target-num">6</span><h4>Semilla de Dominio Comunicativo</h4><p>Narra todo — empareja el lenguaje con la accion fisica para vincular la palabra con la sensacion.</p></div>
 <div class="target-card"><span class="target-num">7</span><h4>Semilla de Inteligencia Relacional</h4><p>El apego seguro ES la base — el cuidado responsivo produce la seguridad interna para la posterior independencia social. Grupos de padres y bebes con 3-4 familias.</p></div>
-<div class="target-card"><span class="target-num">8</span><h4>Semilla de Compasion y Amabilidad</h4><p>La corregulacion modela la sintonizacion emocional — nombra sus emociones para dar asideros a las experiencias. Narracion consistente de estados emocionales.</p></div>
-<div class="target-card"><span class="target-num">9</span><h4>Semilla de Dominio del Sistema Fisico</h4><p>Tiempo boca abajo, libertad en el suelo, exposicion al exterior con variacion climatica. Baby Bjorn Bouncer; tiempo en manta al aire libre a diario independientemente del clima.</p></div>
+<div class="target-card"><span class="target-num">8</span><h4>Semilla de Compasión y Amabilidad</h4><p>La corregulacion modela la sintonizacion emocional — nombra sus emociones para dar asideros a las experiencias. Narracion consistente de estados emocionales.</p></div>
+<div class="target-card"><span class="target-num">9</span><h4>Semilla de Dominio del Sistema Físico</h4><p>Tiempo boca abajo, libertad en el suelo, exposicion al exterior con variacion climatica. Baby Bjorn Bouncer; tiempo en manta al aire libre a diario independientemente del clima.</p></div>
 <div class="target-card"><span class="target-num">10</span><h4>Semilla de Adaptabilidad</h4><p>Entornos sensoriales variados y flexibilidad en la rutina construyen tolerancia temprana al cambio.</p></div>
 </div>
 
@@ -225,7 +225,7 @@ order: 1
 <tr><th>Recurso</th><th>Tipo</th><th>Descripcion</th></tr>
 <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">FUNDACIONAL — Integral al programa</td></tr>
 <tr><td>Lovevery Play Gym</td><td>Juguete</td><td>Desafios sensoriales y motores graduados. Estructura de madera, accesorios intercambiables. <span class="tag tag-target">Semilla de Autoeficacia Resiliente</span></td></tr>
-<tr><td>Ergobaby 360 Carrier</td><td>Equipo</td><td>Portabebes en todas las posiciones. Apego seguro con manos libres. Usar desde los 4 meses. <span class="tag tag-target">Semilla de Autocompasion</span></td></tr>
+<tr><td>Ergobaby 360 Carrier</td><td>Equipo</td><td>Portabebes en todas las posiciones. Apego seguro con manos libres. Usar desde los 4 meses. <span class="tag tag-target">Semilla de Autocompasión</span></td></tr>
 <tr><td>Montessori Munari Mobile</td><td>Juguete</td><td>Nacimiento-6 semanas. Formas geometricas en blanco y negro. Primer ejercicio de seguimiento visual. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Richard Scarry — Busy, Busy World</td><td>Libro</td><td>Sistemas visuales densos. Cada pagina es un entorno de informacion. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Richard Scarry — What Do People Do All Day</td><td>Libro</td><td>Como funciona una ciudad como sistema. Categorizacion, roles, interdependencia. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
@@ -234,7 +234,7 @@ order: 1
 <tr><td>Montessori Octahedron Mobile</td><td>Juguete</td><td>6-8 semanas. Colores primarios, formas 3D. Comienza la discriminacion de color. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Montessori Gobbi Mobile</td><td>Juguete</td><td>8-12 semanas. Gradiente de un solo color. Desarrollo de la percepcion de profundidad. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Montessori Dancers Mobile</td><td>Juguete</td><td>12+ semanas. Figuras reflectantes y en movimiento. Seguimiento de movimiento complejo. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
-<tr><td>Baby Bjorn Bouncer</td><td>Equipo</td><td>Rebote autodirigido. Causa y efecto temprano (movimiento → rebote). <span class="tag tag-target">Semilla de Dominio del Sistema Fisico</span></td></tr>
+<tr><td>Baby Bjorn Bouncer</td><td>Equipo</td><td>Rebote autodirigido. Causa y efecto temprano (movimiento → rebote). <span class="tag tag-target">Semilla de Dominio del Sistema Físico</span></td></tr>
 <tr><td>Goodnight Moon — Margaret Wise Brown</td><td>Libro</td><td>El libro canonico de hora de dormir. Repeticion, patron, ritual. <span class="tag tag-target">Semilla de Autoconciencia</span></td></tr>
 <tr><td colspan="3" style="background:var(--surface2);color:var(--text-muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:8px 12px">RECOMENDADO — Buenos predeterminados, intercambia libremente</td></tr>
 <tr><td>Lovevery Play Kits (suscripcion 0-12 meses)</td><td>Juguete</td><td>Juguetes de desarrollo alineados con Montessori, respaldados por investigacion, entregados trimestralmente. El estandar de oro para juego de 0-12 meses. Bellamente disenados, genuinamente optimos. <span class="tag tag-target">Semilla de Autoeficacia Resiliente</span></td></tr>
@@ -242,7 +242,7 @@ order: 1
 <tr><td>Yoto Mini</td><td>Equipo</td><td>Dispositivo de audio portatil para viajes. Sin pantalla, duradero, intuitivo. Hace accesible el audio sin pantalla en cualquier lugar. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Where's Wally Complete Collection</td><td>Libro</td><td>Introducir a los 6-9 meses (senalar y narrar). Busqueda visual sostenida. Dura anos. <span class="tag tag-target">Semilla de Curiosidad Profunda</span></td></tr>
 <tr><td>Hape Pound & Tap Bench</td><td>Juguete</td><td>Causa-efecto con retroalimentacion satisfactoria. Martillar = consecuencia directa de la accion. <span class="tag tag-target">Semilla de Autoeficacia Resiliente</span></td></tr>
-<tr><td>Jellycat Soft Toys</td><td>Juguete</td><td>Objeto de consuelo. Variedad de texturas. Apoyo al apego seguro. <span class="tag tag-target">Semilla de Compasion y Amabilidad</span></td></tr>
-<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Libro</td><td>Ilustraciones hermosas, texto ritmico para lectura en voz alta. Ancla del ritual de dormir. <span class="tag tag-target">Semilla de Compasion y Amabilidad</span></td></tr>
-<tr><td>Diverse Rhythm Playlist</td><td>Musica</td><td>Spotify/Apple Music: afrocubano, brasileno, flamenco, vals, reggae. Musica real, no musica infantil. Baila con el bebe a ritmos variados a diario. <span class="tag tag-target">Dominio del Sistema Fisico</span></td></tr>
+<tr><td>Jellycat Soft Toys</td><td>Juguete</td><td>Objeto de consuelo. Variedad de texturas. Apoyo al apego seguro. <span class="tag tag-target">Semilla de Compasión y Amabilidad</span></td></tr>
+<tr><td>The Wonderful Things You Will Be — Emily Winfield Martin</td><td>Libro</td><td>Ilustraciones hermosas, texto ritmico para lectura en voz alta. Ancla del ritual de dormir. <span class="tag tag-target">Semilla de Compasión y Amabilidad</span></td></tr>
+<tr><td>Diverse Rhythm Playlist</td><td>Musica</td><td>Spotify/Apple Music: afrocubano, brasileno, flamenco, vals, reggae. Musica real, no musica infantil. Baila con el bebe a ritmos variados a diario. <span class="tag tag-target">Dominio del Sistema Físico</span></td></tr>
 </table>
