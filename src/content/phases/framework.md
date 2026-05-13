@@ -221,7 +221,88 @@ order: 0
 </div>
 
 <h2 id="s-methods" class="fw-section-header"><span class="material-symbols-rounded">build</span>Methods</h2>
-<p>How the framework operates day-to-day. The engagement cycle, techniques, language strategy, and practical guidance for imbuing joy, kindness, and luck.</p>
+<p>How the framework operates day-to-day. Begins with parenting foundations — what the parent must be — then moves to engagement and teaching, joy and kindness, and the architecture of difficulty.</p>
+
+<h2 id="s-attachment"><span class="material-symbols-rounded">favorite</span>Parenting Foundations</h2>
+<p>Secure attachment is classified by Principle 10 as a Tier A neurobiological window — non-recoverable, with the load-bearing period running 0–3 and consolidation through ~7. Targets 1 (Resilient Self-Efficacy), 3 (Self-Awareness & Self-Regulation), 7 (Relational Intelligence), and 8 (Compassion & Kindness) sit directly on this substrate. Principle 3 ("Relationships Are Infrastructure") supplies the philosophical anchor; this section supplies the mechanics. The thirteen scored child-side dimensions measure outcomes — temperament, executive function, developmental milestones. Attachment work is the input layer: six parental behaviours, named, with evidence anchors and operational scripts. No assessment of the parent is added; the instructions are present.</p>
+
+<details class="evidence"><summary>Evidence</summary>
+<p><strong>Sroufe et al., Minnesota Longitudinal Study (1975–2005):</strong> Secure attachment at 12–18 months predicts mid-childhood emotion regulation, peer competence, academic adjustment, and adult mental health resistance over a 30-year follow-up. Effect sizes are modest but durable; the prediction holds independently of SES and IQ.</p>
+<p><strong>Bakermans-Kranenburg, van IJzendoorn & Juffer (2003), meta-analysis of 88 studies (~7,000 dyads):</strong> Sensitivity-focused parental interventions significantly increase the proportion of securely attached infants. The substrate is modifiable through specific parental behaviours; it is not fixed by temperament.</p>
+<p><strong>Center on the Developing Child, Harvard (2007–present):</strong> "Serve-and-return" — the contingent back-and-forth of caregiver responses to infant cues — is the primary mechanism by which early relationships build the architecture of the brain's stress-response, emotion-regulation, and social-cognition circuits.</p>
+<p><strong>Meins et al. (2001, 2012):</strong> Maternal mind-mindedness at 6 months predicts attachment security at 12–15 months <em>independently</em> of overall sensitivity, and continues to predict theory-of-mind performance through age 4.</p>
+</details>
+
+<h3>The Six Components</h3>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Sensitivity</h4><p><strong>Ainsworth (1978).</strong> Four-step loop on every signal: notice → interpret correctly → respond promptly → respond appropriately. Not constant attentiveness — accurate reading. The parent who notices crying immediately but offers food when the child needs sleep scores low. The one who reads a brief tension cue and offers physical containment before distress escalates scores high.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Contingent Responsiveness & Repair</h4><p><strong>Tronick, Still Face (1978).</strong> Mismatch is normal — even secure dyads are out of sync ~70% of the time. The mechanism that builds security is <em>repair</em>: the active return to attunement after rupture. Perfect attunement is impossible and unnecessary. Reliable repair is both, and is the operative variable.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Mind-Mindedness</h4><p><strong>Meins (1998).</strong> Treat the infant as a mental agent. Narrate apparent mental states aloud: "You're looking at the ball — you want it." "You're frustrated because the lid won't open." Predicts attachment security independently of sensitivity. Mechanism: the child develops a working model in which their mental states are perceivable, namable, and matter to others.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Reflective Functioning</h4><p><strong>Fonagy (1991).</strong> The parent's capacity to think about the child's mind — and about their own mind in relation to the child. Trans-generationally transmits attachment style more reliably than the parent's own attachment classification. Operational move: when behaviour confuses or upsets you, "What is going on for them right now?" before "How do I stop this?"</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>Predictability</h4><p>Routines, consistent comfort scripts, caregiver stability under 18 months (limit rotation of primary caregivers), predictable goodbye/hello rituals. Builds the working model "the world is reliable enough to explore." Surprise is the enemy of secure attachment under 18 months; it becomes useful (dosed) later.</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Emotion Coaching</h4><p><strong>Gottman (1996).</strong> Four-step protocol applicable from toddlerhood: <em>notice</em> the emotion at low intensity → <em>frame</em> as connection opportunity → <em>label</em> with empathy (affect-labelling downregulates the amygdala, Lieberman et al. 2007) → <em>problem-solve</em> together, only after regulation. Naming precedes solving.</p></div>
+</div>
+
+<h3>The Repair Script</h3>
+<p>The highest-leverage and most counter-cultural protocol in this section. Used after parental anger, distraction, broken commitment, prolonged absence — any rupture the child registers. The aim is not perfection; it is modelling repair as ordinary, not catastrophic. The working model the child develops: <em>relationships rupture; they also repair.</em></p>
+<blockquote class="repair-script">
+<p>When I [specific behaviour], I [effect on you].<br>
+That wasn't OK.<br>
+I am sorry.<br>
+Here is what I will do differently: [specific commitment].</p>
+</blockquote>
+<p>Used routinely — not reserved for major incidents. A parent who repairs once a quarter has trained the child that ruptures are rare and grave; a parent who repairs weekly has trained them that ruptures are ordinary and repairable. The frequency matters more than the eloquence.</p>
+
+<h3>Praise Calibration</h3>
+<p>The framework specifies the <em>form</em> of praise rigorously throughout the phase files — dozens of scripts follow Dweck's pattern: praise the effort, strategy, or specific act, never the trait or speed. This subsection adds the missing <em>dosage</em> rule. <strong>Praise is the marked event, not the background.</strong> The default state during routine activity is neutral observation, contingent attention, or substantive conversation — not affirmation. Praise tracks marginal stretch beyond the child's current capacity. Compliance and competence at things already mastered get gratitude (a different category) or descriptive acknowledgement, not praise. Over-praise of the mundane erodes the signal value of recognition and trains contingent self-worth.</p>
+<details class="evidence"><summary>Evidence</summary>
+<p><strong>Mueller & Dweck (1998):</strong> Children praised for intelligence after success showed reduced persistence and lower performance after a subsequent failure than children praised for effort. Trait-praise installs a fixed-ability theory; effort-praise installs an effort theory. The implicit theory the praise teaches outweighs the warmth it conveys.</p>
+<p><strong>Brummelman et al. (2014):</strong> Inflated praise ("You did incredibly well!") given to children with low self-esteem <em>reduced</em> their willingness to attempt challenging tasks. Inflation specifically — not just trait-praise — produces avoidance of difficulty.</p>
+<p><strong>Henderlong & Lepper (2002) review:</strong> Praise undermines intrinsic motivation when it is (a) perceived as controlling, (b) non-contingent on actual behaviour, or (c) inflated relative to achievement. Praise enhances motivation when it is sincere, specific, attributes success to effort and strategy, and avoids social comparison.</p>
+</details>
+
+<h4>When NOT to praise</h4>
+<ul>
+<li><strong>Re-execution of a mastered behaviour.</strong> The child has done this many times. Praising it now signals that the routine is the achievement, not the stretch.</li>
+<li><strong>Morally expected behaviour.</strong> Sharing, telling the truth, finishing a meal — these are baseline expectations. Acknowledge ("I saw that") or thank ("Thank you for the truth"), but don't celebrate.</li>
+<li><strong>Phase-normal output.</strong> A 4-year-old's stick figure, an 8-year-old's chapter book. The behaviour is on-trajectory. Praising it inflates baseline.</li>
+<li><strong>Performative praise.</strong> If you would say it for the benefit of another adult in the room — to demonstrate that you are a praising parent — say nothing.</li>
+</ul>
+
+<h4>Anti-Pattern Table — Spanish</h4>
+<table class="praise-antipattern">
+<thead><tr><th>Default verbal a eliminar</th><th>Por qué</th><th>Reemplazo</th></tr></thead>
+<tbody>
+<tr><td>"Muy bien" / "Qué bien"</td><td>Genérico, inflado por frecuencia, sin contenido</td><td>Observación silenciosa, o: "Veo que [conducta específica]"</td></tr>
+<tr><td>"Qué listo/a eres"</td><td>Elogio de rasgo — anti-patrón clásico de Dweck</td><td>"Probaste tres formas antes de encontrarlo"</td></tr>
+<tr><td>"Eres un campeón / crack / fenómeno"</td><td>Rasgo + inflación de identidad</td><td>Observación específica vinculada al esfuerzo marginal</td></tr>
+<tr><td>"Buen trabajo" (genérico)</td><td>Afirmación sin contenido</td><td>"Te concentraste mucho rato — eso es lo difícil"</td></tr>
+<tr><td>Aplausos rutinarios</td><td>Performativo; señala que el elogio es incondicional</td><td>Reservar para esfuerzo marginal genuino</td></tr>
+<tr><td>Elogio repetido dentro de la misma actividad</td><td>Infla la línea de base, erosiona la señal</td><td>Una observación por esfuerzo genuino; silencio en lo demás</td></tr>
+</tbody>
+</table>
+
+<h4>Anti-Pattern Table — English</h4>
+<table class="praise-antipattern">
+<thead><tr><th>Verbal default to eliminate</th><th>Why</th><th>Replacement</th></tr></thead>
+<tbody>
+<tr><td>"Good job" / "Well done" (generic)</td><td>Content-free affirmation</td><td>Silent observation, or: "I see you [specific behaviour]"</td></tr>
+<tr><td>"You're so smart / clever"</td><td>Trait praise — Dweck-classic anti-pattern</td><td>"You tried three ways before you found it"</td></tr>
+<tr><td>"Champion / star / superstar"</td><td>Trait + identity inflation</td><td>Specific observation tied to marginal stretch</td></tr>
+<tr><td>"Great job" (generic)</td><td>Content-free affirmation</td><td>"You concentrated for a long time — that's the hard part"</td></tr>
+<tr><td>Routine applause</td><td>Performative; unconditional signal</td><td>Reserve for genuine marginal stretch</td></tr>
+<tr><td>Repeated praise within the same activity</td><td>Inflates baseline; erodes signal</td><td>One observation per genuine stretch; silence otherwise</td></tr>
+</tbody>
+</table>
+
+<p><strong>Gratitude is not praise.</strong> "Thank you for being patient while I was on the phone" is gratitude — it acknowledges a contribution to the relationship without inflating the child's self-concept. Gratitude is unrestricted. Praise is rationed.</p>
+
+<h3>Phase-Layer Cross-References</h3>
+<ul>
+<li><strong>Age 0–1:</strong> Serve-and-return rhythm; sensitivity four-step loop; mind-mindedness narration; predictability protocols; contingent responsiveness baseline. See the age 0-1 phase, "Parenting Foundations" section.</li>
+<li><strong>Age 1–3:</strong> Gottman emotion coaching; toddler-tuned repair script; secure-base / safe-haven distinction; separation and reunion rituals. See the age 1-3 phase, "Parenting Foundations" section.</li>
+<li><strong>Age 4–7:</strong> Reflective functioning prompts; bidirectional mentalisation; mature repair script (apology + amends + commitment); inviting the child's own repair. See the age 4-7 phase, "Parenting Foundations" section.</li>
+</ul>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement & Teaching</h2>
 <h3>Engagement Cycle</h3>

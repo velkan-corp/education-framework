@@ -221,7 +221,88 @@ order: 0
 </div>
 
 <h2 id="s-methods" class="fw-section-header"><span class="material-symbols-rounded">build</span>Métodos</h2>
-<p>Cómo opera el marco en el día a día. El ciclo de engagement, las técnicas, la estrategia lingüística y la guía práctica para imbuir alegría, amabilidad y suerte.</p>
+<p>Cómo opera el marco en el día a día. Empieza con los fundamentos de crianza — lo que el progenitor debe ser — y pasa después al engagement y la enseñanza, la alegría y la amabilidad, y la arquitectura de la dificultad.</p>
+
+<h2 id="s-attachment"><span class="material-symbols-rounded">favorite</span>Fundamentos de Crianza</h2>
+<p>El Principio 10 clasifica el apego seguro como una ventana neurobiológica de Nivel A — no recuperable, con el periodo portante de 0–3 y consolidación hasta ~7. Los Objetivos 1 (Autoeficacia Resiliente), 3 (Autoconciencia y Autorregulación), 7 (Inteligencia Relacional) y 8 (Compasión y Amabilidad) se asientan directamente sobre este sustrato. El Principio 3 ("Las Relaciones Son Infraestructura") aporta el ancla filosófica; esta sección aporta la mecánica. Las trece dimensiones puntuadas del lado infantil miden resultados — temperamento, función ejecutiva, hitos del desarrollo. El trabajo de apego es la capa de entrada: seis conductas parentales, nombradas, con anclas de evidencia y guiones operativos. No se añade evaluación del progenitor; las instrucciones están presentes.</p>
+
+<details class="evidence"><summary>Evidencia</summary>
+<p><strong>Sroufe et al., Minnesota Longitudinal Study (1975–2005):</strong> El apego seguro a los 12–18 meses predice la regulación emocional en la infancia media, la competencia entre pares, el ajuste académico y la resistencia en salud mental adulta a lo largo de un seguimiento de 30 años. Los tamaños de efecto son modestos pero duraderos; la predicción se sostiene independientemente del nivel socioeconómico y del CI.</p>
+<p><strong>Bakermans-Kranenburg, van IJzendoorn y Juffer (2003), metanálisis de 88 estudios (~7.000 díadas):</strong> Las intervenciones parentales centradas en la sensibilidad aumentan significativamente la proporción de bebés con apego seguro. El sustrato es modificable mediante conductas parentales específicas; no está fijado por el temperamento.</p>
+<p><strong>Center on the Developing Child, Harvard (2007–presente):</strong> El "serve-and-return" — el intercambio contingente entre las señales del bebé y las respuestas del cuidador — es el mecanismo principal por el cual las relaciones tempranas construyen la arquitectura de los circuitos de respuesta al estrés, regulación emocional y cognición social del cerebro.</p>
+<p><strong>Meins et al. (2001, 2012):</strong> La mentalización materna a los 6 meses predice el apego seguro a los 12–15 meses <em>independientemente</em> de la sensibilidad global, y continúa prediciendo el rendimiento en teoría de la mente hasta los 4 años.</p>
+</details>
+
+<h3>Los Seis Componentes</h3>
+<div class="target-grid">
+<div class="target-card"><span class="target-num">1</span><h4>Sensibilidad</h4><p><strong>Ainsworth (1978).</strong> Bucle de cuatro pasos en cada señal: notar → interpretar correctamente → responder con prontitud → responder de forma apropiada. No es atención constante — es lectura precisa. El padre que nota el llanto de inmediato pero ofrece comida cuando el niño necesita sueño puntúa bajo. El que lee una breve señal de tensión y ofrece contención física antes de que escale puntúa alto.</p></div>
+<div class="target-card"><span class="target-num">2</span><h4>Respuesta Contingente y Reparación</h4><p><strong>Tronick, Still Face (1978).</strong> El desencuentro es normal — incluso las díadas seguras están desincronizadas el ~70% del tiempo. El mecanismo que construye seguridad es la <em>reparación</em>: el retorno activo a la sintonía tras la ruptura. La sintonía perfecta es imposible e innecesaria. La reparación fiable es ambas cosas, y es la variable operativa.</p></div>
+<div class="target-card"><span class="target-num">3</span><h4>Mentalización (Mind-Mindedness)</h4><p><strong>Meins (1998).</strong> Trata al bebé como un agente mental. Narra en voz alta los estados mentales aparentes: "Estás mirando la pelota — la quieres." "Estás frustrado porque la tapa no se abre." Predice el apego seguro independientemente de la sensibilidad. Mecanismo: el niño desarrolla un modelo interno en el que sus estados mentales son perceptibles, nombrables, y le importan al otro.</p></div>
+<div class="target-card"><span class="target-num">4</span><h4>Función Reflexiva</h4><p><strong>Fonagy (1991).</strong> La capacidad del progenitor para pensar en la mente del niño — y en la suya propia en relación con el niño. Transmite el estilo de apego entre generaciones de forma más fiable que la propia clasificación de apego del progenitor. Movimiento operativo: cuando la conducta te confunde o molesta, "¿Qué le pasa por dentro ahora mismo?" antes que "¿Cómo paro esto?"</p></div>
+<div class="target-card"><span class="target-num">5</span><h4>Predictibilidad</h4><p>Rutinas, guiones de consuelo consistentes, estabilidad del cuidador antes de los 18 meses (limita la rotación de cuidadores principales), rituales predecibles de despedida y reencuentro. Construye el modelo interno "el mundo es lo suficientemente fiable para explorarlo." La sorpresa es enemiga del apego seguro antes de los 18 meses; pasa a ser útil (dosificada) más adelante.</p></div>
+<div class="target-card"><span class="target-num">6</span><h4>Coaching Emocional</h4><p><strong>Gottman (1996).</strong> Protocolo de cuatro pasos aplicable desde la etapa de toddler: <em>notar</em> la emoción a baja intensidad → <em>encuadrar</em> como oportunidad de conexión → <em>etiquetar</em> con empatía (poner nombre al afecto desactiva la amígdala, Lieberman et al. 2007) → <em>resolver</em> juntos, sólo después de la regulación. Nombrar precede a resolver.</p></div>
+</div>
+
+<h3>El Guion de Reparación</h3>
+<p>El protocolo de mayor palanca y más contracultural de esta sección. Se usa tras enfado parental, distracción, compromiso roto, ausencia prolongada — cualquier ruptura que el niño registre. El objetivo no es la perfección; es modelar la reparación como algo ordinario, no catastrófico. El modelo interno que el niño desarrolla: <em>las relaciones se rompen; también se reparan.</em></p>
+<blockquote class="repair-script">
+<p>Cuando [conducta específica], yo [efecto en ti].<br>
+Eso no estuvo bien.<br>
+Lo siento.<br>
+Lo que voy a hacer diferente: [compromiso concreto].</p>
+</blockquote>
+<p>Se usa de forma rutinaria — no se reserva para incidentes graves. Un padre que repara una vez por trimestre ha enseñado al niño que las rupturas son raras y graves; uno que repara semanalmente le ha enseñado que las rupturas son ordinarias y reparables. La frecuencia importa más que la elocuencia.</p>
+
+<h3>Calibración del Elogio</h3>
+<p>El marco especifica con rigor la <em>forma</em> del elogio a lo largo de los archivos de fase — decenas de guiones siguen el patrón de Dweck: elogia el esfuerzo, la estrategia o el acto específico, nunca el rasgo ni la velocidad. Esta subsección añade la regla de <em>dosis</em> que faltaba. <strong>El elogio es el evento marcado, no el fondo.</strong> El estado por defecto durante la actividad rutinaria es la observación neutral, la atención contingente o la conversación sustantiva — no la afirmación. El elogio sigue al esfuerzo marginal más allá de la capacidad actual del niño. La obediencia y la competencia en lo ya dominado reciben gratitud (otra categoría) o reconocimiento descriptivo, no elogio. El sobre-elogio de lo mundano erosiona el valor de señal del reconocimiento y entrena una autoestima contingente.</p>
+<details class="evidence"><summary>Evidencia</summary>
+<p><strong>Mueller y Dweck (1998):</strong> Los niños elogiados por su inteligencia tras un éxito mostraron menor persistencia y peor rendimiento tras un fracaso posterior que los niños elogiados por su esfuerzo. El elogio de rasgo instala una teoría de capacidad fija; el elogio de esfuerzo instala una teoría de esfuerzo. La teoría implícita que enseña el elogio pesa más que la calidez que transmite.</p>
+<p><strong>Brummelman et al. (2014):</strong> El elogio inflado ("¡Lo hiciste increíblemente bien!") dado a niños con baja autoestima <em>redujo</em> su disposición a intentar tareas desafiantes. La inflación específicamente — no sólo el elogio de rasgo — produce evitación de la dificultad.</p>
+<p><strong>Henderlong y Lepper (2002), revisión:</strong> El elogio mina la motivación intrínseca cuando es (a) percibido como controlador, (b) no contingente a la conducta real, o (c) inflado respecto al logro. La mejora cuando es sincero, específico, atribuye el éxito al esfuerzo y la estrategia, y evita la comparación social.</p>
+</details>
+
+<h4>Cuándo NO elogiar</h4>
+<ul>
+<li><strong>Re-ejecución de una conducta ya dominada.</strong> El niño lo ha hecho muchas veces. Elogiarlo ahora señala que la rutina es el logro, no el esfuerzo.</li>
+<li><strong>Conducta moralmente esperada.</strong> Compartir, decir la verdad, terminarse la comida — son expectativas de base. Reconoce ("lo he visto") o agradece ("gracias por la verdad"), pero no celebres.</li>
+<li><strong>Output normal para la fase.</strong> El monigote de un niño de 4 años, el libro por capítulos de uno de 8. La conducta está en trayectoria. Elogiarla infla la línea de base.</li>
+<li><strong>Elogio performativo.</strong> Si lo dirías para beneficio de otro adulto en la sala — para demostrar que eres un padre que elogia — no digas nada.</li>
+</ul>
+
+<h4>Tabla de Anti-Patrones — Español</h4>
+<table class="praise-antipattern">
+<thead><tr><th>Default verbal a eliminar</th><th>Por qué</th><th>Reemplazo</th></tr></thead>
+<tbody>
+<tr><td>"Muy bien" / "Qué bien"</td><td>Genérico, inflado por frecuencia, sin contenido</td><td>Observación silenciosa, o: "Veo que [conducta específica]"</td></tr>
+<tr><td>"Qué listo/a eres"</td><td>Elogio de rasgo — anti-patrón clásico de Dweck</td><td>"Probaste tres formas antes de encontrarlo"</td></tr>
+<tr><td>"Eres un campeón / crack / fenómeno"</td><td>Rasgo + inflación de identidad</td><td>Observación específica vinculada al esfuerzo marginal</td></tr>
+<tr><td>"Buen trabajo" (genérico)</td><td>Afirmación sin contenido</td><td>"Te concentraste mucho rato — eso es lo difícil"</td></tr>
+<tr><td>Aplausos rutinarios</td><td>Performativo; señala que el elogio es incondicional</td><td>Reservar para esfuerzo marginal genuino</td></tr>
+<tr><td>Elogio repetido dentro de la misma actividad</td><td>Infla la línea de base, erosiona la señal</td><td>Una observación por esfuerzo genuino; silencio en lo demás</td></tr>
+</tbody>
+</table>
+
+<h4>Tabla de Anti-Patrones — Inglés</h4>
+<table class="praise-antipattern">
+<thead><tr><th>Verbal default to eliminate</th><th>Why</th><th>Replacement</th></tr></thead>
+<tbody>
+<tr><td>"Good job" / "Well done" (generic)</td><td>Content-free affirmation</td><td>Silent observation, or: "I see you [specific behaviour]"</td></tr>
+<tr><td>"You're so smart / clever"</td><td>Trait praise — Dweck-classic anti-pattern</td><td>"You tried three ways before you found it"</td></tr>
+<tr><td>"Champion / star / superstar"</td><td>Trait + identity inflation</td><td>Specific observation tied to marginal stretch</td></tr>
+<tr><td>"Great job" (generic)</td><td>Content-free affirmation</td><td>"You concentrated for a long time — that's the hard part"</td></tr>
+<tr><td>Routine applause</td><td>Performative; unconditional signal</td><td>Reserve for genuine marginal stretch</td></tr>
+<tr><td>Repeated praise within the same activity</td><td>Inflates baseline; erodes signal</td><td>One observation per genuine stretch; silence otherwise</td></tr>
+</tbody>
+</table>
+
+<p><strong>La gratitud no es elogio.</strong> "Gracias por tener paciencia mientras estaba al teléfono" es gratitud — reconoce una contribución a la relación sin inflar el autoconcepto del niño. La gratitud es ilimitada. El elogio se raciona.</p>
+
+<h3>Referencias por Fase</h3>
+<ul>
+<li><strong>0–1 años:</strong> Ritmo serve-and-return; bucle de sensibilidad de cuatro pasos; narración de mentalización; protocolos de predictibilidad; línea base de respuesta contingente. Ver fase 0-1, sección "Fundamentos de Crianza".</li>
+<li><strong>1–3 años:</strong> Coaching emocional Gottman; guion de reparación adaptado a toddler; distinción base segura / refugio seguro; rituales de separación y reencuentro. Ver fase 1-3, sección "Fundamentos de Crianza".</li>
+<li><strong>4–7 años:</strong> Indicaciones de función reflexiva; mentalización bidireccional; guion de reparación maduro (disculpa + enmienda + compromiso); invitación a la reparación del propio niño. Ver fase 4-7, sección "Fundamentos de Crianza".</li>
+</ul>
 
 <h2 id="s-operational"><span class="material-symbols-rounded">build</span>Engagement y Enseñanza</h2>
 <h3>Ciclo de Engagement</h3>

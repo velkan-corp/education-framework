@@ -88,6 +88,27 @@ order: 1
 </table>
 
 <div class="program-elements">
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Fundamentos de Crianza — Apego</h2>
+<p>Los primeros doce meses son la ventana más densa de construcción del apego. Tres protocolos cargan la mayor parte del peso: serve-and-return, el bucle de sensibilidad, y la narración mentalizadora. No son añadidos opcionales al programa del lado infantil; en esta fase <em>son</em> el programa. Ver <em>Fundamentos de Crianza</em> en el marco para las anclas de evidencia.</p>
+
+<h3>Serve-and-Return</h3>
+<p>El bebé produce una señal — gorjeo, mirada, gesto, llanto. Tú respondes de forma contingente, en el mismo canal. El bebé produce otra señal. Tú respondes. El ritmo en sí, no ningún intercambio individual, construye la arquitectura. Suelo práctico: al menos un episodio extendido de serve-and-return (tres o más intercambios) por cada hora despierta. El móvil mientras se alimenta mata el serve-and-return. También responder al canal equivocado — responder a una mirada con comida, responder a un llanto con una pantalla.</p>
+
+<h3>El Bucle de Sensibilidad</h3>
+<p>Cuatro pasos, en cada señal: <strong>Notar</strong> (hay que estar mirando) → <strong>Interpretar</strong> (¿qué señal es ésta? la mirada es enganche, el arqueo es sobreestimulación, la búsqueda con la boca es hambre) → <strong>Responder con prontitud</strong> (en 30–60 segundos ante malestar claro en lactancia) → <strong>Responder de forma apropiada</strong> (el canal correcto — contención física ante malestar, conversación ante enganche, sueño ante fatiga). Los errores son normales; la corrección dentro del mismo intercambio es el objetivo. "Perdona — no querías comida. Querías que te cogiera. Probemos otra vez."</p>
+
+<h3>Narración Mentalizadora</h3>
+<p>Háblale al bebé como si tuviera mente. Narra los estados mentales aparentes, no sólo los eventos físicos. No "te pongo los calcetines" sino "quieres tener calorcito — los calcetines ayudan." No "aquí está el biberón" sino "llevas un rato esperando — aquí está." Esto no es antropomorfismo; es la construcción del primer vocabulario mental del niño. Adoptará las etiquetas que le proporciones.</p>
+
+<h3>Predictibilidad</h3>
+<p>Uno o dos cuidadores principales antes de los 18 meses, no cinco. La misma persona haciendo baño, sueño y comida crea la relación de apego más profunda y el modelo interno más sólido. Rutinas consistentes para sueño, comida y reencuentro. Rituales de despedida predecibles desde el principio — "vuelvo después de tu siesta" dicho siempre igual, aunque el niño aún no pueda procesar las palabras. El ritmo se registra antes que el significado.</p>
+
+<h3>Línea Base de Respuesta Contingente</h3>
+<p>En los primeros seis meses, las señales de malestar exigen respuesta casi inmediata. El debate del "dejar llorar" es una cuestión de entrenamiento del sueño, no de apego — e incluso ahí, el consenso pediátrico mainstream es evitar métodos de extinción antes de los 6 meses. Después de los 6 meses, pausas breves (15–30 segundos) antes de responder a quejas leves permiten que emerja el autoconsuelo; el malestar claro sigue recibiendo respuesta rápida. El encuadre: eres el regulador externo hasta que se cablee el interno.</p>
+
+<h3>Reparación, Incluso a Esta Edad</h3>
+<p>El bebé no procesa las palabras pero sí registra el tono y el retorno. Tras un momento de impaciencia, distracción o voz alzada: cógelo, suaviza la voz, nombra la ruptura y la reparación con frases adultas. "Estaba cansado y se me escapó. No fue culpa tuya. Estoy aquí ahora." El guion es para ti tanto como para él. Estás practicando el protocolo que usarás durante los próximos dieciocho años.</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Comunicacion y Expresion</h2>
 
 <h3>Lenguaje — Escrito y Oral</h3>

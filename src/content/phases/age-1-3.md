@@ -100,6 +100,41 @@ order: 2
 </table>
 
 <div class="program-elements">
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Parenting Foundations — Emotion Coaching & Repair</h2>
+<p>By 12 months, the child has begun building working models of relationship. The foundations work shifts from raw responsiveness to <em>structured</em> responsiveness — protocols for emotion, rupture, and separation. See framework's <em>Parenting Foundations</em> for evidence anchors.</p>
+
+<h3>Gottman Emotion Coaching — Four Steps</h3>
+<p>Used at every emotional moment, not just meltdowns:</p>
+<ol>
+<li><strong>Notice.</strong> Catch the emotion at low intensity. A furrowed brow before the scream. A withdrawal before the meltdown. The earlier you intervene, the less regulation work is required.</li>
+<li><strong>Frame as opportunity.</strong> Internally: "this is a connection moment, not a problem." Your stance changes your voice and posture, which the child reads instantly.</li>
+<li><strong>Label with empathy.</strong> "You're frustrated that the tower fell." "You're disappointed we have to leave." Naming the emotion downregulates the amygdala (Lieberman et al. 2007, affect-labelling fMRI). Do not minimise ("it's not a big deal") or fix ("here's another tower"). Just name.</li>
+<li><strong>Problem-solve <em>after</em> regulation.</strong> Only once the child is calm: "what would help next time?" Problem-solving in the storm fails; problem-solving in the calm builds skill.</li>
+</ol>
+
+<h3>The Repair Script — Toddler Version</h3>
+<p>After raising your voice, breaking a commitment, or being visibly distracted when they needed you:</p>
+<blockquote class="repair-script">
+<p>"I shouted, and that scared you.<br>
+That wasn't OK.<br>
+I'm sorry.<br>
+Next time I'll [take a breath / wait / come back].<br>
+I love you."</p>
+</blockquote>
+<p>The toddler does not need explanation of why you got upset. They need to see that adults rupture, name the rupture, repair, and continue. Frequency matters more than eloquence. Aim for repair to be ordinary — at least weekly — so the working model that forms is "ruptures happen; they get fixed."</p>
+
+<h3>Secure Base vs. Safe Haven</h3>
+<p>Two distinct functions, both crucial:</p>
+<ul>
+<li><strong>Safe haven:</strong> when the child is distressed, they return <em>to</em> you. You provide containment, regulation, repair. You are the place they come back to.</li>
+<li><strong>Secure base:</strong> when the child is calm, they launch <em>from</em> you. You provide the platform they explore the world from. You are the place they leave from.</li>
+</ul>
+<p>Both roles, alternating. A parent who is only safe haven (always co-located, always available) inhibits exploration. A parent who is only secure base (always pushing outward) inhibits return. The healthy oscillation is initiated by the child: they choose when to leave and when to return. Your job is to be reliably present when they return and reliably uncluttered when they leave.</p>
+
+<h3>Separation & Reunion Rituals</h3>
+<p><strong>Goodbye:</strong> the same words and physical sequence every time. "I love you. I'll be back after [specific marker]. See you soon." Two hugs, no extension. Drawn-out goodbyes amplify anxiety; ritualised goodbyes contain it.</p>
+<p><strong>Reunion:</strong> enthusiasm proportional to age and absence. After a few hours apart, full presence — phone down, body oriented, eye contact. The first 60 seconds of reunion are the highest-leverage 60 seconds of the day. After a longer absence (overnight, multi-day), repair any rupture the absence created: "I missed you. You were brave to do it without me. Tell me one good part and one hard part."</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 <h3>Language — Written & Oral</h3>
 <p>Critical OPOL window. Your English input is competing with Spanish from every other source. Quantity matters: the more English words they hear from you, the stronger the bilingual foundation. Read 3+ books per session. Narrate your actions. Sing English songs. Don't mix languages mid-sentence — clean separation helps the developing brain categorize.</p>

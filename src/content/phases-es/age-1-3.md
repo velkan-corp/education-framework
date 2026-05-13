@@ -102,6 +102,41 @@ order: 2
 </table>
 
 <div class="program-elements">
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Fundamentos de Crianza — Coaching Emocional y Reparación</h2>
+<p>A los 12 meses, el niño ha empezado a construir modelos internos de la relación. El trabajo de fundamentos pasa de la respuesta cruda a la respuesta <em>estructurada</em> — protocolos para la emoción, la ruptura y la separación. Ver <em>Fundamentos de Crianza</em> en el marco para las anclas de evidencia.</p>
+
+<h3>Coaching Emocional Gottman — Cuatro Pasos</h3>
+<p>Se usa en cada momento emocional, no sólo en rabietas:</p>
+<ol>
+<li><strong>Notar.</strong> Capta la emoción en intensidad baja. Un ceño antes del grito. Un retraimiento antes del colapso. Cuanto antes intervienes, menos trabajo de regulación se requiere.</li>
+<li><strong>Encuadrar como oportunidad.</strong> Internamente: "esto es un momento de conexión, no un problema." Tu postura cambia tu voz y tu cuerpo, que el niño lee al instante.</li>
+<li><strong>Etiquetar con empatía.</strong> "Estás frustrado porque se cayó la torre." "Estás decepcionado porque nos tenemos que ir." Nombrar la emoción desactiva la amígdala (Lieberman et al. 2007, fMRI sobre el etiquetado del afecto). No minimices ("no es para tanto") ni arregles ("aquí tienes otra torre"). Sólo nombra.</li>
+<li><strong>Resolver problemas <em>después</em> de la regulación.</strong> Sólo cuando el niño esté en calma: "¿qué te ayudaría la próxima vez?" Resolver durante la tormenta fracasa; resolver en la calma construye habilidad.</li>
+</ol>
+
+<h3>El Guion de Reparación — Versión Toddler</h3>
+<p>Después de alzar la voz, romper un compromiso, o estar visiblemente distraído cuando te necesitaban:</p>
+<blockquote class="repair-script">
+<p>"Grité, y eso te asustó.<br>
+Eso no estuvo bien.<br>
+Lo siento.<br>
+La próxima vez voy a [respirar / esperar / volver].<br>
+Te quiero."</p>
+</blockquote>
+<p>El toddler no necesita una explicación de por qué te enfadaste. Necesita ver que los adultos rompen, nombran la ruptura, reparan, y continúan. La frecuencia importa más que la elocuencia. Apunta a que la reparación sea ordinaria — al menos semanal — para que el modelo interno que se forme sea "las rupturas ocurren; se arreglan."</p>
+
+<h3>Base Segura vs. Refugio Seguro</h3>
+<p>Dos funciones distintas, ambas cruciales:</p>
+<ul>
+<li><strong>Refugio seguro:</strong> cuando el niño está en malestar, vuelve <em>a</em> ti. Tú das contención, regulación, reparación. Eres el lugar al que regresa.</li>
+<li><strong>Base segura:</strong> cuando el niño está en calma, lanza <em>desde</em> ti. Tú aportas la plataforma desde la que explora el mundo. Eres el lugar del que parte.</li>
+</ul>
+<p>Ambos roles, alternándose. Un padre que sólo es refugio (siempre co-localizado, siempre disponible) inhibe la exploración. Un padre que sólo es base (siempre empujando hacia fuera) inhibe el retorno. La oscilación sana la inicia el niño: elige cuándo irse y cuándo volver. Tu trabajo es estar fiablemente presente cuando vuelve y fiablemente despejado cuando se va.</p>
+
+<h3>Rituales de Separación y Reencuentro</h3>
+<p><strong>Despedida:</strong> las mismas palabras y la misma secuencia física cada vez. "Te quiero. Vuelvo después de [marcador específico]. Hasta luego." Dos abrazos, sin alargar. Las despedidas alargadas amplifican la ansiedad; las ritualizadas la contienen.</p>
+<p><strong>Reencuentro:</strong> entusiasmo proporcional a la edad y a la ausencia. Tras unas horas separados, presencia plena — móvil abajo, cuerpo orientado, contacto visual. Los primeros 60 segundos del reencuentro son los 60 segundos de mayor palanca del día. Tras una ausencia más larga (una noche, varios días), repara cualquier ruptura que la ausencia haya creado: "Te he echado de menos. Fuiste valiente haciéndolo sin mí. Cuéntame una parte buena y una difícil."</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Comunicacion y Expresion</h2>
 <h3>Lenguaje — Escrito y Oral</h3>
 <p>Ventana OPOL critica. Tu input en ingles compite con el espanol de todas las demas fuentes. La cantidad importa: cuantas mas palabras en ingles te oigan, mas fuerte la base bilingue. Lee 3+ libros por sesion. Narra tus acciones. Canta canciones en ingles. No mezcles idiomas a mitad de frase — la separacion limpia ayuda al cerebro en desarrollo a categorizar.</p>

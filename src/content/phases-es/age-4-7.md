@@ -110,6 +110,39 @@ order: 3
 
 <div class="program-elements">
 
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Fundamentos de Crianza — Mentalización y Reparación Madura</h2>
+<p>A los 4 años, el niño tiene teoría de la mente. El trabajo de fundamentos pasa de la regulación-por-el-padre a la regulación-con-el-padre — bidireccional, reflexiva, cada vez más explícita. Ver <em>Fundamentos de Crianza</em> en el marco para las anclas de evidencia.</p>
+
+<h3>Indicaciones de Función Reflexiva</h3>
+<p>Cuando la conducta del niño te confunde o te molesta, el movimiento es modelar e invitar a la reflexión sobre los estados mentales — los suyos y los tuyos:</p>
+<ul>
+<li>"¿Qué te estaba pasando?" (su mente, antes que la tuya)</li>
+<li>"Me pregunto si estabas sintiendo X — ¿encaja?" (una hipótesis, no un veredicto)</li>
+<li>"Cuando hiciste X, yo sentí Y. Creo que estaba Z — ¿tú qué piensas?" (modelar tu propio estado mental e invitar a la reflexión)</li>
+<li>"¿Qué pensabas que yo iba a hacer?" (sacar a la luz el modelo que tiene de ti)</li>
+</ul>
+<p>Estas indicaciones tratan al niño como co-investigador de su propia mente y de la tuya. Con el tiempo, instalan el hábito de mentalizar — mirar debajo de la conducta para encontrar el estado mental.</p>
+
+<h3>Mentalización Bidireccional</h3>
+<p>El niño ya puede reflexionar también sobre tu mente. Haz tus estados mentales observables: "Estoy cansado y me he dado cuenta de que he estado seco contigo — eso era por mi día, no por ti." "Estoy orgulloso de mí mismo por terminar ese proyecto — me llevó más de lo que pensaba." Esto no es sobre-compartir; es modelar que los adultos tienen mente, que los estados mentales explican la conducta, y que nombrarlos es normal.</p>
+
+<h3>Guion de Reparación Maduro</h3>
+<p>El Guion de Reparación gana estructura a esta edad — disculpa más enmienda más compromiso:</p>
+<blockquote class="repair-script">
+<p>"Cuando [conducta específica], yo [efecto en ti].<br>
+Eso no estuvo bien.<br>
+Lo siento.<br>
+Lo que voy a hacer para arreglarlo: [enmienda concreta — una repetición, una actividad compensatoria, un compromiso devuelto].<br>
+Lo que voy a hacer diferente: [compromiso específico]."</p>
+</blockquote>
+<p>Las enmiendas son concretas: si cancelaste una salida planeada, la reprogramas. Si rompiste un compromiso de atención, le das la atención ahora, doblada. Las enmiendas operacionalizan el "lo siento" — convierten las palabras en la evidencia que el niño necesita para confiar en la reparación.</p>
+
+<h3>Invitar su Propia Reparación</h3>
+<p>Hacia los 5–6 años, el niño también puede reparar. Modela la estructura de cuatro pasos ("cuando hice X, creo que sentiste Y — ¿fue ese el impacto?") e invita — nunca exijas — a que la use tras sus propias rupturas con hermanos, padres o amigos. La disculpa forzada ("dile perdón a tu hermana") entrena performance, no reparación. La reparación modelada e invitada entrena la habilidad.</p>
+
+<h3>Nombrar el Sustrato Explícitamente</h3>
+<p>A esta edad, el niño puede empezar a entender el meta-marco: las relaciones se rompen y se reparan. Nómbralo directamente: "Todas las familias tienen momentos difíciles. Lo que importa es lo que hacemos después — pedimos perdón, averiguamos qué salió mal, y lo intentamos otra vez. Así funciona el amor." Esto convierte el protocolo de ritual parental opaco en un modelo compartido explícito.</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Comunicación y Expresión</h2>
 
 <h3>Lenguaje — Escrito y Oral</h3>

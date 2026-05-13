@@ -110,6 +110,39 @@ order: 3
 
 <div class="program-elements">
 
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Parenting Foundations — Mentalisation & Mature Repair</h2>
+<p>By age 4, the child has theory of mind. The foundations work shifts from regulation-by-parent to regulation-with-parent — bidirectional, reflective, increasingly explicit. See framework's <em>Parenting Foundations</em> for evidence anchors.</p>
+
+<h3>Reflective Functioning Prompts</h3>
+<p>When the child's behaviour confuses or upsets you, the move is to model and invite reflection on mental states — theirs and yours:</p>
+<ul>
+<li>"What was going on for you?" (their mind, before yours)</li>
+<li>"I wonder if you were feeling X — does that fit?" (a hypothesis, not a verdict)</li>
+<li>"When you did X, I felt Y. I think I was Z — what do you think?" (modelling your own mental state and inviting reflection)</li>
+<li>"What did you think I would do?" (surfacing their model of you)</li>
+</ul>
+<p>These prompts treat the child as a co-investigator of their own mind and yours. Over time, they install the habit of mentalising — looking under the behaviour for the mental state.</p>
+
+<h3>Bidirectional Mentalisation</h3>
+<p>The child can now reflect on your mind too. Make your mental states observable: "I'm tired and I noticed I was short with you — that was about my day, not about you." "I'm proud of myself for finishing that project — it took longer than I thought." This is not over-sharing; it is modelling that adults have minds, that mental states explain behaviour, and that naming them is normal.</p>
+
+<h3>Mature Repair Script</h3>
+<p>The Repair Script gains structure at this age — apology plus amends plus commitment:</p>
+<blockquote class="repair-script">
+<p>"When I [specific behaviour], I [effect on you].<br>
+That wasn't OK.<br>
+I'm sorry.<br>
+Here is what I will do to make it right: [specific amends — a re-do, a make-up activity, a returned commitment].<br>
+Here is what I will do differently: [specific commitment]."</p>
+</blockquote>
+<p>Amends are concrete: if you cancelled a planned outing, you reschedule it. If you broke an attention commitment, you give the attention now, doubled. Amends operationalise "I'm sorry" — they convert words into the evidence the child needs to trust the repair.</p>
+
+<h3>Inviting Their Repair</h3>
+<p>By age 5–6, the child can also repair. Model the four-step structure ("when I did X, I think you felt Y — was that the impact?") and invite — never demand — that they use it after their own ruptures with siblings, parents, or friends. Forced apology ("say sorry to your sister") trains performance, not repair. Modelled and invited repair trains the skill.</p>
+
+<h3>Naming the Substrate Explicitly</h3>
+<p>At this age, the child can begin to understand the meta-frame: relationships rupture and repair. Name it directly: "All families have hard moments. What matters is what we do after — we say sorry, we figure out what went wrong, and we try again. That's how love works." This converts the protocol from an opaque parental ritual into an explicit shared model.</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 
 <h3>Language — Written & Oral</h3>

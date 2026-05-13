@@ -88,6 +88,27 @@ order: 1
 </table>
 
 <div class="program-elements">
+<h2 id="s-parental-substrate" data-tier="foundational"><span class="material-symbols-rounded">favorite</span>Parenting Foundations — Attachment</h2>
+<p>The first twelve months are the densest window of attachment construction. Three protocols carry most of the load: serve-and-return, the sensitivity loop, and mind-mindedness narration. They are not optional add-ons to the child-side program; for this phase they <em>are</em> the program. See framework's <em>Parenting Foundations</em> for evidence anchors.</p>
+
+<h3>Serve-and-Return</h3>
+<p>The infant produces a signal — coo, gaze, gesture, cry. You respond contingently, in kind. The infant produces another signal. You respond. The rhythm itself, not any single exchange, builds the architecture. Practical floor: at least one extended serve-and-return episode (three or more exchanges) per waking hour. Phone-while-feeding is a serve-and-return killer. So is responding to the wrong channel — answering a gaze with food, answering a cry with a screen.</p>
+
+<h3>The Sensitivity Loop</h3>
+<p>Four steps, every signal: <strong>Notice</strong> (you must be looking) → <strong>Interpret</strong> (which signal is this? gaze means engagement, arching means overstimulation, rooting means hunger) → <strong>Respond promptly</strong> (within 30–60 seconds of clear distress in infancy) → <strong>Respond appropriately</strong> (the right channel — physical containment for distress, conversation for engagement, sleep for fatigue). Errors are normal; correction within the same exchange is the goal. "Sorry — you didn't want food. You wanted up. Let me try again."</p>
+
+<h3>Mind-Mindedness Narration</h3>
+<p>Speak to the infant as though they have a mind. Narrate apparent mental states, not just physical events. Not "we're putting on socks" but "you want to be warm — the socks help." Not "here's the bottle" but "you've been waiting — here it is." This is not anthropomorphism; it is the construction of the child's first mental vocabulary. They will adopt the labels you supply.</p>
+
+<h3>Predictability</h3>
+<p>One or two primary caregivers under 18 months, not five. The same person doing bath, sleep, and feed creates the deepest attachment relationship and the strongest internal working model. Consistent routines for sleep, feeding, and reunion. Predictable goodbye rituals from the start — "I'll be back after your nap" said the same way every time, even when the child cannot yet parse the words. The rhythm registers before the meaning does.</p>
+
+<h3>Contingent Responsiveness Baseline</h3>
+<p>In the first six months, distress signals warrant near-immediate response. The "cry it out" debate is a sleep-training question, not an attachment question — and even there, the mainstream pediatric consensus is to avoid extinction methods before 6 months. After 6 months, brief pauses (15–30 seconds) before responding to mild fussing allow self-soothing to emerge; clear distress still gets prompt response. The frame: you are the external regulator until their internal one is wired.</p>
+
+<h3>Repair, Even at This Age</h3>
+<p>The infant does not parse the words but does register the tone and the return. After a moment of impatience, distraction, or raised voice: hold them, soften your voice, name the rupture and the repair in adult sentences. "I was tired and I snapped. That wasn't your fault. I'm here now." The script is for you as much as for them. You are practising the protocol you will use for the next eighteen years.</p>
+
 <h2 id="s-communication" data-tier="foundational"><span class="material-symbols-rounded">record_voice_over</span>Communication & Expression</h2>
 
 <h3>Language — Written & Oral</h3>
