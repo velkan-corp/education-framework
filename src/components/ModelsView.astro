@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { LAYER_LABELS } from '../data/frameworkTaxonomy';
 
 interface Props { lang?: string; }
@@ -40,7 +40,7 @@ const allLayers = [1, 2, 3, 4, 5] as const;
           <div class="browse-layer-label">{LAYER_LABELS[l][lang]}</div>
           <div class="browse-card-grid">
             {layerModels.map(async (m) => {
-              const { Content } = await m.render();
+              const { Content } = await render(m);
               return (
                 <button type="button" class="browse-card" data-section="mental-model" data-slug={m.data.modelId} data-label={m.data.shortName} data-browse-id={m.data.modelId} data-layer={m.data.layer}>
                   <span class="browse-num">{m.data.number}</span>
@@ -62,7 +62,7 @@ const allLayers = [1, 2, 3, 4, 5] as const;
         : 'All 19 models are critiqued, stress-tested, and extended. No new models introduced — the existing models are challenged.'}</p>
       <div class="browse-card-grid">
         {models.map(async (m) => {
-          const { Content } = await m.render();
+          const { Content } = await render(m);
           return (
             <button type="button" class="browse-card" data-section="mental-model" data-slug={m.data.modelId} data-label={m.data.shortName} data-browse-id={m.data.modelId} data-layer="5">
               <span class="browse-num">{m.data.number}</span>

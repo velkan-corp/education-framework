@@ -1,13 +1,26 @@
 ---
 import { getCollection } from 'astro:content';
-import { ENGAGEMENT_MODE_LABELS, MODEL_LABELS, TARGET_LABELS } from '../data/universeTaxonomy';
+import {
+  ENGAGEMENT_MODE_LABELS,
+  ENGAGEMENT_MODE_LABELS_ES,
+  MODEL_LABELS,
+  MODEL_LABELS_ES,
+  TARGET_LABELS,
+  TARGET_LABELS_ES,
+} from '../data/universeTaxonomy';
 
 interface Props {
   phaseId: string;
+  collection?: string;
+  lang?: string;
 }
-const { phaseId } = Astro.props;
+const { phaseId, collection = 'universes', lang = 'en' } = Astro.props;
+const es = lang === 'es';
+const engagementModeLabels = es ? ENGAGEMENT_MODE_LABELS_ES : ENGAGEMENT_MODE_LABELS;
+const modelLabels = es ? MODEL_LABELS_ES : MODEL_LABELS;
+const targetLabels = es ? TARGET_LABELS_ES : TARGET_LABELS;
 
-const allUniverses = await getCollection('universes');
+const allUniverses = await getCollection(collection as any);
 
 const tierOrder: Array<'foundational' | 'core' | 'recommended'> = ['foundational', 'core', 'recommended'];
 const entries: Array<{
@@ -42,7 +55,11 @@ for (const u of allUniverses) {
 const grouped = tierOrder
   .map(tier => ({
     tier,
-    label: tier === 'foundational' ? 'FOUNDATIONAL Anchors' : tier === 'core' ? 'CORE' : 'RECOMMENDED',
+    label: tier === 'foundational'
+      ? (es ? 'Anclas FUNDACIONALES' : 'FOUNDATIONAL Anchors')
+      : tier === 'core'
+        ? (es ? 'CENTRAL' : 'CORE')
+        : (es ? 'RECOMENDADO' : 'RECOMMENDED'),
     items: entries.filter(e => e.tier === tier),
   }))
   .filter(g => g.items.length > 0);
@@ -50,8 +67,10 @@ const grouped = tierOrder
 
 {grouped.length > 0 && (
   <div class="phase-universes">
-    <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>Content & Universes</h2>
-    <p class="subtitle">Click any item to see details for this age. See <strong>Universes</strong> view for full progression across all ages.</p>
+    <h2 id="s-content"><span class="material-symbols-rounded">auto_stories</span>{es ? 'Contenido y Universos' : 'Content & Universes'}</h2>
+    <p class="subtitle">{es
+      ? <>Pulsa cualquier elemento para ver los detalles de esta edad. Consulta <strong>Universos</strong> para ver la progresión completa.</>
+      : <>Click any item to see details for this age. See <strong>Universes</strong> view for full progression across all ages.</>}</p>
     {grouped.map(group => (
       <>
         <h3>{group.label}</h3>
@@ -61,32 +80,34 @@ const grouped = tierOrder
               <summary class="phase-universe-summary">
                 <span class="phase-universe-title">{item.label}</span>
                 <span class="phase-universe-subtitle">{item.title}</span>
-                {item.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[item.mode]}</span>}
+                {item.mode && <span class="universe-tag">{engagementModeLabels[item.mode]}</span>}
               </summary>
               <div class="phase-universe-detail">
                 <p>{item.description}</p>
                 {item.goals && item.goals.length > 0 && (
                   <div class="phase-universe-goals">
-                    <strong>Focus:</strong>
+                    <strong>{es ? 'Enfoque:' : 'Focus:'}</strong>
                     <ul>
                       {item.goals.map(g => <li>{g}</li>)}
                     </ul>
                   </div>
                 )}
                 {item.cautions && (
-                  <p class="phase-universe-caution"><strong>Caution:</strong> {item.cautions}</p>
+                  <p class="phase-universe-caution"><strong>{es ? 'Precaución:' : 'Caution:'}</strong> {item.cautions}</p>
                 )}
                 {(item.targets?.length || item.models?.length) && (
                   <div class="phase-universe-meta">
                     {(item.targets ?? []).slice(0, 3).map((target) => (
-                      <span class="universe-tag">{TARGET_LABELS[target]}</span>
+                      <span class="universe-tag">{targetLabels[target]}</span>
                     ))}
                     {(item.models ?? []).slice(0, 3).map((model) => (
-                      <span class="universe-tag">{MODEL_LABELS[model]}</span>
+                      <span class="universe-tag">{modelLabels[model]}</span>
                     ))}
                   </div>
                 )}
-                <button type="button" class="phase-universe-link" data-universe-nav={item.id}>View full journey across ages</button>
+                <button type="button" class="phase-universe-link" data-universe-nav={item.id}>
+                  {es ? 'Ver el recorrido completo por edades' : 'View full journey across ages'}
+                </button>
               </div>
             </details>
           ))}

@@ -15,18 +15,22 @@ const tabEntries = Object.entries(TAB_TAGS);
 const nav = lang === 'es' ? {
   home: 'Inicio', framework: 'Marco', byAge: 'Por Edad', acrossAges: 'A Través de las Edades',
   targets: 'Mapa de Actividades', models: 'Modelos Mentales', domains: 'Dominios',
-  resources: 'Recursos', library: 'Biblioteca', search: 'Buscar...'
+  resources: 'Recursos', library: 'Biblioteca', search: 'Buscar...',
+  mainNavigation: 'Navegación principal', logoHome: 'Ir a inicio', switchLanguage: 'Cambiar idioma',
+  searchLabel: 'Buscar', menu: 'Menú'
 } : {
   home: 'Home', framework: 'Framework', byAge: 'By Age', acrossAges: 'Across Ages',
   targets: 'Activity Map', models: 'Mental Models', domains: 'Domains',
-  resources: 'Resources', library: 'Library', search: 'Search... (⌘K)'
+  resources: 'Resources', library: 'Library', search: 'Search... (⌘K)',
+  mainNavigation: 'Main navigation', logoHome: 'Home', switchLanguage: 'Switch language',
+  searchLabel: 'Search', menu: 'Menu'
 };
 ---
 
-<nav class="topbar" role="navigation" aria-label="Main navigation">
+<nav class="topbar" role="navigation" aria-label={nav.mainNavigation}>
   <div class="topbar-inner">
     <!-- Logo / Home -->
-    <button type="button" class="nav-logo" id="nav-home" aria-label="Home">
+    <button type="button" class="nav-logo" id="nav-home" aria-label={nav.logoHome}>
       <span class="nav-logo-mark">EF</span>
       <span class="nav-logo-text">Education Framework</span>
     </button>
@@ -68,13 +72,13 @@ const nav = lang === 'es' ? {
     </div>
 
     <!-- Language switcher -->
-    <a class="lang-switch" id="lang-switch" href="" aria-label="Switch language">
+    <a class="lang-switch" id="lang-switch" href="" aria-label={nav.switchLanguage}>
       <span class="lang-switch-label"></span>
     </a>
 
     <!-- Search -->
     <div id="search-wrap">
-      <button id="search-icon" type="button" aria-label="Search">
+      <button id="search-icon" type="button" aria-label={nav.searchLabel}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
       <input id="search-input" type="text" placeholder={nav.search} autocomplete="off">
@@ -82,7 +86,7 @@ const nav = lang === 'es' ? {
     </div>
 
     <!-- Mobile hamburger -->
-    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label={nav.menu} aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -111,7 +115,7 @@ const nav = lang === 'es' ? {
     <button type="button" class="mobile-menu-item mobile-menu-sub" data-across-view="universe">{nav.library}</button>
   </div>
   <div class="mobile-menu-group" style="border-top: 1px solid var(--border); margin-top: var(--sp-3); padding-top: var(--sp-3);">
-    <a class="mobile-menu-item" id="lang-switch-mobile" href=""></a>
+    <a class="mobile-menu-item" id="lang-switch-mobile" href="" aria-label={nav.switchLanguage}></a>
   </div>
 </div>
 

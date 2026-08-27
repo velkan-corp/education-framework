@@ -1,25 +1,45 @@
 ---
 import { getCollection } from 'astro:content';
-import { ALL_TAG_LABELS } from '../data/tags';
+import { ALL_TAG_LABELS, ALL_TAG_LABELS_ES } from '../data/tags';
 import {
   ENGAGEMENT_MODES,
   ENGAGEMENT_MODE_LABELS,
+  ENGAGEMENT_MODE_LABELS_ES,
   INTENSITY_LABELS,
+  INTENSITY_LABELS_ES,
   LANGUAGE_LABELS,
+  LANGUAGE_LABELS_ES,
   MODEL_LABELS,
+  MODEL_LABELS_ES,
   MODEL_IDS,
   RISK_LABELS,
+  RISK_LABELS_ES,
   SOCIAL_VALUE_LABELS,
+  SOCIAL_VALUE_LABELS_ES,
   TARGET_IDS,
   TARGET_LABELS,
+  TARGET_LABELS_ES,
   UNIVERSE_KINDS,
   UNIVERSE_KIND_LABELS,
+  UNIVERSE_KIND_LABELS_ES,
   UNIVERSE_LANGUAGES,
 } from '../data/universeTaxonomy';
 
 interface Props { collection?: string; lang?: string; }
 const { collection = 'universes', lang = 'en' } = Astro.props;
 const es = lang === 'es';
+const tagLabels = es ? ALL_TAG_LABELS_ES : ALL_TAG_LABELS;
+const engagementModeLabels = es ? ENGAGEMENT_MODE_LABELS_ES : ENGAGEMENT_MODE_LABELS;
+const intensityLabels = es ? INTENSITY_LABELS_ES : INTENSITY_LABELS;
+const languageLabels = es ? LANGUAGE_LABELS_ES : LANGUAGE_LABELS;
+const modelLabels = es ? MODEL_LABELS_ES : MODEL_LABELS;
+const riskLabels = es ? RISK_LABELS_ES : RISK_LABELS;
+const socialValueLabels = es ? SOCIAL_VALUE_LABELS_ES : SOCIAL_VALUE_LABELS;
+const targetLabels = es ? TARGET_LABELS_ES : TARGET_LABELS;
+const universeKindLabels = es ? UNIVERSE_KIND_LABELS_ES : UNIVERSE_KIND_LABELS;
+const tierLabels = es
+  ? { foundational: 'Fundacional', core: 'Central', recommended: 'Recomendado' }
+  : { foundational: 'Foundational', core: 'Core', recommended: 'Recommended' };
 
 const universeEntries = await getCollection(collection as any);
 const universes = universeEntries.map(u => ({ id: u.id, ...u.data }));
@@ -75,7 +95,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
       </button>
       <button type="button" class="filter-pill tier-pill" data-tier="core">
         <span class="phase-dot tier-core" />
-        <span>Core</span>
+        <span>{es ? 'Central' : 'Core'}</span>
       </button>
       <button type="button" class="filter-pill tier-pill" data-tier="recommended">
         <span class="phase-dot tier-recommended" />
@@ -89,9 +109,9 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
       <button type="button" class="filter-pill" data-medium="books">{es ? 'Libros' : 'Books'}</button>
       <button type="button" class="filter-pill" data-medium="anime">Anime</button>
       <button type="button" class="filter-pill" data-medium="cinema">{es ? 'Cine y TV' : 'Film & TV'}</button>
-      <button type="button" class="filter-pill" data-medium="comics">Comics</button>
+      <button type="button" class="filter-pill" data-medium="comics">{es ? 'Cómics' : 'Comics'}</button>
       <button type="button" class="filter-pill" data-medium="game">{es ? 'Juegos' : 'Games'}</button>
-      <button type="button" class="filter-pill" data-medium="maker">Maker</button>
+      <button type="button" class="filter-pill" data-medium="maker">{es ? 'Creación' : 'Maker'}</button>
     </div>
 
     <button type="button" class="filter-section-toggle collapsed" id="advanced-filters-toggle" aria-expanded="false">
@@ -102,7 +122,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         <span class="filter-label">{es ? 'Idioma:' : 'Language:'}</span>
         <button type="button" class="filter-pill active" data-language="all">{es ? 'Todos' : 'All'}</button>
         {usedLanguages.map((language) => (
-          <button type="button" class="filter-pill" data-language={language}>{LANGUAGE_LABELS[language]}</button>
+          <button type="button" class="filter-pill" data-language={language}>{languageLabels[language]}</button>
         ))}
       </div>
 
@@ -110,7 +130,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         <span class="filter-label">{es ? 'Tipo:' : 'Kind:'}</span>
         <button type="button" class="filter-pill active" data-kind="all">{es ? 'Todos' : 'All'}</button>
         {usedKinds.map((kind) => (
-          <button type="button" class="filter-pill" data-kind={kind}>{UNIVERSE_KIND_LABELS[kind]}</button>
+          <button type="button" class="filter-pill" data-kind={kind}>{universeKindLabels[kind]}</button>
         ))}
       </div>
 
@@ -118,7 +138,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         <span class="filter-label">{es ? 'Objetivos:' : 'Targets:'}</span>
         <button type="button" class="filter-pill active" data-target="all">{es ? 'Todos' : 'All'}</button>
         {usedTargets.map((target) => (
-          <button type="button" class="filter-pill" data-target={target}>{TARGET_LABELS[target]}</button>
+          <button type="button" class="filter-pill" data-target={target}>{targetLabels[target]}</button>
         ))}
       </div>
 
@@ -126,7 +146,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         <span class="filter-label">{es ? 'Modelos:' : 'Models:'}</span>
         <button type="button" class="filter-pill active" data-model="all">{es ? 'Todos' : 'All'}</button>
         {usedModels.map((model) => (
-          <button type="button" class="filter-pill" data-model={model}>{MODEL_LABELS[model]}</button>
+          <button type="button" class="filter-pill" data-model={model}>{modelLabels[model]}</button>
         ))}
       </div>
 
@@ -134,7 +154,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
         <span class="filter-label">{es ? 'Modo:' : 'Phase Mode:'}</span>
         <button type="button" class="filter-pill active" data-mode="all">{es ? 'Todos' : 'All'}</button>
         {usedModes.map((mode) => (
-          <button type="button" class="filter-pill" data-mode={mode}>{ENGAGEMENT_MODE_LABELS[mode]}</button>
+          <button type="button" class="filter-pill" data-mode={mode}>{engagementModeLabels[mode]}</button>
         ))}
       </div>
     </div>
@@ -169,14 +189,14 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
             return (
               <span
                 class={`phase-dot ${phase ? `tier-${phase.tier}` : 'empty'}`}
-                title={phase ? `${col.label}: ${phase.tier}` : col.label}
+                title={phase ? `${col.label}: ${tierLabels[phase.tier]}` : col.label}
               />
             );
           })}
         </div>
         <div class="universe-card-tags">
           {u.tags.map(t => (
-            <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
+            <span class="universe-tag">{tagLabels[t] || t}</span>
           ))}
         </div>
       </button>
@@ -185,62 +205,62 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
 
   <!-- Universe detail (timeline) — pre-rendered for each universe -->
   <div id="universe-detail" class="hidden">
-    <button type="button" class="universe-back" id="universe-back">&larr; All items</button>
+    <button type="button" class="universe-back" id="universe-back">&larr; {es ? 'Todos los elementos' : 'All items'}</button>
     {sorted.map(u => (
-      <div class="universe-timeline hidden" data-section="library" data-slug={u.id} data-label={u.label} data-universe-detail={u.id}>
+      <div id={`universe-${u.id}`} class="universe-timeline hidden" data-section="library" data-slug={u.id} data-label={u.label} data-universe-detail={u.id}>
         <h1 class="universe-detail-title">{u.label}</h1>
         {u.summary && <p class="universe-detail-summary">{u.summary}</p>}
-        {u.whyItBelongs && <p class="universe-note"><strong>Why it belongs.</strong> {u.whyItBelongs}</p>}
+        {u.whyItBelongs && <p class="universe-note"><strong>{es ? 'Por qué pertenece.' : 'Why it belongs.'}</strong> {u.whyItBelongs}</p>}
         <div class="universe-detail-tags">
           {u.tags.map(t => (
-            <span class="universe-tag">{ALL_TAG_LABELS[t] || t}</span>
+            <span class="universe-tag">{tagLabels[t] || t}</span>
           ))}
         </div>
         <div class="universe-meta-grid">
           {u.kind && (
             <div class="universe-meta-block">
-              <div class="universe-meta-label">Kind</div>
-              <div class="universe-meta-value">{UNIVERSE_KIND_LABELS[u.kind]}</div>
+              <div class="universe-meta-label">{es ? 'Tipo' : 'Kind'}</div>
+              <div class="universe-meta-value">{universeKindLabels[u.kind]}</div>
             </div>
           )}
           {(u.targets ?? []).length > 0 && (
             <div class="universe-meta-block">
-              <div class="universe-meta-label">Targets</div>
+              <div class="universe-meta-label">{es ? 'Objetivos' : 'Targets'}</div>
               <div class="universe-meta-chips">
                 {u.targets.map((target) => (
-                  <span class="universe-tag">{TARGET_LABELS[target]}</span>
+                  <span class="universe-tag">{targetLabels[target]}</span>
                 ))}
               </div>
             </div>
           )}
           {(u.models ?? []).length > 0 && (
             <div class="universe-meta-block">
-              <div class="universe-meta-label">Models</div>
+              <div class="universe-meta-label">{es ? 'Modelos' : 'Models'}</div>
               <div class="universe-meta-chips">
                 {u.models.map((model) => (
-                  <span class="universe-tag">{MODEL_LABELS[model]}</span>
+                  <span class="universe-tag">{modelLabels[model]}</span>
                 ))}
               </div>
             </div>
           )}
           {(u.intensity || u.socialValue || (u.riskFlags ?? []).length > 0 || (u.languages ?? []).length > 0) && (
             <div class="universe-meta-block">
-              <div class="universe-meta-label">Profile</div>
+              <div class="universe-meta-label">{es ? 'Perfil' : 'Profile'}</div>
               <div class="universe-meta-chips">
-                {u.intensity && <span class="universe-tag">{INTENSITY_LABELS[u.intensity]}</span>}
-                {u.socialValue && <span class="universe-tag">{SOCIAL_VALUE_LABELS[u.socialValue]}</span>}
+                {u.intensity && <span class="universe-tag">{intensityLabels[u.intensity]}</span>}
+                {u.socialValue && <span class="universe-tag">{socialValueLabels[u.socialValue]}</span>}
                 {(u.languages ?? []).map((language) => (
-                  <span class="universe-tag">{LANGUAGE_LABELS[language] || language}</span>
+                  <span class="universe-tag">{languageLabels[language] || language}</span>
                 ))}
                 {(u.riskFlags ?? []).map((risk) => (
-                  <span class="universe-tag">{RISK_LABELS[risk]}</span>
+                  <span class="universe-tag">{riskLabels[risk]}</span>
                 ))}
               </div>
             </div>
           )}
           {(u.substitutes ?? []).length > 0 && (
             <div class="universe-meta-block">
-              <div class="universe-meta-label">Substitutes</div>
+              <div class="universe-meta-label">{es ? 'Sustitutos' : 'Substitutes'}</div>
               <div class="universe-meta-chips">
                 {u.substitutes.map((substituteId) => (
                   <span class="universe-tag">{universeById.get(substituteId)?.label ?? substituteId}</span>
@@ -254,7 +274,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
             <div class="timeline-header">
               <span class="timeline-age">{phase.phaseId.replace('age-', '').replace('-', '–')}</span>
               <span class={`tier-badge ${phase.tier}`}>
-                {phase.tier.charAt(0).toUpperCase() + phase.tier.slice(1)}
+                {tierLabels[phase.tier]}
               </span>
             </div>
             <div class="timeline-content">
@@ -262,7 +282,7 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
               <p>{phase.description}</p>
               {(phase.mode || phase.goals?.length || phase.projects?.length) && (
                 <div class="universe-timeline-meta">
-                  {phase.mode && <span class="universe-tag">{ENGAGEMENT_MODE_LABELS[phase.mode]}</span>}
+                  {phase.mode && <span class="universe-tag">{engagementModeLabels[phase.mode]}</span>}
                 </div>
               )}
               {phase.goals && phase.goals.length > 0 && (
@@ -270,10 +290,10 @@ const sorted = [...universes].sort((a, b) => b.phases.length - a.phases.length |
                   {phase.goals.map((goal) => <li>{goal}</li>)}
                 </ul>
               )}
-              {phase.cautions && <p class="timeline-caution"><strong>Caution.</strong> {phase.cautions}</p>}
+              {phase.cautions && <p class="timeline-caution"><strong>{es ? 'Precaución.' : 'Caution.'}</strong> {phase.cautions}</p>}
               {phase.projects && phase.projects.length > 0 && (
                 <>
-                  <p><strong>Make:</strong></p>
+                  <p><strong>{es ? 'Crear:' : 'Make:'}</strong></p>
                   <ul class="timeline-list">
                     {phase.projects.map((project) => <li>{project}</li>)}
                   </ul>

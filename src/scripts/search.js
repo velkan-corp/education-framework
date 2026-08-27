@@ -1,6 +1,8 @@
 import { state } from './state.js';
 import { showTab, updateAllNavs } from './navigation.js';
 import { showView } from './domain.js';
+import { formatAgeLabel } from './uiLocale.js';
+import { normalizeUniverseId } from './universeRefs.js';
 
 /* ──────────────────────────────────────────────────────────────────
    Section metadata.
@@ -59,9 +61,9 @@ function escapeHtml(s) {
 function tagPhaseSubsections() {
   document.querySelectorAll('.phase-content').forEach((phaseEl) => {
     const phaseId = phaseEl.dataset.phase;
-    const phaseLabel = phaseEl.dataset.label;
+    const phaseLabel = formatAgeLabel(phaseEl.dataset.label);
 
-    phaseEl.querySelectorAll('.target-grid').forEach((el) => {
+    phaseEl.querySelectorAll('.target-grid[data-target-map]').forEach((el) => {
       if (!el.dataset.section) {
         el.dataset.section = 'target';
         el.dataset.phase = phaseId;
@@ -186,7 +188,7 @@ function ageChipsHtml(phaseIds) {
     .map((id) => {
       const label = byId.get(id);
       if (!label) return '';
-      return `<button type="button" class="sr-age-chip" data-jump-phase="${id}">${label}</button>`;
+      return `<button type="button" class="sr-age-chip" data-jump-phase="${id}">${formatAgeLabel(label)}</button>`;
     })
     .filter(Boolean)
     .join('');
@@ -263,7 +265,10 @@ function renderResults(container, matches, query, state) {
 function openCrossAge(section, slug) {
   if (!slug) return;
   if (section === 'library') {
-    showView('universe', { showDetail: slug });
+    const universeId = normalizeUniverseId(slug);
+    if (!universeId) return;
+    showView('universe', { showDetail: universeId });
+    window.history.replaceState(null, '', `#universe-${universeId}`);
     return;
   }
   if (section === 'mental-model') {

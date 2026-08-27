@@ -13,18 +13,14 @@ substitutes: [borges, cortazar, philip-k-dick, garcia-marquez, eco]
 phases:
   - phaseId: age-14-16
     tier: core
-    title: "La invención de Morel — edición Emecé / Alianza"
-    description: "100 páginas. Leerla sin saber nada. La primera mitad se lee como aventura en isla desierta; la segunda revela la premisa ciencia-ficcional y su coste filosófico. El prólogo de Borges (incluido en las ediciones Emecé y Alianza) es el marco canónico. Los alumnos de Black Mirror y Westworld reconocerán a su antepasado. Preguntar: ¿cuál es el estatuto ético de una persona grabada? ¿Existe la Faustine grabada?"
+    title: "La invención de Morel + selección de Historias fantásticas — edición Emecé / Alianza"
+    description: "Empezar con La invención de Morel: 100 páginas, leída sin saber nada. La primera mitad se lee como aventura en isla desierta; la segunda revela la premisa ciencia-ficcional y su coste filosófico. El prólogo de Borges (incluido en las ediciones Emecé y Alianza) es el marco canónico. Después, leer 'En memoria de Paulina', 'El ídolo' y 'La sierva ajena' de Historias fantásticas; las formas breves permiten un paralelo útil con Ficciones de Borges y Bestiario de Cortázar. Preguntar: ¿cuál es el estatuto ético de una persona grabada? ¿Existe la Faustine grabada?"
     mode: interrogate
     goals:
       - "Identificar la premisa antes de que se enuncie — seguir en qué momento el narrador se da cuenta de lo que ha hecho Morel."
       - "Trazar la línea directa de Morel a la ficción contemporánea de realidad virtual / simulación."
       - "Comparar con Borges: ¿qué puede hacer Bioy en 100 páginas narrativas que Borges hace en 10 páginas discursivas?"
-  - phaseId: age-14-16
-    tier: recommended
-    title: "Historias fantásticas (selección) — edición Emecé / Alianza"
-    description: "El corpus de ficción breve. 'En memoria de Paulina', 'El ídolo', 'La sierva ajena' son los cuentos canónicos de entrada. Más breves que Morel, igual de inventivos estructuralmente. Buena lectura paralela con Ficciones de Borges y Bestiario de Cortázar."
-    mode: interrogate
+      - "Comparar cómo la novela corta y los cuentos seleccionados ocultan, dosifican y revelan sus premisas fantásticas."
   - phaseId: age-17-18
     tier: recommended
     title: "Plan de evasión — edición Emecé / Alianza"

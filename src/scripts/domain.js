@@ -1,5 +1,7 @@
 import { state } from './state.js';
 import { applyProfile, getHeadingText, showTab, updateAllNavs } from './navigation.js';
+import { getUniverseIdFromElement, normalizeUniverseId } from './universeRefs.js';
+import { formatAgeLabel, phaseCountLabel, tierCountLabel, tierLabel, uiText } from './uiLocale.js';
 
 let domainMap = null;
 let currentDomain = null;
@@ -51,8 +53,8 @@ function renderDomainTimeline(sectionId) {
   timeline.innerHTML = data.phases.map(phase => `
     <div class="timeline-phase">
       <div class="timeline-header">
-        <span class="timeline-age">${phase.phaseLabel}</span>
-        <span class="tier-badge ${phase.tier}">${phase.tier.charAt(0).toUpperCase() + phase.tier.slice(1)}</span>
+        <span class="timeline-age">${formatAgeLabel(phase.phaseLabel)}</span>
+        <span class="tier-badge ${phase.tier}">${tierLabel(phase.tier)}</span>
       </div>
       <div class="timeline-content">${phase.content}</div>
     </div>
@@ -67,8 +69,8 @@ function showDomainLanding() {
   const timeline = document.getElementById('domain-timeline');
 
   header.innerHTML = `
-    <h1 id="domain-title">Domains</h1>
-    <p id="domain-description" class="subtitle">Curriculum threads — each tracked across all age phases.</p>
+    <h1 id="domain-title">${uiText('domains')}</h1>
+    <p id="domain-description" class="subtitle">${uiText('domainsDescription')}</p>
   `;
 
   const sorted = Array.from(domainMap.entries()).sort((a, b) => b[1].phases.length - a[1].phases.length);
@@ -78,10 +80,10 @@ function showDomainLanding() {
     const tiers = { foundational: 0, core: 0, recommended: 0 };
     phases.forEach(p => { if (tiers[p.tier] !== undefined) tiers[p.tier]++; });
     const parts = [];
-    if (tiers.foundational) parts.push(`${tiers.foundational} foundational`);
-    if (tiers.core) parts.push(`${tiers.core} core`);
-    if (tiers.recommended) parts.push(`${tiers.recommended} recommended`);
-    return parts.join(', ') || `${phases.length} phases`;
+    if (tiers.foundational) parts.push(tierCountLabel('foundational', tiers.foundational));
+    if (tiers.core) parts.push(tierCountLabel('core', tiers.core));
+    if (tiers.recommended) parts.push(tierCountLabel('recommended', tiers.recommended));
+    return parts.join(', ') || phaseCountLabel(phases.length);
   }
 
   timeline.innerHTML = `<div class="browse-card-grid">${sorted.map(([id, data]) => `
@@ -108,10 +110,10 @@ function showDomainDetail(domainId) {
   const header = document.getElementById('domain-header');
   header.innerHTML = `
     <button type="button" class="browse-back" id="domain-back">
-      <span class="material-symbols-rounded">arrow_back</span> All Domains
+      <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> ${uiText('allDomains')}
     </button>
     <h1 id="domain-title">${data.label}</h1>
-    <p id="domain-description" class="subtitle">Tracking this domain across all age brackets — from earliest foundations to 17-18 synthesis.</p>
+    <p id="domain-description" class="subtitle">${uiText('domainDetailDescription')}</p>
   `;
 
   document.getElementById('domain-back')?.addEventListener('click', () => {
@@ -337,10 +339,13 @@ function setupNavigation() {
 
   // Universe navigation from phase cards
   document.addEventListener('click', (e) => {
-    const link = e.target.closest('[data-universe-nav]');
+    const link = e.target.closest('[data-universe-nav], a[href^="#universe-"]');
     if (!link) return;
-    const universeId = link.dataset.universeNav;
+    const universeId = getUniverseIdFromElement(link);
+    if (!universeId) return;
+    e.preventDefault();
     showView('universe', { showDetail: universeId });
+    window.history.replaceState(null, '', `#universe-${universeId}`);
   });
 
   // Language switcher
@@ -425,6 +430,13 @@ export function initDomainView() {
   populateDomainDropdowns();
   setupNavigation();
 
-  // Start with Home view
-  showView('home');
+  // Restore a directly linked universe; otherwise start with Home.
+  const initialUniverseId = window.location.hash.startsWith('#universe-')
+    ? normalizeUniverseId(window.location.hash)
+    : '';
+  if (initialUniverseId && document.querySelector(`[data-universe-detail="${CSS.escape(initialUniverseId)}"]`)) {
+    showView('universe', { showDetail: initialUniverseId });
+  } else {
+    showView('home');
+  }
 }

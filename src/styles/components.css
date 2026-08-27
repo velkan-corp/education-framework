@@ -38,6 +38,7 @@ p { margin-bottom: var(--sp-3); font-size: 14px; }
   border-radius: var(--sp-2);
   padding: var(--sp-4);
   margin: var(--sp-3) 0 var(--sp-4);
+  list-style: none;
 }
 .priority-box h3 { margin-top: 0; color: var(--accent); }
 
@@ -396,6 +397,24 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   border-left: 2px solid var(--accent-border); margin: var(--sp-1) 0;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
+.evidence-callout {
+  margin: var(--sp-3) 0 var(--sp-4);
+  border-left: 2px solid var(--accent-border);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--bg);
+}
+.evidence-callout > p {
+  border-left: 0;
+  padding: var(--sp-1) 0;
+  background: transparent;
+}
+blockquote.principle-thesis {
+  margin: var(--sp-2) 0;
+  padding: var(--sp-2) var(--sp-3);
+  border-left: 3px solid var(--accent-border);
+  color: var(--text-muted);
+  background: var(--accent-subtle);
+}
 
 /* ── TARGET CARD GRID ── */
 .target-grid {
@@ -403,6 +422,8 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: var(--sp-3);
   margin: var(--sp-4) 0;
+  padding: 0;
+  list-style: none;
 }
 .target-card {
   background: var(--surface);
@@ -427,7 +448,9 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   line-height: 1;
   margin-bottom: var(--sp-2);
 }
-.target-card h4 {
+.target-card h4,
+.target-card-title {
+  display: block;
   font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 400;
@@ -473,6 +496,9 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   display: flex;
   flex-wrap: wrap;
   gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .model-card {
   background: var(--surface);
@@ -501,6 +527,8 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   align-items: stretch;
   gap: 0;
   margin: var(--sp-4) 0;
+  padding: 0;
+  list-style: none;
 }
 .cycle-step {
   flex: 1;
@@ -549,6 +577,8 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-3);
   margin: var(--sp-4) 0;
+  padding: 0;
+  list-style: none;
 }
 .triad-card {
   background: var(--surface);
@@ -959,6 +989,9 @@ td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; wi
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .model-dot {
   display: inline-flex;

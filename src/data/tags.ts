@@ -19,3 +19,22 @@ export const EXTRA_TAG_LABELS: Record<string, string> = {
 };
 
 export const ALL_TAG_LABELS: Record<string, string> = { ...TAB_TAGS, ...EXTRA_TAG_LABELS };
+
+export const ALL_TAG_LABELS_ES: Record<string, string> = {
+  books: 'Libros',
+  anime: 'Anime',
+  cinema: 'Cine y TV',
+  comics: 'Cómics',
+  game: 'Juegos',
+  maker: 'Creación',
+  english: 'Inglés',
+  spanish: 'Español',
+  french: 'Francés',
+  japanese: 'Japonés',
+  strategy: 'Estrategia',
+  classics: 'Clásicos',
+  philosophy: 'Filosofía',
+  stem: 'CTIM',
+  activity: 'Actividad',
+  physical: 'Físico',
+};

@@ -2,13 +2,32 @@
   "name": "education-framework",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "prebuild": "npm test",
+    "build": "astro build && npm run audit:build",
     "preview": "astro preview",
-    "audit:content": "node tools/audit-content.mjs"
+    "audit:content": "node tools/audit-content.mjs",
+    "audit:build": "node tools/audit-build.mjs",
+    "audit:capacity": "node tools/audit-capacity.mjs --examples && node tools/test-capacity-audit.mjs",
+    "test:capacity": "node tools/test-capacity-audit.mjs",
+    "audit:hardship": "node tools/audit-hardship.mjs --examples",
+    "test:hardship": "node tools/test-hardship-audit.mjs",
+    "audit:markdown": "node tools/audit-markdown.mjs",
+    "migrate:phase-markdown": "node tools/migrate-phase-markdown.mjs --write",
+    "recover:phase-universe-links": "node tools/recover-phase-universe-links.mjs --write",
+    "test:phase-universe-links": "node tools/test-phase-universe-links.mjs",
+    "test:universe-link-audit": "node tools/test-universe-link-audit.mjs",
+    "test:resources": "node tools/test-resource-semantics.mjs",
+    "test:markdown-presentation": "node tools/test-markdown-presentation.mjs",
+    "test": "npm run audit:markdown && npm run test:markdown-presentation && npm run test:phase-universe-links && npm run test:universe-link-audit && npm run test:resources && npm run audit:content && npm run audit:capacity && npm run audit:hardship && npm run test:hardship"
   },
   "dependencies": {
-    "astro": "^5.7.10"
+    "@astrojs/markdown-satteri": "^0.3.8",
+    "satteri": "^0.10.5",
+    "astro": "^7.2.7"
   }
 }

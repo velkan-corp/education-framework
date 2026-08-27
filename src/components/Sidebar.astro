@@ -2,199 +2,195 @@
 interface Props { lang?: string; }
 const { lang = 'en' } = Astro.props;
 const isEs = lang === 'es';
+const ui = isEs ? {
+  resetLabel: 'Restablecer todas las dimensiones a valores base',
+  resetText: 'Restablecer valores base',
+  moreInfo: 'Más información sobre',
+  energy: 'Energía', introvert: 'Introvertido', balanced: 'Equilibrado', extrovert: 'Extrovertido',
+  reactivity: 'Reactividad', low: 'Baja', high: 'Alta', selfRegulation: 'Autorregulación',
+  communication: 'Comunicación', problemSolving: 'Resolución de problemas', grossMotor: 'Motricidad gruesa',
+  fineMotor: 'Motricidad fina', personalSocial: 'Personal-social', inhibit: 'Inhibición', shift: 'Cambio',
+  emotionalControl: 'Control emocional', workingMemory: 'Memoria de trabajo', planOrganize: 'Planificación/organización',
+} : {
+  resetLabel: 'Reset all dimensions to balanced',
+  resetText: 'Reset to Balanced',
+  moreInfo: 'More information about',
+  energy: 'Energy', introvert: 'Introvert', balanced: 'Balanced', extrovert: 'Extrovert',
+  reactivity: 'Reactivity', low: 'Low', high: 'High', selfRegulation: 'Self-Regulation',
+  communication: 'Communication', problemSolving: 'Problem Solving', grossMotor: 'Gross Motor',
+  fineMotor: 'Fine Motor', personalSocial: 'Personal-Social', inhibit: 'Inhibit', shift: 'Shift',
+  emotionalControl: 'Emotional Control', workingMemory: 'Working Memory', planOrganize: 'Plan/Organize',
+};
+
+const tips = isEs ? {
+  energy: `<strong>Introvertido:</strong> Ritmo físico tranquilo. Prefiere rompecabezas, libros y juegos de motricidad fina a correr y trepar. Observa antes de incorporarse a actividades grupales. Disfruta jugando a solas durante periodos prolongados. Se muestra cercano con personas conocidas, pero reservado con desconocidos.<br><br><strong>Extrovertido:</strong> Mucha energía física: está en movimiento, trepa y corre. Busca a otros menores y se activa con el juego social. Puede inquietarse o aburrirse si permanece solo demasiado tiempo. Disfruta del juego de alta intensidad, como perseguirse o el juego físico.<br><br><em>Inspiración de investigación: factor Surgencia/Extraversión de Rothbart. Esto no administra ni puntúa ECBQ o CBQ.</em>`,
+  reactivity: `<strong>Alta:</strong> Las transiciones resultan difíciles, por ejemplo salir del parque o cambiar de actividad. Puede sentirse sobrepasado en ambientes ruidosos o concurridos. Las rabietas son intensas y prolongadas. Necesita avisos antes de los cambios («nos vamos en 5 minutos»). Se sobresalta con facilidad.<br><br><strong>Baja:</strong> Parece poco afectado por el ruido, las multitudes o los cambios repentinos. Puede ser difícil interpretar su estado emocional: la compostura no equivale necesariamente a bienestar. Tal vez necesite estímulos más intensos para implicarse.<br><br><em>Inspiración de investigación: Afectividad Negativa de Rothbart. Esta observación informal no equivale a la puntuación de un cuestionario estandarizado.</em>`,
+  selfRegulation: `<strong>Alta:</strong> Percibe pequeños detalles que otros pasan por alto. Mantiene la atención durante periodos prolongados. Hace una pausa antes de actuar. Disfruta de actividades tranquilas y con pocos estímulos, como rompecabezas, clasificación y libros. Actúa de forma deliberada y precisa más que impulsiva.<br><br><strong>Baja:</strong> Puede pasar por alto detalles sutiles. Mantiene la atención en intervalos breves y cambia rápidamente de actividad. Actúa antes de pensar. Prefiere actividades rápidas y con muchos estímulos. Se beneficia de estructura externa para mantener la atención.<br><br><em>Inspiración de investigación: Control Esforzado de Rothbart. Es una pauta aproximada de planificación, no una escala ni puntuación ECBQ o CBQ.</em>`,
+  communication: `<strong>Puede beneficiarse de más reto:</strong> Habla en frases antes que sus pares. Nombra colores, objetos o categorías con anticipación. Sigue instrucciones complejas, pregunta «¿por qué?» pronto y usa las palabras con precisión. Produce sonidos de animales, nombres de colores u otro vocabulario muy por delante de lo esperado para la edad.<br><br><strong>Puede necesitar más apoyo:</strong> Usa menos palabras de lo habitual para la edad o depende más de señalar y gesticular que del habla. Se beneficia de una narración ampliada («¡Camión!» → «Sí, un camión rojo grande que lleva troncos»). No presiones la producción verbal: el lenguaje receptivo se desarrolla antes que el expresivo.<br><br><em>Vocabulario de dominio inspirado en ASQ-3; esto no es un ítem, una puntuación ni un cribado ASQ-3.</em>`,
+  problemSolving: `<strong>Puede beneficiarse de más reto:</strong> Completa rompecabezas, construcciones o búsquedas visuales muy por delante de lo esperado para la edad. Encuentra objetos ocultos que sus pares no localizan. Comprende antes relaciones espaciales como encajar, ordenar por tamaño o emparejar formas. Clasifica objetos con precisión.<br><br><strong>Puede necesitar más apoyo:</strong> Necesita más tiempo y andamiaje para rompecabezas, construcciones y tareas de clasificación. Se beneficia de una demostración antes de intentarlo de forma independiente. Usa retos más sencillos, más repetición y ninguna presión temporal.<br><br><em>Vocabulario de dominio inspirado en ASQ-3; esto no es un ítem, una puntuación ni un cribado ASQ-3.</em>`,
+  grossMotor: `<strong>Puede beneficiarse de más reto:</strong> Camina, corre o trepa antes que sus pares. Sube a estructuras de juego que otros evitan. Muestra buen equilibrio y coordinación y se mueve con confianza en superficies irregulares.<br><br><strong>Puede necesitar más apoyo:</strong> Alcanza más lentamente los hitos de motricidad gruesa. Evita trepar o las superficies irregulares y muestra menos estabilidad que sus pares. La preferencia por estar sentado no equivale a un retraso motor: observa la capacidad, no la preferencia.<br><br><em>Vocabulario de dominio inspirado en ASQ-3; esto no es un ítem, una puntuación ni un cribado ASQ-3.</em>`,
+  fineMotor: `<strong>Puede beneficiarse de más reto:</strong> Dibuja formas reconocibles, usa tijeras o manipula objetos pequeños antes de lo esperado. Apila muchos bloques, resuelve bien rompecabezas que exigen colocación precisa y utiliza correctamente los cubiertos.<br><br><strong>Puede necesitar más apoyo:</strong> Tiene dificultades para dibujar, apilar o manipular objetos pequeños. Usa el agarre de toda la mano más que la pinza. Se beneficia de tareas de manipulación más sencillas, tiempo y paciencia.<br><br><em>Vocabulario de dominio inspirado en ASQ-3; esto no es un ítem, una puntuación ni un cribado ASQ-3.</em>`,
+  personalSocial: `<strong>Puede beneficiarse de más reto:</strong> Muestra habilidades de autonomía antes de lo esperado, como comer solo, intentar vestirse o prepararse para ir al baño. Inicia interacciones sociales, muestra empatía, imita conductas complejas y comprende reglas sociales. Puede mostrar un orgullo notable por sus logros.<br><br><strong>Puede necesitar más apoyo:</strong> Necesita más andamiaje para las tareas de autonomía. Inicia menos interacciones sociales e imita menos a sus pares. Puede que aún no muestre empatía o no interprete las emociones de otros. Narra con mayor detalle las situaciones sociales.<br><br><em>Vocabulario de dominio inspirado en ASQ-3. Esta pauta informal no es un ítem, una puntuación ni un cribado ASQ-3.</em>`,
+  inhibit: `<strong>Puede beneficiarse de más reto:</strong> Hace una pausa antes de actuar y comprueba antes de responder. Rechaza coincidencias aproximadas en lugar de generalizar en exceso. Espera la respuesta correcta en vez de adivinar y no coge objetos impulsivamente.<br><br><strong>Puede necesitar más apoyo:</strong> Actúa primero y corrige después. Etiqueta impulsivamente, coge objetos antes de observar y necesita ayuda para reducir la velocidad: «mira otra vez, ¿es realmente igual?».<br><br><em>Inspiración de investigación: conceptos de inhibición conductual también representados en BRIEF-P. Esto no es un ítem ni una puntuación BRIEF-P.</em>`,
+  shift: `<strong>Puede beneficiarse de más reto:</strong> Cambia de tarea o regla sin dificultad. Puede pasar de un juego a otro con reglas distintas. Usa con flexibilidad diferentes modos cognitivos: emparejamiento preciso cuando corresponde y pensamiento categórico cuando corresponde. Se adapta cuando cambian los planes.<br><br><strong>Puede necesitar más apoyo:</strong> Se queda atascado en un enfoque aunque no funcione. Le cuestan los cambios de regla («ahora ordenamos por color, no por forma»). Se beneficia de formular la regla explícitamente: «ahora jugamos a otro juego con reglas diferentes».<br><br><em>Inspiración de investigación: conceptos de flexibilidad cognitiva también representados en BRIEF-P. Esto no es un ítem ni una puntuación BRIEF-P.</em>`,
+  emotionalControl: `<strong>Puede beneficiarse de más reto:</strong> Se recupera rápidamente del malestar. Modula la respuesta emocional según la situación, no convierte frustraciones menores en crisis y puede redirigir su atención cuando está alterado.<br><br><strong>Puede necesitar más apoyo:</strong> Cuando se altera, permanece así durante mucho tiempo. Las frustraciones menores escalan y resulta difícil redirigirlo o calmarlo. Necesita más apoyo de corregulación, como contención, balanceo o presión profunda.<br><br><em>Inspiración de investigación: conceptos de control emocional también representados en BRIEF-P. Esto no es un ítem ni una puntuación BRIEF-P.</em>`,
+  workingMemory: `<strong>Puede beneficiarse de más reto:</strong> Sigue instrucciones de varios pasos («coge los zapatos, déjalos junto a la puerta y vuelve»). Mantiene una imagen mental mientras busca y recuerda dónde se guardaron los objetos.<br><br><strong>Puede necesitar más apoyo:</strong> Pierde el hilo de las instrucciones de varios pasos: completa el primero y olvida el resto. Necesita una instrucción cada vez, pierde objetos con frecuencia y se beneficia de apoyos visuales y pasos simplificados.<br><br><em>Inspiración de investigación: conceptos de memoria de trabajo también representados en BRIEF-P. Esto no es un ítem ni una puntuación BRIEF-P.</em>`,
+  planOrganize: `<strong>Puede beneficiarse de más reto:</strong> Muestra conducta orientada a objetivos: prepara los materiales antes de empezar, sigue una secuencia y anticipa el paso siguiente. Organiza juguetes u objetos por categorías sin que se lo pidan.<br><br><strong>Puede necesitar más apoyo:</strong> Empieza tareas sin prepararse, no anticipa los pasos y salta de una actividad a otra sin terminarlas. Se beneficia de horarios visuales y rutinas paso a paso.<br><br><em>Inspiración de investigación: conceptos de planificación y organización también representados en BRIEF-P. Esto no es un ítem ni una puntuación BRIEF-P; no infieras un resultado estandarizado a ninguna edad.</em>`,
+} : {
+  energy: `<strong>Introvert:</strong> Calm physical tempo. Prefers puzzles, books, and fine motor play over running and climbing. Watches before joining group activities. Happy playing alone for extended periods. Warm with familiar people but reserved with strangers.<br><br><strong>Extrovert:</strong> High physical energy — always moving, climbing, running. Seeks out other children. Energised by social play. Gets restless or bored when alone too long. Loves high-intensity play (being chased, thrown in the air, rough-and-tumble).<br><br><em>Research inspiration: Rothbart Surgency/Extraversion. This is not ECBQ/CBQ administration or scoring.</em>`,
+  reactivity: `<strong>High:</strong> Transitions are hard — leaving the park, switching activities. Overwhelmed in loud or crowded settings. Tantrums hit hard and last long. Needs warnings before changes ("in 5 minutes we leave"). Startles easily.<br><br><strong>Low:</strong> Seems unbothered by noise, crowds, or sudden changes. Hard to read emotionally — composure doesn't mean contentment. May need more intense inputs to spark engagement.<br><br><em>Research inspiration: Rothbart Negative Affectivity. This informal observation is distinct from a standardized questionnaire score.</em>`,
+  selfRegulation: `<strong>High:</strong> Notices small details others miss. Sustains focus on tasks for long periods. Pauses before acting. Enjoys quiet, low-stimulus activities (puzzles, sorting, books). Deliberate and precise rather than impulsive.<br><br><strong>Low:</strong> Misses subtle details. Short attention bursts — moves quickly between activities. Acts before thinking. Prefers high-stimulus, fast-paced activities. Benefits from external structure to maintain focus.<br><br><em>Research inspiration: Rothbart Effortful Control. This is a coarse planning prompt, not an ECBQ/CBQ scale or score.</em>`,
+  communication: `<strong>Advanced:</strong> Speaks in sentences earlier than peers. Names many colours, objects, or categories ahead of schedule. Follows complex instructions. Asks "why?" early. Uses words precisely. Produces animal sounds, colour names, or other vocabulary well ahead of age norms.<br><br><strong>Developing:</strong> Fewer words than age-typical, or relies on pointing/gestures more than speech. Benefits from expanded narration ("Truck!" → "Yes, a big red truck carrying logs"). Don't pressure verbal output — receptive language develops before expressive.<br><br><em>Domain vocabulary inspired by ASQ-3; this is not an ASQ-3 item, score, or screen.</em>`,
+  problemSolving: `<strong>Advanced:</strong> Completes puzzles, building tasks, or visual search well ahead of age norms. Finds hidden objects that peers can't. Understands spatial relationships (nesting, sorting by size, matching shapes) earlier than expected. Categorises objects precisely.<br><br><strong>Developing:</strong> Needs more time and scaffolding for puzzles, building, and sorting tasks. Benefits from demonstration before independent attempts. Simpler challenges, more repetition, no time pressure.<br><br><em>Domain vocabulary inspired by ASQ-3; this is not an ASQ-3 item, score, or screen.</em>`,
+  grossMotor: `<strong>Advanced:</strong> Walking, running, climbing ahead of peers. Climbs playground structures others avoid. Good balance and coordination. Confident on uneven surfaces.<br><br><strong>Developing:</strong> Slower to reach gross motor milestones. Avoids climbing or uneven surfaces. Less steady on feet than peers. Note: preference for sitting (Energy: Introvert) is different from a gross motor delay — assess capability, not preference.<br><br><em>Domain vocabulary inspired by ASQ-3; this is not an ASQ-3 item, score, or screen.</em>`,
+  fineMotor: `<strong>Advanced:</strong> Draws recognisable shapes, uses scissors, manipulates small objects earlier than expected. Stacks many blocks. Good at puzzles requiring precise placement. Uses utensils well.<br><br><strong>Developing:</strong> Struggles with drawing, stacking, or small object manipulation. Uses whole-hand grasp more than pincer. Benefits from simpler manipulation tasks and patience.<br><br><em>Domain vocabulary inspired by ASQ-3; this is not an ASQ-3 item, score, or screen.</em>`,
+  personalSocial: `<strong>Advanced:</strong> Self-help skills ahead of schedule (feeding self, dressing attempts, toileting readiness). Initiates social interaction, shows empathy ("she's sad"), imitates complex behaviours, understands social rules. May show notable pride in accomplishments.<br><br><strong>Developing:</strong> Needs more scaffolding for self-help tasks. Less social initiation, less imitation of peers. May not yet show empathy or read others' emotions. Provide more narration of social situations.<br><br><em>Domain vocabulary inspired by ASQ-3. This informal prompt is not an ASQ-3 item, score, or screen.</em>`,
+  inhibit: `<strong>Advanced:</strong> Pauses before acting. Checks before responding. Rejects near-matches instead of overgeneralising — says "mama's car" only for the exact car, not every similar one. Waits for the right answer rather than guessing. Doesn't grab impulsively.<br><br><strong>Developing:</strong> Acts first, corrects later. Labels things impulsively — "doggy!" at every four-legged animal. Grabs before looking. Needs help slowing down: "look again, is it really the same?"<br><br><em>Research inspiration: behavioural inhibition concepts also represented in BRIEF-P. This is not a BRIEF-P item or score.</em>`,
+  shift: `<strong>Advanced:</strong> Switches between tasks or rules without difficulty. Can play one game, then switch to different rules. Uses different cognitive modes flexibly — precise matching when needed, categorical thinking when needed. Adapts when plans change.<br><br><strong>Developing:</strong> Gets stuck on one approach even when it's not working. Struggles with rule changes ("now we sort by colour, not shape"). Benefits from explicit rule-stating: "now we're playing a different game with different rules."<br><br><em>Research inspiration: cognitive flexibility concepts also represented in BRIEF-P. This is not a BRIEF-P item or score.</em>`,
+  emotionalControl: `<strong>Advanced:</strong> Recovers quickly from upset. Modulates emotional response to fit the situation. Doesn't escalate minor frustrations into meltdowns. Can be redirected when upset.<br><br><strong>Developing:</strong> Once upset, stays upset for a long time. Minor frustrations escalate. Hard to redirect or soothe. Needs more co-regulation support (holding, rocking, deep pressure).<br><br><em>Research inspiration: emotional-control concepts also represented in BRIEF-P. This is not a BRIEF-P item or score.</em>`,
+  workingMemory: `<strong>Advanced:</strong> Follows multi-step instructions ("get your shoes, put them by the door, then come back"). Holds a mental image while searching (finding Wally = holding a multi-feature target in mind while scanning). Remembers where things were put.<br><br><strong>Developing:</strong> Loses track of multi-step instructions — completes the first step, forgets the rest. Needs instructions one at a time. Loses objects frequently. Benefits from visual cues and simplified steps.<br><br><em>Research inspiration: working-memory concepts also represented in BRIEF-P. This is not a BRIEF-P item or score.</em>`,
+  planOrganize: `<strong>Advanced:</strong> Shows goal-directed behaviour — sets up materials before starting, follows a sequence, anticipates what comes next. Organises toys or objects by category without being asked.<br><br><strong>Developing:</strong> Starts tasks without preparation. Doesn't anticipate steps. Jumps between activities without completing them. Benefits from visual schedules and step-by-step routines.<br><br><em>Research inspiration: planning/organization concepts also represented in BRIEF-P. This is not a BRIEF-P item or score; do not infer a standardized result at any age.</em>`,
+};
 ---
 <div class="sidebar">
-  <div class="sidebar-title">{isEs ? 'Perfil del Niño' : 'Child Profile'}</div>
+  <div class="sidebar-title">{isEs ? 'Controles de adaptación' : 'Adaptation controls'}</div>
+  <div class="profile-notice" role="note">
+    {isEs
+      ? 'Ayuda de planificación basada en observaciones, no un test, cribado ni diagnóstico. Estos controles no administran ni puntúan ASQ-3, BRIEF-P ni cuestionarios de Rothbart. Límites de los instrumentos publicados: ASQ-3, 1–66 meses de edad; BRIEF-P, 2–5 años de edad; ECBQ, 18–36 meses de edad; CBQ, 3–7 años de edad. Para otras edades o cualquier preocupación, usa el instrumento apropiado y un profesional cualificado.'
+      : 'Observation-based planning aid, not a test, screen, or diagnosis. These controls do not administer or score ASQ-3, BRIEF-P, or Rothbart questionnaires. Published instrument ranges: ASQ-3, 1–66 months old; BRIEF-P, 2–5 yr olds; ECBQ, 18–36 months old; CBQ, 3–7 yr olds. For other ages or any concern, use the appropriate instrument and a qualified professional.'}
+  </div>
 
-  <!-- Child profile selector -->
+  <!-- Manual controls only; identifiable child data is never bundled. -->
   <div class="profile-group profile-child-selector">
-    <div class="profile-label">{isEs ? 'Cargar Perfil' : 'Load Profile'}</div>
-    <div class="radio-group" data-dim="child" role="group" aria-label="Child Profile">
-      <button type="button" class="radio-btn active" data-val="custom" aria-pressed="true">{isEs ? 'Personalizado' : 'Custom'}</button>
-      <button type="button" class="radio-btn" data-val="nico" aria-pressed="false">Nico</button>
-      <button type="button" class="radio-btn" data-val="maia" aria-pressed="false">Maia</button>
-    </div>
-    <button type="button" class="reset-profile-btn" aria-label="{isEs ? 'Restablecer a equilibrado' : 'Reset all dimensions to balanced'}">{isEs ? 'Restablecer a Equilibrado' : 'Reset to Balanced'}</button>
+    <button type="button" class="reset-profile-btn" aria-label={ui.resetLabel}>{ui.resetText}</button>
   </div>
 
   <div class="profile-group">
 
-    <!-- ═══ SECTION 1: Temperament (Rothbart ECBQ/CBQ) ═══ -->
+    <!-- Research-informed temperament observations; not questionnaire administration. -->
     <button type="button" class="profile-section-header collapsed" data-section="temperament" aria-expanded="false">
-      <span class="section-chevron">▼</span> Temperament <span class="section-source">Rothbart</span>
+      <span class="section-chevron">▼</span> {isEs ? 'Observaciones de temperamento' : 'Temperament observations'} <span class="section-source">{isEs ? 'orientativo' : 'planning'}</span>
     </button>
     <div class="profile-section-body collapsed">
 
-      <div class="profile-label">Energy <button type="button" class="info-toggle" data-tip="energy-tip" aria-controls="energy-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="energy-tip">
-        <strong>Introvert:</strong> Calm physical tempo. Prefers puzzles, books, and fine motor play over running and climbing. Watches before joining group activities. Happy playing alone for extended periods. Warm with familiar people but reserved with strangers.<br><br>
-        <strong>Extrovert:</strong> High physical energy — always moving, climbing, running. Seeks out other children. Energised by social play. Gets restless or bored when alone too long. Loves high-intensity play (being chased, thrown in the air, rough-and-tumble).<br><br>
-        <em>Rothbart: Surgency/Extraversion factor (ECBQ 18-36mo, CBQ 3-7yr).</em>
-      </div>
-      <div class="radio-group" data-dim="energy" role="group" aria-label="Energy">
-        <button type="button" class="radio-btn" data-val="introvert" aria-pressed="false">Introvert</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="extrovert" aria-pressed="false">Extrovert</button>
+      <div class="profile-label">{ui.energy} <button type="button" class="info-toggle" data-tip="energy-tip" aria-controls="energy-tip" aria-label={`${ui.moreInfo} ${ui.energy}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="energy-tip" set:html={tips.energy}></div>
+      <div class="radio-group" data-dim="energy" role="group" aria-label={ui.energy}>
+        <button type="button" class="radio-btn" data-val="introvert" aria-pressed="false">{ui.introvert}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{ui.balanced}</button>
+        <button type="button" class="radio-btn" data-val="extrovert" aria-pressed="false">{ui.extrovert}</button>
       </div>
 
-      <div class="profile-label">Reactivity <button type="button" class="info-toggle" data-tip="reactivity-tip" aria-controls="reactivity-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="reactivity-tip">
-        <strong>High:</strong> Transitions are hard — leaving the park, switching activities. Overwhelmed in loud or crowded settings. Tantrums hit hard and last long. Needs warnings before changes ("in 5 minutes we leave"). Startles easily.<br><br>
-        <strong>Low:</strong> Seems unbothered by noise, crowds, or sudden changes. Hard to read emotionally — composure doesn't mean contentment. May need more intense inputs to spark engagement.<br><br>
-        <em>Rothbart: Negative Affectivity factor (ECBQ/CBQ). Measures tendency to experience distress — distinct from Emotional Control (BRIEF-P), which measures ability to recover once aroused.</em>
-      </div>
-      <div class="radio-group" data-dim="reactivity" role="group" aria-label="Reactivity">
-        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+      <div class="profile-label">{ui.reactivity} <button type="button" class="info-toggle" data-tip="reactivity-tip" aria-controls="reactivity-tip" aria-label={`${ui.moreInfo} ${ui.reactivity}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="reactivity-tip" set:html={tips.reactivity}></div>
+      <div class="radio-group" data-dim="reactivity" role="group" aria-label={ui.reactivity}>
+        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">{ui.low}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{ui.balanced}</button>
+        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">{ui.high}</button>
       </div>
 
-      <div class="profile-label">Self-Regulation <button type="button" class="info-toggle" data-tip="ec-tip" aria-controls="ec-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="ec-tip">
-        <strong>High:</strong> Notices small details others miss. Sustains focus on tasks for long periods. Pauses before acting. Enjoys quiet, low-stimulus activities (puzzles, sorting, books). Deliberate and precise rather than impulsive.<br><br>
-        <strong>Low:</strong> Misses subtle details. Short attention bursts — moves quickly between activities. Acts before thinking. Prefers high-stimulus, fast-paced activities. Benefits from external structure to maintain focus.<br><br>
-        <em>Rothbart: Effortful Control factor (ECBQ/CBQ). Covers attention focusing, perceptual sensitivity, inhibitory control, and low-intensity pleasure. For specific executive capacities, see BRIEF-P section.</em>
-      </div>
-      <div class="radio-group" data-dim="selfRegulation" role="group" aria-label="Self-Regulation">
-        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">Low</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">High</button>
+      <div class="profile-label">{ui.selfRegulation} <button type="button" class="info-toggle" data-tip="ec-tip" aria-controls="ec-tip" aria-label={`${ui.moreInfo} ${ui.selfRegulation}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="ec-tip" set:html={tips.selfRegulation}></div>
+      <div class="radio-group" data-dim="selfRegulation" role="group" aria-label={ui.selfRegulation}>
+        <button type="button" class="radio-btn" data-val="low" aria-pressed="false">{ui.low}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{ui.balanced}</button>
+        <button type="button" class="radio-btn" data-val="high" aria-pressed="false">{ui.high}</button>
       </div>
 
     </div>
 
-    <!-- ═══ SECTION 2: Development (ASQ) ═══ -->
+    <!-- Developmental-domain observations; not ASQ-3 screening. -->
     <button type="button" class="profile-section-header collapsed" data-section="development" aria-expanded="false">
-      <span class="section-chevron">▼</span> Development <span class="section-source">ASQ</span>
+      <span class="section-chevron">▼</span> {isEs ? 'Observaciones del desarrollo' : 'Development observations'} <span class="section-source">{isEs ? 'orientativo' : 'planning'}</span>
     </button>
     <div class="profile-section-body collapsed">
 
-      <div class="profile-label">Communication <button type="button" class="info-toggle" data-tip="comm-tip" aria-controls="comm-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="comm-tip">
-        <strong>Advanced:</strong> Speaks in sentences earlier than peers. Names many colours, objects, or categories ahead of schedule. Follows complex instructions. Asks "why?" early. Uses words precisely. Produces animal sounds, colour names, or other vocabulary well ahead of age norms.<br><br>
-        <strong>Developing:</strong> Fewer words than age-typical, or relies on pointing/gestures more than speech. Benefits from expanded narration ("Truck!" → "Yes, a big red truck carrying logs"). Don't pressure verbal output — receptive language develops before expressive.<br><br>
-        <em>ASQ Communication domain.</em>
-      </div>
-      <div class="radio-group" data-dim="communication" role="group" aria-label="Communication">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.communication} <button type="button" class="info-toggle" data-tip="comm-tip" aria-controls="comm-tip" aria-label={`${ui.moreInfo} ${ui.communication}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="comm-tip" set:html={tips.communication}></div>
+      <div class="radio-group" data-dim="communication" role="group" aria-label={ui.communication}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Problem Solving <button type="button" class="info-toggle" data-tip="ps-tip" aria-controls="ps-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="ps-tip">
-        <strong>Advanced:</strong> Completes puzzles, building tasks, or visual search well ahead of age norms. Finds hidden objects that peers can't. Understands spatial relationships (nesting, sorting by size, matching shapes) earlier than expected. Categorises objects precisely.<br><br>
-        <strong>Developing:</strong> Needs more time and scaffolding for puzzles, building, and sorting tasks. Benefits from demonstration before independent attempts. Simpler challenges, more repetition, no time pressure.<br><br>
-        <em>ASQ Problem Solving domain.</em>
-      </div>
-      <div class="radio-group" data-dim="problemSolving" role="group" aria-label="Problem Solving">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.problemSolving} <button type="button" class="info-toggle" data-tip="ps-tip" aria-controls="ps-tip" aria-label={`${ui.moreInfo} ${ui.problemSolving}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="ps-tip" set:html={tips.problemSolving}></div>
+      <div class="radio-group" data-dim="problemSolving" role="group" aria-label={ui.problemSolving}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Gross Motor <button type="button" class="info-toggle" data-tip="gm-tip" aria-controls="gm-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="gm-tip">
-        <strong>Advanced:</strong> Walking, running, climbing ahead of peers. Climbs playground structures others avoid. Good balance and coordination. Confident on uneven surfaces.<br><br>
-        <strong>Developing:</strong> Slower to reach gross motor milestones. Avoids climbing or uneven surfaces. Less steady on feet than peers. Note: preference for sitting (Energy: Introvert) is different from a gross motor delay — assess capability, not preference.<br><br>
-        <em>ASQ Gross Motor domain.</em>
-      </div>
-      <div class="radio-group" data-dim="grossMotor" role="group" aria-label="Gross Motor">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.grossMotor} <button type="button" class="info-toggle" data-tip="gm-tip" aria-controls="gm-tip" aria-label={`${ui.moreInfo} ${ui.grossMotor}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="gm-tip" set:html={tips.grossMotor}></div>
+      <div class="radio-group" data-dim="grossMotor" role="group" aria-label={ui.grossMotor}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Fine Motor <button type="button" class="info-toggle" data-tip="fm-tip" aria-controls="fm-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="fm-tip">
-        <strong>Advanced:</strong> Draws recognisable shapes, uses scissors, manipulates small objects earlier than expected. Stacks many blocks. Good at puzzles requiring precise placement. Uses utensils well.<br><br>
-        <strong>Developing:</strong> Struggles with drawing, stacking, or small object manipulation. Uses whole-hand grasp more than pincer. Benefits from simpler manipulation tasks and patience.<br><br>
-        <em>ASQ Fine Motor domain.</em>
-      </div>
-      <div class="radio-group" data-dim="fineMotor" role="group" aria-label="Fine Motor">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.fineMotor} <button type="button" class="info-toggle" data-tip="fm-tip" aria-controls="fm-tip" aria-label={`${ui.moreInfo} ${ui.fineMotor}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="fm-tip" set:html={tips.fineMotor}></div>
+      <div class="radio-group" data-dim="fineMotor" role="group" aria-label={ui.fineMotor}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Personal-Social <button type="button" class="info-toggle" data-tip="social-tip" aria-controls="social-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="social-tip">
-        <strong>Advanced:</strong> Self-help skills ahead of schedule (feeding self, dressing attempts, toileting readiness). Initiates social interaction, shows empathy ("she's sad"), imitates complex behaviours, understands social rules. May show notable pride in accomplishments.<br><br>
-        <strong>Developing:</strong> Needs more scaffolding for self-help tasks. Less social initiation, less imitation of peers. May not yet show empathy or read others' emotions. Provide more narration of social situations.<br><br>
-        <em>ASQ Personal-Social domain. Partially overlaps with Energy + Reactivity (temperament) but captures developmental milestones (self-help, theory of mind, imitation) that temperament doesn't.</em>
-      </div>
-      <div class="radio-group" data-dim="personalSocial" role="group" aria-label="Personal-Social">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">On Track</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.personalSocial} <button type="button" class="info-toggle" data-tip="social-tip" aria-controls="social-tip" aria-label={`${ui.moreInfo} ${ui.personalSocial}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="social-tip" set:html={tips.personalSocial}></div>
+      <div class="radio-group" data-dim="personalSocial" role="group" aria-label={ui.personalSocial}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
     </div>
 
-    <!-- ═══ SECTION 3: Executive Function (BRIEF-P) ═══ -->
+    <!-- Executive-function observations; not BRIEF-P administration. -->
     <button type="button" class="profile-section-header collapsed" data-section="executiveFunction" aria-expanded="false">
-      <span class="section-chevron">▼</span> Executive Function <span class="section-source">BRIEF-P</span>
+      <span class="section-chevron">▼</span> {isEs ? 'Observaciones de función ejecutiva' : 'Executive-function observations'} <span class="section-source">{isEs ? 'orientativo' : 'planning'}</span>
     </button>
     <div class="profile-section-body collapsed">
 
-      <div class="profile-label">Inhibit <button type="button" class="info-toggle" data-tip="inhib-tip" aria-controls="inhib-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="inhib-tip">
-        <strong>Advanced:</strong> Pauses before acting. Checks before responding. Rejects near-matches instead of overgeneralising — says "mama's car" only for the exact car, not every similar one. Waits for the right answer rather than guessing. Doesn't grab impulsively.<br><br>
-        <strong>Developing:</strong> Acts first, corrects later. Labels things impulsively — "doggy!" at every four-legged animal. Grabs before looking. Needs help slowing down: "look again, is it really the same?"<br><br>
-        <em>BRIEF-P Inhibit subscale. Partially overlaps with Self-Regulation (Rothbart EC) but measures specific behavioural inhibition capacity, not broad dispositional self-regulation.</em>
-      </div>
-      <div class="radio-group" data-dim="inhibit" role="group" aria-label="Inhibit">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.inhibit} <button type="button" class="info-toggle" data-tip="inhib-tip" aria-controls="inhib-tip" aria-label={`${ui.moreInfo} ${ui.inhibit}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="inhib-tip" set:html={tips.inhibit}></div>
+      <div class="radio-group" data-dim="inhibit" role="group" aria-label={ui.inhibit}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Shift <button type="button" class="info-toggle" data-tip="shift-tip" aria-controls="shift-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="shift-tip">
-        <strong>Advanced:</strong> Switches between tasks or rules without difficulty. Can play one game, then switch to different rules. Uses different cognitive modes flexibly — precise matching when needed, categorical thinking when needed. Adapts when plans change.<br><br>
-        <strong>Developing:</strong> Gets stuck on one approach even when it's not working. Struggles with rule changes ("now we sort by colour, not shape"). Benefits from explicit rule-stating: "now we're playing a different game with different rules."<br><br>
-        <em>BRIEF-P Shift subscale. Different from Reactivity (distress at transitions) — Shift is cognitive flexibility, not emotional regulation.</em>
-      </div>
-      <div class="radio-group" data-dim="shift" role="group" aria-label="Shift">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.shift} <button type="button" class="info-toggle" data-tip="shift-tip" aria-controls="shift-tip" aria-label={`${ui.moreInfo} ${ui.shift}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="shift-tip" set:html={tips.shift}></div>
+      <div class="radio-group" data-dim="shift" role="group" aria-label={ui.shift}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Emotional Control <button type="button" class="info-toggle" data-tip="emoctl-tip" aria-controls="emoctl-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="emoctl-tip">
-        <strong>Advanced:</strong> Recovers quickly from upset. Modulates emotional response to fit the situation. Doesn't escalate minor frustrations into meltdowns. Can be redirected when upset.<br><br>
-        <strong>Developing:</strong> Once upset, stays upset for a long time. Minor frustrations escalate. Hard to redirect or soothe. Needs more co-regulation support (holding, rocking, deep pressure).<br><br>
-        <em>BRIEF-P Emotional Control subscale. Related to but distinct from Reactivity (Rothbart): Reactivity measures how easily the child GETS upset; Emotional Control measures how well they RECOVER.</em>
-      </div>
-      <div class="radio-group" data-dim="emotionalControl" role="group" aria-label="Emotional Control">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.emotionalControl} <button type="button" class="info-toggle" data-tip="emoctl-tip" aria-controls="emoctl-tip" aria-label={`${ui.moreInfo} ${ui.emotionalControl}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="emoctl-tip" set:html={tips.emotionalControl}></div>
+      <div class="radio-group" data-dim="emotionalControl" role="group" aria-label={ui.emotionalControl}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Working Memory <button type="button" class="info-toggle" data-tip="wm-tip" aria-controls="wm-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="wm-tip">
-        <strong>Advanced:</strong> Follows multi-step instructions ("get your shoes, put them by the door, then come back"). Holds a mental image while searching (finding Wally = holding a multi-feature target in mind while scanning). Remembers where things were put.<br><br>
-        <strong>Developing:</strong> Loses track of multi-step instructions — completes the first step, forgets the rest. Needs instructions one at a time. Loses objects frequently. Benefits from visual cues and simplified steps.<br><br>
-        <em>BRIEF-P Working Memory subscale.</em>
-      </div>
-      <div class="radio-group" data-dim="workingMemory" role="group" aria-label="Working Memory">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.workingMemory} <button type="button" class="info-toggle" data-tip="wm-tip" aria-controls="wm-tip" aria-label={`${ui.moreInfo} ${ui.workingMemory}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="wm-tip" set:html={tips.workingMemory}></div>
+      <div class="radio-group" data-dim="workingMemory" role="group" aria-label={ui.workingMemory}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
-      <div class="profile-label">Plan/Organize <button type="button" class="info-toggle" data-tip="plan-tip" aria-controls="plan-tip" aria-expanded="false">i</button></div>
-      <div class="info-tip" id="plan-tip">
-        <strong>Advanced:</strong> Shows goal-directed behaviour — sets up materials before starting, follows a sequence, anticipates what comes next. Organises toys or objects by category without being asked.<br><br>
-        <strong>Developing:</strong> Starts tasks without preparation. Doesn't anticipate steps. Jumps between activities without completing them. Benefits from visual schedules and step-by-step routines.<br><br>
-        <em>BRIEF-P Plan/Organize subscale. Not yet meaningfully assessable before age ~3. Default to Balanced for younger children.</em>
-      </div>
-      <div class="radio-group" data-dim="planOrganize" role="group" aria-label="Plan/Organize">
-        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">Developing</button>
-        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">Balanced</button>
-        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">Advanced</button>
+      <div class="profile-label">{ui.planOrganize} <button type="button" class="info-toggle" data-tip="plan-tip" aria-controls="plan-tip" aria-label={`${ui.moreInfo} ${ui.planOrganize}`} aria-expanded="false">i</button></div>
+      <div class="info-tip" id="plan-tip" set:html={tips.planOrganize}></div>
+      <div class="radio-group" data-dim="planOrganize" role="group" aria-label={ui.planOrganize}>
+        <button type="button" class="radio-btn" data-val="developing" aria-pressed="false">{isEs ? 'Más apoyo' : 'More support'}</button>
+        <button type="button" class="radio-btn active" data-val="balanced" aria-pressed="true">{isEs ? 'Apoyo base' : 'Baseline'}</button>
+        <button type="button" class="radio-btn" data-val="advanced" aria-pressed="false">{isEs ? 'Más reto' : 'More challenge'}</button>
       </div>
 
     </div>

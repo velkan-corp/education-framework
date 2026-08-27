@@ -1,0 +1,52 @@
+{
+  "name": "14-16 yr old hybrid standard term",
+  "phaseId": "age-14-16",
+  "deliveryMode": "hybrid",
+  "operatingMode": "standard",
+  "rotationWeeks": 16,
+  "guaranteeHours": 20,
+  "protectedSleepHoursPerNight": 9,
+  "protectedUnstructuredHoursPerWeek": 24.3,
+  "guaranteesCovered": [
+    "responsive-relationship",
+    "language-and-communication",
+    "core-academic-entitlement",
+    "physical-system",
+    "collective-capability",
+    "feedback-and-planning",
+    "protected-autonomy",
+    "safety-and-support"
+  ],
+  "alternatives": [
+    { "id": "advanced-mathematics", "poolId": "deep-practice", "hours": 2, "owner": "mathematics-lead" },
+    { "id": "robotics-product", "poolId": "making-projects", "hours": 2, "owner": "robotics-lab-facilitator" },
+    { "id": "community-debate", "poolId": "service-leadership", "hours": 2, "owner": "debate-coach" }
+  ],
+  "intensive": null,
+  "owners": {
+    "capacity": "hybrid-learning-architect",
+    "academic": "shared-academic-lead",
+    "collective": "robotics-and-debate-leads",
+    "credential": "partner-school-credential-lead",
+    "safeguarding": "hybrid-safeguarding-lead"
+  },
+  "evaluation": {
+    "baseline": "Moderate one mathematics solution set, one robotics build, one debate sample, and the actual cross-provider workload.",
+    "termHypothesis": "Three coordinated alternatives will improve reasoning, execution, and collaboration without provider duplication or overload.",
+    "leadingIndicators": [
+      "planned versus actual cross-provider hours",
+      "retained mathematics retrieval",
+      "learner-reported coordination friction"
+    ],
+    "workSamples": [
+      "annotated mathematics solution",
+      "robotics design-build-test record",
+      "debate recording with self-critique"
+    ],
+    "quarterlyReview": {
+      "reviewCadenceWeeks": 12,
+      "decisionOptions": ["continue", "modify", "stop"],
+      "decisionRule": "Continue only when retained skill and work quality improve and no provider duplicates adequate provision."
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { updateAllNavs } from './navigation.js';
+import { formatAgeLabel, uiText } from './uiLocale.js';
 
 let modelMap = null;
 
@@ -48,14 +49,14 @@ function buildModelMap() {
   // Inject a 17-18 entry for every model that doesn't already have one.
   const phase17 = document.querySelector('.phase-content[data-phase="age-17-18"]');
   const phase17Label = phase17?.dataset?.label || '17–18';
-  const layer5Fallback = '<p>Layer 5: Critique — all 19 models are reviewed, stress-tested, and critiqued. The goal: automatic deployment of 12-15 models in conversation and analysis. "All models are wrong; some are useful" — internalized as habit, not slogan.</p>';
+  const layer5Fallback = `<p>${uiText('layer5Fallback')}</p>`;
   map.forEach((data, num) => {
     if (!data.phases.some(p => p.phaseId === 'age-17-18')) {
       data.phases.push({
         phaseId: 'age-17-18',
         phaseLabel: phase17Label,
         content: layer5Fallback,
-        modelName: 'Layer 5: Critique'
+        modelName: uiText('layer5Name')
       });
     }
   });
@@ -86,7 +87,7 @@ function showModelDetail(modelId) {
 
   const header = document.getElementById('models-detail-header');
   const cardBody = card.querySelector('.browse-card-body');
-  const name = cardBody?.querySelector('h1')?.textContent || `Model #${num}`;
+  const name = cardBody?.querySelector('h1')?.textContent || `${uiText('model')} #${num}`;
   header.innerHTML = `
     <div class="browse-detail-title">
       <span class="browse-num">${num}</span>
@@ -96,12 +97,12 @@ function showModelDetail(modelId) {
 
   const timeline = document.getElementById('models-timeline');
   if (!data || data.phases.length === 0) {
-    timeline.innerHTML = '<p class="browse-empty">No teaching content found for this model across age phases.</p>';
+    timeline.innerHTML = `<p class="browse-empty">${uiText('noModelContent')}</p>`;
   } else {
     timeline.innerHTML = data.phases.map(phase => `
       <div class="timeline-phase">
         <div class="timeline-header">
-          <span class="timeline-age">${phase.phaseLabel}</span>
+          <span class="timeline-age">${formatAgeLabel(phase.phaseLabel)}</span>
         </div>
         <div class="timeline-content">
           <p><strong>${phase.modelName}</strong></p>

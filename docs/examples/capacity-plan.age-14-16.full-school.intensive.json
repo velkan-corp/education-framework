@@ -1,0 +1,57 @@
+{
+  "name": "14-16 yr old full-school six-week research intensive",
+  "phaseId": "age-14-16",
+  "deliveryMode": "fullSchool",
+  "operatingMode": "intensive",
+  "rotationWeeks": 6,
+  "guaranteeHours": 25,
+  "protectedSleepHoursPerNight": 9,
+  "protectedUnstructuredHoursPerWeek": 31.5,
+  "guaranteesCovered": [
+    "responsive-relationship",
+    "language-and-communication",
+    "core-academic-entitlement",
+    "physical-system",
+    "collective-capability",
+    "feedback-and-planning",
+    "protected-autonomy",
+    "safety-and-support"
+  ],
+  "alternatives": [
+    { "id": "ensemble-maintenance", "poolId": "music-movement", "hours": 2, "owner": "ensemble-director" }
+  ],
+  "intensive": {
+    "id": "climate-data-research",
+    "poolId": "deep-practice",
+    "hours": 8,
+    "owner": "research-lab-facilitator",
+    "durationWeeks": 6,
+    "exitCriterion": "Present a reproducible analysis and return to standard mode the following week."
+  },
+  "owners": {
+    "capacity": "school-learning-architect",
+    "academic": "school-academic-lead",
+    "collective": "research-lab-facilitator",
+    "credential": "school-credential-lead",
+    "safeguarding": "school-safeguarding-lead"
+  },
+  "evaluation": {
+    "baseline": "Review a prior data analysis, source-evaluation exercise, collaboration sample, and two weeks of ordinary workload.",
+    "termHypothesis": "A six-week research concentration will improve reproducible analysis and scientific communication without eroding guarantees.",
+    "leadingIndicators": [
+      "weekly reproducibility check",
+      "planned versus actual intensive hours",
+      "learner-reported cognitive load and agency"
+    ],
+    "workSamples": [
+      "versioned analysis notebook",
+      "methods critique",
+      "final presentation and questions"
+    ],
+    "quarterlyReview": {
+      "reviewCadenceWeeks": 12,
+      "decisionOptions": ["continue", "modify", "stop"],
+      "decisionRule": "Exit after six weeks; retain the method only if transfer is visible and guarantees remained intact."
+    }
+  }
+}

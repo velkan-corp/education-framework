@@ -122,6 +122,16 @@ export const UNIVERSE_KIND_LABELS: Record<(typeof UNIVERSE_KINDS)[number], strin
   'knowledge-domain': 'Knowledge Domain',
 };
 
+export const UNIVERSE_KIND_LABELS_ES: Record<(typeof UNIVERSE_KINDS)[number], string> = {
+  'fictional-universe': 'Universo Ficticio',
+  'creator-canon': 'Canon de Autor',
+  'strategy-system': 'Sistema de Estrategia',
+  'maker-system': 'Sistema de Creación',
+  'literary-canon': 'Canon Literario',
+  'practice-domain': 'Dominio de Práctica',
+  'knowledge-domain': 'Dominio de Conocimiento',
+};
+
 export const LANGUAGE_LABELS: Record<(typeof UNIVERSE_LANGUAGES)[number], string> = {
   english: 'English',
   spanish: 'Spanish',
@@ -133,6 +143,19 @@ export const LANGUAGE_LABELS: Record<(typeof UNIVERSE_LANGUAGES)[number], string
   polish: 'Polish',
   russian: 'Russian',
   swedish: 'Swedish',
+};
+
+export const LANGUAGE_LABELS_ES: Record<(typeof UNIVERSE_LANGUAGES)[number], string> = {
+  english: 'Inglés',
+  spanish: 'Español',
+  french: 'Francés',
+  japanese: 'Japonés',
+  chinese: 'Chino',
+  german: 'Alemán',
+  greek: 'Griego',
+  polish: 'Polaco',
+  russian: 'Ruso',
+  swedish: 'Sueco',
 };
 
 export const TARGET_LABELS: Record<(typeof TARGET_IDS)[number], string> = {
@@ -147,6 +170,20 @@ export const TARGET_LABELS: Record<(typeof TARGET_IDS)[number], string> = {
   'physical-system-mastery': 'Physical System Mastery',
   adaptability: 'Adaptability',
   'creative-production': 'Creative Production',
+};
+
+export const TARGET_LABELS_ES: Record<(typeof TARGET_IDS)[number], string> = {
+  'resilient-self-efficacy': 'Autoeficacia Resiliente',
+  agency: 'Agencia y Razonamiento Moral',
+  'self-awareness': 'Autoconciencia y Autorregulación',
+  'deep-curiosity': 'Curiosidad Profunda',
+  'first-principles-reasoning': 'Razonamiento desde Primeros Principios',
+  'communication-mastery': 'Dominio de la Comunicación',
+  'relational-intelligence': 'Inteligencia Relacional',
+  'compassion-kindness': 'Compasión y Amabilidad',
+  'physical-system-mastery': 'Dominio del Sistema Físico',
+  adaptability: 'Adaptabilidad',
+  'creative-production': 'Producción Creativa',
 };
 
 export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {
@@ -171,11 +208,40 @@ export const MODEL_LABELS: Record<(typeof MODEL_IDS)[number], string> = {
   scale: 'Scale',
 };
 
+export const MODEL_LABELS_ES: Record<(typeof MODEL_IDS)[number], string> = {
+  'cause-effect': 'Causa y Efecto',
+  'feedback-loops': 'Bucles de Feedback',
+  incentives: 'Incentivos',
+  inversion: 'Inversión',
+  'maps-not-territory': 'Mapa ≠ Territorio',
+  compounding: 'Interés Compuesto',
+  probability: 'Probabilidad',
+  emergence: 'Propiedades Emergentes',
+  'complementary-opposites': 'Opuestos Complementarios',
+  'via-negativa': 'Vía Negativa',
+  antifragility: 'Antifragilidad',
+  'game-theory': 'Teoría de Juegos',
+  'model-failure': 'Fallo del Modelo',
+  'opportunity-cost': 'Coste de Oportunidad',
+  'cognitive-biases': 'Sesgos Cognitivos',
+  'power-structures': 'Estructuras de Poder',
+  leverage: 'Apalancamiento',
+  'skin-in-the-game': 'Piel en el Juego',
+  scale: 'Escala',
+};
+
 export const INTENSITY_LABELS: Record<(typeof INTENSITY_LEVELS)[number], string> = {
   low: 'Low Intensity',
   medium: 'Medium Intensity',
   high: 'High Intensity',
   extreme: 'Extreme Intensity',
+};
+
+export const INTENSITY_LABELS_ES: Record<(typeof INTENSITY_LEVELS)[number], string> = {
+  low: 'Intensidad Baja',
+  medium: 'Intensidad Media',
+  high: 'Intensidad Alta',
+  extreme: 'Intensidad Extrema',
 };
 
 export const RISK_LABELS: Record<(typeof RISK_FLAGS)[number], string> = {
@@ -187,10 +253,25 @@ export const RISK_LABELS: Record<(typeof RISK_FLAGS)[number], string> = {
   coercion: 'Coercion',
 };
 
+export const RISK_LABELS_ES: Record<(typeof RISK_FLAGS)[number], string> = {
+  violence: 'Violencia',
+  sexuality: 'Sexualidad',
+  horror: 'Terror',
+  despair: 'Desesperanza',
+  manipulation: 'Manipulación',
+  coercion: 'Coacción',
+};
+
 export const SOCIAL_VALUE_LABELS: Record<(typeof SOCIAL_VALUE_LEVELS)[number], string> = {
   niche: 'Niche Social Value',
   bridge: 'Bridge Social Value',
   broad: 'Broad Social Value',
+};
+
+export const SOCIAL_VALUE_LABELS_ES: Record<(typeof SOCIAL_VALUE_LEVELS)[number], string> = {
+  niche: 'Valor Social de Nicho',
+  bridge: 'Valor Social de Puente',
+  broad: 'Valor Social Amplio',
 };
 
 export const ENGAGEMENT_MODE_LABELS: Record<(typeof ENGAGEMENT_MODES)[number], string> = {
@@ -199,4 +280,12 @@ export const ENGAGEMENT_MODE_LABELS: Record<(typeof ENGAGEMENT_MODES)[number], s
   make: 'Make',
   dim: 'Full Engagement Cycle',
   critique: 'Critique',
+};
+
+export const ENGAGEMENT_MODE_LABELS_ES: Record<(typeof ENGAGEMENT_MODES)[number], string> = {
+  absorb: 'Absorber',
+  interrogate: 'Interrogar',
+  make: 'Crear',
+  dim: 'Ciclo Completo de Implicación',
+  critique: 'Criticar',
 };

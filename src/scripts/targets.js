@@ -1,4 +1,5 @@
 import { updateAllNavs } from './navigation.js';
+import { formatAgeLabel, uiText } from './uiLocale.js';
 
 let targetMap = null;
 
@@ -10,45 +11,50 @@ function buildTargetMap() {
     const phaseEl = document.querySelector(`.phase-content[data-phase="${phaseId}"]`);
     if (!phaseEl) return;
     const phaseLabel = phaseEl.dataset.label;
-    const cards = phaseEl.querySelectorAll('.target-grid .target-card');
+    // Only explicit Activity Map grids represent the eleven framework targets.
+    // Other numbered grids (for example, weekly time allocations at ages 14-18)
+    // deliberately use different semantics and must never enter this timeline.
+    const cards = phaseEl.querySelectorAll('.target-grid[data-target-map] .target-card');
+    const seenNumbers = new Set();
 
     cards.forEach(card => {
       const numEl = card.querySelector('.target-num');
-      const h4 = card.querySelector('h4');
-      const p = card.querySelector('p');
-      if (!numEl || !h4) return;
+      const title = card.querySelector('.target-card-title, h4');
+      const paragraphs = card.querySelectorAll('p');
+      if (!numEl || !title) return;
 
       const num = parseInt(numEl.textContent);
-      const name = h4.textContent.trim();
-      const desc = p ? p.innerHTML : '';
-      const isSeed = name.toLowerCase().includes('seed');
+      if (!Number.isInteger(num) || num < 1 || num > 11 || seenNumbers.has(num)) {
+        console.error(`Invalid target map entry in ${phaseId}: target ${numEl.textContent}`);
+        return;
+      }
+      seenNumbers.add(num);
+      const name = title.textContent.trim().replace(/[.!?]+$/u, '');
+      const desc = paragraphs.length > 1 ? paragraphs[paragraphs.length - 1].innerHTML : '';
+      const isSeed = /\b(?:seed|semilla)\b/iu.test(name);
+      const canonicalName = name
+        .replace(/^\s*semilla\s+de\s+/iu, '')
+        .replace(/\s+seed\s*$/iu, '')
+        .trim();
 
       if (!map.has(num)) {
-        map.set(num, { name: name.replace(/\s*seed\s*/i, ''), phases: [] });
+        map.set(num, { name: canonicalName, phases: [] });
       }
       map.get(num).phases.push({ phaseId, phaseLabel, name, description: desc, isSeed });
     });
   });
 
-  // Phases 14-16 and 17-18 may not have explicit target grids.
-  // Add placeholder entries so the timeline shows all 7 phases.
-  const allPhases = ['age-0-1', 'age-1-3', 'age-4-7', 'age-8-10', 'age-11-13', 'age-14-16', 'age-17-18'];
+  // Every age phase has an explicit eleven-target progression map. Source and
+  // rendered-build audits enforce that invariant; this runtime check makes a
+  // malformed partial page visible during development instead of fabricating
+  // a placeholder that could be mistaken for curriculum content.
+  const allPhases = agePhases;
   map.forEach((data, num) => {
     const existing = new Set(data.phases.map(p => p.phaseId));
-    allPhases.forEach(phaseId => {
-      if (!existing.has(phaseId)) {
-        const phaseEl = document.querySelector(`.phase-content[data-phase="${phaseId}"]`);
-        if (phaseEl) {
-          data.phases.push({
-            phaseId,
-            phaseLabel: phaseEl.dataset.label,
-            name: data.name,
-            description: '<em>Target activity map not yet written for this phase. See the phase page for related content in domain sections.</em>',
-            isSeed: false
-          });
-        }
-      }
-    });
+    const missing = allPhases.filter((phaseId) => !existing.has(phaseId));
+    if (missing.length > 0) {
+      console.error(`Target ${num} is missing explicit phase content: ${missing.join(', ')}`);
+    }
     // Sort phases by age order
     const order = Object.fromEntries(allPhases.map((id, i) => [id, i]));
     data.phases.sort((a, b) => (order[a.phaseId] ?? 99) - (order[b.phaseId] ?? 99));
@@ -86,8 +92,8 @@ function showTargetDetail(targetId) {
   timeline.innerHTML = data.phases.map(phase => `
     <div class="timeline-phase">
       <div class="timeline-header">
-        <span class="timeline-age">${phase.phaseLabel}</span>
-        ${phase.isSeed ? '<span class="seed-badge">Seed</span>' : '<span class="full-badge">Full</span>'}
+        <span class="timeline-age">${formatAgeLabel(phase.phaseLabel)}</span>
+        ${phase.isSeed ? `<span class="seed-badge">${uiText('seed')}</span>` : `<span class="full-badge">${uiText('full')}</span>`}
       </div>
       <div class="timeline-content">
         <h4>${phase.name}</h4>

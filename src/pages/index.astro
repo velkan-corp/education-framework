@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import '../styles/global.css';
 import Topbar from '../components/Topbar.astro';
 import Home from '../components/Home.astro';
@@ -17,7 +17,7 @@ const universes = await getCollection('universes');
 // Pre-render all phase content
 const renderedPhases = await Promise.all(
   phases.map(async (phase) => {
-    const { Content } = await phase.render();
+    const { Content } = await render(phase);
     return { ...phase, Content };
   })
 );
@@ -109,15 +109,6 @@ const agePhaseCount = phases.filter(p => p.data.phaseId !== 'framework').length;
 </div>
 
 <FloatingPanel />
-
-<!-- Mobile search overlay -->
-<div id="mobile-search-overlay">
-  <div id="mobile-search-bar">
-    <input id="mobile-search-input" type="text" placeholder="Search..." autocomplete="off">
-    <button id="mobile-search-close" type="button" aria-label="Close search">&times;</button>
-  </div>
-  <div id="mobile-search-results"></div>
-</div>
 
 <script src="../scripts/app.js"></script>
 </body>

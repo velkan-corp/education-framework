@@ -1,0 +1,312 @@
+{
+  "version": 2,
+  "domainDefaults": {
+    "tier": "foundational",
+    "requiredBy": "18",
+    "substitution": "within-domain-only"
+  },
+  "contracts": {
+    "nonSubstitution": {
+      "en": "Choice exists within each domain; completing one domain never completes another.",
+      "es": "La elección existe dentro de cada dominio; completar un dominio nunca completa otro."
+    }
+  },
+  "domains": [
+    "physical-exhaustion",
+    "strength-load",
+    "adverse-weather",
+    "austere-living",
+    "digital-abstinence",
+    "solitude-separation-navigation",
+    "material-constraint",
+    "real-responsibility",
+    "low-status-entry",
+    "public-failure-rejection",
+    "service-reality",
+    "moral-courage-integrity"
+  ],
+  "phases": [
+    {
+      "phaseId": "age-4-7",
+      "stage": "substrate",
+      "cadenceByDomain": {
+        "physical-exhaustion": "weekly",
+        "strength-load": "weekly",
+        "adverse-weather": "weekly",
+        "austere-living": "annual",
+        "digital-abstinence": "daily+weekly+quarterly",
+        "solitude-separation-navigation": "annual",
+        "material-constraint": "monthly",
+        "real-responsibility": "daily",
+        "low-status-entry": "annual",
+        "public-failure-rejection": "annual",
+        "service-reality": "monthly",
+        "moral-courage-integrity": "ongoing"
+      },
+      "requirementsByDomain": {}
+    },
+    {
+      "phaseId": "age-8-10",
+      "stage": "practice",
+      "cadenceByDomain": {
+        "physical-exhaustion": "termly",
+        "strength-load": "weekly",
+        "adverse-weather": "monthly",
+        "austere-living": "annual",
+        "digital-abstinence": "monthly-24h+annual-48h",
+        "solitude-separation-navigation": "annual",
+        "material-constraint": "quarterly",
+        "real-responsibility": "weekly",
+        "low-status-entry": "annual",
+        "public-failure-rejection": "annual",
+        "service-reality": "monthly",
+        "moral-courage-integrity": "ongoing"
+      },
+      "minimumAttributesByDomain": {
+        "digital-abstinence": {
+          "data-min-hours": "48"
+        }
+      },
+      "requirementsByDomain": {
+        "digital-abstinence": [
+          {
+            "id": "monthly-24h",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 12,
+            "duration": {
+              "minimum": 24,
+              "unit": "hours"
+            }
+          },
+          {
+            "id": "annual-48h",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 1,
+            "duration": {
+              "minimum": 48,
+              "unit": "hours"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "phaseId": "age-11-13",
+      "stage": "consequential",
+      "cadenceByDomain": {
+        "physical-exhaustion": "annual",
+        "strength-load": "weekly",
+        "adverse-weather": "annual",
+        "austere-living": "annual",
+        "digital-abstinence": "semiannual-48h",
+        "solitude-separation-navigation": "annual",
+        "material-constraint": "quarterly",
+        "real-responsibility": "weekly",
+        "low-status-entry": "annual",
+        "public-failure-rejection": "annual",
+        "service-reality": "monthly",
+        "moral-courage-integrity": "ongoing"
+      },
+      "minimumAttributesByDomain": {
+        "digital-abstinence": {
+          "data-min-hours": "48"
+        },
+        "solitude-separation-navigation": {
+          "data-min-days": "3"
+        }
+      },
+      "requirementsByDomain": {
+        "digital-abstinence": [
+          {
+            "id": "semiannual-48h",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 2,
+            "duration": {
+              "minimum": 48,
+              "unit": "hours"
+            }
+          }
+        ],
+        "solitude-separation-navigation": [
+          {
+            "id": "annual-three-day-separation",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 1,
+            "duration": {
+              "minimum": 3,
+              "unit": "days"
+            }
+          }
+        ],
+        "moral-courage-integrity": [
+          {
+            "id": "annual-natural-case-evidence",
+            "type": "evidence",
+            "minimumRecordsPerPlanYear": 1,
+            "caseSource": "naturally-occurring",
+            "manufacturedCasesForbidden": true
+          }
+        ]
+      }
+    },
+    {
+      "phaseId": "age-14-16",
+      "stage": "autonomous",
+      "cadenceByDomain": {
+        "physical-exhaustion": "annual",
+        "strength-load": "weekly",
+        "adverse-weather": "annual",
+        "austere-living": "annual",
+        "digital-abstinence": "quarterly-48h+annual-5-7d",
+        "solitude-separation-navigation": "once-per-phase",
+        "material-constraint": "monthly",
+        "real-responsibility": "sustained",
+        "low-status-entry": "annual",
+        "public-failure-rejection": "annual",
+        "service-reality": "sustained",
+        "moral-courage-integrity": "ongoing"
+      },
+      "minimumAttributesByDomain": {
+        "service-reality": {
+          "data-min-months": "6"
+        }
+      },
+      "requirementsByDomain": {
+        "digital-abstinence": [
+          {
+            "id": "quarterly-48h",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 4,
+            "duration": {
+              "minimum": 48,
+              "unit": "hours"
+            }
+          },
+          {
+            "id": "annual-5-7d",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 1,
+            "duration": {
+              "minimum": 5,
+              "maximum": 7,
+              "unit": "days"
+            }
+          }
+        ],
+        "solitude-separation-navigation": [
+          {
+            "id": "solo-wilderness-overnight-by-16",
+            "type": "milestone",
+            "deadlineAge": 16,
+            "duration": {
+              "minimum": 1,
+              "unit": "nights"
+            },
+            "setting": "wilderness",
+            "communicationMode": "emergency-only"
+          }
+        ],
+        "service-reality": [
+          {
+            "id": "minimum-six-month-service",
+            "type": "sustained-duration",
+            "duration": {
+              "minimum": 6,
+              "unit": "months"
+            }
+          }
+        ],
+        "moral-courage-integrity": [
+          {
+            "id": "annual-natural-case-evidence",
+            "type": "evidence",
+            "minimumRecordsPerPlanYear": 1,
+            "caseSource": "naturally-occurring",
+            "manufacturedCasesForbidden": true
+          }
+        ]
+      }
+    },
+    {
+      "phaseId": "age-17-18",
+      "stage": "completion",
+      "cadenceByDomain": {
+        "physical-exhaustion": "annual",
+        "strength-load": "weekly",
+        "adverse-weather": "once-by-18",
+        "austere-living": "once-by-18",
+        "digital-abstinence": "annual-7d+recurring-24-48h",
+        "solitude-separation-navigation": "once-by-18",
+        "material-constraint": "monthly",
+        "real-responsibility": "sustained",
+        "low-status-entry": "once-per-phase",
+        "public-failure-rejection": "annual",
+        "service-reality": "sustained",
+        "moral-courage-integrity": "ongoing"
+      },
+      "minimumAttributesByDomain": {
+        "digital-abstinence": {
+          "data-min-days": "7"
+        },
+        "solitude-separation-navigation": {
+          "data-min-days": "30"
+        }
+      },
+      "requirementsByDomain": {
+        "digital-abstinence": [
+          {
+            "id": "recurring-24-48h",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 2,
+            "duration": {
+              "minimum": 24,
+              "maximum": 48,
+              "unit": "hours"
+            }
+          },
+          {
+            "id": "annual-7d",
+            "type": "recurring-duration",
+            "minimumOccurrencesPerPlanYear": 1,
+            "duration": {
+              "minimum": 7,
+              "unit": "days"
+            }
+          }
+        ],
+        "solitude-separation-navigation": [
+          {
+            "id": "independent-month-by-18",
+            "type": "milestone",
+            "deadlineAge": 18,
+            "duration": {
+              "minimum": 30,
+              "unit": "days"
+            },
+            "setting": "away-from-routine-parental-management",
+            "communicationMode": "emergency-and-scheduled-check-in"
+          }
+        ],
+        "service-reality": [
+          {
+            "id": "minimum-six-month-service",
+            "type": "sustained-duration",
+            "duration": {
+              "minimum": 6,
+              "unit": "months"
+            }
+          }
+        ],
+        "moral-courage-integrity": [
+          {
+            "id": "annual-natural-case-evidence",
+            "type": "evidence",
+            "minimumRecordsPerPlanYear": 1,
+            "caseSource": "naturally-occurring",
+            "manufacturedCasesForbidden": true
+          }
+        ]
+      }
+    }
+  ]
+}

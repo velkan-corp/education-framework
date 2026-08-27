@@ -1,0 +1,50 @@
+{
+  "name": "14-16 yr old overlay standard term",
+  "phaseId": "age-14-16",
+  "deliveryMode": "overlay",
+  "operatingMode": "standard",
+  "rotationWeeks": 16,
+  "guaranteeHours": 5,
+  "protectedSleepHoursPerNight": 9,
+  "protectedUnstructuredHoursPerWeek": 18.9,
+  "guaranteesCovered": [
+    "responsive-relationship",
+    "language-and-communication",
+    "core-academic-entitlement",
+    "physical-system",
+    "collective-capability",
+    "feedback-and-planning",
+    "protected-autonomy",
+    "safety-and-support"
+  ],
+  "alternatives": [
+    { "id": "monthly-published-essay", "poolId": "culture-inquiry", "hours": 1, "owner": "writing-tutor" },
+    { "id": "open-source-product", "poolId": "making-projects", "hours": 1, "owner": "product-mentor" }
+  ],
+  "intensive": null,
+  "owners": {
+    "capacity": "family-learning-architect",
+    "academic": "external-school-academic-lead",
+    "collective": "debate-coach",
+    "credential": "external-school-registrar",
+    "safeguarding": "parent-and-school-safeguarding-lead"
+  },
+  "evaluation": {
+    "baseline": "Review one prior argument, one prior product increment, and the previous month's actual weekly load.",
+    "termHypothesis": "Two bounded alternatives will improve revision and execution without degrading protected capacity.",
+    "leadingIndicators": [
+      "planned versus actual directed hours",
+      "protected sleep and unstructured time",
+      "one weekly learner reflection on challenge and joy"
+    ],
+    "workSamples": [
+      "monthly essay with revision history",
+      "product demonstration and changelog"
+    ],
+    "quarterlyReview": {
+      "reviewCadenceWeeks": 12,
+      "decisionOptions": ["continue", "modify", "stop"],
+      "decisionRule": "Continue only if work quality or transfer improves without sustained capacity or wellbeing cost."
+    }
+  }
+}

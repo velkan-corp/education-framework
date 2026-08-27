@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 2,
+  "name": "Illustrative 14–16 yr old hardship plan",
+  "phaseId": "age-14-16",
+  "nonSubstitutionAccepted": true,
+  "planWindow": {
+    "start": "2026-09-01",
+    "end": "2027-08-31",
+    "owner": "family-learning-architect",
+    "reviewCadence": "Review the ledger on the first Sunday of each month and after every formal episode."
+  },
+  "domains": [
+    {
+      "domainId": "physical-exhaustion",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "annual",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "physical-exhaustion",
+      "substitutesFor": [],
+      "route": "A supervised indoor rowing-ergometer test provides a controllable endpoint and immediate extraction without environmental exposure.",
+      "owner": "qualified-conditioning-coach",
+      "verifier": "qualified-conditioning-coach",
+      "minimumStimulus": "After eight weeks of progressive preparation, continue to the predeclared technical-failure endpoint while remaining medically stable and responsive.",
+      "prerequisites": "Complete the health review, technique instruction, progressive preparation block, baseline trial, taper, written stop criteria, and recovery allocation before the formal event.",
+      "evidencePlan": "Retain the preparation log, signed protocol, performance trace, coach observation, stop decision, recovery record, and learner after-action review.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "Preparation from 2026-09-14 through 2026-11-08; formal event on 2026-11-14."
+        ]
+      },
+      "displacementPlan": "The formal event replaces that weekend's strength session and all optional intensives; it is not added to the normal load.",
+      "emergencyOrEscalationRoute": "The qualified coach has immediate control of the machine, staffed first-aid support, emergency calling, guardian contact, and a direct exit from the event.",
+      "recoveryPlan": "Provide an immediate cool-down, food, fluids and adult observation, followed by forty-eight hours without intense training and a readiness check before resumption.",
+      "oneStressorProtocol": {
+        "controlled": true,
+        "readilyExtractable": true,
+        "emergencyRoute": "The coach stops the machine immediately; the participant steps away into the staffed venue, where first-aid equipment and emergency calling are available.",
+        "stopCriteria": [
+          "Stop immediately for chest pain, faintness, confusion, or abnormal breathing.",
+          "Stop when technique degrades beyond the predeclared safe threshold despite one cue.",
+          "Stop for equipment failure, coach concern, or the participant's unconditional withdrawal signal."
+        ],
+        "preparation": "Complete eight progressive weeks with technique instruction, baseline testing, health review, taper, sleep protection, and no concurrent intensive block.",
+        "recovery": "Record symptoms and recovery at ten minutes, two hours, the following morning, and forty-eight hours before clearing normal training.",
+        "coCreditDomains": []
+      }
+    },
+    {
+      "domainId": "strength-load",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "weekly",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "strength-load",
+      "substitutesFor": [],
+      "route": "Two coached resistance sessions each week culminate in a useful-load capstone supporting a community event setup and breakdown.",
+      "owner": "qualified-conditioning-coach",
+      "verifier": "community-event-operations-supervisor",
+      "minimumStimulus": "Complete progressive technique-led training twice weekly and one four-hour manual-work capstone with age-appropriate loads and shared responsibility.",
+      "prerequisites": "Demonstrate safe movement technique, progressive load tolerance, equipment competence, task briefing, and understanding of the technical-failure stop rule before the capstone.",
+      "evidencePlan": "Maintain session attendance, programmed loads, technique notes, capstone task records, supervisor verification, and the learner's fatigue and recovery notes.",
+      "schedule": {
+        "kind": "recurring",
+        "windows": [
+          "Tuesdays and Fridays throughout term; community-event capstone during 2027-05-15 weekend."
+        ]
+      },
+      "displacementPlan": "Each strength session occupies an existing physical-education block; the capstone replaces that weekend's ordinary workout and optional project time.",
+      "emergencyOrEscalationRoute": "The coach or operations supervisor stops unsafe work, removes the load, provides first aid, contacts the guardian, and escalates acute injury through the venue protocol.",
+      "recoveryPlan": "Protect at least forty-eight hours between heavy sessions, scale load when technique deteriorates, and schedule a lighter week after the capstone.",
+      "scheduleNotes": "Training is paused during illness, acute pain, or the formal physical-exhaustion recovery window."
+    },
+    {
+      "domainId": "adverse-weather",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "annual",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "adverse-weather",
+      "substitutesFor": [],
+      "route": "A staffed winter day hike uses genuine cold, rain, and wind while preserving forecast-based cancellation, marked exits, shelter, and communication.",
+      "owner": "qualified-mountain-leader",
+      "verifier": "qualified-mountain-leader",
+      "minimumStimulus": "Plan and complete one substantial all-weather outing while independently managing layers, pace, equipment, route decisions, and a documented turnaround threshold.",
+      "prerequisites": "Demonstrate clothing and packing competence, forecast interpretation, route knowledge, communication checks, turnaround rules, and a successful lower-consequence practice outing.",
+      "evidencePlan": "Archive the forecast, route card, packing check, leader observation, actual conditions, decisions made, and a post-event equipment and judgment review.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "Primary weather window 2027-02-06; reserve windows 2027-02-13 and 2027-02-20."
+        ]
+      },
+      "displacementPlan": "The outing replaces normal weekend sport and project work; it is cancelled or moved when conditions cross the leader's danger boundary.",
+      "emergencyOrEscalationRoute": "The leader retains group communication, marked retreat routes, nearby shelter, guardian contact, emergency-service access, and authority to cancel or extract immediately.",
+      "recoveryPlan": "Return to a warm base, change into dry clothing, eat and hydrate, inspect for cold injury, and preserve the following morning for ordinary low-load activity.",
+      "scheduleNotes": "This event is separated from the formal physical-exhaustion event and does not claim physical-exhaustion credit."
+    },
+    {
+      "domainId": "austere-living",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "annual",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "austere-living",
+      "substitutesFor": [],
+      "route": "A four-night basic field placement uses tent or floor sleeping, simple food, shared hygiene facilities, and personal equipment ownership without removing necessities.",
+      "owner": "field-placement-leader",
+      "verifier": "field-placement-leader",
+      "minimumStimulus": "Complete four consecutive basic nights while personally managing sleeping place, simple meals, water, hygiene, equipment, morning routines, and cleanup.",
+      "prerequisites": "Confirm adequate shelter, insulation, water, food, hygiene, medication, safeguarding, equipment skills, duty allocation, communication, and ordinary sleep opportunity before departure.",
+      "evidencePlan": "Keep a packing list, duty roster, daily self-management log, equipment condition record, leader verification, and reflection on comfort, order, and adaptation.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "Field placement from 2027-04-05 through 2027-04-09 during the school holiday."
+        ]
+      },
+      "displacementPlan": "The placement replaces holiday enrichment and ordinary training; no academic catch-up or separate intensive is scheduled during those dates.",
+      "emergencyOrEscalationRoute": "The placement leader retains staffed supervision, guardian contact, transport, first aid, safe indoor fallback, and authority to end the route if essentials or safeguarding fail.",
+      "recoveryPlan": "Reserve the return evening for food, washing, equipment care, and normal sleep, with no early alarm or demanding training the next morning.",
+      "scheduleNotes": "Shelter, safe water, sufficient food, warmth, hygiene, safeguarding, and emergency access remain available."
+    },
+    {
+      "domainId": "digital-abstinence",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "quarterly-48h+annual-5-7d",
+      "minimumAttributes": {},
+      "requirementCommitments": [
+        {
+          "requirementId": "quarterly-48h",
+          "plannedOccurrencesPerYear": 4,
+          "plannedDuration": {
+            "value": 48,
+            "unit": "hours"
+          }
+        },
+        {
+          "requirementId": "annual-5-7d",
+          "plannedOccurrencesPerYear": 1,
+          "plannedDuration": {
+            "value": 7,
+            "unit": "days"
+          }
+        }
+      ],
+      "creditDomain": "digital-abstinence",
+      "substitutesFor": [],
+      "route": "Personal devices are sealed with an adult custodian while a basic emergency phone remains available for health, safeguarding, and transport only.",
+      "owner": "family-digital-abstinence-custodian",
+      "verifier": "family-digital-abstinence-custodian",
+      "minimumStimulus": "Complete one verified forty-eight-hour abstinence period each quarter and one continuous seven-day period without discretionary personal-device access.",
+      "prerequisites": "Prepare analogue work, maps, transport details, essential contacts, authentication contingencies, the sealed emergency device, and an explicit list of permitted emergency uses.",
+      "evidencePlan": "Record device handover and return, emergency exceptions, planned analogue activities, sleep and attention observations, urges, lapses, and post-period conclusions.",
+      "schedule": {
+        "kind": "recurring",
+        "windows": [
+          "Forty-eight-hour periods on 2026-10-09, 2027-01-15, 2027-04-16, and 2027-07-09; seven-day period beginning 2027-08-02."
+        ]
+      },
+      "displacementPlan": "Offline materials and transport details are prepared first; messages and entertainment are deferred, while a separate emergency channel stays active.",
+      "emergencyOrEscalationRoute": "The custodian keeps the ordinary devices and supplies a basic emergency phone for health, safeguarding, transport disruption, or urgent family contact without recreational access.",
+      "recoveryPlan": "Re-entry begins with essential coordination only, followed by a deliberate review before restoring optional applications or notification settings.",
+      "scheduleNotes": "A breach is recorded honestly and the remaining interval continues; the evidence is not converted into punishment."
+    },
+    {
+      "domainId": "solitude-separation-navigation",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "once-per-phase",
+      "minimumAttributes": {},
+      "requirementCommitments": [
+        {
+          "requirementId": "solo-wilderness-overnight-by-16",
+          "plannedOccurrences": 1,
+          "plannedDuration": {
+            "value": 1,
+            "unit": "nights"
+          },
+          "plannedCompletionAge": 16,
+          "setting": "wilderness",
+          "communicationMode": "emergency-only"
+        }
+      ],
+      "creditDomain": "solitude-separation-navigation",
+      "substitutesFor": [],
+      "route": "A verified seven-day residential programme precedes a prepared solo overnight in a known controlled area with sealed emergency communication.",
+      "owner": "qualified-separation-and-navigation-lead",
+      "verifier": "residential-host-and-qualified-navigation-lead",
+      "minimumStimulus": "Complete seven days without routine parental management and, when readiness criteria are met, one solo overnight with self-managed route, shelter, food, and decisions.",
+      "prerequisites": "Pass programme vetting, staged separation, navigation, shelter, food, first-aid, boundary, check-in, sealed-device, extraction, weather, and demonstrated-readiness gates before the solo overnight.",
+      "evidencePlan": "Retain readiness checks, route and boundary card, sealed emergency device log, host verification, self-management log, decisions, and after-action interview.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "Residential programme 2027-06-21 through 2027-06-28; solo overnight reserve window in July 2027."
+        ]
+      },
+      "displacementPlan": "The residential week replaces ordinary school and enrichment; the overnight replaces weekend plans and occurs only after explicit readiness review.",
+      "emergencyOrEscalationRoute": "The learner carries sealed emergency communication; the lead knows the exact zone and extraction trigger, remains reachable, and activates the agreed search or safeguarding protocol when required.",
+      "recoveryPlan": "Provide an unhurried debrief and normal sleep after each episode, with contact restored without interrogation, ridicule, or immediate additional demands.",
+      "scheduleNotes": "The solo overnight is cancelled when health, location, weather, safeguarding, or demonstrated readiness is inadequate."
+    },
+    {
+      "domainId": "material-constraint",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "monthly",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "material-constraint",
+      "substitutesFor": [],
+      "route": "A fixed monthly discretionary budget covers clothing choices, social spending, and personal items, with a sufficient predetermined fallback but no optional top-up.",
+      "owner": "family-budget-ledger-reviewer",
+      "verifier": "family-budget-ledger-reviewer",
+      "minimumStimulus": "Allocate, track, and reconcile the fixed amount every month for six consecutive months while accepting real trade-offs and repairing avoidable losses.",
+      "prerequisites": "Agree the fixed amount, discretionary categories, adequate essential fallback, reset date, transaction method, privacy boundary, and conditions that are emergencies rather than bailouts.",
+      "evidencePlan": "Keep the opening allocation, dated transactions, balance, denied or delayed preferences, repairs, month-end reconciliation, and one decision reflection each month.",
+      "schedule": {
+        "kind": "recurring",
+        "windows": [
+          "Budget months run from 2026-09-01 through 2027-02-28, reconciled on each month's final day."
+        ]
+      },
+      "displacementPlan": "No discretionary top-up is supplied; depleted optional categories remain unavailable until reset, while food, safety, education, and essential participation retain adequate provision.",
+      "emergencyOrEscalationRoute": "The reviewer immediately restores access to medication, adequate food, safe transport, required clothing, education, or safeguarding needs while leaving discretionary consequences intact.",
+      "recoveryPlan": "The month-end review restores the next agreed allocation without debt carryover unless a prior written purchase plan explicitly included repayment.",
+      "scheduleNotes": "Constraint applies to preferences, never medication, adequate food, safe transport, required clothing, or educational access."
+    },
+    {
+      "domainId": "real-responsibility",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "sustained",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "real-responsibility",
+      "substitutesFor": [],
+      "route": "A lawful recurring production role makes the learner responsible for equipment preparation, deadline tracking, delivery, and repair under an external supervisor.",
+      "owner": "external-production-supervisor",
+      "verifier": "external-production-supervisor",
+      "minimumStimulus": "Complete at least eighty hours across twelve weeks in a role where another party relies on punctual competent output and errors require direct repair.",
+      "prerequisites": "Confirm lawful age-appropriate duties, provider vetting, safeguarding, working hours, task training, feedback route, transport, insurance where applicable, and the adult's non-delegable responsibilities.",
+      "evidencePlan": "Collect attendance, assigned duties, delivered outputs, missed commitments, repairs, supervisor feedback at midpoint and completion, and the learner's final responsibility review.",
+      "schedule": {
+        "kind": "sustained",
+        "windows": [
+          "Four-hour Wednesday and Saturday shifts from 2027-01-11 through 2027-04-16, adjusted to reach eighty verified hours."
+        ]
+      },
+      "displacementPlan": "Shifts replace one elective and one optional weekend block; missed schoolwork is not silently moved into protected sleep or recovery time.",
+      "emergencyOrEscalationRoute": "The learner can stop unsafe or unlawful work and contact the safeguarding owner; the supervisor and guardian retain escalation to the provider, regulator, emergency service, or withdrawal route.",
+      "recoveryPlan": "Maintain one shift-free weekend each month and reduce optional load after unusually demanding shifts; work ends if lawful safeguarding conditions fail.",
+      "scheduleNotes": "The external supervisor, not a parent, judges punctuality, quality, communication, and repair."
+    },
+    {
+      "domainId": "low-status-entry",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "annual",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "low-status-entry",
+      "substitutesFor": [],
+      "route": "The learner joins an unfamiliar community studio as a novice, receives ordinary entry-level duties, and earns increased trust without parental introductions or privilege.",
+      "owner": "external-studio-placement-supervisor",
+      "verifier": "external-studio-placement-supervisor",
+      "minimumStimulus": "Attend consistently for six weeks, perform unglamorous shared tasks, request correction, demonstrate improving competence, and earn one responsibility not granted initially.",
+      "prerequisites": "Vet the organisation and adults, define ordinary entry-level duties, safeguarding and complaint channels, attendance, transport, feedback, exit conditions, and the prohibition on parental privilege or hazing.",
+      "evidencePlan": "Record attendance, initial duty level, corrections received, useful contributions, responsibility progression, supervisor judgment, and reflection on status and humility.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "Weekly studio placement from 2026-10-03 through 2026-11-14."
+        ]
+      },
+      "displacementPlan": "The placement occupies an existing elective block and one home chore is reassigned on placement days; no parent negotiates preferred work or accelerated status.",
+      "emergencyOrEscalationRoute": "The learner may contact the safeguarding owner or leave for abuse, hazing, discrimination, exploitation, or unsafe work; ordinary correction and novice status remain part of the route.",
+      "recoveryPlan": "Ordinary rest is sufficient; if the placement creates sustained overload, optional activities are reduced before attendance or sleep is compromised.",
+      "scheduleNotes": "The supervisor is briefed to offer normal standards and safeguarding, not artificial humiliation or deliberately pointless work."
+    },
+    {
+      "domainId": "public-failure-rejection",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "annual",
+      "minimumAttributes": {},
+      "requirementCommitments": [],
+      "creditDomain": "public-failure-rejection",
+      "substitutesFor": [],
+      "route": "A completed essay is submitted to an external youth publication where rejection is plausible, then materially revised and submitted to a second authentic venue.",
+      "owner": "external-writing-mentor",
+      "verifier": "external-publisher-and-writing-mentor",
+      "minimumStimulus": "Complete one externally judged submission, examine the actual decision and feedback, make a material revision, and undertake a credible second attempt.",
+      "prerequisites": "Complete submission-quality work, verify authentic venue and privacy terms, agree the revision standard, prepare for either acceptance or rejection, and preserve a second credible venue or attempt.",
+      "evidencePlan": "Preserve both submitted versions, submission receipts, external decisions or feedback, revision rationale, mentor review, and a concise analysis of response to judgment.",
+      "schedule": {
+        "kind": "episodic",
+        "windows": [
+          "First submission by 2027-01-31; analysis and second authentic submission completed by 2027-04-30."
+        ]
+      },
+      "displacementPlan": "Revision uses the existing writing block and replaces one optional project cycle; adults neither engineer a rejection nor secure preferential acceptance.",
+      "emergencyOrEscalationRoute": "The mentor intervenes for harassment, privacy breach, deceptive terms, or sustained impairment and can withdraw the submission; authentic criticism, rejection, and disappointment remain valid exposure.",
+      "recoveryPlan": "Allow forty-eight hours before analysing a rejection, separate verdict from personal worth, then return to specific controllable revisions with the mentor.",
+      "scheduleNotes": "Acceptance still completes the exposure to authentic judgment; a second submission is required to preserve the revision-and-retry cycle."
+    },
+    {
+      "domainId": "service-reality",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "sustained",
+      "minimumAttributes": {
+        "data-min-months": "6"
+      },
+      "requirementCommitments": [
+        {
+          "requirementId": "minimum-six-month-service",
+          "plannedDuration": {
+            "value": 6,
+            "unit": "months"
+          }
+        }
+      ],
+      "creditDomain": "service-reality",
+      "substitutesFor": [],
+      "route": "A six-month recurring food-distribution logistics role supplies work the partner organisation genuinely needs, with beneficiary dignity and external accountability protected.",
+      "owner": "partner-organisation-supervisor",
+      "verifier": "partner-organisation-supervisor",
+      "minimumStimulus": "Serve at least twice monthly for six consecutive months in assigned preparation, inventory, distribution, and cleanup duties with dependable attendance and repair after errors.",
+      "prerequisites": "Complete provider vetting, safeguarding, confidentiality, dignity, role training, transport, task competence, escalation, emotional preparation, and confirmation that the work is genuinely useful to the organisation.",
+      "evidencePlan": "Collect attendance, assigned work, punctuality, mistakes and repairs, anonymised operational outputs, supervisor midpoint and final judgments, and learner reflection without beneficiary spectacle.",
+      "schedule": {
+        "kind": "sustained",
+        "windows": [
+          "First and third Saturday shifts from 2026-09-17 through 2027-03-18, preserving at least six consecutive months."
+        ]
+      },
+      "displacementPlan": "Service shifts replace optional weekend activities and are coordinated with the responsibility role; they are not layered onto an already capped week.",
+      "emergencyOrEscalationRoute": "The partner supervisor and safeguarding owner pause duties, protect beneficiaries and the learner, preserve confidentiality, and escalate abuse, distress, unsafe conditions, or operational failure through the organisation.",
+      "recoveryPlan": "Keep the remainder of each service day low-load, provide confidential supervision after difficult encounters, and adjust optional commitments before reducing sleep.",
+      "scheduleNotes": "The organisation may pause or change duties for safeguarding or operational need while maintaining a genuinely useful role."
+    },
+    {
+      "domainId": "moral-courage-integrity",
+      "required": true,
+      "status": "planned",
+      "completionRecord": null,
+      "cadence": "ongoing",
+      "minimumAttributes": {},
+      "requirementCommitments": [
+        {
+          "requirementId": "annual-natural-case-evidence",
+          "targetRecordsPerYear": 1,
+          "caseSource": "naturally-occurring",
+          "manufacturedCasesForbidden": true
+        }
+      ],
+      "creditDomain": "moral-courage-integrity",
+      "substitutesFor": [],
+      "route": "Capture naturally occurring choices involving truth, restitution, defence, refusal, or promise-keeping when a genuine social, material, reputational, or opportunity cost exists.",
+      "owner": "family-integrity-reflection-custodian",
+      "verifier": "learner-and-trusted-integrity-reflection-custodian",
+      "minimumStimulus": "Document at least one consequential naturally occurring case while maintaining ongoing practice of truthful disclosure, proportionate repair, defence of others, and principled refusal.",
+      "prerequisites": "Define privacy, safeguarding, victim protection, proportionate repair, corroboration, confidential storage, and the rule that no adult manufactures wrongdoing, betrayal, exposure, or a false dilemma.",
+      "evidencePlan": "When a real case occurs, record competing incentives, the chosen act, actual cost, affected parties, repair or consequence, adult corroboration where appropriate, and later reflection.",
+      "schedule": {
+        "kind": "natural-case-capture",
+        "windows": [],
+        "captureProtocol": "Adults watch for naturally occurring consequential choices, invite private reflection after immediate duties are handled, and never manufacture betrayal, wrongdoing, victims, or public exposure."
+      },
+      "displacementPlan": "No incident is placed on the calendar; when one occurs, the reflection replaces the next advisory block rather than being added to protected rest.",
+      "emergencyOrEscalationRoute": "Immediate protection, legal duty, victim safety, confidentiality, and appropriate safeguarding escalation override the educational reflection; private details are not retained merely to satisfy the ledger.",
+      "recoveryPlan": "After a costly real incident, provide confidential support, ensure any repair is proportionate, monitor retaliation or distress, and revisit learning without forced disclosure.",
+      "scheduleNotes": "Absence of a suitable incident triggers no simulation, provocation, deception, humiliation, or pressure to disclose a private matter."
+    }
+  ]
+}

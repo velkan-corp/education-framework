@@ -10,7 +10,7 @@ models: [inversion, via-negativa, complementary-opposites, skin-in-the-game]
 intensity: high
 riskFlags: [despair, violence]
 socialValue: broad
-substitutes: [jansson, sendak, dahl]
+substitutes: [jansson, sendak, roald-dahl]
 phases:
   - phaseId: age-4-7
     tier: core

@@ -1,19 +1,53 @@
+import { normalizeResourceTier, tierLabel, uiText } from './uiLocale.js';
+import { getCanonicalTargetNames, inferTrailingResourceTargets } from './resources.js';
+
+function getResourceTierSeparator(row) {
+  const cells = Array.from(row.querySelectorAll('td'));
+  const cell = cells.length === 1 && cells[0].colSpan > 1 ? cells[0] : null;
+  if (cell) return normalizeResourceTier(cell.textContent);
+  if (
+    cells.length === 3
+    && cells[0].textContent.trim()
+    && cells.slice(1).every((candidate) => !candidate.textContent.trim())
+  ) {
+    return normalizeResourceTier(cells[0].textContent);
+  }
+  return '';
+}
+
+function getRowTargets(row, canonicalTargetNames) {
+  const names = new Set();
+  row.querySelectorAll('.tag-target').forEach((tag) => {
+    const name = tag.textContent.trim();
+    if (name) names.add(name);
+  });
+
+  const cells = row.querySelectorAll('td');
+  const description = cells.length >= 3 ? cells[cells.length - 1] : cells[1];
+  if (description) {
+    inferTrailingResourceTargets(description.textContent, canonicalTargetNames)
+      .forEach((name) => names.add(name));
+  }
+  return names;
+}
+
 export function initResourceFilters() {
+  const canonicalTargetNames = getCanonicalTargetNames();
   document.querySelectorAll('.phase-content table').forEach(table => {
+    if (table.dataset.resourceFiltersInitialized === 'true') return;
+
     const tierRows = Array.from(table.querySelectorAll('tr')).filter(tr => {
-      const cell = tr.querySelector('td[colspan]');
-      return cell && /FOUNDATIONAL|CORE|RECOMMENDED/.test(cell.textContent);
+      return Boolean(getResourceTierSeparator(tr));
     });
     if (tierRows.length === 0) return;
+    table.dataset.resourceFiltersInitialized = 'true';
 
     let currentTier = '';
     Array.from(table.querySelectorAll('tr')).forEach(tr => {
       if (tr.querySelector('th')) return;
-      const tierCell = tr.querySelector('td[colspan]');
-      if (tierCell && /FOUNDATIONAL|CORE|RECOMMENDED/.test(tierCell.textContent)) {
-        if (/FOUNDATIONAL/.test(tierCell.textContent)) currentTier = 'foundational';
-        else if (/CORE/.test(tierCell.textContent)) currentTier = 'core';
-        else currentTier = 'recommended';
+      const parsedTier = getResourceTierSeparator(tr);
+      if (parsedTier) {
+        currentTier = parsedTier;
         tr.setAttribute('data-tier-header', currentTier);
         return;
       }
@@ -23,14 +57,13 @@ export function initResourceFilters() {
       const cells = tr.querySelectorAll('td');
       if (cells.length >= 2) {
         const typeText = cells[1].textContent.trim().toLowerCase();
-        if (/book|online/.test(typeText)) tr.setAttribute('data-type', 'book');
-        else if (/film/.test(typeText)) tr.setAttribute('data-type', 'film');
-        else if (/game/.test(typeText)) tr.setAttribute('data-type', 'game');
-        else if (/equipment/.test(typeText)) tr.setAttribute('data-type', 'equipment');
-        else if (/service/.test(typeText)) tr.setAttribute('data-type', 'service');
-        else if (/app/.test(typeText)) tr.setAttribute('data-type', 'app');
-        else if (/toy/.test(typeText)) tr.setAttribute('data-type', 'toy');
-        else if (/essay|document/.test(typeText)) tr.setAttribute('data-type', 'book');
+        if (/book|online|libro|en línea|ensayo|documento/u.test(typeText)) tr.setAttribute('data-type', 'book');
+        else if (/film|película|pelicula/u.test(typeText)) tr.setAttribute('data-type', 'film');
+        else if (/game|juego/u.test(typeText)) tr.setAttribute('data-type', 'game');
+        else if (/equipment|equipamiento|equipo/u.test(typeText)) tr.setAttribute('data-type', 'equipment');
+        else if (/service|servicio|suscripción|suscripcion/u.test(typeText)) tr.setAttribute('data-type', 'service');
+        else if (/\bapp\b|application|aplicación|aplicacion/u.test(typeText)) tr.setAttribute('data-type', 'app');
+        else if (/toy|juguete/u.test(typeText)) tr.setAttribute('data-type', 'toy');
         else tr.setAttribute('data-type', 'other');
       }
     });
@@ -40,9 +73,12 @@ export function initResourceFilters() {
     table.querySelectorAll('.resource-row').forEach(r => {
       const t = r.getAttribute('data-type');
       if (t && t !== 'other') types.add(t);
-      r.querySelectorAll('.tag-target').forEach(tag => {
-        const name = tag.textContent.trim();
-        if (name) { r.setAttribute('data-targets', (r.getAttribute('data-targets') || '') + '|' + name + '|'); targets.add(name); }
+      const rowTargets = getRowTargets(r, canonicalTargetNames);
+      if (rowTargets.size > 0) {
+        r.setAttribute('data-targets', `|${Array.from(rowTargets).join('|')}|`);
+      }
+      rowTargets.forEach((name) => {
+        targets.add(name);
       });
     });
 
@@ -52,13 +88,13 @@ export function initResourceFilters() {
     // Tier pills
     const tierGroup = document.createElement('div');
     tierGroup.className = 'filter-group';
-    tierGroup.innerHTML = '<span class="filter-label">Tier</span>';
+    tierGroup.innerHTML = `<span class="filter-label">${uiText('tier')}</span>`;
     ['all', 'foundational', 'core', 'recommended'].forEach(val => {
       const pill = document.createElement('button');
       pill.className = 'filter-pill' + (val === 'all' ? ' active' : '');
       pill.setAttribute('data-filter', 'tier');
       pill.setAttribute('data-val', val);
-      pill.textContent = val === 'all' ? 'All' : val.charAt(0).toUpperCase() + val.slice(1);
+      pill.textContent = val === 'all' ? uiText('all') : tierLabel(val);
       tierGroup.appendChild(pill);
     });
     filterDiv.appendChild(tierGroup);
@@ -67,20 +103,19 @@ export function initResourceFilters() {
     if (types.size > 1) {
       const typeGroup = document.createElement('div');
       typeGroup.className = 'filter-group';
-      typeGroup.innerHTML = '<span class="filter-label">Type</span>';
+      typeGroup.innerHTML = `<span class="filter-label">${uiText('type')}</span>`;
       const typeBtn = document.createElement('button');
       typeBtn.className = 'filter-pill active';
       typeBtn.setAttribute('data-filter', 'type');
       typeBtn.setAttribute('data-val', 'all');
-      typeBtn.textContent = 'All';
+      typeBtn.textContent = uiText('all');
       typeGroup.appendChild(typeBtn);
-      const typeLabels = { book: 'Books', film: 'Film', game: 'Games', equipment: 'Equipment', service: 'Services', app: 'Apps', toy: 'Toys' };
       Array.from(types).sort().forEach(t => {
         const pill = document.createElement('button');
         pill.className = 'filter-pill';
         pill.setAttribute('data-filter', 'type');
         pill.setAttribute('data-val', t);
-        pill.textContent = typeLabels[t] || t;
+        pill.textContent = uiText(t);
         typeGroup.appendChild(pill);
       });
       filterDiv.appendChild(typeGroup);
@@ -90,12 +125,12 @@ export function initResourceFilters() {
     if (targets.size > 0) {
       const targetGroup = document.createElement('div');
       targetGroup.className = 'filter-group';
-      targetGroup.innerHTML = '<span class="filter-label">Target</span>';
+      targetGroup.innerHTML = `<span class="filter-label">${uiText('target')}</span>`;
       const allBtn = document.createElement('button');
       allBtn.className = 'filter-pill active';
       allBtn.setAttribute('data-filter', 'target');
       allBtn.setAttribute('data-val', 'all');
-      allBtn.textContent = 'All';
+      allBtn.textContent = uiText('all');
       targetGroup.appendChild(allBtn);
       Array.from(targets).sort().forEach(t => {
         const pill = document.createElement('button');
@@ -168,20 +203,23 @@ function applyResourceFilter(table, filterDiv) {
 
 export function initSectionFilters() {
   document.querySelectorAll('.program-elements').forEach(container => {
+    if (container.dataset.sectionFiltersInitialized === 'true') return;
     const sections = Array.from(container.querySelectorAll('h2[data-tier]'));
     if (!sections.length) return;
+    container.dataset.sectionFiltersInitialized = 'true';
 
     sections.forEach(h2 => {
       const tier = h2.dataset.tier;
+      if (h2.querySelector('.tier-badge')) return;
       const badge = document.createElement('span');
       badge.className = `tier-badge ${tier}`;
-      badge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+      badge.textContent = tierLabel(tier);
       h2.appendChild(badge);
     });
 
     const headerDiv = document.createElement('div');
     headerDiv.className = 'section-filters-header';
-    headerDiv.innerHTML = '<h2 class="section-filters-title"><span class="material-symbols-rounded">school</span>Curriculum Threads</h2><p class="section-filters-desc">Each thread runs across all ages. Filter by priority tier.</p>';
+    headerDiv.innerHTML = `<h2 class="section-filters-title"><span class="material-symbols-rounded" aria-hidden="true">school</span>${uiText('curriculumThreads')}</h2><p class="section-filters-desc">${uiText('curriculumThreadsDescription')}</p>`;
     container.insertBefore(headerDiv, container.firstChild);
 
     const filterDiv = document.createElement('div');
@@ -191,7 +229,7 @@ export function initSectionFilters() {
       const pill = document.createElement('button');
       pill.className = 'filter-pill' + (val === 'all' ? ' active' : '');
       pill.setAttribute('data-val', val);
-      pill.textContent = val === 'all' ? 'All' : val.charAt(0).toUpperCase() + val.slice(1);
+      pill.textContent = val === 'all' ? uiText('all') : tierLabel(val);
       filterDiv.appendChild(pill);
     });
     headerDiv.appendChild(filterDiv);

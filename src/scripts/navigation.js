@@ -1,4 +1,4 @@
-import { state, childProfiles } from './state.js';
+import { state } from './state.js';
 
 export function getHeadingText(h) {
   let text = '';
@@ -22,7 +22,8 @@ function buildSectionNav(containerEl, entries, options = {}) {
   // Check if this is the framework page (has group headers)
   const hasGroups = entries.some(e => e.groupId && FW_GROUPS.has(e.groupId));
 
-  let html = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>Sections</div>`;
+  const sectionsLabel = document.documentElement.lang === 'es' ? 'Secciones' : 'Sections';
+  let html = `<div class="${titleClass}"${titleStyle ? ` style="${titleStyle}"` : ''}>${sectionsLabel}</div>`;
   entries.forEach(e => {
     const isGroup = hasGroups && e.groupId && FW_GROUPS.has(e.groupId);
     const cls = isGroup ? `${linkClass} nav-link-group` : linkClass;
@@ -143,54 +144,23 @@ export function wrapTablesForMobile() {
 /* ── Profile class map ── */
 
 const classMap = {
-  // Rothbart ECBQ
+  // Research-informed temperament observations
   energy:          { introvert: 't-introvert', extrovert: 't-extrovert' },
   reactivity:      { high: 't-high-react', low: 't-low-react' },
   selfRegulation:  { high: 't-ec-high', low: 't-ec-low' },
-  // ASQ
+  // Developmental-domain observations
   communication:   { advanced: 't-comm-adv', developing: 't-comm-dev' },
   problemSolving:  { advanced: 't-ps-adv', developing: 't-ps-dev' },
   grossMotor:      { advanced: 't-gm-adv', developing: 't-gm-dev' },
   fineMotor:       { advanced: 't-fm-adv', developing: 't-fm-dev' },
   personalSocial:  { advanced: 't-social-adv', developing: 't-social-dev' },
-  // BRIEF-P
+  // Executive-function observations
   inhibit:         { advanced: 't-inhib-adv', developing: 't-inhib-dev' },
   shift:           { advanced: 't-shift-adv', developing: 't-shift-dev' },
   emotionalControl:{ advanced: 't-emoctl-adv', developing: 't-emoctl-dev' },
   workingMemory:   { advanced: 't-wm-adv', developing: 't-wm-dev' },
   planOrganize:    { advanced: 't-plan-adv', developing: 't-plan-dev' }
 };
-
-/* ── Child profile loading ── */
-
-let activeChildProfile = null;
-
-export function loadChildProfile(key) {
-  const cp = childProfiles[key];
-  if (!cp) return;
-  activeChildProfile = key;
-  Object.assign(state.profile, cp.profile);
-  syncAllRadioButtons();
-  applyProfile();
-  updateFabIndicator();
-  updateChildSelector(key);
-}
-
-function clearChildProfile() {
-  if (activeChildProfile) {
-    activeChildProfile = null;
-    updateChildSelector(null);
-  }
-}
-
-function updateChildSelector(activeKey) {
-  document.querySelectorAll('.radio-group[data-dim="child"] .radio-btn').forEach(btn => {
-    const isActive = (activeKey === null && btn.dataset.val === 'custom') ||
-                     (btn.dataset.val === activeKey);
-    btn.classList.toggle('active', isActive);
-    btn.setAttribute('aria-pressed', String(isActive));
-  });
-}
 
 function syncAllRadioButtons() {
   for (const [dim, val] of Object.entries(state.profile)) {
@@ -208,7 +178,6 @@ function resetToBalanced() {
   for (const key of Object.keys(state.profile)) {
     state.profile[key] = 'balanced';
   }
-  clearChildProfile();
   syncAllRadioButtons();
   applyProfile();
   updateFabIndicator();
@@ -231,19 +200,7 @@ export function setupProfileToggles() {
     const dim = group.dataset.dim;
     const val = btn.dataset.val;
 
-    // Child profile selector
-    if (dim === 'child') {
-      if (val === 'custom') {
-        clearChildProfile();
-      } else {
-        loadChildProfile(val);
-      }
-      return;
-    }
-
-    // Individual dimension change — revert to Custom
     state.profile[dim] = val;
-    clearChildProfile();
     document.querySelectorAll(`.radio-group[data-dim="${dim}"] .radio-btn`).forEach(b => {
       const active = b.dataset.val === val;
       b.classList.toggle('active', active);
@@ -262,15 +219,16 @@ export function setupCollapsibleSections() {
     const content = header.nextElementSibling;
     if (!content) return;
 
-    // Restore collapsed state
-    if (state.collapsed[sectionKey]) {
-      content.classList.add('collapsed');
-      header.classList.add('collapsed');
-    }
+    // Restore visual and accessibility state from the same source of truth.
+    const isInitiallyCollapsed = state.collapsed[sectionKey] ?? true;
+    content.classList.toggle('collapsed', isInitiallyCollapsed);
+    header.classList.toggle('collapsed', isInitiallyCollapsed);
+    header.setAttribute('aria-expanded', String(!isInitiallyCollapsed));
 
     header.addEventListener('click', () => {
       const isCollapsed = content.classList.toggle('collapsed');
       header.classList.toggle('collapsed', isCollapsed);
+      header.setAttribute('aria-expanded', String(!isCollapsed));
       state.collapsed[sectionKey] = isCollapsed;
     });
   });

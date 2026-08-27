@@ -1,4 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 import {
   ENGAGEMENT_MODES,
   INTENSITY_LEVELS,
@@ -56,16 +58,21 @@ const universeSchema = z.object({
   })),
 });
 
-const phases = defineCollection({ type: 'content', schema: phaseSchema });
-const universes = defineCollection({ type: 'content', schema: universeSchema });
-const models = defineCollection({ type: 'content', schema: modelSchema });
-const targets = defineCollection({ type: 'content', schema: targetSchema });
+const markdownIn = (directory: string) => glob({
+  base: `./src/content/${directory}`,
+  pattern: '**/*.md',
+});
+
+const phases = defineCollection({ loader: markdownIn('phases'), schema: phaseSchema });
+const universes = defineCollection({ loader: markdownIn('universes'), schema: universeSchema });
+const models = defineCollection({ loader: markdownIn('models'), schema: modelSchema });
+const targets = defineCollection({ loader: markdownIn('targets'), schema: targetSchema });
 
 // Spanish collections — same schemas, separate content
-const phasesEs = defineCollection({ type: 'content', schema: phaseSchema });
-const universesEs = defineCollection({ type: 'content', schema: universeSchema });
-const modelsEs = defineCollection({ type: 'content', schema: modelSchema });
-const targetsEs = defineCollection({ type: 'content', schema: targetSchema });
+const phasesEs = defineCollection({ loader: markdownIn('phases-es'), schema: phaseSchema });
+const universesEs = defineCollection({ loader: markdownIn('universes-es'), schema: universeSchema });
+const modelsEs = defineCollection({ loader: markdownIn('models-es'), schema: modelSchema });
+const targetsEs = defineCollection({ loader: markdownIn('targets-es'), schema: targetSchema });
 
 export const collections = {
   phases, universes, models, targets,

@@ -10,7 +10,7 @@ models: [emergence, model-failure, complementary-opposites, maps-not-territory]
 intensity: extreme
 riskFlags: [violence, despair, horror]
 socialValue: niche
-substitutes: [wolfe, tolkien]
+substitutes: [dune, tolkien]
 phases:
   - phaseId: age-17-18
     tier: core

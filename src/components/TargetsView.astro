@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 interface Props { lang?: string; }
 const { lang = 'en' } = Astro.props;
@@ -19,7 +19,7 @@ const targets = targetsRaw.sort((a, b) => a.data.number - b.data.number);
     </div>
     <div class="browse-card-grid">
       {targets.map(async (t) => {
-        const { Content } = await t.render();
+        const { Content } = await render(t);
         return (
           <button type="button" class="browse-card" data-section="target" data-slug={t.data.targetId} data-label={t.data.targetId} data-browse-id={t.data.targetId}>
             <span class="browse-num">{t.data.number}</span>

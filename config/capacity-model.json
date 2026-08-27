@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "units": "child-facing directed hours per normal term week",
+  "unstructuredShareOfNonSchoolWakingTime": 0.3,
+  "deliveryModes": {
+    "overlay": {
+      "label": "School overlay",
+      "scope": "An external school owns the complete academic entitlement, cohort provision, records, and credential compliance. Framework hours are incremental and may not duplicate adequate school provision.",
+      "academicOwner": "external-school",
+      "credentialOwner": "external-school"
+    },
+    "hybrid": {
+      "label": "Hybrid",
+      "scope": "A partner school supplies named subjects and credential access; the learning architect owns the cross-provider entitlement and closes documented gaps.",
+      "academicOwner": "shared-academic-lead",
+      "credentialOwner": "credential-lead"
+    },
+    "fullSchool": {
+      "label": "Full school",
+      "scope": "The framework school owns the complete academic entitlement, cohort provision, records, safeguarding, and credential compliance.",
+      "academicOwner": "school-academic-lead",
+      "credentialOwner": "credential-lead"
+    }
+  },
+  "operatingModes": {
+    "minimum": {
+      "rule": "Run guarantees only. Use during recovery, transition, examination pressure, illness, or when actual capacity is lower than forecast. Review before adding anything."
+    },
+    "standard": {
+      "rule": "Run guarantees plus exactly the configured choose-N alternative slots. This is the default term mode."
+    },
+    "intensive": {
+      "rule": "Run guarantees plus one time-boxed focus and fewer alternative slots than standard. An intensive replaces work; it never stacks on top of standard."
+    }
+  },
+  "guarantees": {
+    "responsive-relationship": "Secure relationship, family connection, and age-appropriate emotional co-regulation.",
+    "language-and-communication": "Reading, oral language, writing, rhetoric, or equivalent age-appropriate communication practice.",
+    "core-academic-entitlement": "Complete literacy, mathematics, science, and humanities entitlement supplied by the named academic owner.",
+    "physical-system": "Sleep protection, daily movement, physical competence, nutrition, and recovery.",
+    "collective-capability": "Recurring work in which coordination, disagreement, ensemble, teamwork, or shared accountability is genuinely required.",
+    "feedback-and-planning": "A short evidence review that changes the following week's plan; learner ownership increases with age.",
+    "protected-autonomy": "The configured share of non-school waking time remains genuinely unstructured and is not reclaimed by framework activities.",
+    "safety-and-support": "Safeguarding, health, developmental, and special-support concerns have a named escalation owner."
+  },
+  "alternativePools": {
+    "sensory-nature": "Sensory exploration, outdoor observation, nature, and wonder.",
+    "music-movement": "Music, dance, movement, gymnastics, and performance vehicles beyond the physical guarantee.",
+    "deep-practice": "One sustained niche or advanced academic, artistic, technical, or athletic practice.",
+    "making-projects": "Craft, coding, design, entrepreneurship, repair, and shipped projects.",
+    "culture-inquiry": "Literature, history, philosophy, religion, film, mental models, and guided inquiry.",
+    "service-leadership": "Service, community contribution, leadership, negotiation, and civic practice.",
+    "language-immersion": "A third language, exchange, or concentrated bilingual-register development.",
+    "route-launch": "Credential preparation, applications, auditions, research, work placement, and launch logistics."
+  },
+  "requiredOwnerKeys": [
+    "capacity",
+    "academic",
+    "collective",
+    "credential",
+    "safeguarding"
+  ],
+  "phases": [
+    {
+      "id": "age-0-1",
+      "label": "0-1 yr old",
+      "rotationWeeks": { "min": 2, "max": 4 },
+      "intensiveMaxWeeks": 1,
+      "holidayIntensiveHardCapHours": 3,
+      "time": {
+        "typicalSleepHoursPerNight": 15.5,
+        "essentialCareHoursPerWeek": 36,
+        "externalSchoolAndCommuteHours": { "overlay": 0, "hybrid": 0, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 0, "hybrid": 0, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "physical-system",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["sensory-nature", "music-movement"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 0.5,
+          "standard": { "capHours": 1.5, "choiceSlots": 1, "choiceSlotHours": 0.5, "bufferHours": 0.5 },
+          "intensive": { "capHours": 2.5, "choiceSlots": 0, "choiceSlotHours": 0, "focusHours": 1.5, "bufferHours": 0.5 },
+          "hardCapHours": 3
+        },
+        "hybrid": {
+          "guaranteeHours": 0.5,
+          "standard": { "capHours": 1.5, "choiceSlots": 1, "choiceSlotHours": 0.5, "bufferHours": 0.5 },
+          "intensive": { "capHours": 2.5, "choiceSlots": 0, "choiceSlotHours": 0, "focusHours": 1.5, "bufferHours": 0.5 },
+          "hardCapHours": 3
+        },
+        "fullSchool": {
+          "guaranteeHours": 0.5,
+          "standard": { "capHours": 1.5, "choiceSlots": 1, "choiceSlotHours": 0.5, "bufferHours": 0.5 },
+          "intensive": { "capHours": 2.5, "choiceSlots": 0, "choiceSlotHours": 0, "focusHours": 1.5, "bufferHours": 0.5 },
+          "hardCapHours": 3
+        }
+      }
+    },
+    {
+      "id": "age-1-3",
+      "label": "1-3 yr old",
+      "rotationWeeks": { "min": 3, "max": 6 },
+      "intensiveMaxWeeks": 1,
+      "holidayIntensiveHardCapHours": 5,
+      "time": {
+        "typicalSleepHoursPerNight": 12.5,
+        "essentialCareHoursPerWeek": 32,
+        "externalSchoolAndCommuteHours": { "overlay": 0, "hybrid": 0, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 0, "hybrid": 0, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "physical-system",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["sensory-nature", "music-movement", "making-projects", "culture-inquiry"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 1,
+          "standard": { "capHours": 3, "choiceSlots": 2, "choiceSlotHours": 0.75, "bufferHours": 0.5 },
+          "intensive": { "capHours": 5, "choiceSlots": 1, "choiceSlotHours": 0.5, "focusHours": 3, "bufferHours": 0.5 },
+          "hardCapHours": 6
+        },
+        "hybrid": {
+          "guaranteeHours": 1,
+          "standard": { "capHours": 3, "choiceSlots": 2, "choiceSlotHours": 0.75, "bufferHours": 0.5 },
+          "intensive": { "capHours": 5, "choiceSlots": 1, "choiceSlotHours": 0.5, "focusHours": 3, "bufferHours": 0.5 },
+          "hardCapHours": 6
+        },
+        "fullSchool": {
+          "guaranteeHours": 1,
+          "standard": { "capHours": 3, "choiceSlots": 2, "choiceSlotHours": 0.75, "bufferHours": 0.5 },
+          "intensive": { "capHours": 5, "choiceSlots": 1, "choiceSlotHours": 0.5, "focusHours": 3, "bufferHours": 0.5 },
+          "hardCapHours": 6
+        }
+      }
+    },
+    {
+      "id": "age-4-7",
+      "label": "4-7 yr old",
+      "rotationWeeks": { "min": 6, "max": 8 },
+      "intensiveMaxWeeks": 2,
+      "holidayIntensiveHardCapHours": 24,
+      "time": {
+        "typicalSleepHoursPerNight": 11,
+        "essentialCareHoursPerWeek": 18,
+        "externalSchoolAndCommuteHours": { "overlay": 35, "hybrid": 18, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 2, "hybrid": 1, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "core-academic-entitlement",
+        "physical-system",
+        "collective-capability",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["deep-practice", "music-movement", "making-projects", "culture-inquiry", "sensory-nature"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 4,
+          "standard": { "capHours": 8, "choiceSlots": 2, "choiceSlotHours": 1.5, "bufferHours": 1 },
+          "intensive": { "capHours": 11, "choiceSlots": 1, "choiceSlotHours": 1, "focusHours": 5, "bufferHours": 1 },
+          "hardCapHours": 12
+        },
+        "hybrid": {
+          "guaranteeHours": 14,
+          "standard": { "capHours": 20, "choiceSlots": 3, "choiceSlotHours": 1.5, "bufferHours": 1.5 },
+          "intensive": { "capHours": 24, "choiceSlots": 1, "choiceSlotHours": 1.5, "focusHours": 7, "bufferHours": 1.5 },
+          "hardCapHours": 26
+        },
+        "fullSchool": {
+          "guaranteeHours": 20,
+          "standard": { "capHours": 26, "choiceSlots": 3, "choiceSlotHours": 1.5, "bufferHours": 1.5 },
+          "intensive": { "capHours": 30, "choiceSlots": 1, "choiceSlotHours": 1.5, "focusHours": 7, "bufferHours": 1.5 },
+          "hardCapHours": 32
+        }
+      }
+    },
+    {
+      "id": "age-8-10",
+      "label": "8-10 yr old",
+      "rotationWeeks": { "min": 8, "max": 12 },
+      "intensiveMaxWeeks": 3,
+      "holidayIntensiveHardCapHours": 28,
+      "time": {
+        "typicalSleepHoursPerNight": 10,
+        "essentialCareHoursPerWeek": 18,
+        "externalSchoolAndCommuteHours": { "overlay": 37, "hybrid": 20, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 5, "hybrid": 2, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "core-academic-entitlement",
+        "physical-system",
+        "collective-capability",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["deep-practice", "music-movement", "making-projects", "culture-inquiry", "service-leadership", "language-immersion"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 5,
+          "standard": { "capHours": 9, "choiceSlots": 2, "choiceSlotHours": 1.5, "bufferHours": 1 },
+          "intensive": { "capHours": 13, "choiceSlots": 1, "choiceSlotHours": 1, "focusHours": 6, "bufferHours": 1 },
+          "hardCapHours": 14
+        },
+        "hybrid": {
+          "guaranteeHours": 16,
+          "standard": { "capHours": 23, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 27, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 29
+        },
+        "fullSchool": {
+          "guaranteeHours": 22,
+          "standard": { "capHours": 29, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 33, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 35
+        }
+      }
+    },
+    {
+      "id": "age-11-13",
+      "label": "11-13 yr old",
+      "rotationWeeks": { "min": 10, "max": 14 },
+      "intensiveMaxWeeks": 4,
+      "holidayIntensiveHardCapHours": 32,
+      "time": {
+        "typicalSleepHoursPerNight": 9.5,
+        "essentialCareHoursPerWeek": 18,
+        "externalSchoolAndCommuteHours": { "overlay": 40, "hybrid": 22, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 7, "hybrid": 3, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "core-academic-entitlement",
+        "physical-system",
+        "collective-capability",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["deep-practice", "music-movement", "making-projects", "culture-inquiry", "service-leadership", "language-immersion", "route-launch"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 5,
+          "standard": { "capHours": 9, "choiceSlots": 2, "choiceSlotHours": 1.5, "bufferHours": 1 },
+          "intensive": { "capHours": 13, "choiceSlots": 1, "choiceSlotHours": 1, "focusHours": 6, "bufferHours": 1 },
+          "hardCapHours": 14
+        },
+        "hybrid": {
+          "guaranteeHours": 18,
+          "standard": { "capHours": 25, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 29, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 31
+        },
+        "fullSchool": {
+          "guaranteeHours": 24,
+          "standard": { "capHours": 31, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 35, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 37
+        }
+      }
+    },
+    {
+      "id": "age-14-16",
+      "label": "14-16 yr old",
+      "rotationWeeks": { "min": 12, "max": 18 },
+      "intensiveMaxWeeks": 6,
+      "holidayIntensiveHardCapHours": 34,
+      "time": {
+        "typicalSleepHoursPerNight": 9,
+        "essentialCareHoursPerWeek": 18,
+        "externalSchoolAndCommuteHours": { "overlay": 42, "hybrid": 24, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 10, "hybrid": 5, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "core-academic-entitlement",
+        "physical-system",
+        "collective-capability",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["deep-practice", "music-movement", "making-projects", "culture-inquiry", "service-leadership", "language-immersion", "route-launch"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 5,
+          "standard": { "capHours": 8, "choiceSlots": 2, "choiceSlotHours": 1, "bufferHours": 1 },
+          "intensive": { "capHours": 12, "choiceSlots": 0, "choiceSlotHours": 0, "focusHours": 6, "bufferHours": 1 },
+          "hardCapHours": 14
+        },
+        "hybrid": {
+          "guaranteeHours": 20,
+          "standard": { "capHours": 27, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 31, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 31
+        },
+        "fullSchool": {
+          "guaranteeHours": 25,
+          "standard": { "capHours": 32, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 36, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 38
+        }
+      }
+    },
+    {
+      "id": "age-17-18",
+      "label": "17-18 yr old",
+      "rotationWeeks": { "min": 12, "max": 18 },
+      "intensiveMaxWeeks": 6,
+      "holidayIntensiveHardCapHours": 34,
+      "time": {
+        "typicalSleepHoursPerNight": 9,
+        "essentialCareHoursPerWeek": 18,
+        "externalSchoolAndCommuteHours": { "overlay": 42, "hybrid": 24, "fullSchool": 0 },
+        "externalStudyHours": { "overlay": 12, "hybrid": 6, "fullSchool": 0 }
+      },
+      "guaranteeIds": [
+        "responsive-relationship",
+        "language-and-communication",
+        "core-academic-entitlement",
+        "physical-system",
+        "collective-capability",
+        "feedback-and-planning",
+        "protected-autonomy",
+        "safety-and-support"
+      ],
+      "alternativePoolIds": ["deep-practice", "music-movement", "making-projects", "culture-inquiry", "service-leadership", "language-immersion", "route-launch"],
+      "capacity": {
+        "overlay": {
+          "guaranteeHours": 5,
+          "standard": { "capHours": 8, "choiceSlots": 2, "choiceSlotHours": 1, "bufferHours": 1 },
+          "intensive": { "capHours": 12, "choiceSlots": 0, "choiceSlotHours": 0, "focusHours": 6, "bufferHours": 1 },
+          "hardCapHours": 12
+        },
+        "hybrid": {
+          "guaranteeHours": 19,
+          "standard": { "capHours": 26, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 30, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 30
+        },
+        "fullSchool": {
+          "guaranteeHours": 25,
+          "standard": { "capHours": 32, "choiceSlots": 3, "choiceSlotHours": 2, "bufferHours": 1 },
+          "intensive": { "capHours": 36, "choiceSlots": 1, "choiceSlotHours": 2, "focusHours": 8, "bufferHours": 1 },
+          "hardCapHours": 38
+        }
+      }
+    }
+  ]
+}

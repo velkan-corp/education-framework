@@ -9,7 +9,7 @@ targets: [self-awareness, resilient-self-efficacy, relational-intelligence, crea
 models: [cause-effect, inversion, complementary-opposites, emergence]
 intensity: medium
 socialValue: broad
-substitutes: [carle, jansson, little-prince]
+substitutes: [eric-carle, jansson, little-prince]
 phases:
   - phaseId: age-0-1
     tier: recommended

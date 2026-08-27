@@ -13,18 +13,14 @@ substitutes: [borges, cortazar, philip-k-dick, garcia-marquez, eco]
 phases:
   - phaseId: age-14-16
     tier: core
-    title: "La invención de Morel"
-    description: "100 pages. Read it knowing nothing. The first half reads as desert-island adventure; the second half reveals the science-fictional premise and the philosophical cost. Borges's prologue (included in the Emecé / Alianza editions) is the canonical framing. Students of Black Mirror and Westworld will recognise their ancestor. Ask: what is the ethical status of a recorded person? Does the recorded Faustine exist?"
+    title: "La invención de Morel + selected Historias fantásticas"
+    description: "Begin with La invención de Morel: 100 pages, read knowing nothing. The first half reads as desert-island adventure; the second reveals the science-fictional premise and its philosophical cost. Borges's prologue (included in the Emecé / Alianza editions) is the canonical framing. Then sample 'En memoria de Paulina', 'El ídolo', and 'La sierva ajena' from Historias fantásticas; the shorter forms make a useful parallel with Borges's Ficciones and Cortázar's Bestiario. Ask: what is the ethical status of a recorded person? Does the recorded Faustine exist?"
     mode: interrogate
     goals:
       - "Identify the premise before it is stated — track when the narrator realises what Morel has done."
       - "Draw the direct line from Morel to contemporary VR / simulation fiction."
       - "Compare to Borges: what can Bioy do in 100 narrative pages that Borges does in 10 discursive pages?"
-  - phaseId: age-14-16
-    tier: recommended
-    title: "Historias fantásticas (selected stories)"
-    description: "The short-fiction corpus. 'En memoria de Paulina', 'El ídolo', 'La sierva ajena' are the canonical entry stories. Shorter than Morel, equally structurally inventive. A good parallel read with Borges's Ficciones and Cortázar's Bestiario."
-    mode: interrogate
+      - "Compare how the novella and selected stories conceal, pace, and reveal their fantastic premises."
   - phaseId: age-17-18
     tier: recommended
     title: "Plan de evasión"
