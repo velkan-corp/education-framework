@@ -3,7 +3,7 @@ import { satteri } from '@astrojs/markdown-satteri';
 import { phasePresentationPlugin } from './src/markdown/phasePresentation.mjs';
 
 export default defineConfig({
-  site: 'https://velkan-corp.github.io',
+  site: 'https://education-framework.pages.dev',
   base: '/education-framework',
   markdown: {
     processor: satteri({

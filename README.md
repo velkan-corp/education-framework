@@ -2,6 +2,10 @@
 
 A developmental education framework for 0-18 yr old learners, implemented as an Astro application.
 
+- Canonical URL: <https://education-framework.pages.dev/education-framework/>
+- Production host: Cloudflare Pages project `education-framework`
+- Deployment mode: Wrangler Direct Upload
+
 ## Start here
 
 - [Capacity-governed execution layer](docs/execution-layer.md): exact weekly budgets, school-overlay/hybrid/full-school boundaries, guarantees, choose-N alternatives, rotations, temporary intensives, longitudinal hardship scheduling, deletion rules, individual/group allocation, progression, additional support, and staffing ownership.
@@ -43,3 +47,31 @@ node tools/audit-hardship.mjs --plan path/to/hardship-plan.json
 ```
 
 The capacity audit rejects stacking, missing guarantees or owners, invalid rotations, consumed buffers, insufficient protected sleep/unstructured time, and 168-hour ledger overload. The hardship audit rejects missing or substituted domains, weakened cadences, counts, durations or milestones, incomplete scheduling/evidence fields, manufactured moral tests, and physical-exhaustion plans that violate the one-stressor contract. Both deliberately constrain evidence collection; continuous child surveillance and vanity metrics are outside the model.
+
+## Deployment
+
+Build and prepare the path-preserving Cloudflare Pages artifact:
+
+```sh
+npm ci
+npm run build
+npm run prepare:cloudflare
+```
+
+The prepared site is emitted to `.cloudflare-pages/`. It retains the
+`/education-framework/` base path and redirects the project root to that path.
+
+Set `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` from the 1Password
+Employee-vault item `Cloudflare`, then deploy:
+
+```sh
+npx --yes wrangler pages deploy .cloudflare-pages \
+  --project-name education-framework \
+  --branch main \
+  --commit-hash "$(git rev-parse HEAD)" \
+  --commit-message "$(git log -1 --pretty=%s)"
+```
+
+Do not re-enable GitHub Pages or add a GitHub Pages `CNAME` file. If deployment
+is later automated in GitHub Actions, create a Pages-scoped Cloudflare token;
+never reuse a broad DNS-capable credential.
