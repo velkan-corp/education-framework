@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-cloudflare-pages-runner-v1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.20.0"
+  },
+  "dependencies": {
+    "wrangler": "4.128.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "provider": "cloudflare",
+  "capability": "pages-direct-upload",
+  "repository": {
+    "remoteName": "origin",
+    "remoteUrl": "https://github.com/velkan-corp/education-framework.git",
+    "branch": "main"
+  },
+  "credential": {
+    "keychainService": "com.velkan.education-framework.cloudflare.pages-deploy",
+    "keychainAccount": "api-token",
+    "onePasswordItem": "Education Framework Cloudflare Pages Deploy"
+  },
+  "build": {
+    "mode": "command",
+    "outputDirectory": ".cloudflare-pages"
+  },
+  "cloudflare": {
+    "accountId": "82675093f8de0440782f81032b6a33d1",
+    "pagesProject": "education-framework",
+    "pagesProjectId": "ceae98f3-a8e5-4997-ab40-6b89a524d9b0",
+    "productionBranch": "main"
+  },
+  "limits": {
+    "commandTimeoutSeconds": 900,
+    "apiTimeoutSeconds": 30,
+    "deploymentTimeoutSeconds": 600,
+    "minimumTokenLifetimeSeconds": 2592000,
+    "maxArtifactFiles": 20000,
+    "maxArtifactFileBytes": 26214400,
+    "maxArtifactTotalBytes": 1073741824
+  }
+}
