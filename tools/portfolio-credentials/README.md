@@ -46,7 +46,7 @@ tree, control home, source commit, and Node executable are rebound before Keycha
 after provider preflight immediately before the fixed upload spawn.
 
 The authenticated preflight requires the manifest’s exact account, Pages project name and immutable
-ID, production `main`, `source: null`, and `uses_functions: false`. The post-upload API receipt must
+ID, production `main`, Direct Upload `source` omitted or `null`, and `uses_functions: false`. The post-upload API receipt must
 match that project ID, clean exact commit, production `main`, non-skipped status, project-specific
 Pages hostname, and `uses_functions: false`.
 

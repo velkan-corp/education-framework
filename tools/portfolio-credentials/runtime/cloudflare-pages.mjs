@@ -155,7 +155,8 @@ export async function verifyPagesProject(token, manifest, dependencies = {}) {
   if (
     !isRecord(project) || project.id !== manifest.cloudflare.pagesProjectId ||
     project.name !== manifest.cloudflare.pagesProject ||
-    project.production_branch !== manifest.cloudflare.productionBranch || project.source !== null ||
+    project.production_branch !== manifest.cloudflare.productionBranch ||
+    (project.source !== null && project.source !== undefined) ||
     project.uses_functions !== false
   ) {
     fail(
